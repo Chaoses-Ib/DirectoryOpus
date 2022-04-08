@@ -3,16 +3,16 @@
 ### 操作对象
 修饰符 | 功能
 --- | ---
-@disalbenosel | 未选中文件时禁用按钮
+@disablenosel | 未选中文件时禁用按钮
 @hidenosel | 未选中文件时隐藏按钮
-@filesonly | 只对选中的文件执行操作
-@firstfileonly | 只对选中的第一个文件执行操作
-@dirsonly | 只对选中的目录执行操作
-@nodeselect | 执行函数后不取消选中当前文件
+@filesonly | 只对选中项中的文件执行操作
+@firstfileonly | 只对选中项中的第一个文件执行操作
+@dirsonly | 只对选中项中的目录执行操作
+@nodeselect | 执行函数后保留文件的选中状态
 
-重命名文件后不取消选中：
+重命名文件后保留选中状态：
 ```cmd
-@disalbenosel
+@disablenosel
 Rename ADVANCED
 @nodeselect
 ```
