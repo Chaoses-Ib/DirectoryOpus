@@ -10,6 +10,7 @@
 @dirsonly | 只对选中项中的目录执行操作
 @nodeselect | 执行函数后保留文件的选中状态
 
+#### 例子
 重命名文件后保留选中状态：
 ```cmd
 @disablenosel
