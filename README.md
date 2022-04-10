@@ -30,3 +30,10 @@
 使用双栏模式时，当前文件列表为来源，对侧文件列表为目标；  
 使用单栏模式时，当前文件窗口为来源，最近激活的另一个文件窗口为目标，状态栏中会显示所属窗口的状态。  
 来源和目标状态也可以从文件列表工具栏的背景色看出来：深蓝色为来源，灰色为目标。
+
+## 其它
+### 讨论
+- [讨论区](https://github.com/Chaoses-Ib/DirectoryOpus/discussions)  
+  请尽量在讨论区中提问，便于帮助遇到了同样问题的人。
+- [Telegram 群组](https://t.me/IbDirectoryOpusGroup)
+- [QQ 群](https://jq.qq.com/?_wv=1027&k=8iTFF5J8)（313295509）
