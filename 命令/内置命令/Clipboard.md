@@ -1,5 +1,5 @@
 # Clipboard
-## 粘贴
+## 粘贴文件、文本、图片
 在粘贴时询问文件名、文本编码/图片格式：
 ```cmd
 Clipboard PASTE AS=ask:默认文件名
