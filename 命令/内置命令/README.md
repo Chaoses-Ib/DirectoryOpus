@@ -24,7 +24,7 @@ Properties | <ul><li>显示文件属性</li><li>打开文件夹选项窗口</li>
 Recent | <ul><li>显示、清除最近文件夹列表</li></ul>
 Rename | <ul><li>重命名文件</li></ul>
 Select | <ul><li>选择文件</li><li>显示、隐藏文件</li></ul>
-Set | <ul><li>设置文件窗口属性</li><li>设置文件列表属性</li><li>打开、关闭管理员模式</li></ul>
+[Set](Set.md) | <ul><li>设置文件窗口属性</li><li>设置文件列表属性</li><li>[打开、关闭管理员模式](Set.md#打开关闭管理员模式)</li></ul>
 SetAttr | <ul><li>修改文件属性</li></ul>
 Show | <ul><li>展示文件</li><li>调整缩略图尺寸</li><li>启用、禁用查看器插件</li></ul>
 Split | <ul><li>分割文件</li></ul>
