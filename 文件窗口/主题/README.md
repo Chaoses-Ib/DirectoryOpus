@@ -21,7 +21,7 @@ DOpus 没有直接提供恢复默认主题的功能，你可以：
 ![](https://resource.dopus.com/uploads/default/original/3X/2/1/21f950bcba04d58150411ed8bd05f696005e327e.png)
 - [Subtle light theme](https://resource.dopus.com/t/subtle-light-theme/40189)
 ![](https://resource.dopus.com/uploads/default/original/3X/2/c/2cfa506ecca871dca89f33c49dd1bfd5613ff50b.jpeg)
-- [](https://resource.dopus.com/t/ecru-light-theme-one-of-very-few-here/40604)
+- [Ecru light theme](https://resource.dopus.com/t/ecru-light-theme-one-of-very-few-here/40604)
 ![](https://resource.dopus.com/uploads/default/original/3X/a/f/af6ff701797dd06043f86480b082f051f63c2e13.jpeg)
 - [Pickerel Explorer - revised](https://resource.dopus.com/t/pickerel-explorer-revised/40263)
 ![](https://resource.dopus.com/uploads/default/original/3X/3/2/329502b9519ef6fe7ead4d04a3469b7cdc2951c0.png)
