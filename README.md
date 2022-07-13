@@ -2,7 +2,7 @@
 [Directory Opus](https://www.gpsoft.com.au/) 是 GPSoftware 所开发的一款 Windows 文件管理器，主要特点是上手简单、系统集成度高和功能强大。
 
 - [目录](SUMMARY.md)
-- 镜像：[看云](https://www.kancloud.cn/chaoses/directory-opus/content)（更新不同步）
+- 镜像：[看云](https://www.kancloud.cn/chaoses/directory-opus/content)（更新不同步）、[FastGit](https://hub.fastgit.xyz/Chaoses-Ib/DirectoryOpus)
 
 ## 为什么要使用第三方文件管理器？
 文件系统是目前使用最为广泛的数据组织形式，文件管理器是在 GUI（图形用户界面）下对这一系统的主要管理工具。如果你对使用文件系统进行数据组织有较强的依赖，文件管理器的好坏会在一定程度上影响你的工作效率。而 Windows 的官方文件管理器，即 Windows 文件资源管理器（Windows File Explorer）在功能性上并不出色，相比大部分第三方文件管理器都有所欠缺。因此，如果你需要提高自己的文件管理效率，使用第三方文件管理器是一种不错的方法。
