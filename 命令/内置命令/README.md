@@ -12,7 +12,7 @@ Delete | <ul><li>删除文件</li><li>清空回收站</li></ul>
 FileType | <ul><li>打开文件类型编辑器</li><li>调用文件类型命令、事件</li><li>显示上下文菜单</li><li>新建文件</li></ul>
 Find | <ul><li>搜索文件</li></ul>
 GetSizes | <ul><li>计算文件夹尺寸</li><li>计算文件校验码</li></ul>
-[Go](Go.md) | <ul><li>[跳转](Go.md#跳转)、刷新</li><li>新建、移动、[关闭](Go.md#关闭文件夹标签)文件夹标签</li><li>新建文件窗口、加载窗口布局</li><li>显示历史列表</li><li>显示驱动器列表</li><li>更改文件列表视图</li><li>折叠、展开文件列表分组</li><li>设置文件夹标签颜色</li><li>映射网络驱动器</li><li>打开 FTP 连接窗口、发送 FTP 命令</li></ul>
+[Go](Go.md) | <ul><li>[跳转](Go.md#跳转)、刷新</li><li>新建、移动、[关闭](Go.md#关闭文件夹标签)文件夹标签</li><li>新建文件窗口、加载窗口布局</li><li>显示历史列表</li><li>显示驱动器列表</li><li>更改文件列表视图</li><li>折叠、展开文件列表分组</li><li>[设置文件夹标签颜色](Go.md#设置文件夹标签颜色)</li><li>映射网络驱动器</li><li>打开 FTP 连接窗口、发送 FTP 命令</li></ul>
 Help | <ul><li>显示帮助</li><li>显示授权管理器</li><li>打开发送邮件窗口</li></ul>
 Image | <ul><li>转换图片格式、调整图片大小、旋转图片</li><li>上传、同步图片</li></ul>
 Join | <ul><li>合并文件</li></ul>

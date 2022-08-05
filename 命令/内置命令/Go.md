@@ -43,3 +43,18 @@ Go TABCLOSEALL
 ```cmd
 Go TABUNDOCLOSE
 ```
+
+## 设置文件夹标签颜色
+设置 RGB 颜色：
+```cmd
+Go TABCOLOR #ff8000
+```
+或
+```cmd
+Go TABCOLOR 255,128,0
+```
+
+重置颜色：
+```
+Go TABCOLOR=reset
+```
