@@ -1,5 +1,10 @@
-# Directory Opus
-[Directory Opus](https://www.gpsoft.com.au/) 是 GPSoftware 所开发的一款 Windows 文件管理器，主要特点是上手简单、系统集成度高和功能强大。
+<h1 align="center">
+  <a href="https://www.gpsoft.com.au/"><img src="images/Logo-128.png" alt="logo"></a>
+  <br />
+  Directory Opus
+</h1>
+
+<p align="center">由 <a href="https://www.gpsoft.com.au/">GPSoftware</a> 开发的一款上手简单、系统集成度高、功能强大的 Windows 文件管理器</p>
 
 - [目录](SUMMARY.md)
 - 镜像：[看云](https://www.kancloud.cn/chaoses/directory-opus/content)（更新不同步）、[FastGit](https://hub.fastgit.xyz/Chaoses-Ib/DirectoryOpus)
