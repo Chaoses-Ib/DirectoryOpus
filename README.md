@@ -99,3 +99,8 @@ DOpus 中的大部分用户操作都是通过命令实现的，包括大部分�
   请尽量在讨论区中提问，便于帮助遇到了同样问题的人。
 - [Telegram 群组](https://t.me/IbDirectoryOpusGroup)
 - [QQ 群](https://jq.qq.com/?_wv=1027&k=8iTFF5J8)（313295509）
+
+### 英文资源
+- [帮助手册](https://www.gpsoft.com.au/help/opus12/index.html)  
+  也可在 DOpus 中按 F1 打开本地帮助（默认为本地网页，如有需要可在 `配置/杂项/高级/行为/help_interface` 处更改为 CHM）。
+- [官方论坛](https://resource.dopus.com/)
