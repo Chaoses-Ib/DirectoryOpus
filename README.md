@@ -94,6 +94,29 @@ DOpus 中的大部分用户操作都是通过命令实现的，包括大部分�
 除了命令外，你也可以通过脚本（主要为 JScript 和 VBScript）来实现更为复杂的功能，或者也可以通过脚本来定义自己的命令，扩展命令的功能。
 
 ## 其它
+### 授权
+你可以直接[下载 DOpus ](https://www.gpsoft.com.au/DScripts/download.asp)开始试用，默认试用期为 30 天，如有需要可以[申请延长到 60 天](https://www.gpsoft.com.au/DScripts/evalrequest.asp)。
+
+<details><summary>版本比较</summary>
+
+![](images/授权.png)
+</details>
+
+购买渠道 | 标准版（Light） | 加强版 | 专业版（Pro）
+--- | --- | --- | ---
+[官网](https://www.gpsoft.com.au/order_intro.html) | 49 AUD（~230元） |  | 1+1[^machine-laptop]：89 AUD（~417元）<br />2+1：129 AUD（~605元）<br />5+1：249 AUD（~1167元）
+[玩软件吧](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-14887027580.12.593f2e5anbkZzB&id=556078594244) | 159元 | 169元 | 1+1：239元
+[子清](https://item.taobao.com/item.htm?spm=3158k.1.14.53.1716a203WEQMi3&id=669769551074&ns=1&abbucket=3#detail) | | 185元 | 1+1：255元
+[软购](https://apsgo.com/store/product/directory-opus?id=2&uap=110) | 178元 | | 1+1：258元
+[数码荔枝](https://store.lizhi.io/site/products/id/135?cid=8zudy2ei) | 179元 | | 1+1：259元
+[奇睿天软](https://directory-opus.com/) | 188元 | | 1+1：258元
+
+注意，中国经销商出售的都是中文版授权，只能使用中文语言，不能使用英文等其它语言。
+
+这里不会列出 DOpus 的破解版，如果你确有需要，可以自行加入群组进行获取。
+
+[^machine-laptop]: 一台计算机 + 一台笔记本
+
 ### 讨论
 - [讨论区](https://github.com/Chaoses-Ib/DirectoryOpus/discussions)  
   请尽量在讨论区中提问，便于帮助遇到了同样问题的人。
