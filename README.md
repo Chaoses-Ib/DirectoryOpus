@@ -95,6 +95,8 @@ DOpus 中的大部分用户操作都是通过命令实现的，包括大部分�
 
 ## 其它
 ### 授权
+DOpus 采用大版本买断式授权，购买授权后可永久在一定数目的机器上使用相同大版本的 DOpus。若要使用新的大版本则需要购买升级授权，相较全新购买会有一定优惠，购买日期离新大版本推出足够短的用户也可以免费升级。
+
 你可以直接[下载 DOpus ](https://www.gpsoft.com.au/DScripts/download.asp)开始试用，默认试用期为 30 天，如有需要可以[申请延长到 60 天](https://www.gpsoft.com.au/DScripts/evalrequest.asp)。
 
 <details><summary>版本比较</summary>
