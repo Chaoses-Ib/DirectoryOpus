@@ -14,6 +14,39 @@ Go "{clip}"
 ```
 只能用于纯文本路径，不能用于文件对象。
 
+### 跳转到真实路径
+```cmd
+Go OPENCONTAINER=target
+```
+
+<details>
+
+- OPENCONTAINER：文件集合、库、平面视图
+  ```cmd
+  Go OPENCONTAINER
+  ```
+- OPENCONTAINER：文件集合、库、平面视图、快捷方式、符号链接、junction
+  ```cmd
+  Go OPENCONTAINER=target
+  ```
+- {filepath}  
+  ```cmd
+  @set a={filepath}
+  Go {$a}
+  ```
+  如果不将 `{filepath}` 设置到变量，路径就不会被展开为真实路径。
+
+  另一种展开方法是：
+  ```cmd
+  dopusrt.exe /open {filepath}
+  ```
+- 打开文件所在的位置  
+  ```cmd
+  ContextMenu VERB="opencontaining" LOOKUP
+  ```
+  只能在新窗口打开。
+</details>
+
 ## 关闭文件夹标签
 ### 关闭单个标签
 ```cmd
