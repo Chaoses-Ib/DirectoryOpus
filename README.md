@@ -106,10 +106,10 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 
 购买渠道 | 标准版（Light） | 加强版 | 专业版（Pro）
 --- | --- | --- | ---
-[官网](https://www.gpsoft.com.au/order_intro.html) | 49 AUD（~230元） |  | 1+1[^machine-laptop]：89 AUD（~417元）<br />2+1：129 AUD（~605元）<br />5+1：249 AUD（~1167元）
+[官网](https://www.gpsoft.com.au/order_intro.html) | 49 AUD（~230元）<br />黑五：24 AUD（~114元） |  | 1+1[^machine-laptop]：89 AUD（~417元）<br />2+1：129 AUD（~605元）<br />5+1：249 AUD（~1167元）<br />黑五：<ul><li>1+1：**53.4 AUD（~253元）**</li><li>2+1：77.4 AUD（~366元）</li><li>5+1：149.4 AUD（~707元）</li><li>优惠码 BF2022NOV</li></ul>
 [玩软件吧](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-14887027580.12.593f2e5anbkZzB&id=556078594244) | 159元 | **169元** | 1+1：**239元**
 [子清](https://item.taobao.com/item.htm?spm=3158k.1.14.53.1716a203WEQMi3&id=669769551074&ns=1&abbucket=3#detail) | | 185元 | 1+1：255元
-[软购](https://apsgo.cn/tsARL0) | 178元<br />双十一：124.6元 | | 1+1：258元<br />双十一：**180.6元**
+[软购](https://apsgo.cn/tsARL0) | 178元<br />双十一：124.6元<br />黑五：158元 | | 1+1：258元<br />双十一：**180.6元**<br />黑五：**198元**
 [数码荔枝](https://store.lizhi.io/site/products/id/135?cid=8zudy2ei) | 179元<br />双十一：134.25元 | | 1+1：259元<br />双十一：194.25元
 [奇睿天软](https://directory-opus.com/) | 188元 | | 1+1：258元
 
