@@ -37,4 +37,6 @@
         - [Set](命令/内置命令/Set.md)
         - [SetAttr](命令/内置命令/SetAttr.md)
     - [用户命令](命令/用户命令/README.md)
+- 脚本
+  - [变量](脚本/变量.md)
 - [配置](配置/README.md)
