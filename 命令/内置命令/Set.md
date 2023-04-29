@@ -11,3 +11,10 @@ Set ADMIN=开关[,超时]
 ```cmd
 Set ADMIN=toggle,0
 ```
+
+## 设置文件列表属性
+### 分组
+切换按标记分组：
+```cmd
+Set GROUPBY=label,toggle
+```
