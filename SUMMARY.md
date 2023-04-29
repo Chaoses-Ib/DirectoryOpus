@@ -34,6 +34,7 @@
         - [Favorites](命令/内置命令/Favorites.md)
         - [Go](命令/内置命令/Go.md)
         - [Properties](命令/内置命令/Properties.md)
+        - [Select](命令/内置命令/Select.md)
         - [Set](命令/内置命令/Set.md)
         - [SetAttr](命令/内置命令/SetAttr.md)
     - [用户命令](命令/用户命令/README.md)

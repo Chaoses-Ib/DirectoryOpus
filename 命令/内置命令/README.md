@@ -23,7 +23,7 @@ Print | <ul><li>打印文件</li><li>打印、保存文件列表</li></ul>
 [Properties](Properties.md) | <ul><li>显示文件属性</li><li>打开文件夹选项窗口</li><li>显示文件夹格式列表</li><li>[标记文件](Properties.md#标记文件)</li><li>将图片设为壁纸</li></ul>
 Recent | <ul><li>显示、清除最近文件夹列表</li></ul>
 Rename | <ul><li>重命名文件</li></ul>
-Select | <ul><li>选择文件</li><li>显示、隐藏文件</li></ul>
+Select | <ul><li>[选择文件](Select.md#选择文件)</li><li>显示、隐藏文件</li></ul>
 [Set](Set.md) | <ul><li>设置文件窗口属性</li><li>设置文件列表属性</li><li>[打开、关闭管理员模式](Set.md#打开关闭管理员模式)</li></ul>
 [SetAttr](SetAttr.md) | <ul><li>[设置文件属性](SetAttr.md)</li></ul>
 Show | <ul><li>展示文件</li><li>调整缩略图尺寸</li><li>启用、禁用查看器插件</li></ul>
