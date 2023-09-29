@@ -7,7 +7,8 @@ Go PATH=跳转路径
 
 当跳转路径内含有空格时，需要在两边添加双引号。
 
-例子：  
+例子：
+
 跳转到剪切板中的路径（目录或文件）：
 ```cmd
 Go "{clip}"
@@ -29,7 +30,8 @@ Go OPENCONTAINER=target
   ```cmd
   Go OPENCONTAINER=target
   ```
-- {filepath}  
+- {filepath}
+
   ```cmd
   @set a={filepath}
   Go {$a}
@@ -40,7 +42,8 @@ Go OPENCONTAINER=target
   ```cmd
   dopusrt.exe /open {filepath}
   ```
-- 打开文件所在的位置  
+- 打开文件所在的位置
+
   ```cmd
   ContextMenu VERB="opencontaining" LOOKUP
   ```
@@ -54,7 +57,8 @@ Go TABCLOSE=文件列表
 ```
 默认为当前文件列表，`left` 为左栏，`right` 为右栏，`dest` 为目标文件列表。
 
-例子：  
+例子：
+
 关闭当前标签：
 ```cmd
 Go TABCLOSE
@@ -66,7 +70,8 @@ Go TABCLOSEALL=标签范围
 ```
 默认为当前文件列表中的所有其它标签，`left` 为左侧所有标签，`right` 为右侧所有标签，`dest` 为目标文件列表的所有标签，`force` 为强制关闭锁定标签；可组合使用。
 
-例子：  
+例子：
+
 关闭当前文件列表中的所有其它标签：
 ```cmd
 Go TABCLOSEALL
