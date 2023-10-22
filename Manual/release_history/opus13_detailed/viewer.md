@@ -1,0 +1,78 @@
+##### Directory Opus 13 - Detailed release notes
+
+# Viewer
+
+- Lister-Linked viewers:
+  - New mode for the viewer which acts like a detached viewer pane.
+  - Hybrid of standalone viewer and viewer pane. A standalone window you can move, or make fullscreen on another monitor, which tracks the file selection in the lister that opened it.
+  - To open a Lister-Linked viewer:
+    - (Note: You may need to update or reset your toolbars to get new functionality.)
+    - Right-click the Viewer Pane button, near the top-right of the Lister.
+    - Alternatively, Slideshow \> Open Linked Viewer does the same thing.
+  - Viewer toolbar has "Link to Lister" button to toggle linkage, if it was opened via a Lister.
+  - Viewers opened normally can be linked after the fact, provided the Lister they came from is still around.
+  - If "reuse existing viewer window" is on, sending new files to a viewer from another lister will cause the viewer to link to the new Lister and unlink from the old one.
+  - Lister-Linked viewers remember their positions separately to normal ones, and have separate options in Preferences for how they resize:
+    - Allows you to make them fullscreen on a second monitor without affecting your normal viewers.
+    - Window position and resize settings are determined by the viewer's state when it opens. Linking or unlinking a viewer after it opens does not change which settings it uses.
+  - Added "Link both ways" option to Viewer Preferences (on by default):
+    - Keeps Lister and viewer in sync, in both directions.
+    - When on, changing pictures in a Lister-Linked viewer will make the Lister select the new file and scroll it into view.
+    - Similar to the old Viewer Select script.
+- Image viewer:
+  - (Note: You may need to update or reset your Image Viewer toolbar and context menus to get new functionality.)
+  - View \> Background Color sub-menu adds items to quickly switch the background to black or white.
+    - You can also use the `Shift+W` and `Shift+B` hotkeys as toggles for both options.
+    - Alternatively, push `F3` to alternate between black and white backgrounds.
+    - Useful when viewing images which use transparency, where some detail may only be visible on a dark or light background.
+    - The viewer pane's context menu has similar options.
+  - File \> Locate Image sub-menu, with options to find an image's GPS coordinates via various online mapping services. (Editable via image_locate_services in Advanced settings.)
+  - Added basic support for viewing DDS (DirectDraw Surface) images, via WIC plugin.
+  - Added basic support for viewing AVIF (AV1 Image) images, via WIC plugin:
+    - Requires free AV1 codec from Microsoft Store.
+    - Open an AVIF image in the Windows Photos app and it will link you to the appropriate codec if one is needed.
+  - Added menu item to toggle frames around images without going into Preferences.
+  - Added commands to jump the viewer to another monitor:
+    - On the right of the toolbar, only visible when fullscreen. (When fullscreen, click at the top to reveal the toolbar.)
+    - `Alt+←` and `Alt+→`, available at all times.
+  - While drag-selecting part of an image (for copy/crop), you can now hold Space to move the selection rectangle, adjusting its starting point.
+  - Added options to only center the viewer window for the first image, rather than every image.
+  - Context menu for marked images in the standalone viewer now includes option to open the containing folder.
+  - Commands:
+    - \`Show LISTERLINK\`
+    - \`Show VIEWERCMD=listerlink\`
+    - \`Show VIEWERCMD=frame\`
+    - \`Show VIEWERCMD=monitornext\` and \`Show VIEWERCMD=monitorprev\`
+    - \`Show VIEWERCMD=backcol,#RRGGBB\` and similar for Show VIEWPANECMD. Omit color to reset to Preferences color.
+    - \`Show VIEWERCMD=delete,noadvance\` -- Like existing delete command, but does not move on to the next image.
+    - \`Show VIEWERCMD=delete,close\` -- Like existing delete command, but closes the viewer, even if there are more images.
+    - \`Image LOCATE=menu\` -- Within the viewer, displays a menu of GPS mapping services. Hidden if the current file has no GPS data.
+    - \`Image LOCATE=menu,nohide\` -- When the viewer's file has no GPS data, this disables the menu items instead of hiding them.
+    - Running the Show command on a shortcut to a directory now works the same as on real directories; any images inside the directory are added to the viewer's file list.
+- Web / HTML:
+  - Microsoft Edge (Chromium) is now supported in the viewer pane.
+  - By default, Edge is used for HTML, MHT, SVG, and URL files.
+  - Edge will also be used for PDF documents if no PDF preview handler is installed, and WebP images if the separate WebP plugin is disabled.
+  - Internet Explorer is now disabled by default within the viewer pane. Can be re-enable via Preferences / Viewer / Plugins, select MetaPlugin, click Configure, then turn on "Internet Explorer 32-bit".
+- Video & Audio:
+  - New "Video & Audio" plugin replaces the old "Movie" plugin.
+  - Supports newer APIs and codec types. Most videos should play on current Windows versions without extra codecs.
+  - Can still fall back on DirectShow, which remains important for more esoteric codecs.
+  - Can play audio files in the preview pane, showing cover art if it's available.
+  - Can go fullscreen from the preview pane, as well as the standalone viewer.
+  - Options for auto-play and auto-mute.
+  - Mouse buttons and wheel can be configured to seek, pause, fullscreen, etc.
+  - Provides metadata via MediaInfo; discussed in detail elsewhere.
+- Miscellaneous:
+  - Text and TextThumbs plugins now assume UTF-8 by default without requiring a BOM at the start of the file.
+  - The hex viewer now supports selecting a range of the file data and copying it to the clipboard.
+  - Added "Leave file in viewer until another is selected" for Viewer Pane. On by default. If turned off, deselecting the displayed file, or switching from source to destination, will clear the viewer pane.
+  - Renamed "ActiveX + Preview + Office + Web" plugin to "MetaPlugin".
+  - Improved MetaPlugin UI. Made it easier to change which extensions go to which viewers.
+  - Commands:
+    - \`Show VIEWERCMD=slideshow,on\` -- Can turn slideshow mode on or off explicitly, without having to test the current mode. (Without "on" or "off", acts as a toggle, as before.)
+    - \`Set FOCUS=ViewPane\` -- Gives keyboard focus to the viewer pane.
+
+------------------------------------------------------------------------
+
+Next: [Image Converter](/Manual/release_history/opus13_detailed/image_convert.md)

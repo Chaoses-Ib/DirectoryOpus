@@ -1,0 +1,76 @@
+##### Directory Opus 13 - Detailed release notes
+
+# Default Toolbars & Menus
+
+- General:
+  - The Customize dialog's Default Toolbars tab (discussed above) provides a way to highlight new commands. (See [Customize](/Manual/customize/RAEDME.md).)
+  - If you have custom toolbars and don't want to reset them, you can drag individual items out of the Default Toolbars tab.
+- Middle-click to open in a new tab:
+  - Most buttons which go to folders now support middle-click to open in a new tab.
+  - If a tab for the folder already exists, it will be activated instead of opening a new tab, unless it is already the active tab, in which case a second tab for it will open.
+  - Similarly, right-click opens a context menu for the target folder.
+  - This functionality automatically applies to any simple button which runs (or generates) a command to go to a specific path.
+  - Includes the Up (Parent), Back and Forward buttons.
+  - Includes Favorites, Recent, Drive Buttons, and menus generated via "Go FOLDERCONTENTS".
+  - Does not include commands that use conflicting arguments like MULTIFUNC, NEW, NEWTAB, etc.
+  - Does not include "three-Buttons", which have explicit middle-click or right-click actions.
+- "Menu" toolbar:
+  - Edit \> Copy Other \> Checksums -- Now a submenu, and includes the BLAKE3 algorithm.
+  - Edit \> Calculate BLAKE3 Checksums -- Calculates and shows BLAKE3 hashes in the file display.
+  - Edit \> Select Other \> Select Empty Folders.
+  - Edit \> Select Other \> Select Zero-Byte Folders.
+  - Edit \> Select Other \> Select Expanded Folder Items -- After expanding one or more folders, use this to select everything below them. (See Expandable Folders under [File Display](file_display.md).)
+  - Edit \> Select Other \> Select Duplicates -- The same as the [Duplicate Files](duplicates.md) "Select" button. Useful if the panel is hidden.
+  - Tools \> Find Presets -- A list of your Find presets, plus commands to find empty folders in or below the current directory.
+  - Settings \> Toolbars \> Choose Location Bar Toolbars -- Shortcut to the corresponding Preferences page.
+  - Settings \> Scripts -- Opens dialog for managing scripts. The new [Script IDE](script_ide.md) can be opened from there.
+  - Settings \> Install Script -- Easier way to install scripts (e.g. from the forum).
+  - Settings \> Set Lister Defaults -- New name for "Set Default Lister", with extended functionality. (Old command still works.)
+  - Settings \> Dark Mode -- Toggles between dark and light modes.
+  - View \> Details + Thumbnails (and similar top-level icon):
+    - Now disabled in Shell folders where it won't work.
+    - Default button code updated to scale thumbnail size with DPI.
+  - Folder \> Folder Format -- Used to be named "Folder Options".
+  - Folder \> Expandable Folders -- Toggles the ability to use Expandable Folders. Turning them off saves a little space.
+  - Folder \> Expand/Collapse All Folders -- Expands all folders immediately below the current directory. Collapses them if they're all already expanded.
+  - Folder \> Friendly Dates -- Allows you to turn friendly dates ("Today", "Monday", etc.) on and off without opening Preferences.
+  - Folder \> Full-Row Selection -- Now toggles between full-row and full-width-of-name-column selection modes.
+  - Lister \> Favorites Bar -- Toggles the new Favorites Bar. Ctrl+Shift+B hotkey.
+  - Viewer Pane -- Button now has a right-click action which opens a Lister-Linked viewer. (See [Viewer](viewer.md).)
+- Operations toolbar:
+  - Copy Files \> Duplicate to Dated Names -- Similar to "Duplicate", but automatically appends the current date and time to the new copies, without prompting.
+  - Copy Files \> Copy Settings -- Shortcut to the corresponding Preferences page.
+  - New Folder \> Move to New Folder -- Prompts for a name and moves all selected items into a new sub-folder.
+  - New Folder \> Move to Dated Folder -- Moves all selected items into a new sub-folder with YYYY-MM-DD HH-MM-SS name for natural sorting. (Not technically new, but in a new place.)
+  - Delete \> Empty Recycle Bin -- Empties the Recycle Bin.
+  - Delete \> Secure Empty Recycle Bin -- Does a multi-pass "secure" erase of the Recycle Bin.
+  - Delete \> Enable Recycle Bin -- Toggles whether the Recycle Bin is used within Opus.
+  - Delete \> Enable Recycle Confirmation -- Toggles confirmation prompts when deleting to the Recycle Bin.
+  - Delete \> Delete Settings -- Shortcut to the corresponding Preferences page.
+  - Slideshow \> Open Linked Viewer -- Alternative way to open a Lister-Linked viewer.
+  - Help \> Video Tutorials -- Links to the Directory Opus YouTube channel.
+  - Help \> Submit Crash Logs -- Lets you send crash logs for problem reports.
+- "Favorites Bar" toolbar:
+  - Entirely new toolbar listing favorites, similar to the Bookmarks Bar in most web browsers.
+  - Folders can be dragged to the toolbar, without having to enter Customize mode first.
+  - Sub-menus for other favorites and Quick Access locations, including drive letters and special folders like Recycle Bin.
+- "File Display" toolbar:
+  - When the Favorites Bar is on, the File Display toolbar's Favorites icon/menu is hidden. It will reappear automatically if the Favorites Bar is then turned off.
+  - Home button (see [Location Bar](location_bar.md) for details).
+- "Viewer" toolbar:
+  - File \> Link to Lister Selection -- Toggles the viewer's Lister-Linked state. (See [Viewer](viewer.md).)
+  - File \> Locate Image -- Menu of online GPS mapping services.
+  - View \> Background Color -- Menu for changing the viewer's background. Useful for images with transparency.
+  - View \> Picture Frame -- Toggle the viewer's picture frame, without going to Preferences.
+  - View \> Previous Monitor -- Move the viewer to the previous display.
+  - View \> Next Monitor -- Move the viewer to the next display.
+  - The top-level Next and Previous buttons have updated commands which mark the current picture first if pushed with `Ctrl`.
+  - There are also new top-level buttons to toggle Lister-Linked, and (if fullscreen) move to other monitors.
+- Context menus:
+  - Context menus that contain "Open Containing Folder" now include a second "...in New Tab" option. (Removed unnecessary "open container in tabs" setting.)
+  - The "Column Header" context menu has several changes to support new grouping and column-freezing functionality. We recommend resetting your copy to the defaults if they are missing.
+  - "Folder Tabs" context menu is new. This used to be a hardcoded menu and can now be edited.
+
+------------------------------------------------------------------------
+
+Next: [Script IDE](/Manual/release_history/opus13_detailed/script_ide.md)

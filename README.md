@@ -137,7 +137,7 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 - [QQ 群](https://jq.qq.com/?_wv=1027&k=8iTFF5J8)（313295509）
 
 ### 英文资源
-- [帮助手册](https://www.gpsoft.com.au/help/opus12/index.html)
+- [帮助手册](https://docs.dopus.com/)
 
   也可在 DOpus 中按 F1 打开本地帮助（默认为本地网页，如有需要可在 `配置/杂项/高级/行为/help_interface` 处更改为 CHM）。
 - [官方论坛](https://resource.dopus.com/)

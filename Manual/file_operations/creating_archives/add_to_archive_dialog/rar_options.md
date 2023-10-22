@@ -1,0 +1,15 @@
+# RAR Options
+
+When using the **[Add to Archive](/Manual/file_operations/creating_archives/add_to_archive_dialog/RAEDME.md)** dialog to add files to a RAR archive, the following options are available:
+
+- **Compression level**: This lets you set the compression level used when adding the files to the archive. There are six compression levels available, ranging from *Store* (which does no compression at all and so is the fastest) to *Best* (which produces the highest level of compression but takes longer to archive).
+- **Solid compression**: This option enables [solid compression](http://en.wikipedia.org/wiki/Solid_compression), which can improve compression when storing multiple similar files. Compressing in solid mode imposes some restrictions on accessing the archive. You may find it takes a long time to view or extract individual files within solid archives because the data before the file you requested may need to be decompressed first. Features such as thumbnails are generally disabled within solid archives.
+- **Password**: If you want to encrypt the files you are adding to the archive, enter a password here. If the **Mask password** option is on, the password you enter here will be hidden - and so for security you must enter the password again in the **Verify password** field. If you leave the **Password** field empty no encryption will be performed.
+- **Verify password**: If you have entered a password in the **Password** field you need to enter the same password here as a confirmation (unless **Mask password** is turned off).
+- **Mask password**: If this option is on the passwords you enter to encrypt the files you are adding will be masked (not displayed).
+- **Encrypt file names**: As well as encrypting the file data stored in the archive, this option will encrypt the file headers - so that the names of the files in the archive are also encrypted.
+- **Send passwords to WinRAR via command-line**: When Opus invokes WinRAR (see note below) this option allows Opus to pass it the password you entered above on the command line. This is more convenient - the alternative is for WinRAR to prompt you for a password itself - but it may be less secure, as the password you enter is visible in Task Manager for the duration of the operation.
+- **Use multiple threads**: If this option is on then Opus will use multiple threads when adding to the archive - on a multi-CPU machine this should make the compression process quicker.
+- **Store full file timestamps**: This option causes the full timestamp (created, last modified and last accessed) of the files to be stored in the archive.
+
+While Opus can read and decompress RAR archives by itself, creation and modification of RAR archives requires you to have [WinRAR](http://www.rarlab.com) installed on your system. This is because RAR compression is a proprietary system that has not been released by its creators for other developers to use and Opus is only able to add files to RAR archives by invoking WinRAR in the background.

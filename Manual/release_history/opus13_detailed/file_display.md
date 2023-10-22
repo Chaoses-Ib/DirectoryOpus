@@ -1,0 +1,71 @@
+##### Directory Opus 13 - Detailed release notes
+
+# File Display
+
+- Expandable folders:
+  - (Configured via Preferences / File Displays / Folder Expansion.)
+  - Expandable folders allow you to expand one or more folders to look inside them within the main file display, like a folder tree with files.
+  - Similar to Flat View, but instead of expanding everything at once, individual folders can be expanded or collapsed as needed.
+  - In Details and Power modes, indentation is used to indicate nesting, as with a tree.
+  - In other modes like Thumbnails, a configurable background color is used to indicate nested items, with the color intensity changing the deeper something is.
+  - Clickable expanders can be show all times, or hidden until expansion is triggered via a button/hotkey/etc.
+  - Default hotkeys are Alt + Down to expand and Alt + Up to collapse.
+  - Optionally, expansion can happen when dragging over a sub-folder.
+  - [Default toolbars](default_toolbars.md) include commands to expand/collapse all folders at once, and to select everything below all currently expanded folders.
+  - Context menu items added to the "Flat View Item" [File Type](file_types.md) also appear for files nested within expanded folders. (Allows special commands, e.g. navigating to parent folder, copying with or without recreating the parent hierarchy, moving up a level, etc.)
+- Paired folders:
+  - (Configured via Preferences / Frequently Used Paths / Paired Folders.)
+  - Paired Folders is a new concept which lets you associate two paths together, usually with the aim of working on them side-by-side.
+  - Pairs can be defined as two absolute paths, or using regular expressions. Pairs can optionally match other folders below the specified pair, or only apply to a single level.
+  - Pairs will often (but not always) be used in conjunction with Navigation Lock. (When Navigation Lock is on, going into a sub-folder on one side will attempt to go into the same folder on the other side automatically. Going up a level will go up on both sides at once.)
+  - If you are in single-display window, and the current folder is part of a pair, the Navigation Lock icon will now be enabled, and clicking it will open the other folder in the dual file display, with Navigation Lock on.
+  - You can also configure a folder pair so that any method of opening the dual file display will divert the second display to the other half of the pair, instead of the usual initial folder. Optionally, Navigation Lock can be turned on automatically as well.
+  - It's also possible to configure Opus to automatically open the dual file display just from entering a paired folder. So, if you always need to view both folders at once when viewing either, you can make that happen by simply navigating to one of the folders.
+  - Pairs built using regular expressions allow you to find and replace parts of one path to make the other. For example, if you have various "Production" and "Staging" folder hierarchies in different places, you can set up a single rule that lets you display \*\Staging\\ on one side if \*\Production\\ is on the other.
+  - Pairs can also be used with the Synchronize tool, so it automatically chooses one folder when used on another.
+- Mouse:
+  - Middle-clicking the column header now scrolls to the top of the file display (or bottom, if already at the top). Lets you quickly change sort order and jump to the top by clicking with the left and then middle buttons, without moving the mouse.
+  - New option, "Single click over icon only (normal behavior on labels)". Lets you open a file with a single click on its icon while still being able to select it normally by clicking its label.
+  - New option, "Alt-click to select without opening". Lets you hold Alt override single-click mode and select files normally.
+  - Extended folder background click events. Clicks on the background with the left or middle mouse buttons can be bound to different events depending on which qualifiers (none, Alt, Shift, Ctrl) are down.
+  - Toggling of file selections via the middle button (similar to left-clicking with Ctrl down) is now optional.
+  - The option to trigger File Type middle-button double-click events with a single click is now independent of the similar option for background events.
+  - Clicks and double-clicks on files now work in situations where a tooltip has appeared under the mouse pointer (usually near the bottom of the screen).
+  - In Details mode, you can now start a lasso selection by clicking an unselected file with Ctrl down. Makes lassoing easier with full-row selection. This can also be turned off, or assigned to a different key. (Note: Doing the same on a selected file still initiates drag and drop.)
+  - The drag distance and double-click distance are now configurable. Setting drag distance to 0 effectively disables drag and drop. These distances now scale with DPI, which was overlooked by the operating system.
+  - Power Mode's range-selection key no longer affects mouse buttons set to Auto-Deselect. (That modes has always used the Shift key for range selection, which has not changed, and configuring different keys for it did not work correctly.)
+  - Power Mode's "Auto-Deselect" and new "Context Menu (Auto-Deselect)" button modes now give consistency with the respective left and right mouse buttons in Details mode. In particular, Auto-Deselect will now deselect all other files if you click a file which is already selected. This gives you the ability to mimic the main aspects of Details mode on the left and/or right mouse buttons while overriding what happens for one of the other buttons.
+  - Power Mode's new "Set Focus (No Select)" button mode allows you to configure a mouse button to give the file display focus without changing file selections. Clicking and holding the button a second time triggers inline rename.
+  - Added new Power Mode option to enable delayed context menu in some button modes. (For example, a button can be set to select files, but if you hold it down for long enough it triggers the context menu instead.)
+  - Added option to disable hot-tracking of items under the mouse.
+- Miscellaneous:
+  - Errors reading folders are now displayed via banners inside the file display, rather than via popup dialogs that have to be dismissed. Allows you to edit the path or navigate somewhere else without the extra click. (Can be turned off in Preferences.)
+  - When Navigation Lock goes out of sync, the warning/instructions that appear over the file display can now be reduced to a less detailed version which doesn't get in the way as much.
+  - When a file display shows the Profile folder, any special folders (e.g. Documents) that have been moved elsewhere (and therefore aren't really under the profile directory) are added to the file display. This mimics what people are used to in File Explorer.
+  - If file extensions are hidden, inline-rename now (initially) hides them in all display modes. (Previously, this only happened in Details and Power modes.) While renaming, push the `Ctrl+E` hotkey to select the extension, revealing it if hidden.
+  - You can now choose whether grid lines stop at the last file or continue to the bottom of the window.
+  - List mode's column width is now independent, instead of tied to the Details/Power mode Name column width. (Folder Format dialog, Display tab.)
+  - If "Automatically select newly copied files" is on, its behavior is now suppressed by mouse activity in the file display. (For example, if you select a file yourself, files being copied in to the file display won't be selected automatically and mess up your selection.)
+  - Pasting image/text data into a folder now always selects and scrolls to the newly created file, even if "Automatically select newly copied files" is off.
+  - In Details and Power modes, when using a unified Thumbnail-and-Name column, the thumbnails (not just the names) now indent to indicate nested folders (via Flat View or the new expandable folders).
+- Commands:
+  - \`Go EXPANDBRANCH\` -- Expand or collapse folders. Optional parameters include:
+    - "toggle" -- Toggle each matching/selected item individually.
+    - "toggleall" -- Toggle all matching/selected items as a group. If any are not expanded, all will be expanded. If all are expanded, all will be collapsed.
+    - "wild" -- The Go command's PATH parameter is interpreted as a wildcard. Wildcard is tested against folder names only, not full paths.
+    - "regexp" -- Like "wild", but uses regular expressions. Matches in partial mode, so ^ and \$ must be used to explicitly match the name's start or end.
+    - "top" -- Restricts the command to expanding/collapsing items at the top level, ignoring nested items. (Applies when acting on wildcards/regexp or all selected items. Has no effect when specifying a single item via the PATH arg.)
+    - *Example 1:* \`Go PATH=\* EXPANDBRANCH=wild,toggleall,top\` -- Toggle all top-level items, as a group.
+    - *Example 2:* \`Go PATH="~(Hello)" EXPANDBRANCH=wild,toggleall,top\` -- The same, but ignoring folders named "Hello".
+  - \`Set EXPANDABLEFOLDERS\` -- Toggle the ability to expand folders. (Hiding the expanders saves a small amount of horizontal space.)
+  - \`{sourcepath}\` and similar codes now accept "pair" as a modifier to return a folder's pair (if one exists). E.g. \`{sourcepath\|pair}\`. Can combine with ".." etc. E.g. \`{sourcepath\|pair\|..}\` would return the pair's parent.
+  - Further modifiers let you choose what to do if the paired path doesn't exist on disk:
+    - \`{sourcepath\|pair\|pairgotoparent}\` keeps going up a level until it finds a folder that exists. Acts like "pairignorepair" if no parent is found.
+    - \`{sourcepath\|pair\|pairignorepair}\` ignores the pair if the folder doesn't exist, instead checking for other applicable pairs. (Useful with regex rules that might overlap each other.)
+    - \`{sourcepath\|pair\|pairuseanyway}\` returns the non-existent path as is. (Useful if the intent is to *create* the corresponding folder.)
+- Scripting:
+  - \`FSUtil.GetFolderPair\` lets scripts look up a path's pair, with arguments controlling what happens if it doesn't exist on disk. The returned object tells the script how the pair was configured in Preferences, as well as the path itself.
+
+------------------------------------------------------------------------
+
+Next: [thumbnails](/Manual/release_history/opus13_detailed/thumbnails.md)

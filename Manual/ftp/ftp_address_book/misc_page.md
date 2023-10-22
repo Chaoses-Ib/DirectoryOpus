@@ -1,0 +1,22 @@
+# Misc Page
+
+The **Misc** page lets you configure various server and connection-related settings for a site entry in the [FTP Address Book]().
+
+The **Server Commands** section has the following options:
+
+- **Use MLST**: This option specifies if Opus should attempt to use the new, more modern **MLST** command to retrieve directory listings. If the server doesn't support **MLST** it will fall back to the old **LIST** mechanism controlled by the options below.
+- **Use custom LIST command**:
+  - If this option is not enabled then Opus will attempt to determine the format of **LIST** command (used for retrieving the remote directory listing) based on the type of server it is connected to. If the remote server isn't recognized correctly, you can turn this option on and provide your own custom **LIST** command.
+  - If this option is enabled you can enter a custom **LIST** command that will be used to retrieve directory listings from the FTP server. The value you provide here is the full command that is sent to the FTP server, including any arguments. For example, **LIST -alF** is a very common list command, but you might use this to change to just **LIST** with no arguments if the server doesn't support the **-alF** mode.
+
+- **Use MDTM**: Some FTP servers support the **MDTM** command to change the timestamps on remote files. Opus uses this when copying files to the FTP server so that your original timestamps are preserved.
+  - This is a three-way checkbox - you can choose from **on**, **off** or **automatic** mode. When in automatic mode, Opus will only attempt to modify file dates on servers it recognizes, even if the server claims to support **MDTM**. Set this checkbox to the **on** state to force the use of **MDTM** on all server types.
+  - Although the FTP standard specifies that the **MDTM** command takes a timestamp specified in UTC, some FTP servers have misinterpreted the standard and expect the timestamp to be given in local time. The drop-down menu lets you change how Opus sends timestamps to the server. You can select *Automatic* to have Opus attempt to determine the format automatically, or you can choose from *UTC* or *local time*.
+
+- **Use FEAT**: This specifies whether the server supports the **FEAT** command, which is an FTP command that lets clients determine which other features a server supports. This is a three-way checkbox - you can choose from on (![](/Manual/images/media/feat_-_on.png)), off (![](/Manual/images/media/feat_-_off.png)) or automatic mode (![](/Manual/images/media/feat_-_auto.png)). When in this third state, Opus will attempt to automatically determine if the command is supported.
+- **Use RESUME**: This specifies whether the server supports the **RESUME** command, which is an FTP command that lets a previously started FTP file transfer be resumed from where it left off. This is also a three-way checkbox, with on, off and automatic settings.
+- **Use UTF8**: This specifies whether the server supports sending directory listings using UTF8 character-encoding. Historically FTP was always an ASCII-based protocol; directory listings only supported filenames that could be encoded using plain 7-bit (or sometimes 8-bit) ASCII, which meant support for non-Western alphabets was very limited or completely unavailable. UTF8 is an 8-bit encoding mechanism that allows the full Unicode character set to be used, which means filenames in languages like Chinese or Arabic are possible. This is also a three-way checkbox, with on, off and automatic settings.
+
+The **Transfer Mode** section lets you control how files are transferred to and from this FTP site. The FTP protocol allows files to be transferred either as **ASCII** (with the idea that they are plain text files - the FTP server will automatically convert line endings between LF and CR/LF depending on the computers involved in the transfer), or as **Binary** (files are transferred as-is, with no changes to the data). Normally you would want files transferred as **Binary**, but you can use this option to switch to **ASCII** mode, or also select **Automatic**.
+
+In automatic mode, Opus will switch modes automatically based on the file extension of the file being transferred. You can configure which file extensions are treated as ASCII in this mode from the **Misc** page for the [Default Settings](default_settings.md) entry. There you can configure a list of file extensions that will be recognised as plain-text files and transferred in ASCII mode.

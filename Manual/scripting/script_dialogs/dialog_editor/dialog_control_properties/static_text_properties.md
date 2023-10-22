@@ -1,0 +1,14 @@
+# Static Text Properties
+
+The specific properties applicable to the *Static Text* control are:
+
+- **Ellipsis**: This option configures the ellipsis (…) that will be displayed to indicate when the title string doesn’t fit completely in the control. The options are:
+  - **None**: No ellipsis will be displayed, text that doesn’t fit will be clipped. Selecting **None** also enables word wrapping (so text will wrap to additional lines before being clipped). You can also insert line breaks manually using the **\n** character sequence.
+  - **End**: If the end of a string does not fit in the rectangle, it is truncated and ellipses are added. If a word that is not at the end of the string goes beyond the limits of the rectangle, it is truncated without ellipses. Using this style will force the control’s text to be on one line with no word wrap.
+  - **Word**: Truncates any word that does not fit in the rectangle and adds ellipses. Using this style will force the control’s text to be on one line with no word wrap.
+  - **Path**: Replaces characters in the middle of the string with ellipses so that the result fits in the specified rectangle. If the string contains backslash (\\ characters this style preserves as much as possible of the text after the last backslash. Using this style will force the control’s text to be on one line with no word wrap.
+- **Edit Control**: The static control duplicates the text-displaying characteristics of a multiline edit control. Specifically, the average character width is calculated in the same manner as with an edit control, and the function does not display a partially visible last line.
+- **No Prefix**: When set to **True**, prevents interpretation of any ampersand (&) characters in the control's text as mnemonic prefix characters. These are displayed with the ampersand removed and the next character in the string underlined. This can be useful when filenames or other strings that may contain an ampersand (&) must be displayed in a static control in a dialog box.
+- **Image**: When set to **True** the control will display an image file instead of a text string. The value of the **Title** property will be used as the pathname of the image to display (so in your script, you can load a new image by changing the control's title). The image will be scaled to fit the control automatically.
+- **Report Clicks**: When set to **True** the control will report **click**, **dblclk** and **rclick** events when clicked with the mouse. When set to **False** the control will ignore mouse clicks completely.
+- **Drag Source**: When set to **True** the control will send a **drag** event when the user clicks on the control and drags with the mouse (to e.g. begin a drag and drop action).

@@ -1,0 +1,71 @@
+##### Directory Opus 13 - Detailed release notes
+
+# Folder Formats
+
+- Automatic formats:
+  - (Configured via Preferences / Folders / Folder Formats / Automatic Formats.)
+  - Makes this aspect of Opus similar to File Explorer, with changes saved implicitly, and folders remembering how you left them.
+  - When on, changes you make in a Lister that affect the Folder Format (view mode, columns, grouping, sorting, etc.) are automatically saved for the folder you are in.
+  - When off, changes must be saved explicitly, as before. If you find automatic formats messy, you can simply turn them off.
+  - You can freely mix automatic and explicit settings. If a path has an explicitly saved Folder Format, that will override any automatic one.
+  - By default, automatic formats for up to 100 folders are remembered. You can change the limit in Preferences.
+  - Automatic formats are kept in a separate list. Your curated Folder Format list won't be flooded with garbage!
+  - You can view the list of paths that have an automatic format saved in Preferences. A button there can clear the list.
+  - Right-clicking a path in the list gives options to forget it, or convert it to a permanent Folder Format.
+  - Automatic formats, if on, alter the Folder Format rules slightly: Editing one folder and then changing to another will load the format for the new folder, rather than make the edit "sticky".
+- Per-folder settings:
+  - Note: All settings within Folder Formats can be per-folder. This section is about settings which are *usually* globally defined but can be overridden on a per-folder basis.
+  - Folder Formats can turn on Checkbox Mode automatically for some or all folders.
+  - Folder Formats now include per-folder options for thumbnail size and thumbnail scaling mode.
+  - Folder Formats now include per-folder options for the file display font.
+  - Folder Formats now allow per-folder override of the "Sort newly created and copied files" option.
+  - Several per-folder settings which were part of Folder Formats have been moved out, allowing you to configure independent things more easily:
+    - Preferences / Folders / Folder Images: Per-folder background image and color. (The status bar's info icon now also tells you where per-folder backgrounds came from.)
+    - Preferences / Folders / Folder Sizes: Per-folder size calculation overrides.
+    - Preferences / Folder Tabs / Edge Colors: Per-folder tab accent colors.
+    - Preferences / Labels / Label Assignments / In Specific Folders: Per-folder labels (e.g. highlight files matching a wildcard, only in special folders).
+    - Preferences / Toolbars / Folder Toolbars: Per-folder toolbars.
+  - *Command:* \`Set SORTNEWFILES\` -- Changes whether new file are sorted in the current folder.
+  - Scripting:
+    - \`Format.sort_new_files\` property (values: "on", "off", "default").
+    - \`Format.checkboxes\` property.
+    - \`Format.thumb_size\` property.
+- Content Type formats:
+  - Folder Formats list in Preferences now displays the threshold (percentage of files that have to match) for each Content Type format.
+  - Clicking the threshold value opens a dialog for editing it, instead of it being hidden away in the Folder Formats dialog.
+  - Content Type formats are included in menus for manually changing formats, even when turned off:
+    - Lets you prevent *automatic* format changes while still being able to manually select it.
+    - The dialog for editing threshold also has an option to hide the format, if you never want to use it.
+- Columns and grouping:
+  - Auto-sized columns can now be given a minimum (as well as a maximum) size.
+  - When grouping by a column, groups can now be ordered by member count (groups with the most members will be shown first).
+  - Commands:
+    - \`Set COLUMNSADD\` and similar commands allow min to be specified (following max).
+    - \`Set GROUPORDER\` replaces \`Set GROUPREVERSE\` command (old command still works for compatibility).
+  - Scripting:
+    - \`Column.min\` property.
+    - \`Format.group_order\` property. (\`Format.group_reverse\` still works for compatibility.)
+- Filtering:
+  - Added format option to filter out reparse points (e.g. all junctions can be hidden).
+  - Hide/show wildcard patterns can now be multi-line, making it easier to list multiple filenames or specify multiple wildcards without having to combine them into a single pattern.
+  - Similarly, the global wildcards, under Preferences / Filtering and Sorting / Global Filters, are now also multi-line.
+- Flat View:
+  - If the Format Lock is on when turning on Flat View, the lock will now respected and the Flat View folder format will not be applied.
+  - Exception: If the Synchronize Tool turns on Flat View implicitly, the format lock won't prevent the Flat View format being applied.
+- User interface:
+  - Moved column auto-size and filename extensions settings to the Columns tab.
+  - When searching for columns by name, the raw internal names and shorter heading names are now checked as well.
+  - Column list has buttons to expand and collapse all categories at once.
+  - Moved the Save button from the top to the bottom of the dialog, level with the other buttons.
+  - Clear button is now called "Load" and opens a menu with options to reset the format to defaults (user or factory) or to load a Favorite format.
+  - Loading a format now updates the dialog but does *not* auto-apply it. Gives a chance to cancel without affecting the file display.
+  - In Preferences, you can now change the folder an existing path format affects. (Select it and click Browse above the list, or use the right-click menu).
+  - Folder Formats list in Preferences now has *Share* and *Paste* buttons to save or share format definitions.
+- Terminology:
+  - Previously, we used "Folder Options" instead of "Folder Format" in some places, for historical reasons. We now use "Folder Format" everywhere.
+  - In the default toolbars, Folder \> Folder Options is renamed Folder \> Folder Format.
+  - *Command:* \`Properties FOLDERFORMAT\` replaces \`Properties FOLDEROPTIONS\` (old name still works, for compatibility).
+
+------------------------------------------------------------------------
+
+Next: [preferences](/Manual/release_history/opus13_detailed/preferences.md)
