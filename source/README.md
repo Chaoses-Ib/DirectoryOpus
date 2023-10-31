@@ -29,3 +29,7 @@ python -m dokuWikiDumper --current-only --ignore-disposition-header-missing --th
 Convert: [manual.ipynb](manual.ipynb)
 
 Move `media/media` and `media/release_history` to `Manual/images`.
+
+RSS:
+- Recent Changes: https://docs.dopus.com/feed.php
+- https://docs.dopus.com/feed.php?mode=list&ns=
