@@ -131,11 +131,8 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 [^machine-laptop]: 一台计算机 + 一台笔记本
 [^APSDAI]: 也称 APSDAI、SOFTHEAD、奇睿天软
 
-### 讨论
-- [讨论区](https://github.com/Chaoses-Ib/DirectoryOpus/discussions)
-
-  请尽量在讨论区中提问，便于帮助遇到了同样问题的人。
-- [Telegram 群组](https://t.me/IbDirectoryOpusGroup)
+### 群组
+- [Telegram 群组](https://t.me/IbDirectoryOpusGroup)、[频道](https://t.me/IbDirectoryOpus)
 - [QQ 群](https://jq.qq.com/?_wv=1027&k=8iTFF5J8)（313295509）
 
 ### 英文资源
