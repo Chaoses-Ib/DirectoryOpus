@@ -118,10 +118,10 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 [官网](https://www.gpsoft.com.au/order_intro.html) | 49 AUD（~230元）<br />黑五：24 AUD（~113元） | 1+1[^machine-laptop]：89 AUD（~419元）<br />2+1：129 AUD（~607元）<br />5+1：249 AUD（~1171元）<br />黑五：<ul><li>1+1：**53.4 AUD（~251元）**</li><li>2+1：77.4 AUD（~364元）</li><li>5+1：149.4 AUD（~703元）</li><li>优惠码 BF2022NOV</li></ul> | USB 导出：10 AUD/导出授权 <br /> 高级 FTP：10 AUD（~47元）
 [玩软件吧](https://item.taobao.com/item.htm?id=556078594244) | 159元 | 1+1：**169元** | 1+1：239元
 [数码荔枝](https://store.lizhi.io/site/products/id/135?cid=1lsdbtbz) | 169元<br />~~双十一：134.25元~~ | | 1+1：**239元**（免费新会员-5元）<br />~~双十一：194.25元~~
-[软购](https://apsgo.cn/tsARL0) | 168元（新用户-5元）<br />~~双十一：124.6元~~<br />黑五：158元 | | 1+1：248元（新用户-5元）<br />~~双十一：180.6元~~<br />黑五：**198元**<br />不同等级会员每月有不同优惠
+[软购](https://apsgo.cn/tsARL0) | 168元（新用户-5元）<br />~~双十一：124.6元~~<br />~~黑五：158元~~ | | 1+1：248元（新用户-5元）<br />~~双十一：180.6元~~<br />~~黑五：**198元**~~<br />不同等级会员每月有不同优惠
 [子清](https://item.taobao.com/item.htm?id=669769551074) | | 1+1：~~185元~~ | 1+1：239元
-[奇睿天软](https://directory-opus.com/) | 168元 | | 1+1：248元
-[软购猜价](https://apsgo.com/guess/70) | | | 1+1：历史最低 **130元**
+[软代](https://directory-opus.com/)[^APSDAI] | 168元 | | 1+1：248元
+[软购猜价](https://apsgo.com/guess/70) | | | 1+1：历史最低 **130元**<br />积分可通过购买会员、软件和评论获得
 [软购拍卖](https://apsgo.com/auction/1300) | | | 1+1
 
 注意，中国经销商出售的都是中文版授权，只能使用中文语言，不能使用英文等其它语言。
@@ -129,6 +129,7 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 这里不会列出 DOpus 的破解版，如果你确有需要，可以自行加入群组进行获取。
 
 [^machine-laptop]: 一台计算机 + 一台笔记本
+[^APSDAI]: 也称 APSDAI、SOFTHEAD、奇睿天软
 
 ### 讨论
 - [讨论区](https://github.com/Chaoses-Ib/DirectoryOpus/discussions)
