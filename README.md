@@ -100,6 +100,18 @@ DOpus 中的大部分用户操作都是通过命令实现的，包括大部分�
 
 ## 其它
 ### 授权
+DOpus 自 v13 起采用升级订阅模式，需要按年订阅更新，在订阅到期后可继续使用之前的版本（在之后也有可能会推出终身更新授权）。你可以直接[下载 DOpus ](https://www.gpsoft.com.au/DScripts/download.asp?id=release)开始试用，默认试用期为 30 天，[在注册后可以延长到 60 天](https://www.gpsoft.com.au/#download)。
+
+购买渠道 | 新购 | 续期
+--- | --- | ---
+[官网](https://www.gpsoft.com.au/#buynow) | 1+1[^machine-laptop]：89 AUD（~420元）<br />2+1：129 AUD（~606元）<br />5+1：249 AUD（~1169元） | 1+1：25 AUD（~117元）<br />2+1：40 AUD（~188元）<br />5+1：75 AUD（~352元）
+
+中国经销商暂未开始销售 v13 中文版授权。
+
+v12 用户在升级 v13 时可享受折扣，折扣幅度取决于购买日期：在 v13 公测（2023年10月）的前几个月之后购买的授权可免费升级 v13，同时获得两年更新订阅；折扣后的最高价格为两年续期价格，例如 1+1 授权的最高升级价格为 50 AUD（~234元）。此外，中文版授权在升级后会变为全语言授权，标准版（Light）在升级后会变为全功能版。（在一定时间后，升级会从获得两年订阅变为一年）
+
+<details><summary>v12</summary>
+
 DOpus 采用大版本买断式授权，购买授权后可永久在一定数目的机器上使用相同大版本的 DOpus。若要使用新的大版本则需要购买升级授权，相较全新购买会有一定优惠，购买日期离新大版本推出足够短的用户也可以免费升级。
 
 你可以直接[下载 DOpus ](https://www.gpsoft.com.au/DScripts/download.asp)开始试用，默认试用期为 30 天，如有需要可以[申请延长到 60 天](https://www.gpsoft.com.au/DScripts/evalrequest.asp)。
@@ -128,6 +140,8 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 
 这里不会列出 DOpus 的破解版，如果你确有需要，可以自行加入群组进行获取。
 
+</details>
+
 [^machine-laptop]: 一台计算机 + 一台笔记本
 [^APSDAI]: 也称 APSDAI、SOFTHEAD、奇睿天软
 
@@ -138,5 +152,8 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 ### 英文资源
 - [帮助手册](https://docs.dopus.com/)
 
+  <details><summary>v12</summary>
+
   也可在 DOpus 中按 <kbd>F1</kbd> 打开本地帮助（默认为本地网页，如有需要可在 `配置/杂项/高级/行为/help_interface` 处更改为 CHM）。
+  </details>
 - [官方论坛](https://resource.dopus.com/)
