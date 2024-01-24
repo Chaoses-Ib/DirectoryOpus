@@ -1,5 +1,11 @@
 # 主题
-你可以通过主题来改变文件窗口的外观。
+你可以通过主题来改变 DOpus 窗口的外观。
+
+自 DOpus v13 起，配置窗口和文件属性窗口的配色都可以自定义，其中属性窗口还支持第三方 Shell 扩展的标签页：
+
+![](images/README/配置-属性.png)
+
+不过窗口标题颜色还是无法直接自定义，只能修改注册表。
 
 ## 导入主题
 ![](images/主题.png)
@@ -7,13 +13,25 @@
 打开 `工具栏/菜单/设置/主题`，点击菜单栏 `文件/导入主题`，选择 `.dlt` 主题文件进行导入。导入后点击 `应用` 即可应用。
 
 ## 恢复默认主题
+自 DOpus v13 起，默认主题会作为内置主题存在，在应用第三方主题后可以随时恢复。
+
+<details><summary>v12</summary>
+
 DOpus 没有直接提供恢复默认主题的功能，你可以采取以下几种方法来恢复：
 - 在应用其它主题之前先保存默认主题（菜单栏 `文件/保存新主题`）
 - 下载并导入 [默认主题](默认主题%20简体中文%20v12.23.dlt)
 - [重置配置相应页中的设置](https://resource.dopus.com/t/plain-default-theme/1169)
 
+</details>
+
 ## 深色模式
+DOpus 自 v13 起支持了 Windows 10 的深色模式。
+
+<details><summary>v12</summary>
+
 目前 DOpus [尚未支持](https://resource.dopus.com/t/respect-windows-system-light-dark-mode-switch-theme/36305) Windows 10 的深色模式。由于无法通过命令切换主题，也无法通过第三方程序实现，只能手动进行切换。
+
+</details>
 
 ## 浅色主题
 - [默认主题](默认主题%20简体中文%20v12.23.dlt)
