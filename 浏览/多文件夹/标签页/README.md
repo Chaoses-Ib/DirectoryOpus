@@ -1,10 +1,21 @@
 # 文件夹标签
-## 如何让文件夹标签垂直排列？
+## 垂直排列
+文件夹标签默认水平排列，如果想使用垂直排列，可以在 `配置/文件夹标签/选项/标签位置` 中选择 `左侧` 或 `右侧`：
+
 ![](images/README/垂直排列.png)
 
-在 `配置/文件夹标签/选项/标签位置` 中选择 `左侧` 或 `右侧`。
-
 设置 `双栏位置` 为 `一起` 可以让双栏状态下的文件夹标签显示在一起，即左栏在右侧显示，右栏在左侧显示；`分开` 可以让文件夹标签对立显示，即左栏在左侧显示，右栏在右侧显示。
+
+## 文件夹标签名称
+文件夹标签的默认名称为相应文件夹的名称。
+
+如果打开了多个名称相同的文件夹，就会难以区分不同的文件夹。可以使用 [Tab-Labelizer](https://resource.dopus.com/t/tab-labelizer-extend-the-folder-names-shown-in-your-tabs/18075) 来自动为冲突的文件夹标签名称补充父路径：
+
+使用前 | 使用后
+--- | ---
+![](https://resource.dopus.com/uploads/default/original/2X/7/7f7627f6e32ea4cb02def068cddac9e61e2724b1.png) | ![](https://resource.dopus.com/uploads/default/original/2X/9/9e0e92eba04b3bd146d3b18d92227a12bb3e9eb3.png)
+
+此外，Tab-Labelizer 还支持通过自定义设置来将指定文件夹名替换为其它名称。
 
 ## 文件夹标签颜色
 ### 文件夹标记颜色
