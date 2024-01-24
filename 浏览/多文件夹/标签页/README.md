@@ -17,6 +17,8 @@
 
 此外，Tab-Labelizer 还支持通过自定义设置来将指定文件夹名替换为其它名称。
 
+<!-- TODO: https://resource.dopus.com/t/tab-labelizer-plugin-to-assign-more-detailed-names-to-tabs/37275 -->
+
 ## 文件夹标签颜色
 ### 文件夹标记颜色
 默认情况下，文件夹标签的颜色与文件夹的标记颜色是独立的[^color-1][^color-2]。如果想让文件夹标签默认使用文件夹的标记颜色，可以安装脚本 [TabColorizer](https://github.com/Chaoses-Ib/IbDOpusScripts/blob/main/README.zh-Hans.md#:~:text=%E7%BC%A9%E7%95%A5%E5%9B%BE%E5%B0%BA%E5%AF%B8%EF%BC%9A-,TabColorizer,-%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6%E5%A4%B9)：
