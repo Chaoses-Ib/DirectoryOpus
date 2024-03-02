@@ -5,12 +5,13 @@ DOpus 自 v13 起采用升级订阅模式，需要按年订阅更新，在订阅
 购买渠道 | 新购 | 新购 + USB 导出 + 高级 FTP | 续期 | 备注
 --- | --- | --- | --- | ---
 [官网](https://www.gpsoft.com.au/#buynow) | 1+1[^machine-laptop]：89 AUD（~420元）<br />2+1：129 AUD（~606元）<br />5+1：249 AUD（~1169元）<br /><del>黑五：<ul><li>1+1：**53.4 AUD（~251元）**</li><li>2+1：77.4 AUD（~364元）</li><li>5+1：149.4 AUD（~703元）</li></ul></del> | USB 导出：10 AUD/导出授权 <br /> 高级 FTP：10 AUD（~47元） | 1+1：25 AUD（~117元）<br />2+1：40 AUD（~188元）<br />5+1：75 AUD（~352元）
-[软购](https://apsgo.cn/tsARL0) | 1+1：**158元**<br />~~双十一：124.6元~~<br />~~黑五：158元~~ | 1+1：**198元**<br />~~双十一：180.6元~~<br />~~黑五：198元~~<br /> | ？ | 新用户-5元<br />不同等级会员每月有不同优惠，可找会员代购
-[数码荔枝](https://store.lizhi.io/site/products/id/135?cid=1lsdbtbz) | 1+1：189元<br />APPINN 优惠码：179.55元<br />~~双十一：134.25元~~ | 1+1：239元<br />APPINN 优惠码：227.05元<br />~~双十一：194.25元~~ | ？ | 免费新会员-5元
+[子清](https://item.taobao.com/item.htm?id=766978122797) | 1+1：**148元** | 1+1：**195元** | ？ | 无淘宝客服
+[软购](https://apsgo.cn/tsARL0) | 1+1：158元<br />~~双十一：124.6元~~<br />~~黑五：158元~~ | 1+1：198元<br />~~双十一：180.6元~~<br />~~黑五：198元~~<br /> | ？ | 新用户-5元<br />不同等级会员每月有不同优惠，可找会员代购
+[数码荔枝](https://store.lizhi.io/site/products/id/135?cid=1lsdbtbz) | 1+1：189元<br />`APPINN` 优惠码：179.55元<br />~~双十一：134.25元~~ | 1+1：239元<br />`APPINN` 优惠码：227.05元<br />~~双十一：194.25元~~ | ？ | 免费新会员-5元
 [玩软件吧](https://item.taobao.com/item.htm?id=556078594244) | 1+1：169元 | 1+1：239元 | ？ | 客服响应不及时
 [软购猜价](https://apsgo.com/guess/70) | | 1+1：历史最低 **160元** | | 积分可通过购买会员、软件和评论获得
 [软购拍卖](https://apsgo.com/auctions) | | | | 不定期开启
-[子清](https://item.taobao.com/item.htm?id=669769551074) | 1+1：210.49元 | 1+1：257.79元 | ？ | 翻译质量较差，不推荐支持
+[子清2](https://item.taobao.com/item.htm?id=669769551074) | 1+1：210.49元 | 1+1：257.79元 | ？
 [软代](https://directory-opus.com/)[^APSDAI] | 1+1：218元 | 1+1：268元 | ？
 
 注意，中国经销商出售的都是中文版授权，只能使用中文语言，不能使用英文等其它语言。
@@ -22,11 +23,12 @@ v12 升级 v13：
 升级渠道 | 价格
 --- | ---
 [官网](https://www.gpsoft.com.au/#buynow) | 0~50 AUD（~234元）<br />折扣幅度取决于购买日期：在 v13 公测的前几个月（约 2023 年初）之后购买的授权可免费升级；折扣后的最高价格为两年续期价格，例如 1+1 授权的最高升级价格为 50 AUD。此外，中文版授权在升级后会变为全语言版，标准版（Light）在升级后会变为专业版。
-[数码荔枝](https://store.lizhi.io/site/products/id/135?cid=1lsdbtbz) | 109元<br />APPINN 优惠码：103.55元<br />免费新会员-5元
+[数码荔枝](https://store.lizhi.io/site/products/id/135?cid=1lsdbtbz) | 109元<br />`APPINN` 优惠码：103.55元<br />免费新会员-5元
 [软购](https://apsgo.cn/tsARL0) | 108元<br />新用户-5元
+[子清](https://item.taobao.com/item.htm?id=766978122797) | 108元
 [玩软件吧](https://item.taobao.com/item.htm?id=556078594244) | ？
 [软代](https://directory-opus.com/)[^APSDAI] | 118元
-[子清](https://item.taobao.com/item.htm?id=669769551074) | 118.25元
+[子清2](https://item.taobao.com/item.htm?id=669769551074) | 118.25元
 
 目前升级可获得两年更新订阅，在一定时间后，升级将只获得一年更新。
 
