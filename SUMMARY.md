@@ -46,6 +46,7 @@
   - [元数据](类型/元数据/README.md)
   - [压缩包](类型/压缩包.md)
   - [图片](类型/图片.md)
+  - [种子](类型/种子.md)
 
 ## [Directory Opus](DO/README.md)
 - [配置](DO/配置/README.md)
