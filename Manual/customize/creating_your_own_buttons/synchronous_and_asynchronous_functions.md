@@ -12,9 +12,7 @@ External programs launched from toolbar buttons and hotkeys can be either synchr
 
 As a simple example of the difference, take a command that runs Notepad and passes it the name of the selected item:
 
-**notepad.exe {f}**
-
- 
+\<ib:inline-code\>`notepad.exe {f}`\</ib:inline-code\>
 
 If only one file were selected when you ran this command, Notepad would open showing the selected file, and that would be that. If, however, three files were selected when you ran the command, the behaviour would vary:
 
@@ -23,8 +21,8 @@ If only one file were selected when you ran this command, Notepad would open sho
 
 By default, a function that contains a single command will run asynchronously, and functions that contain two or more commands will run synchronously. You can override this in several ways:
 
-- Using the **@async**[command modifier](command_modifiers.md), you can force a command to run asynchronously.
-- Using the **@sync**[command modifier](command_modifiers.md), you can force a command to run synchronously.
+- Using the **@async** [command modifier](command_modifiers.md), you can force a command to run asynchronously.
+- Using the **@sync** [command modifier](command_modifiers.md), you can force a command to run synchronously.
 - You can set the **function_default_async** flag on the **[Miscellaneous / Advanced](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.md)** page in Preferences to *True* to make all functions (single or multiple commands) run asynchronously by default.
 
 Internal commands always run synchronously - Opus will always wait for an internal command in a function to finish before moving on to the next instruction. If you want to run an internal command asynchronously for some reason, you can run it using the [DOpusRT](/Manual/reference/dopusrt_reference/RAEDME.md) command (i.e. **dopusrt /cmd**) - it then behaves as an external program, and will respect the **@sync** and **@async** modifiers.

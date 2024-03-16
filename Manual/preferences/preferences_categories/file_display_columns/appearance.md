@@ -2,7 +2,7 @@
 
 This page lets you configure the appearance of specific columns when the Lister is in Details or Power mode. For example, you could have the **Type** field displayed with a different background color, or the **Size** field in bold. For each column (if it's enabled), you can specify text and background colors, and select from bold, italic and underline styles.
 
-The **Current sort column** entry is a special set of colors and styles that applies to whichever field the file list is currently sorted by (or if multiple sort fields are defined, the primary sort field). While you can set its font styles here, its colors are set on the [Directory Opus Colors](../colors_and_fonts/directory_opus_colors/RAEDME.md) page.
+The **Current sort column** entry is a special set of colors and styles that applies to whichever field the file list is currently sorted by (or if multiple sort fields are defined, the primary sort field). While you can set its font styles here, its colors are set on the [Directory Opus Colors](../colors_and_fonts/directory_opus_colors.md) page.
 
 ##### Custom color and font settings
 

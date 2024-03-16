@@ -6,6 +6,7 @@ The descriptions below give the properties' typical meanings. Where a method ret
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |
+| empty | *bool* | Returns true if the rectangle is empty (i.e. has no height or no width). |
 | left | *int* | Returns the left edge of the rectangle. |
 | top | *int* | Returns the top edge of the rectangle. |
 | right | *int* | Returns the right edge of the rectangle.  <br />Note that this value is actually 1 outside the right edge. A rectangle includes everything from and including the left edge up to but excluding the right edge.  <br />A rectangle at position 0,7 with 0 width will have left=0 and right=0. The same but with a width of 1 will have left=0 and right=1, and so on. |

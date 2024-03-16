@@ -9,40 +9,38 @@ Below is an example of a script that displays a dialog using the simple method. 
 ##### Script Code - VBScript
 
     Function OnClick(ByRef clickData)
-
-    Set Dlg = DOpus.Dlg
-    Dlg.window = clickData.func.sourcetab
-    Dlg.template = "testdlg"
-    retVal = Dlg.Show
-    DOpus.Output "Return code = " & retVal
-
+      Set Dlg = DOpus.Dlg
+      Dlg.window = clickData.func.sourcetab
+      Dlg.template = "testdlg"
+      retVal = Dlg.Show
+      DOpus.Output "Return code = " & retVal
     End Function
 
 ##### Script Code - JScript
 
     function OnClick(clickData) {
-    var Dlg = DOpus.Dlg;
-    Dlg.window = clickData.func.sourcetab;
-    Dlg.template = "testdlg";
-    var retVal = Dlg.Show();
-    DOpus.Output("Return code = " + retVal);
+      var Dlg = DOpus.Dlg;
+      Dlg.window = clickData.func.sourcetab;
+      Dlg.template = "testdlg";
+      var retVal = Dlg.Show();
+      DOpus.Output("Return code = " + retVal);
     }
 
 ##### Resources
 
     <resources>
-    <resource name="testdlg" type="dialog">
-    <dialog fontsize="8" height="58" lang="" title="Test!" width="180">
-    <control halign="left" height="8" name="static1" title="Test Dialog"
-    type="static" width="35" x="72" y="9" />
-    <control close="1" default="yes" height="14" name="button1" title="One"
-    type="button" width="50" x="9" y="30" />
-    <control close="2" height="14" name="button2" title="Two" type="button"
-    width="50" x="66" y="30" />
-    <control close="3" height="14" name="button3" title="Three" type="button"
-    width="50" x="122" y="30" />
-    </dialog>
-    </resource>
+      <resource name="testdlg" type="dialog">
+        <dialog fontsize="8" height="58" lang="" title="Test!" width="180">
+          <control halign="left" height="8" name="static1" title="Test Dialog"
+                   type="static" width="35" x="72" y="9" />
+          <control close="1" default="yes" height="14" name="button1" title="One"
+                   type="button" width="50" x="9" y="30" />
+          <control close="2" height="14" name="button2" title="Two"
+                   type="button" width="50" x="66" y="30" />
+          <control close="3" height="14" name="button3" title="Three"
+                   type="button" width="50" x="122" y="30" />
+        </dialog>
+      </resource>
     </resources>
 
 This script creates and displays the following dialog:

@@ -1,29 +1,35 @@
 # Drag and drop
 
-Drag-and-drop is a common way of moving files around in Windows. In Opus, drag-and-drop is controlled by the **[File Types](/Manual/file_types/RAEDME.md)** system. The default behaviour is the same as in Explorer:
+Drag-and-drop is a common way of moving files around in Windows. In Opus, drag-and-drop is controlled by the **[File Types](/Manual/file_types/RAEDME.md)** system.
+
+##### Default drag-and-drop behavior
+
+The default behavior is the same as in Explorer:
 
 - Drag-and-drop of a file to another folder on the same drive will move it
 - Drag-and-drop to a folder on a different drive will copy it
-- Holding the **Shift** key when dropping forces the file to be moved
-- Holding the **Ctrl** key when dropping forces it to be copied
-- Holding the **Alt** key when dropping creates a shortcut to the file
+- Holding the <kbd>Shift</kbd> key when dropping forces the file to be moved
+- Holding the <kbd>Ctrl</kbd> key when dropping forces it to be copied
+- Holding the <kbd>Alt</kbd> key when dropping creates a shortcut to the file
 - Drag-and-drop with the right button displays a menu that lets you select *Copy*, *Move* or *Create Shortcut* as the action.
 
 Internally, these actions are defined by the items on the **Events** tab for the **All files and folders** file type. Whereas in Explorer these actions are fixed, in Opus they are configurable.
 
-\<WRAP c1borderless\> \|![](/Manual/images/media/default_draganddrop.png)\| \|This screenshot shows the [File Type editor](/Manual/file_types/filetype_editor/RAEDME.md) for the **All files and folders** file type. As you can see, the events are all defined as some variant of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.  
-\<WRAP\>\<wrap topspace\>\</wrap\>
+##### Configuring drag-and-drop actions
 
-- *Drag-and-drop*: The **MOVEWHENSAME** argument specifies that the file is moved on the same drive, and copied otherwise.
-- *Drag-and-drop + Alt*: The **MAKESHORTCUT** argument causes the Copy command to make a shortcut to the file.
-- *Drag-and-drop + Ctrl*: The **RENAMEWHENSAME** argument will automatically rename the copied file if the name clashes with an existing one.
-- *Drag-and-drop + Shift*: The **MOVE** argument causes the file to be always moved. \</WRAP\>Although not shown here, the **Drop Menu** tab also defines the contents of the menu shown when dragging with the right mouse button. This can also be configured.
+<img src="/media/13/default_draganddrop.png" class="align-right" data-query="?nolink" />This screenshot shows the [File Type editor](/Manual/file_types/filetype_editor/RAEDME.md) for the **All files and folders** file type. The events are all defined as some variant of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.
 
-Editing these functions modifies the drag-and-drop behaviour in Opus. For example, if you wanted drag-and-drop to always copy (rather than moving on the same drive), you could edit the command definition to **Copy RENAMEWHENSAME** (the same as the *Drag-and-drop + Ctrl* event).
+- Drag-and-drop: \<ib:inline-code\>`Copy MOVEWHENSAME`\</ib:inline-code\> moves the file on the same drive, and copies it otherwise.
+- Drag-and-drop+<kbd>Alt</kbd>: \<ib:inline-code\>`Copy MAKESHORTCUT`\</ib:inline-code\> makes a shortcut to the file.
+- Drag-and-drop+<kbd>Ctrl</kbd>: \<ib:inline-code\>`Copy RENAMEWHENSAME`\</ib:inline-code\> automatically renames the copied file if the name clashes with an existing one.
+- Drag-and-drop+<kbd>Shift</kbd>: \<ib:inline-code\>`Copy MOVE`\</ib:inline-code\> always moves the file.
 
-The **All files and folders** file type is a special file type that by definition matches everything - both files and folders. You can use the File Types system to define overriding events for specific file types. For example, you could configure drag-and-drop of a Zip file to extract the contents of the archive when dropped with the **Shift** key held down.
+Although not shown here, the **Drop Menu** tab also defines the contents of the menu shown when dragging with the right mouse button. This can also be configured.
 
-See the documentation on the **[File Types](/Manual/file_types/RAEDME.md)** system for more information.  
-\|
+Editing these functions modifies the drag-and-drop behaviour in Opus. For example, if you wanted drag-and-drop to always copy (rather than moving on the same drive), you could edit the command definition to \<ib:inline-code\>`Copy RENAMEWHENSAME`\</ib:inline-code\> (the same as the *Drag-and-drop+*<kbd>Ctrl</kbd> event).
 
-\</WRAP\>\<wrap clear/\>
+##### Overriding behaviour for specific file types
+
+The **All files and folders** file type is a special file type that by definition matches everything - both files and folders. You can use the File Types system to define overriding events for specific file types. For example, you could configure drag-and-drop of a Zip file to extract the contents of the archive when dropped with the <kbd>Shift</kbd> key held down.
+
+See the documentation on the **[File Types](/Manual/file_types/RAEDME.md)** system for more information.

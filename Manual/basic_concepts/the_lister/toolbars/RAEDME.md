@@ -12,7 +12,7 @@ Toolbars are one of the main ways of interacting with Opus - they let you perfor
 - Multiple toolbars can be saved to a [Toolbar set](/Manual/basic_concepts/the_lister/toolbars/toolbar_sets.md) which can then be reloaded later.
 - Specific Listers can be saved with their own toolbars using the [Lister Layouts](layouts/RAEDME.md) system.
 - The toolbars that a Lister displays by default are stored in what is known as the *Default Toolbar Set* - this is used whenever a Lister doesn't have its own set of toolbars defined in the Layout it came from. Use the **Settings / Toolbars / Set As Default Toolbar Set** command to update your default toolbar set if you want to change which toolbars are used by default.  
-  \* Opus ships with four [factory-default toolbars](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/RAEDME.md) - you can edit them but you can't delete them. You can create as many other toolbars as you want.
+  \* Opus ships with five [factory-default toolbars](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/RAEDME.md) - you can edit them but you can't delete them. You can create as many other toolbars as you want.
 
 You can turn toolbars on and off using the list in [Customize](/Manual/customize/RAEDME.md), from the **Settings / Toolbars** menu, or by right-clicking an empty space on any toolbar to bring up its context menu.
 

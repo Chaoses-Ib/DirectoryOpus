@@ -5,7 +5,7 @@ Wildcard patterns can be used in many functions in Opus, including:
 - When searching for a file using the [Find Files](/Manual/basic_concepts/searching_and_filtering/find_files/RAEDME.md) tool (matching both filename or file contents or metadata)
 - When [filtering](/Manual/basic_concepts/searching_and_filtering/RAEDME.md) files in and out of the display
 - When [selecting](/Manual/basic_concepts/selecting_files/simple_wildcard_selection.md) files in the file display
-- When [filtering file operations](/Manual/file_operations/copying_moving_and_deleting_files/filtered_operations/RAEDME.md) like copy or move
+- When [filtering file operations](/Manual/file_operations/filtered_operations/RAEDME.md) like copy or move
 
 As well as [regular expressions](regular_expression_syntax.md), Opus supports a more simple wildcard system, called the *standard pattern matching* system. When using wildcards, you specify a pattern consisting of a mix of literal text and special *wildcard tokens*. Each token is used to match one or more characters in the target string. As a simple example, the pattern **\*.doc** matches anything that ends with the literal characters *.doc* (or in other words, document files).
 

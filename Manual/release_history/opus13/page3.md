@@ -51,7 +51,7 @@ Locked tabs can be prevented from closing:
 The tab context menu can be edited:
 
 \<WRAP indent\>![](/Manual/images/release_history/tab_context.png)\</WRAP\>  
-Push `Ctrl+Tab` to open the tab switcher:
+Push <kbd>Ctrl+Tab</kbd> to open the tab switcher:
 
 \<WRAP indent\>![](/Manual/images/release_history/tabs_switcher.png)\</WRAP\>  
 Both vertical and horizontal tab bars now scroll with the mouse wheel:
@@ -62,17 +62,17 @@ Both vertical and horizontal tab bars now scroll with the mouse wheel:
 
 #### Find As You Type (FAYT)
 
-Type `'` into the file display to search with Opus, or type `+` to search your machine with Everything:
+Type <kbd>'</kbd> into the file display to search with Opus, or type <kbd>+</kbd> to search your machine with Everything:
 
 \<WRAP indent\>![](/Manual/images/release_history/fayt_everything.gif)\</WRAP\>  
-Type `\]`, then part of a name, to quickly go to a folder from a configurable list of sources:
+Type <kbd>\]</kbd>, then part of a name, to quickly go to a folder from a configurable list of sources:
 
 \<WRAP indent\>![](/Manual/images/release_history/fayt_folders.png)\</WRAP\>  
-When highlighting names in the current folder, `Ctrl+S` selects all matches. `F3` jumps to the next match.  
+When highlighting names in the current folder, <kbd>Ctrl+S</kbd> selects all matches. <kbd>F3</kbd> jumps to the next match.  
 Marks on the scrollbar indicate matches out of view:
 
 \<WRAP indent\>![](/Manual/images/release_history/fayt_scrollbar.png)\</WRAP\>  
-Type `\>` to enter an ad-hoc Opus command. Pop-ups now help with command and argument names:
+Type <kbd>\></kbd> to enter an ad-hoc Opus command. Pop-ups now help with command and argument names:
 
 \<WRAP indent\>![](/Manual/images/release_history/fayt_suggs.png)\</WRAP\>  
 Scripts can add custom FAYT modes and respond to what you type. Each can have its own key(s) and colors:

@@ -15,13 +15,13 @@
   - New option lets you choose whether a locked tab resets to its original folder as soon as you switch to another tab, or only if you switch back and then, with the locked tab already active, click it a second time.
   - Within a locked tab, if you double-click a folder which is already open in the same tab bar, Opus now switches to the existing tab instead of opening a new one. (A new option exists to restore the old behavior.)
 - Tab switcher:
-  - New popup tab switcher, similar in function to the Windows `Alt+Tab` switcher, or `Ctrl+Tab` in Visual Studio.
+  - New popup tab switcher, similar in function to the Windows <kbd>Alt+Tab</kbd> switcher, or <kbd>Ctrl+Tab</kbd> in Visual Studio.
   - Preferences / File Displays / Options / Tab Key: Configure how the tab key behaves in Listers, including the new switcher.
-  - By default, `Ctrl+Tab` displays the switcher.
-  - The default for Tab (without `Ctrl`) is now to switch sides in dual-display windows.
-  - Tabs now remember the order they were last activated. The default selection in the switcher is the previously selected tab. This lets you switch between two tabs by repeatedly pressing and releasing `Ctrl+Tab` (similar to how Alt+Tab works in Windows).
-  - The switcher stays open as long as one of the qualifier keys (e.g. `Ctrl`) that triggered it is held.
-  - Can be cancelled by pressing `Esc` or clicking outside it.
+  - By default, <kbd>Ctrl+Tab</kbd> displays the switcher.
+  - The default for Tab (without <kbd>Ctrl</kbd>) is now to switch sides in dual-display windows.
+  - Tabs now remember the order they were last activated. The default selection in the switcher is the previously selected tab. This lets you switch between two tabs by repeatedly pressing and releasing <kbd>Ctrl+Tab</kbd> (similar to how Alt+Tab works in Windows).
+  - The switcher stays open as long as one of the qualifier keys (e.g. <kbd>Ctrl</kbd>) that triggered it is held.
+  - Can be cancelled by pressing <kbd>Esc</kbd> or clicking outside it.
   - Within the switcher, tab or cursor keys move the selection. When the qualifier is released, or return is pressed, the highlighted tab will be activated and set as the source.
   - Space activates the selected tab without closing the switcher.
 - Tab Groups:
@@ -39,26 +39,27 @@
     - A locked tab which cannot close will go to the folder it is locked to instead of This PC.
   - Search results are no longer loaded by default if they are a tab's initial folder. This can be changed via Preferences / Folders / Automatic Reading.
   - Lister window title can now be configured to show the name of the last loaded Folder Tab Group (if any).
+  - Improved "When current selected tab is clicked: Go to previous tab" option.
 - Commands:
   - Variables tell commands in the tab menu which tab was right-clicked:
-    - \`%tab_path%\` -- Tab's path.
-    - \`%tab_id%\` -- Tab's index.
-    - \`%tab_hwnd%\` -- Tab's window handle (decimal).
-  - \`Go TABLOCK=menu\` -- Generates the tab lock menu dynamically.
-  - \`Go TABLINK=menu\` -- Generates the tab link menu dynamically.
-  - \`Go TABNAME=!edit\` -- Starts renaming a tab (combine with PATH to specify another tab's index).
-  - \`Go TABCOLOR=edit\` -- Edits a tab's edge/accent color (combine with PATH to specify another tab's index).
-  - \`Set TABPOSITION\` -- Can be given "save" parameter to change the global configuration, instead of only temporarily moving the current window's tab bar.
+    - \<ib:inline-code\>`%tab_path%`\</ib:inline-code\> -- Tab's path.
+    - \<ib:inline-code\>`%tab_id%`\</ib:inline-code\> -- Tab's index.
+    - \<ib:inline-code\>`%tab_hwnd%`\</ib:inline-code\> -- Tab's window handle (decimal).
+  - \<ib:inline-code\>`Go TABLOCK=menu`\</ib:inline-code\> -- Generates the tab lock menu dynamically.
+  - \<ib:inline-code\>`Go TABLINK=menu`\</ib:inline-code\> -- Generates the tab link menu dynamically.
+  - \<ib:inline-code\>`Go TABNAME=!edit`\</ib:inline-code\> -- Starts renaming a tab (combine with PATH to specify another tab's index).
+  - \<ib:inline-code\>`Go TABCOLOR=edit`\</ib:inline-code\> -- Edits a tab's edge/accent color (combine with PATH to specify another tab's index).
+  - \<ib:inline-code\>`Set TABPOSITION`\</ib:inline-code\> -- Can be given "save" parameter to change the global configuration, instead of only temporarily moving the current window's tab bar.
   - Commands can be disabled or hidden depending on the number of tabs and the selected tab index. (See [Miscellaneous Commands](misc_commands.md).)
-  - \`Go TABSWITCHER\` -- Makes the new switcher appear. Can be bound to a mouse button or alternative hotkey.
+  - \<ib:inline-code\>`Go TABSWITCHER`\</ib:inline-code\> -- Makes the new switcher appear. Can be bound to a mouse button or alternative hotkey.
 - Evaluator:
   - Several variables are passed to Evaluator code in the folder tab context menu.
-  - \`count\` -- Total number of tabs on the same side.
-  - \`countdual\` -- Number of tabs on the other side.
-  - \`dual\` -- True if the tab is part of a dual file display.
-  - \`path\` -- The tab's path, if any.
-  - \`right\` -- True if the tab is on the right (or bottom) of a dual file display, rather than the left (or top).
-  - \`sel\` - The selected tab's index, or -1 if the tab bar background was right-clicked.
+  - \<ib:inline-code\>`count`\</ib:inline-code\> -- Total number of tabs on the same side.
+  - \<ib:inline-code\>`countdual`\</ib:inline-code\> -- Number of tabs on the other side.
+  - \<ib:inline-code\>`dual`\</ib:inline-code\> -- True if the tab is part of a dual file display.
+  - \<ib:inline-code\>`path`\</ib:inline-code\> -- The tab's path, if any.
+  - \<ib:inline-code\>`right`\</ib:inline-code\> -- True if the tab is on the right (or bottom) of a dual file display, rather than the left (or top).
+  - \<ib:inline-code\>`sel`\</ib:inline-code\> - The selected tab's index, or -1 if the tab bar background was right-clicked.
 
 ------------------------------------------------------------------------
 

@@ -16,7 +16,7 @@
   - Any column can now be set to truncate in the middle instead of on the right. For example, "Directory Opus" might truncate to "Dire...Opus" instead of "Director...".
   - New option: "Edit ratings by clicking within the Rating column" allows the Ratings column to be read-only.
   - New option: "Show dashes in empty columns" shows "--" instead of nothing to indicate an empty column cell (where appropriate).
-  - Data in individual column cells can be selected and copied to the clipboard. Hold `Ctrl`, then click or drag with the right mouse button to highlight cells. Release `Ctrl` and right-click a highlighted cell for a menu of clipboard options.
+  - Data in individual column cells can be selected and copied to the clipboard. Hold <kbd>Ctrl</kbd>, then click or drag with the right mouse button to highlight cells. Release <kbd>Ctrl</kbd> and right-click a highlighted cell for a menu of clipboard options.
   - Within the This PC folder, the Type column now reports whether local drives are SSDs or HDDs. There's also an option to group by this.
   - Within This PC, a new "Physical Drive" column reports the physical drive number(s) a drive letter is mounted on.
   - Within This PC, the "low free space warning" (change in bar graph colour) can now be turned off, or have its threshold adjusted, via Preferences / Folders / Virtual Folders / This PC. (The colors can also be adjusted under Colors and Fonts.)
@@ -33,12 +33,12 @@
 - Frozen Columns:
   - In Details and Power modes, one or more columns can now be "frozen". Frozen columns remain left-aligned and do not scroll - any columns following the frozen ones will scroll beneath them.
   - *Folder Formats:* Frozen columns can now be specified, so they're always in effect in particular folders.
-  - `Ctrl+Alt`+Click a column header to freeze/unfreeze it.
+  - <kbd>Ctrl+Alt</kbd>+Click a column header to freeze/unfreeze it.
   - Added "Freeze Columns To Here" column header context menu.
   - Note: While a column is frozen, its position cannot be moved via drag & drop. However, it can still be resized.
   - Commands:
-    - \`Set COLUMNSFREEZE\` command lets frozen columns be turned on or off via buttons/hotkeys/etc.
-    - When adding columns with \`Set COLUMNSADD\` etc., an additional parameter "z" can be specified to freeze the new column (and any before it). E.g. \`Set COLUMNSADD=attr(\*,\*,\*,z)\`
+    - \<ib:inline-code\>`Set COLUMNSFREEZE`\</ib:inline-code\> command lets frozen columns be turned on or off via buttons/hotkeys/etc.
+    - When adding columns with \<ib:inline-code\>`Set COLUMNSADD`\</ib:inline-code\> etc., an additional parameter "z" can be specified to freeze the new column (and any before it). E.g. \<ib:inline-code\>`Set COLUMNSADD=attr(*,*,*,z)`\</ib:inline-code\>
   - *Scripting:* Format.frozen property returns number of frozen columns.
 - Shell Properties:
   - (Configured via Preferences / File Display Columns / Shell Properties.)
@@ -47,8 +47,8 @@
 - Evaluator Columns (custom columns):
   - (Configured via Preferences / File Display Columns / Evaluator Columns.)
   - Allows you to create your own columns built using Evaluator code. Similar to script columns, but easier and with lower performance overheads.
-  - One provided examples shows how to display the raw bitmap size of an image (Width x Height x Depth).
-  - Another example defines a column which will show the word "Compact" for compressed files (i.e. where "disksize \< size").
+  - One provided example shows how to display the raw bitmap size of an image (Width x Height x Depth).
+  - Another example provides a column showing Modified timestamps with just the time, if the date is today, and the date otherwise.
   - Values from build-in columns are available as variables, allowing you to focus on logic rather than extracting data from files. For example, a column showing the modified time for files modified today, and the modified date otherwise, could be defined with a simple one-line expression.
 - Evaluator Groups (custom grouping):
   - (Configured via Preferences / File Display Columns / Evaluator Groups.)
@@ -58,26 +58,26 @@
   - Examples are built using simple Evaluator code which you can adapt to group columns in different ways.
   - Folder Formats can now specify a grouping scheme, e.g. to group particular folders in a special way.
   - Commands:
-    - \`Set GROUPSCHEME=...\` command can select a specific grouping scheme. With no parameters, it displays a menu of grouping modes.
-    - Added \`%groupscheme%\` variable to column header context menu processing.
+    - \<ib:inline-code\>`Set GROUPSCHEME=...`\</ib:inline-code\> command can select a specific grouping scheme. With no parameters, it displays a menu of grouping modes.
+    - Added \<ib:inline-code\>`%groupscheme%`\</ib:inline-code\> variable to column header context menu processing.
   - *Scripting:* Added "group_scheme" property to Tab Format script object, indicating the current grouping scheme if any.
 - Grouping:
   - *Folder Formats:* Grouping options moved to a dedicated page.
-  - *Commands:* New \`Set GROUPCOMBINE\` replaces older \`Set COMBINESINGLEGROUPS\` and \`Set GROUPINDIVIDUAL\`. (Old args still work, but are hidden.)
-  - *Scripting:* \`Tab.format.group_combine\` property returns group-combine setting. (Old \`group_individual\` property still works but is deprecated.)
+  - *Commands:* New \<ib:inline-code\>`Set GROUPCOMBINE`\</ib:inline-code\> replaces older \<ib:inline-code\>`Set COMBINESINGLEGROUPS`\</ib:inline-code\> and \<ib:inline-code\>`Set GROUPINDIVIDUAL`\</ib:inline-code\>. (Old args still work, but are hidden.)
+  - *Scripting:* \<ib:inline-code\>`Tab.format.group_combine`\</ib:inline-code\> property returns group-combine setting. (Old \<ib:inline-code\>`group_individual`\</ib:inline-code\> property still works but is deprecated.)
 - Context menu variables:
   - These variables can be used by commands in the Column Header context menu.
-  - \`%header%\` -- ID of column which was right-clicked. -1 if none (e.g. right-click space after the last column).
-  - \`%headerindex%\` -- Position of header item which was right-clicked.
-  - \`%headerinsert%\` -- Insertion point. Similar to %headerindex%, but +1 if the click was in the right half of the item.
-  - \`%headeritem%\` -- Deprecated. The same as %headerinsert%, but the name is confusing. Kept to avoid breaking old configs.
-  - \`%headername%\` -- Display name of column which was clicked. Translated into different languages.
-  - \`%headerkey%\` -- Keyword of column which was clicked. Always in English, and can be passed to commands.
-  - \`%group%\` -- ID of column the file display is grouping by. -1 if none.
-  - \`%groupname%\` -- Display name of column the file display is grouping by. Translated.
-  - \`%groupkey%\` -- Keyword of column the file display is grouping by. Always English.
-  - \`%groupscheme%\` -- Keyword of current grouping scheme.
-  - \`%frozenfields%\` -- Number of frozen columns. 0 if none.
+  - \<ib:inline-code\>`%header%`\</ib:inline-code\> -- ID of column which was right-clicked. -1 if none (e.g. right-click space after the last column).
+  - \<ib:inline-code\>`%headerindex%`\</ib:inline-code\> -- Position of header item which was right-clicked.
+  - \<ib:inline-code\>`%headerinsert%`\</ib:inline-code\> -- Insertion point. Similar to %headerindex%, but +1 if the click was in the right half of the item.
+  - \<ib:inline-code\>`%headeritem%`\</ib:inline-code\> -- Deprecated. The same as %headerinsert%, but the name is confusing. Kept to avoid breaking old configs.
+  - \<ib:inline-code\>`%headername%`\</ib:inline-code\> -- Display name of column which was clicked. Translated into different languages.
+  - \<ib:inline-code\>`%headerkey%`\</ib:inline-code\> -- Keyword of column which was clicked. Always in English, and can be passed to commands.
+  - \<ib:inline-code\>`%group%`\</ib:inline-code\> -- ID of column the file display is grouping by. -1 if none.
+  - \<ib:inline-code\>`%groupname%`\</ib:inline-code\> -- Display name of column the file display is grouping by. Translated.
+  - \<ib:inline-code\>`%groupkey%`\</ib:inline-code\> -- Keyword of column the file display is grouping by. Always English.
+  - \<ib:inline-code\>`%groupscheme%`\</ib:inline-code\> -- Keyword of current grouping scheme.
+  - \<ib:inline-code\>`%frozenfields%`\</ib:inline-code\> -- Number of frozen columns. 0 if none.
 
 ------------------------------------------------------------------------
 

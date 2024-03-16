@@ -13,14 +13,16 @@
     - Fit, but only reduce; never upscale.
     - Fill (resize & crop), with smooth upscaling.
     - Fill (resize & crop), with pixelated upscaling.
-  - Small images can be enlarged with smooth (filtered in some way) or pixelated (nearest neighbor) scaling, or disabled entirely. Pixelated upscaling is good if you're working with small icons or pixel art on high DPI screens.
+  - Small images can be enlarged with smooth (filtered in some way) or pixelated (nearest neighbor) scaling, or disabled entirely.
+  - Pixelated upscaling is good if you're working with small icons or pixel art on high DPI screens.
+  - As of Opus 13.3, pixelated upscaling is only used when increasing something to at least 3x its original size; smooth scaling will be used for smaller increases.
   - "Fit" modes reduce large images to fit and, optionally, enlarge small images to fill the space as much as possible without cropping.
   - "Fill" modes scale and crop images so they fill the entire space in both dimensions. (Sometimes called "cropped square thumbnails", but they need not be square).
   - All modes maintain aspect ratio without distortion. (Squares and circles remain squares and circles.)
   - Icons displayed for .exe files are *not* affected. However, thumbnails for actual .ico files are affected, as are thumbnails for other image and movie formats (.jpg, .png, .mp4, etc.).
   - Different scaling can be configured for different view modes (Thumbnails, Tiles, Details, Power), and for folder thumbnails (changing how the grid of images within them is displayed). Info tips use the Thumbnails mode setting.
   - Scaling type can be set on a per-folder basis, via Folder Formats. For example, you may want different scaling in folders for photos and pixel art. Overrides affect all view modes, but not folder thumbnails.
-  - *Command:* \`Set THUMBSTRETCH\` -- Modifies thumbnail scaling mode for the current folder tab.
+  - *Command:* \<ib:inline-code\>`Set THUMBSTRETCH`\</ib:inline-code\> -- Modifies thumbnail scaling mode for the current folder tab.
 - Thumbnail styles:
   - (Configured via Preferences / File Display Modes / Thumbnails / Styles.)
   - A new system which lets you to define special rendering styles for folder thumbnails.

@@ -10,23 +10,23 @@ To add custom fields from your rename script, implement the **[OnGetCustomFields
 
     Function OnGetCustomFields(ByRef getFieldData)
 
-    ' Add a checkbox called "My Option", defaults to true (on)
-    getFieldData.fields.my_option = True
-    getFieldData.fields.my_option.label = "My Option"
+      ' Add a checkbox called "My Option", defaults to true (on)
+      getFieldData.fields.my_option = True
+      getFieldData.fields.my_option.label = "My Option"
 
-    ' Add a text field called "My String Field" with a cue banner
-    getFieldData.fields.my_field = ""
-    getFieldData.fields.my_field.label = "My String Field"
-    getFieldData.fields.my_field.tip = "Enter your text here"
+      ' Add a text field called "My String Field" with a cue banner
+      getFieldData.fields.my_field = ""
+      getFieldData.fields.my_field.label = "My String Field"
+      getFieldData.fields.my_field.tip = "Enter your text here"
 
-    ' Add a numeric input field, default value 20. Maximum value 100
-    getFieldData.fields.my_value = 20
-    getFieldData.fields.my_value.label = "My Integer Value"
-    getFieldData.fields.my_value.max = 100
+      ' Add a numeric input field, default value 20. Maximum value 100
+      getFieldData.fields.my_value = 20
+      getFieldData.fields.my_value.label = "My Integer Value"
+      getFieldData.fields.my_value.max = 100
 
-    ' Add a dropdown with three options
-    getFieldData.fields.my_combo = DOpus.Create.Vector(1, "Option 1", "Option 2", "Option 3") 
-    getFieldData.fields.my_combo.label = "My Dropdown"
+      ' Add a dropdown with three options
+      getFieldData.fields.my_combo = DOpus.Create.Vector(1, "Option 1", "Option 2", "Option 3") 
+      getFieldData.fields.my_combo.label = "My Dropdown"
 
     End Function
 
@@ -53,11 +53,11 @@ The *Rename* dialog will expand automatically to accommodate your custom fields 
 The values that the user enters into your custom fields are provided to your **[OnGetNewName](/Manual/reference/scripting_reference/scripting_events/ongetnewname.md)** method via the **[CustomFieldData](/Manual/reference/scripting_reference/scripting_objects/customfielddata.md)** object passed as the **GetNewNameData.custom**. Each field you add in **OnGetCustomFields** will appear as a property of this object. For example, this function will print the provided values to the output log.
 
     Function OnGetNewName(ByRef getNewNameData)
-    DOpus.Output "Option: " & getNewNameData.custom.my_option
-    DOpus.Output "String: " & getNewNameData.custom.my_field
-    DOpus.Output "Number: " & getNewNameData.custom.my_value
-    DOpus.Output "Dropdown: " & getNewNameData.custom.my_combo
-    OnGetNewName = True ' skip rename
+      DOpus.Output "Option: " & getNewNameData.custom.my_option
+      DOpus.Output "String: " & getNewNameData.custom.my_field
+      DOpus.Output "Number: " & getNewNameData.custom.my_value
+      DOpus.Output "Dropdown: " & getNewNameData.custom.my_combo
+      OnGetNewName = True ' skip rename
     End Function
 
 When the user automates the **[Rename](/Manual/reference/command_reference/internal_commands/rename.md)** command to run your rename script directly (using the **PRESET** argument), they can use the **SCRIPTARG** parameter to pass data for your custom fields through. This argument accepts multiple ***name:value*** pairs. For example, assume the above script was saved as the rename preset “MyRename”. The user might run the following command:

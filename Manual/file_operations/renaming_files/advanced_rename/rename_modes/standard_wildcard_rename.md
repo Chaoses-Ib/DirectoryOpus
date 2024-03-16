@@ -2,7 +2,7 @@
 
 The *Standard Wildcard Rename* mode lets you batch rename files using a simple wildcard system. The \* character (asterisk) is used to specify one or more parts of the existing filename that are to be retained in the new name.
 
-![](/Manual/images/media/standard_rename.png)
+![](/Manual/images/media/13/standard_rename.png)
 
 In the above example, you can see that the original filenames had a mix of *Img\_* and *IMG\_* prefixes, and the file extensions were also a mix of upper and lower-case.
 

@@ -6,8 +6,8 @@
 - Preferences options that control the size, padding and spacing of UI elements can now be loaded and saved as "spacing schemes".
 - On Windows 10 and above, you can configure Opus to automatically switch between "Mouse" and "Touch Input" schemes when the system input type changes. This lets you configure Opus to work better on a touchscreen without wasting space when using it with a mouse. You can also switch schemes manually, of course.
 - Commands:
-  - \`Set SPACING\` -- Modify individual spacing options without opening Preferences.
-  - \`Set SPACINGSCHEME\` -- Change to a specific spacing scheme, or to show a menu of schemes to choose from.
+  - \<ib:inline-code\>`Set SPACING`\</ib:inline-code\> -- Modify individual spacing options without opening Preferences.
+  - \<ib:inline-code\>`Set SPACINGSCHEME`\</ib:inline-code\> -- Change to a specific spacing scheme, or to show a menu of schemes to choose from.
 - *Scripting:* Scripts are informed when the UI spacing scheme changes. (See [Miscellaneous Scripting](misc_scripting.md).)
 
 ------------------------------------------------------------------------

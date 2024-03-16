@@ -1,6 +1,6 @@
 # FilterParseError
 
-If a **[Filter](filter.md)** object fails to parse the [textual filter](/Manual/file_operations/copying_moving_and_deleting_files/filtered_operations/textual_filters.md) string you provide, you can retrieve this object from the **Filter.lasterror** property to find out what went wrong.
+If a **[Filter](filter.md)** object fails to parse the [textual filter](/Manual/file_operations/filtered_operations/textual_filters.md) string you provide, you can retrieve this object from the **Filter.lasterror** property to find out what went wrong.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

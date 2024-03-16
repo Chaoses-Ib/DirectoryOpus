@@ -4,7 +4,7 @@ Returns *string* converted to upper-case.
 
 //<Example://>
 
-    Output( LCase("Hello World") );
+    Output( UCase("Hello World") );
     --> HELLO WORLD
 
 *See also:*  

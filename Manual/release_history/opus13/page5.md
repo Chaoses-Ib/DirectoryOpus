@@ -25,7 +25,7 @@ Save the whole panel as a preset:
 Presets can be used in the panel itself, in commands, or via the Tools menu without having to open the panel:
 
 \<WRAP indent\>![](/Manual/images/release_history/find_tools.png)\</WRAP\>  
-In *Any Word* mode, popular `+` and `-` syntax makes it easier to match words in any order:
+In *Any Word* mode, popular <kbd>+</kbd> and <kbd>-</kbd> syntax makes it easier to match words in any order:
 
 \<WRAP indent\>![](/Manual/images/release_history/find_plusminus.png)\</WRAP\>  
 Search for folders based on the files they contain. For example, find folders containing JPGs:

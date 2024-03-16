@@ -22,7 +22,10 @@
   - System WM_SETTINGCHANGE messages also trigger this event, with other type values defined by Microsoft. These may include "WindowMetrics", "intl", "Policy", "ConvertibleSlateMode", "SystemDockMode", and more.
 - SysInfo.DarkMode returns true if Opus is in dark mode.
 - SysInfo.DarkModeApps returns true if dark mode is on (for applications) at the OS level.
+- SysInfo.DPI returns the DPI scaling applied to the Opus process.
+- SysInfo.SystemDPI returns the current system DPI (may differ if it changed since Opus launched).
 - SysInfo.TouchInput returns true if the system is in touch mode at the OS level.
+- SysInfo.USBInstall tells you if Opus is running from a portable install (USB Export).
 - DOpus.SpacingScheme returns the name of the current UI spacing scheme within Opus (if any).
 
 ------------------------------------------------------------------------
@@ -45,6 +48,7 @@
 - Opus Date objects can now be created directly from JScript Date objects.
 - Date.Set method now accepts a Unix epoch time directly.
 - Date.ToEpochTime() method added to convert the other way.
+- Improved logic of Date.Add() and Date.Sub() methods when adding/subtracting results in an invalid day (e.g. subtracting 1 month from a date on the 31st where the previous month only has 30 days).
 
 ------------------------------------------------------------------------
 
@@ -106,6 +110,12 @@
 - New "text" resizing option for Markup and Static text controls.
   - When combined with "width" resizing, causes the control to automatically adjust its height as necessary to show the whole text.
   - Controls below it automatically move up or down.
+- Edit controls have a new "cuetext" property which lets you get or set their cue text at runtime.
+- Empty edit controls now continue to show their cue text when they have focus, until something is typed.
+- Dialog titles can be changed at runtime using the Dialog.title property.
+- Tab control labels can be changed at runtime using the Control.label property. (E.g. \<ib:inline-code\>`Control.label(0) = "tab 1";`\</ib:inline-code\>)
+- Control.style now works for dialogs inside tab controls.
+- Fixes for dialog editor language overlays.
 
 ------------------------------------------------------------------------
 
@@ -144,6 +154,8 @@
 - Favorites object:
   - When adding a new separator using the "sep" keyword, heading text can be given as in "sep:heading text".
   - Separator items have a SetHeading() method which lets the heading be modified.
+- StringTools.LanguageStr -- Method. Returns the translated version of a string. (Only for supported strings.)
+- StringTools.MakeLegal -- Method. Replaces characters which are invalid in a filename or path.
 - StringTools.RemoveDiacritics() -- Method. Removes things like accents from characters in a string:
   - Similar to "ignore diacritics" options for pattern matching in Opus.
   - Takes a string and returns a new version of the string.
@@ -161,6 +173,7 @@
 
 \</WRAP\>
 
+- StringTools.Truncate -- Method. Truncates a string or path to a specified width.
 - QuickFilter.flatview -- Property. Tells you if filtering of Flat View folders is on or off.
   - The old QuickFilter.overrideflatview property remains for compatibility, but is probably not very useful. It only tells you if the global Preferences setting is being overridden, but not what the Preferences setting, or the end result, actually is.
   - The new property gives you the end result directly.
@@ -169,7 +182,12 @@
 - Scripting clickData.func.sourcetab.lister.utilpage -- Now returns "ScriptLog" for the Script Log.
 - In JScript (but not VBScript), collections can now be indexed with square brackets as well as parentheses. E.g. DOpus.Listers\[0\].activetab works like DOpus.Listers(0).activetab.
 - GetNewNameData.tab provides Rename scripts with the tab (and thus Lister) which launched the Rename command. Returns false if there is no tab.
-- SysInfo.USBInstall tells you if Opus is running from a portable install (USB Export).
+- When a tab becomes active because another tab closed, the OnActivateTab method is now fired synchronously so the "oldtab" value remains valid.
+- Added ActivateTabData.closing property which is True if the activation change is due to the old tab closing.
+- Scripts can now extract icons from DLLs and EXEs using the standard LoadImage functions.
+- Scripts can now access internal icon images. Pass the icon name prefixed with \# (e.g. "#copy"). By default, the large size is returned; use "#0:name" for the small size. You can also specify a particular set using "#set:icon" or "#0:set:icon".
+- DOpus.GetClipFormat can now be asked to differentiate between files placed on the clipboard via copy and those placed via cut.
+- FSUtil: Exists, GetType and PathType methods no longer trigger password prompts if given a path involving an encrypted archive.
 
 ------------------------------------------------------------------------
 

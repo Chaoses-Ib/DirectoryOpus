@@ -1,6 +1,6 @@
 # Alias
 
-An **Alias** object represents a defined [folder alias](/Manual/preferences/preferences_categories/favorites_and_recent/folder_aliases.md). It is retrieved by enumerating or indexing the **[Aliases](aliases.md)** object.
+An **Alias** object represents a defined [folder alias](/Manual/basic_concepts/the_lister/navigation/aliases.md). It is retrieved by enumerating or indexing the **[Aliases](aliases.md)** object.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

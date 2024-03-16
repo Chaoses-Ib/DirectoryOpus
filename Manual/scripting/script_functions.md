@@ -13,17 +13,13 @@ The **[OnClick](/Manual/reference/scripting_reference/scripting_events/onclick.m
 When the function editor has been set to run a *Script function*, it has three separate tabs which split the function into:
 
 - **Modifiers**: Any [command modifiers](/Manual/customize/creating_your_own_buttons/command_modifiers.md) that apply to the script (e.g. **@filesfromdroponly**).
-
 - **Script Code**: The actual code that defines the script.
-
 - **Resources**: Script [resources](resources/RAEDME.md).
 
 At the bottom of the function editor the **Run** button lets you test the current script immediately, without having to exit *Customize* mode. When you use the **Run** button an output panel will appear below the editor which displays any errors or script text output.
 
 The **Resources** tab defines any [resources](resources/RAEDME.md) available for the script to use. Dialogs are the main type of resource, but also supported are string resources which let you define strings in multiple languages.
 
-**![](/Manual/images/media/image063.png)**
+![](/Manual/images/media/image063.png)
 
-While you can hand-code dialog resources in XML if you wish, it’s much easier to design them using the in-built [dialog editor](script_dialogs/dialog_editor/RAEDME.md).
-
-  
+While you can hand-code dialog resources in XML if you wish, it’s much easier to design them using the in-built [dialog editor](/Manual/scripting/script_editor/editors/dialog_editor/RAEDME.md).

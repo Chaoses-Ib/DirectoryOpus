@@ -24,6 +24,7 @@ Note that the [Advanced Rename](/Manual/file_operations/renaming_files/advanced_
 |  |  | **allwords** | Capitalizes the first letter of each word of the filename.<br /><br />*Example:* `Rename CASE=allwords` |
 |  |  | **extupper** | Converts the filename extension to upper case.<br /><br />*Example:* `Rename CASE=extupper` |
 |  |  | **extlower** | Converts the filename extension to lower case.<br /><br />*Example:* `Rename CASE=extlower` |
+|  |  | **extignore** | Ignores the extension while applying case changes to the filename. Use this in conjunction with one of the other keywords.<br /><br />*Example:* `Rename CASE=upper,extignore` |
 | FINDREP | /O | *(no value)* | Enable find-and-replace mode. The **PATTERN** argument must be used to provide the string to find, and the **TO** argument provides the string to replace it with. You can optionally combine this with the **REGEXP** argument.<br /><br />*Example:* `Rename FINDREP PATTERN="jones" TO="smith"` |
 |  |  | **ext** | Makes find-and-replace operate in the filename extension as well as in the stem of the filename.<br /><br />*Example:* `Rename FINDREP=ext PATTERN="jpg" TO="jpeg"` |
 | FROM |  | *\<filename\> ...* | Renames the files specified on the command line, rather than those selected in the source file display. This argument can accept filenames or [wildcard patterns](../../wildcard_reference/pattern_matching_syntax.md). Remember to enclose each filename in quotes if it contains spaces.<br /><br />*Example:* `Rename FROM C:\Spool\\.tmp TO \*.temp` |

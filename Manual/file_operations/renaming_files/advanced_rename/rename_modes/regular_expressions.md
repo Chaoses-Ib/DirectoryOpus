@@ -2,7 +2,7 @@
 
 The *Regular Expressions* mode lets you perform batch renaming using regular expressions to specify search and replace patterns.
 
-![](/Manual/images/media/regular_expression_rename.png)
+![](/Manual/images/media/13/regular_expression_rename.png)
 
 The example above shows a very simple regular expression that has been used to remove the underscore from the original filenames. The **Old name** pattern of *(.\*)\_(.\*)* uses parentheses to tag two "match anything" expressions, and the *\1\2* in the **New name** pattern inserts the values of the two tagged expressions in the new name.
 

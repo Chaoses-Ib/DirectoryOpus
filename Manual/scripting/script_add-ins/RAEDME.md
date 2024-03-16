@@ -5,7 +5,7 @@
 Whereas [script functions](script_functions.md) are only called whenever the button they reside in is clicked, script add-ins can be invoked automatically in response to one or more [events](/Manual/reference/scripting_reference/scripting_events/RAEDME.md). Each script can provide handling for one or more defined event entry points, and Opus will automatically call on each script that provides handling for the event in question. Some of the events that scripts are notified for include when tabs are activate or deactivated, before and after folder changes, when the view mode is changed and when Listers are opened or closed. Script add-ins can also implement [custom commands](example_scripts/adding_a_new_internal_command.md), which let you extend the Opus internal command set in a similar way to *User commands*, and [custom columns](example_scripts/adding_a_new_column.md), which let you add additional information columns for files and folders.
 
   
-The **[Toolbars / Scripts](/Manual/preferences/preferences_categories/toolbars/scripts.md)** page in Preferences displays a list of any add-in scripts that have been installed. You can use the checkbox to enable or disable each script.
+The **[Script Management](/Manual/scripting/script_management/RAEDME.md)** dialog displays a list of any add-in scripts that have been installed. You can use the checkbox to enable or disable each script.
 
 ![](/Manual/images/media/script_list_001.png)
 

@@ -1,6 +1,6 @@
 # The Lister
 
-Listers are the primary window in Opus, originating from earliest versions on the Amiga computer three decades ago. Back then, they merely displayed a list of files and folders, hence the name. Modern Opus Listers have evolved, boasting various customizable interface elements. Despite these additions, they remain rooted in displaying file and folder lists.
+The main file manager window in Opus is called a "Lister".
 
 ![](/Manual/images/media/13/lister_simple.png) 
 
@@ -23,5 +23,5 @@ This screenshot illustrates a much more complex Lister, and immediately you can 
 - **Utility panel**: This is a multi-facted panel that provides access to several [utility features](/Manual/basic_concepts/the_lister/utility_panel.md), including **[Find](searching_and_filtering/find_files/RAEDME.md)** (search for files and folders, based on definable criteria), **[Synchronize](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.md)** (synchronize the contents of one drive or folder, including remote FTP sites, with another) and **[Duplicate Files](/Manual/additional_functionality/duplicate_file_finder.md)** (search for any files that are duplicated, or for duplicates of specific files). Additionally, the Utility Panel is used to display several logs including the file operations log, the FTP activity log and script output.
 - **Metadata pane**: This pane lets you view and edit the [metadata](/Manual/basic_concepts/the_lister/metadata_pane.md) for the selected file or files. Many different image, music and document file types are supported.
 - **Status bar**: Displays statistics on the current folder, including total number of files, files hidden by filters, free space on the drive and more. You can [configure](/Manual/basic_concepts/the_lister/status_bar.md) what information is displayed through Preferences.
-- **Filter far**: Provides quick access to filename filters, letting you [control which files are shown or hidden](searching_and_filtering/filter_bar.md) in the folder.
+- **Filter bar**: Provides quick access to filename filters, letting you [control which files are shown or hidden](searching_and_filtering/filter_bar.md) in the folder.
 - **Folder tabs**: Using [Folder Tabs](/Manual/basic_concepts/the_lister/tabs/RAEDME.md) you can open multiple folders at the same time and easily switch between them.

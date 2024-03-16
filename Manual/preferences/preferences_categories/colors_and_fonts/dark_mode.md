@@ -8,4 +8,4 @@ This Preferences page lets you select which color set is currently in use.
 - **Dark always** forces Opus to use the "dark mode" color set.
 - **Light always** forces Opus to use the "light mode" color set.
 
-You can also switch color sets using the **Dark Mode** command in the default **Settings** menu (it runs the \`Set DARKMODE=toggle\` internal command).
+You can also switch color sets using the **Dark Mode** command in the default **Settings** menu (it runs the \<ib:inline-code\>`Set DARKMODE=toggle`\</ib:inline-code\> internal command).

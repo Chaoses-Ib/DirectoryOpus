@@ -19,7 +19,7 @@
   - When returning to a folder via a tab's navigation history, if a sub-folder's size came from Everything before then it will be refreshed automatically, using Everything.
   - Caveat 1: The "Size on disk" column will be less accurate for folders when Everything. That column reports the actual space a file uses, which is sometimes larger (due to padding) or smaller (with filesystem compression) than the data inside it. Since Everything doesn't index the information, it will be approximated using the drive's sector size.
   - Caveat 2: Everything's "index attributes" option should be turned on for accurate calculation of folder sizes when junctions, softlinks, etc. are involved.
-  - *Command:* \`GetSizes EVERYTHING\` allows Preferences to be overridden.
+  - *Command:* \<ib:inline-code\>`GetSizes EVERYTHING`\</ib:inline-code\> allows Preferences to be overridden.
 - Junctions and links:
   - (Configured via Preferences / Folders / Folder Sizes / Junctions and Links.)
   - You can now configure whether Opus skips or includes junctions, softlinks, etc. when calculating folder sizes and folder counts.

@@ -1,3 +1,13 @@
 # Find Mode
 
-TOBEDONE
+This page contains options relating to the [Find-As-You-Type](/Manual/basic_concepts/the_lister/find-as-you-type_field.md) field's *Find* mode. Find mode lets you search by filename in the currently displayed folder. As you type the first file matching what you've entered will be selected - press <kbd>F3</kbd> to jump to subsequent matches.
+
+- **Enable all cursor keys**: By default, the <kbd>Left</kbd> and <kbd>Right</kbd> cursor keys as well as <kbd>Home</kbd> and <kbd>End</kbd> are passed through to the file display, which lets you move the selection around in modes like List or Thumbnails using these keys. If you turn this option off those keys will instead be used to move the caret in the FAYT field.
+- **First character repeat mode**: This option mimics Explorer's behavior, where pressing the same letter repeatedly jumps to the next file beginning with that letter.
+- **Highlight matches**: Turns on the highlighting of text within filenames that matches the entered string. You can configure the highlight color on the **[Directory Opus Colors](/Manual/preferences/preferences_categories/colors_and_fonts/directory_opus_colors.md)** Preferences page.
+- **Indicate matches in scrollbar**: When the folder contents don't fit in one page, markers will be overlaid on the scrollbar to indicate the presence of more matches out of view.
+- **Keep highlights visible after field closes**: Matches will remain highlighted after the FAYT field closes. You can press <kbd>Esc</kbd> to clear them.
+- **Ignore diacritics**: Diacritics, or accent symbols, will be ignored when matching. So for example a plain \<ib:inline-code\>`e`\</ib:inline-code\> would be treated the same as \<ib:inline-code\>`é`\</ib:inline-code\>.
+- **Minimize scroll to make item visible**: This option changes the way the file list is scrolled when jumping to files that are currently out of view. The normal behavior is to scroll the list as little as possible, which often results in the matching file being positioned at the bottom of the window. If this option is turned off then the list will be scrolled (if possible) far enough that the matching file is positioned in the middle of the window.
+- **Prioritize shorter filenames**: The normal behaviour of Find mode is to jump to the next matching filename, however when the list isn't sorted alphabetically this may be undesirable. When this option is on, the shortest filename that matches the entered text will be selected, no matter where in the list it is.
+- **Search anywhere in the filename**: This option enables partial matching when searching filenames. When turned off the entered text must match the beginning of the filename; when turned on, the entered text can match anywhere within the filename (although priority is still given to filenames that match at the beginning).

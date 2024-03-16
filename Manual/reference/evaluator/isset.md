@@ -2,11 +2,9 @@
 
 Returns **True** if all specified variables exist (within the context of this evaluation). Returns **False** if any do not exist.
 
-Note the variable name should **not** be quoted (i.e. it is not a string parameter).
-
 //<Example://>
 
-    if (IsSet(j)) { ... } // does a variable called "j" exist?
-    if (IsSet(name, ext)) { ... } // do variables called "name" and "ext" both exist?
+    if (IsSet("j")) { ... } // does a variable called "j" exist?
+    if (IsSet("name", "ext")) { ... } // do variables called "name" and "ext" both exist?
 
 *See also:* [val](val.md)

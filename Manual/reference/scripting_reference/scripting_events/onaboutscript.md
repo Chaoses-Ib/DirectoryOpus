@@ -1,6 +1,6 @@
 # OnAboutScript
 
-The **OnAboutScript** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to display an "about" dialog to the user. It is triggered when the user clicks the *About* button for a script on the **[Toolbars / Scripts](/Manual/preferences/preferences_categories/toolbars/scripts.md)** page in Preferences.
+The **OnAboutScript** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to display an "about" dialog to the user. It is triggered when the user clicks the *About* button for a script on the **[Script Management](/Manual/scripting/script_management/RAEDME.md)** dialog.
 
 | **Method Name:** | OnAboutScript |
 | --- | --- |

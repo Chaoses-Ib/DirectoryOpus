@@ -2,11 +2,12 @@
 
 The *Simple Rename* dialog lets you batch rename files using a simple wildcard system. The \* character (asterisk) is used to specify one or more parts of the existing filename that are to be retained in the new name. It is basically equivalent to the *[Standard Wildcard Rename](advanced_rename/rename_modes/standard_wildcard_rename.md)* mode in the *[Advanced Rename](advanced_rename/RAEDME.md)* dialog. This wildcard system is also used in the **Copy As** and **Move As** functions - see the documentation on [Using Wildcards when Copying](../copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md) for more examples.
 
-The *Simple Rename* function isn't exposed in the default toolbars - instead, we recommend the use of the *Advanced Rename* dialog, as it can do everything the simple one can do plus much more. If you want to use *Simple Rename*, however, you'll need to [configure a button or hotkey](/Manual/customize/creating_your_own_buttons/RAEDME.md) to access it. The command you need is **Rename SIMPLE**.
+The easiest way to access *Simple Rename* is to select the option in the *Rename* dropdown menu - this makes it the default mode, and clicking the *Rename* button after that will bring it up in simple mode by default. You can switch back to the advanced mode at any time.
 
-![](/Manual/images/media/simple_rename.png) 
+You can also access it using the raw command \<ib:inline-code\>`Rename SIMPLE`\</ib:inline-code\>.
 
-  
+![](/Manual/images/media/13/simple_rename.png) 
+
 In this example, we want to rename any file that begins with **Img\_** and ends with **.jpg**. The match is not case sensitive, so this will match **Img_2481.jpg**, **img_2481.jpg**, etc. The \* indicates that any text between the prefix and suffix is to be preserved, and the \* in the **New name** field indicates where that text would be placed. Given the following input filenames, the resultant new names would be:
 
     Img_2481.jpg    IMG2481.jpg

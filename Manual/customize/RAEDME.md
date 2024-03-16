@@ -11,7 +11,7 @@ There are a number of ways to enter Customize mode - the most common are:
 - Select **Customize Toolbars** from the **Settings** menu in a Lister
 - Right-click on an empty area on a toolbar and choose **Customize** from the context menu
 - Click on the window icon (the top-left icon in the title bar) in a Lister and choose **Customize** from the menu. This is a handy thing to remember as it always lets you get to Customize even if you have turned off all your toolbars or accidentally deleted the Customize command from your menu.
-- If the appropriate options are turned on in the [Windows Integration](preferences/preferences_categories/miscellaneous/windows_integration/RAEDME.md) Preferences page, you can access Customize mode from the Windows control panel or by right-clicking an empty area of the desktop
+- If the appropriate options are turned on in the [Windows Integration](preferences/preferences_categories/miscellaneous/windows_integration/RAEDME.md) Preferences page, you can access Customize mode from the desktop context menu.
 
 Opus comes with four pre-defined toolbars (*[the default toolbar set](basic_concepts/the_lister/toolbars/the_default_toolbars/RAEDME.md)*). These toolbars are treated slightly differently to others - you can still edit them and turn them off, but you can't delete them and you can't float them outside the Lister. If at any time you want to return to the default toolbars, there are a number of ways to do it:
 

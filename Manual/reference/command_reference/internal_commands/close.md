@@ -36,6 +36,7 @@ The **Close** command can be used to:
 |  |  | **poweroff** | This shuts the system down and powers off the computer.<br /><br />*Example:* `Close SYSTEM=poweroff` |
 |  |  | **sleep** | Puts the system to sleep.<br /><br />*Example:* `Close SYSTEM=sleep` |
 |  |  | **suspend** | Suspends the system (S4 hibernation).<br /><br />*Example:* `Close SYSTEM=suspend` |
+|  |  | **stay** | (Opus 13.3.2 and above.) Stay running. If not specified, Directory Opus will exit at the same time Windows shuts down. Combine with **sleep** or **suspend** to make Windows sleep or hibernate without exiting Opus.<br /><br />*Example:* `Close SYSTEM=sleep,stay` |
 |  |  | **force** | Use this in addition to the other options to force the system to shutdown even if some programs are not responding. Normally the system will wait for all running programs to exit before shutting down. If you use this option the system will shutdown immediately and you may potentially lose unsaved data if some programs are currently busy.<br /><br />*Example:* `Close SYSTEM=shutdown,force AT 03:30:00 QUIET` |
 |  |  | **forceifhung** | This is the same as the **force** option, but only if there actually are any non-responding programs. Otherwise the shutdown proceeds as normal.<br /><br />*Example:* `Close SYSTEM=restart,forceifhung` |
 |  |  | **switch** | If fast user-switching is enabled, this command will let you switch users. (This cannot be scheduled via the **AT** argument.)<br /><br />*Example:* `Close SYSTEM=switch` |

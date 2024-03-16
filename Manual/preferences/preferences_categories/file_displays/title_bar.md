@@ -10,35 +10,35 @@ By default, the Lister title bar displays just the name of the current folder. Y
 
 The codes below can be used to insert information into the custom title bar string. You can see a list of them by clicking the ![building_blocks.png](/Manual/images/media/13/building_blocks.png) button.
 
-Note that when using the **Custom title** option, the **Display full path** and **Display layout name** options affect what the \`%T\` code inserts.
+Note that when using the **Custom title** option, the **Display full path** and **Display layout name** options affect what the \<ib:inline-code\>`%T`\</ib:inline-code\> code inserts.
 
-|            |                                                                                    |
-|------------|------------------------------------------------------------------------------------|
-| **%P**     | full path of the current (source) folder                                           |
-| **%N**     | name of the current (source) folder                                                |
-| **%R**     | drive root of the current (source) folder                                          |
-| **%D**     | full path of the destination folder                                                |
-| **%M**     | name of the destination folder                                                     |
-| **%G**     | target if the folder is a junction or softlink                                     |
-| **%1**     | full path in the left/top file display                                             |
-| **%2**     | full path in the right/bottom file display                                         |
-| **%3**     | folder name in the left/top file display                                           |
-| **%4**     | folder name in the right/bottom file display                                       |
-| **%5**     | last-loaded tab group in the left/top file display                                 |
-| **%6**     | last-loaded tab group in the right/bottom file display                             |
-| **%7**     | last-loaded tab group in the source file display                                   |
-| **%L**     | name of the Layout the Lister came from (if any)                                   |
-| **%S**     | name of the current Style selected in the Lister (if any)                          |
-| **%T**     | complete original title (useful for simply adding a prefix or suffix to the title) |
-| **%%%%%%** | insert a literal % character                                                       |
-| **%!**     | hide empty blocks within \`%!...%!\` (see below)                                   |
+|            |                                                                                     |
+|------------|-------------------------------------------------------------------------------------|
+| **%P**     | full path of the current (source) folder                                            |
+| **%N**     | name of the current (source) folder                                                 |
+| **%R**     | drive root of the current (source) folder                                           |
+| **%D**     | full path of the destination folder                                                 |
+| **%M**     | name of the destination folder                                                      |
+| **%G**     | target if the folder is a junction or softlink                                      |
+| **%1**     | full path in the left/top file display                                              |
+| **%2**     | full path in the right/bottom file display                                          |
+| **%3**     | folder name in the left/top file display                                            |
+| **%4**     | folder name in the right/bottom file display                                        |
+| **%5**     | last-loaded tab group in the left/top file display                                  |
+| **%6**     | last-loaded tab group in the right/bottom file display                              |
+| **%7**     | last-loaded tab group in the source file display                                    |
+| **%L**     | name of the Layout the Lister came from (if any)                                    |
+| **%S**     | name of the current Style selected in the Lister (if any)                           |
+| **%T**     | complete original title (useful for simply adding a prefix or suffix to the title)  |
+| **%%%%%%** | insert a literal % character                                                        |
+| **%!**     | hide empty blocks within \<ib:inline-code\>`%!...%!`\</ib:inline-code\> (see below) |
 
-The \`%!\` code is special in that it should be used in pairs around the things you want to hide. They will be hidden if all tokens within the block expand to empty values.
+The \<ib:inline-code\>`%!`\</ib:inline-code\> code is special in that it should be used in pairs around the things you want to hide. They will be hidden if all tokens within the block expand to empty values.
 
-Consider a title of \`%!%N - %!Directory Opus\` for example:
+Consider a title of \<ib:inline-code\>`%!%N -  %!Directory Opus`\</ib:inline-code\> for example:
 
-- If \`%N\` expands to \`My Folder\` then you will get "*My Folder - Directory Opus*".
-- If \`%N\` expands to nothing (e.g. the active folder tab is empty and has no path) then you will get "*Directory Opus*", rather than "// - Directory Opus//".
+- If \<ib:inline-code\>`%N`\</ib:inline-code\> expands to \<ib:inline-code\>`My Folder`\</ib:inline-code\> then you will get "*My Folder - Directory Opus*".
+- If \<ib:inline-code\>`%N`\</ib:inline-code\> expands to nothing (e.g. the active folder tab is empty and has no path) then you will get "*Directory Opus*", rather than "// - Directory Opus//".
 
 If you need something even more custom or dynamic, the titlebars for individual windows can also be overridden via commands and scripts.
 

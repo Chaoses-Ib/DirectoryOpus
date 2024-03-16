@@ -6,13 +6,16 @@ Normally when files are deleted from a computer hard drive, the data that those 
 
 For confidential or sensitive documents, the secure delete function can be used to overwrite the file data before the file is deleted. The file data is overwritten using algorithms similar to those recommended by the US NSA and other security agencies. You can select the number of overwrite passes (from one to 31), although three passes is required as generally quite secure. Deleting a file in this way is much slower than normal, as every byte of the file must be overwritten one or more times, but it makes the original file data practically impossible to recover.
 
-There are two ways to use secure delete:
+You should use this function with some caution!
 
-- On a per-file basis, using the **Secure Wipe** command in the drop-down attached to the Delete button on the toolbar.
+##### Secure delete on a per-file basis
 
-![](/Manual/images/media/delete_dropdown.png)
+The easiest way to securely delete one or more files is to use the **Secure Wipe** command in the drop-down attached to the **Delete** button on the toolbar.
 
-When you run this command, selected files and folders will be overwritten the number of times specified on the **[File Operations / Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md)** page in Preferences.  
-\* If you always want to use secure delete, you can turn on the **Use Secure Wipe** option on the **[Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md)** page in Preferences. With this option on, Opus will use secure delete whenever it's not deleting files to the recycle bin - so if you for example, press **Shift+Delete** to delete a file bypassing the recycle bin, the file will be securely deleted. You can even turn off the recycle bin altogether if desired.
+When you run this command, selected files and folders will be overwritten the number of times specified on the **[File Operations / Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md)** page in Preferences.
 
-You should use this function with some caution, as files deleted in this manner can not be recovered!
+##### Always using secure delete
+
+If you always want to use secure delete, you can turn on the **Use Secure Wipe** option on the **[Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md)** page in Preferences.
+
+With this option on, Opus will use secure delete whenever it's not deleting files to the recycle bin - so if you for example, press <kbd>Shift+Del</kbd> to delete a file bypassing the recycle bin, the file will be securely deleted. You can even turn off the recycle bin altogether if desired.

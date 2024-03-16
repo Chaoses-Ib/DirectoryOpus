@@ -7,5 +7,5 @@ The internal icons have automatic display names – for example, hovering over t
 If your icons have the same name as the internal icons, they will be given localized display names automatically. Otherwise, you can provide display names for your icons as follows:
 
     <set size="small" width="20" height="20" filename="UtilIcons.png">
-    <icon name="burncd" display_name="Burn To CD" row="2" col="8" category="Tools" />
+        <icon name="burncd" display_name="Burn To CD" row="2" col="8" category="Tools" />
     </set>

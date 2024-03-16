@@ -19,7 +19,7 @@
     - The Find Panel's configuration will be stored as part of the collection.
     - Creates a file collection which automatically re-runs the Find each time you navigate to it, and/or on refresh.
   - Stored Queries now work with Everything and Opus Find.
-    - Stored queries that use Opus Find can also supply a text filter (see below) definition by prefixing it with a & character, or Evaluator code by prefixing with \`=\`.
+    - Stored queries that use Opus Find can also supply a text filter (see below) definition by prefixing it with a & character, or Evaluator code by prefixing with \<ib:inline-code\>`=`\</ib:inline-code\>.
   - "Show Results" now lets you send results to a new tab on the left or right (not just source or destination).
   - "Automatically shrink" option can now be found by right-clicking the Utility Panel's Shrink button (next to the close button).
   - "Find Results" now has its own folder format, distinct from the more general "Collection" format.
@@ -31,24 +31,24 @@
     - Find Empty Folders -- Finds completely empty folders.
     - Find Zero-Byte Folders -- Finds folders which only contain empty files or other empty folders.
 - Exclude folders:
-  - New "Exclude" field lets you exclude files and folders. Excludes the Recycle Bin by default. Supports multiple paths, wildcards and regex. Syntax options:
-    - \`regex:xxxx\` - Regular expression must match to exclude an item.
-    - \`wild:xxxx\` - Standard wildcard must match to exclude an item.\<WRAP\>
+  - New "Exclude" field lets you exclude files and folders. Excludes Recycle Bin and System Volume Information folders by default. Supports multiple paths, wildcards and regex. Syntax options:
+    - \<ib:inline-code\>`regex:xxxx`\</ib:inline-code\> - Regular expression must match to exclude an item.
+    - \<ib:inline-code\>`wild:xxxx`\</ib:inline-code\> - Standard wildcard must match to exclude an item.\<WRAP\>
 
-(Wildcards are auto-detected without the \`wild:\` prefix if using \`\*?\|\` characters. Other wildcard characters which are valid path characters require an explicit \`wild:\` prefix to be interpreted as such.)\</WRAP\>
+(Wildcards are auto-detected without the \<ib:inline-code\>`wild:`\</ib:inline-code\> prefix if using \<ib:inline-code\>`*?|`\</ib:inline-code\> characters. Other wildcard characters which are valid path characters require an explicit \<ib:inline-code\>`wild:`\</ib:inline-code\> prefix to be interpreted as such.)\</WRAP\>
 
-        * `C:\Temp` - Fully qualified path; matches path itself and contents.
-        * `C:\Temp\*` - Fully qualified path, with wildcard; matches contents only.
-        * `Name` - Non-wild, non fully qualified; matches itself and contents. Turns into: `*\Name(|\*)` 
-        * `Name\*` - Non-wild name with trailing `*`; matches contents only. Turns into: `*\Name\*`
-        * `Name*` - Wild name; matches itself and contents. Turns into: `*\Name*`
+        * <ib:inline-code><code>C:\Temp</code></ib:inline-code> - Fully qualified path; matches path itself and contents.
+        * <ib:inline-code><code>C:\Temp\*</code></ib:inline-code> - Fully qualified path, with wildcard; matches contents only.
+        * <ib:inline-code><code>Name</code></ib:inline-code> - Non-wild, non fully qualified; matches itself and contents. Turns into: <ib:inline-code><code>*\Name(|\*)</code></ib:inline-code> 
+        * <ib:inline-code><code>Name\*</code></ib:inline-code> - Non-wild name with trailing <ib:inline-code><code>*</code></ib:inline-code>; matches contents only. Turns into: <ib:inline-code><code>*\Name\*</code></ib:inline-code>
+        * <ib:inline-code><code>Name*</code></ib:inline-code> - Wild name; matches itself and contents. Turns into: <ib:inline-code><code>*\Name*</code></ib:inline-code>
     * Simple mode:        
       * Size units (KB/MB/GB) can be selected.
       * Text (contents search) field has "Assume UTF8" option.
       * Enhancements to "any word" matching:              
-        * Words prefixed with `+` must match (in any order).
-        * Words prefixed with `-` must not match.
-        * Words without `+` or `-` may match, and at least one must match if any are specified.
+        * Words prefixed with <ib:inline-code><code>+</code></ib:inline-code> must match (in any order).
+        * Words prefixed with <ib:inline-code><code>-</code></ib:inline-code> must not match.
+        * Words without <ib:inline-code><code>+</code></ib:inline-code> or <ib:inline-code><code>-</code></ib:inline-code> may match, and at least one must match if any are specified.
         * If one or more file extensions are specified, all folders will be excluded, and files must match one of the extensions (in addition to any other words specified).
         * Partial file extensions are supported. ".jp" will also match ".jpg".
         * Partial extension matching can be suppressed by using an explicit wildcard: "*.jp" will only match ".jp" and not ".jpg".
@@ -66,30 +66,30 @@
         * Text filters are also easier to share with other people (e.g. on the support forum).
       * Text filters can also run Evaluator code:                 
         * Bypasses the filter system completely and invokes the Evaluator on each file.
-        * Prefix the filter definition with `=`.
+        * Prefix the filter definition with <ib:inline-code><code>=</code></ib:inline-code>.
         * If Evaluator code is in the text filter control, it can't be switched out of text mode. Evaluator code can't be converted to a traditional filter definition.
         * Code can uses the same variables (e.g. name, picwidth, etc.) as Evaluator Columns (see elsewhere in the release notes).
         * Code should return true a match, and false to skip the file.
-        * //Example 1:// `=ext(name) == ".jpg" && picwidth >= 1920`
-        * Can handle subfolder recursion as well. The `subfolder` variable will be true when the evaluator is querying whether a folder should be entered. Return true to enter or false to skip. By default all subfolders are searched.
-        * //Example 2:// `=subfolder ? (left(name, 1) == "a") : (ext(name) == ".jpg")` -- Find JPG files under folders whose names begin with "a".
+        * //Example 1:// <ib:inline-code><code>=ext(name) == ".jpg" && picwidth >= 1920</code></ib:inline-code>
+        * Can handle subfolder recursion as well. The <ib:inline-code><code>subfolder</code></ib:inline-code> variable will be true when the evaluator is querying whether a folder should be entered. Return true to enter or false to skip. By default all subfolders are searched.
+        * //Example 2:// <ib:inline-code><code>=subfolder ? (left(name, 1) == "a") : (ext(name) == ".jpg")</code></ib:inline-code> -- Find JPG files under folders whose names begin with "a".
     * Commands:       
-      * `Find FILTERDEF` -- Allows passing a filter definition in text form. Also allows Evaluator code. See "advanced mode", above.
-      * `Find HERE` -- Specifies that the Find operation should work from the current folder.
-      * `Find UAC=yes` -- Turn on searching inside folders that require elevation to look inside.
-      * `Find PRESET="My Preset"` -- Runs the specified preset immediately.
-      * `Find PRESET="My Preset" NOAUTORUN` -- Opens the Find panel with the preset loaded.
-      * `Find PRESET=!list` -- Generates a list of Find presets. Used by the default Tools > Find Presets menu. Can also specify "faves", "nofaves" or "nogroups".
-      * `Set Utility=Find PRESET="My Preset"` -- Alternative way to open the Find panel with a preset.
-      * `Set UTILITY=Find,Toggle` -- Old command now toggles the Find panel regardless of its Simple or Advanced state. When re-opening, panel opens in the mode which was last closed.
-      * `Set UTILITY=FindSimple,Toggle` -- Explicitly toggle the Find panel in Simple mode.
-      * `Set UTILITY=FindAdvanced,Toggle` -- Explicitly toggle the Find panel in Advanced mode.
-      * `Go NEW=FindPanel` -- Similarly, opens the new window's Find panel in the last used Simple or Advanced mode.
-      * `Go NEW=FindSimple` -- Explicitly opens a new window with the Find panel in Simple mode.
-      * `Go NEW=FindAdvanced` -- Explicitly opens a new window with the Find panel in Advanced mode.
-      * `Find SHOWRESULTS=tab,left` -- Send results to new tab on the left (or right).
+      * <ib:inline-code><code>Find FILTERDEF</code></ib:inline-code> -- Allows passing a filter definition in text form. Also allows Evaluator code. See "advanced mode", above.
+      * <ib:inline-code><code>Find HERE</code></ib:inline-code> -- Specifies that the Find operation should work from the current folder.
+      * <ib:inline-code><code>Find UAC=yes</code></ib:inline-code> -- Turn on searching inside folders that require elevation to look inside.
+      * <ib:inline-code><code>Find PRESET="My Preset"</code></ib:inline-code> -- Runs the specified preset immediately.
+      * <ib:inline-code><code>Find PRESET="My Preset" NOAUTORUN</code></ib:inline-code> -- Opens the Find panel with the preset loaded.
+      * <ib:inline-code><code>Find PRESET=!list</code></ib:inline-code> -- Generates a list of Find presets. Used by the default Tools > Find Presets menu. Can also specify "faves", "nofaves" or "nogroups".
+      * <ib:inline-code><code>Set Utility=Find PRESET="My Preset"</code></ib:inline-code> -- Alternative way to open the Find panel with a preset.
+      * <ib:inline-code><code>Set UTILITY=Find,Toggle</code></ib:inline-code> -- Old command now toggles the Find panel regardless of its Simple or Advanced state. When re-opening, panel opens in the mode which was last closed.
+      * <ib:inline-code><code>Set UTILITY=FindSimple,Toggle</code></ib:inline-code> -- Explicitly toggle the Find panel in Simple mode.
+      * <ib:inline-code><code>Set UTILITY=FindAdvanced,Toggle</code></ib:inline-code> -- Explicitly toggle the Find panel in Advanced mode.
+      * <ib:inline-code><code>Go NEW=FindPanel</code></ib:inline-code> -- Similarly, opens the new window's Find panel in the last used Simple or Advanced mode.
+      * <ib:inline-code><code>Go NEW=FindSimple</code></ib:inline-code> -- Explicitly opens a new window with the Find panel in Simple mode.
+      * <ib:inline-code><code>Go NEW=FindAdvanced</code></ib:inline-code> -- Explicitly opens a new window with the Find panel in Advanced mode.
+      * <ib:inline-code><code>Find SHOWRESULTS=tab,left</code></ib:inline-code> -- Send results to new tab on the left (or right).
       * Other new Find command arguments: EXCLUDEHIDDEN, EXCLUDESYSTEM, IGNOREDIACRITICS, REGEXP, CASE, CONTREGEXP, CONTIGNOREDIACRITICS, CONTNOPARTIAL, CONTUTF8, QUERYENGINE.
-      * `DOpusRT.exe /col /engine=everything setquery...` -- See //External Manipulation of File Collections// in the main manual.
+      * <ib:inline-code><code>DOpusRT.exe /col /engine=everything setquery...</code></ib:inline-code> -- See //External Manipulation of File Collections// in the main manual.
 
 ------------------------------------------------------------------------
 

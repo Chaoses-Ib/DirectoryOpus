@@ -1,11 +1,11 @@
 # Security
 
-Options that control file permissions and security settings when copying files. These options can be overridden by various arguments for the \`Copy\` command. Turning them on may impose an extra per-file overhead in some cases.
+Options that control file permissions and security settings when copying files. These options can be overridden by various arguments for the \<ib:inline-code\>`Copy`\</ib:inline-code\> command. Turning them on may impose an extra per-file overhead in some cases.
 
-- **Copy file ownership**: This option copies file owner information, assuming the source and destination filesystems support the Windows concept of file owners. Normally, newly copied files will be owned by the user making the copy, but with this option on they would be owned by original file's owner. Because setting the file owner requires administrator permissions, this may cause a UAC prompt to be displayed if the original owner is not the current user. This can be overridden by the \`Copy\` command's \`COPYOWNER\` argument.
+- **Copy file ownership**: This option copies file owner information, assuming the source and destination filesystems support the Windows concept of file owners. Normally, newly copied files will be owned by the user making the copy, but with this option on they would be owned by original file's owner. Because setting the file owner requires administrator permissions, this may cause a UAC prompt to be displayed if the original owner is not the current user. This can be overridden by the \<ib:inline-code\>`Copy`\</ib:inline-code\> command's \<ib:inline-code\>`COPYOWNER`\</ib:inline-code\> argument.
   - **Local drives only**: File ownership will only be copied on local drives, not for network locations.
 
-- **Copy security permissions when copying, or moving between drives**: This reproduces the security permissions of each file on each respective copy, assuming the source and destination filesystems support Windows file permissions. When turned off, copied files inherit the permissions of the folders they are copied into, which is usually what you want. This can be overridden by the \`COPYSECURITY\` argument.
+- **Copy security permissions when copying, or moving between drives**: This reproduces the security permissions of each file on each respective copy, assuming the source and destination filesystems support Windows file permissions. When turned off, copied files inherit the permissions of the folders they are copied into, which is usually what you want. This can be overridden by the \<ib:inline-code\>`COPYSECURITY`\</ib:inline-code\> argument.
 
 ##### Update permissions/encryption to match destination when moving on same drive
 
@@ -13,7 +13,7 @@ Normally, when you move a file on the same drive (an operation that doesn't invo
 
 Similarly, the moved file will be encrypted or decrypted if needed to match the normal state of the target folder. (This is about filesystem-level encryption, as provided by Windows/NTFS and controlled via a file or folder's standard Properties dialog, and not any other type of encryption.)
 
-This can be overridden by the \`Copy\` command's \`UPDATESECURITY\` argument.
+This can be overridden by the \<ib:inline-code\>`Copy`\</ib:inline-code\> command's \<ib:inline-code\>`UPDATESECURITY`\</ib:inline-code\> argument.
 
 - **Update permissions even if it would trigger a UAC prompt**: \<WRAP\>When turned on, if a file was moved without elevation and there is an access-denied error when updating its permissions, Opus will display a UAC prompt and try to update the permissions again with elevation. When turned off, no UAC prompt will be displayed and updating permissions will be skipped if there is an access denied error.
 

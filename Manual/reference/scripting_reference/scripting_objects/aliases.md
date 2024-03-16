@@ -1,6 +1,6 @@
 # Aliases
 
-The **Aliases** object holds a collection of all the defined [folder aliases](/Manual/preferences/preferences_categories/favorites_and_recent/folder_aliases.md). It is retrieved from the **[DOpus](dopus.md).aliases** method.  
+The **Aliases** object holds a collection of all the defined [folder aliases](/Manual/basic_concepts/the_lister/navigation/aliases.md). It is retrieved from the **[DOpus](dopus.md).aliases** method.  
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

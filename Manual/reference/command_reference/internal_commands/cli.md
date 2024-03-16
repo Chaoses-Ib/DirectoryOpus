@@ -4,7 +4,7 @@ The **CLI** internal command can be used to:
 
 - Open the [CLI / Ad-Hoc Script Editor](/Manual/additional_functionality/cli.md) window
 - Open an MS-DOS prompt (with the current directory set to the current folder in the Lister)
-- Cause the [find-as-you-type](/Manual/preferences/preferences_categories/file_displays/fayt_and_filter_bar_keys.md) field to appear in its various modes.
+- Cause the [find-as-you-type](/Manual/basic_concepts/the_lister/find-as-you-type_field.md) field to appear in its various modes.
 
 **Command Arguments:** 
 

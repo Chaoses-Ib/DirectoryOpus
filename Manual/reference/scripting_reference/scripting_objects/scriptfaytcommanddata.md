@@ -6,7 +6,7 @@ The **ScriptFAYTCommandData** object is passed to the script-defined entry point
 | --- | --- | --- |
 | cmdline | *string* | Provides the text the user typed into the FAYT field. |
 | fayt | *string*  <br />or *bool* | The name of the FAYT extension command being invoked. This lets you use the same entry point to implement multiple FAYT extensions if desired. If the value is **False** then this is not a FAYT extension at all, but a regular [script command](scriptcommanddata.md). |
-| flags | *int* | Provides the sum of all the flags the user has enabled for your FAYT extension. These come from the **flags** property you specified when initialising your extension via the **[scriptfaytcommand](scriptfaytcommand.md)** object. |
+| flags | *int* | Provides the sum of all the flags the user has enabled for your FAYT extension. These come from the **flags** property you specified when initialising your extension via the **[scriptfaytcommand](scriptfaytcommand.md)** object.<br /><br />Your script can update the flags in the users' configuration using the **[Script](script.md).UpdateFAYTFlags** method. |
 | key | *string* | This will equal the string **"return"** if the user pushed the return key to trigger your FAYT extension. |
 | suggest | *bool* | If set to **True** this is a hint that you should update the suggestions list via the **[tab](tab.md).UpdateFAYTSuggestions** method. |
 | quickkey | *string* | Provides the key that initially triggered the FAYT in this mode. |

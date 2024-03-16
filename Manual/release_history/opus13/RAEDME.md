@@ -2,6 +2,14 @@
 
 ![](/Manual/images/media/13/logo_opus13.png)
 
+#### Highlights Video
+
+If you prefer watching to reading, a video version of these highlights can be found here:
+
+[![](/release_history/do13_highlights_video_thumb.jpg)](https://www.youtube.com/watch?v=K57m_Ogy8Lg)
+
+\_\_\_\_
+
 #### Table of contents
 
   

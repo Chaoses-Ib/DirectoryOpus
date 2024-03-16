@@ -11,7 +11,7 @@ There are a number of ways to connect to an FTP site in Opus:
 - You can create and maintain an [Address Book](/Manual/ftp/ftp_address_book/RAEDME.md) of FTP sites. When a site is listed in the address book, you can connect to it using the list displayed in the FTP drop-down menu on the toolbar.  
   ![](/Manual/images/media/ftp_dropdown_menu.png)
 
-Your FTP Address Book entries can also be displayed in the [folder tree](basic_concepts/the_lister/navigation/folder_tree.md), and in the [Jump List](preferences/preferences_categories/favorites_and_recent/jumplist.md) for Windows 7 users.
+Your FTP Address Book entries can also be displayed in the [folder tree](basic_concepts/the_lister/navigation/folder_tree.md) and the [Jump List](/Manual/preferences/preferences_categories/miscellaneous/windows_integration/jump_list.md).
 
 More:
 

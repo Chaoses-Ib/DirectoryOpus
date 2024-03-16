@@ -11,4 +11,4 @@ Select **Customize** from the **Settings** menu, and then right-click on the pat
 - **dest**: The path field will always control the destination file display.
 - **focus:** If the path field is configured to control a file display other than the source, adding the **focus** keyword as well will cause the focus to be set to that file display automatically (i.e. that file display will become the new source whenever the folder is changed).
 
-Please note that the [breadcrumbs path field](/Manual/basic_concepts/the_lister/navigation/breadcrumbs_location_field.md) has [lots of other configurable options](breadcrumbs_configuration.md) as well as the above keywords.
+For breadcrumbs path fields, you can configure their appearance and behavior via the [Location Bar / Path Fields](/Manual/preferences/preferences_categories/location_bar/path_fields/RAEDME.md) Preferences section.

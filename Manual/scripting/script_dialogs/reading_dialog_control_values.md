@@ -4,9 +4,8 @@ The primary use of a script dialog is to obtain information from the user. The *
 
 The **[Dialog](/Manual/reference/scripting_reference/scripting_objects/dialog.md).Control** method is used to obtain a **[Control](/Manual/reference/scripting_reference/scripting_objects/control.md)** object corresponding to a dialog control. The **[Control](/Manual/reference/scripting_reference/scripting_objects/control.md)** method takes between one and three parameters:
 
-**Dim dlgCtrl**
-
-**Set dlgCtrl = Dialog.Control ( \<control\>, \[\<dialog\>, \[\<tab\>\]\] )**
+    Dim dlgCtrl
+    Set dlgCtrl = Dialog.Control ( <control>, [<dialog>, [<tab>]] )
 
  
 
@@ -23,31 +22,30 @@ Below is an example of a simple (non-detached) dialog that asks you to enter you
 # Reading Dialog Control Values
 
     Function OnClick(ByRef clickData)
-
-    Set Dlg = DOpus.Dlg
-    Dlg.window = clickData.func.sourcetab
-    Dlg.template = "testdlg"
-    Dlg.Show
-    DOpus.Output "Hi, " & Dlg.Control("name").value & "!"
-    DOpus.Output "Return code = " & Dlg.result
+      Set Dlg = DOpus.Dlg
+      Dlg.window = clickData.func.sourcetab
+      Dlg.template = "testdlg"
+      Dlg.Show
+      DOpus.Output "Hi, " & Dlg.Control("name").value & "!"
+      DOpus.Output "Return code = " & Dlg.result
     End Function
 
 # Reading Dialog Control Values
 
     <resources>
-    <resource name="testdlg" type="dialog">
-    <dialog fontsize="8" height="58" lang="english" title="Test!" width="180">
-    <control halign="left" height="8" name="static1"
-    title="Enter your &name, and click a button."
-    type="static" width="159" x="9" y="6" />
-    <control halign="left" height="12" name="name" tip="Your name goes here"
-    type="edit" width="163" x="9" y="20" />
-    <control close="1" default="yes" height="14" name="button1" title="One"
-    type="button" width="50" x="9" y="38" />
-    <control close="2" height="14" name="button2" title="Two" type="button"
-    width="50" x="66" y="38" />
-    <control close="3" height="14" name="button3" title="Three" type="button"
-    width="50" x="122" y="38" />
-    </dialog>
-    </resource>
+      <resource name="testdlg" type="dialog">
+        <dialog fontsize="8" height="58" lang="english" title="Test!" width="180">
+          <control halign="left" height="8" name="static1"
+                   title="Enter your &name, and click a button."
+                   type="static" width="159" x="9" y="6" />
+          <control halign="left" height="12" name="name" tip="Your name goes here"
+                   type="edit" width="163" x="9" y="20" />
+          <control close="1" default="yes" height="14" name="button1" title="One"
+                   type="button" width="50" x="9" y="38" />
+          <control close="2" height="14" name="button2" title="Two"
+                   type="button" width="50" x="66" y="38" />
+          <control close="3" height="14" name="button3" title="Three"
+                   type="button" width="50" x="122" y="38" />
+        </dialog>
+      </resource>
     </resources>

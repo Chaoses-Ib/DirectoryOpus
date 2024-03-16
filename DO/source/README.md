@@ -10,7 +10,7 @@ Setup:
 pip install -r ../requirements.txt
 ```
 ```sh
-scoop install pandoc
+scoop install pandoc@3.1.8
 ```
 
 Dump:
@@ -25,7 +25,7 @@ python -m dokuWikiDumper --current-only --ignore-disposition-header-missing --th
 
 Convert: [manual.ipynb](manual.ipynb)
 
-Move `media/media` and `media/release_history` to `Manual/images`.
+Move `media/media`, `media/scripting` and `media/release_history` to `Manual/images`.
 
 RSS:
 - Recent Changes: https://docs.dopus.com/feed.php

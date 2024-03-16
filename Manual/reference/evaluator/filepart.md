@@ -1,6 +1,6 @@
-\<evalcmd\> FilePart && string && Filename component of specified path. && path && path && File or folder path. \</evalcmd\>
+\<evalcmd\> FilePart && string && Filename component of specified path. && path && path && File or folder path. && \[components\] && int && Number of components to return. \</evalcmd\>
 
-Returns the filename component of the specified path.
+Returns the filename (trailing) component or components of the specified path. If *components* isn't specified, the final component is returned.
 
 //<Example://>
 

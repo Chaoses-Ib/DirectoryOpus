@@ -9,7 +9,7 @@
 - Tools \> Opus CLI / Ad-Hoc Script Editor now has an Evaluator mode which lets you experiment with it.
   - Start typing, or push Ctrl+Space, for popup suggestions listing Evaluator functions.
   - In the pop-up list, hover over a function for detailed information.
-
+- *Command:* \<ib:inline-code\>`Set EVALUATORDISABLE=Toggle`\</ib:inline-code\> lets you disable the evaluator if something goes wrong. It will be re-enabled on the next restart, or via running the command again.
 - Use of the Evaluator is discussed more in other sections, since it can be used in various ways.
 
 ------------------------------------------------------------------------

@@ -22,7 +22,7 @@ You can see that for the **.jpg** file in the above screenshot, all the EXIF inf
 
 ##### Inserting information
 
-Information about the file is inserted into the info tip using \`{ ... }\` codes, containing a keyword referring to a file information column.
+Information about the file is inserted into the info tip using \<ib:inline-code\>`{ ... }`\</ib:inline-code\> codes, containing a keyword referring to a file information column.
 
 The keywords used in info tips are the same as used by the [Rename](/Manual/file_operations/renaming_files/RAEDME.md) function when [renaming files using metadata](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.md), and the **[Set](/Manual/reference/command_reference/internal_commands/set.md)** command when adding and removing columns to the file display. See the [Keywords for Columns](/Manual/reference/metadata_keywords/keywords_for_columns.md) page for a full list of supported keywords.
 
@@ -30,18 +30,18 @@ You can also insert information using the [evaluator](/Manual/evaluator/RAEDME.m
 
 ##### Special code: {foldersize}
 
-This code applies to the info tips for folders, and its use will cause Opus to calculate the total size of the folder when its info tip is displayed. This lets you display the size of a folder by simply hovering over it. You can add the **noprefix** keyword to suppress the default ***Size:*** prefix - for example, \`{foldersize:noprefix}\`.
+This code applies to the info tips for folders, and its use will cause Opus to calculate the total size of the folder when its info tip is displayed. This lets you display the size of a folder by simply hovering over it. You can add the **noprefix** keyword to suppress the default ***Size:*** prefix - for example, \<ib:inline-code\>`{foldersize:noprefix}`\</ib:inline-code\>.
 
 ##### Special code: {foldercontents}
 
 This code also applies to folders; it will result in Opus displaying the names of the first few files and sub-folders contained in the folder. You can control the output with these keywords:
 
-- **files** and **dirs**: By default, both files and folders are shown. You can use the **files** and **dirs** keywords to limit the contents to just one or the other. For example, \`{foldercontents:files}\`
-- **noprefix**: By default, \`Folders:\` and \`Files:\` prefixes are added before each list, respectively. You can use the **noprefix** keyword to suppress this. For example: \`{foldercontents:files,noprefix}\`
-- **singleline**: By default, each file or folder is displayed on a separate line for easy reading. You can use the **singleline** keyword to compact everything into a single line (one line for folders, another for files). For example: \`{foldercontents:files:singleline}\`
-- **indent**: In multi-line mode, each line begins with \`    \` (four spaces) by default. In single-line mode, each item is separated by \`, \`. You can use the **indent** keyword to change both of these. The **indent** keyword must be the last parameter, since it uses everything up to the end of the string. For example: \`{foldercontents:indent=--\> }\` or \`{foldercontents:singleline,indent= :: }\`
-- **maxitems**: To limit the maximum total number of items (files and folders, combined), use the **maxitems** keyword. Where a single **{foldercontents}** tag lists both files and folders, the limit applies to the count of both together, not to each category individually. The default maximum is 10 items in total (files and folders). Note that there is a hard maximum of 20 items *in each category* (files or folders) and thus a hard maximum of 40 items in total. When there are more items than the maximum, the list or lists will be truncated with \`...\`. For example: \`{foldercontents:files,maxitems=20}\`
-- **maxitemlength**: To limit the maximum length of each individual item, use the **maxitemlength** keyword. Note that there is a hard maximum of 260 characters, and a default limit of 40 characters. When a name is too long, it will be truncated with \`...\`. For example: \`{foldercontents:maxitemlength=20}\`
+- **files** and **dirs**: By default, both files and folders are shown. You can use the **files** and **dirs** keywords to limit the contents to just one or the other. For example, \<ib:inline-code\>`{foldercontents:files}`\</ib:inline-code\>
+- **noprefix**: By default, \<ib:inline-code\>`Folders:`\</ib:inline-code\> and \<ib:inline-code\>`Files:`\</ib:inline-code\> prefixes are added before each list, respectively. You can use the **noprefix** keyword to suppress this. For example: \<ib:inline-code\>`{foldercontents:files,noprefix}`\</ib:inline-code\>
+- **singleline**: By default, each file or folder is displayed on a separate line for easy reading. You can use the **singleline** keyword to compact everything into a single line (one line for folders, another for files). For example: \<ib:inline-code\>`{foldercontents:files:singleline}`\</ib:inline-code\>
+- **indent**: In multi-line mode, each line begins with \<ib:inline-code\>`    `\</ib:inline-code\> (four spaces) by default. In single-line mode, each item is separated by \<ib:inline-code\>`, `\</ib:inline-code\>. You can use the **indent** keyword to change both of these. The **indent** keyword must be the last parameter, since it uses everything up to the end of the string. For example: \<ib:inline-code\>`{foldercontents:indent=--> }`\</ib:inline-code\> or \<ib:inline-code\>`{foldercontents:singleline,indent= :: }`\</ib:inline-code\>
+- **maxitems**: To limit the maximum total number of items (files and folders, combined), use the **maxitems** keyword. Where a single **{foldercontents}** tag lists both files and folders, the limit applies to the count of both together, not to each category individually. The default maximum is 10 items in total (files and folders). Note that there is a hard maximum of 20 items *in each category* (files or folders) and thus a hard maximum of 40 items in total. When there are more items than the maximum, the list or lists will be truncated with \<ib:inline-code\>`...`\</ib:inline-code\>. For example: \<ib:inline-code\>`{foldercontents:files,maxitems=20}`\</ib:inline-code\>
+- **maxitemlength**: To limit the maximum length of each individual item, use the **maxitemlength** keyword. Note that there is a hard maximum of 260 characters, and a default limit of 40 characters. When a name is too long, it will be truncated with \<ib:inline-code\>`...`\</ib:inline-code\>. For example: \<ib:inline-code\>`{foldercontents:maxitemlength=20}`\</ib:inline-code\>
 
 ##### Special code: {thumbnail}
 
@@ -65,13 +65,13 @@ This code causes Opus to display the standard, system info tip for the file (if 
 
 You can create *hide sections* that hide text when certain information isn't available. For example, you could show the GPS coordinates of an image if it has them, but you might not want the labels for those fields to be visible if it doesn't.
 
-Use the code \`{! ... }\` to open a hide section, and \`{!}\` to close it. The opening code should contain the names of one or more fields to test for. Field names should be separated by \`&\` characters. All specified fields must exist for the hide section to be visible. If one or more doesn't, then all text between the open and close of the section will be hidden.
+Use the code \<ib:inline-code\>`{! ... }`\</ib:inline-code\> to open a hide section, and \<ib:inline-code\>`{!}`\</ib:inline-code\> to close it. The opening code should contain the names of one or more fields to test for. Field names should be separated by \<ib:inline-code\>`&`\</ib:inline-code\> characters. All specified fields must exist for the hide section to be visible. If one or more doesn't, then all text between the open and close of the section will be hidden.
 
 For example,
 
     {!picwidth&picheight}Size: {picwidth} x {picheight}{!}
 
-This might display, for example, \`Size: 1024 x 768\` for an image, but would display nothing for a text file.
+This might display, for example, \<ib:inline-code\>`Size: 1024 x 768`\</ib:inline-code\> for an image, but would display nothing for a text file.
 
 You can also define hide sections using the [evaluator](/Manual/evaluator/RAEDME.md).
 

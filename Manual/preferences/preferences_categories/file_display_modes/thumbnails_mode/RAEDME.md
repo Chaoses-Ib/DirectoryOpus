@@ -5,7 +5,7 @@ This page contains options that affects the appearance of thumbnails in file di
 - **Thumbnail size**: Specify the size in pixels of thumbnail images (*width* x *height*). Thumbnails will be scaled down to fit within these boundaries, preserving their aspect ratio. The ![](/Manual/images/media/13/pathlink-linked.png) **Make square** button provides a quick way to set the width and height to the same values.
 - **Spacing**: Specify the spacing between thumbnails (*horizontal* x *vertical*). (Note that if labels are enabled and set to more than one line, the vertical spacing shares its space with the extra label lines and will not have much effect on the actual spacing until the value is very large.)
 - **Spread excess space between columns**: Leftover space will be shared between each thumbnail column instead of appearing to the right of the last column.
-- **Resize mode**: Let's you choose how images are resized to fit the space available in the thumbnail.
+- **Resize mode**: Let's you choose how images are resized to fit the space available in the thumbnail. Note that pixelated upscaling, if selected, will only be used when increasing images to at least 3x their original size.
 - **Rotate images automatically using EXIF metadata**: Most modern digital cameras contain an orientation sensor that records into the image the orientation of the camera when the picture was taken. If this option is turned on Opus will read the orientation information from the image and automatically rotate the displayed thumbnail so that it appears the right way up.
 
   

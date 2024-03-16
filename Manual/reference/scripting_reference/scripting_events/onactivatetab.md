@@ -6,5 +6,5 @@ The **OnActivateTab** event can be implemented by a [script add-in](/Manual/scri
 | --- | --- |
 | **Argument Type:** | **[ActivateTabData](../scripting_objects/activatetabdata.md)** |
 | **Return Type:** | *none* |
-| **Description:** | The **ActivateTabData.old** property identifies the tab that was previously active, and the **new** property identifies the new active tab. |
+| **Description:** | The **ActivateTabData.oldtab** property identifies the tab that was previously active, and the **newtab** property identifies the new active tab. |
 

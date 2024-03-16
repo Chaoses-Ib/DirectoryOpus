@@ -2,19 +2,19 @@
 
 You can use the evaluator in the definitions for [file info tips](/Manual/file_types/filetype_editor/info_tip.md) and [tiles mode](/Manual/file_types/filetype_editor/tiles_mode.md) to insert text returned by the evaluation.
 
-Use the \`{= ... =}\` code to insert an evaluation expression. The expression between the \`{=\` and the \`=}\` markers can span multiple lines if needed. The return value of the expression is inserted into the info tip or tile.
+Use the \<ib:inline-code\>`{= ... =}`\</ib:inline-code\> code to insert an evaluation expression. The expression between the \<ib:inline-code\>`{=`\</ib:inline-code\> and the \<ib:inline-code\>`=}`\</ib:inline-code\> markers can span multiple lines if needed. The return value of the expression is inserted into the info tip or tile.
 
-You can also implement hide sections using the evaluator - use \`{!= ... =}\` to open the hide section with an evaluation expression. If the expression returns **false**, everything within the hide section will be hidden. Close the hide section with \`{!}\` as normal.
+You can also implement hide sections using the evaluator - use \<ib:inline-code\>`{!= ... =}`\</ib:inline-code\> to open the hide section with an evaluation expression. If the expression returns **false**, everything within the hide section will be hidden. Close the hide section with \<ib:inline-code\>`{!}`\</ib:inline-code\> as normal.
 
 In this evaluation context, the following variables are available:
 
 \<commandtable columns="3"\> \$\$ Variable \$\$ Type \$\$ Description \$\$ \<nobr\>*column name*\</nobr\> \$\$ *varies* \$\$ All the [column keywords](/Manual/reference/metadata_keywords/keywords_for_columns.md) are available as variables in this evaluation context.
 
-Note that some keywords may use characters like a \`:\` that aren't valid in variable names - to access them, use the [val](/Manual/reference/evaluator/val.md) function.
+Note that some keywords may use characters like a \<ib:inline-code\>`:`\</ib:inline-code\> that aren't valid in variable names - to access them, use the [val](/Manual/reference/evaluator/val.md) function.
 
-Additionally, the keywords **foldersize**, **foldercontents** and **infotip** are also supported. \$\$ is_dir \$\$ *bool* \$\$ **True** if the expression is being run for a folder, **false** if it's being run for a file. \</commandtable\>
+Additionally, the keywords **foldersize**, **foldercontents** and **infotip** are also supported. \$\$ file_name \$\$ *string* \$\$ Returns the full name of the file the expression is being run for. This may be different from **file** which (as a column keyword), returns the value of the *Name* column (which e.g. may have file extensions hidden). \$\$ is_dir \$\$ *bool* \$\$ **True** if the expression is being run for a folder, **false** if it's being run for a file. \</commandtable\>
 
 The return value should either be a *str* for an insertion, or a *bool* for a hide section.
 
-- If the expression is an insertion (using the \`{= ... =}\` code), the return value from the evaluation expression will be inserted into the info tip or tile at the point where the code appeared.
-- If the expression is for a hide section (using the \`{!= ... =}\` code), it should return **true** to show the contents of the hide section, or **false** to hide them.
+- If the expression is an insertion (using the \<ib:inline-code\>`{= ... =}`\</ib:inline-code\> code), the return value from the evaluation expression will be inserted into the info tip or tile at the point where the code appeared.
+- If the expression is for a hide section (using the \<ib:inline-code\>`{!= ... =}`\</ib:inline-code\> code), it should return **true** to show the contents of the hide section, or **false** to hide them.

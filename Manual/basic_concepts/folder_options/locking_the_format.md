@@ -1,15 +1,25 @@
 # Locking the Format
 
-Even if you have configured Opus to change format automatically as you navigate from one folder to the other (say, through the [Content Types](content_types.md) system, or by saving a [folder format](folder_formats.md) for a specific folder), there may be times when you don't want the format to change at all. You may have added a set of columns or changed the view mode specifically to accomplish a task, and having the format change automatically and to have to go back and reconfigure those things every time you change folder would certainly be a nuisance.
+Opus lets you **lock** the format in the file display. When the format is locked, automatic changes to the format are disabled - the display format won't change at all as you navigate from one folder to another, unless you manually change it using the [Folder Options]() dialog.
 
-Opus therefore lets you **lock** the format in the file display. When the format is locked, automatic changes to the format are disabled - the display format won't change at all as you navigate from one folder to another, unless you manually change it using the [Folder Options]() dialog.
+##### Toggling the format lock
 
-There are two ways to toggle the format lock. The first is by selecting the **Format Lock** command from the **Folder Options** drop-down menu on the toolbar.
+Right-click the ![](/Manual/images/media/13/info.png) information icon on the status bar, and choose **Format Lock** from the context menu to toggle the lock. You can also use the **Format Lock** command from the **Folder** drop-down menu in the default toolbars.
 
-![](/Manual/images/media/format_lock_-_menu.png) 
+##### Padlock icon
 
-The other way is by clicking the padlock icon on the Lister's status bar.
+When the format is locked, the information icon on status bar turns into a ![](/Manual/images/media/13/tab_-_locked.png) padlock icon instead.
 
-![](/Manual/images/media/format_lock_-_status.png)
+When the format lock is on the current folder format is preserved. You can still make manual changes using the [Folder Format]() dialog (or by clicking the column headers in details mode, etc.), but it won't automatically change again until after you turn the lock off.
 
-Either method will toggle the format lock on and off. When you turn the format lock on the current display format is preserved. You can still make manual changes using the [Folder Options]() dialog (or by clicking the column headers in details mode, etc.), but it won't automatically change again until after you turn the lock off.
+##### Turning off the lock
+
+Click the padlock icon, or use the **Format Lock** menu commands, to unlock the format.
+
+##### Showing the padlock all the time
+
+If you find you use the format lock feature a lot, you can turn on the **Enable format lock padlock icon** option on the [File Displays / Status Bar](/Manual/preferences/preferences_categories/file_displays/status_bar.md) Preferences page. The ![](/Manual/images/media/13/info.png) icon will change to show the padlock permanently, and you can toggle the lock on and off simply by clicking it.
+
+##### The status bar icon can be removed
+
+The information icon (or its padlock equivalent) are generated on the status bar using the \<ib:inline-code\>`{fl}`\</ib:inline-code\> code. Since the status bar is configurable via Preferences, it's possible this code can be removed - in which case the icon won't be visible any more. You can still use the format lock using the menu commands mentioned above.

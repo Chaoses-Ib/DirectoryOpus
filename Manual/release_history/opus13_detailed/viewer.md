@@ -21,9 +21,10 @@
     - Similar to the old Viewer Select script.
 - Image viewer:
   - (Note: You may need to update or reset your Image Viewer toolbar and context menus to get new functionality.)
+  - Improved "Expand/Scroll image" mode, especially when the image height is the same or greater than the screen.
   - View \> Background Color sub-menu adds items to quickly switch the background to black or white.
-    - You can also use the `Shift+W` and `Shift+B` hotkeys as toggles for both options.
-    - Alternatively, push `F3` to alternate between black and white backgrounds.
+    - You can also use the <kbd>Shift+W</kbd> and <kbd>Shift+B</kbd> hotkeys as toggles for both options.
+    - Alternatively, push <kbd>F3</kbd> to alternate between black and white backgrounds.
     - Useful when viewing images which use transparency, where some detail may only be visible on a dark or light background.
     - The viewer pane's context menu has similar options.
   - File \> Locate Image sub-menu, with options to find an image's GPS coordinates via various online mapping services. (Editable via image_locate_services in Advanced settings.)
@@ -34,20 +35,20 @@
   - Added menu item to toggle frames around images without going into Preferences.
   - Added commands to jump the viewer to another monitor:
     - On the right of the toolbar, only visible when fullscreen. (When fullscreen, click at the top to reveal the toolbar.)
-    - `Alt+←` and `Alt+→`, available at all times.
+    - <kbd>Alt+←</kbd> and <kbd>Alt+→</kbd>, available at all times.
   - While drag-selecting part of an image (for copy/crop), you can now hold Space to move the selection rectangle, adjusting its starting point.
   - Added options to only center the viewer window for the first image, rather than every image.
   - Context menu for marked images in the standalone viewer now includes option to open the containing folder.
   - Commands:
-    - \`Show LISTERLINK\`
-    - \`Show VIEWERCMD=listerlink\`
-    - \`Show VIEWERCMD=frame\`
-    - \`Show VIEWERCMD=monitornext\` and \`Show VIEWERCMD=monitorprev\`
-    - \`Show VIEWERCMD=backcol,#RRGGBB\` and similar for Show VIEWPANECMD. Omit color to reset to Preferences color.
-    - \`Show VIEWERCMD=delete,noadvance\` -- Like existing delete command, but does not move on to the next image.
-    - \`Show VIEWERCMD=delete,close\` -- Like existing delete command, but closes the viewer, even if there are more images.
-    - \`Image LOCATE=menu\` -- Within the viewer, displays a menu of GPS mapping services. Hidden if the current file has no GPS data.
-    - \`Image LOCATE=menu,nohide\` -- When the viewer's file has no GPS data, this disables the menu items instead of hiding them.
+    - \<ib:inline-code\>`Show LISTERLINK`\</ib:inline-code\>
+    - \<ib:inline-code\>`Show VIEWERCMD=listerlink`\</ib:inline-code\>
+    - \<ib:inline-code\>`Show VIEWERCMD=frame`\</ib:inline-code\>
+    - \<ib:inline-code\>`Show VIEWERCMD=monitornext`\</ib:inline-code\> and \<ib:inline-code\>`Show VIEWERCMD=monitorprev`\</ib:inline-code\>
+    - \<ib:inline-code\>`Show VIEWERCMD=backcol,#RRGGBB`\</ib:inline-code\> and similar for Show VIEWPANECMD. Omit color to reset to Preferences color.
+    - \<ib:inline-code\>`Show VIEWERCMD=delete,noadvance`\</ib:inline-code\> -- Like existing delete command, but does not move on to the next image.
+    - \<ib:inline-code\>`Show VIEWERCMD=delete,close`\</ib:inline-code\> -- Like existing delete command, but closes the viewer, even if there are more images.
+    - \<ib:inline-code\>`Image LOCATE=menu`\</ib:inline-code\> -- Within the viewer, displays a menu of GPS mapping services. Hidden if the current file has no GPS data.
+    - \<ib:inline-code\>`Image LOCATE=menu,nohide`\</ib:inline-code\> -- When the viewer's file has no GPS data, this disables the menu items instead of hiding them.
     - Running the Show command on a shortcut to a directory now works the same as on real directories; any images inside the directory are added to the viewer's file list.
 - Web / HTML:
   - Microsoft Edge (Chromium) is now supported in the viewer pane.
@@ -65,13 +66,16 @@
   - Provides metadata via MediaInfo; discussed in detail elsewhere.
 - Miscellaneous:
   - Text and TextThumbs plugins now assume UTF-8 by default without requiring a BOM at the start of the file.
+  - Text viewer now filters out some known types that look like text but are better handled as thumbnails. (E.g. .HDR files that begin with "#?"; all .DXF files.)
   - The hex viewer now supports selecting a range of the file data and copying it to the clipboard.
   - Added "Leave file in viewer until another is selected" for Viewer Pane. On by default. If turned off, deselecting the displayed file, or switching from source to destination, will clear the viewer pane.
   - Renamed "ActiveX + Preview + Office + Web" plugin to "MetaPlugin".
   - Improved MetaPlugin UI. Made it easier to change which extensions go to which viewers.
+  - Made more external viewer components open temporary copies instead of real files, due to Microsoft breaking their own rules about viewers locking files. (Windows RTF and Windows Mail MIME E-Mail.)
+  - Added .heif and .hif as alternative extensions for .heic files.
   - Commands:
-    - \`Show VIEWERCMD=slideshow,on\` -- Can turn slideshow mode on or off explicitly, without having to test the current mode. (Without "on" or "off", acts as a toggle, as before.)
-    - \`Set FOCUS=ViewPane\` -- Gives keyboard focus to the viewer pane.
+    - \<ib:inline-code\>`Show VIEWERCMD=slideshow,on`\</ib:inline-code\> -- Can turn slideshow mode on or off explicitly, without having to test the current mode. (Without "on" or "off", acts as a toggle, as before.)
+    - \<ib:inline-code\>`Set FOCUS=ViewPane`\</ib:inline-code\> -- Gives keyboard focus to the viewer pane.
 
 ------------------------------------------------------------------------
 

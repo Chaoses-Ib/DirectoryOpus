@@ -10,7 +10,7 @@ The **Func** object is passed to a script when it is invoked via a command. In a
 | desttab | *object:***[Tab](tab.md)** | This object represents the default destination tab for the function. |
 | fromdrop | *bool* | Returns **True** if the command was invoked via a drag-and-drop operation. |
 | fromkey | *bool* | Returns **True** if the command was invoked via the keyboard (i.e. via a hotkey rather than a button). |
-| qualifiers | *string* | Returns a string indicating any qualifier keys that were held down by the user when the command was invoked.  <br />The string can contain any or all of the following: *shift,* *ctrl*, *alt*, *lwin*, *rwin*  <br />If no qualifiers were down, the string will be: *none* |
+| qualifiers | *string* | Returns a string indicating any qualifier keys that were held down by the user when the command was invoked.<br /><br />The string can contain any or all of the following: *shift,* *ctrl*, *alt*, *lwin*, *rwin*.<br /><br />If no qualifiers were down, the string will be: *none* |
 | sourcetab | *object:***[Tab](tab.md)** | This object represents the default source tab for the function. |
 | viewer | *object:***[Viewer](viewer.md)** | If this button was run from the [standalone image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md), this object represents the viewer window. |
 

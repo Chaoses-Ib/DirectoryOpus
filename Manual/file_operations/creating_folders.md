@@ -2,38 +2,54 @@
 
 There are two ways to create a new folder using Opus. The first way is the same as in Explorer - right-click on the background of the file display (or on a folder in the tree) and choose **New / Folder**.
 
-The second way is to use the **Create Folder** dialog, which as well as letting you make a new folder also offers some additional functionality:
+The second way is to use the *Create Folder* dialog, which you can get to using the **New Folder** button on the default toolbar.
+
+As well as letting you make a new folder, the *Create Folder* dialog offers some additional functionality:
 
 - You can make multiple folders simultaneously
 - You can make a whole sub-tree of folders at once (so a folder, a sub-folder, a sub-sub-folder, and so on, all with the one command)
 - You can make multiple sub-folders under the same parent folder at once
 - You can automatically navigate to the newly created folder or folders
 
-![](/Manual/images/media/create_folder.png) 
+##### Making a single folder
 
-The two numbers displayed in the bottom-left corner of the dialog (as shown above) indicate the length of the name you have entered and the total length of the path once the folder is created. This can be useful to ensure that your path length doesn't grow beyond the normal maximum of 259 characters - although Opus has no problems dealing with longer paths than that, many other programs (including Explorer) will fail.
+![](/Manual/images/media/13/create_folder.png) 
 
-To create a folder using the **Create Folder** dialog, click the **New Folder** button on the toolbar and enter the name of the folder to create. You can create a whole tree of sub-folders at once by entering the folder names separated by slashes. For example:
+This shows the *Create Folder* in single folder mode.
 
-![](/Manual/images/media/create_sub_folders.png) 
+The two numbers displayed in below the name field indicate the length of the name you have entered and the total length of the path once the folder is created. This can be useful to ensure that your path length doesn't grow beyond the normal maximum of 259 characters - although Opus has no problems dealing with longer paths than that, many other programs may have trouble.
+
+##### Making a folder tree
+
+You can create a whole tree of sub-folders at once by entering the folder names separated by slashes. For example:
+
+![](/Manual/images/media/13/create_sub_folders.png) 
 
 This would create a folder called *One* in the current location, then a sub-folder in *One* called *Two*, a sub-folder in *Two* called *Three*, and so on, all in the one operation.
 
-If you turn on the **Create multiple folders** dialog you can create multiple folders simultaneously in the current location. If this is turned on the name field changes to a multi-line text box that lets you enter as many names as you like (one per line):
+##### Making multiple folders at once
 
-![](/Manual/images/media/create_folder_multi.png)
+If you turn on the **Create multiple folders** option you can create multiple folders simultaneously in the current location. If this is turned on the name field changes to a multi-line text box that lets you enter as many names as you like (one per line):
 
-The folders will all be created relative to the current folder. You can also create multiple child-folders at the same sub-folder level using the vertical bar character (**\|**) to separate the child folder names.
+![](/Manual/images/media/13/create_folder_multi.png)
 
-![](/Manual/images/media/makedir_multi.png)
+##### Making multiple child folders
 
-The above example will create two child folders, *2016* and *2017*, and below those create 12 sub-folders (one for each month of the year).
+In the above example, the new folders will all be created relative to the current folder. You can also create multiple child-folders at the same sub-folder level using the vertical bar character (\<ib:inline-code\>`|`\</ib:inline-code\>) to separate the child folder names.
 
-In **Create multiple folders** mode, the **Return** key moves to a new line in the text box, but you can still quickly *OK* the dialog by pushing **Return** twice on the last line, or by pushing **Shift+Return** on any line. Since double-tapping **Return** at the end is only one extra keystroke, even when only creating a single folder, you may find it convenient to leave the dialog in this mode all the time.
+![](/Manual/images/media/13/makedir_multi.png)
+
+The above example will create two child folders, *2023* and *2024*, and below those create 12 sub-folders (one for each month of the year).
+
+##### Using the dialog in multiple folder mode
+
+In **Create multiple folders** mode, the <kbd>Enter</kbd> key moves to a new line in the text box, but you can still quickly *OK* the dialog by pushing <kbd>Enter</kbd> twice on the last line, or by pushing <kbd>Shift+Enter</kbd> on any line. Since double-tapping <kbd>Enter</kbd> at the end is only one extra keystroke, even when only creating a single folder, you may find it convenient to leave the dialog in this mode all the time.
+
+##### Automatically reading the new folder
 
 The drop-down menu attached to the **OK** button lets you choose what to do with the new folder once it's been created.
 
-![](/Manual/images/media/new_arc_-_tristate.png)
+![](/Manual/images/media/13/new_arc_-_tristate.png)
 
 - **Create Folder**: The new folder (or folders) is created, but not read.
 - **Read Folder**: The file display will automatically navigate into the new folder once it is created.

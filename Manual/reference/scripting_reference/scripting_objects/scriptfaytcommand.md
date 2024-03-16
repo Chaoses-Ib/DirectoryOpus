@@ -1,6 +1,6 @@
 # ScriptFAYTCommand
 
-When a script calls the **[ScriptInitData](scriptinitdata.md).AddCommand** method to [add commands](/Manual/scripting/example_scripts/adding_a_new_internal_command.md) to the Opus internal command set, the **[ScriptCommand](ScriptCommand.md)** object it retrieves provides a **ScriptFAYTCommand** object in the **fayt** property. You can initialise this object to create a command that [extends the FAYT field](/Manual/scripting/example_scripts/extending_the_fayt.md).
+When a script calls the **[ScriptInitData](scriptinitdata.md).AddCommand** method to [add commands](/Manual/scripting/example_scripts/adding_a_new_internal_command.md) to the Opus internal command set, the **[scriptcommand](scriptcommand.md)** object it retrieves provides a **ScriptFAYTCommand** object in the **fayt** property. You can initialise this object to create a command that [extends the FAYT field](/Manual/scripting/example_scripts/extending_the_fayt.md).
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |
@@ -11,6 +11,7 @@ When a script calls the **[ScriptInitData](scriptinitdata.md).AddCommand** metho
 | key | *string* | Lets you specify a default key for your FAYT extension. Pushing this key from a file display or FAYT field will invoke the script. |
 | label | *string* | This lets you specify a label for your FAYT extension which is shown in the user interface. If not supplied, the name of the command is used. |
 | light | *object:***[ScriptColorPair](scriptcolorpair.md)** | Use the **[ScriptColorPair](scriptcolorpair.md)** object this returns to specify the default light mode text and background colors for your FAYT extension (and use the **dark** property to specify the dark mode colors). If you want the default dark and light colors to be the same, you can use the **textcolor** and **backcolor** properties instead. |
-| realtime | *bool*  <br />or *int* | Set to **True** to have your extension called in realtime as the user types. If set to **False** your extension will be called only when the user presses `Enter`. If set to an integer value, this specifies the number of milliseconds between when the user types and your script is called (i.e. deferred notification). |
+| realtime | *bool*  <br />or *int* | Set to **True** to have your extension called in realtime as the user types. If set to **False** your extension will be called only when the user presses <kbd>Enter</kbd>. If set to an integer value, this specifies the number of milliseconds between when the user types and your script is called (i.e. deferred notification). |
 | textcolor | *string* | Specify the default text color for your FAYT extension. This should be in the form **\#RRGGBB** (hexadecimal) or **RRR,GGG,BBB** (decimal). You should use this and the **backcolor** property to specify both dark and light colors as the same, otherwise use the **dark** and **light** properties. |
+| wantempty | *bool* | Set to false if you don't want to be called for a suggestion list for an empty string (i.e. the user must type something before your extension is invoked). |
 

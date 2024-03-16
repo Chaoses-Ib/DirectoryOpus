@@ -2,9 +2,9 @@
 
 This page controls options that affects how Directory Opus asks for confirmation if needed when copying files. These options can all be overridden at the command level by supplying different parameters to the [Copy](/Manual/reference/command_reference/internal_commands/copy.md) command.
 
-- **Ask for confirmation before overwriting existing files**: If files you are copying already existing in the destination, Opus will prompt you before overwriting them. This can be overridden by the \`WHENEXISTS\` argument to the \`Copy\` command.
+- **Ask for confirmation before overwriting existing files**: If files you are copying already existing in the destination, Opus will prompt you before overwriting them. This can be overridden by the \<ib:inline-code\>`WHENEXISTS`\</ib:inline-code\> argument to the \<ib:inline-code\>`Copy`\</ib:inline-code\> command.
 - **Ask for confirmation before overwriting read-only files**: This option causes an additional confirmation to be displayed if the existing file has its read-only (**R**) attribute set.
-- **Ask for confirmation before merging existing folders**: Unlike a file, where copying over an existing file deletes the original, copying over an existing folder has the effect of merging the contents of the two folders. Only files within the target folder that clash with files in the source folder will actually be deleted, and so this is generally a non-destructive operation. This option causes confirmation to be displayed before Opus merges one folder with another. This can be overridden by the \`WHENEXISTS\` argument to the \`Copy\` command.
+- **Ask for confirmation before merging existing folders**: Unlike a file, where copying over an existing file deletes the original, copying over an existing folder has the effect of merging the contents of the two folders. Only files within the target folder that clash with files in the source folder will actually be deleted, and so this is generally a non-destructive operation. This option causes confirmation to be displayed before Opus merges one folder with another. This can be overridden by the \<ib:inline-code\>`WHENEXISTS`\</ib:inline-code\> argument to the \<ib:inline-code\>`Copy`\</ib:inline-code\> command.
 
   
 ==When copying nested items==
@@ -17,7 +17,7 @@ In Flat View or with expanded sub-folders, it's possible to select files from on
   - **Recreate source folder structure**: The files will be copied to sub-folders in the destination, recreating their original locations relative to the source folder.
 - **Copy to single level if all items are in the same folder**: This option affects what happens when all the selected items are in a single sub-folder underneath the source folder. With the option turned on, they would all be copied to the destination folder as normal. With the option off, the "nested items" option above comes into play to determine how to proceed.
 
-This can be overridden by the \`FLATVIEWCOPY\` argument to the \`Copy\` command.
+This can be overridden by the \<ib:inline-code\>`FLATVIEWCOPY`\</ib:inline-code\> argument to the \<ib:inline-code\>`Copy`\</ib:inline-code\> command.
 
   
 ==When copying folders to a collection==
@@ -28,7 +28,7 @@ When copying folders into a [file collection](/Manual/basic_concepts/virtual_fil
 - **Add to collection as a member**: The folder will be added as an ordinary member of the collection.
 - **Add to collection as a sub-collection**: The folder will be added as a sub-collection, with its contents as members.
 
-This can be overridden by the \`COPYTOCOLL\` argument to the \`Copy\` command.
+This can be overridden by the \<ib:inline-code\>`COPYTOCOLL`\</ib:inline-code\> argument to the \<ib:inline-code\>`Copy`\</ib:inline-code\> command.
 
   
 ==Show rename presets in Confirm File Replace dialog==

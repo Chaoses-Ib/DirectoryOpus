@@ -35,13 +35,13 @@ Turn a second monitor into a full-screen preview pane, with Lister-Linked viewer
 Full-screen viewer includes buttons to move to another monitor (click top of screen for toolbar):
 
 \<WRAP indent\>![](/Manual/images/release_history/viewer_nextmon.png)\</WRAP\>  
-Push `F3` to cycle black and white backgrounds:
+Push <kbd>F3</kbd> to cycle black and white backgrounds:
 
 \<WRAP indent\>![](/Manual/images/release_history/viewer_bgcol.gif)\</WRAP\>  
 Go to image GPS coordinates via configurable mapping services:
 
 \<WRAP indent\>![](/Manual/images/release_history/viewer_gps.png)\</WRAP\>  
-Hold `Space` while selecting to move the start point:
+Hold <kbd>Space</kbd> while selecting to move the start point:
 
 \<WRAP indent\>![](/Manual/images/release_history/viewer_selorig.gif)\</WRAP\>  
 Support for DirectDraw Surface (DDS) images:
@@ -80,13 +80,15 @@ Lossless JPEG rotation isn't new, but can now be turned off in the UI, allowing 
 Overhauled display of video metadata, now using MediaInfo:
 
 \<WRAP indent\>![](/Manual/images/release_history/meta_video.png)\</WRAP\>  
-Support for ID3v2 tags in WAV files.  
 Selected and total duration now on the default status bar when similar columns in use, without triggering calculation when not.  
   
 ----
 
 #### Metadata Editing
 
+Support for ID3v2 tags in WAV files:
+
+\<WRAP indent\>![](/Manual/images/release_history/meta_wav_id3.png)\</WRAP\>  
 Option for decimal GPS input:
 
 \<WRAP indent\>![](/Manual/images/release_history/meta_decgps.png)\</WRAP\>  

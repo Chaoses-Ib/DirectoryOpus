@@ -1,3 +1,19 @@
 # Path Fields
 
-TOBEDONE
+These options control the "breadcrumbs" path field, which shows your current location and lets you easily navigate to child, sibling and parent folders.
+
+- **Show drive labels as**: Controls how drive labels appear when the current path is on a physical drive.
+- **Allow drag and drop from path field to itself**: Allows drag & drop from the path field to itself. Turn this off to avoid accidents when dragging out of the path field and releasing the mouse button prematurely. Note that, even if this is on, you can still hover over the arrows between path components and drop into the menus that pop-up, should you need to. Whether or not this is on, dragging from one path field to another is always enabled, as is dragging from the file display or other elements to the path field.
+- **Allow drag and drop from path field without holding <kbd>Ctrl</kbd> or <kbd>Shift</kbd>**: Makes it possible to copy or move folders by dragging them from the breadcrumbs field without having to hold a qualifier key. If turned off, the drag & drop action defaults to creating shortcuts to folders unless you explicitly override it by holding <kbd>Ctrl</kbd> to copy or <kbd>Shift</kbd> to move. The default mode is safer if you primarily drag from breadcrumbs to the folder tab bar to open new tabs for parent folders; if you accidentally drop the folder on the way then it will create a harmless shortcut rather than copy or move the whole parent folder structure.
+- **Append ghost components for previous folders after going up**: The field will preserve "ghost" crumbs of your previous location when navigating up the folder tree.
+  - **Draw using italics**: Displays ghost crumbs in an italic font.
+  - **Keep matching sub-folders after navigation**: When changing folders, any ghost crumbs that exist in the new location will be preserved.
+- **Hotkey opens left-most menu instead of editing path**: If there is a hotkey assigned to the breadcrumbs control (e.g. <kbd>F2</kbd>), pressing it will open the left-most drop-down menu (often the *Desktop* branch) instead of giving focus to the edit field.
+- **Insert Network component before UNC paths**: Inserts the *Network* branch before network shares. So you'd see *Desktop -\> Network -\> \\SERVER -\> Share* instead of *Desktop -\> \\SERVER -\> Share*.
+  - **Display as small icon**: Shows the *Network* branch as an icon instead of a label.
+- **Insert This PC Component before drives**: Inserts the *This PC* branch before drive letters. So for example, you'd see the breadcrumbs trail *Desktop -\> Computer -\> C: -\> Program Files*, instead of *Desktop -\> C: -\> Program Files*.
+  - **Display as small icon**: Displays the *This PC* branch as an icon instead of a label.
+- **Put cursor at end of path when editing begins**: Moves the initial cursor position to the end of the path string, with none of it selected, when you edit the path. This makes it easier to add a subdirectory or modify the last component of the path. If this is not used, the whole path string will be selected when you start editing the path, making it easier to type a completely new path over the top of it. Whichever you use, you can always push <kbd>Ctrl+A</kbd> to select the whole path or <kbd>End</kbd> to go to the end.
+- **Select previous folder when going up**: When you click on the parent breadcrumb, the folder you just came from will be selected. This can override the option on the [Navigation](../file_displays/navigation.md) page (or can be set to use the same setting).
+- **Show FTP address book names**: For an FTP site from the address book, this will show the name of the address book entry (site name) rather than URL/IL address of the site.
+  - **Show host details as well**: The host details (IP address and port) will be displayed as well as the site name.

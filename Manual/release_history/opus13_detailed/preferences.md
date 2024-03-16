@@ -15,11 +15,12 @@
   - Make any desired changes to the Listers, then click OK.
   - The layout will be updated. Its windows will then close, and the previously opened windows will be restored.
   - (Of course, you can still do it the old way, by saving your current windows over an existing layout.)
-
 - Preferences / Folders / Automatic Reading: Options to delay loading of folders can now be overridden for specific paths.
 - The Scripts page has moved out of Preferences into a separate dialog. (See [Script IDE](script_ide.md).)
 - In Viewer and Archive/VFS plugin lists, cog buttons appear next to plugins that support configuration.
 - While the Preferences window is open, Lister and viewer windows have titlebar buttons to commit or cancel your changes and close Preferences without having to switch back to it, as well as a button to bring it back to the front without having to find it via alt-tab or the taskbar.
+- Page list right-click menu includes *Expand All* and *Collapse All* options.
+- *Command:* Added \<ib:inline-code\>`Prefs COLLAPSEALL`\</ib:inline-code\> lets you open the Preferences dialog with all categories collapsed (rather than remembering their last state). Combine with \<ib:inline-code\>`PAGE`\</ib:inline-code\> to show a page and collapse all other categories.
 
 ------------------------------------------------------------------------
 

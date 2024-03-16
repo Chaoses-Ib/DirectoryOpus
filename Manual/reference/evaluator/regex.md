@@ -1,8 +1,9 @@
 \<evalcmd\> RegEx && bool or string && Match or replacement result. && string && string && String to match. && pattern && string && Pattern to match against. && \[replace\] && string && Optional replace pattern. && \[pattern...\] && string && Optional additional match pattern... && \[replace...\] && string && Optional additional replace string... && \[0\] && value && Literal value 0. This is only needed in order to specify *flags* without *replace*. && \[flags\] && string && Optional flags are:
 
-|       |                                                              |
-|-------|--------------------------------------------------------------|
-| **c** | consider case when performing the operation (case-sensitive) |
+|       |                                                                          |
+|-------|--------------------------------------------------------------------------|
+| **c** | consider case when performing the operation (case-sensitive)             |
+| **e** | if pattern doesn't match for a replace operation, return an empty string |
 
 \</evalcmd\>
 

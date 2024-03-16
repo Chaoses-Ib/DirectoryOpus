@@ -6,6 +6,7 @@
 - Delete button is now a menu, with new option to delete broken aliases (ones where the target folder no longer exists).
 - Search field lets you filter by alias name or path.
 - User-defined aliases can now override built-in aliases.
+- Added \<ib:inline-code\>`/userfonts`\</ib:inline-code\> alias.
 
 ------------------------------------------------------------------------
 

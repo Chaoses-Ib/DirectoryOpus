@@ -1,32 +1,35 @@
 # Simple Find
 
-The simple mode of the [Find tool]() lets you search for files using one or more criteria.
+The simple mode of the [find tool]() lets you search for files using one or more criteria.
 
-![](/Manual/images/media/find_simple.png)
+When multiple criteria are configured, they all must match for a file to be found. Use the [advanced mode](advanced_find/RAEDME.md) if you want more control over this.
 
-In the header above the simple find dialog are **Presets** and **Reset** menus which make it easy to quickly load, save or reset the find criteria.
+The labels on the left of each criterion appear in **bold** when something is defined for them, making it a easy to see exactly what you’re searching for.
 
-The labels on the left of each criteria appear in **bold** when something is defined for them, making it a easy to see exactly what you’re searching for. In the example above, we are searching for all files that end with a **.txt** extension, that have been modified within the past seven days, and that contain the text string "individuality". Time, size and type are all being ignored.
+You can use the following criteria with simple find:
 
-You can use the following criteria with Simple Find:
+##### Name
 
-------------------------------------------------------------------------
+Search by filename. The options for **Name** are:
 
-**Name**: Specify the name of the file to search for.
+- **Wildcards**: Enables [standard pattern matching](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) to search for names using wildcards.
+- **Regular expressions**: Enables [regular expressions](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.md) instead of standard wildcards.
+- **Any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with \<ib:inline-code\>`+`\</ib:inline-code\>, which means it **must** be present, and \<ib:inline-code\>`-`\</ib:inline-code\> which means it **must not** be present.
+- **Ignore diacritics**: Ignores diacritics (accented characters).
+- **Case sensitive**: Makes the search case-sensitive (upper and lower-case letters will not be treated as the same).
+- **Partial match**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
 
-- The **Wildcards** option lets you use [standard pattern matching](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) in this field to search for names using wildcards. You can also enter **regex:** followed by a pattern to use [regular expressions](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.md).
-- The **Any word** option treats every word you enter as a separate search term. For example, if this was turned on and you typed “horse donkey” into the field, Opus would match filenames containing “horse” or “donkey” (or both, in any order). This saves you having to construct complicated *OR* wildcard patterns.
-- The **Partial match** option means that the string you enter can match part of the filename, and does not have to match the whole filename.
+##### Text
 
-------------------------------------------------------------------------
+Searches the file's contents, rather than the file's name. If a string is specified here then each file (if it also matches the other criteria) will be searched to see if it contains the specified text. Searching for containing text can make a search much slower. File types that don't store their data as plain text require an IFilter for content searching to work, and these are the same IFilter components which Windows and other software also use.
 
-**Text**: Searches the file's data, rather than the file's name. If a string is specified here then each file (if it also matches the other criteria) will be searched to see if it contains the specified text. Searching for containing text can make a search much slower. File types that don't store their data as plain text require an IFilter for content searching to work, and these are the same IFilter components which Windows and other software also use.
+The options for **Text** are mostly the same as for **Name**, with the addition of:
 
-- The **Wildcards** option lets you use standard pattern matching when defining the text string to search for - if you leave this off, the string must match exactly. The **Case sensitive** option lets you specify that the case (upper/lowercase) of the supplied string must match exactly as well - if this is turned off, then upper and lower case letters are considered the same.
+- **Assume UTF8**: Tells Opus to assume that plain text files without a Byte Order Mark (BOM) are encoded in UTF8 rather than your computer's default 8-bit character set.
 
-------------------------------------------------------------------------
+##### Type
 
-**Type**: You can use this to search for files or folders of a certain type. For example, instead of specifying **\*.bmp** for the **Name matching** field, you can select **File Type**, **Bitmap Image** from the drop-downs to find bitmap files.
+Search for files or folders of a certain type. For example, instead of specifying \<ib:inline-code\>`*.bmp`\</ib:inline-code\> for the **Name** field, you can select **File Type**, **Bitmap Image** from the drop-downs to find bitmap files.
 
 - **All files and folders**: Search for all files or folders matching the other conditions.
 - **Files**: Search for only files.
@@ -35,11 +38,11 @@ You can use the following criteria with Simple Find:
 - **File Type Group**: Search files belonging to a specified file type group. You can use the second drop-down control to choose the group to search for.
 - **File Type**: Search files of a particular file type. Use the second drop-down to choose the file type to search for.
 
-------------------------------------------------------------------------
+##### Date
 
-**Date**: This lets you match on a file's last modification date. Only the date is considered, not the time. The following options are available for the **Date** drop-down:  
-\* **Ignore**: The date is not considered.
+Search for files by their last modification date. Only the date is considered, not the time. The following options are available for the **Date** drop-down:
 
+- **Ignore**: The date is not considered.
 - **On**: Search for files whose datestamp falls exactly on the specified date.
 - **Before**: The datestamp must be before the specified date.
 - **After**: The datestamp must be after the specified date.
@@ -47,11 +50,11 @@ You can use the following criteria with Simple Find:
 - **Not Between**: The datestamp must **not** be between the two dates (it must be either earlier than the first date or later than the second).
 - **Within**: Lets you specify a date relative to the current date. For example, **Within 7 days** to search for files modified within the past week.
 
-------------------------------------------------------------------------
+##### Time
 
-**Time**: This lets you match on a file's last modification time. Only the time is considered, not the date. Seconds are ignored by this - you only need to specify the hours and minutes of the time to search for. The following options are available:  
-\* **Ignore**: The time is not considered.
+Search based on a file's last modification time. Only the time is considered, not the date. Seconds are also ignored - you only need to specify the hours and minutes of the time to search for. The following options are available:
 
+- **Ignore**: The time is not considered.
 - **At**: Search for files whose timestamp is exactly the specified time.
 - **Before**: The timestamp must be before the specified time.
 - **After**: The timestamp must be after the specified time.
@@ -61,11 +64,11 @@ You can use the following criteria with Simple Find:
 - **+/- Six Hours**: The timestamp must be within six hours of the specified time.
 - **Within**: Lets you specify a time relative to the current time. For example, **Within 30 minutes** to search for files modified in the past half-hour.
 
-------------------------------------------------------------------------
+##### Size
 
-**Size**: This lets you search for a file by size. The size value must be given in **KB** (kilobytes). When the size is compared, it is rounded to the nearest kilobyte, so a search for **Size Equals 1** (kb) would find a file that was 1400 bytes. The options available are:  
-\* **Ignore**: The size is not considered.
+Search for a file by size. The size value must be given in **KB** (kilobytes). When the size is compared, it is rounded to the nearest kilobyte, so a search for **Size Equals 1** (kb) would find a file that was 1400 bytes. The options available are:
 
+- **Ignore**: The size is not considered.
 - **Equals**: The size must match exactly (after rounding).
 - **Smaller Than**: The file must be smaller than the specified size.
 - **Greater Than**: The file must be larger than the specified size.
@@ -73,5 +76,3 @@ You can use the following criteria with Simple Find:
 - **Not Between**: The file size must not be between the two specified values.
 - **+/- 25%**: The file size must be within 25% (plus or minus) of the specified value.
 - **+/- 50%**: The file size must be within 50% (plus or minus) of the specified value.
-
-------------------------------------------------------------------------

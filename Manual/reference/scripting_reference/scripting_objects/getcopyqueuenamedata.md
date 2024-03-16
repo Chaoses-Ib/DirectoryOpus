@@ -1,6 +1,6 @@
 # GetCopyQueueNameData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnGetCopyQueueName](../scripting_events/ongetcopyqueuename.md)** event, the method receives a **GetCopyQueueNameData** object whenever a copy operation begins that uses automatically-managed copy queues (i.e. the *Automatically manage file copy queues* option on the **[File Operations / Copy Options](/Manual/preferences/preferences_categories/file_operations/copy_options.md)** page in Preferences is turned on).
+If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnGetCopyQueueName](../scripting_events/ongetcopyqueuename.md)** event, the method receives a **GetCopyQueueNameData** object whenever a copy operation begins that uses automatically-managed copy queues (i.e. the *Automatically manage file copy queues* option on the **[Copying Files](/Manual/preferences/preferences_categories/file_operations/copying_files/RAEDME.md)** page in Preferences is turned on).
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

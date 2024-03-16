@@ -114,7 +114,7 @@ Example:
 \$\$ *\[\<flags\>\] \<coll-name\> \<query\>* \$\$ **Set the query string for a [stored query](/Manual/basic_concepts/virtual_file_system/file_collections/stored_queries.md)**.  
 \<flags\> are one or more optional flags, see below for a list of these.  
 \<coll-name\> is the name of the stored query collection.  
-\<query\> is the query string, in [Advanced Query Syntax](http://www.microsoft.com/windows/products/winfamily/desktopsearch/technicalresources/advquery.mspx).  
+\<query\> is the query string, in [Advanced Query Syntax](https://learn.microsoft.com/en-us/windows/win32/lwef/-search-2x-wds-aqsreference).  
   
 The named collection must have been created as a stored query (e.g. with the **dopusrt.exe /col create /query** command).
 

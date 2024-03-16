@@ -1,6 +1,6 @@
 # String Resources
 
-As well as *dialog resources*, scripts can also have *string resources* which provides an easy way for a script to support languages for ad-hoc strings (that is, for strings not part of a static dialog but used programmatically by the script). Strings defined in dialogs (e.g. *Button* control labels) can be translated using the *[Language overlays](../script_dialogs/dialog_editor/language_overlays.md)* feature.
+As well as *dialog resources*, scripts can also have *string resources* which provides an easy way for a script to support languages for ad-hoc strings (that is, for strings not part of a static dialog but used programmatically by the script). Strings defined in dialogs (e.g. *Button* control labels) can be translated using the *[Language overlays](../script_editor/editors/dialog_editor/language_overlays.md)* feature.
 
 As a very simple example, consider the following VBScript fragment.
 
@@ -36,6 +36,6 @@ As you can see, there are three **strings** tags, each one with a different **la
 
 The values for the **lang** attribute correspond to the names of the Directory Opus language libraries (which can be found in the **/home/Language** folder) – **english**, **deutsch**, **francais**, **cat**, **czech**, **espanol**, etc.
 
-Note that there isn’t currently a GUI for editing string resources like there is for dialogs, so you need to code the XML resources yourself if you want to use them.
+String resources can be edited using the GUI editor in the script editor. In button scripts you need to code the XML resources yourself if you want to use them.
 
  

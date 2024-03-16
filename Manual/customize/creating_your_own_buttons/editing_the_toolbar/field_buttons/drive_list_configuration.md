@@ -1,4 +1,4 @@
-# Drive List Configuration
+# Drives Dropdown Configuration
 
 The **Drive List** field gives you a drop-down list of your drives directly on your toolbar. You can use this drop-down to switch from one drive to another.
 
@@ -33,7 +33,7 @@ The drop-down list normally shows all drives in your system, but you can also co
 - **-***\<letters\>*: Do not display the specified drives. For example, -gz would not display drives G or Z.
 
   
-By default the drop-down list displays drive labels but the drop-down control itself doesn't (as shown at the top of this page). If you add the keyword **labels** to the button’s **Args** field, the drive label will be shown in the drop-down control as well. # Drive List Configuration ![](/Manual/images/media/drivelist_labels.png) You can combine multiple argument keywords in the **Args** field by comma-separating them. For example:
+By default the drop-down list displays drive labels but the drop-down control itself doesn't (as shown at the top of this page). If you add the keyword **labels** to the button’s **Args** field, the drive label will be shown in the drop-down control as well. # Drives Dropdown Configuration ![](/Manual/images/media/drivelist_labels.png) You can combine multiple argument keywords in the **Args** field by comma-separating them. For example:
 
 **left,fixed,cdrom,-e,hideempty** - control the left file display, only display fixed and CD/DVD drives, do NOT show drive E, and hide any empty drives.
 

@@ -9,7 +9,7 @@ This category contains options that control file operations (copying, deleting, 
   - **[security](/Manual/preferences/preferences_categories/file_operations/copying_files/security.md)**: Ownership and permissions of copied files.
 - **[Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md)**: Options that control what happens by default when you delete files through Directory Opus.
 - **[Double-click Files](/Manual/preferences/preferences_categories/file_operations/double-click_files/RAEDME.md)**: A few options that control what happens when you double-click on certain files in a Lister. The [File Types](/Manual/file_types/RAEDME.md) system controls this to a far higher degree.
-  - **[ftp](/Manual/preferences/preferences_categories/file_operations/double-click_files/ftp.md)**: Specific double-click options for files on [FTP](/Manual/FTP.md) sites.
+  - **[ftp](/Manual/preferences/preferences_categories/file_operations/double-click_files/ftp.md)**: Specific double-click options for files on [FTP](/Manual/ftp/RAEDME.md) sites.
 - **[Logging](/Manual/preferences/preferences_categories/file_operations/logging.md)**: Controls whether Opus should keep a log of your file operations or not.
 - **[Metadata](/Manual/preferences/preferences_categories/file_operations/metadata/RAEDME.md)**: Options relating to the editing of metadata.
   - **[editor](/Manual/preferences/preferences_categories/file_operations/metadata/editor.md)**: Options for the [metadata editor](/Manual/basic_concepts/the_lister/metadata_pane.md).
@@ -19,4 +19,4 @@ This category contains options that control file operations (copying, deleting, 
   - **[Counting Files](/Manual/preferences/preferences_categories/file_operations/progress_indicators/counting_files.md)**: Controls the counting of files within folders (needed for accurate progress indicators).
   - **[Jobs Bar](/Manual/preferences/preferences_categories/file_operations/progress_indicators/jobs_bar.md)**: Options relating to the [Jobs Bar](/Manual/file_operations/copying_moving_and_deleting_files/the_jobs_bar.md).
 - **[Renaming Files](/Manual/preferences/preferences_categories/file_operations/renaming_files/RAEDME.md)**: Options that affect [renaming files inline](/Manual/file_operations/renaming_files/inline_rename.md).
-  - **[Control Keys](/Manual/preferences/preferences_categories/file_operations/renaming_files/control_keys.md)**: Configurable control keys you can push when renaming files inline (`Ctrl+A` for *Select all*, etc).
+  - **[Control Keys](/Manual/preferences/preferences_categories/file_operations/renaming_files/control_keys.md)**: Configurable control keys you can push when renaming files inline (<kbd>Ctrl+A</kbd> for *Select all*, etc).

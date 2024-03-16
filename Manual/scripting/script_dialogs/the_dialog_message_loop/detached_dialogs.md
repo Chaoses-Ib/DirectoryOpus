@@ -9,17 +9,17 @@ However you create the detached dialog, after it's been displayed your script ha
 ##### Basic Message Loop - VBScript
 
     Do
-    Set Msg = Dlg.GetMsg
-    If Not Msg.result Then Exit Do
-    ' Your code to process dialog events will go here.
+      Set Msg = Dlg.GetMsg
+      If Not Msg.result Then Exit Do
+        ' Your code to process dialog events will go here.
     Loop
 
 ##### Basic Message Loop - JScript
 
     while (true) {
-    var Msg = Dlg.GetMsg();
-    if (!Msg.result) break;
-    // Your code to process dialog events will go here.
+      var Msg = Dlg.GetMsg();
+      if (!Msg.result) break;
+      // Your code to process dialog events will go here.
     }
 
 (More complete code, including how to create the dialogs, is below.)
@@ -35,48 +35,48 @@ The following script code, along with the same resources from the previous examp
 ##### Script Code - VBScript
 
     Function OnClick(ByRef clickData)
-    Set Dlg = DOpus.Dlg
-    Dlg.window = clickData.func.sourcetab
-    Dlg.template = "testdlg"
-    Dlg.detach = True
-    Dlg.Show
-    Do
-    Set Msg = Dlg.GetMsg
-    If Not Msg.result Then Exit Do
-    DOpus.Output "Msg Event = " & Msg.event
-    Loop
-    DOpus.Output "Return code = " & Dlg.result
+      Set Dlg = DOpus.Dlg
+      Dlg.window = clickData.func.sourcetab
+      Dlg.template = "testdlg"
+      Dlg.detach = True
+      Dlg.Show
+      Do
+        Set Msg = Dlg.GetMsg
+        If Not Msg.result Then Exit Do
+        DOpus.Output "Msg Event = " & Msg.event
+      Loop
+      DOpus.Output "Return code = " & Dlg.result
     End Function
 
 ##### Script Code - JScript
 
     function OnClick(clickData) {
-    var Dlg = DOpus.Dlg;
-    Dlg.window = clickData.func.sourcetab;
-    Dlg.template = "testdlg";
-    Dlg.detach = true;
-    Dlg.Show();
-    while (true) {
-    var Msg = Dlg.GetMsg();
-    if (!Msg.result) break;
-    DOpus.Output("Msg Event = " + Msg.event);
-    }
-    DOpus.Output("Return code = " + Dlg.result);
+      var Dlg = DOpus.Dlg;
+      Dlg.window = clickData.func.sourcetab;
+      Dlg.template = "testdlg";
+      Dlg.detach = true;
+      Dlg.Show();
+      while (true) {
+        var Msg = Dlg.GetMsg();
+        if (!Msg.result) break;
+        DOpus.Output("Msg Event = " + Msg.event);
+      }
+      DOpus.Output("Return code = " + Dlg.result);
     }
 
 ##### Resources
 
     <resources>
-    <resource name="testdlg" type="dialog">
-    <dialog fontsize="8" height="58" lang="" title="Test!" width="180">
-    <control halign="left" height="8" name="static1" title="Test Dialog"
-    type="static" width="35" x="72" y="9" />
-    <control close="1" default="yes" height="14" name="button1" title="One"
-    type="button" width="50" x="9" y="30" />
-    <control close="2" height="14" name="button2" title="Two" type="button"
-    width="50" x="66" y="30" />
-    <control close="3" height="14" name="button3" title="Three" type="button"
-    width="50" x="122" y="30" />
-    </dialog>
-    </resource>
+      <resource name="testdlg" type="dialog">
+        <dialog fontsize="8" height="58" lang="" title="Test!" width="180">
+          <control halign="left" height="8" name="static1" title="Test Dialog"
+                   type="static" width="35" x="72" y="9" />
+          <control close="1" default="yes" height="14" name="button1" title="One"
+                   type="button" width="50" x="9" y="30" />
+          <control close="2" height="14" name="button2" title="Two"
+                   type="button" width="50" x="66" y="30" />
+          <control close="3" height="14" name="button3" title="Three"
+                   type="button" width="50" x="122" y="30" />
+        </dialog>
+      </resource>
     </resources>

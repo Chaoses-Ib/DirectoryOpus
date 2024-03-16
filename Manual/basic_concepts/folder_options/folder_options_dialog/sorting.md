@@ -1,0 +1,13 @@
+# Sorting
+
+The **Sorting** tab in the *Folder Format* dialog contains options that affect the sorting of the file list (other than the actual field or fields the list is sorted by - this is specified on the [Columns](columns/RAEDME.md) tab).
+
+- **Keep folders sorted alphabetically**: Folders will always be sorted alphabetically even when the list is sorted by another field. This doesn't apply if you have chosen *Mix files and folders together* for the **Mixing** option.
+- **Manual sorting**: Lets you enable [manual sorting](../../sorting_and_grouping/manual_sorting.md) in a folder.
+- **Numeric order filename sorting**: Changes the way files and folders that begin or end with a number are sorted by name. When off, digits in names are treated like any other character when sorting. When turned on, digits at the beginning or end of a name are sorted based on their numerical value. 
+- **Reverse overall sort order**: This option reverses the order of the sort - for example, if the sort is normally from A to Z, it would instead be from Z to A.
+- **Sort name and extension separately**: Opus will sort folders by name by splitting up the filename stem and the extension, and sorting them separately (i.e. it sorts by the stem first, and only if the stem is the same does it consider the file extension). This has the effect of keeping names with the same stem together.
+- **Sort newly copied and created files**: Lets you override the global setting on the [Filtering and Sorting / Sorting](/Manual/preferences/preferences_categories/filtering_and_sorting/sorting.md) Preferences page. Normally when files are copied to or created in a file display, they are automatically sorted into their proper position (based on the current sorting parameters). If you turn this option off they will instead be added, unsorted, to the end of the list.
+- **Word sort**: Enables special handling for punctuation characters in filenames. In a word sort, all punctuation marks and other non-alphanumeric characters, except for the hyphen and the apostrophe, come before any alphanumeric character. The hyphen and the apostrophe are treated differently than the other non-alphanumeric symbols, in order to ensure that words such as "coop" and "co-op" stay together within a sorted list.
+- **Mixing**: Choose how files and folders are to be sorted with respect to each other. You can choose to list all the files before the folders, all the folders before the files, or to have files and folders interspersed.
+- **Ignore prefix**: Specify one or more filename prefixes that Opus will ignore when sorting the file list. You might want to ignore "The " at the start of filenames, for example.

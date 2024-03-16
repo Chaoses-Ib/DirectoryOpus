@@ -38,33 +38,36 @@
   - Power Mode's new "Set Focus (No Select)" button mode allows you to configure a mouse button to give the file display focus without changing file selections. Clicking and holding the button a second time triggers inline rename.
   - Added new Power Mode option to enable delayed context menu in some button modes. (For example, a button can be set to select files, but if you hold it down for long enough it triggers the context menu instead.)
   - Added option to disable hot-tracking of items under the mouse.
+  - Improved hot-tracking in response to scrolling via keyboard and similar.
+  - Right-click on a file display's scrollbars now shows the standard system scrollbar context menu.
 - Miscellaneous:
   - Errors reading folders are now displayed via banners inside the file display, rather than via popup dialogs that have to be dismissed. Allows you to edit the path or navigate somewhere else without the extra click. (Can be turned off in Preferences.)
   - When Navigation Lock goes out of sync, the warning/instructions that appear over the file display can now be reduced to a less detailed version which doesn't get in the way as much.
   - When a file display shows the Profile folder, any special folders (e.g. Documents) that have been moved elsewhere (and therefore aren't really under the profile directory) are added to the file display. This mimics what people are used to in File Explorer.
-  - If file extensions are hidden, inline-rename now (initially) hides them in all display modes. (Previously, this only happened in Details and Power modes.) While renaming, push the `Ctrl+E` hotkey to select the extension, revealing it if hidden.
+  - If file extensions are hidden, inline-rename now (initially) hides them in all display modes. (Previously, this only happened in Details and Power modes.) While renaming, push the <kbd>Ctrl+E</kbd> hotkey to select the extension, revealing it if hidden.
   - You can now choose whether grid lines stop at the last file or continue to the bottom of the window.
   - List mode's column width is now independent, instead of tied to the Details/Power mode Name column width. (Folder Format dialog, Display tab.)
   - If "Automatically select newly copied files" is on, its behavior is now suppressed by mouse activity in the file display. (For example, if you select a file yourself, files being copied in to the file display won't be selected automatically and mess up your selection.)
   - Pasting image/text data into a folder now always selects and scrolls to the newly created file, even if "Automatically select newly copied files" is off.
   - In Details and Power modes, when using a unified Thumbnail-and-Name column, the thumbnails (not just the names) now indent to indicate nested folders (via Flat View or the new expandable folders).
+  - File displays grouped by date now recalculate after midnight (or other system date changes).
 - Commands:
-  - \`Go EXPANDBRANCH\` -- Expand or collapse folders. Optional parameters include:
+  - \<ib:inline-code\>`Go EXPANDBRANCH`\</ib:inline-code\> -- Expand or collapse folders. Optional parameters include:
     - "toggle" -- Toggle each matching/selected item individually.
     - "toggleall" -- Toggle all matching/selected items as a group. If any are not expanded, all will be expanded. If all are expanded, all will be collapsed.
     - "wild" -- The Go command's PATH parameter is interpreted as a wildcard. Wildcard is tested against folder names only, not full paths.
     - "regexp" -- Like "wild", but uses regular expressions. Matches in partial mode, so ^ and \$ must be used to explicitly match the name's start or end.
     - "top" -- Restricts the command to expanding/collapsing items at the top level, ignoring nested items. (Applies when acting on wildcards/regexp or all selected items. Has no effect when specifying a single item via the PATH arg.)
-    - *Example 1:* \`Go PATH=\* EXPANDBRANCH=wild,toggleall,top\` -- Toggle all top-level items, as a group.
-    - *Example 2:* \`Go PATH="~(Hello)" EXPANDBRANCH=wild,toggleall,top\` -- The same, but ignoring folders named "Hello".
-  - \`Set EXPANDABLEFOLDERS\` -- Toggle the ability to expand folders. (Hiding the expanders saves a small amount of horizontal space.)
-  - \`{sourcepath}\` and similar codes now accept "pair" as a modifier to return a folder's pair (if one exists). E.g. \`{sourcepath\|pair}\`. Can combine with ".." etc. E.g. \`{sourcepath\|pair\|..}\` would return the pair's parent.
+    - *Example 1:* \<ib:inline-code\>`Go PATH=* EXPANDBRANCH=wild,toggleall,top`\</ib:inline-code\> -- Toggle all top-level items, as a group.
+    - *Example 2:* \<ib:inline-code\>`Go PATH="~(Hello)" EXPANDBRANCH=wild,toggleall,top`\</ib:inline-code\> -- The same, but ignoring folders named "Hello".
+  - \<ib:inline-code\>`Set EXPANDABLEFOLDERS`\</ib:inline-code\> -- Toggle the ability to expand folders. (Hiding the expanders saves a small amount of horizontal space.)
+  - \<ib:inline-code\>`{sourcepath}`\</ib:inline-code\> and similar codes now accept "pair" as a modifier to return a folder's pair (if one exists). E.g. \<ib:inline-code\>`{sourcepath|pair}`\</ib:inline-code\>. Can combine with ".." etc. E.g. \<ib:inline-code\>`{sourcepath|pair|..}`\</ib:inline-code\> would return the pair's parent.
   - Further modifiers let you choose what to do if the paired path doesn't exist on disk:
-    - \`{sourcepath\|pair\|pairgotoparent}\` keeps going up a level until it finds a folder that exists. Acts like "pairignorepair" if no parent is found.
-    - \`{sourcepath\|pair\|pairignorepair}\` ignores the pair if the folder doesn't exist, instead checking for other applicable pairs. (Useful with regex rules that might overlap each other.)
-    - \`{sourcepath\|pair\|pairuseanyway}\` returns the non-existent path as is. (Useful if the intent is to *create* the corresponding folder.)
+    - \<ib:inline-code\>`{sourcepath|pair|pairgotoparent}`\</ib:inline-code\> keeps going up a level until it finds a folder that exists. Acts like "pairignorepair" if no parent is found.
+    - \<ib:inline-code\>`{sourcepath|pair|pairignorepair}`\</ib:inline-code\> ignores the pair if the folder doesn't exist, instead checking for other applicable pairs. (Useful with regex rules that might overlap each other.)
+    - \<ib:inline-code\>`{sourcepath|pair|pairuseanyway}`\</ib:inline-code\> returns the non-existent path as is. (Useful if the intent is to *create* the corresponding folder.)
 - Scripting:
-  - \`FSUtil.GetFolderPair\` lets scripts look up a path's pair, with arguments controlling what happens if it doesn't exist on disk. The returned object tells the script how the pair was configured in Preferences, as well as the path itself.
+  - \<ib:inline-code\>`FSUtil.GetFolderPair`\</ib:inline-code\> lets scripts look up a path's pair, with arguments controlling what happens if it doesn't exist on disk. The returned object tells the script how the pair was configured in Preferences, as well as the path itself.
 
 ------------------------------------------------------------------------
 

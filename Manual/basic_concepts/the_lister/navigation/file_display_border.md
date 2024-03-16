@@ -1,46 +1,53 @@
 # Location Bar
 
-The File Display border is a title bar that appears at the top of the file display area in the Lister. By default the File Display border contains a toolbar, the [File Display](../toolbars/the_default_toolbars/file_display_toolbar.md) toolbar:
+The location bar is a title bar that appears at the top of the file display area in the Lister. By default the location bar contains a toolbar, the [File Display](../toolbars/the_default_toolbars/file_display_toolbar.md) toolbar:
 
-![](/Manual/images/media/file_display_toolbar.png)
+![](/Manual/images/media/13/file_display_toolbar.png)
 
-The first three buttons on the default File Display toolbar are, from left-to-right, **Back** (![](/Manual/images/media/location_toolbar_-_back.png)), **Forward** (![](/Manual/images/media/forward.png)) and **Up** (![](/Manual/images/media/location_toolbar_-_up.png)). All of these buttons have an associated drop-down menu which you can access either by clicking-and-holding with the left mouse button, or single-clicking with the right mouse button. The Favorites button (![](/Manual/images/media/favorites_001.png)) provides access to your [favorite folders](favorites.md), and the [breadcrumbs location field](breadcrumbs_location_field.md) shows you the current folder.
+##### Default location bar toolbar
+
+The main component of the default toolbar is the [breadcrumbs location field](breadcrumbs_location_field.md) which shows you the current folder and lets you navigate within the current hierarchy.
+
+To the left of the location field the buttons are:
+
+- ![](/Manual/images/media/13/location_toolbar_-_back.png) **Back**: Go [back](up_forwards_back.md) to the previous folder. Right-click to show a drop-down list of previous folders.
+- ![](/Manual/images/media/13/location_toolbar_-_forward.png) **Forward**: Go [forward](up_forwards_back.md) to the next folder (if you've previously gone back). Right-click to show a drop-down list of next folders.
+- ![](/Manual/images/media/13/location_toolbar_-_up.png) **Up**: Go [up](up_forwards_back.md) in the folder hierarchy. Right-click to show a drop-down menu with several different options.
+- ![](/Manual/images/media/13/location_toolbar_-_refresh.png) **Refresh**: Refresh the current folder (both file display and tree are refreshed by default).
+- ![](/Manual/images/media/13/location_toolbar_-_home.png) **Home**: Go to your [home folder](home_folder.md). Right-click to show a drop-down menu.
+
+To the right of the location field the buttons are:
+
+- **Duplicate**: Duplicates this folder display in the other file display. The Lister will be switched to dual-display mode if it isn't already.
+- **Swap**: Swap this folder with the other file display. This button isn't visible in single display mode.
+- **Close**: Close the current tab. If this is the only tab in a dual-display Lister, it will close the second file display. In a single display Lister with only one tab open this button isn't visible.
 
 This is a fully [configurable toolbar](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/RAEDME.md), and as such you can add your own buttons and modify or remove the default ones. See the page on the [File Display toolbar](../toolbars/the_default_toolbars/file_display_toolbar.md) for more information about these buttons.
 
-The color of the file display border (and of the Opus icon, if enabled) indicates the state of the file display. A single display Lister can be one of three states - the default colors for these are shown below, but you can configure them through the **[Display / Colors and Fonts](/Manual/preferences/preferences_categories/display/colors_and_fonts.md)**Preferences page. These colors apply whether the File Display toolbar is enabled or not.
+##### Source / destination state
 
-\* ![](/Manual/images/media/fdbsource.png) **Source** (for actions involving two folders, like copy, this will be the source of the operation). \* ![](/Manual/images/media/fdbdest.png) **Destination** (for actions involving two folders, this will be the destination of the operation). \* ![](/Manual/images/media/fdboff.png) **Off** (this Lister will not be involved in file operations with another window in this state).
+Some operations, like copying files, inherently require two folders to be involved - the source and the destination.
 
-In a dual display Lister, one display is always designated the source and the other the destination, so the file display border will never appear in the off state in a dual Lister. See the **[Source and Destination](../../source_and_destination.md)** topic for more information about the source/destination concept.
+In a dual display Lister, one display is always designated the source and the other the destination. The location bar changes color to indicate this.
 
-In **[Preferences / File Displays / Border](/Manual/preferences/preferences_categories/file_displays/file_display_border.md)** you can choose to turn the File Display toolbar off, in which case the file display border reverts to a simpler, static header:
+Single display Listers by default do not have a source/destination state as such, although you can enable this in Preferences if you prefer to work that way.
 
-![](/Manual/images/media/fdb1.png)
+See the **[Source and Destination](../../source_and_destination.md)** topic for more information about the source/destination concept.
 
-In static header mode, in a single file display Lister the file display border is optional - you can choose whether it is shown or not using the **Show file display border in single display mode** option on the **[File Displays / Border](/Manual/preferences/preferences_categories/file_displays/file_display_border.md)** page in Preferences. In a dual file display Lister the file display border is always shown.
+##### Static header mode
 
-This image is typical of the file display border in a single display Lister. The various elements of the single display border are:
+In **[Location Bar / Toolbars](/Manual/preferences/preferences_categories/location_bar/toolbars.md)** you can choose to turn the File Display toolbar off, in which case the location bar reverts to a simpler, static header:
 
-- ![](/Manual/images/media/fdbicon.png): The Opus icon can be used to create a shortcut to this folder - simply drag the icon out and drop it on the desktop or in a Lister to make a shortcut to the current folder.
-- ![](/Manual/images/media/fdbpath2.png): The current location is displayed here. See below for more information about the location string.
-- ![](/Manual/images/media/fdbback.png): Go [back](up_forwards_back.md) to the previous folder in the [history](recent_and_history_lists.md).
-- ![](/Manual/images/media/fdbfwd.png): Go [forward](up_forwards_back.md) to the next folder in the [history](recent_and_history_lists.md).
-- ![](/Manual/images/media/fdbup.png): Go [up](up_forwards_back.md) to the parent folder.
-- ![](/Manual/images/media/fdbcopy.png): Display this folder in the other file display. In a single display Lister, this will automatically place the Lister in [dual display mode](../dual_display/RAEDME.md).
+![](/Manual/images/media/13/fdb1.png)
 
-The file display borders in a dual display Lister have a few more buttons than a single display.
+In static header mode, in a single file display Lister the location bar is optional - you can choose whether it is shown or not using the **Show header in single display mode** option. In a dual file display Lister the location bar is always shown.
 
-![](/Manual/images/media/fdbdual.png) 
+The elements of the static header, from left-to-right, are:
 
-The additional buttons are:
-
-- ![](/Manual/images/media/fdbswap.png): Swap the two file displays (their positions are exchanged).
-- ![](/Manual/images/media/fdblayout.png): Change layout from side-by-side (vertical) to one-above-the-other (horizontal) and back again.
-- ![](/Manual/images/media/fdbclose.png): Close the file display - closing one will leave the remaining one behind as a single display Lister.
-
-If you move your mouse over the location string displayed in the file display border you'll notice that the individual path components are actually links. The file display border operations like a simple version of the "breadcrumbs" location field - you can left-click on any component of the path to navigate to that folder, and you can right-click to access its folder context menu.
-
-![](/Manual/images/media/fdbhot.png) 
-
-By default *hot paths* are only enabled when the file display is the source, and the Lister containing the file display is the active window. This is so you can click on a file display border to make it the source without worrying about accidentally clicking a link. You can change this behaviour with the options in the **[File Displays / Border](/Manual/preferences/preferences_categories/file_displays/file_display_border.md)** page in Preferences.
+- **Location**: Shows the current location. The individual segments of the location are clickable links.
+- **Back**: Go [back](up_forwards_back.md) to the previous folder.
+- **Forward**: Go [forward](up_forwards_back.md) to the next folder (if you've previously gone back).
+- **Up**: Go [up](up_forwards_back.md) in the folder hierarchy.
+- **Duplicate**: Duplicates this folder display in the other file display.
+- **Swap**: Swap this folder with the other file display.
+- **Close**: Close the current tab.

@@ -1,3 +1,0 @@
-# Script Editor
-
-TOBEDONE

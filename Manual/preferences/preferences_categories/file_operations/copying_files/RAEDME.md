@@ -12,15 +12,15 @@ These are general options that affect how Directory Opus copies files.
   
 =='Copy of' template==
 
-This template is used to define the new name of a copy of an existing file (for example, when you select a file and press `Ctrl+C` followed by `Ctrl+V`). You can use two codes in the template string to insert information:
+This template is used to define the new name of a copy of an existing file (for example, when you select a file and press <kbd>Ctrl+C</kbd> followed by <kbd>Ctrl+V</kbd>). You can use two codes in the template string to insert information:
 
 - **%1**: Inserts the original file name.
 - **%2**: Inserts the copy count in brackets (if greater than one).
 
 The original file name is inserted without the file extension (which is automatically applied to the end of the new file).
 
-For example, the default template is \`%1 - Copy %2\`. Say you pick a file "Document.txt" and press `Ctrl+C`, `Ctrl+V`.
+For example, the default template is \<ib:inline-code\>`%1 - Copy %2`\</ib:inline-code\>. Say you pick a file "Document.txt" and press <kbd>Ctrl+C</kbd>, <kbd>Ctrl+V</kbd>.
 
-The first copy of an existing file has a "copy count" of 1, which is not shown - so \`%2\` will expand to nothing. The first copy's name would be \<nobr\>\`Document - Copy.txt\`\</nobr\>.
+The first copy of an existing file has a "copy count" of 1, which is not shown - so \<ib:inline-code\>`%2`\</ib:inline-code\> will expand to nothing. The first copy's name would be \<nobr\>\<ib:inline-code\>`Document - Copy.txt`\</ib:inline-code\>\</nobr\>.
 
-If you press `Ctrl+V` again to make a second copy, the copy count would be 2, and the new filename would be \<nobr\>\`Document - Copy (2).txt\`\</nobr\>.
+If you press <kbd>Ctrl+V</kbd> again to make a second copy, the copy count would be 2, and the new filename would be \<nobr\>\<ib:inline-code\>`Document - Copy (2).txt`\</ib:inline-code\>\</nobr\>.

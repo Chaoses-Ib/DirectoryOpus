@@ -386,7 +386,7 @@ Examples:
 
 \$\$ @keydown \$\$ Allows simple conditional behaviour based on whether various qualifier keys are held down when the function is run.
 
-The qualifiers to test for are specified using one or more keywords (**shift**, **ctrl** and **alt**) which represent the `Shift`, `Ctrl` and `Alt` keys. For example, you could configure a button to select all files, then copy, move or create shortcuts to them, depending on which keys were held down.
+The qualifiers to test for are specified using one or more keywords (**shift**, **ctrl** and **alt**) which represent the <kbd>Shift</kbd>, <kbd>Ctrl</kbd> and <kbd>Alt</kbd> keys. For example, you could configure a button to select all files, then copy, move or create shortcuts to them, depending on which keys were held down.
 
     Select ALL              // select all items (always executed)
     @keydown:none           // if no qualifiers are down
@@ -427,7 +427,7 @@ Leaving the DOS window opens relies on passing a particular argument (**/K**) to
 |------------------------------|----------------------------------------------------------------------|
 | **@nocall:***\<batch file\>* | *invoke external batch file, do not return control to this function* |
 
-\$\$ @nodeselect \$\$ Files and folders will remain selected at the end of the function. This lets you override the **Deselect files used in functions** option on the **[File Operations / Options](/Manual/preferences/preferences_categories/file_displays/file_display_options.md)** page in Preferences, on a per-function basis.
+\$\$ @nodeselect \$\$ Files and folders will remain selected at the end of the function. This lets you override the **Deselect files used in functions** option on the **[File Operations / Options](/Manual/preferences/preferences_categories/file_operations/options.md)** page in Preferences, on a per-function basis.
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
@@ -485,12 +485,12 @@ For example,
     echo 1 {file}
     echo 2 {file}
 
-With two files, "one.txt" and "two.txt" selected, this would output:
+With two files, "Apple.txt" and "Banana.txt" selected, this would output:
 
-    1 one.txt
-    1 two.txt
-    2 one.txt
-    2 two.txt
+    1 Apple.txt
+    1 Banana.txt
+    2 Apple.txt
+    2 Banana.txt
 
 Using **@perfile** around these commands like so:
 
@@ -501,10 +501,10 @@ Using **@perfile** around these commands like so:
 
 This would output:
 
-    1 one.txt
-    2 one.txt
-    1 two.txt
-    2 two.txt
+    1 Apple.txt
+    2 Apple.txt
+    1 Banana.txt
+    2 Banana.txt
 
 Use **@perfile:begin** to mark the beginning of the per-file block and **@perfile:end** to mark the end. \$\$ @resolvelinks \$\$ Shortcuts or links passed to commands in this function will be resolved to their targets. Without this modifier, a selected **.lnk** file would be passed as-is.
 
@@ -553,8 +553,9 @@ For example,
 
 \$\$ @set \$\$ Sets the value of a named variable that can be used by the remainder of the commands in the function. You can pass the value of a variable to internal and external commands using the **{\$}** [control code](external_control_codes/codes_for_clipboard_and_variables.md). Variables are most useful in the situation where the value is defined by a **{dlgstring}** code. For example,
 
-    @set dir={dlgstring%%|%%Enter new folder name to copy files to}\\ CreateFolder ".\{$dir}
-    Copy TO ".\{$dir}"**
+    @set dir={dlgstring|Enter new folder name to copy files to}
+    CreateFolder ".\{$dir}"
+    Copy TO ".\{$dir}"
 
 Normally, variables do not persist from one invocation of the function to another, and you can not refer to variables set in one function from another. However this can be accomplished by prefixing the variable name with a special scope marker that determines which scope the variable will live in.
 
@@ -585,7 +586,11 @@ If you have buttons or status bar codes which react to variable changes, you ma
 | **@showif:Set DUAL=toggle**  | *button will be shown if the Lister is in dual-display mode*     |
 | **@showif:!Set DUAL=toggle** | *button will be shown if the Lister is NOT in dual-display mode* |
 
-\$\$ @showifpath  
+\$\$ @sendkey \$\$ Sends the specified keystroke to the system. The key will be routed to whichever window currently has focus. For example, \<ib:inline-code\>`@sendkey:win+v`\</ib:inline-code\> sends the <kbd>Win</kbd>+<kbd>V</kbd> key to the system, which opens the Windows clipboard viewer.
+
+Supported qualifier keys are \<ib:inline-code\>`shift`\</ib:inline-code\>, \<ib:inline-code\>`ctrl`\</ib:inline-code\>, \<ib:inline-code\>`alt`\</ib:inline-code\> and \<ib:inline-code\>`win`\</ib:inline-code\>.
+
+As well as letters and numbers, the following named keys are also supported: \<ib:inline-code\>`backspace`\</ib:inline-code\>, \<ib:inline-code\>`capslock`\</ib:inline-code\>, \<ib:inline-code\>`delete`\</ib:inline-code\>, \<ib:inline-code\>`down`\</ib:inline-code\>, \<ib:inline-code\>`end`\</ib:inline-code\>, \<ib:inline-code\>`enter`\</ib:inline-code\>, \<ib:inline-code\>`escape`\</ib:inline-code\>, \<ib:inline-code\>`home`\</ib:inline-code\>, \<ib:inline-code\>`insert`\</ib:inline-code\>, \<ib:inline-code\>`left`\</ib:inline-code\>, \<ib:inline-code\>`numlock`\</ib:inline-code\>, \<ib:inline-code\>`pagedown`\</ib:inline-code\>, \<ib:inline-code\>`pageup`\</ib:inline-code\>, \<ib:inline-code\>`pause`\</ib:inline-code\>, \<ib:inline-code\>`printscr`\</ib:inline-code\>, \<ib:inline-code\>`right`\</ib:inline-code\>, \<ib:inline-code\>`scrlock`\</ib:inline-code\>, \<ib:inline-code\>`space`\</ib:inline-code\>, \<ib:inline-code\>`tab`\</ib:inline-code\>, \<ib:inline-code\>`up`\</ib:inline-code\>. \$\$ @showifpath  
 @showifpathr \$\$ The button will be shown if the current source path doesn't match the specified pattern. You can provide either an absolute path to test against, or a wildcard pattern (use **@showifpath** for [standard wildcards](../wildcard_reference/pattern_matching_syntax.md), and **@showifpathr** for [regular expressions](../wildcard_reference/regular_expression_syntax.md)).
 
 |                              |                                                                  |

@@ -8,6 +8,7 @@ This page contains various options that let you adjust the behavior of File Disp
 
 \</WRAP\>
 
+- **Preserve folder format edits between folders**: Normally when you modify the folder format in a file display and then change folder, the modified format is preserved (unless the new folder has its own saved format that overrides). If you turn this option off, ad-hoc changes are not preserved and the format will reset every time you change folder.
 - **Show sort header in icon modes**: Normally column headers are only shown in details and Power mode. If you turn this option on, column headers will be shown in the icon modes (like thumbnails) too. Although there are no columns in those modes, you can still use the header as a convenient way to sort or group the file list.
 
 ##### Single display

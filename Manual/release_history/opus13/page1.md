@@ -1,5 +1,9 @@
 Previous: [Opus 13 Highlights - Table of contents](/Manual/release_history/opus13/RAEDME.md) # Directory Opus 13 - Highlights - Page 1
 
+#### Highlights Video
+
+A [video version of these highlights](https://www.youtube.com/watch?v=K57m_Ogy8Lg) is on our YouTube channel.
+
 #### Dark Mode and Themes
 
 Dark Mode, Light Mode, *Any Colors You Like* Mode. For the whole program.

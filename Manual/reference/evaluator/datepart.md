@@ -39,7 +39,7 @@ Time parts are:
 | t   | One-character AM/PM (e.g. A or P)     |
 | tt  | Multiple-character AM/PM%0            |
 
-\</evalcmd\>
+You can also specify **date** and **time** to retrieve the full date without the time, or full time without the date. \</evalcmd\>
 
 Returns the value of the specified part.
 

@@ -8,7 +8,7 @@ The information displayed in the [status bar](/Manual/basic_concepts/the_lister/
 - Total duration of music and video files
 - Various graphical elements like bar graphs and icons
 
-The status bar is configured from the **[Display / Status Bar](/Manual/preferences/preferences_categories/display/status_bar.md)** page in Preferences. You can optionally define a completely separate status bar for dual-display Listers.
+The status bar is configured from the **[Status Bar](/Manual/preferences/preferences_categories/file_displays/status_bar.md)** page in Preferences. You can optionally define a completely separate status bar for dual-display Listers.
 
 More:
 

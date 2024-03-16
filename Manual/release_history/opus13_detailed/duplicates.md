@@ -25,10 +25,11 @@
   - When matching by checksum, an initial checksum is calculated of just the start of potential matches. The full checksum is only calculated if the partial checksums match.
   - Panel supports auto-shrink (previously only Find and Synchronize did).
   - Commands:
-    - \`Find DUPES\` supports MINSIZE, OFFLINE, IGNORELINKS, NOAUTORUN, PRESET, SHOWRESULTS, QUERY, QUERYENGINE args.
-    - \`Find DUPES\` now defaults to \`RECURSE CLEAR UAC=no\`.
-    - \`Set Utility=Dupe PRESET="My Preset"\` -- similar to Find panel.
-    - \`Select DUPES\` -- Same as the panel's Select button, allowing you to set a hotkey or use it with the panel hidden.
+    - \<ib:inline-code\>`Find DUPES`\</ib:inline-code\> supports MINSIZE, OFFLINE, IGNORELINKS, NOAUTORUN, PRESET, SHOWRESULTS, QUERY, QUERYENGINE args.
+    - \<ib:inline-code\>`Find DUPES`\</ib:inline-code\> now defaults to \<ib:inline-code\>`RECURSE CLEAR UAC=no`\</ib:inline-code\>.
+    - \<ib:inline-code\>`Find DUPES RUNINPANEL`\</ib:inline-code\> lets a single command configure the panel and then start the operation.
+    - \<ib:inline-code\>`Set Utility=Dupe PRESET="My Preset"`\</ib:inline-code\> -- similar to Find panel.
+    - \<ib:inline-code\>`Select DUPES`\</ib:inline-code\> -- Same as the panel's Select button, allowing you to set a hotkey or use it with the panel hidden.
 
 ------------------------------------------------------------------------
 

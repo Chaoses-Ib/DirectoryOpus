@@ -3,6 +3,7 @@
 | ID            | English language string |
 |---------------|-------------------------|
 | FavoritesBar  | Favorites Bar           |
+| FindResults   | Find Results            |
 | CopySelection | Copy Selection          |
 | CopyAll       | Copy All                |
 

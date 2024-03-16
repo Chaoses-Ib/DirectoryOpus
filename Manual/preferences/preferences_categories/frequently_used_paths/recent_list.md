@@ -1,9 +1,14 @@
 # Recent List
 
-The Recent List is a list of your most recently used folders, displayed in the Go menu. The options here let you control how many folders are saved in this list:
+The **recent list** is an Opus-wide list of your most recently used folders, displayed by default in the ![](/Manual/images/media/13/back_button.png) **Back** button's right-click menu. The options here let you control how many folders are saved in this list:
 
-- **Enable Recent List, maximum size**: This option can be used to disable the feature, or when enabled, specify how many folders are remembered. When the limit is exceeded, the oldest folder is removed from the list when a new folder is visited or used.
-- **Include virtual folders**: Turn this option off if you want to prevent virtual folders like My Computer from being added to the recent list.
-- **Ignore filesystem folders that are only transited**: If this option is on, a folder will only be added to the recent list if you actually do something in it. If you simply pass through a folder on your way to somewhere else, it won't be added to the list.
+- **Enable the recent list**: Enables or disables the recent list.
+- **Maximum size**: Specify how many folders are remembered. When the limit is exceeded, the oldest folder is removed from the list when a new folder is visited or used.
+- **Include virtual folders**: Allows virtual folders like *This PC* to be added to the recent list.
+- **Ignore filesystem folders that are only transited**: A folder will only be added to the recent list if you actually do something in it. If you simply pass through a folder on your way to somewhere else, it won't be added to the list.
 
-This page also lets you configure the size of the **Lister History** list; this is a separate list of recently visited folders that is local to a Lister. It is the list shown in the drop-down on the Back and Forward buttons on the Location toolbar, and also defines how many folders back and forward you can go when you click these buttons.
+##### History List
+
+The **history list** is similar to the **recent list** except it's per-tab, not global. It's the list of folders you move through when you click the ![](/Manual/images/media/13/back_button.png) **Back** and ![](/Manual/images/media/13/forward_button.png) **Forward** buttons.
+
+The option at the bottom of the page lets you configure the maximum size of the **history list**.

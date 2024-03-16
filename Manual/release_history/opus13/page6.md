@@ -8,7 +8,7 @@ More "friendly dates" choices:
 Freeze columns to keep key information visible:
 
 \<WRAP indent\>![](/Manual/images/release_history/cols_freeze.gif)\</WRAP\>  
-Hold `Ctrl` and drag with the right button to select and copy individual cells:
+Hold <kbd>Ctrl</kbd> and drag with the right button to select and copy individual cells:
 
 \<WRAP indent\>![](/Manual/images/release_history/cols_select.gif)\</WRAP\>  
 More options for how filenames are displayed:
@@ -76,6 +76,8 @@ Allows editing script code and resources:
 See the [detailed list of changes](/Manual/release_history/opus13_detailed/RAEDME.md) for even more!
 
 There are hundreds of additional changes across almost every part of the program, plus more detail on everything discussed above.
+
+If you're updating from an older version, you may also want to read [Tips for Upgrading from Opus 12](/Manual/release_history/opus13_upgradetips.md).
 
 ------------------------------------------------------------------------
 

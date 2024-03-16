@@ -1,3 +1,9 @@
 # Sorting
 
-TOBEDONE
+This page contains various options relating to how file lists are sorted.
+
+- **Allow manual sorting even when the order can't be saved**: Some folders, like FAT32-formatted drives, don't support saving of [manual sort](/Manual/basic_concepts/sorting_and_grouping/manual_sorting.md) information. If this option is turned off, you cannot even turn on manual sorting when on a drive where it cannot be saved, to prevent you from spending time organizing things only to find that you cannot save them. If this option is on, Opus will let you turn on manual sorting in such a drive, and you can re-arrange the files, but the sort order will be lost when the window is closed.
+- **Automatically save manual sort order where possible**: If this option is on Opus will automatically save the manual sort order (if it can) whenever you rearrange files. If turned off, you need to specifically select the **Save Sort Order** command to make the sort order permanent.
+- **Sort newly created and copied files**: Normally when files are copied to or created in a file display, they are automatically sorted into their proper position (based on the current sorting parameters). If you turn this option off they will instead be added, unsorted, to the end of the list.
+- **Sort shortcuts to folders like folders**: With this option on Opus will treat shortcuts to folders as if they were the folders themselves when sorting the file list (meaning they'll be grouped with the folders rather than with the files). Note that this can incur a performance penalty, particularly on network drives, because the shortcut has to be queried to find out whether it points to a file or a folder.
+- **Ignore prefix when sorting**: This is similar to the **Ignore prefix** option in the [Folder Format](/Manual/basic_concepts/folder_options/RAEDME.md) editor - it lets you configure one or more filename prefixes that Opus ignores when sorting filenames alphabetically. This option takes effect globally in all file displays and also in folder trees.

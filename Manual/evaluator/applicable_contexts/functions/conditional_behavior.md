@@ -2,7 +2,7 @@
 
 You can use the evaluator with the various **@if** and **@ifset** [command modifiers](/Manual/reference/command_reference/command_modifier_reference.md) to introduce simple conditional behavior in functions.
 
-Note that these modifiers can also be used [without the evaluator](/Manual/reference/command_reference/command_modifier_reference.md#@icon), so to use the evaluator you must begin the expression with a \`=\` character.
+Note that these modifiers can also be used [without the evaluator](/Manual/reference/command_reference/command_modifier_reference.md#@icon), so to use the evaluator you must begin the expression with a \<ib:inline-code\>`=`\</ib:inline-code\> character.
 
 ![](page>standard_variables&nodate&nouser&nofooter)
 

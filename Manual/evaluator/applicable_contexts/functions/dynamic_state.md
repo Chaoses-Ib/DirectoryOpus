@@ -6,7 +6,7 @@ You can use the evaluator with the various [command modifiers](/Manual/reference
 - **@disableif** / **@enableif** - dynamically disable or enable the button
 - **@toggle** - control whether the button appears checked/selected or unchecked/unselected
 
-Note that these modifiers can also be used [without the evaluator](/Manual/reference/command_reference/command_modifier_reference.md#@icon), so to use the evaluator you must begin the expression with a \`=\` character.
+Note that these modifiers can also be used [without the evaluator](/Manual/reference/command_reference/command_modifier_reference.md#@icon), so to use the evaluator you must begin the expression with a \<ib:inline-code\>`=`\</ib:inline-code\> character.
 
 ![](page>standard_variables&nodate&nouser&nofooter)
 

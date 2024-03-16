@@ -3,7 +3,7 @@
 # Default Toolbars & Menus
 
 - General:
-  - The Customize dialog's Default Toolbars tab (discussed above) provides a way to highlight new commands. (See [Customize](/Manual/customize/RAEDME.md).)
+  - The Customize dialog's Default Toolbars tab (discussed above) provides a way to highlight new commands. (See [Customize](customize.md).)
   - If you have custom toolbars and don't want to reset them, you can drag individual items out of the Default Toolbars tab.
 - Middle-click to open in a new tab:
   - Most buttons which go to folders now support middle-click to open in a new tab.
@@ -22,6 +22,7 @@
   - Edit \> Select Other \> Select Expanded Folder Items -- After expanding one or more folders, use this to select everything below them. (See Expandable Folders under [File Display](file_display.md).)
   - Edit \> Select Other \> Select Duplicates -- The same as the [Duplicate Files](duplicates.md) "Select" button. Useful if the panel is hidden.
   - Tools \> Find Presets -- A list of your Find presets, plus commands to find empty folders in or below the current directory.
+  - Tools \> Convert Images \> Save As -- Now includes any defined image conversion presets.
   - Settings \> Toolbars \> Choose Location Bar Toolbars -- Shortcut to the corresponding Preferences page.
   - Settings \> Scripts -- Opens dialog for managing scripts. The new [Script IDE](script_ide.md) can be opened from there.
   - Settings \> Install Script -- Easier way to install scripts (e.g. from the forum).
@@ -37,7 +38,7 @@
   - Folder \> Full-Row Selection -- Now toggles between full-row and full-width-of-name-column selection modes.
   - Lister \> Favorites Bar -- Toggles the new Favorites Bar. Ctrl+Shift+B hotkey.
   - Viewer Pane -- Button now has a right-click action which opens a Lister-Linked viewer. (See [Viewer](viewer.md).)
-- Operations toolbar:
+- "Operations" toolbar:
   - Copy Files \> Duplicate to Dated Names -- Similar to "Duplicate", but automatically appends the current date and time to the new copies, without prompting.
   - Copy Files \> Copy Settings -- Shortcut to the corresponding Preferences page.
   - New Folder \> Move to New Folder -- Prompts for a name and moves all selected items into a new sub-folder.
@@ -57,6 +58,8 @@
 - "File Display" toolbar:
   - When the Favorites Bar is on, the File Display toolbar's Favorites icon/menu is hidden. It will reappear automatically if the Favorites Bar is then turned off.
   - Home button (see [Location Bar](location_bar.md) for details).
+- "Images" toolbar:
+  - Convert -- Button-menu now includes any defined image conversion presets.
 - "Viewer" toolbar:
   - File \> Link to Lister Selection -- Toggles the viewer's Lister-Linked state. (See [Viewer](viewer.md).)
   - File \> Locate Image -- Menu of online GPS mapping services.
@@ -64,7 +67,7 @@
   - View \> Picture Frame -- Toggle the viewer's picture frame, without going to Preferences.
   - View \> Previous Monitor -- Move the viewer to the previous display.
   - View \> Next Monitor -- Move the viewer to the next display.
-  - The top-level Next and Previous buttons have updated commands which mark the current picture first if pushed with `Ctrl`.
+  - The top-level Next and Previous buttons have updated commands which mark the current picture first if pushed with <kbd>Ctrl</kbd>.
   - There are also new top-level buttons to toggle Lister-Linked, and (if fullscreen) move to other monitors.
 - Context menus:
   - Context menus that contain "Open Containing Folder" now include a second "...in New Tab" option. (Removed unnecessary "open container in tabs" setting.)
