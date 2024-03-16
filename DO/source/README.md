@@ -2,14 +2,12 @@
 Clone:
 ```sh
 git clone https://github.com/Chaoses-Ib/DirectoryOpus.git
-cd DirectoryOpus/source/private
+cd DO/source/private
 ```
 
 Setup:
 ```sh
-git clone https://github.com/saveweb/dokuwiki-dumper.git
-cd ./dokuwiki-dumper
-pip install -r requirements.txt
+pip install -r ../requirements.txt
 ```
 ```sh
 scoop install pandoc
@@ -17,8 +15,7 @@ scoop install pandoc
 
 Dump:
 ```sh
-cd ./dokuwiki-dumper
-python -m dokuWikiDumper --current-only --ignore-disposition-header-missing --threads 3 --content --media --ignore-errors --path ../docs.dopus.com https://docs.dopus.com/doku.php
+python -m dokuWikiDumper --current-only --ignore-disposition-header-missing --threads 3 --content --media --ignore-errors --path docs.dopus.com --force https://docs.dopus.com/doku.php
 ```
 `--ignore-errors` is needed since the following links are broken:
 - https://docs.dopus.com/doku.php?id=playground%3Aplayground
