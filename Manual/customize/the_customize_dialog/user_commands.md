@@ -22,69 +22,69 @@ Editing a user command is similar to [editing a normal toolbar button](/Manual/c
 
 If you want to be able to pass arguments to your user command you need to give it an argument template. This uses the [same syntax](/Manual/customize/creating_your_own_buttons/internal_command_arguments.md) as for internal Opus commands.
 
-In the above example, we only want a single string value. The argument has been given the name \<ib:inline-code\>`EXT`\</ib:inline-code\> in the template field. This is not the *value* of the argument (that doesn't exist until something uses this user command), but the *name* of the argument.
+In the above example, we only want a single string value. The argument has been given the name `EXT` in the template field. This is not the *value* of the argument (that doesn't exist until something uses this user command), but the *name* of the argument.
 
-The function for the user command, \<ib:inline-code\>`Select *.&EXT&`\</ib:inline-code\>, calls the internal \<ib:inline-code\>`Select`\</ib:inline-code\> command, passing it a wildcard string that is built from the supplied \<ib:inline-code\>`EXT`\</ib:inline-code\> parameter. The argument name is supplied in the function definition surrounded by ampersands (\<ib:inline-code\>`&`\</ib:inline-code\> characters) which indicates to Opus that the value of that argument is to be inserted in the command line.
+The function for the user command, `Select *.&EXT&`, calls the internal `Select` command, passing it a wildcard string that is built from the supplied `EXT` parameter. The argument name is supplied in the function definition surrounded by ampersands (`&` characters) which indicates to Opus that the value of that argument is to be inserted in the command line.
 
 You could use this example command from a toolbar button like so:
 
 |               |                                                                 |
 |---------------|-----------------------------------------------------------------|
-| Command line: | \<ib:inline-code\>`Select_Files_Of_Type txt`\</ib:inline-code\> |
-| Runs:         | \<ib:inline-code\>`Select *.txt`\</ib:inline-code\>             |
+| Command line: | `Select_Files_Of_Type txt` |
+| Runs:         | `Select *.txt`             |
 
 ##### More complex templates
 
-In the above example, \<ib:inline-code\>`EXT`\</ib:inline-code\> is a string argument and so the value supplied is passed through unchanged to the user command, but for boolean options the behaviour is different. For example, consider the following user command:
+In the above example, `EXT` is a string argument and so the value supplied is passed through unchanged to the user command, but for boolean options the behaviour is different. For example, consider the following user command:
 
 |           |                                                                                  |
 |-----------|----------------------------------------------------------------------------------|
-| Name:     | \<ib:inline-code\>`ExampleCmd`\</ib:inline-code\>                                |
-| Template: | \<ib:inline-code\>`EXAMPLE1/S,EXAMPLE2/O`\</ib:inline-code\>                     |
-| Function: | \<ib:inline-code\>`C:\DummyProgram.exe &EXAMPLE1& &EXAMPLE2&`\</ib:inline-code\> |
+| Name:     | `ExampleCmd`                                |
+| Template: | `EXAMPLE1/S,EXAMPLE2/O`                     |
+| Function: | `C:\DummyProgram.exe &EXAMPLE1& &EXAMPLE2&` |
 
-The \<ib:inline-code\>`ExampleCmd`\</ib:inline-code\> user command will run the \<ib:inline-code\>`C:\DummyProgram.exe`\</ib:inline-code\> program when it's invoked. Its template has two boolean options:
+The `ExampleCmd` user command will run the `C:\DummyProgram.exe` program when it's invoked. Its template has two boolean options:
 
-- \<ib:inline-code\>`EXAMPLE1`\</ib:inline-code\>: a straight switch argument, either on or off.
-- \<ib:inline-code\>`EXAMPLE2`\</ib:inline-code\>: an option switch argument, which can be off, on or have a string value supplied.
+- `EXAMPLE1`: a straight switch argument, either on or off.
+- `EXAMPLE2`: an option switch argument, which can be off, on or have a string value supplied.
 
-By default, a switch argument will insert the value \<ib:inline-code\>`1`\</ib:inline-code\> when it is set, and \<ib:inline-code\>`0`\</ib:inline-code\> when it isn't. For example, the following use of the user command would produce the following command line for *DummyProgram*:
+By default, a switch argument will insert the value `1` when it is set, and `0` when it isn't. For example, the following use of the user command would produce the following command line for *DummyProgram*:
 
 |               |                                                                |
 |---------------|----------------------------------------------------------------|
-| Command line: | \<ib:inline-code\>`ExampleCmd EXAMPLE1`\</ib:inline-code\>     |
-| Runs:         | \<ib:inline-code\>`C:\DummyProgram.exe 1 0`\</ib:inline-code\> |
+| Command line: | `ExampleCmd EXAMPLE1`     |
+| Runs:         | `C:\DummyProgram.exe 1 0` |
 
-However, you can use the \<ib:inline-code\>`&..&`\</ib:inline-code\> insert to specify the actual strings that are passed through for that argument. For example:
+However, you can use the `&..&` insert to specify the actual strings that are passed through for that argument. For example:
 
 |               |                                                                                                 |
 |---------------|-------------------------------------------------------------------------------------------------|
-| Function:     | \<ib:inline-code\>`C:\DummyProgram.exe &EXAMPLE1:yes:no& &EXAMPLE2:one:two&`\</ib:inline-code\> |
-| Command line: | \<ib:inline-code\>`ExampleCmd EXAMPLE2`\</ib:inline-code\>                                      |
-| Runs:         | \<ib:inline-code\>`C:\DummyProgram.exe no one`\</ib:inline-code\>                               |
+| Function:     | `C:\DummyProgram.exe &EXAMPLE1:yes:no& &EXAMPLE2:one:two&` |
+| Command line: | `ExampleCmd EXAMPLE2`                                      |
+| Runs:         | `C:\DummyProgram.exe no one`                               |
 
 For option switch (**/O**) arguments this only applies if the argument has been used as a switch, and not to provide a string value - if a string value is supplied instead, it is passed through unchanged. For example:
 
 |               |                                                                          |
 |---------------|--------------------------------------------------------------------------|
-| Command line: | \<ib:inline-code\>`ExampleCmd EXAMPLE1 EXAMPLE2=test`\</ib:inline-code\> |
-| Runs:         | \<ib:inline-code\>`C:\DummyProgram.exe yes test`\</ib:inline-code\>      |
+| Command line: | `ExampleCmd EXAMPLE1 EXAMPLE2=test` |
+| Runs:         | `C:\DummyProgram.exe yes test`      |
 
 Your template can also specify a list of values for an option switch which will then be shown in the drop-down list in the [command editor](/Manual/customize/creating_your_own_buttons/command_editor/RAEDME.md), making it easy to pick the value for the argument. If you use this, you can also specify a default value, which will be passed through if a value is not given for the option. Consider the following template and the two example uses:
 
 |               |                                                                           |
 |---------------|---------------------------------------------------------------------------|
-| Name:         | \<ib:inline-code\>`ExampleCmd`\</ib:inline-code\>                         |
-| Template:     | \<ib:inline-code\>`EXAMPLE/O[<default>,one,two,three]`\</ib:inline-code\> |
-| Function:     | \<ib:inline-code\>`C:\DummyProgram.exe &EXAMPLE&`\</ib:inline-code\>      |
-| Command line: | \<ib:inline-code\>`ExampleCmd EXAMPLE`\</ib:inline-code\>                 |
-| Runs:         | \<ib:inline-code\>`C:\DummyProgram.exe default`\</ib:inline-code\>        |
-| Command line: | \<ib:inline-code\>`ExampleCmd EXAMPLE=two`\</ib:inline-code\>             |
-| Runs:         | \<ib:inline-code\>`C:\DummyProgram.exe two`\</ib:inline-code\>            |
+| Name:         | `ExampleCmd`                         |
+| Template:     | `EXAMPLE/O[<default>,one,two,three]` |
+| Function:     | `C:\DummyProgram.exe &EXAMPLE&`      |
+| Command line: | `ExampleCmd EXAMPLE`                 |
+| Runs:         | `C:\DummyProgram.exe default`        |
+| Command line: | `ExampleCmd EXAMPLE=two`             |
+| Runs:         | `C:\DummyProgram.exe two`            |
 
 ##### Conditional testing
 
-You can use the \<ib:inline-code\>`@if:`\</ib:inline-code\> [command modifier](/Manual/reference/command_reference/command_modifier_reference.md) to test the value of user command arguments to introduce simple conditional behaviour to your user commands (without resorting to scripting). For example:
+You can use the `@if:` [command modifier](/Manual/reference/command_reference/command_modifier_reference.md) to test the value of user command arguments to introduce simple conditional behaviour to your user commands (without resorting to scripting). For example:
 
     @if:&&EXAMPLE&&=one
     C:\Program1.exe

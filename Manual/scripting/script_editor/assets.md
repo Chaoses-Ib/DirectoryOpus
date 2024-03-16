@@ -2,8 +2,8 @@
 
 <img src="/media/13/scripteditor_assets.png" class="align-right" data-query="?nolink" /> The Assets panel in the script editor is where you view and manage the various files and resources that are part of your script.
 
-- Packaged scripts (those with a \<ib:inline-code\>`.osp`\</ib:inline-code\> suffix) support multiple script code files (each of which can contain embedded resources like dialogs and strings), and image and icon files.
-- Single file scripts (i.e. a \<ib:inline-code\>`.js`\</ib:inline-code\> or \<ib:inline-code\>`.vbs`\</ib:inline-code\> file) supported embedded resources.
+- Packaged scripts (those with a `.osp` suffix) support multiple script code files (each of which can contain embedded resources like dialogs and strings), and image and icon files.
+- Single file scripts (i.e. a `.js` or `.vbs` file) supported embedded resources.
 
 The panel has three tabs (two in the case of single file scripts):
 

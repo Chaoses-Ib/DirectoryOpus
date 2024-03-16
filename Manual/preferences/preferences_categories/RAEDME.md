@@ -20,7 +20,7 @@ The various Preferences pages have been categorized in an attempt to group conce
 - **[Layouts and Styles](/Manual/preferences/preferences_categories/layouts_and_styles/RAEDME.md)**: Options to control saved Lister Layouts (arrangements of one or more pre-defined Listers) and Styles (pre-defined configuration of an existing Lister).
 - **[Location Bar](/Manual/preferences/preferences_categories/location_bar/RAEDME.md)**: Options that control the appearance and behavior of the [location bar](/Manual/basic_concepts/the_lister/navigation/breadcrumbs_location_field.md).
 - **[Miscellaneous](/Manual/preferences/preferences_categories/miscellaneous/RAEDME.md)**: These are the options that wouldn't fit anywhere else.
-- **[Toolbars](/Manual/preferences/preferences_categories/location_bar/toolbars.md)**: Options relating to toolbars, and toolbar icons.
+- **[Toolbars](/Manual/preferences/preferences_categories/toolbars/RAEDME.md)**: Options relating to toolbars, and toolbar icons.
 - **[User Interface](/Manual/preferences/preferences_categories/user_interface/RAEDME.md)**: Change the language or spacing of the user interface, and adjust transition animations.
 - **[Viewer](/Manual/preferences/preferences_categories/viewer/RAEDME.md)**: Options relevant to viewing images either in the Lister or in the standalone image viewer.
 - **[Zip and Other Archives](/Manual/preferences/preferences_categories/zip_and_other_archives/RAEDME.md)**: Options that relate to various archive formats that Opus supports.

@@ -1,6 +1,6 @@
 # Filter Bar
 
-The filter bar is a small text field that pops up at the bottom of the file display, and makes it easy to quickly filter the current file list. By default you press \<ib:inline-code\>`*`\</ib:inline-code\> to display the filter bar, although this key can be modified through the [File Displays / Quick Keys](/Manual/preferences/preferences_categories/filtering_and_sorting/quick_keys.md) Preferences page.
+The filter bar is a small text field that pops up at the bottom of the file display, and makes it easy to quickly filter the current file list. By default you press `*` to display the filter bar, although this key can be modified through the [File Displays / Quick Keys](/Manual/preferences/preferences_categories/filtering_and_sorting/quick_keys.md) Preferences page.
 
 ![](/Manual/images/media/13/filter_bar.png) 
 
@@ -8,7 +8,7 @@ The filter bar appears as soon as you press the activation key and you can conti
 
 ##### Filtering the file display
 
-In the above screenshot, we have filtered the \<ib:inline-code\>`C:\Windows\System32`\</ib:inline-code\> directory to show all files that end in \<ib:inline-code\>`.msc`\</ib:inline-code\>. You can see from the status bar that this resulted in 4,671 items being hidden from the display, leaving only 21 .msc files visible.
+In the above screenshot, we have filtered the `C:\Windows\System32` directory to show all files that end in `.msc`. You can see from the status bar that this resulted in 4,671 items being hidden from the display, leaving only 21 .msc files visible.
 
 The filter bar displays these statistics as well, in slightly more detail (it breaks the hidden item count into hidden files and hidden folders).
 
@@ -36,7 +36,7 @@ The "file" and "folder" icons on the filter bar that show the file and folder to
 <img src="/media/13/filter_bar_menu.png" class="align-right" data-query="?nolink" />The options button shows a menu that lets you control how the filter is applied:
 
 - **Ignore diacritics**: Ignore accent characters when filtering.
-- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with \<ib:inline-code\>`+`\</ib:inline-code\>, which means it **must** be present, and \<ib:inline-code\>`-`\</ib:inline-code\> which means it **must not** be present.
+- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with `+`, which means it **must** be present, and `-` which means it **must not** be present.
 - **Partial matching**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
 - **Use regular expression**: Lets you specify the search pattern using [regular expressions](/Manual/reference/wildcard_reference/regular_expression_syntax.md). If turned off, the pattern uses the [standard pattern matching syntax](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) instead.
 

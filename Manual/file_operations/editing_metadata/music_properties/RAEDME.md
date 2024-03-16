@@ -22,9 +22,8 @@ The **Music Properties** metadata fields apply to music files - the formats tha
 - **Release date**: The date the music was originally released.
 - **Subtitle**: The **Subtitle** description is used to provide additional information relating to the **Title**, for example if the title was "Another Brick in the Wall, Part 2", the subtitle might be "Live in Berlin".
 - **Title**: The title of the music.
-- **Track number**: The track number of the music if it forms part of a multi-track work (i.e. an album). You can specify just a track number, or also specify the total number of tracks (e.g. the track number could be **5**, or it could be **5 / 15**).\<WRAP\>
-
-The **Increment** option in this field lets you assign automatically incrementing track numbers when you have multiple files selected. The track number you enter will be assigned to the first selected file, and the number will be incremented once for each additional file. You can also specify that you want to the track number zero-padded by entering a leading zero in the **Track number** field. \</WRAP\>
+- **Track number**: The track number of the music if it forms part of a multi-track work (i.e. an album). You can specify just a track number, or also specify the total number of tracks (e.g. the track number could be **5**, or it could be **5 / 15**).
+  The **Increment** option in this field lets you assign automatically incrementing track numbers when you have multiple files selected. The track number you enter will be assigned to the first selected file, and the number will be incremented once for each additional file. You can also specify that you want to the track number zero-padded by entering a leading zero in the **Track number** field. 
 
 - **Year**: The year the music was originally released.
 

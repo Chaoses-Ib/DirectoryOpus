@@ -2,9 +2,8 @@
 
 These options control the status bar, which appears at the bottom of the Lister or file display.
 
-- **Enable format lock padlock icon**: The \<ib:inline-code\>`{fl}`\</ib:inline-code\> status bar code normally displays a ![icon_info.png](/Manual/images/media/13/icon_info.png) icon. Hovering over the icon shows information about where the current [folder format](/Manual/basic_concepts/folder_options/folder_formats.md) came from, and you can click it to show a menu letting you change and reset the current folder format.\<WRAP\>
-
-If you turn this option on, the icon changes to a ![icon_padlock.png](/Manual/images/media/13/icon_padlock.png) icon. Clicking this icon lets you **lock** the folder format, to prevent it being changed automatically when you navigate to other folders. A brief animation is shown when the folder format is locked this way (just to let you know something has happened). In this mode, you need to right-click the icon to show the format menu. \</WRAP\>
+- **Enable format lock padlock icon**: The `{fl}` status bar code normally displays a ![icon_info.png](/Manual/images/media/13/icon_info.png) icon. Hovering over the icon shows information about where the current [folder format](/Manual/basic_concepts/folder_options/folder_formats.md) came from, and you can click it to show a menu letting you change and reset the current folder format.
+  If you turn this option on, the icon changes to a ![icon_padlock.png](/Manual/images/media/13/icon_padlock.png) icon. Clicking this icon lets you **lock** the folder format, to prevent it being changed automatically when you navigate to other folders. A brief animation is shown when the folder format is locked this way (just to let you know something has happened). In this mode, you need to right-click the icon to show the format menu. 
 
 - **Keep status bars at the bottom of the Lister**: In a dual-display Lister with two separate status bars, the status bars are normally displayed at the bottom of the file displays themselves. Often this means they are at the bottom of the physical window, but this isn't always the case - for example, a toolbar could be positioned between the status bars and the bottom of the window. This option lets you move them to the very bottom of the Lister. If the option to use two independent status bars is turned off then the single status bar is always displayed at the bottom of the Lister.
 
@@ -31,7 +30,7 @@ Depending on the state of the **Separate definitions** option there will either 
 
 ![Default status bar definition](/Manual/images/media/13/status_definition.png) 
 
-This image shows the default status bar definition. Not counting the comments that begin with \<ib:inline-code\>`//`\</ib:inline-code\>, there are ten lines in the text field, which means ten separate sections in the status bar. As you can probably tell, you tell Opus which information to display using a series of \<ib:inline-code\>`{..}`\</ib:inline-code\> codes, which are described in detail in the [reference section](/Manual/reference/status_bar_codes/RAEDME.md). The **Codes** drop-down above the text field also provides a full list with descriptions of their meanings.
+This image shows the default status bar definition. Not counting the comments that begin with `//`, there are ten lines in the text field, which means ten separate sections in the status bar. As you can probably tell, you tell Opus which information to display using a series of `{..}` codes, which are described in detail in the [reference section](/Manual/reference/status_bar_codes/RAEDME.md). The **Codes** drop-down above the text field also provides a full list with descriptions of their meanings.
 
 Below the text field is a small preview of the status bar - this updates in real time, so as you make changes to the status bar definition you can get an idea for how it will look in real life. A red highlight indicates the section you're currently editing.
 

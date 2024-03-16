@@ -2,7 +2,7 @@
 
 You can use the evaluator to generatge the tooltip for a toolbar button dynamically.
 
-Unlike [icons](icons.md) and [labels](labels.md), there's no @ modifier for tooltips - instead, you enter a \<ib:inline-code\>`=`\</ib:inline-code\> character followed by the evaluation expression, directly into the tooltip field in the button editor.
+Unlike [icons](icons.md) and [labels](labels.md), there's no @ modifier for tooltips - instead, you enter a `=` character followed by the evaluation expression, directly into the tooltip field in the button editor.
 
 ![](page>standard_variables&nodate&nouser&nofooter)
 

@@ -4,10 +4,10 @@ Using Opus you can access the contents of MTP (*Media Transfer Protocol*) compat
 
 ##### MTP device paths
 
-MTP devices are referenced internally using a URL-style path format, with the \<ib:inline-code\>`mtp://`\</ib:inline-code\> prefix.
+MTP devices are referenced internally using a URL-style path format, with the `mtp://` prefix.
 
-For example, the path of your Pixel 8 phone would be \<ib:inline-code\>`mtp://Pixel 8/`\</ib:inline-code\>. You can type this sort of path into the location field, or use it in buttons and hotkeys with the internal command set.
+For example, the path of your Pixel 8 phone would be `mtp://Pixel 8/`. You can type this sort of path into the location field, or use it in buttons and hotkeys with the internal command set.
 
 ##### MTP root folder
 
-If you go to the *root* MTP folder (\<ib:inline-code\>`mtp://`\</ib:inline-code\>) by typing the path into the location field, the file display will show you all currently-connected MTP devices. You will also see these devices listed underneath *This PC* in the *Portable Devices* category.
+If you go to the *root* MTP folder (`mtp://`) by typing the path into the location field, the file display will show you all currently-connected MTP devices. You will also see these devices listed underneath *This PC* in the *Portable Devices* category.

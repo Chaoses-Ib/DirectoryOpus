@@ -7,11 +7,11 @@ The **Picture Properties** metadata fields apply to image files in formats that 
 - **Camera model**: The model of the camera that took the image.
 - **Contrast**: The contrast setting when the image was taken.
 - **Creation software**: A string identifying the software used to create or edit the image.
-- **Date digitized**: The date the image was digitized. If the image was originally not in digital form (e.g. a slide you have scanned in) this would be the date it was scanned. You can specify a date and time using the controls, and you can also use the **Select operation** drop-down to perform one of several operations on the date value.\<WRAP\>
-  - **Copy from date created**: This will set the value of the **Date digitized** field to the creation date of the file.
-  - **Copy from date modified**: This will set the value of the **Date digitized** field to the last modified date of the file.
-  - **Copy from date taken**: This will set the value of the **Date digitized** field to the value of the Date taken field (if any).  
-    The **Select operation** field also lets you enter a *[time shift](time_shifting.md)* string that will perform relative adjustments to the current value of the date fields. \</WRAP\>
+- **Date digitized**: The date the image was digitized. If the image was originally not in digital form (e.g. a slide you have scanned in) this would be the date it was scanned. You can specify a date and time using the controls, and you can also use the **Select operation** drop-down to perform one of several operations on the date value.
+    - **Copy from date created**: This will set the value of the **Date digitized** field to the creation date of the file.
+    - **Copy from date modified**: This will set the value of the **Date digitized** field to the last modified date of the file.
+    - **Copy from date taken**: This will set the value of the **Date digitized** field to the value of the Date taken field (if any).  
+      The **Select operation** field also lets you enter a *[time shift](time_shifting.md)* string that will perform relative adjustments to the current value of the date fields. 
 - **Date taken**: The date the image was taken. For digital camera images this is usually the same as **Date digitized**. You can specify a date and time using the controls, or use the **Select operation** field as described for the **Data digitized** field.
 - **Digital zoom**: The digital zoom ratio used to record the image (if any). You can express this as a decimal value or a fraction, and can also select **Off** from the drop-down to specify that no digital zoom was used.
 - **Exposure bias**: The camera's exposure bias setting when the image was recorded, specified in *stops*.

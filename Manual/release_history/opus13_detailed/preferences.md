@@ -20,7 +20,7 @@
 - In Viewer and Archive/VFS plugin lists, cog buttons appear next to plugins that support configuration.
 - While the Preferences window is open, Lister and viewer windows have titlebar buttons to commit or cancel your changes and close Preferences without having to switch back to it, as well as a button to bring it back to the front without having to find it via alt-tab or the taskbar.
 - Page list right-click menu includes *Expand All* and *Collapse All* options.
-- *Command:* Added \<ib:inline-code\>`Prefs COLLAPSEALL`\</ib:inline-code\> lets you open the Preferences dialog with all categories collapsed (rather than remembering their last state). Combine with \<ib:inline-code\>`PAGE`\</ib:inline-code\> to show a page and collapse all other categories.
+- *Command:* Added `Prefs COLLAPSEALL` lets you open the Preferences dialog with all categories collapsed (rather than remembering their last state). Combine with `PAGE` to show a page and collapse all other categories.
 
 ------------------------------------------------------------------------
 

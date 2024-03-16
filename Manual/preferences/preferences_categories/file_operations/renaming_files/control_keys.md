@@ -30,13 +30,13 @@ When you select a key from the list, the bottom half of the page displays its co
 
 This action type lets you select a part of the filename using a regular expression. The pattern should include a capture group. The pattern is compared to the entire filename, and if it matches, the portion corresponding to the capture group will be selected.
 
-For example, say you want a key to automatically select the prefix \<ib:inline-code\>`Copy X of`\</ib:inline-code\> where X is a number. You could use the regular expression \<nobr\>\<ib:inline-code\>`(Copy \d of ).*`\</ib:inline-code\>\</nobr\>. Pressing the associated control key would automatically select the matching prefix.
+For example, say you want a key to automatically select the prefix `Copy X of` where X is a number. You could use the regular expression \<nobr\>`(Copy \d of ).*`\</nobr\>. Pressing the associated control key would automatically select the matching prefix.
 
 ##### Type: Select via RegEx Search
 
 In contrast to **Select via RegEx Match**, this action performs a *search* on the filename using the provided regular expression. This means that the pattern may match multiple times within the filename. The selection will be moved from one match to the next every time you press the key.
 
-The default **Select words** preset is an example of this. It uses the pattern \<nobr\>\<ib:inline-code\>`[^\s\.]+`\</ib:inline-code\>\</nobr\> which basically means "match all characters up to a space or a fullstop". Pressing <kbd>Ctrl+S</kbd> once will select the first word, pressing it again will select the second, and so on.
+The default **Select words** preset is an example of this. It uses the pattern \<nobr\>`[^\s\.]+`\</nobr\> which basically means "match all characters up to a space or a fullstop". Pressing <kbd>Ctrl+S</kbd> once will select the first word, pressing it again will select the second, and so on.
 
 ##### Type: Modify via Rename Preset
 
@@ -49,7 +49,7 @@ This type lets you use an [evaluator clause](/Manual/evaluator/RAEDME.md) to cha
 The evaluator clause is given variables which tell it the original name, the current value in the field, the type (file or directory), the file's path, and the current selection range.
 
 - It can return a string, which changes the contents of the control.
-- It can modify the \<ib:inline-code\>`selstart`\</ib:inline-code\> and \<ib:inline-code\>`selend`\</ib:inline-code\> variables to change the selection.
+- It can modify the `selstart` and `selend` variables to change the selection.
 
 See [Rename Control Keys](/Manual/evaluator/applicable_contexts/rename_control_keys.md) in the Evaluator Reference section for full details.
 

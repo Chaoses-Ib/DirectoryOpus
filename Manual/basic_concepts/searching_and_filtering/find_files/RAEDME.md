@@ -25,7 +25,7 @@ The **Reset** button to the right of the dropdown gives you a quick way to reset
 
 The **Find in** control at the top-right of the find panel lets you specify the location or locations to search. You can search one or more folders (or entire drives) at once by adding entries to the location list. The dropdown on the **Find in** button gives you a history of previously searched locations.
 
-Each entry in the list corresponds with a folder to search. To add a folder to the list, click the \<ib:inline-code\>`+`\</ib:inline-code\> button, or drag and drop a folder onto the list. You can edit an existing folder in the list by clicking it.
+Each entry in the list corresponds with a folder to search. To add a folder to the list, click the `+` button, or drag and drop a folder onto the list. You can edit an existing folder in the list by clicking it.
 
 By default the search location will be *linked* to the file display, so when you navigate to a new location in the Lister, the find panel will update automatically with the new folder. You can disconnect the link by clicking the ![](/Manual/images/media/13/pathlink-linked.png) link button.
 
@@ -51,7 +51,7 @@ The two options in the drop-down let you automatically exclude hidden folders an
 
 The **Indexed search** control lets you take advantage of an indexed search engine like Windows Search or [Everything by voidtools](https://voidtools.com) to speed up the search. You can enter a query string in this field which will be passed to the specified search engine first. The Opus find operation will then use the results of that query as the space for its own search operation.
 
-For example, you might want to find all JPGs on your computer of a certain size. You could use the indexed search to run a query looking for files called \<ib:inline-code\>`*.jpg`\</ib:inline-code\>, and then configure the advanced find mode to match images with the desired size. This would potentially be a lot quicker than solely using the Opus find tool to search for all JPGs on your system.
+For example, you might want to find all JPGs on your computer of a certain size. You could use the indexed search to run a query looking for files called `*.jpg`, and then configure the advanced find mode to match images with the desired size. This would potentially be a lot quicker than solely using the Opus find tool to search for all JPGs on your system.
 
 The search field used here is the same as used by the [Quick Search](windows_search.md) toolbar field - see that page for more information on configuring the indexed search.
 

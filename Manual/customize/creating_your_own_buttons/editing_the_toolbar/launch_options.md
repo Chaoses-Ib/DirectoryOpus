@@ -14,9 +14,8 @@ If you *don't* see the dialog, it could be for one of a few reasons:
 
 You need to be in Customize mode to edit toolbars. Outside of Customize mode, drag & drop on to toolbars allows you to send files to buttons, rather than to create new buttons.
 
-- You had previously chosen **Always use these settings** in the Launch Options dialog.\<WRAP\>
-
-Hold <kbd>Ctrl</kbd> while dropping the program on the toolbar to override it and make the dialog appear.\</WRAP\>
+- You had previously chosen **Always use these settings** in the Launch Options dialog.
+  Hold <kbd>Ctrl</kbd> while dropping the program on the toolbar to override it and make the dialog appear.
 
 - You've dropped something which isn't an executable (.exe file) or a shortcut to one.
 
@@ -32,73 +31,62 @@ Finally, the dialog has an **Use options for future buttons** checkbox which let
 
 The dialog's main options are as follows:
 
-- **Defaults**\<WRAP\>
+- **Defaults**
+  Clicking the Defaults button will reset the options at the top of the dialog to the defaults.
 
-Clicking the Defaults button will reset the options at the top of the dialog to the defaults.\</WRAP\>
+- **Send files and folders to the program**
+  Turn this on if you want the button to be able to launch the program and pass it files or folders to view, edit or do something else with at the same time. Turn this off if you want the button to simply launch the program on its own, and ignore any selected files or folders.
 
-- **Send files and folders to the program**\<WRAP\>
+  For brevity, we mostly talk about files below but the same generally applies to folders, unless using the options to restrict things to only one or the other.
 
-Turn this on if you want the button to be able to launch the program and pass it files or folders to view, edit or do something else with at the same time. Turn this off if you want the button to simply launch the program on its own, and ignore any selected files or folders.
+- **Only via drag and drop**
+  Turn this on if you want clicks on the button to ignore selected files and only launch the program on its own, but want to retain the ability to pass files to the program by dropping them on the button.
 
-For brevity, we mostly talk about files below but the same generally applies to folders, unless using the options to restrict things to only one or the other.\</WRAP\>
+- **Files only**
+  Turn this on if you want the program to only process selected files and ignore selected folders when it is clicked. Note that this does not affect drag & drop, which does not filter what is dropped on the button when passing it to the program.
 
-- **Only via drag and drop**\<WRAP\>
+- **Folders only**
+  The same as the **Files only** option, except button clicks ignore files and only process folders. Drag & drop ignores this as well.
 
-Turn this on if you want clicks on the button to ignore selected files and only launch the program on its own, but want to retain the ability to pass files to the program by dropping them on the button.\</WRAP\>
+- **Require files/folders**
+  Turn this on if the button should only do something when files are passed to it, and you never want to run the program on its own if the button is clicked with nothing selected.
 
-- **Files only**\<WRAP\>
+- **Send everything on a single line**
+  If multiple files are selected when you click the button, there are two possibilities:
 
-Turn this on if you want the program to only process selected files and ignore selected folders when it is clicked. Note that this does not affect drag & drop, which does not filter what is dropped on the button when passing it to the program.\</WRAP\>
+  If this option is on, the program will be run only once, with all of the selected files specified on a single command line, one after the other.
 
-- **Folders only**\<WRAP\>
+  If this option is off, the program will be run once per selected file, and only given one file at a time on each command line.
 
-The same as the **Files only** option, except button clicks ignore files and only process folders. Drag & drop ignores this as well.\</WRAP\>
+  Sending all files at once is usually better, if the program supports it, but many programs do not support it.
 
-- **Require files/folders**\<WRAP\>
+- **Deselect files and folders after clicking the button**
+  After the button completes, any files or folders which were passed to the program will be deselected if this option is on, and left selected if it is off.
 
-Turn this on if the button should only do something when files are passed to it, and you never want to run the program on its own if the button is clicked with nothing selected.\</WRAP\>
+  (Unless **[Preferences / File Operations / Options / Deselect files used in functions](/Manual/preferences/preferences_categories/file_operations/options.md)** is off, in which case the option has no effect and deselection is never automatic.)
 
-- **Send everything on a single line**\<WRAP\>
+- **Pass current directory as the first argument**
+  You may wish to run some programs against the current folder, rather than any selected files or folders below it. Or you may wish to pass the current folder as an argument, followed by the paths to any selected files or folders. If you want either of those, turn this option on.
 
-If multiple files are selected when you click the button, there are two possibilities:
+- **Asynchronous**
+  If this option is on, Opus will not wait for the program to finish. If you are launching the program on its own or with just one file, or with all files on a single line, then this option does not matter much. But if you are sending multiple files to the program by running it once for each file, this option can have a large effect.
 
-If this option is on, the program will be run only once, with all of the selected files specified on a single command line, one after the other.
+  When the option is on, Opus will not wait for the program and will run multiple instances of the program in parallel. Depending on the program, this may result in multiple windows appearing at once, one for each file, or it might result in one window appearing for all of the files. (Or, if the program is not written very well, a mixture of both.)
 
-If this option is off, the program will be run once per selected file, and only given one file at a time on each command line.
+  Note that the order the windows or files open may seem random because the different instances of the program all compete with each other; an instance which starts slightly later may overtake a slightly earlier one.
 
-Sending all files at once is usually better, if the program supports it, but many programs do not support it.\</WRAP\>
+  When the option is off, Opus will run the program for one file and then wait for it to exit before running it for the next file. This may also result in a progress dialog appearing. (You can add **@noprogress** to the command to stop this by editing the button after creating it.)
 
-- **Deselect files and folders after clicking the button**\<WRAP\>
+  Note that Opus only waits for the instances of the program that Opus runs. If the program was already running before you clicked the button, running it again with a new file may mean a new instance starts, notices the existing instance, passes the file to it and then exits. The original instance is still running and now has the file, but the instance Opus ran has exited, and Opus will continue to the next file. This is usually a desirable thing, if you're just using the button to send files to a program and not do anything else with the files afterwards.
 
-After the button completes, any files or folders which were passed to the program will be deselected if this option is on, and left selected if it is off.
+- **Start in**
+  This option specifies the *current directory* from which the program starts. In the full button editor you can specify any folder path at all, but in this dialog you have just the following options:
 
-(Unless **[Preferences / File Operations / Options / Deselect files used in functions](/Manual/preferences/preferences_categories/file_operations/options.md)** is off, in which case the option has no effect and deselection is never automatic.)\</WRAP\>
+        * **Current folder (least secure):** The folder the Lister is currently in -- usually the same folder the selected files are in -- is used as the current directory.<WRAP>
 
-- **Pass current directory as the first argument**\<WRAP\>
+  Some programs require this mode, particularly when a file is not self-contained and depends on other files in the same folder. Programs generally should not require this, since they are given the full path to each file and can work out where to look for companion files themselves, but not all programs are well written.
 
-You may wish to run some programs against the current folder, rather than any selected files or folders below it. Or you may wish to pass the current folder as an argument, followed by the paths to any selected files or folders. If you want either of those, turn this option on.\</WRAP\>
-
-- **Asynchronous**\<WRAP\>
-
-If this option is on, Opus will not wait for the program to finish. If you are launching the program on its own or with just one file, or with all files on a single line, then this option does not matter much. But if you are sending multiple files to the program by running it once for each file, this option can have a large effect.
-
-When the option is on, Opus will not wait for the program and will run multiple instances of the program in parallel. Depending on the program, this may result in multiple windows appearing at once, one for each file, or it might result in one window appearing for all of the files. (Or, if the program is not written very well, a mixture of both.)
-
-Note that the order the windows or files open may seem random because the different instances of the program all compete with each other; an instance which starts slightly later may overtake a slightly earlier one.
-
-When the option is off, Opus will run the program for one file and then wait for it to exit before running it for the next file. This may also result in a progress dialog appearing. (You can add **@noprogress** to the command to stop this by editing the button after creating it.)
-
-Note that Opus only waits for the instances of the program that Opus runs. If the program was already running before you clicked the button, running it again with a new file may mean a new instance starts, notices the existing instance, passes the file to it and then exits. The original instance is still running and now has the file, but the instance Opus ran has exited, and Opus will continue to the next file. This is usually a desirable thing, if you're just using the button to send files to a program and not do anything else with the files afterwards.\</WRAP\>
-
-- **Start in**\<WRAP\>
-
-This option specifies the *current directory* from which the program starts. In the full button editor you can specify any folder path at all, but in this dialog you have just the following options:
-
-      * **Current folder (least secure):** The folder the Lister is currently in -- usually the same folder the selected files are in -- is used as the current directory.<WRAP>
-
-Some programs require this mode, particularly when a file is not self-contained and depends on other files in the same folder. Programs generally should not require this, since they are given the full path to each file and can work out where to look for companion files themselves, but not all programs are well written.
-
-You should not use this mode unless the program you are running needs it, because it is less secure. It opens you to a type of attack called *DLL planting* where many programs are easily tricked into loading and running code from DLLs placed in the same folder as the files you ask them to open. This is not a large risk if you know where the files came from, but could pose a risk with archives from the Internet. For example, if you download and extract a zip archive full of cat photos, you might not notice a strange DLL lurking among the JPEGs, and running a program with that DLL in the current directory may cause the program to run the code inside the DLL, which could then do absolutely anything.\</WRAP\>
+  You should not use this mode unless the program you are running needs it, because it is less secure. It opens you to a type of attack called *DLL planting* where many programs are easily tricked into loading and running code from DLLs placed in the same folder as the files you ask them to open. This is not a large risk if you know where the files came from, but could pose a risk with archives from the Internet. For example, if you download and extract a zip archive full of cat photos, you might not notice a strange DLL lurking among the JPEGs, and running a program with that DLL in the current directory may cause the program to run the code inside the DLL, which could then do absolutely anything.
 
       * **Program's folder (default):** The location of the program's .exe file is used as the current directory when running the program.<WRAP>
 
@@ -116,37 +104,32 @@ Note that if the program tries to create random files in, or does something dest
 
 The **Allow shortcuts to override** checkbox, if on, means Opus will use the *start in* directory specified by a shortcut when a shortcut to a program is dropped on the toolbar. This is usually a good idea since if a shortcut specifies the program needs to run out of a particular folder it usually has a good reason. The checkbox has no direct effect when dropping the program itself, or when dropping a shortcut which does not specify a *start in* folder, but remember the Launch Options dialog is for configuring the defaults for new buttons as well as setting up individual buttons. \</WRAP\>
 
-- **Use options for future buttons**\<WRAP\>
-
-The dialog always remembers the last settings you used the next time it appears, but you can turn on this option to make it use those settings automatically without appearing at all. If you do that, you can hold down <kbd>Ctrl</kbd> while dropping a program to turn the option off and make the dialog appear again.\</WRAP\>
+- **Use options for future buttons**
+  The dialog always remembers the last settings you used the next time it appears, but you can turn on this option to make it use those settings automatically without appearing at all. If you do that, you can hold down <kbd>Ctrl</kbd> while dropping a program to turn the option off and make the dialog appear again.
 
 ##### Command preview and testing the button
 
-- The **Command preview** part of the dialog lets you see and test the command which the options above have generated.\<WRAP\>
-
-Testing can be important because different programs need different options, and the only way to tell is to try them or read the other program's manual.\</WRAP\>
+- The **Command preview** part of the dialog lets you see and test the command which the options above have generated.
+  Testing can be important because different programs need different options, and the only way to tell is to try them or read the other program's manual.
 
 - The **Generated command** field is read-only and purely to give you a better idea of what the options do and to help you get used to the way Opus commands look, should you want to get into more detailed button editing.
 
-- The **Test items** list lets you add any files or folders to it to use when testing the command.\<WRAP\>
+- The **Test items** list lets you add any files or folders to it to use when testing the command.
+  You can use the buttons above the list to add things to it, or drag & drop things into it. Once an item is added, you can double-click it to edit it via a file chooser, or single-click it (once already selected) to edit its path using the keyboard.
 
-You can use the buttons above the list to add things to it, or drag & drop things into it. Once an item is added, you can double-click it to edit it via a file chooser, or single-click it (once already selected) to edit its path using the keyboard.
+  The list remembers the list of test files between uses, and the rightmost button above it can be used to quickly clear the whole list.
 
-The list remembers the list of test files between uses, and the rightmost button above it can be used to quickly clear the whole list.
+  Note that the selected item in this list does not affect the button. You can select items in the list to remove or edit them, but that is all selection is for here. Where we talk about *selected files* above, we only mean files selected in a Lister's folder tab when the button is run normally.
 
-Note that the selected item in this list does not affect the button. You can select items in the list to remove or edit them, but that is all selection is for here. Where we talk about *selected files* above, we only mean files selected in a Lister's folder tab when the button is run normally.\</WRAP\>
+- The **Test Run** button will run the program based on the current settings, as if the finished button had been clicked.
+  Files and folders from the **Test items** list will be passed to the program, if appropriate.
 
-- The **Test Run** button will run the program based on the current settings, as if the finished button had been clicked.\<WRAP\>
-
-Files and folders from the **Test items** list will be passed to the program, if appropriate.
-
-If the **Test Run** button is disabled, it means you have chosen **Require files/folders** without adding any to the Test items list, or something similar.\</WRAP\>
+  If the **Test Run** button is disabled, it means you have chosen **Require files/folders** without adding any to the Test items list, or something similar.
 
 ##### Completing the new button
 
-- If you click **OK**, the new button will be configured based on the options you have specified.\<WRAP\>
-
-If **Always use these settings** (discussed above in detail) is on, the settings will then be used next time you drop a program on a toolbar, unless you hold down **Ctrl**.\</WRAP\>
+- If you click **OK**, the new button will be configured based on the options you have specified.
+  If **Always use these settings** (discussed above in detail) is on, the settings will then be used next time you drop a program on a toolbar, unless you hold down **Ctrl**.
 
 - If you click **Cancel** instead, the new button will be deleted.
 

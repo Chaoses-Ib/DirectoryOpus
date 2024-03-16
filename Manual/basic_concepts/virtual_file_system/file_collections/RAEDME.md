@@ -14,15 +14,16 @@ You can save a quick search as a [stored query](/Manual/basic_concepts/virtual_f
 
 You can work with the files in a file collection (copy them, rename them, delete them, etc.) just like you would with the real files.
 
-\<WRAP info round\>When you delete a file in a collection, not only is it removed from the collection but the **real file** is deleted. To remove a file from a collection without deleting the real file, use the **Remove From Collection** command on the **Delete** drop-down menu.\</WRAP\>
+> [!NOTE]
+> When you delete a file in a collection, not only is it removed from the collection but the **real file** is deleted. To remove a file from a collection without deleting the real file, use the **Remove From Collection** command on the **Delete** drop-down menu.
 
 ##### File collection paths
 
-File collections are referenced internally using a URL-style path format, with the \<ib:inline-code\>`coll://`\</ib:inline-code\> prefix.
+File collections are referenced internally using a URL-style path format, with the `coll://` prefix.
 
-For example, the path of the default find results collection is \<ib:inline-code\>`coll://Find Results/`\</ib:inline-code\>.
+For example, the path of the default find results collection is `coll://Find Results/`.
 
-You can type this sort of path into the location field, or use it in buttons and hotkeys with the internal command set to automate your use of collections. For example, the command \<ib:inline-code\>`Copy TO "coll://Favorite Photos"`\</ib:inline-code\> on a button would add any selected files to a collection called "Favorite Photos" automatically.
+You can type this sort of path into the location field, or use it in buttons and hotkeys with the internal command set to automate your use of collections. For example, the command `Copy TO "coll://Favorite Photos"` on a button would add any selected files to a collection called "Favorite Photos" automatically.
 
 ##### File collections root folder
 
@@ -31,7 +32,7 @@ The file collections root folder contains all your top-level file collections (y
 - Click on the **File Collections** item in the folder tree (unless you have disabled this from the **[Folder Tree / Contents](/Manual/preferences/preferences_categories/folder_tree/contents.md)** page in Preferences)
 - Double-click on the **File Collections** item on the Desktop (unless this has been disabled on the **[Virtual Folders / Desktop](/Manual/preferences/preferences_categories/folders/virtual_folders/desktop.md)** Preferences page)
 - Select **File Collections** item from the drop-down menu in the [location field](../the_lister/navigation/breadcrumbs_location_field.md)
-- Click in the [location field](../the_lister/navigation/breadcrumbs_location_field.md) and enter the path \<ib:inline-code\>`coll://`\</ib:inline-code\>
+- Click in the [location field](../the_lister/navigation/breadcrumbs_location_field.md) and enter the path `coll://`
 
 ##### Making a new collection
 
@@ -47,7 +48,7 @@ You can define the default [folder format](../folder_options/RAEDME.md) for coll
 
 ##### Context menu for items in collections
 
-The **[File Types](/Manual/file_types/RAEDME.md)** dialog can be used to add commands to the context menu for items in collections. Two commands are pre-defined; **Remove from Collection** (mentioned above), and **Open Containing Folder**. The latter command uses the \<ib:inline-code\>`Go OPENCONTAINER`\</ib:inline-code\> function to open the real folder that contains the selected collection item.
+The **[File Types](/Manual/file_types/RAEDME.md)** dialog can be used to add commands to the context menu for items in collections. Two commands are pre-defined; **Remove from Collection** (mentioned above), and **Open Containing Folder**. The latter command uses the `Go OPENCONTAINER` function to open the real folder that contains the selected collection item.
 
 ##### Using collections outside of Opus
 

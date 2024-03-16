@@ -35,4 +35,4 @@ At the bottom, the **Edit Status Bar** command takes you to the [File Displays /
 
 ##### The status bar icon can be removed
 
-The ![](/Manual/images/media/13/info.png) icon is generated on the status bar using the \<ib:inline-code\>`{fl}`\</ib:inline-code\> code. Since the status bar is configurable via Preferences, it's possible this code can be removed - in which case the icon won't be visible. In that case, you can add it back from the [File Displays / Status Bar](/Manual/preferences/preferences_categories/file_displays/status_bar.md) Preferences page.
+The ![](/Manual/images/media/13/info.png) icon is generated on the status bar using the `{fl}` code. Since the status bar is configurable via Preferences, it's possible this code can be removed - in which case the icon won't be visible. In that case, you can add it back from the [File Displays / Status Bar](/Manual/preferences/preferences_categories/file_displays/status_bar.md) Preferences page.

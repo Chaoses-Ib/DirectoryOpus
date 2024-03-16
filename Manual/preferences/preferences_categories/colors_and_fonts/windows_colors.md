@@ -18,7 +18,7 @@ In light mode, most of these are turned off, as the default system light colors 
 
 In dark mode, however, they're all turned on, as the hooks are required to render dark mode versions of the controls.
 
-Some controls have lots of parts - in the example above, a checkbox control, there are 14 distinct colors that you can configure. Changes you make are updated in real time, and the best way to experiment with control colors is to use the *Theme Tester*, which you can access from the link on the *Introduction* page (or with the command \<ib:inline-code\>`Help THEMETESTER`\</ib:inline-code\>).
+Some controls have lots of parts - in the example above, a checkbox control, there are 14 distinct colors that you can configure. Changes you make are updated in real time, and the best way to experiment with control colors is to use the *Theme Tester*, which you can access from the link on the *Introduction* page (or with the command `Help THEMETESTER`).
 
 ![theme_tester.png](/Manual/images/media/13/theme_tester.png)
 

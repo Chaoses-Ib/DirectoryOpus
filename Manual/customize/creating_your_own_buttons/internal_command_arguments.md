@@ -8,17 +8,14 @@ As an example, the internal **Copy** command's default behaviour is to copy sele
 
 There are three main types of arguments:
 
-- *Switch arguments* act as "on or off" options. For these arguments, the mere presence of the argument name on the command line is enough to activate the behaviour associated with that argument.\<WRAP\>
+- *Switch arguments* act as "on or off" options. For these arguments, the mere presence of the argument name on the command line is enough to activate the behaviour associated with that argument.
+  The **MOVE** argument to the **Copy** command is an example of a switch argument. So to change a copy button to a move button, the command would be **Copy MOVE**.
 
-The **MOVE** argument to the **Copy** command is an example of a switch argument. So to change a copy button to a move button, the command would be **Copy MOVE**.\</WRAP\>
+- *Value arguments* are arguments that supply a value to the command. The argument name by itself has no effect - instead, it is used to provide a user-defined value for that argument.
+  For example, the **COPYATTR** argument to the **Copy** command can accept two values - **yes** or **no**. Specifying the command **Copy COPYATTR** would not be sufficient; instead, you would need to specify **Copy COPYATTR=yes** if you wanted to force the copying of file attributes.
 
-- *Value arguments* are arguments that supply a value to the command. The argument name by itself has no effect - instead, it is used to provide a user-defined value for that argument.\<WRAP\>
-
-For example, the **COPYATTR** argument to the **Copy** command can accept two values - **yes** or **no**. Specifying the command **Copy COPYATTR** would not be sufficient; instead, you would need to specify **Copy COPYATTR=yes** if you wanted to force the copying of file attributes.\</WRAP\>
-
-- *Optional arguments* combine the behaviour of switch and value arguments. An optional argument can appear by itself, to activate the default behaviour of that argument, or it can be used to provide a value when appropriate.\<WRAP\>
-
-For example, the command **Copy ADDTOARCHIVE** defaults to creating a Zip archive. In this instance, **ADDTOARCHIVE** is acting like a switch. If you want to override the default behaviour, and create a 7-Zip archive instead, the command would be **Copy ADDTOARCHIVE=.7z**. \</WRAP\>
+- *Optional arguments* combine the behaviour of switch and value arguments. An optional argument can appear by itself, to activate the default behaviour of that argument, or it can be used to provide a value when appropriate.
+  For example, the command **Copy ADDTOARCHIVE** defaults to creating a Zip archive. In this instance, **ADDTOARCHIVE** is acting like a switch. If you want to override the default behaviour, and create a 7-Zip archive instead, the command would be **Copy ADDTOARCHIVE=.7z**. 
 
 ##### Command templates
 
@@ -89,30 +86,30 @@ Some commands also have an argument that accepts a value, but is not marked with
 
 At this point we should discuss the issue of command parsing, spaces, and values. When Opus parses a command line, it uses the template for the command in question to identify the various arguments that you have provided. Take the following example command:
 
-\<ib:inline-code\>`Copy AS My Zip File.zip`\</ib:inline-code\>
+`Copy AS My Zip File.zip`
 
 The intention of this command is clearly to use the **AS** argument to provide a new name (*My Zip File.zip*) for the copied file. The problem that this command line introduces for the command parser is that **ZIP** is also a valid argument for the **Copy** command. The embedded spaces in the filename will confuse the command parser - it isn't able to tell that you intended the value of the **AS** argument to be "My Zip File.zip"
 
 Opus will read the command as containing two arguments, **AS** (with a value of "My") and **ZIP** (with a value of "File.zip"). Obviously interpreting the command in this way means it will not behave as intended. To avoid this confusion, whenever you provide a value that contains an embedded space, you **must** enclose it in quotation marks. The correct form of the command above is:
 
-\<ib:inline-code\>`Copy AS "My Zip File.zip"`\</ib:inline-code\>
+`Copy AS "My Zip File.zip"`
 
 This is unambiguous as far as the command parser is concerned - it will see only one argument in the command (**AS**) and its value will be "My Zip File.zip", as intended.
 
 Within a quoted string, you can use two quote characters to insert a literal quote (VBScript style). This is not useful for filenames, since they can't contain quotes, but can be useful for things like file comments:
 
-\<ib:inline-code\>`SetAttr META "comment:This comment contains ""a quoted phrase""."`\</ib:inline-code\>
+`SetAttr META "comment:This comment contains ""a quoted phrase""."`
 
-An equals sign is generally optional when providing a value for an argument. That is, \<ib:inline-code\>`Copy AS "My Zip File.zip"`\</ib:inline-code\> is equivalent to \<ib:inline-code\>`Copy AS="My Zip File.zip"`\</ib:inline-code\>. There are two cases however where one form or the other must be used:
+An equals sign is generally optional when providing a value for an argument. That is, `Copy AS "My Zip File.zip"` is equivalent to `Copy AS="My Zip File.zip"`. There are two cases however where one form or the other must be used:
 
-- When the value you are providing is also another argument for the command, you **must** use the equals sign. For example, \<ib:inline-code\>`Copy CREATEFOLDER sendmail`\</ib:inline-code\> would not behave as intended (copying selected files into a new folder called "sendmail") because **SENDMAIL** is also an argument for the command. Instead, you must provide the equals sign, as in \<ib:inline-code\>`Copy CREATEFOLDER=sendmail`\</ib:inline-code\>.
+- When the value you are providing is also another argument for the command, you **must** use the equals sign. For example, `Copy CREATEFOLDER sendmail` would not behave as intended (copying selected files into a new folder called "sendmail") because **SENDMAIL** is also an argument for the command. Instead, you must provide the equals sign, as in `Copy CREATEFOLDER=sendmail`.
 - When you are providing multiple values for a **/M** argument, the equals sign must not be used.
 
 ##### Multiple value arguments
 
 Some arguments accept multiple values. For example, the **FILE** argument to the **Copy** command is marked as /M, indicating that you can provide one or more values for the argument. When you do provide multiple values, each value must be separated by spaces. For example:
 
-\<ib:inline-code\>`Copy FILE D:\data\pic*.jpg "J:\image files\pic*.jpg" TO "E:\image store"`\</ib:inline-code\>
+`Copy FILE D:\data\pic*.jpg "J:\image files\pic*.jpg" TO "E:\image store"`
 
 This command has two values for the **FILE** argument - **D:\data\pic\*.jpg** and **"J:\image files\pic\*.jpg"** (note the quotation marks surrounding the second value - as described above, values containing embedded spaces must be quoted).
 

@@ -6,7 +6,7 @@ This page contains various options that control the appearance and behavior of t
 
 From the tab bar itself there are two ways to open new tabs:
 
-- **Display new tab button**: Adds a small \<ib:inline-code\>`+`\</ib:inline-code\> button at the end of the folder tabs, which you can click to quickly open a new tab.
+- **Display new tab button**: Adds a small `+` button at the end of the folder tabs, which you can click to quickly open a new tab.
 - **Double-click to open a new tab**: If this option is on, double-clicking an empty spot on the tab bar will open a new tab.
 
 For both of these, the initial folder can be configured from the drop-down:
@@ -45,13 +45,13 @@ The options that control this are:
   - **When needed**: Tabs will only be displayed when needed, that is, when there is more than one tab open. If you have multiple tabs open, the tab bar will be hidden when the second-last tab is closed.
   - **When needed (balanced)**: If the Lister is in dual-display mode, and one side of it has more than one tab open, tabs will be displayed on the other side as well. This is more for aesthetic reasons than functional; it can look strange to have tabs visible on one side but not the other.
 
-- **Tab bar position**: Controls where the tabs appear in relation to the file display they're attached to. Note that this can be overridden on a per-Lister basis using the \<ib:inline-code\>`Set TABPOSITION`\</ib:inline-code\> command.
+- **Tab bar position**: Controls where the tabs appear in relation to the file display they're attached to. Note that this can be overridden on a per-Lister basis using the `Set TABPOSITION` command.
   - **Below**: Folder tabs will be displayed horizontally, below the file display.
   - **Above**: Folder tabs will be above the file display.
   - **Left**: Folder tabs will be displayed vertically, to the left of the file display.
   - **Right**: Folder tabs will be to the right of the file display.
 
-- **Dual display position**: Controls where the tabs appear when the Lister is in [dual-display mode](/Manual/basic_concepts/the_lister/dual_display/RAEDME.md). Note that this can be overridden on a per-Lister basis using the \<ib:inline-code\>`Set TABPOSITION`\</ib:inline-code\> command.
+- **Dual display position**: Controls where the tabs appear when the Lister is in [dual-display mode](/Manual/basic_concepts/the_lister/dual_display/RAEDME.md). Note that this can be overridden on a per-Lister basis using the `Set TABPOSITION` command.
   - **Normal**: Both tab bars appear in the same relative position (as set by the **Tab position** option).
   - **Together**: The tab bars appear together. For example, the top file display's tabs would be below the file display, and the bottom file display's tabs would be above the file display - resulting in the two tab bars being next to each other.
   - **Apart**: The tab bars appear apart. For example, the left file display's tabs would be to the left of the file display, and the right file display's tabs would be to the right.

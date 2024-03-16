@@ -12,7 +12,7 @@
   - User interface, progress/error/replace dialogs, copy queues, etc. are still handled by Opus, with no loss of functionality, regardless of copy method or remote file copying.
   - Opus automatically falls back on its own copy method for situations where the API cannot be used (e.g. archives and FTP sites).
   - Can be turned off via **Preferences / Miscellaneous / Advanced: \[Filesystem\] copy_allow_delegation**, if you find the new mode slower for your devices.
-  - *Command:* \<ib:inline-code\>`Copy DELEGATE`\</ib:inline-code\> -- Allows overriding the global setting for individual copies.
+  - *Command:* `Copy DELEGATE` -- Allows overriding the global setting for individual copies.
 - Progress dialog:
   - More accurate speed and time estimates.
   - Average, peak and current speeds are shown on the graph, reducing clutter in the rest of the dialog.
@@ -59,13 +59,13 @@
   - People tended to find this concept confusing, or simply didn't use it, so it's now off by default.
   - Explicit actions between windows still always work as before (e.g. drag & drop or copy & paste). This only affects what happens if you select files in one single-display window and click *Copy Files* or *Move* to send them to another.
 - Commands:
-  - \<ib:inline-code\>`Copy UPDATEEXISTING`\</ib:inline-code\> -- Now allows "smaller" and "larger" tests for file size (rather than just different).
-  - \<ib:inline-code\>`Copy UPDATEALL`\</ib:inline-code\> -- Now allows the same tests as \<ib:inline-code\>`Copy UPDATEEXISTING`\</ib:inline-code\>.
-  - \<ib:inline-code\>`Copy COPYFILETIMES`\</ib:inline-code\> and \<ib:inline-code\>`Copy COPYDIRTIMES`\</ib:inline-code\> can now take "all", "none", "onlymodified" or "onlycreated" keywords to override the main Preferences options.
-  - Old \<ib:inline-code\>`Copy COPYCREATIONTIME`\</ib:inline-code\> is deprecated and hidden from argument lists, but still works for compatibility.
-  - \<ib:inline-code\>`Copy FLATVIEWCOPY=autosingle`\</ib:inline-code\> -- Combined with "ask" or "recreate", allows command to do the same as "Copy to single level if all items are in the same folder".
-  - \<ib:inline-code\>`Clipboard PASTE COPYCOMMANDARGS ...`\</ib:inline-code\> -- Provides additional arguments to the Copy command if that's what Clipboard PASTE ends up running.
-  - \<ib:inline-code\>`Set PROGRESSCMD=...`\</ib:inline-code\> -- Can create hotkeys to sends commands to all current progress dialogs. Commands are "minimize", "restore", "show", "pause", "resume" and "abort".
+  - `Copy UPDATEEXISTING` -- Now allows "smaller" and "larger" tests for file size (rather than just different).
+  - `Copy UPDATEALL` -- Now allows the same tests as `Copy UPDATEEXISTING`.
+  - `Copy COPYFILETIMES` and `Copy COPYDIRTIMES` can now take "all", "none", "onlymodified" or "onlycreated" keywords to override the main Preferences options.
+  - Old `Copy COPYCREATIONTIME` is deprecated and hidden from argument lists, but still works for compatibility.
+  - `Copy FLATVIEWCOPY=autosingle` -- Combined with "ask" or "recreate", allows command to do the same as "Copy to single level if all items are in the same folder".
+  - `Clipboard PASTE COPYCOMMANDARGS ...` -- Provides additional arguments to the Copy command if that's what Clipboard PASTE ends up running.
+  - `Set PROGRESSCMD=...` -- Can create hotkeys to sends commands to all current progress dialogs. Commands are "minimize", "restore", "show", "pause", "resume" and "abort".
 
 ------------------------------------------------------------------------
 

@@ -10,7 +10,7 @@
   - Script dialogs become dark automatically. No code change required in most cases.
   - Dark and light modes store separate color settings. You can customize both and switch between them (manually, or automatically via the Windows setting).
   - Icon sets can specify alternative dark and light images for the same icon.
-  - *Command:* \<ib:inline-code\>`Set DARKMODE`\</ib:inline-code\>
+  - *Command:* `Set DARKMODE`
   - *Scripting:* Dark/light changes have new scripting events. (See [Miscellaneous Scripting](misc_scripting.md).)
 - Colors:
   - Not limited to "dark" and "light". Use whatever colors you want!
@@ -22,9 +22,9 @@
   - More control over toolbar and menu colors (including path fields and the Location Bar) and status bar colors, frames and resize grips.
   - Opacity of "hot" file backgrounds is now configurable.
   - Every color now has a name. Named colors can be used in places like the status bar instead of a fixed RGB value. Use the right-click menu to get it.
-  - Named colors can be used in the status bar, info tips and Script Log output in various ways. E.g. \<ib:inline-code\>`<#%error_text>this will usually be red</#>`\</ib:inline-code\>.
-  - Web color names also work. E.g. \<ib:inline-code\>`<#@magenta>...</#>`\</ib:inline-code\> or \<ib:inline-code\>`<font color="oldlace" bgcol="plum">...</#>`\</ib:inline-code\>.
-  - You can use \<ib:inline-code\>`<#xxxxxx #xxxxxx>`\</ib:inline-code\> as a shortcut to set text and background color, instead of \<ib:inline-code\>`<font color=#xxxxxx bgcol=#xxxxxx>`\</ib:inline-code\>.
+  - Named colors can be used in the status bar, info tips and Script Log output in various ways. E.g. `<#%error_text>this will usually be red</#>`.
+  - Web color names also work. E.g. `<#@magenta>...</#>` or `<font color="oldlace" bgcol="plum">...</#>`.
+  - You can use `<#xxxxxx #xxxxxx>` as a shortcut to set text and background color, instead of `<font color=#xxxxxx bgcol=#xxxxxx>`.
 - Fonts:
   - More configurable fonts, including the dialog font used by Preferences, progress dialogs, pop-up prompts, tooltips, and so on.
   - Font changes take effect as you make them, without having to click Apply. (Exception: Dialog font changes after exit/restart.)
@@ -34,7 +34,7 @@
   - Size of text for dimensions etc. under thumbnail labels can be adjusted relative to the main label font.
   - Adjusting the font size in a folder tab via Ctrl + Mouse-Wheel (or similar hotkeys) shows a "Make Permanent" button which saves it as the new default (like editing the size in Preferences).
   - You can configure different fonts for different folders.
-  - *Command:* \<ib:inline-code\>`Set FONTSCALE`\</ib:inline-code\> -- New keywords "details", "thumbnails" and "all" let you specify the view mode(s) to affect. (Adjusts the current mode by default.)
+  - *Command:* `Set FONTSCALE` -- New keywords "details", "thumbnails" and "all" let you specify the view mode(s) to affect. (Adjusts the current mode by default.)
 - Themes:
   - Overhauled themes system. Now lives in Preferences, next to the colors themselves.
   - Support for dark and light themes, which change mode when loaded.
@@ -46,9 +46,9 @@
   - Clean Up button to delete old theme backups and unused background images.
   - You can now double-click .dlt theme files to add them to your configuration.
   - Commands:
-    - \<ib:inline-code\>`Prefs THEMENAME=!defaultdark THEMELOAD=all`\</ib:inline-code\> -- Loads the built-in default dark theme.
-    - \<ib:inline-code\>`Prefs THEMENAME="My Theme" THEMELOAD=all`\</ib:inline-code\> -- Loads a theme you made or got from the web.
-    - \<ib:inline-code\>`Prefs THEMEIMPORT`\</ib:inline-code\> -- Copies selected theme file to config folder. (Same as double-clicking it.)
+    - `Prefs THEMENAME=!defaultdark THEMELOAD=all` -- Loads the built-in default dark theme.
+    - `Prefs THEMENAME="My Theme" THEMELOAD=all` -- Loads a theme you made or got from the web.
+    - `Prefs THEMEIMPORT` -- Copies selected theme file to config folder. (Same as double-clicking it.)
 - Windows 11:
   - Option to change the window corner style on Windows 11 (normal rounded, smaller rounded, or square).
   - Folder tabs are now rounded by default (like they were on Windows 7), but this can be overridden. (You can also have rounded tabs on older OS.)

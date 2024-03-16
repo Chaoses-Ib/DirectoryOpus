@@ -27,8 +27,8 @@ When using a filter in a function, there are two ways to define it:
 
 Several of the [internal commands](/Manual/reference/command_reference/internal_commands/RAEDME.md) let you specify a filter on the command line:
 
-- With the name of a filter; for example, \<ib:inline-code\>`Copy FILTER <filtername>`\</ib:inline-code\>. In this case, the filter must have been pre-configured and stored.
-- With the filter definition itself, in [text format](/Manual/file_operations/filtered_operations/textual_filters.md); for example, \<ib:inline-code\>`Copy FILTERDEF name match *.jpg`\</ib:inline-code\>.
+- With the name of a filter; for example, `Copy FILTER <filtername>`. In this case, the filter must have been pre-configured and stored.
+- With the filter definition itself, in [text format](/Manual/file_operations/filtered_operations/textual_filters.md); for example, `Copy FILTERDEF name match *.jpg`.
 
 ##### The filter control
 

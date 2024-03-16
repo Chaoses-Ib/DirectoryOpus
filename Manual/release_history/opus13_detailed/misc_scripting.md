@@ -113,7 +113,7 @@
 - Edit controls have a new "cuetext" property which lets you get or set their cue text at runtime.
 - Empty edit controls now continue to show their cue text when they have focus, until something is typed.
 - Dialog titles can be changed at runtime using the Dialog.title property.
-- Tab control labels can be changed at runtime using the Control.label property. (E.g. \<ib:inline-code\>`Control.label(0) = "tab 1";`\</ib:inline-code\>)
+- Tab control labels can be changed at runtime using the Control.label property. (E.g. `Control.label(0) = "tab 1";`)
 - Control.style now works for dialogs inside tab controls.
 - Fixes for dialog editor language overlays.
 

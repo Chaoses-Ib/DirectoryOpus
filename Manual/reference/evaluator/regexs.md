@@ -11,7 +11,7 @@ Performs a regular expression **search** in the provided string. The pattern doe
 
 If a *replace* pattern is **not** specified, this function returns **True** if the provided *string* contains the *pattern*, and otherwise returns **False**.
 
-If a *replace* pattern is specified, the result of the replacement is returned. You can specify multiple *string/pattern* pairs, to perform multiple replacements at once. If the input string doesn't contain the pattern it is returned unchanged. You can also add **\#** to the end of each search pattern to repeat the search and replace as many times as possible (i.e. "replace all"). In the replacement string, use the \<ib:inline-code\>`\1`\</ib:inline-code\>, \<ib:inline-code\>`\2`\</ib:inline-code\>, ... syntax to refer to bracketed parts of the pattern.
+If a *replace* pattern is specified, the result of the replacement is returned. You can specify multiple *string/pattern* pairs, to perform multiple replacements at once. If the input string doesn't contain the pattern it is returned unchanged. You can also add **\#** to the end of each search pattern to repeat the search and replace as many times as possible (i.e. "replace all"). In the replacement string, use the `\1`, `\2`, ... syntax to refer to bracketed parts of the pattern.
 
 The optional *flags* argument must be specified last. If no *replace* pattern is provided and you want to provide *flags*, you must pass a literal **0** for the third argument.
 

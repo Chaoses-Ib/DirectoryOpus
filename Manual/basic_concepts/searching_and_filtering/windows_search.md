@@ -44,7 +44,7 @@ The options for Everything are:
 
 - **Case sensitive**: The case (upper/lowercase) of the supplied string must match exactly - if this is turned off, then upper and lower case letters are considered the same.
 - **Whole words**: The text you enter must match a whole word, rather than being able to match part of a word.
-- **Use regular expression**: Use regular expressions rather than Everything's own wildcard syntax (note: not the same as Opus standard pattern matching - only \<ib:inline-code\>`*`\</ib:inline-code\> and \<ib:inline-code\>`?`\</ib:inline-code\> characters are supported).
+- **Use regular expression**: Use regular expressions rather than Everything's own wildcard syntax (note: not the same as Opus standard pattern matching - only `*` and `?` characters are supported).
 - **Ignore diacritics**: Ignores accent characters when matching text.
 
 You can use Everything's [query syntax](https://www.voidtools.com/support/everything/searching/) for greater control over the search results.
@@ -59,7 +59,7 @@ The options for Opus search are:
 - **Search content**: Searches inside files (supported file formats only).
 - **Use wildcards**: Use [standard pattern matching syntax](/Manual/reference/wildcard_reference/pattern_matching_syntax.md).
 - **Use regular expression**: Use [regular expression](/Manual/reference/wildcard_reference/regular_expression_syntax.md).
-- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with \<ib:inline-code\>`+`\</ib:inline-code\>, which means it **must** be present, and \<ib:inline-code\>`-`\</ib:inline-code\> which means it **must not** be present.
+- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with `+`, which means it **must** be present, and `-` which means it **must not** be present.
 - **Case sensitive**: The case (upper/lowercase) of the supplied string must match exactly - if this is turned off, then upper and lower case letters are considered the same.
 - **Ignore diacritics**: Ignores accent characters when matching text.
 - **Partial match**: The string you enter can match part of the filename, and does not have to match the whole filename.

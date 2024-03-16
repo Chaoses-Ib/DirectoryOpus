@@ -2,13 +2,13 @@
 
 The *Install Script* function makes it easy to install new script add-ins in Opus, that you've e.g. downloaded from the [Opus resource center](https://resource.dopus.com).
 
-To access the installer, select the **Install Script** function from the default **Settings** menu. If you're using old toolbars without that command in them, you can add it from the **Customize / Default Toolbars** tab. The raw command is \<ib:inline-code\>`Prefs SCRIPTINSTALL`\</ib:inline-code\>. You can also launch the installer via the *[Script Management]()* dialog.
+To access the installer, select the **Install Script** function from the default **Settings** menu. If you're using old toolbars without that command in them, you can add it from the **Customize / Default Toolbars** tab. The raw command is `Prefs SCRIPTINSTALL`. You can also launch the installer via the *[Script Management]()* dialog.
 
 The installer can install scripts in several different formats:
 
-- Single script files (with a suffix like \<ib:inline-code\>`.js`\</ib:inline-code\> or \<ib:inline-code\>`.js.txt`\</ib:inline-code\>).
-- Script [packages](../script_add-ins/script_package.md) (with a \<ib:inline-code\>`.osp`\</ib:inline-code\> suffix)
-- Script installer files (with a \<ib:inline-code\>`.opusscriptinstall`\</ib:inline-code\> file).
+- Single script files (with a suffix like `.js` or `.js.txt`).
+- Script [packages](../script_add-ins/script_package.md) (with a `.osp` suffix)
+- Script installer files (with a `.opusscriptinstall` file).
 
 When you **Share** a script from the *Script Management* dialog, Opus bundles it into a *script installer* file. These are ideal for sharing scripts as they bundle all the required files into one archive (including any [include files](../script_add-ins/include_files.md) the script needs). Provided Opus has been installed properly and isn't running off USB, they can also be installed by simply double-clicking the file.
 

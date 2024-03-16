@@ -2,9 +2,10 @@
 
 One of the key features of Directory Opus is its *Explorer Replacement* mode.
 
-\<WRAP round info\> To clarify exactly what we mean by Explorer Replacement:  
+> [!NOTE]
+>  To clarify exactly what we mean by Explorer Replacement:  
   
-Whenever an action is taken that would ordinarily result in a File Explorer window opening, a Directory Opus window (Lister) will open instead. \</WRAP\>
+Whenever an action is taken that would ordinarily result in a File Explorer window opening, a Directory Opus window (Lister) will open instead. 
 
 ##### Activating Explorer Replacement
 

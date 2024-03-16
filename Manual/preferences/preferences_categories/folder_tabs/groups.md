@@ -6,7 +6,7 @@ The toolbar buttons above the list let you create and manage your configured tab
 
 To organize tab groups into folders, use the **New Folder** button to create a folder. You can then create tab groups in that folder, or use drag-and-drop to move existing groups into that folder.
 
-The **Mark as hidden** button lets you mark a group as hidden, to stop it appearing in tab groups lists outside of this page - hidden groups can only be accessed using the \<ib:inline-code\>`Go`\</ib:inline-code\> command.
+The **Mark as hidden** button lets you mark a group as hidden, to stop it appearing in tab groups lists outside of this page - hidden groups can only be accessed using the `Go` command.
 
 To edit a tab group, select it and click the **Edit** button (or double-click it). This shows the *Edit Tab Group* dialog.
 

@@ -8,9 +8,9 @@ By default four libraries are created by Windows - **Documents**, **Music**, **P
 
 ##### Library paths
 
-Libraries are referenced internally using a URL-style path format, with the \<ib:inline-code\>`lib://`\</ib:inline-code\> prefix. For example, the path of the default pictures library is \<ib:inline-code\>`lib://Pictures/`\</ib:inline-code\>. You can type this sort of path into the location field, or use it in buttons and hotkeys with the internal command set to automate your use of collections. For example, you could [set up a button or hotkey](/Manual/customize/creating_your_own_buttons/RAEDME.md) to automatically navigate to the Pictures library using the raw command \<ib:inline-code\>`Go lib://Pictures`\</ib:inline-code\>.
+Libraries are referenced internally using a URL-style path format, with the `lib://` prefix. For example, the path of the default pictures library is `lib://Pictures/`. You can type this sort of path into the location field, or use it in buttons and hotkeys with the internal command set to automate your use of collections. For example, you could [set up a button or hotkey](/Manual/customize/creating_your_own_buttons/RAEDME.md) to automatically navigate to the Pictures library using the raw command `Go lib://Pictures`.
 
-The \<ib:inline-code\>`lib://`\</ib:inline-code\> path system isn't recognised outside of Opus, so if you ever want to copy a library path to the clipboard and paste it into another program, you should use the **Edit / Copy Other / Folder Path** menu command rather than copying the contents of the location field.
+The `lib://` path system isn't recognised outside of Opus, so if you ever want to copy a library path to the clipboard and paste it into another program, you should use the **Edit / Copy Other / Folder Path** menu command rather than copying the contents of the location field.
 
 ##### Libraries root folder
 
@@ -19,7 +19,7 @@ The root **Libraries** folder holds all your libraries. To access the libraries
 - Click on the **Libraries** item in the folder tree (unless you have disabled this from the **[Folder Tree / Contents](/Manual/preferences/preferences_categories/folder_tree/contents.md)** page in Preferences)
 - Double-click on the **Libraries** item on the Desktop (unless this has been disabled on the **[Virtual Folders / Desktop](/Manual/preferences/preferences_categories/folders/virtual_folders/desktop.md)** Preferences page)
 - Select **Libraries** from the drop-down menu in the [location field](../the_lister/navigation/breadcrumbs_location_field.md)
-- Click in the [location field](../the_lister/navigation/breadcrumbs_location_field.md) and enter the path \<ib:inline-code\>`lib://`\</ib:inline-code\>
+- Click in the [location field](../the_lister/navigation/breadcrumbs_location_field.md) and enter the path `lib://`
 
 ##### Creating a new library
 

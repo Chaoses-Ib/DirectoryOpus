@@ -2,7 +2,8 @@
 
 *Show Everything* is a convenient way to quickly see all files in the folder without actually clearing any filters that may be in place. It’s local to the folder tab it is used in.
 
-\<WRAP round info\>Don't confuse *Show Everything* mode with the search tool [Everything by voidtools](https://voidtools.com), which Opus also supports.\</WRAP\>
+> [!NOTE]
+> Don't confuse *Show Everything* mode with the search tool [Everything by voidtools](https://voidtools.com), which Opus also supports.
 
 ##### Activating Show Everything mode
 

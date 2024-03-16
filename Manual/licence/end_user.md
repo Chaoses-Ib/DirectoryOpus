@@ -16,9 +16,8 @@ For bulk purchasers under the GPSoftware Open License Plan, or academic volume l
 
 - A Directory Opus 13 license is available for single or multiple installations.
 - Directory Opus 13 may only be installed on the number of physical machines specified by the program license and associated program certificate.
-- Additionally, you may install Directory Opus 13 on one laptop, owned by you, in addition to the number of installs allowed by your license.\<WRAP\>
-
-For example, this means that if you have purchased a two install license you may install Directory Opus on two computers of any type plus one personal laptop.\</WRAP\>
+- Additionally, you may install Directory Opus 13 on one laptop, owned by you, in addition to the number of installs allowed by your license.
+  For example, this means that if you have purchased a two install license you may install Directory Opus on two computers of any type plus one personal laptop.
 
 - You may install Directory Opus 13 on an unlimited number of virtual machines as long as the host machine has a valid license.
 - You may not share a license with other people. A multiple install license only allows for installation on multiple computers at a single site.

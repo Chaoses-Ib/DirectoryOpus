@@ -10,7 +10,7 @@ The toolbar displays one button for each of your installed disk drives. The butt
 
 ##### Configuring the drives toolbar
 
-The Drives toolbar is built from the internal \<ib:inline-code\>`Go DRIVEBUTTONS`\</ib:inline-code\> command, and you can edit the command that generates the drive buttons to configure their appearance and behaviour.
+The Drives toolbar is built from the internal `Go DRIVEBUTTONS` command, and you can edit the command that generates the drive buttons to configure their appearance and behaviour.
 
 See the [Editing the Toolbar](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/RAEDME.md) page for information on editing toolbars, and the [Drive Buttons Configuration](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/drive_buttons_configuration.md) page for specific information about the changes you can make to the drive buttons.
 
@@ -26,7 +26,7 @@ The **Drives Dropdown** is available as a pre-defined command that you add from 
 
 1.  Select the **Customize** command from the **Settings** menu
 2.  Click on the **Commands** tab
-3.  Use the search field at the bottom of the *Customize* dialog to enter the string \<ib:inline-code\>`drive`\</ib:inline-code\>
+3.  Use the search field at the bottom of the *Customize* dialog to enter the string `drive`
 4.  Select **Drives Dropdown** from the list of results and drag it to one of your toolbars
 5.  Click **OK** to close the *Customize* dialog
 

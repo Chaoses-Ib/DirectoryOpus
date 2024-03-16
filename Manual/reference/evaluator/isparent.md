@@ -2,7 +2,7 @@
 
 Tests whether *parent* is a parent of *child*.
 
-If not, returns \<ib:inline-code\>`0`\</ib:inline-code\>. Otherwise, returns the number of levels that *parent* is above *child*.
+If not, returns `0`. Otherwise, returns the number of levels that *parent* is above *child*.
 
 //<Example://>
 

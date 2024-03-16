@@ -15,8 +15,8 @@ This template is used to define the new name of a shortcut to an existing file o
 - **%1**: Inserts the original file name.
 - **%2**: Inserts the shortcut count in brackets (if greater than one).
 
-For example, the default template is \<ib:inline-code\>`%1 - Shortcut %2`\</ib:inline-code\>. Say you pick a file "Document.txt" and make a shortcut to it.
+For example, the default template is `%1 - Shortcut %2`. Say you pick a file "Document.txt" and make a shortcut to it.
 
-The first shortcut in that location has a "shortcut count" of 1, which is not shown - so \<ib:inline-code\>`%2`\</ib:inline-code\> will expand to nothing. The first shortcut's name would be \<nobr\>\<ib:inline-code\>`Document - Shortcut.lnk`\</ib:inline-code\>\</nobr\>.
+The first shortcut in that location has a "shortcut count" of 1, which is not shown - so `%2` will expand to nothing. The first shortcut's name would be \<nobr\>`Document - Shortcut.lnk`\</nobr\>.
 
-If you make a second shortcut, the count would be 2, and the new filename would be \<nobr\>\<ib:inline-code\>`Document - Shortcut (2).lnk`\</ib:inline-code\>\</nobr\>.
+If you make a second shortcut, the count would be 2, and the new filename would be \<nobr\>`Document - Shortcut (2).lnk`\</nobr\>.

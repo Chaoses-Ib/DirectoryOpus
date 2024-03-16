@@ -96,7 +96,7 @@ The options that affect the search are:                    �
 
 - **Use wildcards**: Lets you specify a search pattern using [standard pattern matching](/Manual/reference/wildcard_reference/pattern_matching_syntax.md).
 - **Use regular expression**: Lets you specify the search pattern using [regular expressions](../renaming_files/advanced_rename/rename_modes/regular_expressions.md).
-- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with \<ib:inline-code\>`+`\</ib:inline-code\>, which means it **must** be present, and \<ib:inline-code\>`-`\</ib:inline-code\> which means it **must not** be present.
+- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with `+`, which means it **must** be present, and `-` which means it **must not** be present.
 - **Assume UTF-8 with no BOM**: Tells Opus to assume that plain text files without a Byte Order Mark (BOM) are encoded in UTF8 rather than your computer's default 8-bit character set.
 - **Case sensitive**: Makes the search case-sensitive (upper and lower-case letters will not be treated as the same).
 - **Partial match**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
@@ -154,7 +154,7 @@ This lets you refer to another pre-configured filter (one listed on the [Filters
 
 This lets you match a file or folder on its full pathname (which includes its own filename).
 
-For example, \<ib:inline-code\>`C:\Data\Pictures\*\*.jpg`\</ib:inline-code\> would match any file ending in **.jpg** that was located in any sub-folder of the *C:\Data\Pictures* directory.
+For example, `C:\Data\Pictures\*\*.jpg` would match any file ending in **.jpg** that was located in any sub-folder of the *C:\Data\Pictures* directory.
 
 Wildcards in Full path clauses are applied to the string as a whole, rather than on individual path components.
 
@@ -257,7 +257,7 @@ The options for a **Name** clause are:                     
 
 - **Use wildcards**: Lets you specify a search pattern using [standard pattern matching](/Manual/reference/wildcard_reference/pattern_matching_syntax.md).
 - **Use regular expression**: Lets you specify the search pattern using [regular expressions](../renaming_files/advanced_rename/rename_modes/regular_expressions.md).
-- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with \<ib:inline-code\>`+`\</ib:inline-code\>, which means it **must** be present, and \<ib:inline-code\>`-`\</ib:inline-code\> which means it **must not** be present.
+- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with `+`, which means it **must** be present, and `-` which means it **must not** be present.
 - **Case sensitive**: Makes the search case-sensitive (upper and lower-case letters will not be treated as the same).
 - **Partial match**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
 - **Ignore diacritics**: Ignores diacritics (accented characters).
@@ -335,13 +335,13 @@ Compares against any tags assigned to the file. [Standard wildcards](/Manual/ref
 
 If a file is a junction, shortcut or link, the **Target** clause lets you match on what it points to (the path of the target of the shortcut).
 
-For example, \<ib:inline-code\>`C:\Program Files\*\*.exe`\</ib:inline-code\> would match shortcuts that pointed to any .exe (application files) below the *C:\Program Files* folder.
+For example, `C:\Program Files\*\*.exe` would match shortcuts that pointed to any .exe (application files) below the *C:\Program Files* folder.
 
 You can choose from the following options:
 
 - **Use wildcards**: Lets you specify a search pattern using [standard pattern matching](/Manual/reference/wildcard_reference/pattern_matching_syntax.md).
 - **Use regular expression**: Lets you specify the search pattern using [regular expressions](../renaming_files/advanced_rename/rename_modes/regular_expressions.md).
-- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with \<ib:inline-code\>`+`\</ib:inline-code\>, which means it **must** be present, and \<ib:inline-code\>`-`\</ib:inline-code\> which means it **must not** be present.
+- **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with `+`, which means it **must** be present, and `-` which means it **must not** be present.
 - **Case sensitive**: Makes the search case-sensitive (upper and lower-case letters will not be treated as the same).
 - **Partial match**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
 - **Ignore diacritics**: Ignores diacritics (accented characters).

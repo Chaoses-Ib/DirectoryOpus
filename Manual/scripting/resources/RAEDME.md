@@ -6,29 +6,30 @@ You may have noticed in the section on [Script dialogs](script_dialogs/RAEDME.md
 
 There are two ways a script can define resources:
 
-- Script resources can be included at the end of the script code itself. A separator line marks the boundary between script code and resources, like this:\<WRAP\>
+- Script resources can be included at the end of the script code itself. A separator line marks the boundary between script code and resources, like this:
+  
 
-    If BlahBlah Then
-    BlahBlah Blah
-    End If
-    ==SCRIPT RESOURCES
-    <resources>
-    <resource name="blah1" type="dialog">
-    <dialog blah blah>
-    </dialog>
-    </resource>
-    <resource name="blah2" type="dialog">
-    <dialog blah blah>
-    </dialog>
-    </resource>
-    <resource type="strings">
-    <strings lang="blah">
-    <string id="blah" text="Blah!" />
-    </strings>
-    </resource>
-    </resources>
+      If BlahBlah Then
+      BlahBlah Blah
+      End If
+      ==SCRIPT RESOURCES
+      <resources>
+      <resource name="blah1" type="dialog">
+      <dialog blah blah>
+      </dialog>
+      </resource>
+      <resource name="blah2" type="dialog">
+      <dialog blah blah>
+      </dialog>
+      </resource>
+      <resource type="strings">
+      <strings lang="blah">
+      <string id="blah" text="Blah!" />
+      </strings>
+      </resource>
+      </resources>
 
-Everything before the line \<ib:inline-code\>`==SCRIPT RESOURCES`\</ib:inline-code\> is considered part of the script code, and everything after it is the XML-formatted resources. \</WRAP\>
+  Everything before the line `==SCRIPT RESOURCES` is considered part of the script code, and everything after it is the XML-formatted resources. 
 
 - Script resources can be loaded from an external file, or a raw XML string, using the **[Script](/Manual/reference/scripting_reference/scripting_objects/script.md).LoadResources** method. Note that if the script is included in a package the resource file must have *.odxml* as a file extension.
 

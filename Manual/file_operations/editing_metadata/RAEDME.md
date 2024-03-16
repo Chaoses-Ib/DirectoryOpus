@@ -6,7 +6,7 @@ Opus lets you edit file metadata in three ways:
 
 - The [Metadata Pane](/Manual/basic_concepts/the_lister/metadata_pane.md) is the easiest; it lets you view metadata and make changes for selected files directly in the Lister or image viewer.
 - The **Set Metadata** dialog works like a typical file operation - it displays a dialog letting you choose the changes to make, and then when you click **OK** the changes will be applied to all selected files.
-- [Programmatically](/Manual/file_operations/editing_metadata/programmatic_setting_of_metadata.md), using the \<ib:inline-code\>`SetAttr META`\</ib:inline-code\> command, you can create buttons or hotkeys that automatically modify the metadata of selected files.
+- [Programmatically](/Manual/file_operations/editing_metadata/programmatic_setting_of_metadata.md), using the `SetAttr META` command, you can create buttons or hotkeys that automatically modify the metadata of selected files.
 
 ##### Displaying the metadata pane
 
@@ -53,9 +53,9 @@ When the metadata display first initialises it shows the current values of the v
 
 ##### Working with the multi-value fields
 
-Some fields (e.g. tags, authors) support multiple values. To use this, separate each value with a semi-colon. When multiple files are selected, you can use the \<ib:inline-code\>`+`\</ib:inline-code\> and \<ib:inline-code\>`-`\</ib:inline-code\> prefixes to add and remove specific values while leaving any other values alone.
+Some fields (e.g. tags, authors) support multiple values. To use this, separate each value with a semi-colon. When multiple files are selected, you can use the `+` and `-` prefixes to add and remove specific values while leaving any other values alone.
 
-You can turn on the **Add to multi-value fields by default** option on the [Metadata / Editor](/Manual/preferences/preferences_categories/file_operations/metadata/editor.md) Preferences page to add new values by default in this situation (without having to type a \<ib:inline-code\>`+`\</ib:inline-code\>).
+You can turn on the **Add to multi-value fields by default** option on the [Metadata / Editor](/Manual/preferences/preferences_categories/file_operations/metadata/editor.md) Preferences page to add new values by default in this situation (without having to type a `+`).
 
 ##### Copying metadata with drag-and-drop
 

@@ -8,8 +8,8 @@
 - The order labels are shown in menus can now be changed on the Preferences / File and Folder Labels / Labels page.
 - Where Preferences shows label lists, multi-selecting some and pushing Space now toggles all of them instead of just the one with focus.
 - Label Definitions list now has right-click menus for categories, including options to move/merge everything into another category.
-- *Command:* \<ib:inline-code\>`Properties SETLABEL=!compact`\</ib:inline-code\> -- Generates a compact list of label buttons. Each is only icon (if there is an icon or icon-tint color) or the characters "Aa" to show the label's colors. Hovering over a button reveals its full name.
-- *Scripting:* \<ib:inline-code\>`Script.Labels()`\</ib:inline-code\> can now return per-folder wildcard/filter labels as well as global labels affecting a file. (Note that per-folder content type and folder type labels aren't included.)
+- *Command:* `Properties SETLABEL=!compact` -- Generates a compact list of label buttons. Each is only icon (if there is an icon or icon-tint color) or the characters "Aa" to show the label's colors. Hovering over a button reveals its full name.
+- *Scripting:* `Script.Labels()` can now return per-folder wildcard/filter labels as well as global labels affecting a file. (Note that per-folder content type and folder type labels aren't included.)
 
 ------------------------------------------------------------------------
 

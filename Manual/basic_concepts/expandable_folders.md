@@ -25,7 +25,7 @@ On the [Folder Expansion](/Manual/preferences/preferences_categories/file_displa
 
 ##### Hiding the expansion glyphs
 
-If you only want to use expandable folders sometimes, you can turn on the **Hide expand buttons until a folder is expanded** option. Expandable folders will still be enabled, but the expansion glyphs will be hidden until at least one sub-folder is expanded. To expand sub-folders without the glpyhs being visible, you can use the <kbd>Alt+Down</kbd> key, or configure your own key to run the \<ib:inline-code\>`Go EXPANDBRANCH`\</ib:inline-code\> internal command.
+If you only want to use expandable folders sometimes, you can turn on the **Hide expand buttons until a folder is expanded** option. Expandable folders will still be enabled, but the expansion glyphs will be hidden until at least one sub-folder is expanded. To expand sub-folders without the glpyhs being visible, you can use the <kbd>Alt+Down</kbd> key, or configure your own key to run the `Go EXPANDBRANCH` internal command.
 
 ##### Copying nested files
 

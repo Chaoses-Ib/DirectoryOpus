@@ -38,14 +38,13 @@ Many items have an option called **Display under the Desktop item**. If this is 
 
 ##### FTP options
 
-- **Site roots always to go initial folder**: Changes what happens when you're already connected to an FTP site and then click its name in the folder tree again, for sites with an *initial folder* specified in their FTP Address Book entry.\<WRAP\>
+- **Site roots always to go initial folder**: Changes what happens when you're already connected to an FTP site and then click its name in the folder tree again, for sites with an *initial folder* specified in their FTP Address Book entry.
+  Whether this option is on or off, if you are not connected to an FTP site and click its name in the folder tree, you will connect to the site and navigate to its *initial folder* (if it has one). The option changes what happens if you then click the site again:
 
-Whether this option is on or off, if you are not connected to an FTP site and click its name in the folder tree, you will connect to the site and navigate to its *initial folder* (if it has one). The option changes what happens if you then click the site again:
+  - If the option is off (the default), you will go to the site's root folder.
+  - If the option is on, you will go to the site's *initial folder*.
 
-- If the option is off (the default), you will go to the site's root folder.
-- If the option is on, you will go to the site's *initial folder*.
-
-The option only affects what happens when you click the site in the tree using the mouse; selection via the keyboard, and navigation via things other than the tree, are not affected.\</WRAP\>
+  The option only affects what happens when you click the site in the tree using the mouse; selection via the keyboard, and navigation via things other than the tree, are not affected.
 
 ##### Libraries options
 

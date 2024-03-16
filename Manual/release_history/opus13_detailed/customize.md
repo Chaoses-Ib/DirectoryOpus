@@ -24,8 +24,8 @@
   - Hotkeys can turn on "Allow additional qualifiers" to make them less strict.
     - For example, a Shift+X hotkey won't normally trigger if <kbd>Ctrl</kbd> is also held down, but will with the new option.
     - Commands in hotkeys can test if extra keys are held down.
-    - This lets you assign a command \<ib:inline-code\>`Go UP USEQUALKEYS`\</ib:inline-code\> to a single hotkey, such as Backspace. Shift+Backspace, Ctrl+Backspace and Alt+Backspace will also launch it, and the function will be able to see which qualifiers were held down when it was launched.
-    - The same applies to functions that use \<ib:inline-code\>`@keydown`\</ib:inline-code\> to test which keys are held down.
+    - This lets you assign a command `Go UP USEQUALKEYS` to a single hotkey, such as Backspace. Shift+Backspace, Ctrl+Backspace and Alt+Backspace will also launch it, and the function will be able to see which qualifiers were held down when it was launched.
+    - The same applies to functions that use `@keydown` to test which keys are held down.
   - Normally, commands do not see a hotkey's explicitly specified keys as being down:
     - That would make it impossible to run some commands (intended for toolbars) on some keys, since the keys would change what the commands do.
     - Since those keys must be down for the hotkey to trigger at all, conditional logic based on them usually doesn't make sense.
@@ -42,7 +42,7 @@
   - Can highlight commands based on the Opus version that added them. Use this to update custom toolbars with new functionality.
   - Of course, you can still reset your real toolbars to get the latest defaults and revert any changes you've made.
 - Button editor:
-  - "Run with logging" (<kbd>Shift+F5</kbd>) mode for testing buttons. When on, a log displays each line as it runs, including all substitutions for \<ib:inline-code\>`{...}`\</ib:inline-code\> codes. Useful for debugging complex buttons and conditional lines.
+  - "Run with logging" (<kbd>Shift+F5</kbd>) mode for testing buttons. When on, a log displays each line as it runs, including all substitutions for `{...}` codes. Useful for debugging complex buttons and conditional lines.
   - Suggestion popups that complete command, argument and modifier names as you type. Push Ctrl+Space to make suggestions appear after moving the cursor.
   - Arguments menu now marks arguments used on the current line. Helps when you need to find an existing argument to add parameters to it.
   - Long argument (etc.) menus now have scrollbars instead of going multi-column.

@@ -43,7 +43,7 @@ Click the **Edit** button or double-click a layout to edit it.
 - **Use toolbars saved within this layout**: When you save a Lister layout, the toolbars currently in use are also saved. If you turn this option on, the saved toolbars will be used when re-opening the layout. If you turn it off, your *Default Toolbar Set* will be used instead. (The *Default Toolbar Set* can be updated via **Settings / Toolbars / Set As Default Toolbar Set**.)
 - **Open layout relative to the monitor the mouse is currently on**: Normally a saved layout will re-open its Listers in the same location on-screen they were saved in. If you have a multiple monitor system and turn this option on, the Listers will be opened relative to the monitor the mouse is on (so, for instance, a Lister that was saved on monitor \#1 would open in the same relative location on monitor \#2 if the mouse was on that monitor at the time the layout was opened).
 - **Restore each Lister to its original virtual desktop**: If you save a layout containing Listers on multiple virtual desktops, they'll be restored to the same desktop when the layout is opened.
-- **Hide this layout from layout lists**: This option lets you mark a layout that is hidden when the layout list is displayed. Layouts that are hidden can still be accessed using the \<ib:inline-code\>`Prefs LAYOUT`\</ib:inline-code\> command.
+- **Hide this layout from layout lists**: This option lets you mark a layout that is hidden when the layout list is displayed. Layouts that are hidden can still be accessed using the `Prefs LAYOUT` command.
 
 ##### Updating an existing layout
 

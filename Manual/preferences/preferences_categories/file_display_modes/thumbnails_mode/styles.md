@@ -7,7 +7,7 @@ Normally the thumbnail for a folder is built automatically from the files within
 
 When a style is used, only a single image from the folder is shown for its thumbnail (merged with the style image). That thumbnail image can optionally come from a specifically named file (see **Specific thumbnail files** below) - otherwise the first image found in the folder will be used.
 
-A simple example of this is the built-in CD cover art image that Opus provides. It looks to see if a folder contains a file called \<ib:inline-code\>`coverart.jpg`\</ib:inline-code\> (or if it seems to be a music folder), and if so shows the cover art overlaid on a digital image of a CD case.
+A simple example of this is the built-in CD cover art image that Opus provides. It looks to see if a folder contains a file called `coverart.jpg` (or if it seems to be a music folder), and if so shows the cover art overlaid on a digital image of a CD case.
 
 ![](/Manual/images/media/13/cd_coverart.png)
 
@@ -25,7 +25,7 @@ This field uses [standard pattern matching](/Manual/reference/wildcard_reference
 
 It lets you enter one or more filenames or filename patterns (one per line). If a file matching any of these names is found in a folder, the thumbnail style will be activated and that file will be also used as the thumbnail for the folder.
 
-The CD cover art style by default looks for three different filenames: \<ib:inline-code\>`coverart.jpg`\</ib:inline-code\>, \<ib:inline-code\>`coverart.png`\</ib:inline-code\> and \<ib:inline-code\>`cover.jpg`\</ib:inline-code\>.
+The CD cover art style by default looks for three different filenames: `coverart.jpg`, `coverart.png` and `cover.jpg`.
 
 ##### Shell folder type
 
@@ -39,7 +39,7 @@ Identifies a folder by its contents. You can specify either a file type group, o
 
 Both the **Filename** and the **Ignore** fields use [standard pattern matching](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) by default, or [regular expressions](/Manual/reference/wildcard_reference/regular_expression_syntax.md) if the option is turned on.
 
-The CD cover art style looks for files that match the Music file type group, ignoring files that end in \<ib:inline-code\>`*.bin`\</ib:inline-code\>, \<ib:inline-code\>`*.cue`\</ib:inline-code\> and \<ib:inline-code\>`*.log`\</ib:inline-code\>. Out of the first five files encountered, at least two must match those criteria in order for the style to activate.
+The CD cover art style looks for files that match the Music file type group, ignoring files that end in `*.bin`, `*.cue` and `*.log`. Out of the first five files encountered, at least two must match those criteria in order for the style to activate.
 
   
 
@@ -47,7 +47,7 @@ The CD cover art style looks for files that match the Music file type group, ign
 
 ![](/Manual/images/media/13/thumbstyle_frame.png)
 
-This is the configuration for another style, which puts a picture frame around the thumbnail image. You can see the **Specific thumbnail files** field is set to \<ib:inline-code\>`frame.png`\</ib:inline-code\> and \<ib:inline-code\>`frame.jpg`\</ib:inline-code\>, and that's the only identification criteria specified. That means the style will only activate if one of those files is found in the folder, **and** that image itself will be used for the thumbnail.
+This is the configuration for another style, which puts a picture frame around the thumbnail image. You can see the **Specific thumbnail files** field is set to `frame.png` and `frame.jpg`, and that's the only identification criteria specified. That means the style will only activate if one of those files is found in the folder, **and** that image itself will be used for the thumbnail.
 
 The top part of the dialog is where the overlay, or style image, is configured. The **Style image** field specifies the location of the style image.
 

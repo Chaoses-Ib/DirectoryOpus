@@ -29,7 +29,7 @@ The parent command lets you rename selected files and folders using the **[Advan
 
 - **Use Simple Rename**: Turn this on to make the **Rename** button trigger the simple Rename dialog (which only supports basic wildcard renames), rather than the Advanced Rename dialog.
 - **Capitalize Words**: Capitalizes the first letter of each word in the filename, lower-cases all other letters.
-- **Make Web-safe**: Makes filenames "safe" for use on websites, by removing any characters that can cause problems in URLs (anything other than \<ib:inline-code\>`-`\</ib:inline-code\>, \<ib:inline-code\>`0-9`\</ib:inline-code\>, \<ib:inline-code\>`a-z`\</ib:inline-code\>, \<ib:inline-code\>`A-Z`\</ib:inline-code\>, \<ib:inline-code\>`.`\</ib:inline-code\>, \<ib:inline-code\>`_`\</ib:inline-code\>, \<ib:inline-code\>`]`\</ib:inline-code\> and \<ib:inline-code\>`+`\</ib:inline-code\> is removed).
+- **Make Web-safe**: Makes filenames "safe" for use on websites, by removing any characters that can cause problems in URLs (anything other than `-`, `0-9`, `a-z`, `A-Z`, `.`, `_`, `]` and `+` is removed).
 - **Number Files**: Inserts an incrementing number before the names of selected files. This function is implemented as a VBScript [rename script](/Manual/file_operations/renaming_files/advanced_rename/rename_scripts.md), and so provides a good example of a more complicated rename function.
 - **Time-Stamp Names**: Appends a date- and time-stamp to the names of selected files.
 - **Underscores to Spaces**: Replaces any underscores in filenames with spaces.

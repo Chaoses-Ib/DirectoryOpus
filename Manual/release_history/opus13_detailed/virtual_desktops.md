@@ -10,10 +10,10 @@
 - Layouts set to close other windows can be configured to only close those on the current desktop, or those on all desktops. Similar options exist for the various methods of opening new windows under Preferences / Launching Opus.
 - If Opus is set to remember open windows across restarts, it can be told to restore them to their original virtual desktops.
 - Commands:
-  - \<ib:inline-code\>`Prefs LAYOUTCLOSELISTERS=...`\</ib:inline-code\> -- Takes new "current" and "all" parameters to override the main setting. E.g. Prefs LAYOUTCLOSELISTERS=yes,current
-  - \<ib:inline-code\>`Prefs LAYOUTNOVIRTDESKTOP`\</ib:inline-code\> -- Can override the virtual desktop setting when loading a layout.
-  - \<ib:inline-code\>`Show USEEXISTING=...`\</ib:inline-code\> -- Replaces the old NOUSEEXISTING (which is hidden but still works) and allows you to specify "avoid" and "noavoid" keywords to override the "Avoid switching desktops" option with specific buttons, or when a key is held down, and so on.
-  - \<ib:inline-code\>`DOpusRT.exe /cmd:active,thisdesktop`\</ib:inline-code\> -- Looks for the active Lister, but only on the current virtual desktop.
+  - `Prefs LAYOUTCLOSELISTERS=...` -- Takes new "current" and "all" parameters to override the main setting. E.g. Prefs LAYOUTCLOSELISTERS=yes,current
+  - `Prefs LAYOUTNOVIRTDESKTOP` -- Can override the virtual desktop setting when loading a layout.
+  - `Show USEEXISTING=...` -- Replaces the old NOUSEEXISTING (which is hidden but still works) and allows you to specify "avoid" and "noavoid" keywords to override the "Avoid switching desktops" option with specific buttons, or when a key is held down, and so on.
+  - `DOpusRT.exe /cmd:active,thisdesktop` -- Looks for the active Lister, but only on the current virtual desktop.
 - Scripting:
   - Lister and Viewer objects have "desktop" properties which return their desktop's ID.
   - Lister and VIewer objects have IsOnCurrentDesktop and MoveToDesktop methods.

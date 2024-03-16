@@ -25,55 +25,55 @@ The **Field Type** sub-menu lets you switch between the various types of field:
 
 - **Content Type**: If folder [content type detection](/Manual/basic_concepts/folder_options/content_types.md) is enabled, displays the current content type format in use. You can also use the drop-down list to instantly switch to one of the defined content type formats.
 
-\<WRAP indent\>![](/Manual/images/media/content_type_field.png)\</WRAP\>
+  ![](/Manual/images/media/content_type_field.png)
 
 - **Drives**: The [Drive List](/Manual/basic_concepts/the_lister/navigation/drive_buttons_and_lists.md) field is drop-down list of your disk drives. Selecting a drive from the list navigates the source file display to that location.  
 
-\<WRAP indent\>![](/Manual/images/media/drive_list_field.png)\</WRAP\>
+  ![](/Manual/images/media/drive_list_field.png)
 
 - **Filter**: The [filter field](/Manual/basic_concepts/searching_and_filtering/toolbar_filter_fields.md) lets you filter the items visible in the current folder by entering a [wildcard pattern](/Manual/reference/wildcard_reference/pattern_matching_syntax.md).
 
-\<WRAP indent\>![](/Manual/images/media/filter_field.png)\</WRAP\>
+  ![](/Manual/images/media/filter_field.png)
 
 - **Label:** A label field has no function other than to display a static label. You can use it to provide a label for other controls or just to display a static text string on a toolbar.
 
-\<WRAP indent\>Label fields in drop-down menus are drawn in a bold font and left-aligned to stand out visually from the other items in the menu.\</WRAP\>
+  Label fields in drop-down menus are drawn in a bold font and left-aligned to stand out visually from the other items in the menu.
 
-\<WRAP indent\>![](/Manual/images/media/image079.png)\</WRAP\>
+  ![](/Manual/images/media/image079.png)
 
 - **Path (Basic)**: The basic path (location) field is a minimalist text field that displays the current path and lets you type a new path to navigate in the Lister. By default this field controls the current source file display, but you can [configure](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/field_buttons/path_field_configuration.md) it to specify the display it is linked to.
 
-\<WRAP indent\>![](/Manual/images/media/path_field_basic.png)\</WRAP\>
+  ![](/Manual/images/media/path_field_basic.png)
 
 - **Path (Breadcrumbs)**: The [breadcrumbs](/Manual/basic_concepts/the_lister/navigation/breadcrumbs_location_field.md) path (location) field is a powerful navigation tool that provides instant access to prior locations in the current path. This field has [lots of configurable options](/Manual/preferences/preferences_categories/location_bar/path_fields/RAEDME.md) that can modify its appearance and behaviour.
 
-\<WRAP indent\>![](/Manual/images/media/path_field_crumbs.png)\</WRAP\>
+  ![](/Manual/images/media/path_field_crumbs.png)
 
 - **Path (Favorites List)**: The favorites list path field combines the basic path field with a drop-down menu of your [favorite folders](/Manual/basic_concepts/the_lister/navigation/favorites.md), which you can navigate to by selecting them from the drop-down. By default this field controls the current source file display, but you can [configure](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/field_buttons/path_field_configuration.md) it to specify the display it is linked to.
 
-\<WRAP indent\>![](/Manual/images/media/path_field_dropdown.png)\</WRAP\>
+  ![](/Manual/images/media/path_field_dropdown.png)
 
 - **Path (Folder Tree)**: The folder tree path field combines the basic path field with a drop-down list containing the folder tree hierarchy leading to the current location. This lets you navigate to previous folders in the tree from the drop-down. By default this field controls the current source file display, but you can [configure](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/field_buttons/path_field_configuration.md) it to specify the display it is linked to.
 
-\<WRAP indent\>![](/Manual/images/media/path_field_dropdown.png)\</WRAP\>
+  ![](/Manual/images/media/path_field_dropdown.png)
 
 - **Path (Recent List)**: The recent list path field combines the basic path field with a drop-down menu of your [recently visited folders](/Manual/basic_concepts/the_lister/navigation/recent_and_history_lists.md). By default this field controls the current source file display, but you can [configure](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/field_buttons/path_field_configuration.md) it to specify the display it is linked to.
 
-\<WRAP indent\>![](/Manual/images/media/path_field_dropdown.png)\</WRAP\>
+  ![](/Manual/images/media/path_field_dropdown.png)
 
 - **Search Field**: The search field lets you search the current folder using the indexed [Windows Search](/Manual/basic_concepts/searching_and_filtering/windows_search.md) system.
 
-\<WRAP indent\>![](/Manual/images/media/search_field1.png)\</WRAP\>
+  ![](/Manual/images/media/search_field1.png)
 
 - **Spacer**: A spacer field has no function other than to take up room on the toolbar - it's used to right-justify toolbar elements.
 
 - **Thumbnail Size**: The thumbnail size field lets you dynamically resize thumbnails in the current folder. It will be hidden when the Lister is not in thumbnail mode.
 
-\<WRAP indent\>![](/Manual/images/media/thumbnail_size_slider.png)\</WRAP\>
+  ![](/Manual/images/media/thumbnail_size_slider.png)
 
-\<WRAP indent\>By default, the slider affects all folder tabs in the window if it's on a normal toolbar, and just the side it's over if it's on a Location Bar toolbar. You can change this by editing the field and adding \<ib:inline-code\>`both`\</ib:inline-code\>, \<ib:inline-code\>`source`\</ib:inline-code\>, \<ib:inline-code\>`dest`\</ib:inline-code\>, \<ib:inline-code\>`left`\</ib:inline-code\>, or \<ib:inline-code\>`right`\</ib:inline-code\> to the *Args* string. (\<ib:inline-code\>`both`\</ib:inline-code\> differs from the default in that it only affects the visible tabs, not inactive ones.)
+  By default, the slider affects all folder tabs in the window if it's on a normal toolbar, and just the side it's over if it's on a Location Bar toolbar. You can change this by editing the field and adding `both`, `source`, `dest`, `left`, or `right` to the *Args* string. (`both` differs from the default in that it only affects the visible tabs, not inactive ones.)
 
-By default the slider will set the thumbnail size using the aspect ratio configured in Preferences; however, if you edit the field and add \<ib:inline-code\>`preserve`\</ib:inline-code\> to the *Args* string, it will preserve the current aspect ratio (this would only be useful if the aspect ratio has been changed manually using the \<ib:inline-code\>`Set THUMBNAILSIZE`\</ib:inline-code\> command). If a side is also specified, put a comma between the two arguments; e.g. \<ib:inline-code\>`left,preserve`\</ib:inline-code\>.\</WRAP\>
+  By default the slider will set the thumbnail size using the aspect ratio configured in Preferences; however, if you edit the field and add `preserve` to the *Args* string, it will preserve the current aspect ratio (this would only be useful if the aspect ratio has been changed manually using the `Set THUMBNAILSIZE` command). If a side is also specified, put a comma between the two arguments; e.g. `left,preserve`.
 
 See the [Editing The Toolbar]() section for more information on how to edit toolbar fields.
 

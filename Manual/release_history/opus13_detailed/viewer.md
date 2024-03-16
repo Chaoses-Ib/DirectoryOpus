@@ -40,15 +40,15 @@
   - Added options to only center the viewer window for the first image, rather than every image.
   - Context menu for marked images in the standalone viewer now includes option to open the containing folder.
   - Commands:
-    - \<ib:inline-code\>`Show LISTERLINK`\</ib:inline-code\>
-    - \<ib:inline-code\>`Show VIEWERCMD=listerlink`\</ib:inline-code\>
-    - \<ib:inline-code\>`Show VIEWERCMD=frame`\</ib:inline-code\>
-    - \<ib:inline-code\>`Show VIEWERCMD=monitornext`\</ib:inline-code\> and \<ib:inline-code\>`Show VIEWERCMD=monitorprev`\</ib:inline-code\>
-    - \<ib:inline-code\>`Show VIEWERCMD=backcol,#RRGGBB`\</ib:inline-code\> and similar for Show VIEWPANECMD. Omit color to reset to Preferences color.
-    - \<ib:inline-code\>`Show VIEWERCMD=delete,noadvance`\</ib:inline-code\> -- Like existing delete command, but does not move on to the next image.
-    - \<ib:inline-code\>`Show VIEWERCMD=delete,close`\</ib:inline-code\> -- Like existing delete command, but closes the viewer, even if there are more images.
-    - \<ib:inline-code\>`Image LOCATE=menu`\</ib:inline-code\> -- Within the viewer, displays a menu of GPS mapping services. Hidden if the current file has no GPS data.
-    - \<ib:inline-code\>`Image LOCATE=menu,nohide`\</ib:inline-code\> -- When the viewer's file has no GPS data, this disables the menu items instead of hiding them.
+    - `Show LISTERLINK`
+    - `Show VIEWERCMD=listerlink`
+    - `Show VIEWERCMD=frame`
+    - `Show VIEWERCMD=monitornext` and `Show VIEWERCMD=monitorprev`
+    - `Show VIEWERCMD=backcol,#RRGGBB` and similar for Show VIEWPANECMD. Omit color to reset to Preferences color.
+    - `Show VIEWERCMD=delete,noadvance` -- Like existing delete command, but does not move on to the next image.
+    - `Show VIEWERCMD=delete,close` -- Like existing delete command, but closes the viewer, even if there are more images.
+    - `Image LOCATE=menu` -- Within the viewer, displays a menu of GPS mapping services. Hidden if the current file has no GPS data.
+    - `Image LOCATE=menu,nohide` -- When the viewer's file has no GPS data, this disables the menu items instead of hiding them.
     - Running the Show command on a shortcut to a directory now works the same as on real directories; any images inside the directory are added to the viewer's file list.
 - Web / HTML:
   - Microsoft Edge (Chromium) is now supported in the viewer pane.
@@ -74,8 +74,8 @@
   - Made more external viewer components open temporary copies instead of real files, due to Microsoft breaking their own rules about viewers locking files. (Windows RTF and Windows Mail MIME E-Mail.)
   - Added .heif and .hif as alternative extensions for .heic files.
   - Commands:
-    - \<ib:inline-code\>`Show VIEWERCMD=slideshow,on`\</ib:inline-code\> -- Can turn slideshow mode on or off explicitly, without having to test the current mode. (Without "on" or "off", acts as a toggle, as before.)
-    - \<ib:inline-code\>`Set FOCUS=ViewPane`\</ib:inline-code\> -- Gives keyboard focus to the viewer pane.
+    - `Show VIEWERCMD=slideshow,on` -- Can turn slideshow mode on or off explicitly, without having to test the current mode. (Without "on" or "off", acts as a toggle, as before.)
+    - `Set FOCUS=ViewPane` -- Gives keyboard focus to the viewer pane.
 
 ------------------------------------------------------------------------
 

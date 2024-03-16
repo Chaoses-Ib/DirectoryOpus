@@ -22,7 +22,7 @@
   - Icons displayed for .exe files are *not* affected. However, thumbnails for actual .ico files are affected, as are thumbnails for other image and movie formats (.jpg, .png, .mp4, etc.).
   - Different scaling can be configured for different view modes (Thumbnails, Tiles, Details, Power), and for folder thumbnails (changing how the grid of images within them is displayed). Info tips use the Thumbnails mode setting.
   - Scaling type can be set on a per-folder basis, via Folder Formats. For example, you may want different scaling in folders for photos and pixel art. Overrides affect all view modes, but not folder thumbnails.
-  - *Command:* \<ib:inline-code\>`Set THUMBSTRETCH`\</ib:inline-code\> -- Modifies thumbnail scaling mode for the current folder tab.
+  - *Command:* `Set THUMBSTRETCH` -- Modifies thumbnail scaling mode for the current folder tab.
 - Thumbnail styles:
   - (Configured via Preferences / File Display Modes / Thumbnails / Styles.)
   - A new system which lets you to define special rendering styles for folder thumbnails.

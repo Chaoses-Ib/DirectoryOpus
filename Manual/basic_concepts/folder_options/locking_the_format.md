@@ -22,4 +22,4 @@ If you find you use the format lock feature a lot, you can turn on the **Enable 
 
 ##### The status bar icon can be removed
 
-The information icon (or its padlock equivalent) are generated on the status bar using the \<ib:inline-code\>`{fl}`\</ib:inline-code\> code. Since the status bar is configurable via Preferences, it's possible this code can be removed - in which case the icon won't be visible any more. You can still use the format lock using the menu commands mentioned above.
+The information icon (or its padlock equivalent) are generated on the status bar using the `{fl}` code. Since the status bar is configurable via Preferences, it's possible this code can be removed - in which case the icon won't be visible any more. You can still use the format lock using the menu commands mentioned above.

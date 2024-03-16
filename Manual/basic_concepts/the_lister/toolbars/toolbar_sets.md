@@ -20,7 +20,7 @@ When you create a toolbar set you can choose its default behavior - that is, ho
 - **Replace existing toolbars** - all currently open toolbars are closed and replaced with the toolbars in the set.
 - **Toggle existing toolbars** - if all the toolbars in the set are turned on, they are removed and replaced with the toolbars from the default set. Otherwise, any toolbars in the set that aren't currently on are turned on. This option lets you quickly toggle between the default set and another toolbar set.
 
-When the set is loaded the default behavior will be used unless overridden using the arguments to the internal \<ib:inline-code\>`Toolbar`\</ib:inline-code\> command. You can change the default behavior of an existing set on the **[Toolbars / Toolbar Sets](/Manual/preferences/preferences_categories/toolbars/toolbar_sets.md)** page in Preferences.
+When the set is loaded the default behavior will be used unless overridden using the arguments to the internal `Toolbar` command. You can change the default behavior of an existing set on the **[Toolbars / Toolbar Sets](/Manual/preferences/preferences_categories/toolbars/toolbar_sets.md)** page in Preferences.
 
 ##### Default toolbar set
 

@@ -27,6 +27,6 @@ The commands on the context menu can be used to copy the highlighted data to the
 
 ##### Configuring the context menu
 
-The context menu is configurable from the [Customize / Context Menus](/Manual/customize/the_customize_dialog/context_menus.md) tab. The standard context menu uses the \<ib:inline-code\>`Clipboard COPYCOLUMNS`\</ib:inline-code\> command to implement the various "copy to clipboard" functions, and the \<ib:inline-code\>`Select HIGHLIGHTCLEAR`\</ib:inline-code\> command to implement the "clear highlighted cells" command.
+The context menu is configurable from the [Customize / Context Menus](/Manual/customize/the_customize_dialog/context_menus.md) tab. The standard context menu uses the `Clipboard COPYCOLUMNS` command to implement the various "copy to clipboard" functions, and the `Select HIGHLIGHTCLEAR` command to implement the "clear highlighted cells" command.
 
 A script can use the **[Item](/Manual/reference/scripting_reference/scripting_objects/item.md).highlighted** property to query any currently highlighted cells.

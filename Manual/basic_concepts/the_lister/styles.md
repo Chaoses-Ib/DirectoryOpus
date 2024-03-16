@@ -29,8 +29,8 @@ Use the [Layouts and Styles / Styles](/Manual/preferences/preferences_categories
 
 The **Lister** dropdown menu shows a list of styles. Select one from the list to load it. You can also right-click the styles in the list to update them with the current Lister settings.
 
-You can also use the \<ib:inline-code\>`Prefs STYLE`\</ib:inline-code\> raw command - this is useful if you want to create [hotkeys](/Manual/customize/the_customize_dialog/keys.md) to quickly switch between multiple Lister configurations.
+You can also use the `Prefs STYLE` raw command - this is useful if you want to create [hotkeys](/Manual/customize/the_customize_dialog/keys.md) to quickly switch between multiple Lister configurations.
 
 ##### Style tabs
 
-Another way to switch styles is with the style tabs. You can add these to a toolbar from the **[Commands](/Manual/customize/the_customize_dialog/commands.md)** tab of the *Customize* dialog. Type \<ib:inline-code\>`tabs`\</ib:inline-code\> into the search field and look for the **Lister Styles - Tabs** command, and then drag it to a toolbar to add it.
+Another way to switch styles is with the style tabs. You can add these to a toolbar from the **[Commands](/Manual/customize/the_customize_dialog/commands.md)** tab of the *Customize* dialog. Type `tabs` into the search field and look for the **Lister Styles - Tabs** command, and then drag it to a toolbar to add it.

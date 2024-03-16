@@ -17,7 +17,7 @@ There are a number of ways in a Lister to go **Up**. The easiest is to click the
 
 ![](/Manual/images/media/13/go_up_button.png)
 
-In the file displays, you can optionally choose to show a special \<ib:inline-code\>`..`\</ib:inline-code\> folder entry that corresponds to the parent folder. [If this is turned on](/Manual/preferences/preferences_categories/file_displays/navigation.md), double-clicking it will navigate up to the parent folder.
+In the file displays, you can optionally choose to show a special `..` folder entry that corresponds to the parent folder. [If this is turned on](/Manual/preferences/preferences_categories/file_displays/navigation.md), double-clicking it will navigate up to the parent folder.
 
 You can also go **Up** using the keyboard - pressing the <kbd>Backspace</kbd> key in a Lister will navigate you to the parent folder.
 

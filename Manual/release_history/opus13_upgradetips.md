@@ -58,7 +58,7 @@ None of this is mandatory. In each case, it's up to you whether you keep what yo
 - Important changes: ![](/Manual/images/release_history/o13up_04_status_bar_ex.png)
   - **Selection Summaries**. (Shows how many files of different types are selected.)
   - **Media Durations**. (Shows the time length of selected files vs all files in the folder.)
-  - The \<ib:inline-code\>`{ls}`\</ib:inline-code\> code won't normally output anything now. See *File Copying Between Windows*, below.
+  - The `{ls}` code won't normally output anything now. See *File Copying Between Windows*, below.
 
 ##### Colors
 
@@ -94,9 +94,8 @@ None of this is mandatory. In each case, it's up to you whether you keep what yo
 
 ##### Video & Audio Viewer
 
-- If not all video and audio files play in the viewer, please see here:\<WRAP\>
-
-[HOW TO: Enable/fix playback of various media formats in Opus](https://resource.dopus.com/t/how-to-enable-fix-playback-of-various-media-formats-in-opus/1974/1) (re-written for Opus 13)\</WRAP\>
+- If not all video and audio files play in the viewer, please see here:
+  [HOW TO: Enable/fix playback of various media formats in Opus](https://resource.dopus.com/t/how-to-enable-fix-playback-of-various-media-formats-in-opus/1974/1) (re-written for Opus 13)
 
 ##### File Type Groups
 

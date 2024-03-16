@@ -4,25 +4,25 @@ Previous: [Opus 13 Highlights - Page 2](/Manual/release_history/opus13/page2.md)
 
 Adjustable spacing and indentation:
 
-\<WRAP indent\>![](/Manual/images/release_history/tree_spacing.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/tree_spacing.gif)  
 Tree roots can be re-ordered or turned off entirely:
 
-\<WRAP indent\>![](/Manual/images/release_history/tree_contentprefs.png)\</WRAP\>  
+  ![](/Manual/images/release_history/tree_contentprefs.png)  
 Cloud Storage folders can be moved to their own root:
 
-\<WRAP indent\>![](/Manual/images/release_history/tree_cloud.png)\</WRAP\>  
+  ![](/Manual/images/release_history/tree_cloud.png)  
 A new button closes all branches except the active one, while a preset system lets you save and restore which branches are open:
 
-\<WRAP indent\>![](/Manual/images/release_history/tree_colpreset.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/tree_colpreset.gif)  
 Branches can be pinned to prevent them ever closing:
 
-\<WRAP indent\>![](/Manual/images/release_history/tree_pin.png)\</WRAP\>  
+  ![](/Manual/images/release_history/tree_pin.png)  
 The inexplicable jumble Windows 11 added under Desktop is removed by default:
 
-\<WRAP indent\>![](/Manual/images/release_history/tree_win11clutter.jpg)\</WRAP\>  
+  ![](/Manual/images/release_history/tree_win11clutter.jpg)  
 Network servers are cached across restarts, and you can control which machines appear:
 
-\<WRAP indent\>![](/Manual/images/release_history/tree_network.png)\</WRAP\>  
+  ![](/Manual/images/release_history/tree_network.png)  
 
 ------------------------------------------------------------------------
 
@@ -30,16 +30,16 @@ Network servers are cached across restarts, and you can control which machines a
 
 Improved display of long names, and Find-As-You-Type highlights:
 
-\<WRAP indent\>![](/Manual/images/release_history/thumb_labels.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/thumb_labels.gif)  
 Choose from several thumbnail scaling and cropping modes:
 
-\<WRAP indent\>![](/Manual/images/release_history/thumb_scale.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/thumb_scale.gif)  
 Thumbnail size and scaling can be overridden per-folder:
 
-\<WRAP indent\>![](/Manual/images/release_history/thumb_perfolder.png)\</WRAP\>  
+  ![](/Manual/images/release_history/thumb_perfolder.png)  
 Folders can be given custom thumbnail styles:
 
-\<WRAP indent\>![](/Manual/images/release_history/thumb_stylebr.jpg)\</WRAP\> \<WRAP indent\>![](/Manual/images/release_history/thumb_styledef.png)\</WRAP\>  
+  ![](/Manual/images/release_history/thumb_stylebr.jpg)   ![](/Manual/images/release_history/thumb_styledef.png)  
 
 ------------------------------------------------------------------------
 
@@ -47,16 +47,16 @@ Folders can be given custom thumbnail styles:
 
 Locked tabs can be prevented from closing:
 
-\<WRAP indent\>![](/Manual/images/release_history/tabs_lock.png)\</WRAP\>  
+  ![](/Manual/images/release_history/tabs_lock.png)  
 The tab context menu can be edited:
 
-\<WRAP indent\>![](/Manual/images/release_history/tab_context.png)\</WRAP\>  
+  ![](/Manual/images/release_history/tab_context.png)  
 Push <kbd>Ctrl+Tab</kbd> to open the tab switcher:
 
-\<WRAP indent\>![](/Manual/images/release_history/tabs_switcher.png)\</WRAP\>  
+  ![](/Manual/images/release_history/tabs_switcher.png)  
 Both vertical and horizontal tab bars now scroll with the mouse wheel:
 
-\<WRAP indent\>![](/Manual/images/release_history/tabs_scroll.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/tabs_scroll.gif)  
 
 ------------------------------------------------------------------------
 
@@ -64,20 +64,20 @@ Both vertical and horizontal tab bars now scroll with the mouse wheel:
 
 Type <kbd>'</kbd> into the file display to search with Opus, or type <kbd>+</kbd> to search your machine with Everything:
 
-\<WRAP indent\>![](/Manual/images/release_history/fayt_everything.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/fayt_everything.gif)  
 Type <kbd>\]</kbd>, then part of a name, to quickly go to a folder from a configurable list of sources:
 
-\<WRAP indent\>![](/Manual/images/release_history/fayt_folders.png)\</WRAP\>  
+  ![](/Manual/images/release_history/fayt_folders.png)  
 When highlighting names in the current folder, <kbd>Ctrl+S</kbd> selects all matches. <kbd>F3</kbd> jumps to the next match.  
 Marks on the scrollbar indicate matches out of view:
 
-\<WRAP indent\>![](/Manual/images/release_history/fayt_scrollbar.png)\</WRAP\>  
+  ![](/Manual/images/release_history/fayt_scrollbar.png)  
 Type <kbd>\></kbd> to enter an ad-hoc Opus command. Pop-ups now help with command and argument names:
 
-\<WRAP indent\>![](/Manual/images/release_history/fayt_suggs.png)\</WRAP\>  
+  ![](/Manual/images/release_history/fayt_suggs.png)  
 Scripts can add custom FAYT modes and respond to what you type. Each can have its own key(s) and colors:
 
-\<WRAP indent\>![](/Manual/images/release_history/fayt_scripts.png)\</WRAP\>  
+  ![](/Manual/images/release_history/fayt_scripts.png)  
 
 ------------------------------------------------------------------------
 

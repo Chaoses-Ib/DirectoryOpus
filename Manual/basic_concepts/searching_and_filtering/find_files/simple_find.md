@@ -14,7 +14,7 @@ Search by filename. The options for **Name** are:
 
 - **Wildcards**: Enables [standard pattern matching](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) to search for names using wildcards.
 - **Regular expressions**: Enables [regular expressions](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.md) instead of standard wildcards.
-- **Any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with \<ib:inline-code\>`+`\</ib:inline-code\>, which means it **must** be present, and \<ib:inline-code\>`-`\</ib:inline-code\> which means it **must not** be present.
+- **Any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with `+`, which means it **must** be present, and `-` which means it **must not** be present.
 - **Ignore diacritics**: Ignores diacritics (accented characters).
 - **Case sensitive**: Makes the search case-sensitive (upper and lower-case letters will not be treated as the same).
 - **Partial match**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
@@ -29,7 +29,7 @@ The options for **Text** are mostly the same as for **Name**, with the addition 
 
 ##### Type
 
-Search for files or folders of a certain type. For example, instead of specifying \<ib:inline-code\>`*.bmp`\</ib:inline-code\> for the **Name** field, you can select **File Type**, **Bitmap Image** from the drop-downs to find bitmap files.
+Search for files or folders of a certain type. For example, instead of specifying `*.bmp` for the **Name** field, you can select **File Type**, **Bitmap Image** from the drop-downs to find bitmap files.
 
 - **All files and folders**: Search for all files or folders matching the other conditions.
 - **Files**: Search for only files.

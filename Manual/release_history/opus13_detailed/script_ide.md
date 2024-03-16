@@ -36,14 +36,14 @@
   - The minimum required version of the include file can also be specified.
   - The Script IDE lets you select include files for scripts using a GUI, taking care of most details for you.
 - Commands:
-  - \<ib:inline-code\>`Prefs INSTALLSCRIPT`\</ib:inline-code\>
-  - \<ib:inline-code\>`Prefs SCRIPTS`\</ib:inline-code\> -- Can open the Script Management dialog, select a script and (if applicable) open its configuration UI.
+  - `Prefs INSTALLSCRIPT`
+  - `Prefs SCRIPTS` -- Can open the Script Management dialog, select a script and (if applicable) open its configuration UI.
     - Script is specified by filename and usually uses a wildcard so it works whether the extension has ".txt" on the end or not.
     - The command editor can generate the proper command and wildcard for you.
-    - //<Example://> \<ib:inline-code\>`Prefs SCRIPTS=AlbumDoubleClick.vbs*`\</ib:inline-code\>
-  - \<ib:inline-code\>`Prefs SCRIPTEDIT`\</ib:inline-code\> -- Can open the Script IDE for a specified script.
-    - Same filename and wildcards as \<ib:inline-code\>`Prefs SCRIPTS`\</ib:inline-code\>, above.
-    - //<Example://> \<ib:inline-code\>`Prefs SCRIPTEDIT=AlbumDoubleClick.vbs*`\</ib:inline-code\>
+    - //<Example://> `Prefs SCRIPTS=AlbumDoubleClick.vbs*`
+  - `Prefs SCRIPTEDIT` -- Can open the Script IDE for a specified script.
+    - Same filename and wildcards as `Prefs SCRIPTS`, above.
+    - //<Example://> `Prefs SCRIPTEDIT=AlbumDoubleClick.vbs*`
 - Miscellaneous:
   - When creating a new script, there is now the option to create it as a script package. (Packages allow multiple scripts and other resources to be included in a single file.)
   - By default, the New Script dialog now creates template code for commands and columns using the newer (Opus 12) OnAddCommands / OnAddColumns syntax.

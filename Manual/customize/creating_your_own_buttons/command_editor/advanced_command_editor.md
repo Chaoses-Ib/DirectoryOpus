@@ -31,9 +31,9 @@ The multi-line text field is where you enter the instructions that make up the c
 - **Browse**: This button displays a standard file browser dialog letting you locate an external program to run. The full path to the program will be inserted into the function.
 - **Modifiers**: This displays a drop-down list (with descriptions) of the various [command modifiers](../command_modifiers.md) that you can use to change the behavior of commands.
 
-Lines beginning with \<ib:inline-code\>`//`\</ib:inline-code\> are ignored, allowing you to put comments in your commands. The \<ib:inline-code\>`//`\</ib:inline-code\> must be at the very start of the line, with no spaces or anything else before it, for the line to become a comment.
+Lines beginning with `//` are ignored, allowing you to put comments in your commands. The `//` must be at the very start of the line, with no spaces or anything else before it, for the line to become a comment.
 
-Complex commands can be split over multiple lines. When a \<ib:inline-code\>`[[`\</ib:inline-code\> appears at the beginning of a line it indicates that what comes next is part of the previous command. For example, the following lines are interpreted as a single command:
+Complex commands can be split over multiple lines. When a `[[` appears at the beginning of a line it indicates that what comes next is part of the previous command. For example, the following lines are interpreted as a single command:
 
     Find IN C:\
     [[QUERY *.jpg]]

@@ -18,14 +18,14 @@
 - Home Button:
   - (Configured via Preferences / Frequently Used Paths / Home Directory, or right-click the button.)
   - The default toolbar now includes a Home button, similar to the one in web browsers.
-  - Initially, the Home button goes to the first folder which the current tab opened (like the \<ib:inline-code\>`Go INITIALDIR`\</ib:inline-code\> command).
+  - Initially, the Home button goes to the first folder which the current tab opened (like the `Go INITIALDIR` command).
   - You can make the button go to a different folder via its right-click context menu, or through Preferences.
   - (Of course, you can add buttons for as many folders as you want there, or anywhere else on your toolbars. The Home button makes things easier for people who don't know how to do that.)
   - You can drop files on the button to sent them to your Home folder, and middle-click it to open the Home folder in a new tab.
 - Commands:
-  - \<ib:inline-code\>`Go HOMEDIR`\</ib:inline-code\> is the same as clicking the Home button.
-  - \<ib:inline-code\>`Go HOMEDIR=update`\</ib:inline-code\> configures the Home button to go to the current folder from then on. Similar to editing it via Preferences or the button's context menu.
-  - \<ib:inline-code\>`Go HOMEDIR=reset`\</ib:inline-code\> reverts the Home button to going to the current tab's initial folder. Also available in the button's context menu.
+  - `Go HOMEDIR` is the same as clicking the Home button.
+  - `Go HOMEDIR=update` configures the Home button to go to the current folder from then on. Similar to editing it via Preferences or the button's context menu.
+  - `Go HOMEDIR=reset` reverts the Home button to going to the current tab's initial folder. Also available in the button's context menu.
 
 ------------------------------------------------------------------------
 

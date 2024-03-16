@@ -47,7 +47,7 @@ In this screenshot, the list has been grouped by last modified date. Each group 
 
 Unlike sorting, the column you group by doesn't have to be currently displayed - although the grouping context menus described below will only display those columns that are currently enabled.
 
-To group by a non-displayed column you need to use the [Folder Format](folder_options/RAEDME.md) dialog, or the internal \<ib:inline-code\>`Set GROUPBY`\</ib:inline-code\> command.
+To group by a non-displayed column you need to use the [Folder Format](folder_options/RAEDME.md) dialog, or the internal `Set GROUPBY` command.
 
 ##### Grouping via the column header
 

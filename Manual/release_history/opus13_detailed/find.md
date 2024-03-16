@@ -19,7 +19,7 @@
     - The Find Panel's configuration will be stored as part of the collection.
     - Creates a file collection which automatically re-runs the Find each time you navigate to it, and/or on refresh.
   - Stored Queries now work with Everything and Opus Find.
-    - Stored queries that use Opus Find can also supply a text filter (see below) definition by prefixing it with a & character, or Evaluator code by prefixing with \<ib:inline-code\>`=`\</ib:inline-code\>.
+    - Stored queries that use Opus Find can also supply a text filter (see below) definition by prefixing it with a & character, or Evaluator code by prefixing with `=`.
   - "Show Results" now lets you send results to a new tab on the left or right (not just source or destination).
   - "Automatically shrink" option can now be found by right-clicking the Utility Panel's Shrink button (next to the close button).
   - "Find Results" now has its own folder format, distinct from the more general "Collection" format.
@@ -32,10 +32,10 @@
     - Find Zero-Byte Folders -- Finds folders which only contain empty files or other empty folders.
 - Exclude folders:
   - New "Exclude" field lets you exclude files and folders. Excludes Recycle Bin and System Volume Information folders by default. Supports multiple paths, wildcards and regex. Syntax options:
-    - \<ib:inline-code\>`regex:xxxx`\</ib:inline-code\> - Regular expression must match to exclude an item.
-    - \<ib:inline-code\>`wild:xxxx`\</ib:inline-code\> - Standard wildcard must match to exclude an item.\<WRAP\>
+    - `regex:xxxx` - Regular expression must match to exclude an item.
+    - `wild:xxxx` - Standard wildcard must match to exclude an item.\<WRAP\>
 
-(Wildcards are auto-detected without the \<ib:inline-code\>`wild:`\</ib:inline-code\> prefix if using \<ib:inline-code\>`*?|`\</ib:inline-code\> characters. Other wildcard characters which are valid path characters require an explicit \<ib:inline-code\>`wild:`\</ib:inline-code\> prefix to be interpreted as such.)\</WRAP\>
+(Wildcards are auto-detected without the `wild:` prefix if using `*?|` characters. Other wildcard characters which are valid path characters require an explicit `wild:` prefix to be interpreted as such.)\</WRAP\>
 
         * <ib:inline-code><code>C:\Temp</code></ib:inline-code> - Fully qualified path; matches path itself and contents.
         * <ib:inline-code><code>C:\Temp\*</code></ib:inline-code> - Fully qualified path, with wildcard; matches contents only.

@@ -6,7 +6,7 @@ The first time the specified timer is measured it is started.
 
 If called with just a single argument, the return value is the number of milliseconds since the timer was started.
 
-If the optional *time* argument is given, the \<ib:inline-code\>`Elapsed()`\</ib:inline-code\> function tests whether the specified number of milliseconds has elapsed, and the function returns either **true** or **false**. Note that in this mode, the function also returns **true** when the timer is started for the first time.
+If the optional *time* argument is given, the `Elapsed()` function tests whether the specified number of milliseconds has elapsed, and the function returns either **true** or **false**. Note that in this mode, the function also returns **true** when the timer is started for the first time.
 
 If the *reset* argument is set to **true**, the timer will be reset to zero if the specified time has elapsed.
 

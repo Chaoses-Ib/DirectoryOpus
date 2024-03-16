@@ -54,7 +54,7 @@ In power mode, mouse and keyboard selection works slightly differently by defaul
 The default behaviour of power mode is for file selections to be persistent (that is, files do not deselect by themselves - you have to deselect them manually). In other file display modes you can simply click on an empty area to deselect all files, but in power mode:
 
 - You can either press <kbd>Ctrl+A</kbd> followed by <kbd>Ctrl+I</kbd> (select all, followed by invert selection) to deselect all files, or
-- Use **[Customize mode](/Manual/customize/RAEDME.md)** to add the \<ib:inline-code\>`Select NONE`\</ib:inline-code\> command to your toolbars (e.g. in the **Edit** menu). This is not included in the default toolbar set, but you may want to add it manually and assign a hotkey to it if you are going to be using power mode.
+- Use **[Customize mode](/Manual/customize/RAEDME.md)** to add the `Select NONE` command to your toolbars (e.g. in the **Edit** menu). This is not included in the default toolbar set, but you may want to add it manually and assign a hotkey to it if you are going to be using power mode.
 
 More:  
 [Single-click mode](/Manual/basic_concepts/selecting_files/selecting_with_the_mouse_and_keyboard/single-click_mode.md)  

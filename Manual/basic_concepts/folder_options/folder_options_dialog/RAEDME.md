@@ -22,12 +22,10 @@ When you click **Save** the *Save Folder Format* dialog appears.
 
 There are three main options when saving a format:
 
-- **Save format for a folder**: The format will be saved for one specific folder (by default, the one currently displayed in the file display - but you can use the up button to save the format for a parent of the current folder if desired).\<WRAP\>
+- **Save format for a folder**: The format will be saved for one specific folder (by default, the one currently displayed in the file display - but you can use the up button to save the format for a parent of the current folder if desired).
+  If you turn on the **Replace this folder’s format…** option ,  Opus will search through all your saved Lister layouts, saved folder tabs (and styles), and any currently open folder tabs for this folder, and update their format as well. The **Save for all sub-folders** option causes the **Use as the default format for all sub-folders** option to be turned on in the saved format. 
 
-If you turn on the **Replace this folder’s format…** option ,  Opus will search through all your saved Lister layouts, saved folder tabs (and styles), and any currently open folder tabs for this folder, and update their format as well. The **Save for all sub-folders** option causes the **Use as the default format for all sub-folders** option to be turned on in the saved format. \</WRAP\>
-
-- **Save format for all folders**: The format will be saved as the new *User Default* format, which is used for a folder that doesn’t have a specific folder format saved for it.\<WRAP\>
-
-If you turn on the **Clear any saved folder formats** option, and folders for which you’ve previously saved a specific format will be reset. And the **Replace the folder format…** option causes any saved layouts, tabs and styles to also have their formats reset.\</WRAP\>
+- **Save format for all folders**: The format will be saved as the new *User Default* format, which is used for a folder that doesn’t have a specific folder format saved for it.
+  If you turn on the **Clear any saved folder formats** option, and folders for which you’ve previously saved a specific format will be reset. And the **Replace the folder format…** option causes any saved layouts, tabs and styles to also have their formats reset.
 
 - **Save a favorite format**: This lets you save the format as a favorite format (either a new one, or over the top of an existing favorite).

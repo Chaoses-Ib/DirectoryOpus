@@ -13,14 +13,14 @@
   - New option, "Synchronize everything (including hidden files)": Turns on "Show everything" mode to ensure nothing is missed due to filters when synching.
   - New "Size (smaller)" and "Size (larger)" comparison modes.
   - Commands:
-    - \<ib:inline-code\>`Find SYNC`\</ib:inline-code\> -- Triggers a synchronize comparison without opening the panel:
-      - \<ib:inline-code\>`Copy SYNC`\</ib:inline-code\> -- Perform the actual data synchronization after the comparison.
-      - \<ib:inline-code\>`Set CLEARSYNC`\</ib:inline-code\> -- Exit "sync mode" when finished.
-    - \<ib:inline-code\>`Find SYNC RUNINPANEL`\</ib:inline-code\> lets a single command configure the panel and then start the operation.
-    - \<ib:inline-code\>`Find SYNC COMPARE=smaller`\</ib:inline-code\>
-    - \<ib:inline-code\>`Find SYNC COMPARE=larger`\</ib:inline-code\>
-    - \<ib:inline-code\>`Find SYNC PRESET="My Preset" NOAUTORUN`\</ib:inline-code\> -- Similar to Find panel. Use !list as preset name to generate a list of presets.
-    - \<ib:inline-code\>`Set Utility=Sync PRESET="My Preset"`\</ib:inline-code\> -- Similar to Find panel.
+    - `Find SYNC` -- Triggers a synchronize comparison without opening the panel:
+      - `Copy SYNC` -- Perform the actual data synchronization after the comparison.
+      - `Set CLEARSYNC` -- Exit "sync mode" when finished.
+    - `Find SYNC RUNINPANEL` lets a single command configure the panel and then start the operation.
+    - `Find SYNC COMPARE=smaller`
+    - `Find SYNC COMPARE=larger`
+    - `Find SYNC PRESET="My Preset" NOAUTORUN` -- Similar to Find panel. Use !list as preset name to generate a list of presets.
+    - `Set Utility=Sync PRESET="My Preset"` -- Similar to Find panel.
 
 ------------------------------------------------------------------------
 

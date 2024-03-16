@@ -12,8 +12,8 @@
   - With multiple encodings, the output is converted to UTF-8.
 - Option to replicate first line of original file in all output files (e.g. for CSV data).
 - Commands:
-  - \<ib:inline-code\>`Split LINES SIZE=n`\</ib:inline-code\> -- Split file into *n* line chunks.
-  - \<ib:inline-code\>`Join CONVERT`\</ib:inline-code\> -- Specify encoding/conversion mode, like drop-down in the UI.
+  - `Split LINES SIZE=n` -- Split file into *n* line chunks.
+  - `Join CONVERT` -- Specify encoding/conversion mode, like drop-down in the UI.
 
 ------------------------------------------------------------------------
 

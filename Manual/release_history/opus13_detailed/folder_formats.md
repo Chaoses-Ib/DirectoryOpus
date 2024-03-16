@@ -25,11 +25,11 @@
     - Preferences / Folder Tabs / Edge Colors: Per-folder tab accent colors.
     - Preferences / Labels / Label Assignments / In Specific Folders: Per-folder labels (e.g. highlight files matching a wildcard, only in special folders).
     - Preferences / Toolbars / Folder Toolbars: Per-folder toolbars.
-  - *Command:* \<ib:inline-code\>`Set SORTNEWFILES`\</ib:inline-code\> -- Changes whether new file are sorted in the current folder.
+  - *Command:* `Set SORTNEWFILES` -- Changes whether new file are sorted in the current folder.
   - Scripting:
-    - \<ib:inline-code\>`Format.sort_new_files`\</ib:inline-code\> property (values: "on", "off", "default").
-    - \<ib:inline-code\>`Format.checkboxes`\</ib:inline-code\> property.
-    - \<ib:inline-code\>`Format.thumb_size`\</ib:inline-code\> property.
+    - `Format.sort_new_files` property (values: "on", "off", "default").
+    - `Format.checkboxes` property.
+    - `Format.thumb_size` property.
 - Content Type formats:
   - Folder Formats list in Preferences now displays the threshold (percentage of files that have to match) for each Content Type format.
   - Clicking the threshold value opens a dialog for editing it, instead of it being hidden away in the Folder Formats dialog.
@@ -40,11 +40,11 @@
   - Auto-sized columns can now be given a minimum (as well as a maximum) size.
   - When grouping by a column, groups can now be ordered by member count (groups with the most members will be shown first).
   - Commands:
-    - \<ib:inline-code\>`Set COLUMNSADD`\</ib:inline-code\> and similar commands allow min to be specified (following max).
-    - \<ib:inline-code\>`Set GROUPORDER`\</ib:inline-code\> replaces \<ib:inline-code\>`Set GROUPREVERSE`\</ib:inline-code\> command (old command still works for compatibility).
+    - `Set COLUMNSADD` and similar commands allow min to be specified (following max).
+    - `Set GROUPORDER` replaces `Set GROUPREVERSE` command (old command still works for compatibility).
   - Scripting:
-    - \<ib:inline-code\>`Column.min`\</ib:inline-code\> property.
-    - \<ib:inline-code\>`Format.group_order`\</ib:inline-code\> property. (\<ib:inline-code\>`Format.group_reverse`\</ib:inline-code\> still works for compatibility.)
+    - `Column.min` property.
+    - `Format.group_order` property. (`Format.group_reverse` still works for compatibility.)
 - Filtering:
   - Added format option to filter out reparse points (e.g. all junctions can be hidden).
   - Hide/show wildcard patterns can now be multi-line, making it easier to list multiple filenames or specify multiple wildcards without having to combine them into a single pattern.
@@ -64,7 +64,7 @@
 - Terminology:
   - Previously, we used "Folder Options" instead of "Folder Format" in some places, for historical reasons. We now use "Folder Format" everywhere.
   - In the default toolbars, Folder \> Folder Options is renamed Folder \> Folder Format.
-  - *Command:* \<ib:inline-code\>`Properties FOLDERFORMAT`\</ib:inline-code\> replaces \<ib:inline-code\>`Properties FOLDEROPTIONS`\</ib:inline-code\> (old name still works, for compatibility).
+  - *Command:* `Properties FOLDERFORMAT` replaces `Properties FOLDEROPTIONS` (old name still works, for compatibility).
 
 ------------------------------------------------------------------------
 

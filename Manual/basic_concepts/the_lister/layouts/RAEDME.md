@@ -47,7 +47,7 @@ You can also create shortcuts to layouts by dragging the layout from the list on
 
 ##### Options when you load a layout
 
-Each layout has a set of options that controls how it's loaded by default (the default options can be overridden using the \<ib:inline-code\>`Prefs`\</ib:inline-code\> internal command).
+Each layout has a set of options that controls how it's loaded by default (the default options can be overridden using the `Prefs` internal command).
 
 - **Close all existing Listers when loading this layout**: Any Listers already open will be closed when the Listers in the layout are opened.
   - **Close Listers on all virtual desktops**: Normally Listers on other desktops are left alone; this will close them too.
@@ -55,7 +55,7 @@ Each layout has a set of options that controls how it's loaded by default (the d
 - **Use toolbars saved within this layout**: Each Lister will open with the [toolbars](/Manual/basic_concepts/the_lister/toolbars/RAEDME.md) that were open when it was saved to the layout, rather than the default toolbar set.
 - **Open layout relative to the monitor the mouse is currently on**: If you have multiple monitors, normally each Lister is restored to the monitor it was on when the layout was saved. This makes them re-open on the monitor the mouse cursor is currently on.
 - **Restore each Lister to its original virtual desktop**: If turned off, every Lister in the layout will open on the current desktop.
-- **Hide this layout from layout lists**: Lets you have a layout that you can load using the internal \<ib:inline-code\>`Prefs LAYOUT`\</ib:inline-code\> command, but that doesn't show up in the list in the **Settings / Lister Layouts** menu or desktop context menu.
+- **Hide this layout from layout lists**: Lets you have a layout that you can load using the internal `Prefs LAYOUT` command, but that doesn't show up in the list in the **Settings / Lister Layouts** menu or desktop context menu.
 
 The [Layouts](/Manual/preferences/preferences_categories/layouts_and_styles/layouts.md) page in Preferences shows you a list of your layouts. In the list, layouts are shown along with a code that represents the default options in force when that layout is loaded.
 

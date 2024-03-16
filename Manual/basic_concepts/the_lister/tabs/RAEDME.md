@@ -14,12 +14,12 @@ Folder tabs are enabled by default - even if only one tab is actually open, the 
 
 There are a number of ways to open a new tab.
 
-- Click the \<ib:inline-code\>`+`\</ib:inline-code\> button shown to the right of the last tab.
-- Double-click an empty part of the tab bar (to the right of the \<ib:inline-code\>`+`\</ib:inline-code\> button).
+- Click the `+` button shown to the right of the last tab.
+- Double-click an empty part of the tab bar (to the right of the `+` button).
 - Right-click on a folder and choose **Open in new folder tab** from the context menu.
 - Hold the <kbd>Alt</kbd> key down when you double-click a folder to open it in a new tab.
 
-You can configure these from the [Folder Tabs / Folder Tab Bar](/Manual/preferences/preferences_categories/folder_tabs/folder_tab_bar.md) Preferences page (e.g. you can turn off the \<ib:inline-code\>`+`\</ib:inline-code\> button, or change which folder opens by default).
+You can configure these from the [Folder Tabs / Folder Tab Bar](/Manual/preferences/preferences_categories/folder_tabs/folder_tab_bar.md) Preferences page (e.g. you can turn off the `+` button, or change which folder opens by default).
 
 The <kbd>Alt</kbd> double-click behavior is configured via the [File Types](/Manual/file_types/RAEDME.md) system.
 
@@ -67,9 +67,8 @@ You can manipulate a folder tab with the mouse in the following ways:
 
 <img src="/media/13/tab_context_menu.png" class="align-right" data-query="?nolink" />Right-click a folder tab to see its context menu. Note that the commands in the menu can vary depending on whether you're in single or dual-display mode. The menu can also be edited via the [Customize](/Manual/customize/RAEDME.md) system.
 
-- **Groups**: This sub-menu lets you access any [tab groups](/Manual/basic_concepts/the_lister/tabs/tab_groups.md) you have defined. You can also use this to save the current set of tabs as a new group.\<WRAP\>
-
-When selecting a group from this menu you can hold down either the <kbd>Shift</kbd> or the <kbd>Ctrl</kbd> keys to override the tab group's **Close existing Folder Tabs** setting; <kbd>Shift</kbd> means existing tabs will not be closed, <kbd>Ctrl</kbd> means they will.\</WRAP\>
+- **Groups**: This sub-menu lets you access any [tab groups](/Manual/basic_concepts/the_lister/tabs/tab_groups.md) you have defined. You can also use this to save the current set of tabs as a new group.
+  When selecting a group from this menu you can hold down either the <kbd>Shift</kbd> or the <kbd>Ctrl</kbd> keys to override the tab group's **Close existing Folder Tabs** setting; <kbd>Shift</kbd> means existing tabs will not be closed, <kbd>Ctrl</kbd> means they will.
 
 - **Open New Tab**: Opens a new tab using the settings in Preferences.
 - **Duplicate Tab**: Opens a duplicate of the current tab.
@@ -100,11 +99,11 @@ When you customise a tab's label (by renaming it), you can use several special "
 | **%N**     | name of the current folder                                                          |
 | **%R**     | drive root of the current folder                                                    |
 | **%%%%%%** | insert a literal % character                                                        |
-| **%!**     | hide empty blocks within \<ib:inline-code\>`%!...%!`\</ib:inline-code\> (see below) |
+| **%!**     | hide empty blocks within `%!...%!` (see below) |
 
-The \<ib:inline-code\>`%!`\</ib:inline-code\> code is special in that it should be used in pairs around the things you want to hide. They will be hidden if all tokens within the block expand to empty values.
+The `%!` code is special in that it should be used in pairs around the things you want to hide. They will be hidden if all tokens within the block expand to empty values.
 
-Consider \<ib:inline-code\>`%!(%R) %!%N`\</ib:inline-code\>, for example. If \<ib:inline-code\>`%R`\</ib:inline-code\> expands to nothing and \<ib:inline-code\>`%P`\</ib:inline-code\> expands to *My Folder* then you will get just *My Folder* instead of *"() My Folder"*.
+Consider `%!(%R) %!%N`, for example. If `%R` expands to nothing and `%P` expands to *My Folder* then you will get just *My Folder* instead of *"() My Folder"*.
 
 If you need something even more custom or dynamic, the labels for individual tabs can also be overridden via commands and scripts.
 
@@ -132,7 +131,7 @@ The different ways a tab can be locked are:
 
 - **![](/Manual/images/media/13/tab_unlocked.png) Unlocked**: The tab is not locked, meaning you can freely navigate away from the initial folder. 
 - **![](/Manual/images/media/13/tab_-_locked.png) Locked**: The tab is locked. Attempts to navigate away from the initial folder (that is, the folder that was displayed when you locked the tab) will cause a new tab to open, leaving the original tab unchanged.
-- **![](/Manual/images/media/13/tab_-_allow.png) Locked (allow folder changes)**: The tab is locked, but you can navigate away from the initial folder. If you click on the tab when it is already the active tab, the original folder will be restored. You can have the original folder restored as soon as you change to another tab via a setting in [Folder Tab / Locking](/Manual/preferences/preferences_categories/folder_tabs/locking.md). (You can also run \<ib:inline-code\>`Go TABSELECT=home`\</ib:inline-code\> to restore the folder via button or hotkey.)
+- **![](/Manual/images/media/13/tab_-_allow.png) Locked (allow folder changes)**: The tab is locked, but you can navigate away from the initial folder. If you click on the tab when it is already the active tab, the original folder will be restored. You can have the original folder restored as soon as you change to another tab via a setting in [Folder Tab / Locking](/Manual/preferences/preferences_categories/folder_tabs/locking.md). (You can also run `Go TABSELECT=home` to restore the folder via button or hotkey.)
 - **![](/Manual/images/media/13/tab_-_reuse.png) Locked (reuse unlocked tab)**: The tab is locked. Attempts to navigate away from the initial folder will reuse an existing unlocked tab if one exists, otherwise a new tab will be opened.
 
 Locked tabs may be protected against accidental closure via a setting in [Folder Tab / Locking](/Manual/preferences/preferences_categories/folder_tabs/locking.md).

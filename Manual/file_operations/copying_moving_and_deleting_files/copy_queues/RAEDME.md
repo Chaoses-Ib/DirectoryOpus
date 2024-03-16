@@ -28,7 +28,7 @@ There is no interaction between the rules. Ultimately, each copy or move is assi
 
 Normally Opus manages the copy queue automatically (as described above), but you can use the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command to manage queuing manually if desired. Using the **QUEUE** argument you can create a queue with a specified name (this name will then be shown in the title bar of the progress dialog).
 
-For example, the command \<ib:inline-code\>`Copy QUEUE=MyQueue`\</ib:inline-code\> will copy selected files using the queue *MyQueue*. You could then configure a button or hotkey to copy using your named queue when a particular key was held down (e.g. **Shift**) - that way you could force the queue to be used when desired, even if Opus would ordinarily not queue the operation.
+For example, the command `Copy QUEUE=MyQueue` will copy selected files using the queue *MyQueue*. You could then configure a button or hotkey to copy using your named queue when a particular key was held down (e.g. **Shift**) - that way you could force the queue to be used when desired, even if Opus would ordinarily not queue the operation.
 
 See the description of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command for more details about using the **QUEUE** argument, and the [Customize](/Manual/customize/RAEDME.md) section for information on how to create your own buttons or hotkeys.
 

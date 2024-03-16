@@ -37,8 +37,8 @@
   - Added "Freeze Columns To Here" column header context menu.
   - Note: While a column is frozen, its position cannot be moved via drag & drop. However, it can still be resized.
   - Commands:
-    - \<ib:inline-code\>`Set COLUMNSFREEZE`\</ib:inline-code\> command lets frozen columns be turned on or off via buttons/hotkeys/etc.
-    - When adding columns with \<ib:inline-code\>`Set COLUMNSADD`\</ib:inline-code\> etc., an additional parameter "z" can be specified to freeze the new column (and any before it). E.g. \<ib:inline-code\>`Set COLUMNSADD=attr(*,*,*,z)`\</ib:inline-code\>
+    - `Set COLUMNSFREEZE` command lets frozen columns be turned on or off via buttons/hotkeys/etc.
+    - When adding columns with `Set COLUMNSADD` etc., an additional parameter "z" can be specified to freeze the new column (and any before it). E.g. `Set COLUMNSADD=attr(*,*,*,z)`
   - *Scripting:* Format.frozen property returns number of frozen columns.
 - Shell Properties:
   - (Configured via Preferences / File Display Columns / Shell Properties.)
@@ -58,26 +58,26 @@
   - Examples are built using simple Evaluator code which you can adapt to group columns in different ways.
   - Folder Formats can now specify a grouping scheme, e.g. to group particular folders in a special way.
   - Commands:
-    - \<ib:inline-code\>`Set GROUPSCHEME=...`\</ib:inline-code\> command can select a specific grouping scheme. With no parameters, it displays a menu of grouping modes.
-    - Added \<ib:inline-code\>`%groupscheme%`\</ib:inline-code\> variable to column header context menu processing.
+    - `Set GROUPSCHEME=...` command can select a specific grouping scheme. With no parameters, it displays a menu of grouping modes.
+    - Added `%groupscheme%` variable to column header context menu processing.
   - *Scripting:* Added "group_scheme" property to Tab Format script object, indicating the current grouping scheme if any.
 - Grouping:
   - *Folder Formats:* Grouping options moved to a dedicated page.
-  - *Commands:* New \<ib:inline-code\>`Set GROUPCOMBINE`\</ib:inline-code\> replaces older \<ib:inline-code\>`Set COMBINESINGLEGROUPS`\</ib:inline-code\> and \<ib:inline-code\>`Set GROUPINDIVIDUAL`\</ib:inline-code\>. (Old args still work, but are hidden.)
-  - *Scripting:* \<ib:inline-code\>`Tab.format.group_combine`\</ib:inline-code\> property returns group-combine setting. (Old \<ib:inline-code\>`group_individual`\</ib:inline-code\> property still works but is deprecated.)
+  - *Commands:* New `Set GROUPCOMBINE` replaces older `Set COMBINESINGLEGROUPS` and `Set GROUPINDIVIDUAL`. (Old args still work, but are hidden.)
+  - *Scripting:* `Tab.format.group_combine` property returns group-combine setting. (Old `group_individual` property still works but is deprecated.)
 - Context menu variables:
   - These variables can be used by commands in the Column Header context menu.
-  - \<ib:inline-code\>`%header%`\</ib:inline-code\> -- ID of column which was right-clicked. -1 if none (e.g. right-click space after the last column).
-  - \<ib:inline-code\>`%headerindex%`\</ib:inline-code\> -- Position of header item which was right-clicked.
-  - \<ib:inline-code\>`%headerinsert%`\</ib:inline-code\> -- Insertion point. Similar to %headerindex%, but +1 if the click was in the right half of the item.
-  - \<ib:inline-code\>`%headeritem%`\</ib:inline-code\> -- Deprecated. The same as %headerinsert%, but the name is confusing. Kept to avoid breaking old configs.
-  - \<ib:inline-code\>`%headername%`\</ib:inline-code\> -- Display name of column which was clicked. Translated into different languages.
-  - \<ib:inline-code\>`%headerkey%`\</ib:inline-code\> -- Keyword of column which was clicked. Always in English, and can be passed to commands.
-  - \<ib:inline-code\>`%group%`\</ib:inline-code\> -- ID of column the file display is grouping by. -1 if none.
-  - \<ib:inline-code\>`%groupname%`\</ib:inline-code\> -- Display name of column the file display is grouping by. Translated.
-  - \<ib:inline-code\>`%groupkey%`\</ib:inline-code\> -- Keyword of column the file display is grouping by. Always English.
-  - \<ib:inline-code\>`%groupscheme%`\</ib:inline-code\> -- Keyword of current grouping scheme.
-  - \<ib:inline-code\>`%frozenfields%`\</ib:inline-code\> -- Number of frozen columns. 0 if none.
+  - `%header%` -- ID of column which was right-clicked. -1 if none (e.g. right-click space after the last column).
+  - `%headerindex%` -- Position of header item which was right-clicked.
+  - `%headerinsert%` -- Insertion point. Similar to %headerindex%, but +1 if the click was in the right half of the item.
+  - `%headeritem%` -- Deprecated. The same as %headerinsert%, but the name is confusing. Kept to avoid breaking old configs.
+  - `%headername%` -- Display name of column which was clicked. Translated into different languages.
+  - `%headerkey%` -- Keyword of column which was clicked. Always in English, and can be passed to commands.
+  - `%group%` -- ID of column the file display is grouping by. -1 if none.
+  - `%groupname%` -- Display name of column the file display is grouping by. Translated.
+  - `%groupkey%` -- Keyword of column the file display is grouping by. Always English.
+  - `%groupscheme%` -- Keyword of current grouping scheme.
+  - `%frozenfields%` -- Number of frozen columns. 0 if none.
 
 ------------------------------------------------------------------------
 

@@ -37,6 +37,6 @@ You can use several special "tokens" in the title string to insert various piece
 | **%%%%%%** | insert a literal % character                                                                         |
 | **%!**     | hide empty blocks within %!...%! (see below)                                                         |
 
-The \<ib:inline-code\>`%!`\</ib:inline-code\> code is special in that it should be used in pairs around the things you want to hide. They will be hidden if all tokens within the block expand to empty values.
+The `%!` code is special in that it should be used in pairs around the things you want to hide. They will be hidden if all tokens within the block expand to empty values.
 
-Consider \<ib:inline-code\>`%!Dimensions: %W x %H%!`\</ib:inline-code\>, for example: If \<ib:inline-code\>`%W`\</ib:inline-code\> and \<ib:inline-code\>`%H`\</ib:inline-code\> (width and height) are unavailable (e.g. because the viewer isn't displaying an image) then this will output nothing at all instead of a meaningless *"Dimensions: 0 x 0"*.
+Consider `%!Dimensions: %W x %H%!`, for example: If `%W` and `%H` (width and height) are unavailable (e.g. because the viewer isn't displaying an image) then this will output nothing at all instead of a meaningless *"Dimensions: 0 x 0"*.

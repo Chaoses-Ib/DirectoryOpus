@@ -7,7 +7,7 @@
 - Can set the default view mode and file display columns, which many had trouble with in the past.
 - Can also set the window size and which panels and toolbars are on.
 - You can choose which elements to save.
-- *Command:* \<ib:inline-code\>`Prefs SETLISTERDEFAULTS`\</ib:inline-code\> -- Opens the new UI. (Old \<ib:inline-code\>`Prefs SETDEFAULTLISTER`\</ib:inline-code\> still works, for compatibility.)
+- *Command:* `Prefs SETLISTERDEFAULTS` -- Opens the new UI. (Old `Prefs SETDEFAULTLISTER` still works, for compatibility.)
 
 ------------------------------------------------------------------------
 

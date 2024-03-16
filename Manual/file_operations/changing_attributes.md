@@ -65,9 +65,8 @@ If a folder is set as encrypted then all new files created in that folder will 
 
 The **Attributes** section of the dialog lets you modify attributes in two ways:
 
-- **Change attributes**: Select this option if you want to specify the absolute attributes the files are to have.\<WRAP\>
-
-Click the attributes in the list to toggle their checkmarks on or off. The file's existing attributes will be replaced with the new set of attributes you select.\</WRAP\>
+- **Change attributes**: Select this option if you want to specify the absolute attributes the files are to have.
+  Click the attributes in the list to toggle their checkmarks on or off. The file's existing attributes will be replaced with the new set of attributes you select.
 
 - **Turn on** and **Turn off**: Select either or both of these options if you want to turn specific attributes on and/or off while leaving others unchanged.
 

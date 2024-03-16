@@ -8,11 +8,11 @@ The default settings for these events are:
 
 ##### Left mouse button
 
-- **Default**: \<ib:inline-code\>`Go`\</ib:inline-code\>. Reads the selected folder into the file display currently associated with that tree.
-- <kbd>Alt</kbd>: \<ib:inline-code\>`Go NEWTAB`\</ib:inline-code\>. Reads the selected folder into a new tab.
-- <kbd>Ctrl</kbd>: \<ib:inline-code\>`Go OPENINDUAL`\</ib:inline-code\>. Reads the selected folder into the dual display - the file display **not** currently associated with the tree. If the tree isn't currently in dual display mode it will be put into that state automatically.
+- **Default**: `Go`. Reads the selected folder into the file display currently associated with that tree.
+- <kbd>Alt</kbd>: `Go NEWTAB`. Reads the selected folder into a new tab.
+- <kbd>Ctrl</kbd>: `Go OPENINDUAL`. Reads the selected folder into the dual display - the file display **not** currently associated with the tree. If the tree isn't currently in dual display mode it will be put into that state automatically.
 
 ##### Middle mouse button
 
-- **Default**: \<ib:inline-code\>`Go NEWTAB`\</ib:inline-code\>. Reads the selected folder into a new tab. 
-- <kbd>Ctrl</kbd>: \<ib:inline-code\>`Go NEWTAB OPENINDUAL`\</ib:inline-code\>. Reads the selected folder into a new tab in the other file display.
+- **Default**: `Go NEWTAB`. Reads the selected folder into a new tab. 
+- <kbd>Ctrl</kbd>: `Go NEWTAB OPENINDUAL`. Reads the selected folder into a new tab in the other file display.

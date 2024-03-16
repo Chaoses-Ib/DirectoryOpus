@@ -4,7 +4,7 @@ Previous: [Opus 13 Highlights - Page 1](/Manual/release_history/opus13/page1.md)
 
 Open sub-folders and work on multiple levels at once!
 
-\<WRAP indent\>![](/Manual/images/release_history/expandable.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/expandable.gif)  
 
 ------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ Open sub-folders and work on multiple levels at once!
 
 Like a web browser. Drag to make shortcuts. Middle-click to open in a new tab:
 
-\<WRAP indent\>![](/Manual/images/release_history/favebardrag.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/favebardrag.gif)  
 
 ------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Like a web browser. Drag to make shortcuts. Middle-click to open in a new tab:
 
 Automatically remember changes to how folders are displayed:
 
-\<WRAP indent\>![](/Manual/images/release_history/autoformats.png)\</WRAP\>  
+  ![](/Manual/images/release_history/autoformats.png)  
 
 ------------------------------------------------------------------------
 
@@ -28,11 +28,11 @@ Automatically remember changes to how folders are displayed:
 
 Define two folder paths (or regular expressions)...
 
-\<WRAP indent\>![](/Manual/images/release_history/pairedfoldercfg.png)\</WRAP\>
+  ![](/Manual/images/release_history/pairedfoldercfg.png)
 
 ...then automatically open one from the other:
 
-\<WRAP indent\>![](/Manual/images/release_history/pairedfolders.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/pairedfolders.gif)  
 
 ------------------------------------------------------------------------
 
@@ -40,10 +40,10 @@ Define two folder paths (or regular expressions)...
 
 Status bar can show selected extension counts:
 
-\<WRAP indent\>![](/Manual/images/release_history/selsum.png)\</WRAP\>  
+  ![](/Manual/images/release_history/selsum.png)  
 Click them for an interactive pie chart:
 
-\<WRAP indent\>![](/Manual/images/release_history/selpie.png)\</WRAP\>  
+  ![](/Manual/images/release_history/selpie.png)  
 
 ------------------------------------------------------------------------
 
@@ -51,7 +51,7 @@ Click them for an interactive pie chart:
 
 Settings \> Set Lister Defaults is now a one-stop shop for defining your default window layout, columns, and toolbars:
 
-\<WRAP indent\>![](/Manual/images/release_history/setdefaults.png)\</WRAP\>  
+  ![](/Manual/images/release_history/setdefaults.png)  
 
 ------------------------------------------------------------------------
 

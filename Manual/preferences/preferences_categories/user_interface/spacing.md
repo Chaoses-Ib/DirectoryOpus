@@ -8,4 +8,4 @@ Each item in the list describes some element of the user-interface. Turning an i
 
 The drop-down at the bottom of the list lets you choose which mode the currently selected scheme activates for. By default, the standard scheme activates in mouse mode and the touch scheme in touch mode. You can turn this auto-activation off using the drop-down if desired.
 
-If you don't want to use automatic activation, you can use the \<ib:inline-code\>`Set SPACINGSCHEME`\</ib:inline-code\> command to switch schemes manually. You would need to add this to a toolbar or menu to make use of it, as it isn't in the default menus.
+If you don't want to use automatic activation, you can use the `Set SPACINGSCHEME` command to switch schemes manually. You would need to add this to a toolbar or menu to make use of it, as it isn't in the default menus.

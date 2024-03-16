@@ -4,7 +4,7 @@ The *Simple Rename* dialog lets you batch rename files using a simple wildcard s
 
 The easiest way to access *Simple Rename* is to select the option in the *Rename* dropdown menu - this makes it the default mode, and clicking the *Rename* button after that will bring it up in simple mode by default. You can switch back to the advanced mode at any time.
 
-You can also access it using the raw command \<ib:inline-code\>`Rename SIMPLE`\</ib:inline-code\>.
+You can also access it using the raw command `Rename SIMPLE`.
 
 ![](/Manual/images/media/13/simple_rename.png) 
 

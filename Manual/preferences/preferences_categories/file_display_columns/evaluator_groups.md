@@ -22,7 +22,7 @@ Clicking the **Add** or **Edit** button displays the scheme editor.
 
 This example scheme groups items together based on the first letter of their filename.
 
-The **Name** field defines a name for the scheme that can be used to activate it programmatically. For example, you could turn grouping on using this scheme with the command \<ib:inline-code\>`Set GROUPBY=name GROUPSCHEME=first_letter`\</ib:inline-code\>.
+The **Name** field defines a name for the scheme that can be used to activate it programmatically. For example, you could turn grouping on using this scheme with the command `Set GROUPBY=name GROUPSCHEME=first_letter`.
 
 The **Description** is shown in the menu when selecting a column to group by.
 
@@ -38,9 +38,9 @@ If the **Static groups** option is turned on, additional controls are shown whic
 
 ![group_scheme_editor_static.png](/Manual/images/media/13/group_scheme_editor_static.png)
 
-Each group is numbered, and the evaluation clause must return the number of the group each item should be placed in (or \<ib:inline-code\>`0`\</ib:inline-code\> for *Unspecified*).
+Each group is numbered, and the evaluation clause must return the number of the group each item should be placed in (or `0` for *Unspecified*).
 
-The evaluation clause is given a variable called \<ib:inline-code\>`value`\</ib:inline-code\> that provides the value being grouped for each file or folder. For example, if grouping by name, this will be the filename of each item.
+The evaluation clause is given a variable called `value` that provides the value being grouped for each file or folder. For example, if grouping by name, this will be the filename of each item.
 
 The **Sort groups alphabetically** option controls the order that groups are ordered. If turned on, they'll be sorted alphabetically. If turned off, the evaluation clause can specify the order - see the [evaluator](/Manual/evaluator/applicable_contexts/evaluator_groups.md) section for more details on this and also what other variables are available to the evaluator in this context.
 
@@ -54,6 +54,6 @@ If your scheme is generic enough, you can add it to multiple columns (e.g. the f
 
 Select the columns you want to apply your scheme to in the list on the left and click the <kbd>Right</kbd> button to move it into the selected list on the right.
 
-Note that programmatically, you can apply any scheme when grouping - for example, the command \<nobr\>\<ib:inline-code\>`Set GROUPBY=type GROUPSCHEME=first_letter`\</ib:inline-code\>\</nobr\> would apply the "first letter" scheme to the type column, even though by default it's only associated with the name column.
+Note that programmatically, you can apply any scheme when grouping - for example, the command \<nobr\>`Set GROUPBY=type GROUPSCHEME=first_letter`\</nobr\> would apply the "first letter" scheme to the type column, even though by default it's only associated with the name column.
 
 See the section on the [evaluator](/Manual/evaluator/RAEDME.md) for more information about where you can use the evaluator.

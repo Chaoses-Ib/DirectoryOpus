@@ -12,7 +12,8 @@ Currently Directory Opus officially supports version 1.4 of Everything (the curr
 
 Everything 1.5 is currently in "alpha testing", and although it can be configured to also work with Opus, we won't be officially supporting it until its stable release.
 
-\<WRAP info round\>To use Opus with the Everything 1.5 alpha, you need to set \<ib:inline-code\>`alpha_instance=0`\</ib:inline-code\> in the *everything.ini* file. Make sure you restart Everything after changing the ini file.\</WRAP\>
+> [!NOTE]
+> To use Opus with the Everything 1.5 alpha, you need to set `alpha_instance=0` in the *everything.ini* file. Make sure you restart Everything after changing the ini file.
 
 ##### Configuring Everything to work with Opus
 
@@ -31,7 +32,7 @@ Finally, we recommend making sure there are no exclusions set on the *Indexes / 
 
 ##### Fast folder sizes
 
-Opus has always been able to show folder sizes, either by turning on one of the options to calculate them automatically, or manually using the \<ib:inline-code\>`GetSizes`\</ib:inline-code\> command. However, calculating folder sizes can be quite slow. The filesystem doesn't keep track of how many files a folder contains, so to calculate the size requires reading the contents of the folder (and of all sub-folders, and all sub-sub-folders, and so on) and adding up the sizes.
+Opus has always been able to show folder sizes, either by turning on one of the options to calculate them automatically, or manually using the `GetSizes` command. However, calculating folder sizes can be quite slow. The filesystem doesn't keep track of how many files a folder contains, so to calculate the size requires reading the contents of the folder (and of all sub-folders, and all sub-sub-folders, and so on) and adding up the sizes.
 
 An index like the one Everything provides can make this much faster, as the contents of the folders are already known in advance. If you have Everything configured as described above, Opus will use it whenever it needs to calculate the size of a folder.
 

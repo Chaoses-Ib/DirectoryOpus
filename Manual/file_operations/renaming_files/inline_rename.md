@@ -14,7 +14,7 @@ Opus provides some additional functionality in this mode that may not be immedia
 
 Initially only the stem of the filename is selected, not the entire name. Normally you don't want to change a file's extension, so auto-selecting only the stem saves you having to deselect the extension manually. You can change what's initially selected with the **Default selection mode** option on the [Renaming Files](/Manual/preferences/preferences_categories/file_operations/renaming_files/RAEDME.md) Preferences page.
 
-You can also control the intiial selection using the \<ib:inline-code\>`Rename INLINE`\</ib:inline-code\> raw command. For example, this would let you configure one [hotkey](/Manual/customize/the_customize_dialog/keys.md) to enter inline rename with the filename stem selected, and another hotkey with the file extension selected instead.
+You can also control the intiial selection using the `Rename INLINE` raw command. For example, this would let you configure one [hotkey](/Manual/customize/the_customize_dialog/keys.md) to enter inline rename with the filename stem selected, and another hotkey with the file extension selected instead.
 
 ##### Select different parts of the name
 

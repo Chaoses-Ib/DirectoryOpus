@@ -25,7 +25,7 @@ You can access the standalone viewer in several ways:
 - The **Slideshow** button on the default toolbar will launch a slideshow of all images in the current folder, using the standalone viewer. The speed of the slideshow is controlled from the **[Slideshow](/Manual/preferences/preferences_categories/viewer/standalone_viewer/slideshow.md)** page in Preferences.
 
 - The internal **[Show](/Manual/reference/command_reference/internal_commands/show.md)** command will display selected files in the standalone viewer. This command is available on the drop-down menu attached to the **Slideshow** button.  
-- From outside of Opus, you can use the \<ib:inline-code\>`d8viewer.exe`\</ib:inline-code\> or \<ib:inline-code\>`dopusrt.exe /show`\</ib:inline-code\> commands to open files with the Opus viewer.
+- From outside of Opus, you can use the `d8viewer.exe` or `dopusrt.exe /show` commands to open files with the Opus viewer.
 
 ##### Options for the standalone viewer
 

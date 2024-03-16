@@ -35,7 +35,7 @@ If you turn on the **Create multiple folders** option you can create multiple fo
 
 ##### Making multiple child folders
 
-In the above example, the new folders will all be created relative to the current folder. You can also create multiple child-folders at the same sub-folder level using the vertical bar character (\<ib:inline-code\>`|`\</ib:inline-code\>) to separate the child folder names.
+In the above example, the new folders will all be created relative to the current folder. You can also create multiple child-folders at the same sub-folder level using the vertical bar character (`|`) to separate the child folder names.
 
 ![](/Manual/images/media/13/makedir_multi.png)
 

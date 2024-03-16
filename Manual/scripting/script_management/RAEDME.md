@@ -2,15 +2,14 @@
 
 The *Script Management* dialog shows you all your installed [script add-ins](/Manual/scripting/script_add-ins/RAEDME.md). You can create new scripts or manage your existing ones from here.
 
-To get to the Script Management dialog, use the **Scripts** command in the default **Settings** menu. If you're using old toolbars without that command in them, you can add it from the **Customize / Default Toolbars** tab. The raw command is \<ib:inline-code\>`Prefs SCRIPTS`\</ib:inline-code\>.
+To get to the Script Management dialog, use the **Scripts** command in the default **Settings** menu. If you're using old toolbars without that command in them, you can add it from the **Customize / Default Toolbars** tab. The raw command is `Prefs SCRIPTS`.
 
 ##### Script list
 
 Your installed scripts are shown in the list, with a number of columns:
 
-- **Name**: The name of the script (set by the script itself). You can disable a script using the checkbox in front of its name.\<WRAP\>
-
-If a script has configuration options, it will be indicated with a cog icon - you can click this icon or use the **Configure** button in the toolbar to edit the configuration.\</WRAP\>
+- **Name**: The name of the script (set by the script itself). You can disable a script using the checkbox in front of its name.
+  If a script has configuration options, it will be indicated with a cog icon - you can click this icon or use the **Configure** button in the toolbar to edit the configuration.
 
 - **Status**: Indicates whether the script has loaded successfully or if it encountered an error.
 - **Version**: The version number of the script (set by the script itself).
@@ -24,7 +23,7 @@ By default [include file scripts](script_add-ins/include_files.md) are also show
 
 The easiest way to install a new script is with the **File \> Install** command (or click the **Install** button on the toolbar).
 
-The [script installer](/Manual/scripting/script_management/installer.md) will open to guide you through the install process. You can install single script files (e.g. \<ib:inline-code\>`.js`\</ib:inline-code\> or \<ib:inline-code\>`.js.txt`\</ib:inline-code\>), script packages (\<ib:inline-code\>`.osp`\</ib:inline-code\> files) and script install files (\<ib:inline-code\>`.opusscriptinstall`\</ib:inline-code\> files) this way.
+The [script installer](/Manual/scripting/script_management/installer.md) will open to guide you through the install process. You can install single script files (e.g. `.js` or `.js.txt`), script packages (`.osp` files) and script install files (`.opusscriptinstall` files) this way.
 
 ##### Creating a new script
 

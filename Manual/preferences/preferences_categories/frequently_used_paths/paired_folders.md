@@ -17,7 +17,7 @@ You can configure the folders in the pair in two different ways.
 
 ![](/Manual/images/media/13/paired_folder.png)
 
-This shows a simple example that sets up an automatic pair between any folder beneath \<ib:inline-code\>`C:\Work\Staging`\</ib:inline-code\> and its equivalent folder beneath \<ib:inline-code\>`C:\Work\Production`\</ib:inline-code\>. The regular expression uses a capture group to copy the remainder of the path after \<ib:inline-code\>`Staging`\</ib:inline-code\> and appends it to the path for production folders.
+This shows a simple example that sets up an automatic pair between any folder beneath `C:\Work\Staging` and its equivalent folder beneath `C:\Work\Production`. The regular expression uses a capture group to copy the remainder of the path after `Staging` and appends it to the path for production folders.
 
 The options that control the pair are:
 
@@ -31,8 +31,8 @@ The options that control the pair are:
   - **Ignore the pair**: The pair is treated as if it doesn't exist.
   - **Use path even if it doesn't exist**: Opus will try to read the path, and show an error if it fails.
 - **Apply settings to all sub-folders**: All sub-folders below the primary folder will be treated the same way. This option allows the example shown above to be implemented more simply as:
-  - **Primary folder**: \<ib:inline-code\>`C:\Work\Staging`\</ib:inline-code\>
-  - **Secondary folder**: \<ib:inline-code\>`C:\Work\Production`\</ib:inline-code\>
+  - **Primary folder**: `C:\Work\Staging`
+  - **Secondary folder**: `C:\Work\Production`
 - **Default dual-display folder**: The paired folder will be used as the default location when switching the Lister into dual-display mode.
   - **Always display primary folder at the left/top**: If the secondary folder is the one already open when you switch into dual-display mode, the primary folder will be set as the left/top file display.
   - **Turn on Navigation Lock automatically**: [Navigation Lock](/Manual/basic_concepts/the_lister/dual_display/navigation_lock.md) will be automatically turned on when switching into dual-display mode.

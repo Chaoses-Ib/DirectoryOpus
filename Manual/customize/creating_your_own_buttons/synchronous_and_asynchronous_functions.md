@@ -12,7 +12,7 @@ External programs launched from toolbar buttons and hotkeys can be either synchr
 
 As a simple example of the difference, take a command that runs Notepad and passes it the name of the selected item:
 
-\<ib:inline-code\>`notepad.exe {f}`\</ib:inline-code\>
+`notepad.exe {f}`
 
 If only one file were selected when you ran this command, Notepad would open showing the selected file, and that would be that. If, however, three files were selected when you ran the command, the behaviour would vary:
 

@@ -40,7 +40,7 @@ At the very top-right of the Preferences dialog is the ![prefs_menu.png](/Manual
 
 - **Help**: Opens this manual.
 - **Preferences introduction**: Re-plays the tutorial about the Preferences window.
-- **Copy page shortcut**: Places a command string in the clipboard which, if used in a toolbar button, menu item or hotkey, will open the current Preferences page. For example, \<ib:inline-code\>`Prefs PAGE="colors"`\</ib:inline-code\> is the command to open the *Display / Colors and Fonts* page.
+- **Copy page shortcut**: Places a command string in the clipboard which, if used in a toolbar button, menu item or hotkey, will open the current Preferences page. For example, `Prefs PAGE="colors"` is the command to open the *Display / Colors and Fonts* page.
 - **Revert changes**: Restores some or all Preferences settings to their values when Preferences was opened. This even works if you have clicked the **Apply** button. You can undo changes at any time as long as you don't close the Preferences window.
   - **Revert visible**: (Only available for certain pages.) Reverts only the currently displayed settings. For example, if you are looking at *Colors and Fonts* and the *File display background* colors are selected, only those will be reverted, with other colors left alone.
   - **Revert page**: Reverts changes made to the current Preferences page. For example, if you are looking at *Colors and Fonts*, all settings within that page will be affected.

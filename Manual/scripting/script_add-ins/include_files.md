@@ -21,16 +21,16 @@ While include files are just script files like any other, there are a few import
 - They must be in the same language as the scripts that will use them (you can't include a .js file from a .vbs script, for example).
 - The [OnInitIncludeFile](/Manual/reference/scripting_reference/scripting_events/oninitincludefile.md) event can be implemented to provide information about the include file to Opus, although this is optional.
 
-Include files can be *private* or *shared*. Private include files, when bundled into a [script package](script_package.md), can only be used by scripts in that package. Shared include files can be used by all installed Opus scripts. To mark an include file as shared, the \<ib:inline-code\>`OnInitIncludeFile`\</ib:inline-code\> event must be implemented.
+Include files can be *private* or *shared*. Private include files, when bundled into a [script package](script_package.md), can only be used by scripts in that package. Shared include files can be used by all installed Opus scripts. To mark an include file as shared, the `OnInitIncludeFile` event must be implemented.
 
 ##### Using include files
 
-To use an include file from another script, use the \<ib:inline-code\>`@include`\</ib:inline-code\> directive at the top of the script file, For example,
+To use an include file from another script, use the `@include` directive at the top of the script file, For example,
 
-\<ib:inline-code\>`@include inc_myutils.js`\</ib:inline-code\>
+`@include inc_myutils.js`
 
-You can also specify a minimum version for the include file. This only works if the include file has specified a version by implementing the \<ib:inline-code\>`OnInitIncludeFile`\</ib:inline-code\> event.
+You can also specify a minimum version for the include file. This only works if the include file has specified a version by implementing the `OnInitIncludeFile` event.
 
-\<ib:inline-code\>`@include inc_myutils.js:1.2`\</ib:inline-code\>
+`@include inc_myutils.js:1.2`
 
 You can also select include files from the [script editor](/Manual/scripting/script_editor/RAEDME.md).

@@ -4,25 +4,25 @@ Previous: [Opus 13 Highlights - Page 5](/Manual/release_history/opus13/page5.md)
 
 More "friendly dates" choices:
 
-\<WRAP indent\>![](/Manual/images/release_history/friendly_dates.png)\</WRAP\>  
+  ![](/Manual/images/release_history/friendly_dates.png)  
 Freeze columns to keep key information visible:
 
-\<WRAP indent\>![](/Manual/images/release_history/cols_freeze.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/cols_freeze.gif)  
 Hold <kbd>Ctrl</kbd> and drag with the right button to select and copy individual cells:
 
-\<WRAP indent\>![](/Manual/images/release_history/cols_select.gif)\</WRAP\>  
+  ![](/Manual/images/release_history/cols_select.gif)  
 More options for how filenames are displayed:
 
-\<WRAP indent\>![](/Manual/images/release_history/col_filename.png)\</WRAP\>  
+  ![](/Manual/images/release_history/col_filename.png)  
 Easy UI for importing columns from File Explorer into Opus:
 
-\<WRAP indent\>![](/Manual/images/release_history/col_shellprops.png)\</WRAP\>  
+  ![](/Manual/images/release_history/col_shellprops.png)  
 Custom columns can be created using simplified scripting:
 
-\<WRAP indent\>![](/Manual/images/release_history/col_eval.png)\</WRAP\>  
+  ![](/Manual/images/release_history/col_eval.png)  
 Alternative ways to group columns (including built-in ones) can be defined:
 
-\<WRAP indent\>![](/Manual/images/release_history/col_group_eval.png)\</WRAP\>  
+  ![](/Manual/images/release_history/col_group_eval.png)  
 
 ------------------------------------------------------------------------
 
@@ -30,10 +30,10 @@ Alternative ways to group columns (including built-in ones) can be defined:
 
 Pages you use often can be favorited:
 
-\<WRAP indent\>![](/Manual/images/release_history/prefs_pagefaves.png)\</WRAP\>  
+  ![](/Manual/images/release_history/prefs_pagefaves.png)  
 Privacy settings let you clear or turn off suggestions based on previous actions:
 
-\<WRAP indent\>![](/Manual/images/release_history/prefs_privacy.png)\</WRAP\>  
+  ![](/Manual/images/release_history/prefs_privacy.png)  
 
 ------------------------------------------------------------------------
 
@@ -41,22 +41,22 @@ Privacy settings let you clear or turn off suggestions based on previous actions
 
 Customize and Preferences are no longer on-top. When either is open, Lister titlebars have buttons to show, OK or Cancel them:
 
-\<WRAP indent\>![](/Manual/images/release_history/cust_minicust.png)\</WRAP\>  
+  ![](/Manual/images/release_history/cust_minicust.png)  
 Expanded list of pre-made commands you can drag to toolbars:
 
-\<WRAP indent\>![](/Manual/images/release_history/cust_commands.png)\</WRAP\>  
+  ![](/Manual/images/release_history/cust_commands.png)  
 Default toolbars and context menus can be accessed without resetting your actual toolbars. New or changed items can be highlighted:
 
-\<WRAP indent\>![](/Manual/images/release_history/cust_default_toolbars.png)\</WRAP\>  
+  ![](/Manual/images/release_history/cust_default_toolbars.png)  
 Improved UI for managing hotkeys:
 
-\<WRAP indent\>![](/Manual/images/release_history/cust_keys.png)\</WRAP\>  
+  ![](/Manual/images/release_history/cust_keys.png)  
 Button editor suggests command and argument names as you type:
 
-\<WRAP indent\>![](/Manual/images/release_history/cust_cmd_suggestions.png)\</WRAP\>  
+  ![](/Manual/images/release_history/cust_cmd_suggestions.png)  
 Button editor can show generated command lines as they run:
 
-\<WRAP indent\>![](/Manual/images/release_history/cust_cmd_log.png)\</WRAP\>  
+  ![](/Manual/images/release_history/cust_cmd_log.png)  
 
 ------------------------------------------------------------------------
 
@@ -64,10 +64,10 @@ Button editor can show generated command lines as they run:
 
 New IDE for making script add-ins:
 
-\<WRAP indent\>![](/Manual/images/release_history/script_ide_code.png)\</WRAP\>  
+  ![](/Manual/images/release_history/script_ide_code.png)  
 Allows editing script code and resources:
 
-\<WRAP indent\>![](/Manual/images/release_history/script_ide_dialog.png)\</WRAP\>  
+  ![](/Manual/images/release_history/script_ide_dialog.png)  
 
 ------------------------------------------------------------------------
 

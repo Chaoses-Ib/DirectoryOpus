@@ -44,19 +44,15 @@ The commands in that menu are also available when you right-click the color pick
 
 ##### File and Folder Colors
 
-- **File display background**: The background color of the file display area. You can also set a different color that's used when a file display is in [destination](/Manual/basic_concepts/source_and_destination.md) mode (either in a single file display Lister or as part of a dual display Lister), also when it's off (i.e. a single file display Lister that isn't either the source or destination). You can also set separate colors for when the [quick filter](/Manual/basic_concepts/searching_and_filtering/filter_bar.md) is active. \<WRAP\>
+- **File display background**: The background color of the file display area. You can also set a different color that's used when a file display is in [destination](/Manual/basic_concepts/source_and_destination.md) mode (either in a single file display Lister or as part of a dual display Lister), also when it's off (i.e. a single file display Lister that isn't either the source or destination). You can also set separate colors for when the [quick filter](/Manual/basic_concepts/searching_and_filtering/filter_bar.md) is active. 
+  If you turn off the destination or background colors, the main background color will be used for both source and destination file displays (and similarly, if the 'filtered' colors are turned off the main colors will be used instead).
 
-  
-If you turn off the destination or background colors, the main background color will be used for both source and destination file displays (and similarly, if the 'filtered' colors are turned off the main colors will be used instead).
-
-The **Inline Sub-folders** color is used in the icon view modes (e.g. thumbnails) when [sub-folders are expanded](/Manual/basic_concepts/expandable_folders.md). The different background color makes it easier to distinguish the contents of sub-folders from those of the parent folder. \</WRAP\>
+  The **Inline Sub-folders** color is used in the icon view modes (e.g. thumbnails) when [sub-folders are expanded](/Manual/basic_concepts/expandable_folders.md). The different background color makes it easier to distinguish the contents of sub-folders from those of the parent folder. 
 
 - **File group column**: When the file display is grouped, you have the option of showing the group names as headings between each group or in a column on the side. If you choose to use the group column, this defines its colors.
 - **File group header**: When the file display is grouped, and you opt for group names to be displayed as headings between each group, this defines the text and separator color for the group headings. The glyph colors are used for the icons you click to expand or collapse a group, in display modes which allow collapsing, with the "hot" color used when the mouse is over the glyph.
-- **Files and folders**: The text and background colors for files and folders that don't derive a color from some other setting [^2]. You can specify colors for when these items are selected as well as in their unselected state. Using visual styles to draw items and selection boxes may override some of these colors; if this is happening, a clickable message will appear below the last color, and clicking it will take you to the option you can turn off if you don't want this to happen. \<WRAP\>
-
-  
-The **Current sort column** option lets you specify different colors to be used in details and Power modes. The column the list is currently sorted by will be displayed in the specified colors.\</WRAP\>
+- **Files and folders**: The text and background colors for files and folders that don't derive a color from some other setting [^2]. You can specify colors for when these items are selected as well as in their unselected state. Using visual styles to draw items and selection boxes may override some of these colors; if this is happening, a clickable message will appear below the last color, and clicking it will take you to the option you can turn off if you don't want this to happen. 
+  The **Current sort column** option lets you specify different colors to be used in details and Power modes. The column the list is currently sorted by will be displayed in the specified colors.
 
       * **Compressed**, **Encrypted** and **System**: Optional colors for various types of files that will override the defaults if activated. Compressed files are those with the **C** attribute, encrypted files are those with the **E** attribute, and system files are those with both the **H** and **S** attributes set. 
       * **Favorites**: Optional colors that are used for any folders you have added to the [[:basic_concepts:the_lister:navigation:favorites|Favorites]] list. 
@@ -97,7 +93,7 @@ The **Current sort column** option lets you specify different colors to be used 
 - **Pane borders**: Colors used for the borders surrounding the various panes (sub-windows) in the Lister (Folder Tree, Viewer pane, etc). Also has options to **Use for lister column headers** and **Use for lister scrollbars**. (The scrollbar option is only available if Windows visual styles are active, and is also disabled if WindowBlinds is detected).
 - **Preferences UI**: Colors that affect the Preferences dialog itself.
 - **Status bar**: Default text and background color for the Lister status bars. Normally, visual styles are used to draw the status bar's frames and borders; however, if a dark background color is chosen, Opus will draw the frames and borders itself using the **Pane borders** colors, since visual styles usually do not look good on dark backgrounds.
-  - **Framed text**: The status bar can be configured to show a list of file extensions (using the \<ib:inline-code\>`{ft}`\</ib:inline-code\> code); these options control the appearance of those extensions.
+  - **Framed text**: The status bar can be configured to show a list of file extensions (using the `{ft}` code); these options control the appearance of those extensions.
 - **Toolbars**: Colors used to draw toolbars and menus.
   - If **Use visual styles** is turned on, Opus uses visual styles to draw most toolbar and menu elements; if it is off, Opus still uses visual styles to a degree (re-coloring them as needed) but also draws some elements itself where it makes sense. Choosing a light text color or dark background color can influence how much is custom-drawn vs drawn using visual styles, since visual styles tend to only look good with dark-on-light colors.
   - The text and background colors can be [overridden on a per-toolbar basis](/Manual/customize/the_customize_dialog/toolbars.md).

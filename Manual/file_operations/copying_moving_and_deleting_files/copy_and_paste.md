@@ -30,6 +30,6 @@ The name of the new file can be controlled using the various arguments for the *
 
 The **ADD** argument for the internal **[Clipboard](/Manual/reference/command_reference/internal_commands/clipboard.md)** command lets you add selected files to any that are already on the clipboard. For example, you could copy a few files from one folder, a few from another folder, and a few from a third folder, and then paste them all into the destination in one go.
 
-To make use of this functionality, you would need to create a new toolbar button or hotkey that runs the \<ib:inline-code\>`Clipboard COPY ADD`\</ib:inline-code\> command (or assign this to a hotkey - for example, <kbd>Ctrl+C</kbd> runs \<ib:inline-code\>`Clipboard COPY`\</ib:inline-code\> by default, so you could assign this to <kbd>Ctrl+Shift+C</kbd>).
+To make use of this functionality, you would need to create a new toolbar button or hotkey that runs the `Clipboard COPY ADD` command (or assign this to a hotkey - for example, <kbd>Ctrl+C</kbd> runs `Clipboard COPY` by default, so you could assign this to <kbd>Ctrl+Shift+C</kbd>).
 
 See the section on [Customize](/Manual/customize/RAEDME.md) for information about creating your own buttons and hotkeys.

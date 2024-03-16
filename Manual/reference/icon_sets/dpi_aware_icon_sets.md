@@ -2,9 +2,9 @@
 
 Directory Opus handles different system DPI settings transparently, and will scale icons as needed. However, you may want to provide multiple base icon images in your icon sets to handle different DPI settings. Scaling often results in blurry and unsatisfactory images - providing the same icons in multiple resolutions can result in a better aesthetic result when the user is running on a high-DPI system.
 
-For each \<ib:inline-code\>`<set>`\</ib:inline-code\> entry in the XML file you can provide an optional \<ib:inline-code\>`<dpi>`\</ib:inline-code\> key which specifies alternate images for different DPI settings, and can also optionally set limits on when the image can be used. For example, if an image doesn’t look good scaled up you can set a maximum scale factor it can be used for.
+For each `<set>` entry in the XML file you can provide an optional `<dpi>` key which specifies alternate images for different DPI settings, and can also optionally set limits on when the image can be used. For example, if an image doesn’t look good scaled up you can set a maximum scale factor it can be used for.
 
-The \<ib:inline-code\>`<dpi>`\</ib:inline-code\> key has the following attributes:
+The `<dpi>` key has the following attributes:
 
 <table>
 <tbody>
@@ -64,9 +64,9 @@ The \<ib:inline-code\>`<dpi>`\</ib:inline-code\> key has the following attribute
 </tbody>
 </table>
 
-As many \<ib:inline-code\>`<scale>`\</ib:inline-code\> entries can be provided as needed. If the \<ib:inline-code\>`<dpi>`\</ib:inline-code\> key is missing altogether a base scaling factor of 100% is assumed. If needed, you can include the base image in the DPI list as well (for example, if you want to specify \<ib:inline-code\>`no_scale_min`\</ib:inline-code\> and \<ib:inline-code\>`no_scale_max`\</ib:inline-code\> values for it).
+As many `<scale>` entries can be provided as needed. If the `<dpi>` key is missing altogether a base scaling factor of 100% is assumed. If needed, you can include the base image in the DPI list as well (for example, if you want to specify `no_scale_min` and `no_scale_max` values for it).
 
-The \<ib:inline-code\>`no_scale_xxx`\</ib:inline-code\> range can be used to snap to various sizes while avoiding blurring. This is usually only needed at small sizes (since once icons get larger, the scaling works better). Ranges are inclusive of their \<ib:inline-code\>`min`\</ib:inline-code\> and \<ib:inline-code\>`max`\</ib:inline-code\> values, should not overlap with each other, and the value specified for \<ib:inline-code\>`factor`\</ib:inline-code\> should fall within the range.
+The `no_scale_xxx` range can be used to snap to various sizes while avoiding blurring. This is usually only needed at small sizes (since once icons get larger, the scaling works better). Ranges are inclusive of their `min` and `max` values, should not overlap with each other, and the value specified for `factor` should fall within the range.
 
 A real example from the default icon set:
 

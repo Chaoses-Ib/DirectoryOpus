@@ -38,7 +38,7 @@
   - Fixed extra refresh of metadata editor a moment after saving, which got in the way of making a quick second edit of the same file.
   - Aperture and F-number now show values rounded to one decimal place, consistent with file-display columns and most other software.
 - Commands:
-  - \<ib:inline-code\>`SetAttr DEFAULTADDMULTI`\</ib:inline-code\>
+  - `SetAttr DEFAULTADDMULTI`
   - The Preferences option does not affect the behaviour of the SetAttr command. Instead, add the DEFAULTADDMULTI argument for the new behaviour.
   - If opening the standalone metadata editor, DEFAULTADDMULTI=no lets you override the Preferences option if it is on.
   - The "colormodel" keyword replaces "colorspace" (both still work, for compatibility).

@@ -23,7 +23,7 @@ The **Hide items that don't match** option can be used in conjunction with both
 When items are removed from the display (hidden) by the use of this function, they can be brought back in two ways:
 
 - The easiest way is to simply refresh the folder listing by pressing <kbd>F5</kbd> (or click the ![](/Manual/images/media/13/location_toolbar_-_refresh.png) **Refresh** button in the [location bar](/Manual/basic_concepts/the_lister/navigation/file_display_border.md)). This will re-read the folder and redisplay any files you had hidden using the selection function.
-- They can also be redisplayed by running an internal command. This command is not present on the default menus or toolbars and so you would need to [create a button](/Manual/customize/creating_your_own_buttons/RAEDME.md) for it or assign it to a [hotkey](/Manual/customize/the_customize_dialog/keys.md). The command you would use for this is \<ib:inline-code\>`Select NOPATTERN SHOWHIDDEN`\</ib:inline-code\>. Please see the documentation for the internal **[Select](/Manual/reference/command_reference/internal_commands/select.md)** command for more information on its command line parameters.
+- They can also be redisplayed by running an internal command. This command is not present on the default menus or toolbars and so you would need to [create a button](/Manual/customize/creating_your_own_buttons/RAEDME.md) for it or assign it to a [hotkey](/Manual/customize/the_customize_dialog/keys.md). The command you would use for this is `Select NOPATTERN SHOWHIDDEN`. Please see the documentation for the internal **[Select](/Manual/reference/command_reference/internal_commands/select.md)** command for more information on its command line parameters.
 
 ##### Applying the selection
 

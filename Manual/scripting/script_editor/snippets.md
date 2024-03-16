@@ -4,7 +4,7 @@
 
 The snippets panel lets you create and manage *code snippets*. These are intended to let you keep and curate a collection of small fragments of code that you might use often. The panel also lets you access the boilerplate templates for the various [script event handlers](/Manual/reference/scripting_reference/scripting_events/RAEDME.md), making it easy to add support for an event to an existing script.
 
-Opus maintains multiple sets of snippets for different languages - the dropdown at the top of the panel lets you select the language you want. You can add your own languages by duplicating one of the standard language files in the \<ib:inline-code\>`/dopusdata/Script Snippets`\</ib:inline-code\> folder.
+Opus maintains multiple sets of snippets for different languages - the dropdown at the top of the panel lets you select the language you want. You can add your own languages by duplicating one of the standard language files in the `/dopusdata/Script Snippets` folder.
 
 ##### Adding snippets
 

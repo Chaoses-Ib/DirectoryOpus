@@ -10,7 +10,7 @@ By default, the Lister title bar displays just the name of the current folder. Y
 
 The codes below can be used to insert information into the custom title bar string. You can see a list of them by clicking the ![building_blocks.png](/Manual/images/media/13/building_blocks.png) button.
 
-Note that when using the **Custom title** option, the **Display full path** and **Display layout name** options affect what the \<ib:inline-code\>`%T`\</ib:inline-code\> code inserts.
+Note that when using the **Custom title** option, the **Display full path** and **Display layout name** options affect what the `%T` code inserts.
 
 |            |                                                                                     |
 |------------|-------------------------------------------------------------------------------------|
@@ -31,14 +31,14 @@ Note that when using the **Custom title** option, the **Display full path** and 
 | **%S**     | name of the current Style selected in the Lister (if any)                           |
 | **%T**     | complete original title (useful for simply adding a prefix or suffix to the title)  |
 | **%%%%%%** | insert a literal % character                                                        |
-| **%!**     | hide empty blocks within \<ib:inline-code\>`%!...%!`\</ib:inline-code\> (see below) |
+| **%!**     | hide empty blocks within `%!...%!` (see below) |
 
-The \<ib:inline-code\>`%!`\</ib:inline-code\> code is special in that it should be used in pairs around the things you want to hide. They will be hidden if all tokens within the block expand to empty values.
+The `%!` code is special in that it should be used in pairs around the things you want to hide. They will be hidden if all tokens within the block expand to empty values.
 
-Consider a title of \<ib:inline-code\>`%!%N -  %!Directory Opus`\</ib:inline-code\> for example:
+Consider a title of `%!%N -  %!Directory Opus` for example:
 
-- If \<ib:inline-code\>`%N`\</ib:inline-code\> expands to \<ib:inline-code\>`My Folder`\</ib:inline-code\> then you will get "*My Folder - Directory Opus*".
-- If \<ib:inline-code\>`%N`\</ib:inline-code\> expands to nothing (e.g. the active folder tab is empty and has no path) then you will get "*Directory Opus*", rather than "// - Directory Opus//".
+- If `%N` expands to `My Folder` then you will get "*My Folder - Directory Opus*".
+- If `%N` expands to nothing (e.g. the active folder tab is empty and has no path) then you will get "*Directory Opus*", rather than "// - Directory Opus//".
 
 If you need something even more custom or dynamic, the titlebars for individual windows can also be overridden via commands and scripts.
 

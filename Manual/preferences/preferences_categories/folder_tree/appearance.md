@@ -3,7 +3,7 @@
 The options on this page affect the appearance of the folder tree.
 
 - **Tree style**: Choose from three tree styles:
-  - **Lines**: The traditional style with \<ib:inline-code\>`+`\</ib:inline-code\> / \<ib:inline-code\>`-`\</ib:inline-code\> buttons next to each folder and dotted lines joining the tree structure.
+  - **Lines**: The traditional style with `+` / `-` buttons next to each folder and dotted lines joining the tree structure.
   - **No Lines**: The same buttons as **Lines** but without the dotted lines.
   - **Visual Style**: The modern style, using the system visual theme, with expansion arrows that fade in and out.
 - **Show drive labels as**: This lets you choose how disk drive labels and letters are shown under the *This PC* folder. You can choose labels before letters, letters only, or letters before labels.

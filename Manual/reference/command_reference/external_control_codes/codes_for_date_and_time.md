@@ -4,10 +4,10 @@ The following codes are used to pass formatted date and time strings to external
 
 | Code | Description |
 | --- | --- |
-| **{date\|***\<format\>***}** | Current date (local time). |
-| **{dateu\|***\<format\>***}** | Current date (UTC). |
-| **{time\|***\<format\>***}** | Current time (local time). |
-| **{timeu\|***\<format\>***}** | Current time (UTC). |
+| **{date\\|***\<format\>***}** | Current date (local time). |
+| **{dateu\\|***\<format\>***}** | Current date (UTC). |
+| **{time\\|***\<format\>***}** | Current time (local time). |
+| **{timeu\\|***\<format\>***}** | Current time (UTC). |
 
 The *\<format\>* value is a string consisting of various *tokens* that are used to format the date and time strings. If no format is specified, your default system date and time format is used.
 

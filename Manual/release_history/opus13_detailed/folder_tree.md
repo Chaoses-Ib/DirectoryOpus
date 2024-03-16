@@ -48,18 +48,18 @@
   - New option show or hide the tree header's lock button. (Off by default. People tended to click it without understanding what it did.)
   - You can now create hotkeys which only apply when the folder tree has focus.
 - Commands:
-  - \<ib:inline-code\>`Go TREEEXPAND=...`\</ib:inline-code\> and \<ib:inline-code\>`Go TREECOLLAPSE=...`\</ib:inline-code\> -- Expand or collapse multiple tree branches in various ways. Parameters include:
+  - `Go TREEEXPAND=...` and `Go TREECOLLAPSE=...` -- Expand or collapse multiple tree branches in various ways. Parameters include:
     - "focus": Expand/collapse the tree item with input focus.
     - "all": Expand/collapse the current branch and everything within it.
     - "first": Expand/collapse the current branch only.
     - "second": Expand/collapse current branch on first use, then expand/collapse all its children on second use.
-    - (The old \<ib:inline-code\>`Go EXPANDTREE`\</ib:inline-code\> is hidden, but still works. \<ib:inline-code\>`Go TREEXPAND`\</ib:inline-code\> with no additional parameters does the same thing.)
-  - \<ib:inline-code\>`Go REMEMBERTREEEXPANSION`\</ib:inline-code\> and \<ib:inline-code\>`Go RESTORETREEEXPANSION`\</ib:inline-code\> -- Save and load which tree items are expanded and collapsed.
+    - (The old `Go EXPANDTREE` is hidden, but still works. `Go TREEXPAND` with no additional parameters does the same thing.)
+  - `Go REMEMBERTREEEXPANSION` and `Go RESTORETREEEXPANSION` -- Save and load which tree items are expanded and collapsed.
     - NAME argument can specify preset to load or save.
     - If no preset is specified, expansin state is stored in memory temporarily until the window closes.
-  - \<ib:inline-code\>`Go RESTORETREEEXPANSION=list`\</ib:inline-code\> -- Displays a list of saved presets which you can load. (You'd normally access this via the tree header, but that can be hidden.)
-  - \<ib:inline-code\>`Go RESTORETREEEXPANSION=reset`\</ib:inline-code\> -- Reset tree expansion to its initial state.
-  - \<ib:inline-code\>`Go TREESETPINSTATE`\</ib:inline-code\> -- Toggles the selected item's pin.
+  - `Go RESTORETREEEXPANSION=list` -- Displays a list of saved presets which you can load. (You'd normally access this via the tree header, but that can be hidden.)
+  - `Go RESTORETREEEXPANSION=reset` -- Reset tree expansion to its initial state.
+  - `Go TREESETPINSTATE` -- Toggles the selected item's pin.
 
 ------------------------------------------------------------------------
 
