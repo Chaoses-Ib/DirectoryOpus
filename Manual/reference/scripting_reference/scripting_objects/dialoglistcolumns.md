@@ -1,6 +1,6 @@
 # DialogListColumns
 
-The **DialogListColumns** object lets you query or modify the columns in a *Details* mode *list view* control in a [script dialog.](/Manual/scripting/script_dialogs/RAEDME.md) Use the **[Control](control.md).columns** property to obtain a **DialogListColumns** object.
+The **DialogListColumns** object lets you query or modify the columns in a *Details* mode *list view* control in a [script dialog.](/Manual/scripting/script_dialogs/README.md) Use the **[Control](control.md).columns** property to obtain a **DialogListColumns** object.
 
 You can enumerate this object to query the current columns. Each column is represented by a **[DialogListColumn](dialoglistcolumn.md)** object.  
 

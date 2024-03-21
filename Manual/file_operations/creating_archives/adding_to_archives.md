@@ -7,7 +7,7 @@ There are a number of ways to add files to an archive using Opus.
 - You can use the **Archive Files** command on the toolbar (or the variant commands within the drop-down attached to this button).
 - You can right-click on the files you want to add and use the context menu (if enabled) to add them to a new or an existing archive.
 
-Using the context menu **Add to Archive** command, or selecting the **Archive Files** command from the toolbar, displays the [Add to Archive dialog](/Manual/file_operations/creating_archives/add_to_archive_dialog/RAEDME.md).
+Using the context menu **Add to Archive** command, or selecting the **Archive Files** command from the toolbar, displays the [Add to Archive dialog](/Manual/file_operations/creating_archives/add_to_archive_dialog/README.md).
 
 ##### Archive context menu
 

@@ -1,6 +1,6 @@
 # Info Tip
 
-The **Info Tip** page in the [file type editor](../filetype_editor/RAEDME.md) lets you define what is shown on the info tip (the popup tooltip) that's displayed when the mouse hovers over files of this type.
+The **Info Tip** page in the [file type editor](../filetype_editor/README.md) lets you define what is shown on the info tip (the popup tooltip) that's displayed when the mouse hovers over files of this type.
 
 When Opus looks for an info tip to display for a file, it checks file types in the following order:
 
@@ -24,9 +24,9 @@ You can see that for the **.jpg** file in the above screenshot, all the EXIF inf
 
 Information about the file is inserted into the info tip using `{ ... }` codes, containing a keyword referring to a file information column.
 
-The keywords used in info tips are the same as used by the [Rename](/Manual/file_operations/renaming_files/RAEDME.md) function when [renaming files using metadata](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.md), and the **[Set](/Manual/reference/command_reference/internal_commands/set.md)** command when adding and removing columns to the file display. See the [Keywords for Columns](/Manual/reference/metadata_keywords/keywords_for_columns.md) page for a full list of supported keywords.
+The keywords used in info tips are the same as used by the [Rename](/Manual/file_operations/renaming_files/README.md) function when [renaming files using metadata](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.md), and the **[Set](/Manual/reference/command_reference/internal_commands/set.md)** command when adding and removing columns to the file display. See the [Keywords for Columns](/Manual/reference/metadata_keywords/keywords_for_columns.md) page for a full list of supported keywords.
 
-You can also insert information using the [evaluator](/Manual/evaluator/RAEDME.md).
+You can also insert information using the [evaluator](/Manual/evaluator/README.md).
 
 ##### Special code: {foldersize}
 
@@ -73,7 +73,7 @@ For example,
 
 This might display, for example, `Size: 1024 x 768` for an image, but would display nothing for a text file.
 
-You can also define hide sections using the [evaluator](/Manual/evaluator/RAEDME.md).
+You can also define hide sections using the [evaluator](/Manual/evaluator/README.md).
 
 ##### HTML markup
 

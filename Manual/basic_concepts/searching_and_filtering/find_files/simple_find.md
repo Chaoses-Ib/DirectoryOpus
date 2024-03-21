@@ -2,7 +2,7 @@
 
 The simple mode of the [find tool]() lets you search for files using one or more criteria.
 
-When multiple criteria are configured, they all must match for a file to be found. Use the [advanced mode](advanced_find/RAEDME.md) if you want more control over this.
+When multiple criteria are configured, they all must match for a file to be found. Use the [advanced mode](advanced_find/README.md) if you want more control over this.
 
 The labels on the left of each criterion appear in **bold** when something is defined for them, making it a easy to see exactly what you’re searching for.
 

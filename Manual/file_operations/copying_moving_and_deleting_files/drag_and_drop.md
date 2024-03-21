@@ -1,6 +1,6 @@
 # Drag and drop
 
-Drag-and-drop is a common way of moving files around in Windows. In Opus, drag-and-drop is controlled by the **[File Types](/Manual/file_types/RAEDME.md)** system.
+Drag-and-drop is a common way of moving files around in Windows. In Opus, drag-and-drop is controlled by the **[File Types](/Manual/file_types/README.md)** system.
 
 ##### Default drag-and-drop behavior
 
@@ -17,7 +17,7 @@ Internally, these actions are defined by the items on the **Events** tab for the
 
 ##### Configuring drag-and-drop actions
 
-<img src="/media/13/default_draganddrop.png" class="align-right" data-query="?nolink" />This screenshot shows the [File Type editor](/Manual/file_types/filetype_editor/RAEDME.md) for the **All files and folders** file type. The events are all defined as some variant of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.
+<img src="/media/13/default_draganddrop.png" class="align-right" data-query="?nolink" />This screenshot shows the [File Type editor](/Manual/file_types/filetype_editor/README.md) for the **All files and folders** file type. The events are all defined as some variant of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.
 
 - Drag-and-drop: `Copy MOVEWHENSAME` moves the file on the same drive, and copies it otherwise.
 - Drag-and-drop+<kbd>Alt</kbd>: `Copy MAKESHORTCUT` makes a shortcut to the file.
@@ -32,4 +32,4 @@ Editing these functions modifies the drag-and-drop behaviour in Opus. For exampl
 
 The **All files and folders** file type is a special file type that by definition matches everything - both files and folders. You can use the File Types system to define overriding events for specific file types. For example, you could configure drag-and-drop of a Zip file to extract the contents of the archive when dropped with the <kbd>Shift</kbd> key held down.
 
-See the documentation on the **[File Types](/Manual/file_types/RAEDME.md)** system for more information.
+See the documentation on the **[File Types](/Manual/file_types/README.md)** system for more information.

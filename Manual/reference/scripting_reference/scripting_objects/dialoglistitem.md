@@ -1,6 +1,6 @@
 # DialogListItem
 
-The **DialogListItem** object represents an item in a *combo box* or *list box* control in a [script dialog](/Manual/scripting/script_dialogs/RAEDME.md). It's returned by the **[Control](control.md).GetItemAt** and **[Control](control.md).GetItemByName** methods.
+The **DialogListItem** object represents an item in a *combo box* or *list box* control in a [script dialog](/Manual/scripting/script_dialogs/README.md). It's returned by the **[Control](control.md).GetItemAt** and **[Control](control.md).GetItemByName** methods.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

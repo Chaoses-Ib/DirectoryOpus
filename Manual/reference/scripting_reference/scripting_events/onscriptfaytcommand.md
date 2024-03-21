@@ -1,6 +1,6 @@
 # OnScriptFAYTCommand
 
-The **OnScriptFAYTCommand** event is the entry point for a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) that [extends the FAYT field](/Manual/scripting/example_scripts/extending_the_fayt.md). The actual name of the event is defined by the script itself, when the command is added via the **[ScriptInitData](../scripting_objects/scriptinitdata.md).AddCommand** method - **OnScriptFAYTCommand** is merely a placeholder name.
+The **OnScriptFAYTCommand** event is the entry point for a [script add-in](/Manual/scripting/script_add-ins/README.md) that [extends the FAYT field](/Manual/scripting/example_scripts/extending_the_fayt.md). The actual name of the event is defined by the script itself, when the command is added via the **[ScriptInitData](../scripting_objects/scriptinitdata.md).AddCommand** method - **OnScriptFAYTCommand** is merely a placeholder name.
 
 | **Method Name:** | OnScriptFAYTCommand |
 | --- | --- |

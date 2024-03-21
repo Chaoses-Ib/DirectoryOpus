@@ -4,8 +4,8 @@ This is an example of a [script function](../script_functions.md) that displays 
 
 To use this function you would:
 
-- [Create a new toolbar button](/Manual/customize/creating_your_own_buttons/RAEDME.md) or hotkey and [edit](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/RAEDME.md) it
-- Click the **Advanced** button in the [command editor](/Manual/customize/creating_your_own_buttons/command_editor/RAEDME.md) to switch to the [advanced command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md)
+- [Create a new toolbar button](/Manual/customize/creating_your_own_buttons/README.md) or hotkey and [edit](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/README.md) it
+- Click the **Advanced** button in the [command editor](/Manual/customize/creating_your_own_buttons/command_editor/README.md) to switch to the [advanced command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md)
 - Set the **Function** drop-down to **Script Function**
 
     // Set the script type to JScript to use this script

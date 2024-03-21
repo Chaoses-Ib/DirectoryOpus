@@ -10,7 +10,7 @@ Support for zip files is built-in to Opus, so options affecting zip files are fo
 
 ##### Compression settings
 
-- **Compression level**: This lets you set the default compression level when adding files to zip files. If you are using the [Add to Archive](/Manual/file_operations/creating_archives/RAEDME.md) dialog you can override this at the time. There are six compression levels available, ranging from *Store* (which does no compression at all and so is the fastest) to *Best* (which produces the highest level of compression but takes longer to archive).
+- **Compression level**: This lets you set the default compression level when adding files to zip files. If you are using the [Add to Archive](/Manual/file_operations/creating_archives/README.md) dialog you can override this at the time. There are six compression levels available, ranging from *Store* (which does no compression at all and so is the fastest) to *Best* (which produces the highest level of compression but takes longer to archive).
 - **Enhanced compression level**: This activates an [enhanced compression algorithm](http://en.wikipedia.org/wiki/DEFLATE#Deflate64.2FEnhanced_Deflate) that may not be backwards compatible with some zip tools - if you're sending zip files to other people you should make sure they can decompress such archives.
 
 ##### File extensions

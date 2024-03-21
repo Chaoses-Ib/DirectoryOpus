@@ -20,7 +20,7 @@ The Flat View toolbar button cycles through these modes every time you click it.
 
 ##### Flat View folder format
 
-From the [Folders / Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/RAEDME.md) page you can configure a format for **Flat View** (in the *Folder Type Formats* category). This is used automatically whenever you turn Flat View on. By default it's set to add the *Location (relative)* column to the file display.
+From the [Folders / Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/README.md) page you can configure a format for **Flat View** (in the *Folder Type Formats* category). This is used automatically whenever you turn Flat View on. By default it's set to add the *Location (relative)* column to the file display.
 
 ##### Working in Flat View
 

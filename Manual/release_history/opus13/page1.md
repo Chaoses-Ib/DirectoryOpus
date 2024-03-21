@@ -1,4 +1,4 @@
-Previous: [Opus 13 Highlights - Table of contents](/Manual/release_history/opus13/RAEDME.md) # Directory Opus 13 - Highlights - Page 1
+Previous: [Opus 13 Highlights - Table of contents](/Manual/release_history/opus13/README.md) # Directory Opus 13 - Highlights - Page 1
 
 #### Highlights Video
 

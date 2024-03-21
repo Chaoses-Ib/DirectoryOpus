@@ -1,6 +1,6 @@
 # ListerUIChangeData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnListerUIChange](../scripting_events/onlisteruichange.md)** event, the method receives a **ListerUIChangeData** object when various user interface elements are opened or closed in a Lister.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnListerUIChange](../scripting_events/onlisteruichange.md)** event, the method receives a **ListerUIChangeData** object when various user interface elements are opened or closed in a Lister.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

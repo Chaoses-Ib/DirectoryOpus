@@ -1,6 +1,6 @@
 # StyleSelectedData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnStyleSelected](../scripting_events/onstyleselected.md)** event, the method receives a **StyleSelectedData** object when the user chooses a new [Lister style](/Manual/basic_concepts/the_lister/styles.md).
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnStyleSelected](../scripting_events/onstyleselected.md)** event, the method receives a **StyleSelectedData** object when the user chooses a new [Lister style](/Manual/basic_concepts/the_lister/styles.md).
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

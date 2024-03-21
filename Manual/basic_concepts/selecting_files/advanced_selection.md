@@ -4,9 +4,9 @@ The **Select Files** dialog has two modes; *simple* and *advanced*. It is access
 
 ![](/Manual/images/media/13/select_files_-_advanced.png) 
 
-The **Advanced Selection** dialog is built upon the file [filter control](/Manual/file_operations/filtered_operations/RAEDME.md). It lets you select files by building up complex filters that can compare files and folders against many different attributes. The above example shows a filter that would select all files that end in **.jpg** that were modified within the past week.
+The **Advanced Selection** dialog is built upon the file [filter control](/Manual/file_operations/filtered_operations/README.md). It lets you select files by building up complex filters that can compare files and folders against many different attributes. The above example shows a filter that would select all files that end in **.jpg** that were modified within the past week.
 
-See the [Filtered Operations](/Manual/file_operations/filtered_operations/RAEDME.md) section for information on using the filter control.
+See the [Filtered Operations](/Manual/file_operations/filtered_operations/README.md) section for information on using the filter control.
 
 ##### Selection actions
 
@@ -23,7 +23,7 @@ The **Hide items that don't match** option can be used in conjunction with both
 When items are removed from the display (hidden) by the use of this function, they can be brought back in two ways:
 
 - The easiest way is to simply refresh the folder listing by pressing <kbd>F5</kbd> (or click the ![](/Manual/images/media/13/location_toolbar_-_refresh.png) **Refresh** button in the [location bar](/Manual/basic_concepts/the_lister/navigation/file_display_border.md)). This will re-read the folder and redisplay any files you had hidden using the selection function.
-- They can also be redisplayed by running an internal command. This command is not present on the default menus or toolbars and so you would need to [create a button](/Manual/customize/creating_your_own_buttons/RAEDME.md) for it or assign it to a [hotkey](/Manual/customize/the_customize_dialog/keys.md). The command you would use for this is `Select NOPATTERN SHOWHIDDEN`. Please see the documentation for the internal **[Select](/Manual/reference/command_reference/internal_commands/select.md)** command for more information on its command line parameters.
+- They can also be redisplayed by running an internal command. This command is not present on the default menus or toolbars and so you would need to [create a button](/Manual/customize/creating_your_own_buttons/README.md) for it or assign it to a [hotkey](/Manual/customize/the_customize_dialog/keys.md). The command you would use for this is `Select NOPATTERN SHOWHIDDEN`. Please see the documentation for the internal **[Select](/Manual/reference/command_reference/internal_commands/select.md)** command for more information on its command line parameters.
 
 ##### Applying the selection
 

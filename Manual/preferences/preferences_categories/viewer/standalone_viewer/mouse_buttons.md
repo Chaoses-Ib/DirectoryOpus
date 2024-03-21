@@ -1,6 +1,6 @@
 # Mouse Buttons
 
-These options affect the [standalone viewer](/Manual/additional_functionality/viewing_images/RAEDME.md) - the Opus viewer that opens in a separate window. Options that affect the [Viewer Pane](/Manual/basic_concepts/the_lister/viewer_pane.md) are configured on a [separate page](../viewer_pane.md).
+These options affect the [standalone viewer](/Manual/additional_functionality/viewing_images/README.md) - the Opus viewer that opens in a separate window. Options that affect the [Viewer Pane](/Manual/basic_concepts/the_lister/viewer_pane.md) are configured on a [separate page](../viewer_pane.md).
 
 ##### Left mouse button
 

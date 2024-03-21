@@ -20,7 +20,7 @@ The drop-down **Manage** menu provides various commands for managing your preset
 - **Save As**: Save the current rename dialog settings a sa new preset.
 - **Assign To Group**: Lets you put your presets into groups (see below.)
 - **Export Current Settings**: Exports the current configuration of the Rename dialog.
-- **Create Function From Preset**: Puts a function on your clipboard that will run the selected preset as a command. You can go into [Customize](/Manual/customize/RAEDME.md) mode and add that to a toolbar or hotkey to automatically run the rename on selected files without opening the rename dialog.
+- **Create Function From Preset**: Puts a function on your clipboard that will run the selected preset as a command. You can go into [Customize](/Manual/customize/README.md) mode and add that to a toolbar or hotkey to automatically run the rename on selected files without opening the rename dialog.
 - **Export Preset**: Exports the selected preset.
 - **Import Preset File**: Import a preset that someone else has shared with you.
 - **Reset Default Presets**: Lets you reset one or more of the default presets. Opus shows a list and lets you choose which ones to restore. The default presets are added to the list, they don't replace any existing presets you already have.

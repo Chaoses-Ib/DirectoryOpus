@@ -1,6 +1,6 @@
 # OnTabClick
 
-The **OnTabClick** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when a tab is clicked with a qualifier key held down. You can use this to override the default behavior (e.g. control-clicking tabs normally links them).
+The **OnTabClick** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when a tab is clicked with a qualifier key held down. You can use this to override the default behavior (e.g. control-clicking tabs normally links them).
 
 | **Method Name:** | OnTabClick |
 | --- | --- |

@@ -1,6 +1,6 @@
 # Folder Tab Bar
 
-This page contains various options that control the appearance and behavior of the tab bar where [Folder Tabs](/Manual/basic_concepts/the_lister/tabs/RAEDME.md) appear.
+This page contains various options that control the appearance and behavior of the tab bar where [Folder Tabs](/Manual/basic_concepts/the_lister/tabs/README.md) appear.
 
 ##### Opening new tabs
 
@@ -51,7 +51,7 @@ The options that control this are:
   - **Left**: Folder tabs will be displayed vertically, to the left of the file display.
   - **Right**: Folder tabs will be to the right of the file display.
 
-- **Dual display position**: Controls where the tabs appear when the Lister is in [dual-display mode](/Manual/basic_concepts/the_lister/dual_display/RAEDME.md). Note that this can be overridden on a per-Lister basis using the `Set TABPOSITION` command.
+- **Dual display position**: Controls where the tabs appear when the Lister is in [dual-display mode](/Manual/basic_concepts/the_lister/dual_display/README.md). Note that this can be overridden on a per-Lister basis using the `Set TABPOSITION` command.
   - **Normal**: Both tab bars appear in the same relative position (as set by the **Tab position** option).
   - **Together**: The tab bars appear together. For example, the top file display's tabs would be below the file display, and the bottom file display's tabs would be above the file display - resulting in the two tab bars being next to each other.
   - **Apart**: The tab bars appear apart. For example, the left file display's tabs would be to the left of the file display, and the right file display's tabs would be to the right.

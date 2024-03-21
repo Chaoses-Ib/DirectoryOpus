@@ -1,6 +1,6 @@
 # ScriptCommandData
 
-The **ScriptCommandData** object is passed to the script-defined entry points for any [internal commands](/Manual/scripting/example_scripts/adding_a_new_internal_command.md) added by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md). The method name for these events is defined by the script itself, but generically it's referred to as **[OnScriptCommand](../scripting_events/onscriptcommand.md)**.
+The **ScriptCommandData** object is passed to the script-defined entry points for any [internal commands](/Manual/scripting/example_scripts/adding_a_new_internal_command.md) added by a [script add-in](/Manual/scripting/script_add-ins/README.md). The method name for these events is defined by the script itself, but generically it's referred to as **[OnScriptCommand](../scripting_events/onscriptcommand.md)**.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

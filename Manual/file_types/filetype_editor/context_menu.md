@@ -6,7 +6,7 @@ The Context Menu tab lets you add commands to the context menu for files and fol
 
 When you right-click a file or folder to display its context menu, Opus searches the system registry and its own file type settings for the commands to display on the menu. The context menu is built from **all** the file types that match the file you have clicked on. So for example, the context menu for a **.jpg** file would include commands from the **JPEG Image** file type, the **Images** [file type group](../file_type_groups.md), the **[Recognized images](../directory_opus_file_types.md)** file type, the **[All files](../directory_opus_file_types.md)** file type, and the **[All files and folders](../directory_opus_file_types.md)** file type.
 
-You can add two types context menu items using this page of the [file type editor](../filetype_editor/RAEDME.md):
+You can add two types context menu items using this page of the [file type editor](../filetype_editor/README.md):
 
 - **Global**: Context menu items that are saved in the system registry, and will be displayed on the context menu in Explorer and other programs as well as in Opus. These commands must invoke external executable programs.
 - **Opus-only**: Context menu items that are only displayed on context menus in Opus - they will not appear in Explorer. These commands can use internal Opus commands as well as invoking external programs.
@@ -17,7 +17,7 @@ The **New** button at the bottom of this page lets you add a new context menu it
 
 You can also right-click on the items in the context menu list to display the context menu context menu (heh, sorry!). This context menu lets you use **Copy** and **Paste** to copy the definition from one command to another. There is also the **Begin a group** option which lets you place separators between context menu items. When you right-click on an item and choose **Begin a group**, a separator will appear above it (as you can see above the **Create Shortcut** command in the above screenshot).
 
-You can use drag and drop to reorder the context menu items in the list, or to add or remove separators (by dragging the item a small distance and dropping it on itself). If you have two [File Type editor](../filetype_editor/RAEDME.md) dialogs open at once you can also drag and drop context menu definitions from one editor to another, to copy commands from one file type to another.
+You can use drag and drop to reorder the context menu items in the list, or to add or remove separators (by dragging the item a small distance and dropping it on itself). If you have two [File Type editor](../filetype_editor/README.md) dialogs open at once you can also drag and drop context menu definitions from one editor to another, to copy commands from one file type to another.
 
 ------------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ This is accomplished using the **Type** drop-down. This drop-down initially has 
 
 - **Run an application**: Defines a context menu command that runs an external program. This will establish the item as global - it will show in the context menu in both Opus and Explorer.
 - **DDE command**: Defines a command that communicates with an external program using DDE. This will also define the item as global - it will work in both Opus and Explorer.
-- **Run an Opus function**: This will establish the item as Opus-only. Commands of this type can use Opus [internal commands](/Manual/reference/command_reference/internal_commands/RAEDME.md) as well as launch external programs. It will only be shown in context menus inside of Opus.
+- **Run an Opus function**: This will establish the item as Opus-only. Commands of this type can use Opus [internal commands](/Manual/reference/command_reference/internal_commands/README.md) as well as launch external programs. It will only be shown in context menus inside of Opus.
 - **Sub-menu**: This is a special type (explained below) that lets you create sub-menus in context menus. This is also Opus-only.
 
 Once a function has been defined as **Run an application** or **DDE command**, you can't turn it into a **Run an Opus function**-type item; and vice versa. If you click **OK** to save the new context menu item, and then select it and click **Edit** you will see that the **Type** field has disappeared (in the case of Opus-only functions), or now only contains options for **Run an application** and **DDE commands** (for global menu items).
@@ -46,11 +46,11 @@ The **Application** command passes the selected filename to Notepad.exe using th
 
 **DDE Commands** are also supported in both Opus and Explorer. Although it's pretty unlikely you will ever need to define a DDE command these days, you can find more information about these in the [help for the Actions tab](actions.md).
 
-The **Run an Opus function** type uses a variant of the standard [command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md) to define a function that can use both Opus [internal commands](/Manual/reference/command_reference/internal_commands/RAEDME.md) and external programs. You can see an example of this in the context menu for the default **Images** file type group:
+The **Run an Opus function** type uses a variant of the standard [command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md) to define a function that can use both Opus [internal commands](/Manual/reference/command_reference/internal_commands/README.md) and external programs. You can see an example of this in the context menu for the default **Images** file type group:
 
 ![](/Manual/images/media/context_menu_-_convert_image.png) 
 
-This screenshot shows that a context menu item to invoke the [Image Conversion](/Manual/additional_functionality/image_conversion/RAEDME.md) function has been defined for this file type. Because it uses an internal Opus command (**[Image](/Manual/reference/command_reference/internal_commands/image.md)**) this context menu won't appear in Explorer, only in Opus. Actually because this context menu is on the **Images** file type group it has to be an Opus-only command anyway, but it could also appear on the context menu for a system file type like **JPEG Images**.
+This screenshot shows that a context menu item to invoke the [Image Conversion](/Manual/additional_functionality/image_conversion/README.md) function has been defined for this file type. Because it uses an internal Opus command (**[Image](/Manual/reference/command_reference/internal_commands/image.md)**) this context menu won't appear in Explorer, only in Opus. Actually because this context menu is on the **Images** file type group it has to be an Opus-only command anyway, but it could also appear on the context menu for a system file type like **JPEG Images**.
 
 ![](/Manual/images/media/context_menu_-_convert_image_def.png) 
 

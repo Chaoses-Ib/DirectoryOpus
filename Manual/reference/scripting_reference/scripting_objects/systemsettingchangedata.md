@@ -1,6 +1,6 @@
 # SystemSettingChangeData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnSystemSettingChange](../scripting_events/onsystemsettingchange.md)** event, the method receives a **SystemSettingChangeData** object when various system settings change.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnSystemSettingChange](../scripting_events/onsystemsettingchange.md)** event, the method receives a **SystemSettingChangeData** object when various system settings change.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 You can change a number of settings that affect the appearance and behavior of a floating toolbar.
 
-When you are in [Customize](/Manual/customize/RAEDME.md) mode, moving the mouse cursor over a floating toolbar displays a small icon (![](/Manual/images/media/dock-edit.png)) will appear to the top-right of the toolbar. Clicking this icon displays the following context menu.
+When you are in [Customize](/Manual/customize/README.md) mode, moving the mouse cursor over a floating toolbar displays a small icon (![](/Manual/images/media/dock-edit.png)) will appear to the top-right of the toolbar. Clicking this icon displays the following context menu.
 
 ![](/Manual/images/media/floater_edit.png)
 

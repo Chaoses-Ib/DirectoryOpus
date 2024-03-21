@@ -2,7 +2,7 @@
 
 Using the internal **[Image](/Manual/reference/command_reference/internal_commands/image.md)** command, it is possible to configure buttons and toolbars that automate various simple image conversion functions. That way, you can simply select the image files in question and click on a button to perform the conversion, without having to display and configure the [Image Conversion]() dialog.
 
-Listed below are some example uses of the **Image** command - please see the [Creating your own buttons](/Manual/customize/creating_your_own_buttons/RAEDME.md) page for information on how to create a button.
+Listed below are some example uses of the **Image** command - please see the [Creating your own buttons](/Manual/customize/creating_your_own_buttons/README.md) page for information on how to create a button.
 
 - **Image ROTATE=270 HERE REPLACE**
 

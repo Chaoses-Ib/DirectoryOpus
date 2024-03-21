@@ -4,7 +4,7 @@ Checkbox mode is a mode that can be turned on in a file display (it is not a glo
 
 ![](/Manual/images/media/13/check-box_2.png) 
 
-Checkbox mode can be turned on with the command in the **Folder** drop-down menu. It's part of [the folder format](/Manual/basic_concepts/folder_options/RAEDME.md) and can be turned on permanently for certain folders using the folder formats system.
+Checkbox mode can be turned on with the command in the **Folder** drop-down menu. It's part of [the folder format](/Manual/basic_concepts/folder_options/README.md) and can be turned on permanently for certain folders using the folder formats system.
 
 ##### What check-box mode does
 
@@ -51,4 +51,4 @@ There are two commands in the **Edit / Select Other** menu that can be useful wh
 
 ##### Another use for checkbox mode
 
-The [image marking](/Manual/additional_functionality/viewing_images/image_marking.md) function in the [standalone image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md) can make use of checkbox mode (if the default option to use a File Collection is turned off). When you tag a file through the viewer in this mode, the file display it came from is automatically placed in check-box mode, and the file in question is checked.
+The [image marking](/Manual/additional_functionality/viewing_images/image_marking.md) function in the [standalone image viewer](/Manual/additional_functionality/viewing_images/README.md) can make use of checkbox mode (if the default option to use a File Collection is turned off). When you tag a file through the viewer in this mode, the file display it came from is automatically placed in check-box mode, and the file in question is checked.

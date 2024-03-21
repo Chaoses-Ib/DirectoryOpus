@@ -1,6 +1,6 @@
 # OnListerUIChange
 
-The **OnListerUIChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when the state of certain user interface elements in the Lister changes.
+The **OnListerUIChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when the state of certain user interface elements in the Lister changes.
 
 | **Method Name:** | OnListerUIChange |
 | --- | --- |

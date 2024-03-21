@@ -1,8 +1,8 @@
 # Example Rename Script
 
-This is an example of a [rename script](../rename_scripts/RAEDME.md) that adds an image file's resolution to its filename.
+This is an example of a [rename script](../rename_scripts/README.md) that adds an image file's resolution to its filename.
 
-You would use this script through the **[Advanced Rename](/Manual/file_operations/renaming_files/advanced_rename/RAEDME.md)** dialog (turn on the **Script mode** option to display the script editor). You could also [embed the script in a button](/Manual/customize/creating_your_own_buttons/embedding_rename_scripts.md).
+You would use this script through the **[Advanced Rename](/Manual/file_operations/renaming_files/advanced_rename/README.md)** dialog (turn on the **Script mode** option to display the script editor). You could also [embed the script in a button](/Manual/customize/creating_your_own_buttons/embedding_rename_scripts.md).
 
     ' Set the script type to VBScript to use this script
     Option Explicit

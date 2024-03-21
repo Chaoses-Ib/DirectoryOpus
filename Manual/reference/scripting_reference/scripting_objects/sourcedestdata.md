@@ -1,6 +1,6 @@
 # SourceDestData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnSourceDestChange](../scripting_events/onsourcedestchange.md)** event, the method receives a **SourceDestData** object to indicate which tab's state changed.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnSourceDestChange](../scripting_events/onsourcedestchange.md)** event, the method receives a **SourceDestData** object to indicate which tab's state changed.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

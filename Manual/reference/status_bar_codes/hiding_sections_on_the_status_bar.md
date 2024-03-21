@@ -33,7 +33,7 @@ For example:
 
 **{h!{var:glob:ShowExtraInfo}} {smp3} / {tmp3} ...other extra info... {h!}**
 
-**Conditional tests** can also be used to show or hide sections based on the current folder, whether a particular path exists, or the state returned by various [internal commands](../command_reference/internal_commands/RAEDME.md). See the [{ifpath:...}, {ifexists:...} and {if:...} code documentation](other_codes.md) for details.
+**Conditional tests** can also be used to show or hide sections based on the current folder, whether a particular path exists, or the state returned by various [internal commands](../command_reference/internal_commands/README.md). See the [{ifpath:...}, {ifexists:...} and {if:...} code documentation](other_codes.md) for details.
 
 For example:
 

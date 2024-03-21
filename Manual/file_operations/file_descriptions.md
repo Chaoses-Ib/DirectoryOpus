@@ -9,7 +9,7 @@ Each of these two systems have their own advantages and disadvantages. The *desc
 
 Using the *NTFS comments* system is more efficient than *descript.ion* and as alternate data streams are not normally visible, it can give a more elegant and unified feel to using file comments. The main disadvantage is that they are only supported on NTFS-formatted drives - if you're using another file system like FAT32, this system doesn't work.
 
-You can choose which system you use from the [File Operations / Metadata](/Manual/preferences/preferences_categories/file_operations/metadata/RAEDME.md) page in Preferences.
+You can choose which system you use from the [File Operations / Metadata](/Manual/preferences/preferences_categories/file_operations/metadata/README.md) page in Preferences.
 
 The options on the [Copying Files / Metadata](/Manual/preferences/preferences_categories/file_operations/copying_files/metadata.md) page let you control whether or not file descriptions are preserved when you copy files.
 
@@ -28,8 +28,8 @@ The dialog displays the current description (if any) and lets you clear or edit 
 
 ##### The metadata editor
 
-You can also set the description with the [Metadata Pane](/Manual/basic_concepts/the_lister/metadata_pane.md) or the [Set Metadata](editing_metadata/RAEDME.md) dialog. These let you edit the description for selected files using the **Comment** field in the **Extended Properties** category.
+You can also set the description with the [Metadata Pane](/Manual/basic_concepts/the_lister/metadata_pane.md) or the [Set Metadata](editing_metadata/README.md) dialog. These let you edit the description for selected files using the **Comment** field in the **Extended Properties** category.
 
 ![](/Manual/images/media/13/meta_desc.png)
 
-See the [Editing Metadata](editing_metadata/RAEDME.md) page for more information on using the metadata editor.
+See the [Editing Metadata](editing_metadata/README.md) page for more information on using the metadata editor.

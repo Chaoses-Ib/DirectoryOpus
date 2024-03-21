@@ -17,7 +17,7 @@ The **Source** section contains the following options:
   - **Mixed (No Folders)**: The same as **Mixed**, but only files are included in the listing, not folders.
   - **Grouped**: Prints the folder as a nested tree structure. The contents of sub-folders will be shown indented from their parents.
 
-- **Use filter**: Lets you specify a filter to control which files and folders are included in the listing. You can either enter a [wildcard pattern](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) directly, select a [pre-configured filter](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.md) from the drop-down, or click the **Define** button to [define a new filter](/Manual/file_operations/filtered_operations/RAEDME.md).
+- **Use filter**: Lets you specify a filter to control which files and folders are included in the listing. You can either enter a [wildcard pattern](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) directly, select a [pre-configured filter](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.md) from the drop-down, or click the **Define** button to [define a new filter](/Manual/file_operations/filtered_operations/README.md).
 
 The **Destination** section specifies where you want the folder listing to go.
 
@@ -31,7 +31,7 @@ The **Destination** section specifies where you want the folder listing to go.
 
 The **Format** section defines the format of the print-out, including which columns are included in the listing.
 
-- **Edit**: Click the **Edit** button to edit the folder format used for the print out. This displays a standard [folder options](/Manual/basic_concepts/folder_options/RAEDME.md)-type dialog that lets you select columns, configure display and sorting options, etc.
+- **Edit**: Click the **Edit** button to edit the folder format used for the print out. This displays a standard [folder options](/Manual/basic_concepts/folder_options/README.md)-type dialog that lets you select columns, configure display and sorting options, etc.
 - **Current**: The Print Folder dialog remembers its format from use to use. The **Current** button lets you update the format settings in the Print Folder dialog with those from the file display that you launched the Print Folder command from. So if you have a specific folder format set in a file display and want to print a list that looks the same, you could click the **Current** button to avoid having to reconfigure the Print Folder format manually.
 - **Reset**: This resets the format to the one that was set when the Print Folder dialog was invoked. This lets you undo any changes you have made to the format (or if you accidentally clicked the **Current** button, etc).
 - **Font**: This command lets you pick the font that's used to print the listing. The font is only used when printing to a printer; when exporting to a file or the clipboard, the font setting is ignored.

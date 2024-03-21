@@ -1,6 +1,6 @@
 # Msg
 
-The **Msg** object represents a [script dialog](/Manual/scripting/script_dialogs/RAEDME.md) input event message. It’s returned by the **[Dialog](dialog.md).GetMsg** method which you call when running the message loop for a [detached dialog](/Manual/scripting/script_dialogs/the_dialog_message_loop/detached_dialogs.md).
+The **Msg** object represents a [script dialog](/Manual/scripting/script_dialogs/README.md) input event message. It’s returned by the **[Dialog](dialog.md).GetMsg** method which you call when running the message loop for a [detached dialog](/Manual/scripting/script_dialogs/the_dialog_message_loop/detached_dialogs.md).
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

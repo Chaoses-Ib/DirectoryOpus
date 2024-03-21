@@ -1,6 +1,6 @@
 # AfterFolderChangeData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnAfterFolderChange](../scripting_events/onafterfolderchange.md)** event, the method receives an **AfterFolderChangeData** object once the folder read is complete.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnAfterFolderChange](../scripting_events/onafterfolderchange.md)** event, the method receives an **AfterFolderChangeData** object once the folder read is complete.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

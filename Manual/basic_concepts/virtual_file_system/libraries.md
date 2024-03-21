@@ -8,7 +8,7 @@ By default four libraries are created by Windows - **Documents**, **Music**, **P
 
 ##### Library paths
 
-Libraries are referenced internally using a URL-style path format, with the `lib://` prefix. For example, the path of the default pictures library is `lib://Pictures/`. You can type this sort of path into the location field, or use it in buttons and hotkeys with the internal command set to automate your use of collections. For example, you could [set up a button or hotkey](/Manual/customize/creating_your_own_buttons/RAEDME.md) to automatically navigate to the Pictures library using the raw command `Go lib://Pictures`.
+Libraries are referenced internally using a URL-style path format, with the `lib://` prefix. For example, the path of the default pictures library is `lib://Pictures/`. You can type this sort of path into the location field, or use it in buttons and hotkeys with the internal command set to automate your use of collections. For example, you could [set up a button or hotkey](/Manual/customize/creating_your_own_buttons/README.md) to automatically navigate to the Pictures library using the raw command `Go lib://Pictures`.
 
 The `lib://` path system isn't recognised outside of Opus, so if you ever want to copy a library path to the clipboard and paste it into another program, you should use the **Edit / Copy Other / Folder Path** menu command rather than copying the contents of the location field.
 
@@ -43,7 +43,7 @@ Each library has a default location that new files are saved. If the library onl
 
 When you navigate to a library, the file display shows the unified contents of all member folders. If your various member folders contain sub-folders or files with the same filename, it may not be obvious when looking at the library which item is which.
 
-The **Location** column can help with this. It displays the true location of each item in the library, making it much easier to tell where they come from. You can add the **Location** column (and other columns) using the **[Folder Format](../folder_options/RAEDME.md)** dialog - or use the **[Folder Formats](../folder_options/folder_formats.md)** system to set the default format for a library.
+The **Location** column can help with this. It displays the true location of each item in the library, making it much easier to tell where they come from. You can add the **Location** column (and other columns) using the **[Folder Format](../folder_options/README.md)** dialog - or use the **[Folder Formats](../folder_options/folder_formats.md)** system to set the default format for a library.
 
 ##### Folder tree
 

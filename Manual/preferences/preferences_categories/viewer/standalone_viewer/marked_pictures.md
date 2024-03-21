@@ -1,6 +1,6 @@
 # Marked Pictures
 
-These options control [image marking](/Manual/additional_functionality/viewing_images/image_marking.md) in the [standalone viewer](/Manual/additional_functionality/viewing_images/RAEDME.md).
+These options control [image marking](/Manual/additional_functionality/viewing_images/image_marking.md) in the [standalone viewer](/Manual/additional_functionality/viewing_images/README.md).
 
 - **Check for marked pictures when viewer is opened**: The viewer will check if any images in the folder have already been marked in a previous session.
 - **Display Marked Pictures pane when a picture is marked**: When you mark an image in the viewer, the *Marked Pictures* pane will open automatically. If this option is turned off you can still open the pane manually.

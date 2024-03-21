@@ -12,7 +12,7 @@ Opus provides some additional functionality in this mode that may not be immedia
 
 ##### Changing what's selected by default
 
-Initially only the stem of the filename is selected, not the entire name. Normally you don't want to change a file's extension, so auto-selecting only the stem saves you having to deselect the extension manually. You can change what's initially selected with the **Default selection mode** option on the [Renaming Files](/Manual/preferences/preferences_categories/file_operations/renaming_files/RAEDME.md) Preferences page.
+Initially only the stem of the filename is selected, not the entire name. Normally you don't want to change a file's extension, so auto-selecting only the stem saves you having to deselect the extension manually. You can change what's initially selected with the **Default selection mode** option on the [Renaming Files](/Manual/preferences/preferences_categories/file_operations/renaming_files/README.md) Preferences page.
 
 You can also control the intiial selection using the `Rename INLINE` raw command. For example, this would let you configure one [hotkey](/Manual/customize/the_customize_dialog/keys.md) to enter inline rename with the filename stem selected, and another hotkey with the file extension selected instead.
 
@@ -41,7 +41,7 @@ Dots with numbers on both sides are left alone: For example, *"setup_ultima_unde
 - <kbd>Down</kbd> (or <kbd>Tab</kbd>) to move to the next file
 - <kbd>Up</kbd> (or <kbd>Shift+Tab</kbd>) to move to the previous file
 
-Any changes you have made to the current file will be applied and the rename field will be moved to the next or previous file automatically. If you use this you can turn on the **Retain cursor position when moving to next/previous file** option on the [Renaming Files](/Manual/preferences/preferences_categories/file_operations/renaming_files/RAEDME.md) Preferences page to have the cursor position retained from one file to the next.
+Any changes you have made to the current file will be applied and the rename field will be moved to the next or previous file automatically. If you use this you can turn on the **Retain cursor position when moving to next/previous file** option on the [Renaming Files](/Manual/preferences/preferences_categories/file_operations/renaming_files/README.md) Preferences page to have the cursor position retained from one file to the next.
 
 ##### History of previously used names
 

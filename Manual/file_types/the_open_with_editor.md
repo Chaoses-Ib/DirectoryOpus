@@ -5,7 +5,7 @@ The Open With editor for a file type lets you edit the programs that are display
 ![](/Manual/images/media/open_with_for_jpegfile.png) 
 
   
-To access the Open With editor, select the file type in the [File Types](/Manual/file_types/RAEDME.md) dialog and then click the **Change** button at the bottom.
+To access the Open With editor, select the file type in the [File Types](/Manual/file_types/README.md) dialog and then click the **Change** button at the bottom.
 
 The Open With editor contains two lists of programs. The list on the right defines the programs that are currently shown in the file's *Open With* menu. The list on the left is a list of all "available programs". These are programs that are "known" to Windows - they have been used to open files in the past. If the program you're looking for isn't on that list, click the **Browse** button to locate it by hand.
 

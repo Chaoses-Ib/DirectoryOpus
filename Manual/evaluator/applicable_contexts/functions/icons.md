@@ -8,6 +8,6 @@ Note that these modifiers can also be used [without the evaluator](/Manual/refer
 
 The return value from the evaluation expression will be used as the icon for the button. The icon can be specified in a number of ways:
 
-- An icon from one of the internal [icon sets](/Manual/reference/icon_sets/RAEDME.md), e.g. `"largeicons"`
+- An icon from one of the internal [icon sets](/Manual/reference/icon_sets/README.md), e.g. `"largeicons"`
 - A path to an EXE or DLL to extract an icon, e.g. `"C:\Windows\System32\imgres.dll,40"`
 - The name of an external image file, e.g. `"C:\Images\MyButton.png"`

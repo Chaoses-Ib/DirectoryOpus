@@ -1,6 +1,6 @@
 # Listers
 
-The **Listers** object is a collection of all currently open [Listers](/Manual/basic_concepts/the_lister/RAEDME.md). It can be obtained via the **[DOpus](dopus.md).listers** property.
+The **Listers** object is a collection of all currently open [Listers](/Manual/basic_concepts/the_lister/README.md). It can be obtained via the **[DOpus](dopus.md).listers** property.
 
 **Note:** If you are looking for a window to use as the parent for a **Dialog**, you are probably looking in the wrong place. Scripts should not assume that **DOpus.listers(0)** or **DOpus.listers.lastactive** are the lister which launched them. Most scripting events provide you an object which can either create a pre-configured **Dialog** for you or which includes a **SourceTab** property or similar which can do the same. In almost all situations you should use those instead.
 

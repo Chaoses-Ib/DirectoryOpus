@@ -1,10 +1,10 @@
 # Styles
 
-The Lister Styles system lets you configure different configurations of [Lister elements]() and quickly switch between them. Conceptually they are similar to [layouts](layouts/RAEDME.md), except that a style is applied to modify the appearance of an existing Lister - it doesn't cause a new Lister to be opened like a layout does.
+The Lister Styles system lets you configure different configurations of [Lister elements]() and quickly switch between them. Conceptually they are similar to [layouts](layouts/README.md), except that a style is applied to modify the appearance of an existing Lister - it doesn't cause a new Lister to be opened like a layout does.
 
 For example, you can define a style that opens the [viewer pane](viewer_pane.md) and the [metadata pane](metadata_pane.md), loads a [toolbar set](toolbars/toolbar_sets.md), and closes the [folder tree](navigation/folder_tree.md) all in one operation.
 
-Styles can also cause a new folder to be read, multiple [folder tabs](tabs/RAEDME.md) to be created and can also modify the [format](../folder_options/RAEDME.md) of the currently displayed folder.
+Styles can also cause a new folder to be read, multiple [folder tabs](tabs/README.md) to be created and can also modify the [format](../folder_options/README.md) of the currently displayed folder.
 
 ##### Pre-defined styles
 

@@ -1,6 +1,6 @@
 # FiletypeGroup
 
-The **FiletypeGroup** object represents a file type group (as configured in the [File Type Groups](/Manual/file_types/file_type_groups.md) section of the [file type editor](/Manual/file_types/RAEDME.md)). You can find out which groups a file belongs to by querying the **[Item](item.md)**.groups property, or by using the **[FiletypeGroups](filetypegroups.md)** object.  
+The **FiletypeGroup** object represents a file type group (as configured in the [File Type Groups](/Manual/file_types/file_type_groups.md) section of the [file type editor](/Manual/file_types/README.md)). You can find out which groups a file belongs to by querying the **[Item](item.md)**.groups property, or by using the **[FiletypeGroups](filetypegroups.md)** object.  
   
 Note: If you're looking for information on how the file display is grouping an item based on one of the displayed columns, rather than which *file type group* a file is part of, see the [FileGroup](filegroup.md) object instead.  
   

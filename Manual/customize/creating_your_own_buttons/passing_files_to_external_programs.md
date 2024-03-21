@@ -6,4 +6,4 @@ Using Opus as a simple program launcher is nice, but even more useful is the abi
 
 In the screenshot above, **{allfilepath}** is a special code responsible for passing the names of all selected files on the command line when the program is launched. With this command on a toolbar, you can select one or more image files and click the button to have them loaded into Photoshop - alternatively, you can drag-and-drop the files directly to the button.
 
-Opus lets you pass several different types of information through to external programs, including the names of selected files, the name of the current source folder, strings representing the current date and time, and more. See the [External control codes](/Manual/reference/command_reference/external_control_codes/RAEDME.md) section for a full list.
+Opus lets you pass several different types of information through to external programs, including the names of selected files, the name of the current source folder, strings representing the current date and time, and more. See the [External control codes](/Manual/reference/command_reference/external_control_codes/README.md) section for a full list.

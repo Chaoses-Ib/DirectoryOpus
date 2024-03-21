@@ -22,7 +22,7 @@ This can be overridden by the `FLATVIEWCOPY` argument to the `Copy` command.
   
 ==When copying folders to a collection==
 
-When copying folders into a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md) you have the option of adding the folder to the collection directly (in which case it appears like any other collection member), or adding it as a sub-collection. In this second case, the folder will appear as a collection in its own right, and the folder's contents will be added to the sub-collection.
+When copying folders into a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/README.md) you have the option of adding the folder to the collection directly (in which case it appears like any other collection member), or adding it as a sub-collection. In this second case, the folder will appear as a collection in its own right, and the folder's contents will be added to the sub-collection.
 
 - **Ask how to copy**: Opus will ask you what to do, every time.
 - **Add to collection as a member**: The folder will be added as an ordinary member of the collection.

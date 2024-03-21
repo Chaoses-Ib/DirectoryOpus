@@ -7,7 +7,7 @@ The **Image** internal command can be used to:
 - Upload or synchronize images with an online service
 - Locate an image using its embedded GPS information
 
-The `Image CONVERT` command displays the [image conversion](/Manual/additional_functionality/image_conversion/RAEDME.md) dialog in interactive mode, letting you select the conversion options to apply to selected images. Using the various arguments of this command it is possible to automate the image conversion function. The image conversion function can accept as input any image format that Opus is able to view (including those supported by plugins), but can only output in JPEG, PNG, GIF or Bitmap formats.
+The `Image CONVERT` command displays the [image conversion](/Manual/additional_functionality/image_conversion/README.md) dialog in interactive mode, letting you select the conversion options to apply to selected images. Using the various arguments of this command it is possible to automate the image conversion function. The image conversion function can accept as input any image format that Opus is able to view (including those supported by plugins), but can only output in JPEG, PNG, GIF or Bitmap formats.
 
 **Command Arguments:** 
 
@@ -18,7 +18,7 @@ The `Image CONVERT` command displays the [image conversion](/Manual/additional_f
 | AS | /K | *\<output filename\>* | Specify the output filename when converting images. By default the output filename is the same as the input filename, with the possibility of an additional suffix (with the **ADDSUFFIX** argument) and a different file extension if the image has been converted to a different format.<br /><br />*Example:* `Image CONVERT=jpg AS=thumbnail.jpg WIDTH=128 HEIGHT=128` |
 | BACKGROUND | /O | \<nobr\>*RRR,GGG,BBB*\</nobr\>  <br />*(decimal)*  <br />\<nobr\>*\#RRGGBB*\</nobr\>  <br />*(hexadecimal)*\</nobr\> | When an image with an alpha channel (transparency) is converted to a format that doesn't support the alpha channel, this argument is used to specify the background color that replaces the transparent area. The color can be specified in either decimal or hex format.<br /><br />*Example:* `Image CONVERT=jpg BACKGROUND=#ff8000` |
 |  |  | **none** | Specify **BACKGROUND=none** in conjunction with a preset to override the saved setting.<br /><br />*Example:* `Image CONVERT PRESET=ScaleAndCrop BACKGROUND=none` |
-| CONVERT | /O | *(no value)* | Displays the [image conversion](/Manual/additional_functionality/image_conversion/RAEDME.md) dialog in interactive mode when no other arguments are provided.<br /><br />*Example:* `Image CONVERT` |
+| CONVERT | /O | *(no value)* | Displays the [image conversion](/Manual/additional_functionality/image_conversion/README.md) dialog in interactive mode when no other arguments are provided.<br /><br />*Example:* `Image CONVERT` |
 |  |  | **jpg** | Automates the image conversion function; the converted image will be saved in JPEG format.<br /><br />*Example:* `Image CONVERT=jpg` |
 |  |  | **png** | The converted image will be saved in PNG format.<br /><br />*Example:* `Image ROTATE=EXIF CONVERT=png` |
 |  |  | **gif** | The converted image will be saved in GIF format.<br /><br />*Example:* `Image WIDTH=128 HEIGHT=128 CONVERT=gif` |

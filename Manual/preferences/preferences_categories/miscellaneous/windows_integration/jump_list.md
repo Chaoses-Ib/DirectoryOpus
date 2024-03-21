@@ -9,7 +9,7 @@ This page is basically one big scrolling list of options that can be turned on o
 - **Smart Favorites**: Adds your Smart Favorites to the menu.
 - **FTP Sites**: You can select individual FTP sites from the Address Book or add all sites.
 - **Other Folders**: This lets you add additional folders to the Jump List that don't come from any of the above locations. To add a folder to this list, you have to right-click the **Other Folders** entry and choose **Add Folder** from the context menu. Folders that have been added this way can be removed from the list by right-clicking them and choosing **Remove Folder** from the context menu.
-- **Layouts**: Adds some or all of your configured [Lister Layouts](/Manual/basic_concepts/the_lister/layouts/RAEDME.md) to the Jump List.
+- **Layouts**: Adds some or all of your configured [Lister Layouts](/Manual/basic_concepts/the_lister/layouts/README.md) to the Jump List.
 - **Tab Groups**: Adds some or all of your configured [tab groups](/Manual/basic_concepts/the_lister/tabs/tab_groups.md) to the Jump List. The tab groups will open in a new Lister.
 - **Commands**: Lets you add your configured [user-defined commands](/Manual/customize/creating_your_own_buttons/user-defined_commands.md) to the menu, as well as certain pre-defined commands.
 

@@ -1,6 +1,6 @@
 # OnAddCommands
 
-The **OnAddCommands** event is called to allow your [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to [add internal commands](/Manual/scripting/example_scripts/adding_a_new_internal_command.md). Call the **[AddCmdData](../scripting_objects/addcmddata.md).AddCommand** method once for each command you wish to add.
+The **OnAddCommands** event is called to allow your [script add-in](/Manual/scripting/script_add-ins/README.md) to [add internal commands](/Manual/scripting/example_scripts/adding_a_new_internal_command.md). Call the **[AddCmdData](../scripting_objects/addcmddata.md).AddCommand** method once for each command you wish to add.
 
 | **Method Name:** | OnAddCommands |
 | --- | --- |

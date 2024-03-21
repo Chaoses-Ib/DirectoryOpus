@@ -7,8 +7,8 @@ See the [Command Editor]() page for a description of the elements which the Simp
 In the Command Editor's Simple mode (shown above), the **Function** field is only a single line. In this mode you can specify the function (what the button actually does when you click it) in three different ways:
 
 - Using the drop-down attached to the field, you can select a pre-defined command (as shown on the [Commands Tab](../../the_customize_dialog/commands.md) in the Customize dialog). When you select a pre-defined command from the drop-down, the function field will be populated with the underlying Opus internal command and arguments. For example, selecting **Viewer Pane** from the drop-down will fill the field in with **Set VIEWPANE=Toggle** as shown above.
-- You can directly enter the name of an [Opus internal command](/Manual/reference/command_reference/internal_commands/RAEDME.md), with its optional arguments.
-- You can select an external program to run using the Browse button (![](/Manual/images/media/browse.png)). You can append various [external control codes](/Manual/reference/command_reference/external_control_codes/RAEDME.md) to the external program's command line in order to [pass filenames of selected files](../passing_files_to_external_programs.md) to the program.
+- You can directly enter the name of an [Opus internal command](/Manual/reference/command_reference/internal_commands/README.md), with its optional arguments.
+- You can select an external program to run using the Browse button (![](/Manual/images/media/browse.png)). You can append various [external control codes](/Manual/reference/command_reference/external_control_codes/README.md) to the external program's command line in order to [pass filenames of selected files](../passing_files_to_external_programs.md) to the program.
 
 ![](/Manual/images/media/function_-_notepad.png)
 

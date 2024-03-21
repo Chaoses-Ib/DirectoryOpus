@@ -14,4 +14,4 @@ For example, say you have a big script file called `MyScript.js` that you want t
 
 Unlike include files, you don't need to explicitly say that you want to load a module - when the base script is loaded, all its modules are loaded as well (this is why the filenames are structured as they are - so that Opus can identify modules automatically).
 
-The [script editor](../script_editor/RAEDME.md) lets you create new module files for an existing script.
+The [script editor](../script_editor/README.md) lets you create new module files for an existing script.

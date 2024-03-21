@@ -117,4 +117,4 @@ Just to confuse things further, some value arguments can accept multiple keyword
 
 The distinction is subtle and really you don't need to worry about it - each argument is documented as to what sort of values it can accept. It's just worth being aware of the difference.
 
-See the documentation for the [individual commands](/Manual/reference/command_reference/internal_commands/RAEDME.md) for a full list of their arguments, as well as a description and example of how each argument is used. In many cases multiple arguments can be given at once and the command documentation also describes when and where this would be appropriate.
+See the documentation for the [individual commands](/Manual/reference/command_reference/internal_commands/README.md) for a full list of their arguments, as well as a description and example of how each argument is used. In many cases multiple arguments can be given at once and the command documentation also describes when and where this would be appropriate.

@@ -1,6 +1,6 @@
 # Lister
 
-The **Lister** object represents an open [Lister](/Manual/basic_concepts/the_lister/RAEDME.md) window. A collection of currently open Lister objects is available from the **[DOpus](dopus.md).listers** property, and if a command results in a new Lister being opened, the **[Results](results.md)** object.
+The **Lister** object represents an open [Lister](/Manual/basic_concepts/the_lister/README.md) window. A collection of currently open Lister objects is available from the **[DOpus](dopus.md).listers** property, and if a command results in a new Lister being opened, the **[Results](results.md)** object.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |
@@ -9,11 +9,11 @@ The **Lister** object represents an open [Lister](/Manual/basic_concepts/the_lis
 | custom_title | *string* | Returns the custom title of the Lister (if any) as set by the **Set LISTERTITLE** command. This may be an empty string. The *title* property returns the actual window title. |
 | desktop | *string* | Returns the ID of the virtual desktop this Lister is on. |
 | desttab | *object:***[Tab](tab.md)** | Returns a **[Tab](tab.md)** object representing the current destination tab (in a dual-display Lister). |
-| dual | *int* | Indicates whether the Lister is in [dual-display mode](/Manual/basic_concepts/the_lister/dual_display/RAEDME.md) or not. Possible values are:<br /><br />\|     \|                                 \|<br />\|-----\|---------------------------------\|<br />\| 0   \| single-display mode             \|<br />\| 1   \| dual-display, vertical layout   \|<br />\| 2   \| dual-display, horizontal layout \| |
+| dual | *int* | Indicates whether the Lister is in [dual-display mode](/Manual/basic_concepts/the_lister/dual_display/README.md) or not. Possible values are:<br /><br />\|     \|                                 \|<br />\|-----\|---------------------------------\|<br />\| 0   \| single-display mode             \|<br />\| 1   \| dual-display, vertical layout   \|<br />\| 2   \| dual-display, horizontal layout \| |
 | dualsize | *int* | Returns the current split percentage of the dual displays (e.g. **50** indicates they are evenly sized). |
 | foreground | *bool* | Returns **True** if this Lister is currently the foreground (active) window. |
 | lastactive | *bool* | Returns **True** if this Lister is currently the active Lister (foreground window), or was the most recently active Lister. |
-| layout | *string* | Provides the name of the [Lister layout](/Manual/basic_concepts/the_lister/layouts/RAEDME.md) that this Lister came from (if any). |
+| layout | *string* | Provides the name of the [Lister layout](/Manual/basic_concepts/the_lister/layouts/README.md) that this Lister came from (if any). |
 | left | *int* | Lister window left-edge coordinate. |
 | metapane | *int* | Indicates whether the [metadata pane](/Manual/basic_concepts/the_lister/metadata_pane.md) is currently open or not. Possible values are:<br /><br />\|     \|                                          \|<br />\|-----\|------------------------------------------\|<br />\| 0   \| metadata pane is not open                \|<br />\| 1   \| metadata pane is open, vertical layout   \|<br />\| 2   \| metadata pane is open, horizontal layout \| |
 | right | *int* | Lister window right-edge coordinate. |

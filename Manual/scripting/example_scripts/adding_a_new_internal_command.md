@@ -1,12 +1,12 @@
 # Adding a new Internal Command
 
-This is an example of a [script add-in](../script_add-ins/RAEDME.md) that adds a new internal command to Opus.
+This is an example of a [script add-in](../script_add-ins/README.md) that adds a new internal command to Opus.
 
 This command, **SelectNewest**, selects one or more of the newest files in the current folder. You would use this by creating a new **.js** file in the *Script Addins* folder (type **/dopusdata/Script Addins** into the location field to find this).
 
 You could then create a button or hotkey to run the **SelectNewest** command just like any other internal Opus command.
 
-The basic procedure to add an internal command from a [script add-in](../script_add-ins/RAEDME.md) is:
+The basic procedure to add an internal command from a [script add-in](../script_add-ins/README.md) is:
 
 - Either:
   - In the **[OnInit](/Manual/reference/scripting_reference/scripting_events/oninit.md)** event, create a **[ScriptCommand](/Manual/reference/scripting_reference/scripting_objects/scriptcommand.md)** object with the **[ScriptInitData](/Manual/reference/scripting_reference/scripting_objects/scriptinitdata.md).AddCommand** method.

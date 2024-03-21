@@ -1,6 +1,6 @@
 # Sorting
 
-The **Sorting** tab in the *Folder Format* dialog contains options that affect the sorting of the file list (other than the actual field or fields the list is sorted by - this is specified on the [Columns](columns/RAEDME.md) tab).
+The **Sorting** tab in the *Folder Format* dialog contains options that affect the sorting of the file list (other than the actual field or fields the list is sorted by - this is specified on the [Columns](columns/README.md) tab).
 
 - **Keep folders sorted alphabetically**: Folders will always be sorted alphabetically even when the list is sorted by another field. This doesn't apply if you have chosen *Mix files and folders together* for the **Mixing** option.
 - **Manual sorting**: Lets you enable [manual sorting](../../sorting_and_grouping/manual_sorting.md) in a folder.

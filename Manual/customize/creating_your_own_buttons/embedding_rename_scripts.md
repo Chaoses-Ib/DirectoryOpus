@@ -1,6 +1,6 @@
 # Embedding Rename Scripts
 
-[Rename scripts](/Manual/file_operations/renaming_files/advanced_rename/rename_scripts.md) can be embedded directly in a button or hotkey, which lets you rename files using a script without having to display the **[Advanced Rename](/Manual/file_operations/renaming_files/advanced_rename/RAEDME.md)** dialog first.
+[Rename scripts](/Manual/file_operations/renaming_files/advanced_rename/rename_scripts.md) can be embedded directly in a button or hotkey, which lets you rename files using a script without having to display the **[Advanced Rename](/Manual/file_operations/renaming_files/advanced_rename/README.md)** dialog first.
 
 ![](/Manual/images/media/rename_embed.png)
 
@@ -8,4 +8,4 @@ This image depicts an example of an embedded rename script. The first line of s
 
 Below the **Rename** command, the **@script** [command modifier](/Manual/reference/command_reference/command_modifier_reference.md) is used to introduce the script. This tells Opus which language the script is written in - **vbscript** is shown in the above screenshot, but you can specify **jscript** to use JavaScript, and other languages are also supported if you have them installed.
 
-Any text in the function definition below the **@script** line defines the script itself. See the [Rename Scripts](/Manual/scripting/rename_scripts/RAEDME.md) page for more information on writing rename scripts.
+Any text in the function definition below the **@script** line defines the script itself. See the [Rename Scripts](/Manual/scripting/rename_scripts/README.md) page for more information on writing rename scripts.

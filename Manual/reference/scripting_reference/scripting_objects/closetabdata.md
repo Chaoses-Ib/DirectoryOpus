@@ -1,6 +1,6 @@
 # CloseTabData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnCloseTab](../scripting_events/onclosetab.md)** event, the method receives a **CloseTabData** object when a tab is closed.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnCloseTab](../scripting_events/onclosetab.md)** event, the method receives a **CloseTabData** object when a tab is closed.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

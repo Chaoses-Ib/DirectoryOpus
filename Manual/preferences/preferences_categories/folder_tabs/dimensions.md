@@ -1,6 +1,6 @@
 # Dimensions
 
-This page contains options that control the sizes of [Folder Tabs](/Manual/basic_concepts/the_lister/tabs/RAEDME.md).
+This page contains options that control the sizes of [Folder Tabs](/Manual/basic_concepts/the_lister/tabs/README.md).
 
 ##### Horizontal tabs
 

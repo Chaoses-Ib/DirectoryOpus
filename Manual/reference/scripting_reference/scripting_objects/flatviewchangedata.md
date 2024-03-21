@@ -1,6 +1,6 @@
 # FlatViewChangeData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnFlatViewChange](../scripting_events/onflatviewchange.md)**event, the method receives a **FlatViewChangeData** object when the [Flat View](/Manual/basic_concepts/flat_view.md) mode is changed in a tab.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnFlatViewChange](../scripting_events/onflatviewchange.md)**event, the method receives a **FlatViewChangeData** object when the [Flat View](/Manual/basic_concepts/flat_view.md) mode is changed in a tab.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

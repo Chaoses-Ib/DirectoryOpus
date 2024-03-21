@@ -1,6 +1,6 @@
 # DialogListColumn
 
-The **DialogListColumn** object represents a column in a *Details* mode *list view* control in a [script dialog.](/Manual/scripting/script_dialogs/RAEDME.md) Use the **[Control](control.md).columns** property to obtain a **[DialogListColumns](dialoglistcolumns.md)** object, and then enumerate it to obtain individual **DialogListColumn** objects. 
+The **DialogListColumn** object represents a column in a *Details* mode *list view* control in a [script dialog.](/Manual/scripting/script_dialogs/README.md) Use the **[Control](control.md).columns** property to obtain a **[DialogListColumns](dialoglistcolumns.md)** object, and then enumerate it to obtain individual **DialogListColumn** objects. 
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

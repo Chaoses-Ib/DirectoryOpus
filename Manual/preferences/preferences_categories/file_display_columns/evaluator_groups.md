@@ -1,6 +1,6 @@
 # Evaluator Groups
 
-This page lets you define *grouping schemes* that use the [evaluator](/Manual/evaluator/RAEDME.md) to control how files and folders are grouped (when [grouping](/Manual/basic_concepts/sorting_and_grouping/manual_sorting.md) is enabled in the file display).
+This page lets you define *grouping schemes* that use the [evaluator](/Manual/evaluator/README.md) to control how files and folders are grouped (when [grouping](/Manual/basic_concepts/sorting_and_grouping/manual_sorting.md) is enabled in the file display).
 
 The provided evaluator code will be invoked for each file and folder, to determine which group the item is placed in.
 
@@ -56,4 +56,4 @@ Select the columns you want to apply your scheme to in the list on the left and 
 
 Note that programmatically, you can apply any scheme when grouping - for example, the command \<nobr\>`Set GROUPBY=type GROUPSCHEME=first_letter`\</nobr\> would apply the "first letter" scheme to the type column, even though by default it's only associated with the name column.
 
-See the section on the [evaluator](/Manual/evaluator/RAEDME.md) for more information about where you can use the evaluator.
+See the section on the [evaluator](/Manual/evaluator/README.md) for more information about where you can use the evaluator.

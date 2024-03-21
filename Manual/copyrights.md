@@ -12,7 +12,7 @@ GPSoftware and any associated dealers or distributors make no representation or 
 
 ##### License
 
-GPSoftware provides the SOFTWARE and any updates to the original purchaser under the terms set out [below](/Manual/licence/RAEDME.md) and licenses its use worldwide. You assume responsibility for the selection of the program to achieve your intended results, and for the installation, use and results obtained from the program.
+GPSoftware provides the SOFTWARE and any updates to the original purchaser under the terms set out [below](/Manual/licence/README.md) and licenses its use worldwide. You assume responsibility for the selection of the program to achieve your intended results, and for the installation, use and results obtained from the program.
 
 ##### Warranty
 

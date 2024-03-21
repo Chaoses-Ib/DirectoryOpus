@@ -1,6 +1,6 @@
 # Options
 
-These options affect the [standalone image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md).
+These options affect the [standalone image viewer](/Manual/additional_functionality/viewing_images/README.md).
 
 - **Default gamma correction**: Use this option if you need to adjust the gamma of images for proper color reproduction on your monitor. This sets a default gamma adjustment but you can adjust the display on-the-fly from within the viewer.
 - **Hide scrollbars**: The viewer won't display scrollbars even if the image is too large to fit in the display. You can pan around an image with the cursor keys, and using the mouse (depending on the options set below). Some viewer plugins may not support this option.

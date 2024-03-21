@@ -1,6 +1,6 @@
 # CustomFieldData
 
-The **CustomFieldData** object is provided to a [rename script](/Manual/scripting/rename_scripts/RAEDME.md) via the **[GetNewNameData](getnewnamedata.md).custom** property. It provides access to the value of any [custom fields](/Manual/scripting/rename_scripts/custom_fields_in_the_rename_dialog.md) that your script added to the *Rename* dialog.  
+The **CustomFieldData** object is provided to a [rename script](/Manual/scripting/rename_scripts/README.md) via the **[GetNewNameData](getnewnamedata.md).custom** property. It provides access to the value of any [custom fields](/Manual/scripting/rename_scripts/custom_fields_in_the_rename_dialog.md) that your script added to the *Rename* dialog.  
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

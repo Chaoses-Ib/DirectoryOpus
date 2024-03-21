@@ -1,6 +1,6 @@
 # Default Toolbars
 
-This page shows the six [default toolbars](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/RAEDME.md). If you're using old toolbars and want to add new functions from the latest version of Opus to them, this is an easy way to do it - simply drag the desired button or menu out from this dialog and drop it on your own toolbars.
+This page shows the six [default toolbars](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/README.md). If you're using old toolbars and want to add new functions from the latest version of Opus to them, this is an easy way to do it - simply drag the desired button or menu out from this dialog and drop it on your own toolbars.
 
 The vertical slider on the left of the dialog lets you "go back in time" and see when buttons in the default toolbars were changed or added for the first time.
 

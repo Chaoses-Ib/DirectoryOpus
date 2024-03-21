@@ -1,6 +1,6 @@
 # Codes to display dialogs
 
-The following codes can be used to display various simple dialogs when the command is run. This lets you provide information (like selecting a file or a folder, or entering a string) at "run-time" rather than incorporating the value into the command itself. For more flexibility, you can use a [script dialog](/Manual/scripting/script_dialogs/RAEDME.md).
+The following codes can be used to display various simple dialogs when the command is run. This lets you provide information (like selecting a file or a folder, or entering a string) at "run-time" rather than incorporating the value into the command itself. For more flexibility, you can use a [script dialog](/Manual/scripting/script_dialogs/README.md).
 
 | Long form | Short form | Description |
 | --- | --- | --- |

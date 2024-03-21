@@ -215,7 +215,7 @@ A drop-down control displays a list of the [configured labels](/Manual/file_oper
 
 ##### Location
 
-This is similar to **Full Path** except it only considers the location (path) of the file, but not the filename. This can be particularly useful when searching [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md), as it lets you filter for files based on their real location on disk.
+This is similar to **Full Path** except it only considers the location (path) of the file, but not the filename. This can be particularly useful when searching [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/README.md), as it lets you filter for files based on their real location on disk.
 
 ##### Music
 

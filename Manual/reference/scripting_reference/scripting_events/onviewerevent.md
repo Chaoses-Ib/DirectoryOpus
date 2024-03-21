@@ -1,6 +1,6 @@
 # OnViewerEvent
 
-The **OnViewerEvent** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification whenever certain events occur in the [standalone image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md). One possible use would be a script that automatically displays a floating toolbar whenever a standalone viewer is active, and hides it again when the window goes inactive or closes. 
+The **OnViewerEvent** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification whenever certain events occur in the [standalone image viewer](/Manual/additional_functionality/viewing_images/README.md). One possible use would be a script that automatically displays a floating toolbar whenever a standalone viewer is active, and hides it again when the window goes inactive or closes. 
 
 | **Method Name:** | OnViewerEvent |
 | --- | --- |

@@ -2,7 +2,7 @@
 
 The following keywords are used by the **[Set](../command_reference/internal_commands/set.md)** command (with the **COLUMNS**, **COLUMNSADD**, **COLUMNSREMOVE** and **COLUMNSTOGGLE** arguments) to change which columns are displayed in the file display (in details and power modes), and with the **GROUPBY** and **SORTBY** arguments to modify the group and sort fields. For example, **Set COLUMNSADD=desc** adds the Description column to the file display.
 
-They are also used by the [Rename](/Manual/file_operations/renaming_files/RAEDME.md) function when [renaming using metadata](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.md), and in the [File Types](/Manual/file_types/filetype_editor/RAEDME.md) editor when defining your own [tile](/Manual/file_types/filetype_editor/tiles_mode.md) and [infotip](/Manual/file_types/filetype_editor/info_tip.md) definitions.
+They are also used by the [Rename](/Manual/file_operations/renaming_files/README.md) function when [renaming using metadata](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.md), and in the [File Types](/Manual/file_types/filetype_editor/README.md) editor when defining your own [tile](/Manual/file_types/filetype_editor/tiles_mode.md) and [infotip](/Manual/file_types/filetype_editor/info_tip.md) definitions.
 
 Note that some columns appear in multiple categories. For historic reasons, column keywords sometimes only reflect a narrow usage when the column actually works in a wider range of situations. For example, the *Duration* column (**mp3songlength**) works with various music file types, and some movie types, not just MP3 music files.
 

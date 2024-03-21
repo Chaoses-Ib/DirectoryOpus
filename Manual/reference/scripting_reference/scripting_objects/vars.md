@@ -8,7 +8,7 @@ The **Vars** object represents a collection of user and script-defined variables
 | Lister | **[Lister](lister.md).vars** | Yes | Variables that are local to a Lister. Persistent variables are saved on a per-Lister basis in Lister Layouts. |
 | Tab | **[Tab](tab.md).vars** | Yes | Variables that are local to a particular tab. Persistent variables are saved per-Tab in Lister Layouts. |
 | Script | **[Script](script.md).vars  <br />[ScriptInitData](scriptinitdata.md).vars** | Yes | Variables that are local to a particular script add-in. |
-| Dialog | **[Dialog](dialog.md).Vars** | Yes | Variables that are tied to a particular [script dialog](/Manual/scripting/script_dialogs/RAEDME.md). |
+| Dialog | **[Dialog](dialog.md).Vars** | Yes | Variables that are tied to a particular [script dialog](/Manual/scripting/script_dialogs/README.md). |
 | Command | **[Command](command.md).vars** | No | Variables that are local to a particular function. They are not saved from one invocation of the function to another and do not support persistence. |
 
 | Property Name | Return Type | Description |

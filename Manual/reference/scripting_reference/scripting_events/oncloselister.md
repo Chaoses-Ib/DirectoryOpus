@@ -1,6 +1,6 @@
 # OnCloseLister
 
-The **OnCloseLister** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification whenever a Lister is closed.
+The **OnCloseLister** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification whenever a Lister is closed.
 
 | **Method Name:** | OnCloseLister |
 | --- | --- |

@@ -1,6 +1,6 @@
 # Options
 
-This page contains general options relating to [folder tabs](/Manual/basic_concepts/the_lister/tabs/RAEDME.md).
+This page contains general options relating to [folder tabs](/Manual/basic_concepts/the_lister/tabs/README.md).
 
 - **Display drive letter in tab label**: The drive letter will be displayed in the tab along with the name of the folder.
 - **Display folder icons**: The folder's icon will be shown in the tab.

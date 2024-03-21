@@ -2,30 +2,30 @@
 
 This toolbar contains commands relating to file and folder operations. The top-level buttons (**Copy Files**, etc) provide quick access to the most commonly used file functions, while the drop-down menus attached to those buttons contain more complicated or less-frequently used commands related to their parent button (so, for example, the drop-down menu for **Copy Files** contains **Copy As** and **Duplicate** commands as well).
 
-Most of these buttons require one or more files or folders to be selected before they are available. They also generally use the [Source and Destination](/Manual/basic_concepts/source_and_destination.md) concept - the **Copy Files** button will copy all selected items from the current source file display to the destination. In a [dual-display](../../dual_display/RAEDME.md) Lister the destination is always the non-active file display. If no destination file display is available, Opus will prompt you to select a destination folder.
+Most of these buttons require one or more files or folders to be selected before they are available. They also generally use the [Source and Destination](/Manual/basic_concepts/source_and_destination.md) concept - the **Copy Files** button will copy all selected items from the current source file display to the destination. In a [dual-display](../../dual_display/README.md) Lister the destination is always the non-active file display. If no destination file display is available, Opus will prompt you to select a destination folder.
 
 ![](/Manual/images/media/13/operations_toolbar.png)
 
 ##### Copy Files
 
-The parent button will [copy](/Manual/file_operations/copying_moving_and_deleting_files/RAEDME.md) selected files and folders to the destination folder. The drop-down attached to this button contains the following additional commands:
+The parent button will [copy](/Manual/file_operations/copying_moving_and_deleting_files/README.md) selected files and folders to the destination folder. The drop-down attached to this button contains the following additional commands:
 
 - **Copy As**: This command lets you [provide new filenames](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md) for the copied files - either one at a time, or for all selected files as a batch using a wildcard.
 - **Duplicate**: This command makes copies of the selected files in the current directory (that is, the files are duplicated in the same location, they are not copied to the destination). You must [provide new filenames](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md) for the duplicated files and folders.
-- **Update All**: This command copies selected files to the destination if they either a) don't exist in the destination, or b) exist but are newer than those in the destination (see [Copying Updated Files](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/RAEDME.md) for more information).
-- **Update Existing**: This command copies selected files to the destination only if they already exist but are newer than those in the destination (see [Copying Updated Files](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/RAEDME.md) for more information).
+- **Update All**: This command copies selected files to the destination if they either a) don't exist in the destination, or b) exist but are newer than those in the destination (see [Copying Updated Files](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/README.md) for more information).
+- **Update Existing**: This command copies selected files to the destination only if they already exist but are newer than those in the destination (see [Copying Updated Files](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/README.md) for more information).
 - **Send To**: This sub-menu contains the system ***Send To*** menu that lets you send selected files and folders to various destinations. Using this drop-down menu is equivalent to right-clicking on the file and selecting from the *Send To* context menu.
-- **Copy Filter**: This command toggles the recursive [copy filter](/Manual/file_operations/filtered_operations/RAEDME.md) on or off in the current Lister.
+- **Copy Filter**: This command toggles the recursive [copy filter](/Manual/file_operations/filtered_operations/README.md) on or off in the current Lister.
 
 ##### Move Files
 
-The parent button will [move](/Manual/file_operations/copying_moving_and_deleting_files/RAEDME.md) selected files and folders to the destination. The drop-down menu contains the following additional commands:
+The parent button will [move](/Manual/file_operations/copying_moving_and_deleting_files/README.md) selected files and folders to the destination. The drop-down menu contains the following additional commands:
 
 - **Move As**: This command lets you [provide new filenames](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md) for the files as they are moved - either one at a time, or for all selected files as a batch using a wildcard.
 
 ##### Rename
 
-The parent command lets you rename selected files and folders using the **[Advanced Rename](/Manual/file_operations/renaming_files/advanced_rename/RAEDME.md)** dialog. The drop-down menu contains several examples of how the raw Rename command can be "scripted" to perform specialized renaming tasks:
+The parent command lets you rename selected files and folders using the **[Advanced Rename](/Manual/file_operations/renaming_files/advanced_rename/README.md)** dialog. The drop-down menu contains several examples of how the raw Rename command can be "scripted" to perform specialized renaming tasks:
 
 - **Use Simple Rename**: Turn this on to make the **Rename** button trigger the simple Rename dialog (which only supports basic wildcard renames), rather than the Advanced Rename dialog.
 - **Capitalize Words**: Capitalizes the first letter of each word in the filename, lower-cases all other letters.
@@ -36,9 +36,9 @@ The parent command lets you rename selected files and folders using the **[Advan
 
 ##### New Folder
 
-The parent command displays a dialog that lets you create a new folder in the active file display. If you are currently in the [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md) root folder, a new collection will be created, and if you are currently in the [Libraries](/Manual/basic_concepts/virtual_file_system/libraries.md) root folder, a new library will be created. The drop-down menu contains the following additional commands:
+The parent command displays a dialog that lets you create a new folder in the active file display. If you are currently in the [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/README.md) root folder, a new collection will be created, and if you are currently in the [Libraries](/Manual/basic_concepts/virtual_file_system/libraries.md) root folder, a new library will be created. The drop-down menu contains the following additional commands:
 
-- **New Archive**: This command [creates a new archive](/Manual/file_operations/creating_archives/RAEDME.md) (you will be prompted for the archive type and any options applicable to the archive format).
+- **New Archive**: This command [creates a new archive](/Manual/file_operations/creating_archives/README.md) (you will be prompted for the archive type and any options applicable to the archive format).
 - **New Text Document**: This command creates a new empty text document (**.txt** file) in the current folder. This is equivalent to right-clicking on the file display background and choosing **New -\> Text Document** from the context menu.
 - **New**: This sub-menu displays the system **New** menu, that lets you create new files of various types.
 - **New Dated Folder**: Creates a new folder in the current file display with the current date and time as its name.
@@ -49,8 +49,8 @@ The parent command displays a dialog that lets you create a new folder in the ac
 The parent button will delete all selected files and folders. By default the recycle bin will be used to provide an undoable delete if possible, although this can be modified through [Preferences](/Manual/preferences/preferences_categories/file_operations/deleting_files.md). The following additional commands can be found in the attached drop-down menu:
 
 - **Secure Wipe**: This command deletes all selected files using a [secure delete](/Manual/file_operations/copying_moving_and_deleting_files/deleting_files/secure_delete.md) algorithm, which makes it extremely difficult (if not impossible) for anyone to recover the deleted information.
-- **Remove From Collection**: When used within a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md), this command removes all selected items from that collection. If you use the parent **Delete** command on collection items, the real files and folders are deleted - use the **Remove** command to remove them from the collection without deleting the actual files.
-- **Delete Filter**: This command toggles the recursive [delete filter](/Manual/file_operations/filtered_operations/RAEDME.md) on or off in the current Lister.
+- **Remove From Collection**: When used within a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/README.md), this command removes all selected items from that collection. If you use the parent **Delete** command on collection items, the real files and folders are deleted - use the **Remove** command to remove them from the collection without deleting the actual files.
+- **Delete Filter**: This command toggles the recursive [delete filter](/Manual/file_operations/filtered_operations/README.md) on or off in the current Lister.
 
 ##### Admin
 
@@ -58,7 +58,7 @@ This button turns on [Administrator Mode](/Manual/file_operations/uac_and_admini
 
 ##### Archive Files
 
-The parent command lets you add all selected files and folders to a [new archive](/Manual/file_operations/creating_archives/add_to_archive_dialog/RAEDME.md) in the current folder (you will be prompted for the archive type and parameters). The drop-down menu contains the following additional commands:
+The parent command lets you add all selected files and folders to a [new archive](/Manual/file_operations/creating_archives/add_to_archive_dialog/README.md) in the current folder (you will be prompted for the archive type and parameters). The drop-down menu contains the following additional commands:
 
 - **Files to Separate Archives**: Adds all selected items to separate archives (one archive per selected file or folder). This command will create ZIP files by default; you can change the archive format used by editing the command (e.g. change **Copy ARCHIVE=single** to **Copy ARCHIVE=.7z,single** to use 7zip by default).
 - **Files to Destination Archives**: This is the same as the parent **Archive Files** command except that the new archive will be created in the destination.
@@ -78,7 +78,7 @@ The parent button displays the system Properties dialog for all selected items. 
 
 ##### Slideshow
 
-This button launches a [slideshow](/Manual/additional_functionality/viewing_images/RAEDME.md) of all selected image files. If no files are selected, all image files in the current folder will be displayed. The drop-down menu commands are:
+This button launches a [slideshow](/Manual/additional_functionality/viewing_images/README.md) of all selected image files. If no files are selected, all image files in the current folder will be displayed. The drop-down menu commands are:
 
       * **Show Pictures**: Displays selected files in the standalone viewer. 
       * **Play Sounds**: Plays selected files in the internal sound player.

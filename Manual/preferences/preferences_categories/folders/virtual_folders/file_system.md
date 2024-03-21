@@ -1,6 +1,6 @@
 # File System
 
-These options control how Opus handles [virtual folders](../virtual_folders/RAEDME.md) that also have an underlying "real" disk folder behind them. Windows contains several folders like this - the *Desktop* is one, but others include the *Fonts* folder (usually *C:\Windows\Fonts*) and the *Global Assembly Cache* folder (usually *C:\Windows\Assembly*). These folders can be displayed in Opus in two different ways - as the underlying disk folder, in which case you will see all files in that folder, or as a virtual folder, in which case you will see the virtualized view that Windows provides.
+These options control how Opus handles [virtual folders](../virtual_folders/README.md) that also have an underlying "real" disk folder behind them. Windows contains several folders like this - the *Desktop* is one, but others include the *Fonts* folder (usually *C:\Windows\Fonts*) and the *Global Assembly Cache* folder (usually *C:\Windows\Assembly*). These folders can be displayed in Opus in two different ways - as the underlying disk folder, in which case you will see all files in that folder, or as a virtual folder, in which case you will see the virtualized view that Windows provides.
 
 *Fonts as a virtual folder*  
 ![](/Manual/images/media/13/fonts_virtual.png)  

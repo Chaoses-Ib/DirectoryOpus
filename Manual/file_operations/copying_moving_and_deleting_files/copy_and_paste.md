@@ -11,7 +11,7 @@ Moving files using the clipboard is implemented in almost all file managers the 
 
 Although these functions use the internal **[Clipboard](/Manual/reference/command_reference/internal_commands/clipboard.md)** command to initiate them, when you paste files into a Lister, the actual file copy or move is implemented "behind-the-scenes" using the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.
 
-This means that features like the [copy queue](copy_queues/RAEDME.md) are available for clipboard operations just like they are when [copying via the toolbar buttons](copying_using_the_toolbar_buttons/RAEDME.md).
+This means that features like the [copy queue](copy_queues/README.md) are available for clipboard operations just like they are when [copying via the toolbar buttons](copying_using_the_toolbar_buttons/README.md).
 
 You can control the queuing using the various arguments for the **[Clipboard](/Manual/reference/command_reference/internal_commands/clipboard.md)** command.
 
@@ -32,4 +32,4 @@ The **ADD** argument for the internal **[Clipboard](/Manual/reference/command_re
 
 To make use of this functionality, you would need to create a new toolbar button or hotkey that runs the `Clipboard COPY ADD` command (or assign this to a hotkey - for example, <kbd>Ctrl+C</kbd> runs `Clipboard COPY` by default, so you could assign this to <kbd>Ctrl+Shift+C</kbd>).
 
-See the section on [Customize](/Manual/customize/RAEDME.md) for information about creating your own buttons and hotkeys.
+See the section on [Customize](/Manual/customize/README.md) for information about creating your own buttons and hotkeys.

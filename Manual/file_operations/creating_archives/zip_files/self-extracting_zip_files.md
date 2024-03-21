@@ -4,7 +4,7 @@ Opus lets you convert a Zip archive into what's called a self-extracting archive
 
 Now that Windows itself comes with built-in support for Zip files self-extracting archives are not as widely used as they once were, but there are still some uses for them.
 
-To create a self-extracting archive, you must first [create the source Zip archive](). You can use the **[Add to Archive](../add_to_archive_dialog/RAEDME.md)** dialog to create a Zip archive and convert it to self-extracting format in one step, or you can create the archive and then convert it separately using the context menu command that Opus adds automatically to the context menu for **.zip** files.
+To create a self-extracting archive, you must first [create the source Zip archive](). You can use the **[Add to Archive](../add_to_archive_dialog/README.md)** dialog to create a Zip archive and convert it to self-extracting format in one step, or you can create the archive and then convert it separately using the context menu command that Opus adds automatically to the context menu for **.zip** files.
 
 This context menu can be disabled through the [Archive Context Menu](/Manual/preferences/preferences_categories/zip_and_other_archives/archive_context_menu.md) Preferences page, so if you don't see it when you right-click on a Zip file you may need to go and turn it on.
 

@@ -19,7 +19,7 @@ Your Preferences, toolbars and file type settings are always backed up. There ar
 
 - **Backup images** includes any image files you are using in your configuration.
 - **Backup sounds** does the same for any sound files. Note that both images and sounds are only backed up if they're located below your Opus configuration folder.
-- **Backup miscellaneous data** will backup data that, while not forming part of your configuration as such, may still be important - things like your [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md), for example.
+- **Backup miscellaneous data** will backup data that, while not forming part of your configuration as such, may still be important - things like your [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/README.md), for example.
 - **Backup local state data** will include data that may really only make sense on the local machine - things like your remembered window positions and so on. You'd want this for disaster recovery but not necessarily when moving your configuration to a new machine.
 - **Backup currently open folder tabs** will include currently open windows and tabs in the backup. This is a subset of **local state data**, so it is only relevant if that is also on.
 

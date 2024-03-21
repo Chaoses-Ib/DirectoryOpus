@@ -1,6 +1,6 @@
 # Adding a new Site
 
-To add a new FTP site entry in the [FTP Address Book](ftp_address_book/RAEDME.md), click the **New FTP Site** (![](/Manual/images/media/favorites_-_add.png)) button or right-click on the site list and choose the **New FTP Site** command. This displays the **Create New FTP Site** dialog, which lets you configure the basic parameters for the new FTP site.
+To add a new FTP site entry in the [FTP Address Book](ftp_address_book/README.md), click the **New FTP Site** (![](/Manual/images/media/favorites_-_add.png)) button or right-click on the site list and choose the **New FTP Site** command. This displays the **Create New FTP Site** dialog, which lets you configure the basic parameters for the new FTP site.
 
 The options available when creating a new site are:
 

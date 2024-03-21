@@ -1,6 +1,6 @@
 # Image Marking
 
-A common task is sorting through a bunch of digital photos, working out which ones to keep, which ones to upload, which ones to print, etc. The Image Marking feature in the standalone viewer can make this process very simple. Images you mark are automatically added to a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md), from which you can then copy, delete, upload, etc. the images you've chosen. Additionally, thumbnails of the images you’ve marked are shown in a separate panel in the viewer, and there are commands that make it easy to move around the marked images.
+A common task is sorting through a bunch of digital photos, working out which ones to keep, which ones to upload, which ones to print, etc. The Image Marking feature in the standalone viewer can make this process very simple. Images you mark are automatically added to a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/README.md), from which you can then copy, delete, upload, etc. the images you've chosen. Additionally, thumbnails of the images you’ve marked are shown in a separate panel in the viewer, and there are commands that make it easy to move around the marked images.
 
 ![](/Manual/images/media/image015_001.png)
 

@@ -5,7 +5,7 @@
 By default, the Lister title bar displays just the name of the current folder. You can change that here.
 
 - **Display folder path:** Puts the full path into the title bar instead of just the folder name.
-- **Display layout name:** Adds the name of the [layout](/Manual/basic_concepts/the_lister/layouts/RAEDME.md) that the Lister came from. (Does nothing extra when the window wasn't opened via a layout.)
+- **Display layout name:** Adds the name of the [layout](/Manual/basic_concepts/the_lister/layouts/README.md) that the Lister came from. (Does nothing extra when the window wasn't opened via a layout.)
 - **Custom title**: Lets you configure a completely custom string for the Lister title bar. You can even leave the field empty if you don't want a title!
 
 The codes below can be used to insert information into the custom title bar string. You can see a list of them by clicking the ![building_blocks.png](/Manual/images/media/13/building_blocks.png) button.

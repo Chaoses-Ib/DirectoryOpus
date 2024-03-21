@@ -1,6 +1,6 @@
 # Viewer Pane
 
-This page contains options that affect the [Lister viewer pane](/Manual/basic_concepts/the_lister/viewer_pane.md). Changes you make here don't affect the [standalone image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md) - there are separate pages for those options.
+This page contains options that affect the [Lister viewer pane](/Manual/basic_concepts/the_lister/viewer_pane.md). Changes you make here don't affect the [standalone image viewer](/Manual/additional_functionality/viewing_images/README.md) - there are separate pages for those options.
 
 - **Accelerated scrolling while dragging**: Grabbing the image with the mouse will move the image faster, such that you only have to move the mouse a small amount to scroll the entire image. If it's turned off, you'll get 1:1 movement where the part of the image you drag will stay under the mouse. Holding <kbd>Ctrl</kbd> while dragging will also switch modes, in case you sometimes need both.
 - **Automatically refresh image when file changes**: Opus will monitor the currently viewed file, and refresh the display of it if it changes.

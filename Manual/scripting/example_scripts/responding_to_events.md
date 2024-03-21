@@ -1,6 +1,6 @@
 # Responding to Events
 
-[Script add-ins](../script_add-ins/RAEDME.md) are invoked in response to one or more [events](/Manual/reference/scripting_reference/scripting_events/RAEDME.md).
+[Script add-ins](../script_add-ins/README.md) are invoked in response to one or more [events](/Manual/reference/scripting_reference/scripting_events/README.md).
 
 This is an example of a script add-in that responds to two different events. You would use this by creating a new **.vbs** file in the *Script Addins* folder (type **/dopusdata/Script Addins** into the location field to find this).
 

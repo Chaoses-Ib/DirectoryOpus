@@ -1,6 +1,6 @@
 # Automatic Formats
 
-As well as manually-configured [folder formats](../folder_formats/RAEDME.md), Opus can automatically remember when you make changes to the [format](/Manual/basic_concepts/folder_options/RAEDME.md) in a file display, and restore that format next time you go to the folder.
+As well as manually-configured [folder formats](../folder_formats/README.md), Opus can automatically remember when you make changes to the [format](/Manual/basic_concepts/folder_options/README.md) in a file display, and restore that format next time you go to the folder.
 
 Turn on the **Remember folder formats automatically** option to enable the system, and use the **Remember at most** field to control how many folders can be remembered.
 

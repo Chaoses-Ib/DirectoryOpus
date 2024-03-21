@@ -10,7 +10,7 @@ Breaking down the function,
 
 - The type is set to **MS-DOS Batch Function** using the **Function** drop-down. This is necessary to use the **dir** instruction - **dir** isn't a real program or command, it's an instruction that's only understood by the MS-DOS command interpreter.
 - The first line of the command, **cd {sourcepath}**, sets the current directory of the batch script to the current source folder. This is the folder that **dir** will produce a listing of.
-- The second command invokes the **dir** instruction (the\*\* /w\*\* flag turns on *wide* mode). The **\>** character redirects the output of the command, and the combination of [external control codes](/Manual/reference/command_reference/external_control_codes/RAEDME.md) following the **\>** supply the output filename.
+- The second command invokes the **dir** instruction (the\*\* /w\*\* flag turns on *wide* mode). The **\>** character redirects the output of the command, and the combination of [external control codes](/Manual/reference/command_reference/external_control_codes/README.md) following the **\>** supply the output filename.
   - **{destpath}** - the path of the current destination directory
   - **{sourcepath\|nopath\|noterm}** - the current source directory, without the path or trailing termination (i.e. the name of the directory)
   - **.txt** - the file extension for the output file.

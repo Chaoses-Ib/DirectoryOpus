@@ -2,7 +2,7 @@
 
 When you are displaying the contents of a remote FTP site in the file display, you can choose the **Site Properties** command from the **FTP** drop-down menu, or right-click on the background of the file display or on the Lister's status bar, and choose the **Site Properties** command to view connection properties for the site.
 
-The **Site Properties** dialog has a number of tabs across the top that correspond with the pages in the [FTP Address Book](ftp_address_book/RAEDME.md).
+The **Site Properties** dialog has a number of tabs across the top that correspond with the pages in the [FTP Address Book](ftp_address_book/README.md).
 
 ![](/Manual/images/media/ftp_addressbook_tabs.png)
 
@@ -21,4 +21,4 @@ More:
 [Speed Page](ftp_address_book/speed_page.md)  
 [Special Page](ftp_address_book/special_page.md)  
 [Proxy Page](ftp_address_book/proxy_page.md)  
-[FTP Address Book](ftp_address_book/RAEDME.md)  
+[FTP Address Book](ftp_address_book/README.md)  

@@ -1,6 +1,6 @@
 # OnBeforeFolderChange
 
-The **OnBeforeFolderChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification before a new folder is read in a tab. Use the **OnAfterFolderChange** event if you want notification *after* a folder has been read.
+The **OnBeforeFolderChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification before a new folder is read in a tab. Use the **OnAfterFolderChange** event if you want notification *after* a folder has been read.
 
 | **Method Name:** | OnBeforeFolderChange |
 | --- | --- |

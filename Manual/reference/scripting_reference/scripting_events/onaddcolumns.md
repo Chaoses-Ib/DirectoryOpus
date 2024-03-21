@@ -1,6 +1,6 @@
 # OnAddColumns
 
-The **OnAddColumns** event is called to allow your [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to [add columns](/Manual/scripting/example_scripts/adding_a_new_column.md). Call the **[AddColData](../scripting_objects/addcoldata.md).AddColumn** method once for each column you wish to add.
+The **OnAddColumns** event is called to allow your [script add-in](/Manual/scripting/script_add-ins/README.md) to [add columns](/Manual/scripting/example_scripts/adding_a_new_column.md). Call the **[AddColData](../scripting_objects/addcoldata.md).AddColumn** method once for each column you wish to add.
 
 | **Method Name:** | OnAddColumns |
 | --- | --- |

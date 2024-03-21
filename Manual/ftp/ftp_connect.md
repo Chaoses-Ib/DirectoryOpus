@@ -1,6 +1,6 @@
 # FTP Connect
 
-The FTP Connect dialog lets you make a quick connection to an FTP site without going through the [FTP Address Book](ftp_address_book/RAEDME.md). To access this function, select the **FTP Connect** command from the FTP menu on the toolbar.
+The FTP Connect dialog lets you make a quick connection to an FTP site without going through the [FTP Address Book](ftp_address_book/README.md). To access this function, select the **FTP Connect** command from the FTP menu on the toolbar.
 
 ![](/Manual/images/media/ftp_connect.png) 
 
@@ -10,7 +10,7 @@ You can also right-click the FTP item in the tree and choose **FTP Connect** fro
 
 The options available in the **FTP Connect** dialog are:
 
-- **FTP host**: This is the host address (domain name or IPv4 address) of the FTP site to connect to. The drop-down attached to this control displays the contents of your [FTP Address Book](ftp_address_book/RAEDME.md), and selecting a site from here will populate the fields of the dialog with the information for that site. For example, you could use this to connect to a site from your address book with a different username to the one stored in the site entry.
+- **FTP host**: This is the host address (domain name or IPv4 address) of the FTP site to connect to. The drop-down attached to this control displays the contents of your [FTP Address Book](ftp_address_book/README.md), and selecting a site from here will populate the fields of the dialog with the information for that site. For example, you could use this to connect to a site from your address book with a different username to the one stored in the site entry.
 - ![](/Manual/images/media/ftp_connect_-_recall.png): This is the *recall* button. Clicking this button will recall the details of the last site you connected to through the **FTP Connect** dialog.
 - **Connection**: Select the FTP connection type from the drop-down. The available options are:                                                            
   - **Standard Connection**: A normal, unencrypted [FTP](http://en.wikipedia.org/wiki/FTP) connection.

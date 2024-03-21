@@ -1,6 +1,6 @@
 # OnDoubleClick
 
-The **OnDoubleClick** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when the user double-clicks on a file or folder in a tab.
+The **OnDoubleClick** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when the user double-clicks on a file or folder in a tab.
 
 By default your event handler is passed an **[Item](../scripting_objects/item.md)** object corresponding to the item that was double-clicked. Because constructing an Item object may take some time (e.g. on a network drive) you have the option for your handler to be called twice - once with only the path to the item, and a second time (if desired) with the full **Item** object. To do this:
 

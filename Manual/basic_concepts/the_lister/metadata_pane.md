@@ -16,6 +16,6 @@ The title bar of the metadata pane displays the name of the currently selected f
 
 If you've edited the metadata for the current files, the **Apply** and **Cancel** links will become available - click **Apply** to save your changes or **Cancel** to abort and reload the original metadata. You can save changes automatically and move to the next or previous file by holding the <kbd>Shift</kbd> key when you click the appropriate button.
 
-You can also have changes saved automatically by turning on the checkbox next to the **Apply** link. This corresponds to the **Apply changes automatically** option on the [File Operations / Metadata / Editor](/Manual/preferences/preferences_categories/file_operations/metadata/RAEDME.md) page in Preferences.
+You can also have changes saved automatically by turning on the checkbox next to the **Apply** link. This corresponds to the **Apply changes automatically** option on the [File Operations / Metadata / Editor](/Manual/preferences/preferences_categories/file_operations/metadata/README.md) page in Preferences.
 
-For a full description of Metadata editing, please see the **[Editing Metadata](/Manual/file_operations/editing_metadata/RAEDME.md)** section.
+For a full description of Metadata editing, please see the **[Editing Metadata](/Manual/file_operations/editing_metadata/README.md)** section.

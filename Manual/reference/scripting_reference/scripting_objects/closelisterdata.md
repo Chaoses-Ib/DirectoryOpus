@@ -1,6 +1,6 @@
 # CloseListerData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnCloseLister](../scripting_events/oncloselister.md)** event, the method receives a **CloseListerData** object before a Lister is closed.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnCloseLister](../scripting_events/oncloselister.md)** event, the method receives a **CloseListerData** object before a Lister is closed.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
 # OpenTabData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnOpenTab](../scripting_events/onopentab.md)** event, the method receives an **OpenTabData** object when invoked when a new tab is opened.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnOpenTab](../scripting_events/onopentab.md)** event, the method receives an **OpenTabData** object when invoked when a new tab is opened.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

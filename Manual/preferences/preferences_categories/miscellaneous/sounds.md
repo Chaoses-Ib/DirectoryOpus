@@ -8,7 +8,7 @@ The events you can assign sounds to are:
 
 - **Close a Lister**: Played whenever a Lister is closed (except on shutdown).
 - **Close Folder Tab**: Played whenever a folder tab is closed.
-- **Dock a Floating Toolbar to the screen edge**: If you drag a [floating toolbar](/Manual/additional_functionality/floating_toolbars/RAEDME.md) to the edge of the screen to dock it, this sound will play.
+- **Dock a Floating Toolbar to the screen edge**: If you drag a [floating toolbar](/Manual/additional_functionality/floating_toolbars/README.md) to the edge of the screen to dock it, this sound will play.
 - **Dock a Lister with another one**: When Lister docking is enabled in the [Location Bar / Toolbars](../location_bar/toolbars.md) Preferences page, this sound will play whenever you dock two Listers together.
 - **Find-As-You-Type No Match**: When typing into the [FAYT](/Manual/basic_concepts/the_lister/find-as-you-type_field.md) field in find mode, this sound plays if the string you type can't be matched to a file.
 - **FTP copy failure**: Played if a copy to or from an FTP site fails.

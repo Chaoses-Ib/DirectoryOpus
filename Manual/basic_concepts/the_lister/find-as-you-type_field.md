@@ -40,7 +40,7 @@ Default key: `>`. Enter a command and run it immediately without having to set u
 
 The **Command** mode lets you enter a command and execute it immediately. You can run any Opus internal command, or launch an external program. Any function you can run from a button or hotkey can be run as an ad-hoc command through the FAYT.
 
-You can also use any of the [external control codes](/Manual/reference/command_reference/external_control_codes/RAEDME.md) in your command. As a shortcut when typing the command, you can also press <kbd>Ctrl+Enter</kbd> to automatically insert the names of any selected files in the command line. The command mode has a history of your most recently executed commands - press the <kbd>Up</kbd> or <kbd>Down</kbd> cursor keys to access it.
+You can also use any of the [external control codes](/Manual/reference/command_reference/external_control_codes/README.md) in your command. As a shortcut when typing the command, you can also press <kbd>Ctrl+Enter</kbd> to automatically insert the names of any selected files in the command line. The command mode has a history of your most recently executed commands - press the <kbd>Up</kbd> or <kbd>Down</kbd> cursor keys to access it.
 
 ##### DOS Command
 
@@ -79,7 +79,7 @@ Default key: `'`. Performs a [quick search](/Manual/basic_concepts/searching_and
 
 Uses Opus's built-in Find Files functionality to search below the current folder.
 
-If a plain string or a wildcard is entered, it will be treated as a wildcard name match. If a string beginning with `=` is entered, it'll be processed by the [evaluator](/Manual/evaluator/RAEDME.md) and can perform more complex queries (e.g. `=size>100kb`).
+If a plain string or a wildcard is entered, it will be treated as a wildcard name match. If a string beginning with `=` is entered, it'll be processed by the [evaluator](/Manual/evaluator/README.md) and can perform more complex queries (e.g. `=size>100kb`).
 
 ##### Range
 

@@ -1,6 +1,6 @@
 # OnSourceDestChange
 
-The **OnSourceDestChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification whenever a tab's source/destination state changes.
+The **OnSourceDestChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification whenever a tab's source/destination state changes.
 
 | **Method Name:** | OnSourceDestChange |
 | --- | --- |

@@ -10,4 +10,4 @@ The script editor will pop-out to the right of the dialog. The drop-down at the 
 
 Note that a script can be defined (and have effect) even if the editor isn't visible. As shown in the screenshot above, the words **Script defined** will be displayed to indicate that a script is active. The drop-down attached to the **Hide Scipt** button gives you a clear command which lets you clear out the script contents.
 
-See the [Rename Scripts](/Manual/scripting/rename_scripts/RAEDME.md) page in the [Scripting](/Manual/scripting/RAEDME.md) section for more information about writing rename scripts.
+See the [Rename Scripts](/Manual/scripting/rename_scripts/README.md) page in the [Scripting](/Manual/scripting/README.md) section for more information about writing rename scripts.

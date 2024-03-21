@@ -20,7 +20,7 @@ There are a number of buttons in the viewer pane's title bar:
 
 - **Previous File**: Moves the selection in the file display to the previous file (and displays it in the viewer pane).
 - **Next File**: Moves the selection to the next file.
-- **Rotate Left**: Rotate the currently displayed image 90 degrees to the left. Note that this does not modify the image on disk - the rotation is not permanent, it simply affects the current display in the viewer pane. If you want to permanently rotate an image you can use the **[Image Conversion](/Manual/additional_functionality/image_conversion/RAEDME.md)** function.
+- **Rotate Left**: Rotate the currently displayed image 90 degrees to the left. Note that this does not modify the image on disk - the rotation is not permanent, it simply affects the current display in the viewer pane. If you want to permanently rotate an image you can use the **[Image Conversion](/Manual/additional_functionality/image_conversion/README.md)** function.
 - **Rotate Right**: Rotate the currently displayed image 90 degrees to the right.
 - **Zoom In**: Zoom into (magnify) the currently displayed image. You can also zoom in by holding the <kbd>Ctrl</kbd> down and turning the mouse wheel.
 - **Zoom Out**: Zoom out of the currently displayed image. You can also zoom out by holding the <kbd>Ctrl</kbd> key down and turning the mouse wheel.
@@ -44,7 +44,7 @@ The buttons in the control bar are:
 
 - **Previous File**: Moves the selection in the file display to the previous file (and displays it in the viewer pane).
 - **Next File**: Moves the selection to the next file.
-- **Rotate Left**: Rotate the currently displayed image 90 degrees to the left. Note that this does not modify the image on disk - the rotation is not permanent, it simply affects the current display in the viewer pane. If you want to permanently rotate an image you can use the **[Image Conversion](/Manual/additional_functionality/image_conversion/RAEDME.md)** function.
+- **Rotate Left**: Rotate the currently displayed image 90 degrees to the left. Note that this does not modify the image on disk - the rotation is not permanent, it simply affects the current display in the viewer pane. If you want to permanently rotate an image you can use the **[Image Conversion](/Manual/additional_functionality/image_conversion/README.md)** function.
 - **Rotate Right**: Rotate the currently displayed image 90 degrees to the right.
 - **Zoom In**: Zoom into (magnify) the currently displayed image. You can also zoom in by holding the <kbd>Ctrl</kbd> down and turning the mouse wheel.
 - **Zoom Out**: Zoom out of the currently displayed image. You can also zoom out by holding the <kbd>Ctrl</kbd> key down and turning the mouse wheel.
@@ -53,7 +53,7 @@ The buttons in the control bar are:
 - **Grow To Window**: Scale the image to match to the size of the window. By contrast with **Fit To Window**, this setting will scale a small image up to fill the window as well as scaling a large image down.
 - **Hex View**: This switches the display of the current file into hex view. Hex view uses the supplied text plugin (in hex mode) to display the binary contents of the file. Click the button again to switch back to the normal display of the image.
 - **Slideshow**: This button enables slideshow mode. Opus will begin showing a slideshow (in the viewer pane) of files in the current folder, starting from the current selection. You can adjust the speed of the slideshow from the **[Viewer / Viewer Pane](/Manual/preferences/preferences_categories/viewer/viewer_pane.md)** page in Preferences.
-- **Full Screen**: This command clears the current file from the viewer pane, and re-opens it in the [standalone image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md), in full-screen mode. You can leave full-screen mode (and remain in the standalone viewer) by pressing the <kbd>Enter</kbd> key, or press <kbd>Esc</kbd> to close the separate viewer and return to the Lister.
+- **Full Screen**: This command clears the current file from the viewer pane, and re-opens it in the [standalone image viewer](/Manual/additional_functionality/viewing_images/README.md), in full-screen mode. You can leave full-screen mode (and remain in the standalone viewer) by pressing the <kbd>Enter</kbd> key, or press <kbd>Esc</kbd> to close the separate viewer and return to the Lister.
 - **Print**: Lets you print the currently viewed image or document.
 - **Settings**: This is a shortcut that takes you to the **[Viewer / Viewer Pane](/Manual/preferences/preferences_categories/viewer/viewer_pane.md)** page in Preferences.
 

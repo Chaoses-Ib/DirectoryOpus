@@ -1,6 +1,6 @@
 # ViewerEventData
 
-If a script implements the **[OnViewerEvent](../scripting_events/onviewerevent.md)** event, it receives a **ViewerEventData** object whenever certain events occur in a standalone [image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md).
+If a script implements the **[OnViewerEvent](../scripting_events/onviewerevent.md)** event, it receives a **ViewerEventData** object whenever certain events occur in a standalone [image viewer](/Manual/additional_functionality/viewing_images/README.md).
 
   
 

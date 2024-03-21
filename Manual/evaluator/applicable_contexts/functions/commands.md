@@ -12,7 +12,7 @@ If the expression doesn't return a string to run as a command, the line is simpl
 
 ##### Dynamic commands
 
-In this mode, it can generate commands that are used to generate dynamic lists of buttons. For example, `Go DRIVEBUTTONS` is a [dynamic button](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/RAEDME.md) that generates a list of drive buttons.
+In this mode, it can generate commands that are used to generate dynamic lists of buttons. For example, `Go DRIVEBUTTONS` is a [dynamic button](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.md) that generates a list of drive buttons.
 
 This mode is accessed using the **@ctx:** modifier. The command returned by the expression will be used to generate dynamic buttons.
 
@@ -20,7 +20,7 @@ This mode is accessed using the **@ctx:** modifier. The command returned by the 
 
 ![](page>standard_variables&nodate&nouser&nofooter)
 
-When generating executable commands, the evaluator can also access the values of the various [external control codes](/Manual/reference/command_reference/external_control_codes/RAEDME.md) as variables within the expression. For example, the current file path is available as the variable `filepath`.
+When generating executable commands, the evaluator can also access the values of the various [external control codes](/Manual/reference/command_reference/external_control_codes/README.md) as variables within the expression. For example, the current file path is available as the variable `filepath`.
 
 The return value from the evaluation expression should be a *str*.
 

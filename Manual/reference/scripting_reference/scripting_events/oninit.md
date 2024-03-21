@@ -1,6 +1,6 @@
 # OnInit
 
-The **OnInit** event is called once for each [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to initialize it. The event will be called on program startup, and also if a script is added or edited while Opus is already running. Implementing the **OnInit** event is optional, but highly recommended as it allows you to provide a name, description and other information to be shown to the user in Preferences. It also provides a way for a script to [add internal commands](/Manual/scripting/example_scripts/adding_a_new_internal_command.md) and [columns](/Manual/scripting/example_scripts/adding_a_new_column.md) (although the **[OnAddCommands](onaddcommands.md)** and **[OnAddColumns](onaddcolumns.md)** methods provide a better way to do this).
+The **OnInit** event is called once for each [script add-in](/Manual/scripting/script_add-ins/README.md) to initialize it. The event will be called on program startup, and also if a script is added or edited while Opus is already running. Implementing the **OnInit** event is optional, but highly recommended as it allows you to provide a name, description and other information to be shown to the user in Preferences. It also provides a way for a script to [add internal commands](/Manual/scripting/example_scripts/adding_a_new_internal_command.md) and [columns](/Manual/scripting/example_scripts/adding_a_new_column.md) (although the **[OnAddCommands](onaddcommands.md)** and **[OnAddColumns](onaddcolumns.md)** methods provide a better way to do this).
 
 | **Method Name:** | OnInit |
 | --- | --- |

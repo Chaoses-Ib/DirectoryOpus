@@ -40,7 +40,7 @@ Behind the scenes, Opus sends a message to Everything asking it to return the co
 
 On a large folder the speed boost from using the index can be dramatic.
 
-The various options on the [Folder Sizes](/Manual/preferences/preferences_categories/folders/folder_sizes/RAEDME.md) Preferences page can be used to configure how Opus uses Everything for folder sizes.
+The various options on the [Folder Sizes](/Manual/preferences/preferences_categories/folders/folder_sizes/README.md) Preferences page can be used to configure how Opus uses Everything for folder sizes.
 
 ##### Searching
 
@@ -48,4 +48,4 @@ The various options on the [Folder Sizes](/Manual/preferences/preferences_catego
 
 The main interface to this is the [search field](/Manual/basic_concepts/searching_and_filtering/windows_search.md) that by default appears in the top-right of the Lister. Use the drop-down button on the left to select either *Everything* (searches below the current folder) or *Global Everything* (searches all indexed locations).
 
-You can also search using Everything from the [Find-as-you-type Field](/Manual/basic_concepts/the_lister/find-as-you-type_field.md), and Everything can be used as a "pre-filter" with the traditional [Find Files](/Manual/basic_concepts/searching_and_filtering/find_files/RAEDME.md) tool, to narrow the search scope.
+You can also search using Everything from the [Find-as-you-type Field](/Manual/basic_concepts/the_lister/find-as-you-type_field.md), and Everything can be used as a "pre-filter" with the traditional [Find Files](/Manual/basic_concepts/searching_and_filtering/find_files/README.md) tool, to narrow the search scope.

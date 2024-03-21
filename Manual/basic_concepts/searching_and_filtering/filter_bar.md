@@ -12,7 +12,7 @@ In the above screenshot, we have filtered the `C:\Windows\System32` directory to
 
 The filter bar displays these statistics as well, in slightly more detail (it breaks the hidden item count into hidden files and hidden folders).
 
-The filter bar affects what is called the "quick filter". This filter is applied on top of the filters set via the [Folder Formats](../folder_options/RAEDME.md) system, and the global filtering options on the **[Global Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.md)** Preferences page. It doesn't override these filters - so any files hidden via these other methods will stay hidden no matter what the quick filter is set to.
+The filter bar affects what is called the "quick filter". This filter is applied on top of the filters set via the [Folder Formats](../folder_options/README.md) system, and the global filtering options on the **[Global Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.md)** Preferences page. It doesn't override these filters - so any files hidden via these other methods will stay hidden no matter what the quick filter is set to.
 
 ##### Clearing the filter
 

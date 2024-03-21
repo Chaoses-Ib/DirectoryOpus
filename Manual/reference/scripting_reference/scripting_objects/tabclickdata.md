@@ -1,6 +1,6 @@
 # TabClickData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnTabClick](../scripting_events/ontabclick.md)** event, the method receives a **TabClickData** object when a tab is clicked with a qualifier key held down.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnTabClick](../scripting_events/ontabclick.md)** event, the method receives a **TabClickData** object when a tab is clicked with a qualifier key held down.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

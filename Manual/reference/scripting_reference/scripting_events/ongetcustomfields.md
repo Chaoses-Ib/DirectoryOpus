@@ -1,6 +1,6 @@
 # OnGetCustomFields
 
-The **OnGetCustomFields** event can be implemented by a [rename script](/Manual/scripting/rename_scripts/RAEDME.md) to add [custom fields](/Manual/scripting/rename_scripts/custom_fields_in_the_rename_dialog.md) to the *Rename* dialog. This lets you provide one or more controls that users can use to pass parameters to your script.
+The **OnGetCustomFields** event can be implemented by a [rename script](/Manual/scripting/rename_scripts/README.md) to add [custom fields](/Manual/scripting/rename_scripts/custom_fields_in_the_rename_dialog.md) to the *Rename* dialog. This lets you provide one or more controls that users can use to pass parameters to your script.
 
 | **Method Name:** | OnGetCustomFields |
 | --- | --- |

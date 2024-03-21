@@ -1,10 +1,10 @@
 # This PC
 
-These options apply when Opus implements its own display for the *This PC* folder. See [Virtual Folders](../virtual_folders/RAEDME.md) for more information.
+These options apply when Opus implements its own display for the *This PC* folder. See [Virtual Folders](../virtual_folders/README.md) for more information.
 
 - **Use the Opus implementation for the This PC folder**: Lets you enable or disable native display for the virtual *This PC* folder. When native display is on, you can configure the appearance of the folder below.
 
-You can configure the file display format for *This PC* when the native display is enabled using the [Folder Formats](../folder_formats/RAEDME.md) page, using the item in the **System folders** category.
+You can configure the file display format for *This PC* when the native display is enabled using the [Folder Formats](../folder_formats/README.md) page, using the item in the **System folders** category.
 
 ##### This PC configuration
 

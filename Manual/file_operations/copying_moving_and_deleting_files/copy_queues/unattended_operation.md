@@ -8,7 +8,7 @@ When a copy operation is set to unattended mode, no error or confirmation dialog
 
 ![](/Manual/images/media/13/unattended_errors.png) 
 
-You can use the **UNATTENDED** argument of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command to automatically start a copy operation in unattended mode, and the **WHENEXISTS** argument can be used to set the default *When file exists* behaviour. See the description of the **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command for more information about these arguments, and the [Customize](/Manual/customize/RAEDME.md) section for information on how to configure a button or hotkey.
+You can use the **UNATTENDED** argument of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command to automatically start a copy operation in unattended mode, and the **WHENEXISTS** argument can be used to set the default *When file exists* behaviour. See the description of the **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command for more information about these arguments, and the [Customize](/Manual/customize/README.md) section for information on how to configure a button or hotkey.
 
 Turning on unattended mode adds the **Errors** tab to the copy progress dialog, which collects and displays all errors resulting from the operation.
 

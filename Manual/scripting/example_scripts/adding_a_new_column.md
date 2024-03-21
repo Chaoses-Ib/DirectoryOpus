@@ -1,6 +1,6 @@
 # Adding a new Column
 
-This is an example of a [script add-in](../script_add-ins/RAEDME.md) that adds a new information column to Opus.
+This is an example of a [script add-in](../script_add-ins/README.md) that adds a new information column to Opus.
 
 This column, **Is Modified?**, indicates whether a file has been modified since it was created. This is performed by simply comparing whether the item's creation and modification dates are the same.
 
@@ -8,7 +8,7 @@ This column, **Is Modified?**, indicates whether a file has been modified since 
 - When sorting by this column, modified files are displayed above non-modified files.
 - When grouping by this column, the two groups are labeled *Modified* and *Never Modified*.
 
-The basic procedure to add a custom column from a [script add-in](../script_add-ins/RAEDME.md) is:
+The basic procedure to add a custom column from a [script add-in](../script_add-ins/README.md) is:
 
 - Either:
   - In the **[OnInit](/Manual/reference/scripting_reference/scripting_events/oninit.md)** event, create a **[ScriptColumn](/Manual/reference/scripting_reference/scripting_objects/scriptcolumn.md)**object with the **[ScriptInitData](/Manual/reference/scripting_reference/scripting_objects/scriptinitdata.md).AddColumn** method.

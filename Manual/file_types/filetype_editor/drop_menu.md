@@ -7,7 +7,7 @@ The Drop Menu tab lets you add commands to the drag and drop menu for files and 
   
 Configuration of the drop menu for file types is very similar to that of the Context Menu for file types - please see the [Context Menu](context_menu.md) page for a more thorough description of the context menu configuration process. The main difference between the drop menu and the context menu is that the drop menu only supports *Opus-only* context menu items - that is, only **Run an Opus function** or **Sub-menu** items can be added to the drop menu.
 
-As an example of one use for the drop menu, you could add a command to automatically make a softlink (Vista and above only) to a file or folder when you drag it with the right button and drop it somewhere. [Locate](/Manual/file_types/RAEDME.md) the **All files and folders** file type and edit it, and then on the **Drop Menu** tab click the **New** button to add a new menu item.
+As an example of one use for the drop menu, you could add a command to automatically make a softlink (Vista and above only) to a file or folder when you drag it with the right button and drop it somewhere. [Locate](/Manual/file_types/README.md) the **All files and folders** file type and edit it, and then on the **Drop Menu** tab click the **New** button to add a new menu item.
 
 ![](/Manual/images/media/drop_menu_-_softlink.png) 
 

@@ -19,8 +19,8 @@ The info tooltip also shows where the Lister came from (in this case a system la
 The first three commands are:
 
 - **Format Lock**: [Locks](locking_the_format.md) the format to prevent automatic changes.
-- **Folder Format**: Displays the [Folder Format dialog](folder_options_dialog/RAEDME.md).
-- **Manage Folder Formats**: Takes you to the [Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/RAEDME.md) page in Preferences.
+- **Folder Format**: Displays the [Folder Format dialog](folder_options_dialog/README.md).
+- **Manage Folder Formats**: Takes you to the [Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/README.md) page in Preferences.
 
 The next group of commands list the different [content type formats](content_types.md). Select one of these commands to instantly switch to that format.
 

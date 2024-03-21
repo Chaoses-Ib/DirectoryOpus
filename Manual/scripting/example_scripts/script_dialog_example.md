@@ -1,6 +1,6 @@
 # Script Dialog Example
 
-This is an example of a [script dialog](../script_dialogs/RAEDME.md); it implements the dialog shown at the start of the [Script Dialogs](../script_dialogs/RAEDME.md) section. It makes use of a *Tab control* to host two child dialogs, and also demonstrates how to add and remove strings from a *List Box* control.
+This is an example of a [script dialog](../script_dialogs/README.md); it implements the dialog shown at the start of the [Script Dialogs](../script_dialogs/README.md) section. It makes use of a *Tab control* to host two child dialogs, and also demonstrates how to add and remove strings from a *List Box* control.
 
 ![](/Manual/images/media/image057.png)
 

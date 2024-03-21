@@ -1,6 +1,6 @@
 # Size And Position
 
-These options affect the [standalone image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md).
+These options affect the [standalone image viewer](/Manual/additional_functionality/viewing_images/README.md).
 
 - **Auto-size viewer window**: Normally the viewer will remember the size and position of its window from one use to the next. If you turn this option on then when the viewer opens it will automatically resize itself; the options available for this are:
   - **To fit every picture**: The viewer will resize to fit the first picture, and resize itself for every subsequent picture as well.

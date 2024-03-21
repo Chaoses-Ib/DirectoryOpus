@@ -1,6 +1,6 @@
 # OnGetCopyQueueName
 
-The **OnGetCopyQueueName** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to override the default copy queue behavior when the *Automatically manage file copy queues* option on the **[Copying Files](/Manual/preferences/preferences_categories/file_operations/copying_files/RAEDME.md)** page in Preferences is turned on. The event is passed the default copy queue name along with information relating to the copy operation. It can accept the default queue name, provide its own or disable queuing and run the operation immediately. 
+The **OnGetCopyQueueName** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to override the default copy queue behavior when the *Automatically manage file copy queues* option on the **[Copying Files](/Manual/preferences/preferences_categories/file_operations/copying_files/README.md)** page in Preferences is turned on. The event is passed the default copy queue name along with information relating to the copy operation. It can accept the default queue name, provide its own or disable queuing and run the operation immediately. 
 
 | **Method Name:** | OnGetCopyQueueName |
 | --- | --- |

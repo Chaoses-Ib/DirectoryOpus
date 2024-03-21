@@ -3,14 +3,14 @@
 The **CLI / Ad-Hoc Script Editor** has two main functions:
 
 - It provides a very simple command line interface (CLI) to the Directory Opus command set.
-- In Script mode, it allows you to design and test ad-hoc [scripts](/Manual/scripting/RAEDME.md).
+- In Script mode, it allows you to design and test ad-hoc [scripts](/Manual/scripting/README.md).
 
 You can open the CLI using the **Tools / Opus CLI** menu command.
 
 ![](/Manual/images/media/cli.png) 
 
   
-The command line lets you run [internal commands](/Manual/reference/command_reference/internal_commands/RAEDME.md) directly without having to configure a button or hotkey first. It is similar to using the [find-as-you-type](/Manual/basic_concepts/the_lister/find-as-you-type_field.md) field in command mode. You can also display the full template for any internal command by entering the command name followed by a ? symbol (as in the screenshot above).
+The command line lets you run [internal commands](/Manual/reference/command_reference/internal_commands/README.md) directly without having to configure a button or hotkey first. It is similar to using the [find-as-you-type](/Manual/basic_concepts/the_lister/find-as-you-type_field.md) field in command mode. You can also display the full template for any internal command by entering the command name followed by a ? symbol (as in the screenshot above).
 
 Turning on the **Script interpreter** option puts the CLI in Script mode, which allows you to design and test ad-hoc scripts. The drop-down field lets you select the script language - if the language you wish to use isn't listed, simply type the name in. You will need to consult the documentation for third-party languages as to the name of the "script engine".
 

@@ -26,7 +26,7 @@ By default, the main mouse and keyboard controls for the standalone viewer are a
 
 There are several other actions and hotkeys which you can find via the menu at the top of the viewer:
 
-- **File**: The File menu contains commands to open a new image, save the current image (useful when you have cropped it, or want to convert it to a different format). You can print the current image, and launch the [Image Conversion](../image_conversion/RAEDME.md) function to convert, resize or rotate the image.  
+- **File**: The File menu contains commands to open a new image, save the current image (useful when you have cropped it, or want to convert it to a different format). You can print the current image, and launch the [Image Conversion](../image_conversion/README.md) function to convert, resize or rotate the image.  
   \* **Edit**: Contains some simple file-manipulation commands (*Copy*, *Move*, *Cut*, *Delete*). You can also copy the image (or a selected portion of the image) to the clipboard for pasting into other applications. It is also possible to crop the image to the current selection.  
   \* **View**: Contains commands that let you modify the appearance of the viewer window. You can also rotate and zoom in and out of the image, apply gamma correction, override the normal background color, and selectively disable the alpha channel (if any). There is also a Full Screen command to display the image in full screen mode, and the *Show Information* command displays information about the image file in an overlaid tooltip.
 
@@ -34,11 +34,11 @@ There are several other actions and hotkeys which you can find via the menu at t
 
 ##### Editing Viewer Toolbar and Keys
 
-The toolbar and context menu in the standalone image viewer are fully configurable, [just like all the toolbars and menus in the Lister](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/RAEDME.md). Additionally, you can create hotkeys that are only active in the viewer.
+The toolbar and context menu in the standalone image viewer are fully configurable, [just like all the toolbars and menus in the Lister](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/README.md). Additionally, you can create hotkeys that are only active in the viewer.
 
 ![](/Manual/images/media/image014_001.png)
 
-To edit the toolbar in the viewer, simply select the **Customize Toolbars** command from the Edit menu, just like in a Lister. The viewer context menu can be edited from the *[Context Menus](/Manual/customize/the_customize_dialog/context_menus.md)* tab in the **[Customize](/Manual/customize/RAEDME.md)** dialog, and you can also create viewer-specific hotkeys on the *Keys* tab.
+To edit the toolbar in the viewer, simply select the **Customize Toolbars** command from the Edit menu, just like in a Lister. The viewer context menu can be edited from the *[Context Menus](/Manual/customize/the_customize_dialog/context_menus.md)* tab in the **[Customize](/Manual/customize/README.md)** dialog, and you can also create viewer-specific hotkeys on the *Keys* tab.
 
 The default viewer toolbar is called *Image Viewer*, but you can select another toolbar to use from the *Viewer / Appearance* page in Preferences. You might want to do this if, for example, you want to create your own toolbar but leave the default toolbar unchanged.
 

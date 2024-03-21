@@ -1,6 +1,6 @@
 # Viewers
 
-The **Viewers** object is a collection of all currently open standalone [image viewers](/Manual/additional_functionality/viewing_images/RAEDME.md). It can be obtained via the **[DOpus](dopus.md).viewers** property.
+The **Viewers** object is a collection of all currently open standalone [image viewers](/Manual/additional_functionality/viewing_images/README.md). It can be obtained via the **[DOpus](dopus.md).viewers** property.
 
   
 

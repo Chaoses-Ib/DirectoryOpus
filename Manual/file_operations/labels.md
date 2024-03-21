@@ -24,7 +24,7 @@ More than one label may apply to a single file, and labels can “stack” on to
 
 ##### Wildcard labels
 
-The [Label Assignments](/Manual/preferences/preferences_categories/labels/label_assignments/RAEDME.md) page in Preferences lets you apply labels to files and folders using wildcard patterns. For example, you could cause all Word documents to be labeled *Green* by creating a wildcard label assignment for **\*.doc** files. Labels can also use [filters](filtered_operations/RAEDME.md) to perform tests based on attributes other than file name or path.
+The [Label Assignments](/Manual/preferences/preferences_categories/labels/label_assignments/README.md) page in Preferences lets you apply labels to files and folders using wildcard patterns. For example, you could cause all Word documents to be labeled *Green* by creating a wildcard label assignment for **\*.doc** files. Labels can also use [filters](filtered_operations/README.md) to perform tests based on attributes other than file name or path.
 
 By default explicitly applied labels override wildcard labels, but the Preferences setting *Favorites and Recent / Labels / Apply wildcard and label filters to explicitly labeled files and folder* lets wildcard labels stack on top of explicitly-assigned ones.
 

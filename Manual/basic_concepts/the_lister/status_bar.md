@@ -11,7 +11,7 @@ This is an example of the default status bar. The information presented (from le
 - Number selected / Total number of folders
 - Number selected / Total number of files
 - Different file extensions selected (and how many of each)
-- Number of hidden items (if any items are currently [hidden by filters](../searching_and_filtering/RAEDME.md))
+- Number of hidden items (if any items are currently [hidden by filters](../searching_and_filtering/README.md))
 - Total size of all selected items / Total size of all items (this includes the size of any selected folders only if their [sizes have been calculated](/Manual/basic_concepts/folder_sizes.md))
 - [Current format](../folder_options/identifying_the_current_format.md) indicator and menu (![](/Manual/images/media/13/info.png))
 - Space free on current drive
@@ -28,4 +28,4 @@ The options on that Preferences page also let you change the status bar to appea
 Some status bar elements will show you tooltips with more information when you hover over them:
 
 - Hidden item indicators show the names of the first few hidden files and folders, so you can quickly see if anything of interest is hidden. Click them to toggle [Show Everything](../searching_and_filtering/show_everything.md) mode on and off.
-- The ![](/Manual/images/media/13/info.png) format indicator shows you where the current folder format comes from, to help you determine how to affect changes to the format. It also has a right-click context menu that lets you quickly change the current [folder format](../folder_options/RAEDME.md).
+- The ![](/Manual/images/media/13/info.png) format indicator shows you where the current folder format comes from, to help you determine how to affect changes to the format. It also has a right-click context menu that lets you quickly change the current [folder format](../folder_options/README.md).

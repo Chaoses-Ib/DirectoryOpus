@@ -50,6 +50,6 @@ Clicking the drop-down arrow button at the far right of the breadcrumbs control 
 
 ##### Configuration
 
-You can configure the appearance and behavior of the breadcrumbs field from the [Location Bar / Path Fields](/Manual/preferences/preferences_categories/location_bar/path_fields/RAEDME.md) Preferences section.
+You can configure the appearance and behavior of the breadcrumbs field from the [Location Bar / Path Fields](/Manual/preferences/preferences_categories/location_bar/path_fields/README.md) Preferences section.
 
 It can also be configured via the [toolbar customization](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/field_buttons/path_field_configuration.md) system.

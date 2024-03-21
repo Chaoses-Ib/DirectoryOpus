@@ -1,6 +1,6 @@
 # Label Definitions
 
-This page lets you create and edit [labels](/Manual/file_operations/labels.md) - combinations of colors and font styles that you can apply to files and folders. Any file or folder can be assigned a label, and you can use wildcards or [filters](/Manual/file_operations/filtered_operations/RAEDME.md) to automatically label based on filename (so, for example, you could automatically label all your .doc files).
+This page lets you create and edit [labels](/Manual/file_operations/labels.md) - combinations of colors and font styles that you can apply to files and folders. Any file or folder can be assigned a label, and you can use wildcards or [filters](/Manual/file_operations/filtered_operations/README.md) to automatically label based on filename (so, for example, you could automatically label all your .doc files).
 
 - **Label**: Specify the name for the label. This will be shown in the *Label* column for any files it's assigned to, and also used in generated label lists in toolbars and menus (e.g. the **Properties** dropdown menu in the default toolbars).
 - **Category**: You can arrange your labels in categories - the list on the left groups your labels into two categories by default (*Colors* and *Status*) but you can also add your own.

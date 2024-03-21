@@ -1,6 +1,6 @@
 # DisplayModeChangeData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnDisplayModeChange](../scripting_events/ondisplaymodechange.md)** event, the method receives a **DisplayModeChangeData** object when the [display mode](/Manual/basic_concepts/the_lister/view_modes.md) is changed in a tab.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnDisplayModeChange](../scripting_events/ondisplaymodechange.md)** event, the method receives a **DisplayModeChangeData** object when the [display mode](/Manual/basic_concepts/the_lister/view_modes.md) is changed in a tab.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

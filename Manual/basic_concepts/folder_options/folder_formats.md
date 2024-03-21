@@ -4,7 +4,7 @@ Opus lets you change many things to do with how it displays the contents of fold
 
 You can save the folder format for specific folders so that those folders are always displayed in a particular way.
 
-The **[Folders / Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/RAEDME.md)** page in Preferences is the main interface for configuring saved folder formats. You can configure several different types of folder formats through that interface:
+The **[Folders / Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/README.md)** page in Preferences is the main interface for configuring saved folder formats. You can configure several different types of folder formats through that interface:
 
 - **Path Formats**: Saved formats for specific paths. Path formats can affect a single folder or all sub-folders of that folder. Path formats can also be defined using wildcards rather than an absolute path.
 - **System folders**: Certain system locations like *This PC*.
@@ -14,6 +14,6 @@ The **[Folders / Folder Formats](/Manual/preferences/preferences_categories/fold
 - **Default Format**: This contains the *User Default* format, which is a format you can configure that will be used whenever another, more specific format isn't found for a folder.
 
 More:  
-[Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/RAEDME.md)  
+[Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/README.md)  
 [Content Types](content_types.md)  
 [File Type Groups](/Manual/file_types/file_type_groups.md)  

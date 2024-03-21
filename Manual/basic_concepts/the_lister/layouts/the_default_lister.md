@@ -24,5 +24,5 @@ The default Lister isn't used whenever a saved Lister layout is opened - either 
 The [Default Lister](/Manual/preferences/preferences_categories/layouts_and_styles/default_lister.md) Preferences page contains options that control how the default Lister is used. Three options are worth mentioning here:
 
 - **Ignore folder format of Default Lister**: Because the default Lister is actually a saved layout, it stores within it the folder format that was in use when the layout was saved or updated. If this option is turned on, the folder format stored within the default Lister is ignored - instead, the normal folder format for the path being displayed in the new Lister is used.
-- **Ignore toolbars of Default Lister**: Similarly, the toolbars stored in the default Lister will be ignored if this option is on, and the [default toolbar set](../toolbars/the_default_toolbars/RAEDME.md) will be used instead.
+- **Ignore toolbars of Default Lister**: Similarly, the toolbars stored in the default Lister will be ignored if this option is on, and the [default toolbar set](../toolbars/the_default_toolbars/README.md) will be used instead.
 - **Update Default Lister automatically when closing a Lister option**: If turned off, you can update the default Lister settings manually using the **Set As Default Lister** command in the **Settings** dropdown menu.

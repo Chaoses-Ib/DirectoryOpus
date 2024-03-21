@@ -2,8 +2,8 @@
 
 Contains general options relating to columns in file displays.
 
-- **Add 'Group' column automatically when file display is grouped**: Automatically adds the *Group* column when the file display is [grouped](/Manual/basic_concepts/sorting_and_grouping/RAEDME.md). The column prevents the group headers from appearing between groups, using horizontal space instead of vertical space to indicate where each group starts and ends. If the option is off, you can still add the column explicitly, allowing you to use both styles of grouping in different situations.
-- **Edit ratings by clicking within the *Rating* column**: If the *Rating* column is shown and this option is on, you can click directly on the rating stars to set or change a file's rating. Otherwise, you can set the rating via the [metadata](/Manual/file_operations/editing_metadata/RAEDME.md) system.
+- **Add 'Group' column automatically when file display is grouped**: Automatically adds the *Group* column when the file display is [grouped](/Manual/basic_concepts/sorting_and_grouping/README.md). The column prevents the group headers from appearing between groups, using horizontal space instead of vertical space to indicate where each group starts and ends. If the option is off, you can still add the column explicitly, allowing you to use both styles of grouping in different situations.
+- **Edit ratings by clicking within the *Rating* column**: If the *Rating* column is shown and this option is on, you can click directly on the rating stars to set or change a file's rating. Otherwise, you can set the rating via the [metadata](/Manual/file_operations/editing_metadata/README.md) system.
 - **Show dashes in empty columns**: If a column has no data, two dashes will be shown instead of a blank space.
 - **Show friendly dates**: Lets you choose two different options for showing "friendly" dates:
   - **Day names within one week**: If a file's timestamp is within the past week, the day of the week (or *Today* or *Yesterday*) will be displayed instead of the actual date.

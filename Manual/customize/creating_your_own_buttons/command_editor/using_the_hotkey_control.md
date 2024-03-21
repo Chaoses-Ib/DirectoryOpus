@@ -1,6 +1,6 @@
 # Using the Hotkey Control
 
-The [Command Editor](/Manual/customize/creating_your_own_buttons/command_editor/RAEDME.md) and the Keys page in the [Customize](/Manual/customize/RAEDME.md) dialog both use a special field, the *Hotkey Control*, to make entering hotkey sequences easier.
+The [Command Editor](/Manual/customize/creating_your_own_buttons/command_editor/README.md) and the Keys page in the [Customize](/Manual/customize/README.md) dialog both use a special field, the *Hotkey Control*, to make entering hotkey sequences easier.
 
 ![](/Manual/images/media/hotkey_control_0.png)
 
@@ -60,7 +60,7 @@ To activate this hotkey you would now need to press **Alt + D** followed by **1*
 
 # Using the Hotkey Control
 
-The [File Display Toolbar](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/file_display_toolbar.md) is handled slightly differently to all other toolbars, because in [dual-display mode](/Manual/basic_concepts/the_lister/dual_display/RAEDME.md) there are two copies of it. Normally, pressing a hotkey bound to a button in the file display toolbar will activate the function in the source file display. However, you can assign hotkeys that will specifically activate the function in the left (or top) or the right (or bottom) file display, irrespective of which is the source. For example, you could activate the left file display's location field by pressing **Shift + F4**, and the right file display's location field by pressing **Ctrl + F4**.
+The [File Display Toolbar](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/file_display_toolbar.md) is handled slightly differently to all other toolbars, because in [dual-display mode](/Manual/basic_concepts/the_lister/dual_display/README.md) there are two copies of it. Normally, pressing a hotkey bound to a button in the file display toolbar will activate the function in the source file display. However, you can assign hotkeys that will specifically activate the function in the left (or top) or the right (or bottom) file display, irrespective of which is the source. For example, you could activate the left file display's location field by pressing **Shift + F4**, and the right file display's location field by pressing **Ctrl + F4**.
 
 Start with the first key sequence that you want to assign:
 

@@ -1,6 +1,6 @@
 # DoubleClickData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnDoubleClick](../scripting_events/ondoubleclick.md)** event, the method receives a **DoubleClickData** object when the user double-clicks a file or folder.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnDoubleClick](../scripting_events/ondoubleclick.md)** event, the method receives a **DoubleClickData** object when the user double-clicks a file or folder.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

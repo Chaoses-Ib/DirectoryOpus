@@ -1,6 +1,6 @@
 # OpenListerData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnOpenLister](../scripting_events/onopenlister.md)** event, the method receives an **OpenListerData** object when invoked when a new Lister opens.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnOpenLister](../scripting_events/onopenlister.md)** event, the method receives an **OpenListerData** object when invoked when a new Lister opens.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

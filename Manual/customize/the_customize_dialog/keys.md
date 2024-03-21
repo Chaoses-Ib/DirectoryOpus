@@ -18,7 +18,7 @@ The category list lets you view keys by category or show all keys together. The 
   - **Hotkeys**: Hotkey-only functions.
   - **Floating Toolbars**: Keys assigned to buttons on floating toolbars.
   - **Tray Menu**: Keys assigned to buttons in the [tray icon menu](context_menus.md).
-- **Viewer keys**: Hotkeys that only work in the [standalone image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md).
+- **Viewer keys**: Hotkeys that only work in the [standalone image viewer](/Manual/additional_functionality/viewing_images/README.md).
   - **Hotkeys**: Hotkey-only functions.
   - **Toolbar**: Keys assigned to buttons in the image viewer toolbar.
 

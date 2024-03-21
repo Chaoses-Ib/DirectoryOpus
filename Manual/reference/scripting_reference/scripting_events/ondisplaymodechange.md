@@ -1,6 +1,6 @@
 # OnDisplayModeChange
 
-The **OnDisplayModeChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification whenever the user changes the [display mode](/Manual/basic_concepts/the_lister/view_modes.md) in a tab.
+The **OnDisplayModeChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification whenever the user changes the [display mode](/Manual/basic_concepts/the_lister/view_modes.md) in a tab.
 
 | **Method Name:** | OnDisplayModeChange |
 | --- | --- |

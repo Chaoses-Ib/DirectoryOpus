@@ -1,6 +1,6 @@
 # RAR Options
 
-When using the **[Add to Archive](/Manual/file_operations/creating_archives/add_to_archive_dialog/RAEDME.md)** dialog to add files to a RAR archive, the following options are available:
+When using the **[Add to Archive](/Manual/file_operations/creating_archives/add_to_archive_dialog/README.md)** dialog to add files to a RAR archive, the following options are available:
 
 - **Compression level**: This lets you set the compression level used when adding the files to the archive. There are six compression levels available, ranging from *Store* (which does no compression at all and so is the fastest) to *Best* (which produces the highest level of compression but takes longer to archive).
 - **Solid compression**: This option enables [solid compression](http://en.wikipedia.org/wiki/Solid_compression), which can improve compression when storing multiple similar files. Compressing in solid mode imposes some restrictions on accessing the archive. You may find it takes a long time to view or extract individual files within solid archives because the data before the file you requested may need to be decompressed first. Features such as thumbnails are generally disabled within solid archives.

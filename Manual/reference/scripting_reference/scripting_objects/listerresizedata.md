@@ -1,6 +1,6 @@
 # ListerResizeData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnListerResize](../scripting_events/onlisterresize.md)** event, the method receives a **ListerResizeData** object whenever a Lister window is resized.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnListerResize](../scripting_events/onlisterresize.md)** event, the method receives a **ListerResizeData** object whenever a Lister window is resized.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

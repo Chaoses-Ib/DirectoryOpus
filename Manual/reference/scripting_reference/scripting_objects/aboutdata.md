@@ -1,6 +1,6 @@
 # AboutData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) provides an **[OnAboutScript](../scripting_events/onaboutscript.md)** method, it is passed an **AboutData** object when invoked via the user clicking the *About* button in Preferences.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md) provides an **[OnAboutScript](../scripting_events/onaboutscript.md)** method, it is passed an **AboutData** object when invoked via the user clicking the *About* button in Preferences.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

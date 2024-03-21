@@ -8,7 +8,7 @@ Manual sort mode needs to be activated in a file display before files can be arb
 
 ![](/Manual/images/media/13/manual_sort_menu.png)
 
-You can also turn on the **Manual sorting** option on the *Sorting* tab in the [Folder Format](../folder_options/RAEDME.md) dialog. Manual sort mode can be made permanent by saving the folder format.
+You can also turn on the **Manual sorting** option on the *Sorting* tab in the [Folder Format](../folder_options/README.md) dialog. Manual sort mode can be made permanent by saving the folder format.
 
 ##### No immediate effect is normal
 

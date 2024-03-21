@@ -19,7 +19,7 @@ You can now add one or two additional buttons to the drop-down menu, using the t
 
 Here we have dragged the **Folder Tree **button from the Customize dialog and dropped it in the menu - it has become the button's second function. Similarly, the **Metadata Pane** button has been added as the button's third function. The multiple-function button is now "full" - attempts to add additional functions to the menu will fail.
 
-When you leave Customize mode, the toolbar button will appear the same as it did before - and indeed, left-clicking it will perform the same action as before (to turn [dual display](/Manual/basic_concepts/the_lister/dual_display/RAEDME.md) mode on or off). It's only when you hover the mouse over the button to reveal the tooltip that the difference becomes apparent.
+When you leave Customize mode, the toolbar button will appear the same as it did before - and indeed, left-clicking it will perform the same action as before (to turn [dual display](/Manual/basic_concepts/the_lister/dual_display/README.md) mode on or off). It's only when you hover the mouse over the button to reveal the tooltip that the difference becomes apparent.
 
 ![](/Manual/images/media/three_button_3.png) 
 

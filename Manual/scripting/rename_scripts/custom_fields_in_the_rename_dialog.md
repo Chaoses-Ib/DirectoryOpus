@@ -31,7 +31,7 @@ To add custom fields from your rename script, implement the **[OnGetCustomFields
     End Function
 
   
-Custom fields are defined in much the same way as [Script add-in](../script_add-ins/RAEDME.md) defines its configuration using the **[ScriptConfig](/Manual/reference/scripting_reference/scripting_objects/scriptconfig.md)** object. The **[OnGetCustomFields](/Manual/reference/scripting_reference/scripting_events/ongetcustomfields.md)** method is passed a **GetCustomFieldData** object. Fields are added by assigning properties of the **GetCustomFieldData.fields** object to the variable type you want the field to use (e.g. assign **True** or **False** for a Boolean, a string for a text string, etc.). The value you provide will become the default value for the field.
+Custom fields are defined in much the same way as [Script add-in](../script_add-ins/README.md) defines its configuration using the **[ScriptConfig](/Manual/reference/scripting_reference/scripting_objects/scriptconfig.md)** object. The **[OnGetCustomFields](/Manual/reference/scripting_reference/scripting_events/ongetcustomfields.md)** method is passed a **GetCustomFieldData** object. Fields are added by assigning properties of the **GetCustomFieldData.fields** object to the variable type you want the field to use (e.g. assign **True** or **False** for a Boolean, a string for a text string, etc.). The value you provide will become the default value for the field.
 
 Each field can also have a label, and text fields can have a “cue banner” which is shown when the text field is empty (as seen above). There are two ways to configure these:
 

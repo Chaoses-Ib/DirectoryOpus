@@ -1,6 +1,6 @@
 # OnFilesystemChange
 
-The **OnFilesystemChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when monitored files or folders change. Monitoring is established by calling the **[FSUtil](../scripting_objects/fsutil.md).WatchChanges** method.
+The **OnFilesystemChange** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when monitored files or folders change. Monitoring is established by calling the **[FSUtil](../scripting_objects/fsutil.md).WatchChanges** method.
 
 | **Method Name:** | OnFilesystemChange |
 | --- | --- |

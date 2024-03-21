@@ -4,7 +4,7 @@ The **file filter field** is a field that you can add to your toolbars that lets
 
 ##### Adding the file filter field to your toolbars
 
-Use the **[Customize](/Manual/customize/RAEDME.md)** dialog to add the field to a toolbar - you'll find **File Filter Field** listed in the *File Lists* category on the [Commands](/Manual/customize/the_customize_dialog/commands.md) tab. Simply drag it from that list and drop it on your toolbars somewhere.
+Use the **[Customize](/Manual/customize/README.md)** dialog to add the field to a toolbar - you'll find **File Filter Field** listed in the *File Lists* category on the [Commands](/Manual/customize/the_customize_dialog/commands.md) tab. Simply drag it from that list and drop it on your toolbars somewhere.
 
 When you leave Customize mode you'll see the filter field appear.
 
@@ -14,7 +14,7 @@ The current filter string is displayed in the field - if you click in the field 
 
 ![](/Manual/images/media/13/filter_field_1.png)
 
-By default, the filter field edits the quick filter (the same as the [filter bar](filter_bar.md)). This filter is applied on top of the filters set via the [Folder Options](../folder_options/RAEDME.md) system, and the global filtering options on the **[Global Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.md)** Preferences page. It doesn't override these filters - so any files hidden via these other methods will stay hidden no matter what the quick filter is set to.
+By default, the filter field edits the quick filter (the same as the [filter bar](filter_bar.md)). This filter is applied on top of the filters set via the [Folder Options](../folder_options/README.md) system, and the global filtering options on the **[Global Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.md)** Preferences page. It doesn't override these filters - so any files hidden via these other methods will stay hidden no matter what the quick filter is set to.
 
 The drop-down list attached to the field contains (by default) an entry for every file type present in the current folder - this provides a quick way to filter on a specific file extension.
 
@@ -26,7 +26,7 @@ You can clear the quick filter at any time by pressing the <kbd>Esc</kbd> key.
 
 <img src="/media/13/filter_field_2.png" class="align-right" data-query="?nolink" />If you click the icon on the left of the field, a pop-up menu opens that lets you configure exactly how the filter field behaves.
 
-The **Files**, **Folders** and **Files and Folders** options let you set the field to control the [folder format](/Manual/basic_concepts/folder_options/RAEDME.md) filters rather than the quick field. When one of these options is chosen, the **Show** and **Hide** options also become available. These options work together to control exactly which of the folder format filters the field affects:
+The **Files**, **Folders** and **Files and Folders** options let you set the field to control the [folder format](/Manual/basic_concepts/folder_options/README.md) filters rather than the quick field. When one of these options is chosen, the **Show** and **Hide** options also become available. These options work together to control exactly which of the folder format filters the field affects:
 
 | Files | Folders | Show | Hide | Folder Format filter                    |
 |-------|---------|------|------|-----------------------------------------|

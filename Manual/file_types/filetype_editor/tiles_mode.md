@@ -1,6 +1,6 @@
 # Tiles Mode
 
-The **Tiles Mode **page in the [file type editor](../filetype_editor/RAEDME.md) lets you define what is shown for files of that type when the file display is in [tiles mode](/Manual/basic_concepts/the_lister/view_modes.md).
+The **Tiles Mode **page in the [file type editor](../filetype_editor/README.md) lets you define what is shown for files of that type when the file display is in [tiles mode](/Manual/basic_concepts/the_lister/view_modes.md).
 
 When Opus needs to display a file in tiles mode, it checks file types in the following order:
 
@@ -22,7 +22,7 @@ The tiles mode definition (the image above illustrates the default tiles mode te
   
 You can see that the **Images** group tiles mode definition has resulted in the type, image dimensions and file size being displayed in the tile for the **.jpg** file, whereas the **.txt** file only displays the type and file size (this comes from the default tile definition for the **[All Files](../directory_opus_file_types.md)** file type).
 
-The keywords used in tiles are the same as used by the [Rename](/Manual/file_operations/renaming_files/RAEDME.md) function when [renaming files using metadata](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.md), and the **[Set](/Manual/reference/command_reference/internal_commands/set.md)** command when adding and removing columns to the file display. See the [Keywords for Columns](/Manual/reference/metadata_keywords/keywords_for_columns.md) page for a full list of supported keywords. Two special keywords that are specific to the tiles mode definition are:
+The keywords used in tiles are the same as used by the [Rename](/Manual/file_operations/renaming_files/README.md) function when [renaming files using metadata](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.md), and the **[Set](/Manual/reference/command_reference/internal_commands/set.md)** command when adding and removing columns to the file display. See the [Keywords for Columns](/Manual/reference/metadata_keywords/keywords_for_columns.md) page for a full list of supported keywords. Two special keywords that are specific to the tiles mode definition are:
 
 - **{foldersize}**: This code applies to tiles for folders, and its use will cause Opus to calculate the total size of the folder when its tile is displayed. 
 - **{foldercontent}**: This code also applies to folders; it will result in Opus displaying the names of the first few files and sub-folders contained in the folder.

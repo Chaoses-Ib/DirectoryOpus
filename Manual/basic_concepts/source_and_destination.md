@@ -4,7 +4,7 @@ Many functions in Opus use the concept of a "source" folder and a "destination" 
 
 ##### Dual display mode
 
-Whenever a Lister is in [dual display mode](the_lister/dual_display/RAEDME.md), one side is always designated the *source*, and the other side is the *destination*.
+Whenever a Lister is in [dual display mode](the_lister/dual_display/README.md), one side is always designated the *source*, and the other side is the *destination*.
 
 Functions like **Copy Files** or **Move** operate on selected items in the source folder, and use the destination folder as the target.
 
@@ -26,7 +26,7 @@ Another way to switch source/destination state is to push the <kbd>Tab</kbd> key
 
 In single display mode Listers don't normally have a designated destination folder. Of course, you can use drag and drop or copy and paste as normal, but when you click a button like **Copy Files** in a single display Lister, Opus will show a dialog prompting you to select the destination folder.
 
-If you turn on the **Single display Listers have source/destination modes** option on the [File Displays / Options](/Manual/preferences/preferences_categories/file_displays/options/RAEDME.md) Preferences page, single display Listers also adopt the source/destination concept.
+If you turn on the **Single display Listers have source/destination modes** option on the [File Displays / Options](/Manual/preferences/preferences_categories/file_displays/options/README.md) Preferences page, single display Listers also adopt the source/destination concept.
 
 This mode is designed to let you work with multiple single display Listers at once. One Lister would be the source, and one would be the destination. If you click the **Copy Files** button in the source Lister, it would copy the files to the current destination Lister.
 

@@ -1,6 +1,6 @@
 # ActivateListerData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnActivateLister](../scripting_events/onactivatelister.md)**event, the method receives an **ActivateListerData** whenever the window activation state of a Lister changes.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnActivateLister](../scripting_events/onactivatelister.md)**event, the method receives an **ActivateListerData** whenever the window activation state of a Lister changes.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

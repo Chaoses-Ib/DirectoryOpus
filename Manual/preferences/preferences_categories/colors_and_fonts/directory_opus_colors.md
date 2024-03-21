@@ -69,7 +69,7 @@ The commands in that menu are also available when you right-click the color pick
 ##### Other Colors
 
 - **Cloud status icons**: Colors used to draw the status icons for files stored in cloud services (e.g. Dropbox or Onedrive). This only affects the separate Status column (which is optional), not any icon overlays added by the cloud service itself.
-- **Code editor**: Colors used in the code editor (used mainly in the [command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md) and in the [script editor](/Manual/scripting/script_editor/RAEDME.md).)
+- **Code editor**: Colors used in the code editor (used mainly in the [command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md) and in the [script editor](/Manual/scripting/script_editor/README.md).)
 - **File display icon**: Defines the color used for the Opus logo icon that is shown in the File Display border, as well as that used for the Lister's window icon. You can define different colors for when the Lister is set as source, destination or off, as well as a separate color for when the Lister is in dual-display mode.
 - **Folder tabs**: Text and background colors for folder tabs, as well as the background color for the bar (empty space) behind the tabs. You can also configure a separate "hot" color for when the mouse is over a tab, and an edge color to indicate when a tab is locked.
   - **Destination**: Lets you specify separate colors for tabs in the destination file display. These are optional; if not configured, the primary tab colors will be used.
@@ -106,7 +106,7 @@ The commands in that menu are also available when you right-click the color pick
   - **Gradients**: This specifies the gradient colors used to fill the left-hand edge ("gutter") of drop-down menus.
   - **Automatic highlight colors**: If this is enabled most colors are generated from the specified **Base color**.
   - **Custom highlight colors**: This lets you can completely configure the colors for all elements and states of the toolbar.
-- **Viewer**: Colors that affect the [standalone viewer](/Manual/additional_functionality/viewing_images/RAEDME.md) and [viewer pane](/Manual/basic_concepts/the_lister/viewer_pane.md).
+- **Viewer**: Colors that affect the [standalone viewer](/Manual/additional_functionality/viewing_images/README.md) and [viewer pane](/Manual/basic_concepts/the_lister/viewer_pane.md).
   - **Viewer pane**: Colors that specifically affect the [viewer pane](/Manual/basic_concepts/the_lister/viewer_pane.md).
   - **Plugin - Text**: Colors that affect the *text viewer plugin*.
   - **Plugin - Video & Audio**: Colors that affect the *video and audio plugin*.

@@ -10,7 +10,7 @@
 - This is both good and bad! Time spent configuring Directory Opus 12 isn't lost, but you might want to make a few changes for new functionality.
 - Suggested changes and answers to common questions are discussed below, along with general information about the upgrade process.
 - There's a lot here, and you won't need all of it. We suggest skimming the information below and coming back to it as needed.
-- This is *not* a list of new features. See [opus13](/Manual/release_history/opus13/RAEDME.md) and [Directory Opus 13 - Detailed list of changes](/Manual/release_history/opus13_detailed/RAEDME.md) for that.
+- This is *not* a list of new features. See [opus13](/Manual/release_history/opus13/README.md) and [Directory Opus 13 - Detailed list of changes](/Manual/release_history/opus13_detailed/README.md) for that.
 
 ##### Licences and Free Evaluations
 

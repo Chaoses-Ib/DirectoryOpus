@@ -6,7 +6,7 @@ Keypresses can trigger several types of action:
 
 - They can select a part of the filename using a [regular expression](/Manual/reference/wildcard_reference/regular_expression_syntax.md)
 - They can run a [rename preset](/Manual/file_operations/renaming_files/advanced_rename/rename_presets.md)
-- They can run [evaluator](/Manual/evaluator/RAEDME.md) code that can modify the name, select part of the filename and/or position the cursor
+- They can run [evaluator](/Manual/evaluator/README.md) code that can modify the name, select part of the filename and/or position the cursor
 
 A number of keys are defined by default, and you can examine them to see how they're configured. For example, the <kbd>Ctrl+A</kbd> key to select the entire contents of the edit field is defined as a simple regular expression that matches the entire string.
 
@@ -44,7 +44,7 @@ This type lets you select one of your [rename presets](/Manual/file_operations/r
 
 ##### Type: Modify via Evaluator Clause
 
-This type lets you use an [evaluator clause](/Manual/evaluator/RAEDME.md) to change the selection (or position the cursor) and/or modify the contents of the edit field.
+This type lets you use an [evaluator clause](/Manual/evaluator/README.md) to change the selection (or position the cursor) and/or modify the contents of the edit field.
 
 The evaluator clause is given variables which tell it the original name, the current value in the field, the type (file or directory), the file's path, and the current selection range.
 

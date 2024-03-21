@@ -1,6 +1,6 @@
 # OnScriptCommand
 
-The **OnScriptCommand** event is the entry point for an [internal command](/Manual/scripting/example_scripts/adding_a_new_internal_command.md) added by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md). The actual name of the event is defined by the script itself, when the command is added via the **[ScriptInitData](../scripting_objects/scriptinitdata.md).AddCommand** method - **OnScriptCommand** is merely a placeholder name.
+The **OnScriptCommand** event is the entry point for an [internal command](/Manual/scripting/example_scripts/adding_a_new_internal_command.md) added by a [script add-in](/Manual/scripting/script_add-ins/README.md). The actual name of the event is defined by the script itself, when the command is added via the **[ScriptInitData](../scripting_objects/scriptinitdata.md).AddCommand** method - **OnScriptCommand** is merely a placeholder name.
 
 | **Method Name:** | OnScriptCommand |
 | --- | --- |

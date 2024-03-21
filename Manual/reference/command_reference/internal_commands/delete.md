@@ -6,7 +6,7 @@ The **Delete** internal command can be used to:
 - Delete files and folders permanently (bypassing the recycle bin)
 - [Securely erase](/Manual/file_operations/copying_moving_and_deleting_files/deleting_files/secure_delete.md) files so they can't ever be recovered
 - Empty the recycle bin
-- Remove items from a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md)
+- Remove items from a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/README.md)
 
 **Command Arguments:** 
 
@@ -20,7 +20,7 @@ The **Delete** internal command can be used to:
 |  |  | *passes:\<n\>* | Specifies the number of erase passes, from 1 to 32. If omitted, the previous number of passes will be remembered, and a single pass will be used if no previous number exists.<br /><br />*Example:* `Delete ERASEEMPTYSPACE=passes:1`<br /><br />If both a drive letter and pass count are given, the drive letter must be the first parameter.<br /><br />*Example:* `Delete ERASEEMPTYSPACE=D:,passes:2` |
 | FAILNOTEMPTY | /S | *(no value)* | Fail when attempting to delete a non-empty folder, or any file. Must be combined with the **NORECYCLE** argument.<br /><br />*Example:* `Delete FAILNOTEMPTY NORECYCLE`<br /><br />Use **SKIPNOTEMPTY** instead if you want the command to continue considering other items after encountering a file or non-empty folder. |
 | FILE | /M | *\<filename\> ...* | Specifies the name of the file or files to delete. If you don't provide this argument the command will delete all selected items in the source Lister. This is the default argument for the **Delete** command - you don't need to specify the **FILE** keyword.<br /><br />If you only specify the filename instead of the full path of the file or files, Opus will look in the current source folder. You can also specify a [wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md). Remember that if the filename contains spaces you need to enclose it in quotes.<br /><br />*Example:* `Delete \*.tmp` |
-| FILTER | /O | *(no value)* | Delete with filtering enabled (without having to activate the [delete filter](/Manual/file_operations/filtered_operations/RAEDME.md) in the Lister first). Opus will prompt you to define the filter.<br /><br />*Example:* `Delete FILTER` |
+| FILTER | /O | *(no value)* | Delete with filtering enabled (without having to activate the [delete filter](/Manual/file_operations/filtered_operations/README.md) in the Lister first). Opus will prompt you to define the filter.<br /><br />*Example:* `Delete FILTER` |
 |  |  | *\<filter\>* | Delete using the specified filter. This must have previously been created from the **[Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.md)** page in Preferences.<br /><br />You can also directly specify a [simple wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md). When specifying a simple wildcard pattern as the filter, it only affects which files are deleted; all selected folders and sub-folders are deleted unless they contain a file which doesn't match the filter and thus isn't deleted.<br /><br />*Example:* `Delete FILTER "temp files"` |
 |  |  | **shift** | Delete with filtering enabled if the <kbd>Shift</kbd> key is held down. Opus will prompt you to define the filter.<br /><br />*Example:* `Delete FILTER=shift` |
 |  |  | **alt** | Delete with filtering enabled if the <kbd>Alt</kbd> key is held down.<br /><br />*Example:* `Delete FILTER=alt` |

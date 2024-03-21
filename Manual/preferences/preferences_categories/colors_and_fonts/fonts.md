@@ -2,7 +2,7 @@
 
 This page controls the fonts that are used in various parts of the user interface.
 
-- **Code editors**: The font used in the code editor (used mainly in the [command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md) and in the [script editor](/Manual/scripting/script_editor/RAEDME.md).) Must be fixed-width.
+- **Code editors**: The font used in the code editor (used mainly in the [command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md) and in the [script editor](/Manual/scripting/script_editor/README.md).) Must be fixed-width.
 - **Dialogs**: The font used for all dialogs throughout the program, including the Preferences dialog itself. Changing this font requires restarting Opus. You'll be warned if you've chosen a font that's too big or small (e.g. if it would make Preferences unusable because it would be too big for your monitor). If you find yourself stuck with a badly chosen font you can use the **Reset dialog font** in the Preferences <img src="/media/13/prefs_menu.png" data-query="?nostyle" alt="prefs_menu.png" /> menu to get back to the defaults.
 - **File display**: The font used to display files and folders in the File Display in all modes except Thumbnails.
 - **File display column header**: The font used for the File Display header in Details mode.
@@ -20,6 +20,6 @@ This page controls the fonts that are used in various parts of the user interfac
 - **Text viewer (hex)**: The font used to show hex data in the text viewer (must be fixed-width.)
 - **Text viewer (text)**: The font used to show text in the text viewer.
 - **Thumbnail labels**: The font used for item labels when the File Display is in Thumbnails mode.
-- **Toolbars**: The default toolbar font. Can be overridden on a per-toolbar basis via [customize](/Manual/customize/RAEDME.md).
+- **Toolbars**: The default toolbar font. Can be overridden on a per-toolbar basis via [customize](/Manual/customize/README.md).
 - **Tooltips and info-tips**: The font used for file and folder info tips (tooltips shown when hovering the mouse over a file or folder.)
 - **Video & Audio viewer**: The font used by the video & audio viewer.

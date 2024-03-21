@@ -1,6 +1,6 @@
 # OnScriptColumn
 
-The **OnScriptColumn** event is the entry point for a [custom column](/Manual/scripting/example_scripts/adding_a_new_column.md) added by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md). The actual name of the event is defined by the script itself, when the command is added via the **[ScriptInitData](../scripting_objects/scriptinitdata.md).AddColumn** method - **OnScriptColumn** is merely a placeholder name.
+The **OnScriptColumn** event is the entry point for a [custom column](/Manual/scripting/example_scripts/adding_a_new_column.md) added by a [script add-in](/Manual/scripting/script_add-ins/README.md). The actual name of the event is defined by the script itself, when the command is added via the **[ScriptInitData](../scripting_objects/scriptinitdata.md).AddColumn** method - **OnScriptColumn** is merely a placeholder name.
 
 | **Method Name:** | OnScriptColumn |
 | --- | --- |

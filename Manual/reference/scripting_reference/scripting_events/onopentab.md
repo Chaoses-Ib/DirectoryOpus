@@ -1,6 +1,6 @@
 # OnOpenTab
 
-The **On** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when a new tab opens.
+The **On** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when a new tab opens.
 
 | **Method Name:** | OnOpenTab |
 | --- | --- |

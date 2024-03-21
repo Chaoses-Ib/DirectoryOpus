@@ -1,6 +1,6 @@
 # OnOpenLister
 
-The **OnOpenLister** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when a new Lister is opened.
+The **OnOpenLister** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when a new Lister is opened.
 
 | **Method Name:** | OnOpenLister |
 | --- | --- |

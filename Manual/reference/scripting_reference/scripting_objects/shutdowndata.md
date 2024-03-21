@@ -1,6 +1,6 @@
 # ShutdownData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnShutdown](../scripting_events/onshutdown.md)** event, the method receives a **ShutdownData** object when invoked on Opus shutdown.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnShutdown](../scripting_events/onshutdown.md)** event, the method receives a **ShutdownData** object when invoked on Opus shutdown.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

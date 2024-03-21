@@ -1,6 +1,6 @@
 # FileOperationCompleteData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnFileOperationComplete](../scripting_events/onfileoperationcomplete.md)** event, the method receives a **FileOperationCompleteData** object whenever a supported file operation begins. If you return **True** to indicate that you want to be notified about the operation, you'll receive another call when the operation is complete.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnFileOperationComplete](../scripting_events/onfileoperationcomplete.md)** event, the method receives a **FileOperationCompleteData** object whenever a supported file operation begins. If you return **True** to indicate that you want to be notified about the operation, you'll receive another call when the operation is complete.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
 # DialogListGroup
 
-The **DialogListGroup** object represents a group in a *list view* control in a [script dialog](/Manual/scripting/script_dialogs/RAEDME.md). It's returned by the **[Control](control.md).GetGroupById** method.
+The **DialogListGroup** object represents a group in a *list view* control in a [script dialog](/Manual/scripting/script_dialogs/README.md). It's returned by the **[Control](control.md).GetGroupById** method.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

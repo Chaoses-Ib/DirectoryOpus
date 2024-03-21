@@ -10,4 +10,4 @@ The bottom part of this page displays a preview of all the icons contained in th
 
 You can download additional icon sets from the [Resource Centre](https://resource.dopus.com/c/downloads/icons). If you want to create your own icon sets, the **Save Icon Set Template** command in the ![](/Manual/images/media/13/prefs_menu.png) page menu can get you started. It produces a template of the standard icon names - you will need to provide your own images however!
 
-See the [Icon Sets](/Manual/reference/icon_sets/RAEDME.md) page in the Reference section for more information on creating your own sets.
+See the [Icon Sets](/Manual/reference/icon_sets/README.md) page in the Reference section for more information on creating your own sets.

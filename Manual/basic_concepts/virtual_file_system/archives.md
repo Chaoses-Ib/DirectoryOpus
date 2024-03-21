@@ -28,7 +28,7 @@ Extensive control of archives is also provided for supported formats via the con
 
 ##### Disabling archive formats
 
-If you want to disable support in Opus for a certain format you can do that from the **[Zip & Other Archives](/Manual/preferences/preferences_categories/zip_and_other_archives/RAEDME.md)** Preferences section.
+If you want to disable support in Opus for a certain format you can do that from the **[Zip & Other Archives](/Manual/preferences/preferences_categories/zip_and_other_archives/README.md)** Preferences section.
 
 ##### Archives file type group
 

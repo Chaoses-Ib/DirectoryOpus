@@ -19,7 +19,7 @@ Another way to trigger manual calculation of a single folder is to hover over it
 
 ##### Automatic calculation
 
-Opus can also be configured to automatically calculate the size of sub-folders whenever a folder (or certain folders) is read. The options on the [Folders / Folder Sizes](/Manual/preferences/preferences_categories/folders/folder_sizes/RAEDME.md) Preferences page control this.
+Opus can also be configured to automatically calculate the size of sub-folders whenever a folder (or certain folders) is read. The options on the [Folders / Folder Sizes](/Manual/preferences/preferences_categories/folders/folder_sizes/README.md) Preferences page control this.
 
 ##### Folder sizes can be inaccurate
 

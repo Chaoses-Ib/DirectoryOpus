@@ -1,6 +1,6 @@
 # ActivateTabData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnActivateTab](../scripting_events/onactivatetab.md)**event, the method receives an **ActivateTabData** object whenever the activation state of a tab changes.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnActivateTab](../scripting_events/onactivatetab.md)**event, the method receives an **ActivateTabData** object whenever the activation state of a tab changes.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

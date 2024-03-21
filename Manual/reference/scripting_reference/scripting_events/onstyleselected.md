@@ -1,6 +1,6 @@
 # OnStyleSelected
 
-The **OnStyleSelected** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when the user selects a new [Lister style](/Manual/basic_concepts/the_lister/styles.md).
+The **OnStyleSelected** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when the user selects a new [Lister style](/Manual/basic_concepts/the_lister/styles.md).
 
 | **Method Name:** | OnStyleSelected |
 | --- | --- |

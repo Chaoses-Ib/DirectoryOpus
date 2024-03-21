@@ -1,6 +1,6 @@
 # OnActivateLister
 
-The **OnActivateLister** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification whenever a Lister window becomes the active window, or loses activation to another window.
+The **OnActivateLister** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification whenever a Lister window becomes the active window, or loses activation to another window.
 
 | **Method Name:** | OnActivateLister |
 | --- | --- |

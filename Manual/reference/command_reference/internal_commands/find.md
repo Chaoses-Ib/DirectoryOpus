@@ -2,7 +2,7 @@
 
 The **Find** internal command can be used to:
 
-- Display the [Find Panel](/Manual/basic_concepts/searching_and_filtering/find_files/RAEDME.md) where you can perform file searches
+- Display the [Find Panel](/Manual/basic_concepts/searching_and_filtering/find_files/README.md) where you can perform file searches
 - Automate the Find Files function to perform simple searches without displaying a user interface
 - Automate the [Duplicate File Finder](/Manual/additional_functionality/duplicate_file_finder.md) function
 
@@ -11,7 +11,7 @@ The **Find** internal command can be used to:
 | Argument | Type | Possible values | Description |
 | --- | --- | --- | --- |
 | *(no argument)* | - | - | Display the Find Panel. It will open in whichever mode you last used it.<br /><br />*Example:* `Find` |
-| ADVANCED | /S | *(no value)* | Display the Find Panel in [Advanced](/Manual/basic_concepts/searching_and_filtering/find_files/advanced_find/RAEDME.md) mode.<br /><br />*Example:* `Find ADVANCED` |
+| ADVANCED | /S | *(no value)* | Display the Find Panel in [Advanced](/Manual/basic_concepts/searching_and_filtering/find_files/advanced_find/README.md) mode.<br /><br />*Example:* `Find ADVANCED` |
 | ANYWORD | /S | *(no value)* | Use when automating Find Files to enable the *Any Word* option for name searching.  <br />For example, if this was turned on and you used "cat dog" as the **NAME** argument, Opus would match filenames containing "cat" or "dog" (or both, in any order). This saves you having to construct complicated OR wildcard patterns.<br /><br />*Example:* `Find NAME="cat dog" ANYWORD RECURSE IN "c:\\` |
 | ARCHIVES | /S | *(no value)* | Search inside archive files (when the Find Files function is being automated).<br /><br />*Example:* `Find \*.doc IN C:\Data ARCHIVES` |
 | BOTHWAYS | /S | *(no value)* | When automating the Synchronize tool with the **SYNC** argument, this lets you turn on the **Copy files in both directions** option.<br /><br />//<Example://> See the **SYNC** argument for an example. |
@@ -66,7 +66,7 @@ The **Find** internal command can be used to:
 | OFFLINE | /S | *(no value)* | When automating the [Duplicate File Finder](/Manual/additional_functionality/duplicate_file_finder.md), this lets you turn off the **Ignore offline files** option (the default for this option is on).<br /><br />*Example:* `Find IN E:\TapeBackup DUPES OFFLINE` |
 | ONLYEXISTING | /S | *(no value)* | When automating the Synchronize tool with the **SYNC** argument, this lets you select to only synchronize existing files.<br /><br />//<Example://> See the **SYNC** argument for an example. |
 | PRESET | /K | *\<preset name\>* | Loads the specified Find, Synchronize or Duplicates preset. Other arguments you provide will override the preset settings - for example, you can use the **IN** argument to override the search path. Specify the **NOAUTORUN** argument to prevent the operation from starting automatically.<br /><br />*Example:* `Find PRESET=ImageFiles IN=D:\Downloads` |
-|  |  | **!list** | Generates a list of saved presets (acts as a [dynamic button](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/RAEDME.md)). Selecting an item from the list will open the appropriate panel and run the specified preset.<br /><br />*Example:* `Find PRESET=!list DUPES` |
+|  |  | **!list** | Generates a list of saved presets (acts as a [dynamic button](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.md)). Selecting an item from the list will open the appropriate panel and run the specified preset.<br /><br />*Example:* `Find PRESET=!list DUPES` |
 |  |  | **faves** | Modifies the generated list of presets to only display those you have marked as favorites.<br /><br />*Example:* `Find PRESET=!list,faves` |
 |  |  | **nofaves** | Modifies the generated list of presets to exclude those you have marked as favorites.<br /><br />*Example:* `Find SYNC PRESET=!list,nofaves` |
 |  |  | **nogroups** | Displays the generated list of presets as a flat list rather than separating them up into any groups you may have created.<br /><br />*Example:* `Find PRESET=!list,nofaves,nogroups` |

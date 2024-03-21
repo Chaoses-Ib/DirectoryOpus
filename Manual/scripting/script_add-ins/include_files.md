@@ -13,7 +13,7 @@ If instead you keep your utility functions in an include file, you can then *inc
 
 ##### Include file requirements
 
-The easiest way to create an include file is using the [script editor](../script_editor/RAEDME.md).
+The easiest way to create an include file is using the [script editor](../script_editor/README.md).
 
 While include files are just script files like any other, there are a few important differences to normal scripts:
 
@@ -33,4 +33,4 @@ You can also specify a minimum version for the include file. This only works if 
 
 `@include inc_myutils.js:1.2`
 
-You can also select include files from the [script editor](/Manual/scripting/script_editor/RAEDME.md).
+You can also select include files from the [script editor](/Manual/scripting/script_editor/README.md).

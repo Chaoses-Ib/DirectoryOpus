@@ -18,7 +18,7 @@ If possible, thumbnail images are also displayed for the two files - if not, th
 - You can right-click the thumbnail or icon to display the context menu for the file.
 - You can double-click the thumbnail or icon to open the file.
 
-The context menu displayed when right-clicking a file's thumbnail (or icon) can be customized using the [File Types](/Manual/file_types/RAEDME.md) system. For example, you could add a command to compare the two files using an external comparison tool.
+The context menu displayed when right-clicking a file's thumbnail (or icon) can be customized using the [File Types](/Manual/file_types/README.md) system. For example, you could add a command to compare the two files using an external comparison tool.
 
 ##### Proceeding with the file copy
 
@@ -55,4 +55,4 @@ You can also abort the whole operation by clicking the **Abort** button or closi
 
 ##### Resuming FTP transfers
 
-If you are copying a file to or from an [FTP site](/Manual/ftp/RAEDME.md), and the remote FTP server supports *resume*, you will also have the choice to **Resume** the copy (as well as a drop-down for **Resume All**). If you select the **Resume** option Opus will attempt to resume the file transfer where it was (presumably) interrupted previously. For example, if the file you are copying is 100 KB and the existing file is only 50 KB, Opus would start transferring data from the 50 KB mark. This option will only be available if the existing file is smaller than the new one. You need to be sure of what you're doing when you select this option, as it would be very easy to wind up with a corrupted file if you accidentally resume copying the wrong file.
+If you are copying a file to or from an [FTP site](/Manual/ftp/README.md), and the remote FTP server supports *resume*, you will also have the choice to **Resume** the copy (as well as a drop-down for **Resume All**). If you select the **Resume** option Opus will attempt to resume the file transfer where it was (presumably) interrupted previously. For example, if the file you are copying is 100 KB and the existing file is only 50 KB, Opus would start transferring data from the 50 KB mark. This option will only be available if the existing file is smaller than the new one. You need to be sure of what you're doing when you select this option, as it would be very easy to wind up with a corrupted file if you accidentally resume copying the wrong file.

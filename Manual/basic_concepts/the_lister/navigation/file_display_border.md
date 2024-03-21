@@ -22,7 +22,7 @@ To the right of the location field the buttons are:
 - **Swap**: Swap this folder with the other file display. This button isn't visible in single display mode.
 - **Close**: Close the current tab. If this is the only tab in a dual-display Lister, it will close the second file display. In a single display Lister with only one tab open this button isn't visible.
 
-This is a fully [configurable toolbar](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/RAEDME.md), and as such you can add your own buttons and modify or remove the default ones. See the page on the [File Display toolbar](../toolbars/the_default_toolbars/file_display_toolbar.md) for more information about these buttons.
+This is a fully [configurable toolbar](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/README.md), and as such you can add your own buttons and modify or remove the default ones. See the page on the [File Display toolbar](../toolbars/the_default_toolbars/file_display_toolbar.md) for more information about these buttons.
 
 ##### Source / destination state
 

@@ -1,6 +1,6 @@
 # OnShutdown
 
-The **OnShutdown** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when Opus is shutting down.
+The **OnShutdown** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when Opus is shutting down.
 
 | **Method Name:** | OnShutdown |
 | --- | --- |

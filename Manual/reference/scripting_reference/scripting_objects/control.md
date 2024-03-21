@@ -1,6 +1,6 @@
 # Control
 
-The **Control** object represents a control on a [script dialog](/Manual/scripting/script_dialogs/RAEDME.md); it lets you read and modify a control's value (and contents). Use the **[Dialog](dialog.md).Control** method to obtain a **Control** object.
+The **Control** object represents a control on a [script dialog](/Manual/scripting/script_dialogs/README.md); it lets you read and modify a control's value (and contents). Use the **[Dialog](dialog.md).Control** method to obtain a **Control** object.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

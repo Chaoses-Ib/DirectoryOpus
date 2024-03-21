@@ -1,6 +1,6 @@
 # OnCloseTab
 
-The **OnCloseTab** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md) to receive notification when a tab is closed in a Lister.
+The **OnCloseTab** event can be implemented by a [script add-in](/Manual/scripting/script_add-ins/README.md) to receive notification when a tab is closed in a Lister.
 
 | **Method Name:** | OnCloseTab |
 | --- | --- |

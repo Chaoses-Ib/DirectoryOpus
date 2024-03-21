@@ -4,7 +4,7 @@ If you tend to have multiple file operations happening at once you have probably
 
 ![](/Manual/images/media/13/jobs_bar.png)
 
-You can configure the *Jobs Bar* to appear automatically whenever a job is started (with the **[Preferences / File Operations / Progress Indicators](/Manual/preferences/preferences_categories/file_operations/progress_indicators/RAEDME.md) / Display the jobs bar automatically when starting a new job** option), or you can open and close it manually (using the **[Set](/Manual/reference/command_reference/internal_commands/set.md) JOBSBAR** command). The buttons show basic information about the job (the *action*, *source* and *destination*) and the current progress in the form of a bar graph. The color of the bar graph indicates the current state of the job (*running*, *paused* or *error*).
+You can configure the *Jobs Bar* to appear automatically whenever a job is started (with the **[Preferences / File Operations / Progress Indicators](/Manual/preferences/preferences_categories/file_operations/progress_indicators/README.md) / Display the jobs bar automatically when starting a new job** option), or you can open and close it manually (using the **[Set](/Manual/reference/command_reference/internal_commands/set.md) JOBSBAR** command). The buttons show basic information about the job (the *action*, *source* and *destination*) and the current progress in the form of a bar graph. The color of the bar graph indicates the current state of the job (*running*, *paused* or *error*).
 
 The *Jobs Bar* buttons also let you manage the jobs directly. Click a button to display its progress dialog - click it again to hide it.
 
@@ -18,7 +18,7 @@ If you right-click the button a context menu is displayed that lets you pause, r
 
 If you're using the *Jobs Bar* you may also like to configure Opus to minimize all progress indicators automatically. This can dramatically streamline your workflow - if you are launching multiple simultaneous file operations it can be incredibly distracting to have progress indicators popping up in front of the Lister every time you launch an operation.
 
-This can be enabled by turning on the **Minimize progress indicators** option on the **[Preferences / File Operations / Progress Indicators](/Manual/preferences/preferences_categories/file_operations/progress_indicators/RAEDME.md)**page.
+This can be enabled by turning on the **Minimize progress indicators** option on the **[Preferences / File Operations / Progress Indicators](/Manual/preferences/preferences_categories/file_operations/progress_indicators/README.md)**page.
 
 You can also set progress indicators to only minimize when the *Jobs Bar* is visible - that way, you can manually open the *Jobs Bar* when you want to start a lot of operations simultaneously and have the normal behavior when the *Jobs Bar* is closed.
 

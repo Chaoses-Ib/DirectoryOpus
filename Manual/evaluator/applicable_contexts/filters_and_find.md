@@ -2,7 +2,7 @@
 
 You can use the evaluator with filters (including the Find tool) in several ways:
 
-- In the [filter control](/Manual/file_operations/filtered_operations/RAEDME.md) you can define a [textual filter](/Manual/file_operations/filtered_operations/textual_filters.md), and this uses the evaluator if it begins with `=`.
+- In the [filter control](/Manual/file_operations/filtered_operations/README.md) you can define a [textual filter](/Manual/file_operations/filtered_operations/textual_filters.md), and this uses the evaluator if it begins with `=`.
 - Similarly, various commands let you define a textual filter from the command line (e.g. `Find FILTERDEF`), and these use the evaluator if they begin with `=`.
 - If the [search field](/Manual/basic_concepts/searching_and_filtering/windows_search.md) is set to use Opus Find, you can enter an evaluation expression into it directly, beginning with a `=`.
 - (Opus 13.3.4 and above) Quick filters (via the [Filter Bar](/Manual/basic_concepts/searching_and_filtering/filter_bar.md) or [FAYT field](/Manual/basic_concepts/the_lister/find-as-you-type_field.md)) can run evaluator code directly, and they can also invoked pre-defined filters and pass arguments to them if they use evaluator code.

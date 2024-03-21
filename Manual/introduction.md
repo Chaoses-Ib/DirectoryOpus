@@ -14,7 +14,7 @@ As you start to explore Opus here are a few tips to help you get around:
 - All the toolbar buttons and menu commands have popup tooltips that describe what they do. If you ever want to know what a command is for, just hover over it with the mouse for a couple of seconds.
 - Many dialogs (including the main Preferences dialog) have filter fields that let you search for options matching your keywords.
 - Press <kbd>F1</kbd> from anywhere to get to the help. Remember to look at the table of contents on the left for other related topics.
-- If you have time, have a quick read through the topics in the [Basic Concepts](basic_concepts/RAEDME.md) section of this help file. Opus supports the same basic file management concepts as Explorer but this section describes some of the extra functionality that can really help you get the most out of Opus.
+- If you have time, have a quick read through the topics in the [Basic Concepts](basic_concepts/README.md) section of this help file. Opus supports the same basic file management concepts as Explorer but this section describes some of the extra functionality that can really help you get the most out of Opus.
 - The [Opus Resource Centre](http://resource.dopus.com/) is a wealth of hints, tips, FAQs, tutorials and knowledgeable Opus users.
 
 Thanks for using Directory Opus! We hope you enjoy using it as much as we enjoy writing it!

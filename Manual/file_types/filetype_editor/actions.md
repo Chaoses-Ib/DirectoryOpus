@@ -1,6 +1,6 @@
 # Actions
 
-The **Actions** tab in the [file type editor](../filetype_editor/RAEDME.md) lets you configure the behavior of various "actions" - standard commands (verbs) that the system defines and uses for files of various types. The settings on this tab are global - they affect the behavior of the file type throughout the system. [File type groups](../file_type_groups.md) and most of the special [Directory Opus File Types](../directory_opus_file_types.md) don't have an actions tab.
+The **Actions** tab in the [file type editor](../filetype_editor/README.md) lets you configure the behavior of various "actions" - standard commands (verbs) that the system defines and uses for files of various types. The settings on this tab are global - they affect the behavior of the file type throughout the system. [File type groups](../file_type_groups.md) and most of the special [Directory Opus File Types](../directory_opus_file_types.md) don't have an actions tab.
 
 ![](/Manual/images/media/filetypes_-_actions.png)
 
@@ -19,7 +19,7 @@ At the bottom of the actions tab, the **Edit** button lets you edit the selected
 
 You can also right-click on the items in the actions list to display a context menu for the item. This context menu lets you use **Copy** and **Paste** to copy the definition from one action to another.
 
-Editing an action displays the **Edit** action dialog. Because actions are global settings (used by Windows as well as Opus), this is not a full-blown [function editor](/Manual/customize/creating_your_own_buttons/command_editor/RAEDME.md) dialog, and you can't configure actions to use internal Opus commands. Instead, two types of function can be defined for an action.
+Editing an action displays the **Edit** action dialog. Because actions are global settings (used by Windows as well as Opus), this is not a full-blown [function editor](/Manual/customize/creating_your_own_buttons/command_editor/README.md) dialog, and you can't configure actions to use internal Opus commands. Instead, two types of function can be defined for an action.
 
 ![](/Manual/images/media/open_action_-_run.png) 
 

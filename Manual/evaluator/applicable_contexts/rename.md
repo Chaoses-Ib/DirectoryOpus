@@ -1,6 +1,6 @@
 # Rename
 
-You can use the evaluator in the [advanced rename](/Manual/file_operations/renaming_files/advanced_rename/RAEDME.md) tool to insert text returned by the evaluation.
+You can use the evaluator in the [advanced rename](/Manual/file_operations/renaming_files/advanced_rename/README.md) tool to insert text returned by the evaluation.
 
 Use the `{= ... =}` code to insert an evaluation expression. The return value of the expression is inserted into the new filename.
 

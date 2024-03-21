@@ -13,7 +13,7 @@ Windows (particularly in Vista and above) uses links and junctions quite a lot.
 
 ![](/Manual/images/media/junction_targets.png) 
 
-If you turn on the **Description** column in a Lister you can see the target of links and junctions. See the [Folder Options](/Manual/basic_concepts/folder_options/RAEDME.md) section for information on adding columns to the display.
+If you turn on the **Description** column in a Lister you can see the target of links and junctions. See the [Folder Options](/Manual/basic_concepts/folder_options/README.md) section for information on adding columns to the display.
 
 Opus is able to create all these types of links for you. Creating a shortcut is the simplest, and you can do this in Opus just as you can in Explorer, either by:
 
@@ -38,6 +38,6 @@ When creating soft links, there are two ways the target of the link can be store
   - **Target path**: *C:\Test\Original.txt*  
     Creating *Link.txt* as a relative link would store the target path as *..\Original.txt* - the **..** notation indicates the parent folder. The advantage of a relative link is the common parent folder (in this example, *C:\Test*) can be renamed or moved, and the link will still work. Relative links are created using the **Copy MAKELINK=relsoftlink** command. If the target path can not be expressed relative to the link path then a regular, absolute link will be created instead.
 
-See the documentation on the **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command for more information, and the [Customize](/Manual/customize/RAEDME.md) section for information on how to configure buttons and hotkeys. You may also like to see the File Types [Drop Menu](/Manual/file_types/filetype_editor/drop_menu.md) page - it's possible to add commands to the drag-and-drop menu, and you could, for example, add a **Create Softlink** command to go along with the **Create Shortcut** command that already appears on this menu.
+See the documentation on the **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command for more information, and the [Customize](/Manual/customize/README.md) section for information on how to configure buttons and hotkeys. You may also like to see the File Types [Drop Menu](/Manual/file_types/filetype_editor/drop_menu.md) page - it's possible to add commands to the drag-and-drop menu, and you could, for example, add a **Create Softlink** command to go along with the **Create Shortcut** command that already appears on this menu.
 
 ![](/Manual/images/media/drop_menu_-_results.png)

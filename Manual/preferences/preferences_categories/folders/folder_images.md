@@ -1,6 +1,6 @@
 # Folder Images
 
-The **Folder Images** page lets you change the background image and color in specific folders, or specific types of folders. It's similar in operation to the [Folder Formats](folder_formats/RAEDME.md) page. Folders and colors defined here will override the relevant global settings on the [Images](/Manual/preferences/preferences_categories/colors_and_fonts/images.md) and [Directory Opus Colors](/Manual/preferences/preferences_categories/colors_and_fonts/directory_opus_colors.md) pages.
+The **Folder Images** page lets you change the background image and color in specific folders, or specific types of folders. It's similar in operation to the [Folder Formats](folder_formats/README.md) page. Folders and colors defined here will override the relevant global settings on the [Images](/Manual/preferences/preferences_categories/colors_and_fonts/images.md) and [Directory Opus Colors](/Manual/preferences/preferences_categories/colors_and_fonts/directory_opus_colors.md) pages.
 
 The list of folders is split into different groups:
 

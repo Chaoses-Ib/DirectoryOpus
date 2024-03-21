@@ -1,6 +1,6 @@
 # Viewer
 
-The **Viewer** object represents a standalone [image viewer](/Manual/additional_functionality/viewing_images/RAEDME.md). A collection of **Viewer** objects is returned by the **[Viewers](viewers.md)** object, which is obtainable via the **[DOpus](dopus.md).viewers** property. For functions launched from within a viewer (e.g. from its toolbar), the current **Viewer** object is provided by the **[ClickData](clickdata.md).[func](func.md).viewer** property.
+The **Viewer** object represents a standalone [image viewer](/Manual/additional_functionality/viewing_images/README.md). A collection of **Viewer** objects is returned by the **[Viewers](viewers.md)** object, which is obtainable via the **[DOpus](dopus.md).viewers** property. For functions launched from within a viewer (e.g. from its toolbar), the current **Viewer** object is provided by the **[ClickData](clickdata.md).[func](func.md).viewer** property.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

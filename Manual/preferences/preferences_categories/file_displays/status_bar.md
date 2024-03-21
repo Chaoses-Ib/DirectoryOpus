@@ -30,10 +30,10 @@ Depending on the state of the **Separate definitions** option there will either 
 
 ![Default status bar definition](/Manual/images/media/13/status_definition.png) 
 
-This image shows the default status bar definition. Not counting the comments that begin with `//`, there are ten lines in the text field, which means ten separate sections in the status bar. As you can probably tell, you tell Opus which information to display using a series of `{..}` codes, which are described in detail in the [reference section](/Manual/reference/status_bar_codes/RAEDME.md). The **Codes** drop-down above the text field also provides a full list with descriptions of their meanings.
+This image shows the default status bar definition. Not counting the comments that begin with `//`, there are ten lines in the text field, which means ten separate sections in the status bar. As you can probably tell, you tell Opus which information to display using a series of `{..}` codes, which are described in detail in the [reference section](/Manual/reference/status_bar_codes/README.md). The **Codes** drop-down above the text field also provides a full list with descriptions of their meanings.
 
 Below the text field is a small preview of the status bar - this updates in real time, so as you make changes to the status bar definition you can get an idea for how it will look in real life. A red highlight indicates the section you're currently editing.
 
 The first line of text in the status bar definition shown above corresponds to the first section in the preview, and so on.
 
-See the [Status Bar Codes](/Manual/reference/status_bar_codes/RAEDME.md) reference section for the full list of codes you can use.
+See the [Status Bar Codes](/Manual/reference/status_bar_codes/README.md) reference section for the full list of codes you can use.

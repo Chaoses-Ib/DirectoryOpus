@@ -1,6 +1,6 @@
 # TabGroupTabEntry
 
-The **TabGroupTabEntry** object represents a single [folder tab](/Manual/basic_concepts/the_lister/tabs/RAEDME.md). The folder tabs in a tab group can be enumerated via the **[TabGroupTabList](tabgrouptablist.md)** object.
+The **TabGroupTabEntry** object represents a single [folder tab](/Manual/basic_concepts/the_lister/tabs/README.md). The folder tabs in a tab group can be enumerated via the **[TabGroupTabList](tabgrouptablist.md)** object.
 
 | Property Name | Return Type | **Description** |
 | --- | --- | --- |

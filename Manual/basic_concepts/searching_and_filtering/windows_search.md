@@ -51,7 +51,7 @@ You can use Everything's [query syntax](https://www.voidtools.com/support/everyt
 
 ##### Opus search
 
-The *Opus search* option uses the the [Opus find tool](find_files/RAEDME.md) to run a search below the current folder. This is a non-indexed search and so may be significantly slower than the indexed search options (depending on how big the folder is).
+The *Opus search* option uses the the [Opus find tool](find_files/README.md) to run a search below the current folder. This is a non-indexed search and so may be significantly slower than the indexed search options (depending on how big the folder is).
 
 The options for Opus search are:
 
@@ -69,7 +69,7 @@ The options for Opus search are:
 
 ![](/Manual/images/media/13/windows_search.png) 
 
-In the above screenshot we've searched the **Documents** library for any documents with the name ***davidson*** in the author field. Matching files are displayed in a [file collection](../virtual_file_system/file_collections/RAEDME.md). This file collection is special in that it doesn't appear below the **File Collections** root folder like normal collections - instead, it appears as a child of the folder you searched in. The collection is also temporary - navigating away from the search results will cause it to be discarded.
+In the above screenshot we've searched the **Documents** library for any documents with the name ***davidson*** in the author field. Matching files are displayed in a [file collection](../virtual_file_system/file_collections/README.md). This file collection is special in that it doesn't appear below the **File Collections** root folder like normal collections - instead, it appears as a child of the folder you searched in. The collection is also temporary - navigating away from the search results will cause it to be discarded.
 
 To clear the search results and return to the folder you searched in, you can click the **Back** toolbar button, or use the close button in the search field to clear the search term.
 

@@ -23,7 +23,7 @@ The folder tree supports several keyboard commands by default:
 - <kbd>F2</kbd> to rename the selected folder
 - <kbd>Del</kbd> to delete the selected folder
 
-Using the [Customize](/Manual/customize/RAEDME.md) system it's also possible to program your own [keys](/Manual/customize/the_customize_dialog/keys.md) that work specifically on the folder tree. Some of these are configured by default:
+Using the [Customize](/Manual/customize/README.md) system it's also possible to program your own [keys](/Manual/customize/the_customize_dialog/keys.md) that work specifically on the folder tree. Some of these are configured by default:
 
 - <kbd>+</kbd> to expand the selected folder on the first press, and on the second press expand all second-level folders below it
 - <kbd>-</kbd> performs a similar function for collapse

@@ -1,6 +1,6 @@
 # Evaluator Columns
 
-This page lets you create your own columns which can use the [evaluator](/Manual/evaluator/RAEDME.md) to manipulate the filename or other metadata to produce the text they display.
+This page lets you create your own columns which can use the [evaluator](/Manual/evaluator/README.md) to manipulate the filename or other metadata to produce the text they display.
 
 For example, you could use the evaluator's [RegEx()](/Manual/reference/evaluator/regex.md) function to extract a portion of the filename and display it in a separate column.
 
@@ -48,4 +48,4 @@ The image above shows the definition for the default **Image Bytes** column, one
 - **Filesystem folders only**: If turned on this column will only be available in normal filesystem folders (e.g. C:) and not in locations such as FTP sites or archives. You'd want this option on if your column depends on metadata that's only available for real files.
 - **Custom grouping**: If turned on, the evaluation clause will be called separately with the variable `operation` set to the value `"group"`. This lets you return the name of the group you want the item placed into by default.
 
-See the section on the [Evaluator](/Manual/evaluator/RAEDME.md) for more information about where you can use the evaluator.
+See the section on the [Evaluator](/Manual/evaluator/README.md) for more information about where you can use the evaluator.

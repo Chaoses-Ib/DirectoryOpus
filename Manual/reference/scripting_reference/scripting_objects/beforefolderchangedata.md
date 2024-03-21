@@ -1,6 +1,6 @@
 # BeforeFolderChangeData
 
-If a [script add-in](/Manual/scripting/script_add-ins/RAEDME.md)implements the **[OnBeforeFolderChange](../scripting_events/onbeforefolderchange.md)** event, the method receives a **BeforeFolderChangeData** object before the new folder is read.
+If a [script add-in](/Manual/scripting/script_add-ins/README.md)implements the **[OnBeforeFolderChange](../scripting_events/onbeforefolderchange.md)** event, the method receives a **BeforeFolderChangeData** object before the new folder is read.
 
 | Property Name | Return Type | Description |
 | --- | --- | --- |

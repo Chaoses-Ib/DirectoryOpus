@@ -20,7 +20,7 @@ For example, a USB thumb drive labelled **My_Portable** could be referred to in 
 
 ##### Using aliases in commands
 
-You can use aliases in [buttons that you define yourself](/Manual/customize/creating_your_own_buttons/RAEDME.md) (for example, a button with the command `Copy TO /Sales23` would automatically copy any selected files to the aliased folder).
+You can use aliases in [buttons that you define yourself](/Manual/customize/creating_your_own_buttons/README.md) (for example, a button with the command `Copy TO /Sales23` would automatically copy any selected files to the aliased folder).
 
 ##### Defining aliases
 

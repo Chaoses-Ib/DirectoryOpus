@@ -3,8 +3,8 @@
 The **CreateFolder** internal command is used to:
 
 - [Create new folders](/Manual/file_operations/creating_folders.md) (either via a dialog, an inline rename field in the file display, or with a pre-determined name)
-- [Create new archive files](/Manual/file_operations/creating_archives/RAEDME.md)
-- Create new [libraries](/Manual/basic_concepts/virtual_file_system/libraries.md), [collections](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md) and [stored query collections](/Manual/basic_concepts/virtual_file_system/file_collections/stored_queries.md)
+- [Create new archive files](/Manual/file_operations/creating_archives/README.md)
+- Create new [libraries](/Manual/basic_concepts/virtual_file_system/libraries.md), [collections](/Manual/basic_concepts/virtual_file_system/file_collections/README.md) and [stored query collections](/Manual/basic_concepts/virtual_file_system/file_collections/stored_queries.md)
 
 **Command Arguments:** 
 
@@ -25,9 +25,9 @@ The **CreateFolder** internal command is used to:
 |  |  | **no** | Ensures the *Create Folder* dialog is in single-folder mode if it opens.<br /><br />*Example:* `CreateFolder MULTI=no` |
 | READAUTO | /O | *(no value)* | Automatically read the newly created folder into the current source file display.<br /><br />*Example:* `CreateFolder "New Folder" READAUTO` |
 |  |  | **no** | Do not automatically read the newly created folder.<br /><br />*Example:* `CreateFolder "New Folder" READAUTO=no` |
-|  |  | **dual** | Read the newly created folder into the other file display. If the Lister is not currently in [dual-display](/Manual/basic_concepts/the_lister/dual_display/RAEDME.md) mode it will be placed in this mode first. You can combine this value with **tab** to open a new tab in the other file display.<br /><br />*Example:* `CreateFolder "New Folder" READAUTO=dual` |
+|  |  | **dual** | Read the newly created folder into the other file display. If the Lister is not currently in [dual-display](/Manual/basic_concepts/the_lister/dual_display/README.md) mode it will be placed in this mode first. You can combine this value with **tab** to open a new tab in the other file display.<br /><br />*Example:* `CreateFolder "New Folder" READAUTO=dual` |
 |  |  | **left** | Read the newly created folder into the left (or top) file display, regardless of which side is active. You can combine this value with **tab** to open a new tab.<br /><br />*Example:* `CreateFolder "Stuff" READAUTO=left,tab` |
-|  |  | **right** | Read the newly created folder into the right (or bottom) file display, regardless of which side is active. If the Lister is not currently in [dual-display](/Manual/basic_concepts/the_lister/dual_display/RAEDME.md) mode it will be placed in this mode first. You can combine this value with **tab** to open a new tab in the other file display.<br /><br />*Example:* `CreateFolder "My Dir" READAUTO=right` |
+|  |  | **right** | Read the newly created folder into the right (or bottom) file display, regardless of which side is active. If the Lister is not currently in [dual-display](/Manual/basic_concepts/the_lister/dual_display/README.md) mode it will be placed in this mode first. You can combine this value with **tab** to open a new tab in the other file display.<br /><br />*Example:* `CreateFolder "My Dir" READAUTO=right` |
 |  |  | **tab** | Create a new tab for the newly created folder. The tab will be opened in the source file display unless **dual**, **left**, or **right** is also specified.<br /><br />*Example:* `CreateFolder "New Folder" READAUTO=dual,tab` |
 |  |  | **nofocus** | When opening a new tab, prevents that tab from being made the active one.<br /><br />*Example:* `CreateFolder "New Folder" READAUTO=tab,nofocus` |
 | ZIP | /S | *(no value)* | Create a new Zip file (equivalent to `CreateFolder ARCHIVE=.zip`).<br /><br />*Example:* `CreateFolder ZIP` |

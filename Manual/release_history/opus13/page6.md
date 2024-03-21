@@ -73,7 +73,7 @@ Allows editing script code and resources:
 
 #### More!
 
-See the [detailed list of changes](/Manual/release_history/opus13_detailed/RAEDME.md) for even more!
+See the [detailed list of changes](/Manual/release_history/opus13_detailed/README.md) for even more!
 
 There are hundreds of additional changes across almost every part of the program, plus more detail on everything discussed above.
 
@@ -81,4 +81,4 @@ If you're updating from an older version, you may also want to read [Tips for Up
 
 ------------------------------------------------------------------------
 
-Next: [Directory Opus 13 - Detailed list of changes](/Manual/release_history/opus13_detailed/RAEDME.md)
+Next: [Directory Opus 13 - Detailed list of changes](/Manual/release_history/opus13_detailed/README.md)

@@ -12,7 +12,7 @@ You can open a *scope* after an `if`, `elseif` or `else` using a `{` character a
 
 You can assign variables using `=`. Variables do not need to be declared in advance. Variables are [typed](variable_types.md) but not strongly-typed - the type will be inferred and conversion between types is automatic. You can also use the `as` operator for explicit conversion.
 
-The evaluator provides a number of [functions](/Manual/reference/evaluator/RAEDME.md). To call a function, the function name needs to be followed by parentheses `()`. If the function takes any arguments these must be comma-separated and appear inside the parentheses - but the parentheses are needed even if the function takes no arguments.
+The evaluator provides a number of [functions](/Manual/reference/evaluator/README.md). To call a function, the function name needs to be followed by parentheses `()`. If the function takes any arguments these must be comma-separated and appear inside the parentheses - but the parentheses are needed even if the function takes no arguments.
 
 You can use comments, which are ignored by the evaluator - they must begin with a `//`.
 

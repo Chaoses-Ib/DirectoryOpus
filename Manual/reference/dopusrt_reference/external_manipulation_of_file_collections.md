@@ -1,6 +1,6 @@
 # External Manipulation of File Collections
 
-The **[DOpusRT]()** tool can be used from outside of Opus to manipulate [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/RAEDME.md).
+The **[DOpusRT]()** tool can be used from outside of Opus to manipulate [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/README.md).
 
 This functionality is accessed using the **dopusrt.exe /col** command - following **/col** you must supply a *collection command*, and the appropriate arguments for that collection command.
 

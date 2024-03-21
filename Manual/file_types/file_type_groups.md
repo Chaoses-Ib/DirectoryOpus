@@ -1,6 +1,6 @@
 # File Type Groups
 
-File type groups let you create pseudo file-types that contain multiple file extensions. Changes that you make to a file type group (like adding a context menu) are automatically reflected for all files that belong to that group. For example, the **Images** group by default adds a context menu command called **Convert Image** which invokes the [Image Conversion](/Manual/additional_functionality/image_conversion/RAEDME.md) tool. This command will be displayed on the context menu for all files that belong to the **Images** group.
+File type groups let you create pseudo file-types that contain multiple file extensions. Changes that you make to a file type group (like adding a context menu) are automatically reflected for all files that belong to that group. For example, the **Images** group by default adds a context menu command called **Convert Image** which invokes the [Image Conversion](/Manual/additional_functionality/image_conversion/README.md) tool. This command will be displayed on the context menu for all files that belong to the **Images** group.
 
 ![](/Manual/images/media/groups.png)
 
@@ -14,7 +14,7 @@ You can add your own groups, and a number of groups are defined by default:
 - **Music**: Contains various common music formats (**.mp3**, **.wav**, **.wma**, etc.)
 - **Programs**: Contains executable file formats like **.exe** and **.dll**.
 
-You can change the file extensions assigned to groups by [editing](filetype_editor/RAEDME.md) them like normal file types. At any time you can reset one of the default groups by right-clicking its entry in the list and choosing the **Reset to Defaults** command from the context menu. You can also reset all of the default groups at once by right-clicking the **File Type Groups** header in the list.
+You can change the file extensions assigned to groups by [editing](filetype_editor/README.md) them like normal file types. At any time you can reset one of the default groups by right-clicking its entry in the list and choosing the **Reset to Defaults** command from the context menu. You can also reset all of the default groups at once by right-clicking the **File Type Groups** header in the list.
 
 The concept of groups is similar to that of file types themselves; they both refer to one or more file extensions. The difference (apart from groups being an Opus-only concept) is that a group contains file extensions for related classes of file whereas file types contain file extensions for the same type of file.
 
