@@ -11,7 +11,7 @@ This category contains options that control file operations (copying, deleting, 
 - **[Double-click Files](/Manual/preferences/preferences_categories/file_operations/double-click_files/README.md)**: A few options that control what happens when you double-click on certain files in a Lister. The [File Types](/Manual/file_types/README.md) system controls this to a far higher degree.
   - **[ftp](/Manual/preferences/preferences_categories/file_operations/double-click_files/ftp.md)**: Specific double-click options for files on [FTP](/Manual/ftp/README.md) sites.
 - **[Logging](/Manual/preferences/preferences_categories/file_operations/logging.md)**: Controls whether Opus should keep a log of your file operations or not.
-- **[Metadata](/Manual/preferences/preferences_categories/file_operations/metadata/README.md)**: Options relating to the editing of metadata.
+- **[Metadata](/Manual/preferences/preferences_categories/file_operations/copying_files/metadata.md)**: Options relating to the editing of metadata.
   - **[editor](/Manual/preferences/preferences_categories/file_operations/metadata/editor.md)**: Options for the [metadata editor](/Manual/basic_concepts/the_lister/metadata_pane.md).
   - **[Music Genres](/Manual/preferences/preferences_categories/file_operations/metadata/music_genres.md)**: Music genres shown in the metadata editor for audio files.
 - **[Options](/Manual/preferences/preferences_categories/file_operations/options.md)**: General options that didn't fit on any other page!

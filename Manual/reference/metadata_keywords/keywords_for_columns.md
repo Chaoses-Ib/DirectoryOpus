@@ -37,114 +37,308 @@ The filename can be retrieved without the file extension using **{name\|noext}**
 
 ##### Date and Time
 
-| Column | Keyword |
-| --- | --- |
-| Create (relative) | cdaterel |
-| Date (accessed) | accesseddate |
-| Date (created) | createddate |
-| Date (modified) | modifieddate |
-| Date and Time (accessed) | accessed |
-| Date and Time (created) | created |
-| Date and Time (modified) | modified |
-| Modify (relative) | daterel |
-| Time (accessed) | accessedtime |
-| Time (created) | createdtime |
-| Time (modified) | modifiedtime |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Create (relative)</td><td>
+cdaterel
+</td></tr><tr><td>
+Date (accessed)</td><td>
+accesseddate
+</td></tr><tr><td>
+Date (created)</td><td>
+createddate
+</td></tr><tr><td>
+Date (modified)</td><td>
+modifieddate
+</td></tr><tr><td>
+Date and Time (accessed)</td><td>
+accessed
+</td></tr><tr><td>
+Date and Time (created)</td><td>
+created
+</td></tr><tr><td>
+Date and Time (modified)</td><td>
+modified
+</td></tr><tr><td>
+Modify (relative)</td><td>
+daterel
+</td></tr><tr><td>
+Time (accessed)</td><td>
+accessedtime
+</td></tr><tr><td>
+Time (created)</td><td>
+createdtime
+</td></tr><tr><td>
+Time (modified)</td><td>
+modifiedtime
+</td></tr></tbody>
+</table>
 
 ##### Documents
 
-| Column | Keyword |
-| --- | --- |
-| Authors | author |
-| Category | category |
-| Comment | comments |
-| Company | companyname |
-| Copyright | copyright |
-| Creator | creator |
-| Document created date | doccreateddate |
-| Last edit time | docedittime |
-| Last saved by | doclastsavedby |
-| Last saved date | doclastsaveddate |
-| Pages | pages |
-| Producer | producer |
-| Subject | subject |
-| Title | title |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Authors</td><td>
+author
+</td></tr><tr><td>
+Category</td><td>
+category
+</td></tr><tr><td>
+Comment</td><td>
+comments
+</td></tr><tr><td>
+Company</td><td>
+companyname
+</td></tr><tr><td>
+Copyright</td><td>
+copyright
+</td></tr><tr><td>
+Creator</td><td>
+creator
+</td></tr><tr><td>
+Document created date</td><td>
+doccreateddate
+</td></tr><tr><td>
+Last edit time</td><td>
+docedittime
+</td></tr><tr><td>
+Last saved by</td><td>
+doclastsavedby
+</td></tr><tr><td>
+Last saved date</td><td>
+doclastsaveddate
+</td></tr><tr><td>
+Pages</td><td>
+pages
+</td></tr><tr><td>
+Producer</td><td>
+producer
+</td></tr><tr><td>
+Subject</td><td>
+subject
+</td></tr><tr><td>
+Title</td><td>
+title
+</td></tr></tbody>
+</table>
 
 ##### Name and Path
 
-| Column | Keyword |
-| --- | --- |
-| Extension | ext |
-| Extension (dirs) | extdir |
-| Filename | name |
-| Full path | fullpath |
-| Location | path |
-| Location (relative) | pathrel |
-| Parent folder | parent |
-| Parent folder (full) | parentlocation |
-| Parent location | parentpath |
-| Path length | pathlen |
-| Short name | shortname |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Extension</td><td>
+ext
+</td></tr><tr><td>
+Extension (dirs)</td><td>
+extdir
+</td></tr><tr><td>
+Filename</td><td>
+name
+</td></tr><tr><td>
+Full path</td><td>
+fullpath
+</td></tr><tr><td>
+Location</td><td>
+path
+</td></tr><tr><td>
+Location (relative)</td><td>
+pathrel
+</td></tr><tr><td>
+Parent folder</td><td>
+parent
+</td></tr><tr><td>
+Parent folder (full)</td><td>
+parentlocation
+</td></tr><tr><td>
+Parent location</td><td>
+parentpath
+</td></tr><tr><td>
+Path length</td><td>
+pathlen
+</td></tr><tr><td>
+Short name</td><td>
+shortname
+</td></tr></tbody>
+</table>
 
 ##### Picture Dimensions
 
-| Column | Keyword |
-| --- | --- |
-| Aspect ratio | aspectratio |
-| Bit depth | picdepth |
-| Dimensions | picsize  <br />dimensions |
-| Height | picheight |
-| Physical height | picphysy |
-| Physical size | picphyssize |
-| Physical width | picphysx |
-| Resolution (X) | picresx |
-| Resolution (Y) | picresy |
-| Rotation | rotation |
-| Width | picwidth |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Aspect ratio</td><td>
+aspectratio
+</td></tr><tr><td>
+Bit depth</td><td>
+picdepth
+</td></tr><tr><td>
+Dimensions</td><td>
+picsize  
+dimensions
+</td></tr><tr><td>
+Height</td><td>
+picheight
+</td></tr><tr><td>
+Physical height</td><td>
+picphysy
+</td></tr><tr><td>
+Physical size</td><td>
+picphyssize
+</td></tr><tr><td>
+Physical width</td><td>
+picphysx
+</td></tr><tr><td>
+Resolution (X)</td><td>
+picresx
+</td></tr><tr><td>
+Resolution (Y)</td><td>
+picresy
+</td></tr><tr><td>
+Rotation</td><td>
+rotation
+</td></tr><tr><td>
+Width</td><td>
+picwidth
+</td></tr></tbody>
+</table>
 
 ##### Picture Metadata
 
-| Column | Keyword |
-| --- | --- |
-| Altitude | altitude |
-| Aperture | apertureval |
-| Artists | mp3artist |
-| Camera make | cameramake |
-| Camera model | cameramodel |
-| Color model | colormodel |
-| Contrast | contrast |
-| Coordinates | coords |
-| Copyright | copyright |
-| Creation software | software |
-| Date digitized | datedigitized |
-| Date taken | datetaken  <br />shootingtime |
-| Digital Zoom | digitalzoom |
-| Exposure bias | exposurebias |
-| Exposure program | exposureprogram |
-| Exposure time | exposuretime |
-| F-number | fnumber |
-| Flash | flash |
-| Focal length | focallength |
-| Focal length (35mm) | 35mmfocallength |
-| ISO speed | isorating |
-| Image description | imagedesc |
-| Image quality | imagequality |
-| Latitude | latitude |
-| Lens make | lensmake |
-| Lens model | lensmodel |
-| Longitude | longitude |
-| Macro mode | macromode |
-| Metering mode | meteringmode |
-| Saturation | saturation |
-| Scene capture type | scenecapturetype |
-| Scene mode | scenemode |
-| Sharpness | sharpness |
-| Shutter speed | shutterspeed |
-| Subject | subject |
-| Subject distance | subjectdistance |
-| Special instructions | instructions |
-| Title | title |
-| White balance | whitebalance |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Altitude</td><td>
+altitude
+</td></tr><tr><td>
+Aperture</td><td>
+apertureval
+</td></tr><tr><td>
+Artists</td><td>
+mp3artist
+</td></tr><tr><td>
+Camera make</td><td>
+cameramake
+</td></tr><tr><td>
+Camera model</td><td>
+cameramodel
+</td></tr><tr><td>
+Color model</td><td>
+colormodel
+</td></tr><tr><td>
+Contrast</td><td>
+contrast
+</td></tr><tr><td>
+Coordinates</td><td>
+coords
+</td></tr><tr><td>
+Copyright</td><td>
+copyright
+</td></tr><tr><td>
+Creation software</td><td>
+software
+</td></tr><tr><td>
+Date digitized</td><td>
+datedigitized
+</td></tr><tr><td>
+Date taken</td><td>
+datetaken  
+shootingtime
+</td></tr><tr><td>
+Digital Zoom</td><td>
+digitalzoom
+</td></tr><tr><td>
+Exposure bias</td><td>
+exposurebias
+</td></tr><tr><td>
+Exposure program</td><td>
+exposureprogram
+</td></tr><tr><td>
+Exposure time</td><td>
+exposuretime
+</td></tr><tr><td>
+F-number</td><td>
+fnumber
+</td></tr><tr><td>
+Flash</td><td>
+flash
+</td></tr><tr><td>
+Focal length</td><td>
+focallength
+</td></tr><tr><td>
+Focal length (35mm)</td><td>
+35mmfocallength
+</td></tr><tr><td>
+ISO speed</td><td>
+isorating
+</td></tr><tr><td>
+Image description</td><td>
+imagedesc
+</td></tr><tr><td>
+Image quality</td><td>
+imagequality
+</td></tr><tr><td>
+Latitude</td><td>
+latitude
+</td></tr><tr><td>
+Lens make</td><td>
+lensmake
+</td></tr><tr><td>
+Lens model</td><td>
+lensmodel
+</td></tr><tr><td>
+Longitude</td><td>
+longitude
+</td></tr><tr><td>
+Macro mode</td><td>
+macromode
+</td></tr><tr><td>
+Metering mode</td><td>
+meteringmode
+</td></tr><tr><td>
+Saturation</td><td>
+saturation
+</td></tr><tr><td>
+Scene capture type</td><td>
+scenecapturetype
+</td></tr><tr><td>
+Scene mode</td><td>
+scenemode
+</td></tr><tr><td>
+Sharpness</td><td>
+sharpness
+</td></tr><tr><td>
+Shutter speed</td><td>
+shutterspeed
+</td></tr><tr><td>
+Subject</td><td>
+subject
+</td></tr><tr><td>
+Subject distance</td><td>
+subjectdistance
+</td></tr><tr><td>
+Special instructions</td><td>
+instructions
+</td></tr><tr><td>
+Title</td><td>
+title
+</td></tr><tr><td>
+White balance</td><td>
+whitebalance
+</td></tr></tbody>
+</table>
 
 ##### Programs
 
@@ -152,103 +346,284 @@ The filename can be retrieved without the file extension using **{name\|noext}**
 
 ##### File Size
 
-| Column | Keyword |
-| --- | --- |
-| Size (KB) | sizekb |
-| Size (auto) | sizeauto |
-| Size (bytes) | size |
-| Size (relative) | sizerel |
-| Size on disk (KB) | disksizekb |
-| Size on disk (auto) | disksizeauto |
-| Size on disk (bytes) | disksize |
-| Size on disk (relative) | disksizerel |
-| Uncompressed Size | uncompressedsize |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Size (KB)</td><td>
+sizekb
+</td></tr><tr><td>
+Size (auto)</td><td>
+sizeauto
+</td></tr><tr><td>
+Size (bytes)</td><td>
+size
+</td></tr><tr><td>
+Size (relative)</td><td>
+sizerel
+</td></tr><tr><td>
+Size on disk (KB)</td><td>
+disksizekb
+</td></tr><tr><td>
+Size on disk (auto)</td><td>
+disksizeauto
+</td></tr><tr><td>
+Size on disk (bytes)</td><td>
+disksize
+</td></tr><tr><td>
+Size on disk (relative)</td><td>
+disksizerel
+</td></tr><tr><td>
+Uncompressed Size</td><td>
+uncompressedsize
+</td></tr></tbody>
+</table>
 
 ##### General
 
-| Column | Keyword |
-| --- | --- |
-| Attributes | attr |
-| Availability | availability |
-| Description | desc |
-| File count | filecount |
-| Font name | fontname |
-| Group | group |
-| Index | index |
-| Label | label |
-| MD5 checksum | md5sum |
-| Owner | owner |
-| Rating | rating |
-| SHA-1 checksum | shasum |
-| Status Icons | status |
-| Sub-folder count | dircount |
-| Tags | keywords |
-| Target | target |
-| Thumbnail | thumbnail |
-| Total File count | filecounttotal |
-| Total Sub-folder count | dircounttotal |
-| Type | type |
-| User description | userdesc |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Attributes</td><td>
+attr
+</td></tr><tr><td>
+Availability</td><td>
+availability
+</td></tr><tr><td>
+Description</td><td>
+desc
+</td></tr><tr><td>
+File count</td><td>
+filecount
+</td></tr><tr><td>
+Font name</td><td>
+fontname
+</td></tr><tr><td>
+Group</td><td>
+group
+</td></tr><tr><td>
+Index</td><td>
+index
+</td></tr><tr><td>
+Label</td><td>
+label
+</td></tr><tr><td>
+MD5 checksum</td><td>
+md5sum
+</td></tr><tr><td>
+Owner</td><td>
+owner
+</td></tr><tr><td>
+Rating</td><td>
+rating
+</td></tr><tr><td>
+SHA-1 checksum</td><td>
+shasum
+</td></tr><tr><td>
+Status Icons</td><td>
+status
+</td></tr><tr><td>
+Sub-folder count</td><td>
+dircount
+</td></tr><tr><td>
+Tags</td><td>
+keywords
+</td></tr><tr><td>
+Target</td><td>
+target
+</td></tr><tr><td>
+Thumbnail</td><td>
+thumbnail
+</td></tr><tr><td>
+Total File count</td><td>
+filecounttotal
+</td></tr><tr><td>
+Total Sub-folder count</td><td>
+dircounttotal
+</td></tr><tr><td>
+Type</td><td>
+type
+</td></tr><tr><td>
+User description</td><td>
+userdesc
+</td></tr></tbody>
+</table>
 
 ##### Movies
 
-| Column | Keyword |
-| --- | --- |
-| Aspect ratio | aspectratio |
-| Audio codec | audiocodec  <br />mp3type |
-| Bit depth | picdepth |
-| Bit rate | mp3bitrate |
-| Broadcast date | broadcastdate |
-| Channel number | channel |
-| Credits | credits |
-| Data rate | datarate |
-| Dimensions | picsize  <br />dimensions |
-| Duration | duration  <br />mp3songlength |
-| Episode name | episodename |
-| FOURCC code | fourcc |
-| Frame rate | framerate |
-| Height | picheight |
-| High definition? | ishd |
-| Mode | mp3mode |
-| Physical size | picphyssize |
-| Publisher | publisher |
-| Recording time | recordingtime |
-| Repeat? | isrepeat |
-| Sample rate | mp3samplerate |
-| Station name | station |
-| Video codec | videocodec |
-| Width | picwidth |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Aspect ratio</td><td>
+aspectratio
+</td></tr><tr><td>
+Audio codec</td><td>
+audiocodec  
+mp3type
+</td></tr><tr><td>
+Bit depth</td><td>
+picdepth
+</td></tr><tr><td>
+Bit rate</td><td>
+mp3bitrate
+</td></tr><tr><td>
+Broadcast date</td><td>
+broadcastdate
+</td></tr><tr><td>
+Channel number</td><td>
+channel
+</td></tr><tr><td>
+Credits</td><td>
+credits
+</td></tr><tr><td>
+Data rate</td><td>
+datarate
+</td></tr><tr><td>
+Dimensions</td><td>
+picsize  
+dimensions
+</td></tr><tr><td>
+Duration</td><td>
+duration  
+mp3songlength
+</td></tr><tr><td>
+Episode name</td><td>
+episodename
+</td></tr><tr><td>
+FOURCC code</td><td>
+fourcc
+</td></tr><tr><td>
+Frame rate</td><td>
+framerate
+</td></tr><tr><td>
+Height</td><td>
+picheight
+</td></tr><tr><td>
+High definition?</td><td>
+ishd
+</td></tr><tr><td>
+Mode</td><td>
+mp3mode
+</td></tr><tr><td>
+Physical size</td><td>
+picphyssize
+</td></tr><tr><td>
+Publisher</td><td>
+publisher
+</td></tr><tr><td>
+Recording time</td><td>
+recordingtime
+</td></tr><tr><td>
+Repeat?</td><td>
+isrepeat
+</td></tr><tr><td>
+Sample rate</td><td>
+mp3samplerate
+</td></tr><tr><td>
+Station name</td><td>
+station
+</td></tr><tr><td>
+Video codec</td><td>
+videocodec
+</td></tr><tr><td>
+Width</td><td>
+picwidth
+</td></tr></tbody>
+</table>
 
 ##### Music
 
-| Column | Keyword |
-| --- | --- |
-| Album | mp3album |
-| Album artist | mp3albumartist |
-| Artists | mp3artist |
-| Audio codec | audiocodec  <br />mp3type |
-| BPM | mp3bpm |
-| Bit depth | picdepth |
-| Bit rate | mp3bitrate |
-| Compilation | compilation |
-| Composers | composers |
-| Conductors | conductors |
-| Copyright | copyright |
-| Disc number | mp3disc  <br />mp3disk |
-| Duration | mp3songlength |
-| Encoded by | mp3encoder |
-| Encoding Software | mp3encodingsoftware |
-| Genre | mp3genre |
-| Initial key | initialkey |
-| Mode | mp3mode |
-| Music comment | mp3comment |
-| Music info | mp3info |
-| Music title | mp3title |
-| Protected | mp3drm |
-| Release date | releasedate |
-| Sample rate | mp3samplerate |
-| Track number | mp3track |
-| Year | mp3year |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Album</td><td>
+mp3album
+</td></tr><tr><td>
+Album artist</td><td>
+mp3albumartist
+</td></tr><tr><td>
+Artists</td><td>
+mp3artist
+</td></tr><tr><td>
+Audio codec</td><td>
+audiocodec  
+mp3type
+</td></tr><tr><td>
+BPM</td><td>
+mp3bpm
+</td></tr><tr><td>
+Bit depth</td><td>
+picdepth
+</td></tr><tr><td>
+Bit rate</td><td>
+mp3bitrate
+</td></tr><tr><td>
+Compilation</td><td>
+compilation
+</td></tr><tr><td>
+Composers</td><td>
+composers
+</td></tr><tr><td>
+Conductors</td><td>
+conductors
+</td></tr><tr><td>
+Copyright</td><td>
+copyright
+</td></tr><tr><td>
+Disc number</td><td>
+mp3disc  
+mp3disk
+</td></tr><tr><td>
+Duration</td><td>
+mp3songlength
+</td></tr><tr><td>
+Encoded by</td><td>
+mp3encoder
+</td></tr><tr><td>
+Encoding Software</td><td>
+mp3encodingsoftware
+</td></tr><tr><td>
+Genre</td><td>
+mp3genre
+</td></tr><tr><td>
+Initial key</td><td>
+initialkey
+</td></tr><tr><td>
+Mode</td><td>
+mp3mode
+</td></tr><tr><td>
+Music comment</td><td>
+mp3comment
+</td></tr><tr><td>
+Music info</td><td>
+mp3info
+</td></tr><tr><td>
+Music title</td><td>
+mp3title
+</td></tr><tr><td>
+Protected</td><td>
+mp3drm
+</td></tr><tr><td>
+Release date</td><td>
+releasedate
+</td></tr><tr><td>
+Sample rate</td><td>
+mp3samplerate
+</td></tr><tr><td>
+Track number</td><td>
+mp3track
+</td></tr><tr><td>
+Year</td><td>
+mp3year
+</td></tr></tbody>
+</table>
 
 You can also access some columns that aren't part of the standard set of columns shown above. These can come from various places - third-party shell namespace extensions can provide custom columns, as can Opus plugins. Additionally, Zip and FTP define several columns that are only valid in those types of folders. In Opus, these columns all appear under the **Other** category. To refer to one of these columns from a command you need to know the name of the column, and then use the appropriate prefix to indicate that you want to use a special column.
 
@@ -267,31 +642,89 @@ The following column keywords are provided by Opus but only valid in certain fol
 - *7-Zip* keywords are only valid when viewing an archive handled by the 7-Zip plugin
 - *Computer* keywords are only valid when viewing the [native Computer folder](/Manual/basic_concepts/virtual_file_system/system_virtual_folders.md)
 
-| Column | Keyword |
-| --- | --- |
-| \$ **FTP keywords** | Transfer time |
-| <ftp:xfertime> | Group |
-| <ftp:group> | \$ **Computer keywords** |
-| Free space on drive | sh:freespace |
-| File system | sh:filesys |
-| Used space (graph) | sh:usedpercent |
-| Free space (graph) | sh:freepercent |
-| Network location | sh:netlocation |
-| Used space on drive | sh:usedspace |
-| \$ **Zip keywords** | Compressed size |
-| zip:compsize | Compression ratio |
-| zip:compratio | Compression method |
-| zip:compmethod | CRC checksum |
-| zip:compcrc | \$ **7-Zip keywords** |
-| Packed size | opus7zip:packed |
-| Ratio | opus7zip:ratio |
-| CRC | opus7zip:crc |
-| Block | opus7zip:block |
-| Index | opus7zip:index |
-| Is solid? | opus7zip:solid |
-| Method | opus7zip:method |
-| Mode | opus7zip:mode |
-| Link | opus7zip:link |
-| User | opus7zip:user |
-| Group | opus7zip:group |
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+
+\$ **FTP keywords**</td><td>
+Transfer time
+</td></tr><tr><td>
+<ftp:xfertime></td><td>
+Group
+</td></tr><tr><td>
+<ftp:group></td><td>
+
+\$ **Computer keywords**
+</td></tr><tr><td>
+Free space on drive</td><td>
+sh:freespace
+</td></tr><tr><td>
+File system</td><td>
+sh:filesys
+</td></tr><tr><td>
+Used space (graph)</td><td>
+sh:usedpercent
+</td></tr><tr><td>
+Free space (graph)</td><td>
+sh:freepercent
+</td></tr><tr><td>
+Network location</td><td>
+sh:netlocation
+</td></tr><tr><td>
+Used space on drive</td><td>
+sh:usedspace
+</td></tr><tr><td>
+
+\$ **Zip keywords**</td><td>
+Compressed size
+</td></tr><tr><td>
+zip:compsize</td><td>
+Compression ratio
+</td></tr><tr><td>
+zip:compratio</td><td>
+Compression method
+</td></tr><tr><td>
+zip:compmethod</td><td>
+CRC checksum
+</td></tr><tr><td>
+zip:compcrc</td><td>
+
+\$ **7-Zip keywords**
+</td></tr><tr><td>
+Packed size</td><td>
+opus7zip:packed
+</td></tr><tr><td>
+Ratio</td><td>
+opus7zip:ratio
+</td></tr><tr><td>
+CRC</td><td>
+opus7zip:crc
+</td></tr><tr><td>
+Block</td><td>
+opus7zip:block
+</td></tr><tr><td>
+Index</td><td>
+opus7zip:index
+</td></tr><tr><td>
+Is solid?</td><td>
+opus7zip:solid
+</td></tr><tr><td>
+Method</td><td>
+opus7zip:method
+</td></tr><tr><td>
+Mode</td><td>
+opus7zip:mode
+</td></tr><tr><td>
+Link</td><td>
+opus7zip:link
+</td></tr><tr><td>
+User</td><td>
+opus7zip:user
+</td></tr><tr><td>
+Group</td><td>
+opus7zip:group
+</td></tr></tbody>
+</table>
 

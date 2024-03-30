@@ -2,8 +2,20 @@
 
 The following status bar codes are used to display information about the duration of music and video files in the file list.
 
-| Code | Description |
-| --- | --- |
-| {tmp3} | **Total playing time**  <br />Displays the total playing time (duration) of all recognised music and video files in the file list. |
-| {smp3} | **Playing time of selected files**  <br />Displays the total duration of all selected music and video files. |
+<table>
+<thead><tr><th>
+Code</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+{tmp3}</td><td>
+
+**Total playing time**  
+Displays the total playing time (duration) of all recognised music and video files in the file list.
+</td></tr><tr><td>
+{smp3}</td><td>
+
+**Playing time of selected files**  
+Displays the total duration of all selected music and video files.
+</td></tr></tbody>
+</table>
 

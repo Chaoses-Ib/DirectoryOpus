@@ -22,24 +22,190 @@ The **\#** causes the search and replace to be repeated until the new name no lo
 
 There are many different variants of regular expression; by default Opus uses what's called *TR1 ECMAScript*. Microsoft has a [page on TR1](http://www.gpsoft.com.au/DScripts/redirect.asp?page=regex) that goes into far more detail than this help file can.
 
-| Token | Description |
-| --- | --- |
-| **^** | **Start of a string**.  <br />The caret is used to "anchor" the search to the start of the string. If the search is not anchored to either end, the pattern can match a sub-string of the target.<br /><br />For example:  <br />**^abc** matches *abc*, *abcdefg*, *abc123*, but not *123abc\\* **abc** also matches// 123abc// |
-| **\$** | **End of a string**.  <br />The dollar sign is used to "anchor" the search to the end of the string. If the search is not anchored to either end, the pattern can match a sub-string of the target.<br /><br />For example:  <br />**abc\$** matches *abc*, *endsinabc*, *123abc*, but not *abc123*  <br />**^abc(.\*)123\$** matches *abc123*, *abcxyz123*, but not *abcxyz123def* |
-| **.** | **Any single character**.  <br />The period (full stop) is used to match any single character.<br /><br />For example:  <br />**a.c** matches *abc*, *aac*, *acc*, *adc* but not *acd* |
-| \* | **0 or more of previous expression**.  <br />Matches zero or more occurrences of the previous expression. Combine with **.** to form the "match anything" token (**.**\*).<br /><br />For example:  <br />**ab\*c** matches *ac*, *abc*, *abbc*, *abbbc*, ...  <br />**a.\*c** matches *ac*, *abc*, *a123456c*, *aanythingc*, ...  <br />**.**\* matches anything |
-| **+** | **1 or more of previous expression**.  <br />Matches one or more occurrences of the previous expression.<br /><br />For example:  <br />**ab+c** matches *abc*, *abbc*, *abbbc* but not *ac* |
-| **?** | **0 or 1 of previous expression**.  <br />Matches either zero or one occurrence of the previous expression.<br /><br />For example:  <br />**ab?c** matches *ac*, *abc* but not *abbc* or *abbbc* |
-| **\\|** | **Alternation (logical *or*).**  <br />The vertical bar is used to separate two or more characters or expressions, any of which may match.<br /><br />For example:  <br />**a\\|b** matches *a* or *b*  <br />**a(b\\|c)d** matches *abd* or *acd*  <br />**(bill\\|ted)** matches *bill* or *ted* |
-| **{}** | **Quantifier**.  <br />Braces are used to indicate that the preceding expression must match an exact number of times.<br /><br />For example:  <br />**ab{2}c** matches *abbc*, but not *abc* or *abbbc*  <br />**a.{4}z** matches *abcdez*, *a1234z*, *afourz*, *aaaaaz*, etc. |
-| **\[\]** | **Character set**.  <br />Matches any single character in the set of specified characters.  <br />You can specify the character set as individual characters (e.g. **\[abdfg\]**) or as a range of characters (e.g. **\[a-j\]**) or as multiple ranges.<br /><br />For example:  <br />**\[abc\]** matches either *a*, *b* or *c*  <br />**\[af-j\]** matches either *a*, *f*, *g*, *h* or *j*  <br />**\[a-dh-kq-\]** matches *a*, *b*, *c*, *d*, *h*, *i*, *j*, *k*, or any character from *q* onwards  <br />**IMGP\[0-9\]{4}.jpg** matches *IMGP0158.jpg* (or any other four-digit number). |
-| **\[^\]** | **Negative character set**.  <br />Matches any character **not** in the set of specified characters. See **\[\]** for information on how the set is defined.<br /><br />For example:  <br />**\[^pqr\]** matches any character except *p*, *q* or *r* |
-| **()** | **Expression / capture group**.  <br />Parentheses are used to combine multiple characters into an expression. When used in a "search and replace" like Advanced Rename, they also mark capture groups - see above for a discussion of these.<br /><br />For example:  <br />**a\\|bc** matches *ac* or *bc*, whereas  <br />**a\\|(bc)** matches *a* or *bc* |
-| **\\** | **Escape character**.  <br />The backslash is used to escape token characters in order to match those characters literally.  <br />When used before a non-token character, it is used to indicate the following special escape characters:  <br />\<WRAP\><br /><br />\|        \|                                                                                                            \|<br />\|--------\|------------------------------------------------------------------------------------------------------------\|<br />\| **\t** \| tab character (\$09)                                                                                       \|<br />\| **\r** \| carriage return (\$0d)                                                                                     \|<br />\| **\v** \| vertical tab (\$0b)                                                                                        \|<br />\| **\f** \| form feed (\$0c)                                                                                           \|<br />\| **\n** \| new line (\$0a)                                                                                            \|<br />\| **\e** \| escape (\$1b)                                                                                              \|<br />\| **\x** \| matches an ASCII character specified as a two-digit hexadecimal number, e.g. **\x20** matches a space      \|<br />\| **\u** \| matches a Unicode character specified as a four-digit hexadecimal number, e.g. **\u0020** matches a space. \|<br /><br />\</WRAP\>\<wrap clear/\><br /><br />It is also used to mark several character classes, which are shorthand ways to specify various common **\[\]** character sets (see below).<br /><br />For example:  <br />**a\\|b** matches *a* or *b*, whereas  <br />**a\\b** matches *a\\|b\\* **a\t** matches *a* followed by a tab character, whereas  <br />**a\\t** matches *a\t* |
-| **  \w** | **Word character**.  <br />Matches any word character. Equivalent to **\[a-zA-Z_0-9\]**.<br /><br />For example:  <br />**^\w+\[0-9\]{4}.jpg** matches *IMGP0158.jpg* (or any other four-digit number preceded by at least one other word character). |
-| **  \W** | **Non-word character**.  <br />Matches any non-word character, equivalent to **\[^a-zA-Z_0-9\]**. |
-| **  \s** | **Space character**.  <br />Matches any whitespace character. Equivalent to **\[ \f\n\r\t\v\]**. |
-| **  \S** | **Non-space character**.  <br />Matches any non-whitespace character. Equivalent to **\[^ \f\n\r\t\v\]**. |
-| **  \d** | **Digit character**.  <br />Matches any decimal digit. Equivalent to **\[0-9\]**. |
-| **  \D** | **Non-digit character**.  <br />Matches any non-decimal digit. Equivalent to **\[^0-9\]**.<br /><br />For example:  <br />**^\D+\d{4}.jpg** matches *IMGP0158.jpg* (or any other four-digit number preceded by at least one non-digit character). |
+<table>
+<thead><tr><th>
+Token</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+
+**^**</td><td>
+
+**Start of a string**.  
+The caret is used to "anchor" the search to the start of the string. If the search is not anchored to either end, the pattern can match a sub-string of the target.
+
+For example:  
+**^abc** matches *abc*, *abcdefg*, *abc123*, but not *123abc\\* **abc** also matches// 123abc//
+</td></tr><tr><td>
+
+**\$**</td><td>
+
+**End of a string**.  
+The dollar sign is used to "anchor" the search to the end of the string. If the search is not anchored to either end, the pattern can match a sub-string of the target.
+
+For example:  
+**abc\$** matches *abc*, *endsinabc*, *123abc*, but not *abc123*  
+**^abc(.\*)123\$** matches *abc123*, *abcxyz123*, but not *abcxyz123def*
+</td></tr><tr><td>
+
+**.**</td><td>
+
+**Any single character**.  
+The period (full stop) is used to match any single character.
+
+For example:  
+**a.c** matches *abc*, *aac*, *acc*, *adc* but not *acd*
+</td></tr><tr><td>
+
+\*</td><td>
+
+**0 or more of previous expression**.  
+Matches zero or more occurrences of the previous expression. Combine with **.** to form the "match anything" token (**.**\*).
+
+For example:  
+**ab\*c** matches *ac*, *abc*, *abbc*, *abbbc*, ...  
+**a.\*c** matches *ac*, *abc*, *a123456c*, *aanythingc*, ...  
+**.**\* matches anything
+</td></tr><tr><td>
+
+**+**</td><td>
+
+**1 or more of previous expression**.  
+Matches one or more occurrences of the previous expression.
+
+For example:  
+**ab+c** matches *abc*, *abbc*, *abbbc* but not *ac*
+</td></tr><tr><td>
+
+**?**</td><td>
+
+**0 or 1 of previous expression**.  
+Matches either zero or one occurrence of the previous expression.
+
+For example:  
+**ab?c** matches *ac*, *abc* but not *abbc* or *abbbc*
+</td></tr><tr><td>
+
+**\|**</td><td>
+
+**Alternation (logical *or*).**  
+The vertical bar is used to separate two or more characters or expressions, any of which may match.
+
+For example:  
+**a\|b** matches *a* or *b*  
+**a(b\|c)d** matches *abd* or *acd*  
+**(bill\|ted)** matches *bill* or *ted*
+</td></tr><tr><td>
+
+**{}**</td><td>
+
+**Quantifier**.  
+Braces are used to indicate that the preceding expression must match an exact number of times.
+
+For example:  
+**ab{2}c** matches *abbc*, but not *abc* or *abbbc*  
+**a.{4}z** matches *abcdez*, *a1234z*, *afourz*, *aaaaaz*, etc.
+</td></tr><tr><td>
+
+**\[\]**</td><td>
+
+**Character set**.  
+Matches any single character in the set of specified characters.  
+You can specify the character set as individual characters (e.g. **\[abdfg\]**) or as a range of characters (e.g. **\[a-j\]**) or as multiple ranges.
+
+For example:  
+**\[abc\]** matches either *a*, *b* or *c*  
+**\[af-j\]** matches either *a*, *f*, *g*, *h* or *j*  
+**\[a-dh-kq-\]** matches *a*, *b*, *c*, *d*, *h*, *i*, *j*, *k*, or any character from *q* onwards  
+**IMGP\[0-9\]{4}.jpg** matches *IMGP0158.jpg* (or any other four-digit number).
+</td></tr><tr><td>
+
+**\[^\]**</td><td>
+
+**Negative character set**.  
+Matches any character **not** in the set of specified characters. See **\[\]** for information on how the set is defined.
+
+For example:  
+**\[^pqr\]** matches any character except *p*, *q* or *r*
+</td></tr><tr><td>
+
+**()**</td><td>
+
+**Expression / capture group**.  
+Parentheses are used to combine multiple characters into an expression. When used in a "search and replace" like Advanced Rename, they also mark capture groups - see above for a discussion of these.
+
+For example:  
+**a\|bc** matches *ac* or *bc*, whereas  
+**a\|(bc)** matches *a* or *bc*
+</td></tr><tr><td>
+
+**\\**</td><td>
+
+**Escape character**.  
+The backslash is used to escape token characters in order to match those characters literally.  
+When used before a non-token character, it is used to indicate the following special escape characters:  
+\<WRAP\>
+
+|        |                                                                                                            |
+|--------|------------------------------------------------------------------------------------------------------------|
+| **\t** | tab character (\$09)                                                                                       |
+| **\r** | carriage return (\$0d)                                                                                     |
+| **\v** | vertical tab (\$0b)                                                                                        |
+| **\f** | form feed (\$0c)                                                                                           |
+| **\n** | new line (\$0a)                                                                                            |
+| **\e** | escape (\$1b)                                                                                              |
+| **\x** | matches an ASCII character specified as a two-digit hexadecimal number, e.g. **\x20** matches a space      |
+| **\u** | matches a Unicode character specified as a four-digit hexadecimal number, e.g. **\u0020** matches a space. |
+
+\</WRAP\>\<wrap clear/\>
+
+It is also used to mark several character classes, which are shorthand ways to specify various common **\[\]** character sets (see below).
+
+For example:  
+**a\|b** matches *a* or *b*, whereas  
+**a\\b** matches *a\|b\\* **a\t** matches *a* followed by a tab character, whereas  
+**a\\t** matches *a\t*
+</td></tr><tr><td>
+
+**  \w**</td><td>
+
+**Word character**.  
+Matches any word character. Equivalent to **\[a-zA-Z_0-9\]**.
+
+For example:  
+**^\w+\[0-9\]{4}.jpg** matches *IMGP0158.jpg* (or any other four-digit number preceded by at least one other word character).
+</td></tr><tr><td>
+
+**  \W**</td><td>
+
+**Non-word character**.  
+Matches any non-word character, equivalent to **\[^a-zA-Z_0-9\]**.
+</td></tr><tr><td>
+
+**  \s**</td><td>
+
+**Space character**.  
+Matches any whitespace character. Equivalent to **\[ \f\n\r\t\v\]**.
+</td></tr><tr><td>
+
+**  \S**</td><td>
+
+**Non-space character**.  
+Matches any non-whitespace character. Equivalent to **\[^ \f\n\r\t\v\]**.
+</td></tr><tr><td>
+
+**  \d**</td><td>
+
+**Digit character**.  
+Matches any decimal digit. Equivalent to **\[0-9\]**.
+</td></tr><tr><td>
+
+**  \D**</td><td>
+
+**Non-digit character**.  
+Matches any non-decimal digit. Equivalent to **\[^0-9\]**.
+
+For example:  
+**^\D+\d{4}.jpg** matches *IMGP0158.jpg* (or any other four-digit number preceded by at least one non-digit character).
+</td></tr></tbody>
+</table>
 

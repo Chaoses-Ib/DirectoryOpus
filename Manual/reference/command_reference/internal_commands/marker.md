@@ -8,11 +8,59 @@ The system that allows namespace extensions to add toolbar buttons has been depr
 
 **Command Arguments:** 
 
-| Argument | Type | Possible values | Description |
-| --- | --- | --- | --- |
-| HEADING | /O | *(no value)* | When used with commands which generate a list of items (see [dynamic buttons](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.md)), the **HEADING** argument adds a small heading at the start of the list. The heading will be hidden when the list is empty. Headings only happen for commands which potentially generate multiple items at the same level as the button itself.<br /><br />When **HEADING** is used by itself, without specifying a text value, the main button's label text is used for the heading.<br /><br />*Example:* `Marker TOOLBAR` |
-|  |  | *\<heading\>* | You can specify the heading text if you want it to be different to the button's label.<br /><br />*Example:* `Marker TOOLBAR HEADING="Extra Toolbar Commands"` |
-| ID | /K/N | *\<id\>* | Send a namespace-specific command direct to the namespace folder currently displayed in the active Lister. You need to know the exact command ID that the namespace uses, which can be hard to determine. Ordinarily you will never use this option directly - Opus uses it when generating the dynamic buttons that are added by the **Marker** command.<br /><br />*Example:* `Marker ID 1002` |
-| MENU | /K | *\<name\>* | Marks the spot where namespace-specific menu items will be displayed. The *name* parameter is a keyword corresponding to one of the standard Explorer menus (**file**, **edit**, **view**, **tools**, **help**), **other** (commands not fitting into any of those menus) and **all** (all namespace-specific menu items).<br /><br />*Example:* `Marker MENU=file` |
-| TOOLBAR | /S | *(no value)* | Marks the spot where namespace-specific toolbar buttons are displayed.<br /><br />*Example:* `Marker TOOLBAR` |
+<table>
+<thead><tr><th>
+Argument</th><th>
+Type</th><th>
+Possible values</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+HEADING</td><td>
+/O</td><td>
+
+*(no value)*</td><td>
+
+When used with commands which generate a list of items (see [dynamic buttons](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.md)), the **HEADING** argument adds a small heading at the start of the list. The heading will be hidden when the list is empty. Headings only happen for commands which potentially generate multiple items at the same level as the button itself.
+
+When **HEADING** is used by itself, without specifying a text value, the main button's label text is used for the heading.
+
+*Example:* `Marker TOOLBAR`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+*\<heading\>*</td><td>
+
+You can specify the heading text if you want it to be different to the button's label.
+
+*Example:* `Marker TOOLBAR HEADING="Extra Toolbar Commands"`
+</td></tr><tr><td>
+ID</td><td>
+/K/N</td><td>
+
+*\<id\>*</td><td>
+
+Send a namespace-specific command direct to the namespace folder currently displayed in the active Lister. You need to know the exact command ID that the namespace uses, which can be hard to determine. Ordinarily you will never use this option directly - Opus uses it when generating the dynamic buttons that are added by the **Marker** command.
+
+*Example:* `Marker ID 1002`
+</td></tr><tr><td>
+MENU</td><td>
+/K</td><td>
+
+*\<name\>*</td><td>
+
+Marks the spot where namespace-specific menu items will be displayed. The *name* parameter is a keyword corresponding to one of the standard Explorer menus (**file**, **edit**, **view**, **tools**, **help**), **other** (commands not fitting into any of those menus) and **all** (all namespace-specific menu items).
+
+*Example:* `Marker MENU=file`
+</td></tr><tr><td>
+TOOLBAR</td><td>
+/S</td><td>
+
+*(no value)*</td><td>
+
+Marks the spot where namespace-specific toolbar buttons are displayed.
+
+*Example:* `Marker TOOLBAR`
+</td></tr></tbody>
+</table>
 

@@ -10,9 +10,31 @@ By default your event handler is passed an **[Item](../scripting_objects/item.md
 4.  When the **OnDoubleClick** method returns, it will be called a second time, with **early** set to **False** and a full **Item** object available in the **item** property.
 5.  If you sets the **skipfull** property to **True** in the **[DoubleClickData](../scripting_objects/doubleclickdata.md)** object at the "early" stage, the second call to **OnDoubleClick** doesn't occur.
 
-| **Method Name:** | OnDoubleClick |
-| --- | --- |
-| **Argument Type:** | **[DoubleClickData](../scripting_objects/doubleclickdata.md)** |
-| **Return Type:** | *bool* or *string* |
-| **Description:** | The **DoubleClickData.tab** property identifies the tab, and the **item** property identifies the item that has been double-clicked.<br /><br />You can return two different types from this event:<br /><br />- *bool*: If you return **True**, the double-click will be cancelled and the file will not be opened. If you return **False** the double-click will be allowed to continue (this is the default).<br />- *string*: You can return a *string* to change the function to be performed on the file. For example, you could return the string *"Show"* to run the internal **Show** command on the file. |
+<table>
+<thead><tr><th>
+
+**Method Name:**</th><th>
+OnDoubleClick
+</th></tr></thead><tbody><tr><td>
+
+**Argument Type:**</td><td>
+
+**[DoubleClickData](../scripting_objects/doubleclickdata.md)**
+</td></tr><tr><td>
+
+**Return Type:**</td><td>
+
+*bool* or *string*
+</td></tr><tr><td>
+
+**Description:**</td><td>
+
+The **DoubleClickData.tab** property identifies the tab, and the **item** property identifies the item that has been double-clicked.
+
+You can return two different types from this event:
+
+- *bool*: If you return **True**, the double-click will be cancelled and the file will not be opened. If you return **False** the double-click will be allowed to continue (this is the default).
+- *string*: You can return a *string* to change the function to be performed on the file. For example, you could return the string *"Show"* to run the internal **Show** command on the file.
+</td></tr></tbody>
+</table>
 

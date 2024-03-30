@@ -2,12 +2,28 @@
 
 The following codes are used to pass formatted date and time strings to external programs. They are also quite often used to pass date strings to the internal commands - for example, to create a folder named after the current date, you might use a command like **CreateFolder {date\|yyyyMMdd}**.
 
-| Code | Description |
-| --- | --- |
-| **{date\\|***\<format\>***}** | Current date (local time). |
-| **{dateu\\|***\<format\>***}** | Current date (UTC). |
-| **{time\\|***\<format\>***}** | Current time (local time). |
-| **{timeu\\|***\<format\>***}** | Current time (UTC). |
+<table>
+<thead><tr><th>
+Code</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+
+**{date\|***\<format\>***}**</td><td>
+Current date (local time).
+</td></tr><tr><td>
+
+**{dateu\|***\<format\>***}**</td><td>
+Current date (UTC).
+</td></tr><tr><td>
+
+**{time\|***\<format\>***}**</td><td>
+Current time (local time).
+</td></tr><tr><td>
+
+**{timeu\|***\<format\>***}**</td><td>
+Current time (UTC).
+</td></tr></tbody>
+</table>
 
 The *\<format\>* value is a string consisting of various *tokens* that are used to format the date and time strings. If no format is specified, your default system date and time format is used.
 
@@ -27,42 +43,122 @@ While this page is primarily about the **{date}**, **{dateu}**, **{time}** and *
 
 The **date codes** use the following tokens - note that these tokens are case sensitive! The *ISO week* and *ISO year* tokens refer to the [ISO week date system](http://en.wikipedia.org/wiki/ISO_week_date).
 
-| Date token | Description |
-| --- | --- |
-| d | Day of month as a number, with no leading zero for single-digit days. |
-| dd | Day of month as a number, with a leading zero for single-digit days. |
-| D | Day of week as a number (1 = Sunday, 7 = Saturday). |
-| DD | Day of week as a number (1 = Monday, 7 = Sunday). |
-| ddd | Day of week as a three-letter abbreviation (e.g. *Wed*). |
-| dddd | Day of week as its full name (e.g. *Wednesday*). |
-| w | ISO week number, no leading zero. |
-| ww | ISO week number, leading zero. |
-| W | Simple week number, no leading zero. |
-| WW | Simple week number, leading zero. |
-| M | Month as a number, no leading zero. |
-| MM | Month as a number, leading zero. |
-| MMM | Month as a three-letter abbreviation (e.g. *Jan*). |
-| MMMM | Month as its full name (e.g. *January*). |
-| y | Year as last two digits, but with no leading zero for years less than 10 (e.g. *2009* -\> *9*). |
-| yy | Year as last two digits, with a leading zero (e.g. *2009* -\> *09*). |
-| yyyy | Year as a four digit number. |
-| Y | ISO year as last two digits, no leading zero. (Generally only makes sense in conjunction with ISO week. Do not use if you just want the normal year.) |
-| YY | ISO year as last two digits, leading zero. (Generally only makes sense in conjunction with ISO week. Do not use if you just want the normal year.) |
-| YYYY | ISO year as four digit number. (Generally only makes sense in conjunction with ISO week. Do not use if you just want the normal year.) |
-| gg | Period/era string - ignored if the date to be formatted does not have an associated era. |
+<table>
+<thead><tr><th>
+Date token</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+d</td><td>
+Day of month as a number, with no leading zero for single-digit days.
+</td></tr><tr><td>
+dd</td><td>
+Day of month as a number, with a leading zero for single-digit days.
+</td></tr><tr><td>
+D</td><td>
+Day of week as a number (1 = Sunday, 7 = Saturday).
+</td></tr><tr><td>
+DD</td><td>
+Day of week as a number (1 = Monday, 7 = Sunday).
+</td></tr><tr><td>
+ddd</td><td>
+
+Day of week as a three-letter abbreviation (e.g. *Wed*).
+</td></tr><tr><td>
+dddd</td><td>
+
+Day of week as its full name (e.g. *Wednesday*).
+</td></tr><tr><td>
+w</td><td>
+ISO week number, no leading zero.
+</td></tr><tr><td>
+ww</td><td>
+ISO week number, leading zero.
+</td></tr><tr><td>
+W</td><td>
+Simple week number, no leading zero.
+</td></tr><tr><td>
+WW</td><td>
+Simple week number, leading zero.
+</td></tr><tr><td>
+M</td><td>
+Month as a number, no leading zero.
+</td></tr><tr><td>
+MM</td><td>
+Month as a number, leading zero.
+</td></tr><tr><td>
+MMM</td><td>
+
+Month as a three-letter abbreviation (e.g. *Jan*).
+</td></tr><tr><td>
+MMMM</td><td>
+
+Month as its full name (e.g. *January*).
+</td></tr><tr><td>
+y</td><td>
+
+Year as last two digits, but with no leading zero for years less than 10 (e.g. *2009* -\> *9*).
+</td></tr><tr><td>
+yy</td><td>
+
+Year as last two digits, with a leading zero (e.g. *2009* -\> *09*).
+</td></tr><tr><td>
+yyyy</td><td>
+Year as a four digit number.
+</td></tr><tr><td>
+Y</td><td>
+ISO year as last two digits, no leading zero. (Generally only makes sense in conjunction with ISO week. Do not use if you just want the normal year.)
+</td></tr><tr><td>
+YY</td><td>
+ISO year as last two digits, leading zero. (Generally only makes sense in conjunction with ISO week. Do not use if you just want the normal year.)
+</td></tr><tr><td>
+YYYY</td><td>
+ISO year as four digit number. (Generally only makes sense in conjunction with ISO week. Do not use if you just want the normal year.)
+</td></tr><tr><td>
+gg</td><td>
+
+Period/era string - ignored if the date to be formatted does not have an associated era.
+</td></tr></tbody>
+</table>
 
 The **time codes** use the following tokens - these are also case sensitive.
 
-| Time token | Description |
-| --- | --- |
-| h | Hours with no leading zero for single-digit hours, 12 hour clock. |
-| hh | Hours with leading zero for single-digit hours, 12 hour clock. |
-| H | Hours with no leading zero, 24 hour clock. |
-| HH | Hours with leading zero, 24 hour clock. |
-| m | Minutes with no leading zero. |
-| mm | Minutes with leading zero. |
-| s | Seconds with no leading zero. (Includes milliseconds, if the special **M** flag is specified. See above.) |
-| ss | Seconds with leading zero. (Includes milliseconds, if the special **M** flag is specified. See above.) |
-| t | One-character AM/PM string (e.g. *A* or *P*). See note about locales, above. |
-| tt | Multiple-character AM/PM string. See note about locales, above. |
+<table>
+<thead><tr><th>
+Time token</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+h</td><td>
+Hours with no leading zero for single-digit hours, 12 hour clock.
+</td></tr><tr><td>
+hh</td><td>
+Hours with leading zero for single-digit hours, 12 hour clock.
+</td></tr><tr><td>
+H</td><td>
+Hours with no leading zero, 24 hour clock.
+</td></tr><tr><td>
+HH</td><td>
+Hours with leading zero, 24 hour clock.
+</td></tr><tr><td>
+m</td><td>
+Minutes with no leading zero.
+</td></tr><tr><td>
+mm</td><td>
+Minutes with leading zero.
+</td></tr><tr><td>
+s</td><td>
+
+Seconds with no leading zero. (Includes milliseconds, if the special **M** flag is specified. See above.)
+</td></tr><tr><td>
+ss</td><td>
+
+Seconds with leading zero. (Includes milliseconds, if the special **M** flag is specified. See above.)
+</td></tr><tr><td>
+t</td><td>
+
+One-character AM/PM string (e.g. *A* or *P*). See note about locales, above.
+</td></tr><tr><td>
+tt</td><td>
+Multiple-character AM/PM string. See note about locales, above.
+</td></tr></tbody>
+</table>
 

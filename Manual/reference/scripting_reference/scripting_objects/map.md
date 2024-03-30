@@ -49,20 +49,95 @@ The two examples below both output the following:
      DOpus.Output(key & " -> " & value)
     Next
 
-| Property Name | Return Type | Description |
-| --- | --- | --- |
-| count | *int* | Returns the number of elements the **Map** currently holds. |
-| empty | *bool* | Returns **True** if the **Map** is empty, **False** if not. |
-| length | *int* | A synonym for **count**. |
-| size | *int* | A synonym for **count**. |
+<table>
+<thead><tr><th>
+Property Name</th><th>
+Return Type</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+count</td><td>
 
-| Method Name | **Arguments** | Return Type | Description |
-| --- | --- | --- | --- |
-| assign | \<**Map**:from\> | *none* | Copies the contents of another **Map** to this one. |
-| clear | *none* | *none* | Clears the contents of the **Map**. |
-| erase | \<variant:key\> | *none* | Erases the element matching the specified key, if it exists in the map. |
-| exists | \<variant:key\> | *bool* | Returns **True** if the specified key exists in the map. |
-| get | \<variant:key\> | *variant* | Returns the value of the specified key. |
-| merge | \<**Map**:from\> | *none* | Merges the contents of another **Map** with this one. |
-| set | \<variant:key\>  <br />\<variant:value\> | *none* | Sets the value of the specified key. |
+*int*</td><td>
+
+Returns the number of elements the **Map** currently holds.
+</td></tr><tr><td>
+empty</td><td>
+
+*bool*</td><td>
+
+Returns **True** if the **Map** is empty, **False** if not.
+</td></tr><tr><td>
+length</td><td>
+
+*int*</td><td>
+
+A synonym for **count**.
+</td></tr><tr><td>
+size</td><td>
+
+*int*</td><td>
+
+A synonym for **count**.
+</td></tr></tbody>
+</table>
+
+<table>
+<thead><tr><th>
+Method Name</th><th>
+
+**Arguments**</th><th>
+Return Type</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+assign</td><td>
+
+\<**Map**:from\></td><td>
+
+*none*</td><td>
+
+Copies the contents of another **Map** to this one.
+</td></tr><tr><td>
+clear</td><td>
+
+*none*</td><td>
+
+*none*</td><td>
+
+Clears the contents of the **Map**.
+</td></tr><tr><td>
+erase</td><td>
+\<variant:key\></td><td>
+
+*none*</td><td>
+Erases the element matching the specified key, if it exists in the map.
+</td></tr><tr><td>
+exists</td><td>
+\<variant:key\></td><td>
+
+*bool*</td><td>
+
+Returns **True** if the specified key exists in the map.
+</td></tr><tr><td>
+get</td><td>
+\<variant:key\></td><td>
+
+*variant*</td><td>
+Returns the value of the specified key.
+</td></tr><tr><td>
+merge</td><td>
+
+\<**Map**:from\></td><td>
+
+*none*</td><td>
+
+Merges the contents of another **Map** with this one.
+</td></tr><tr><td>
+set</td><td>
+\<variant:key\>  
+\<variant:value\></td><td>
+
+*none*</td><td>
+Sets the value of the specified key.
+</td></tr></tbody>
+</table>
 

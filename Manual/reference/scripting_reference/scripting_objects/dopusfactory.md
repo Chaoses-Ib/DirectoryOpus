@@ -2,17 +2,152 @@
 
 The **DOpusFactory** object is a helper object that you can use to create various other objects. Unlike the objects that represent existing *things* (e.g. **[Lister](lister.md)** or **[Tab](tab.md)**), the objects created by **DOpusFactory** are independent objects that you can instantiate whenever you need their functionality. The **DOpusFactory** object is obtained via the **[DOpus](dopus.md).Create** method.
 
-| Method Name | **Arguments** | Return Type | Description |
-| --- | --- | --- | --- |
-| Blob | *none*  <br />or \<int:size\>  <br />or \<nobr\>\<byte, byte, ...\>\</nobr\>  <br />or \<**[Blob](blob.md)**:source\> | *object:***[Blob](blob.md)** | Returns a new **[Blob](blob.md)** object, that lets you access and manipulate a chunk of binary data from a script. If no parameters are given the new **Blob** will be empty - you can set its size using the **resize** method - otherwise you can specify the initial size as a parameter.<br /><br />You can also create a **Blob** pre-filled with data by specifying the actual byte values (e.g. *Blob(72,69,76,76,79)*).<br /><br />If another **Blob** (or an array - see the documentation on the **Blob** object for a discussion of this) is given then the new **Blob** will be created as a copy of the existing one. |
-| BusyIndicator | *none* | *object:***[BusyIndicator](busyindicator.md)** | Creates a new **[BusyIndicator](busyindicator.md)** object, that lets you control the breadcrumbs bar busy indicator from your script. |
-| Command | *none* | *object:***[Command](command.md)** | Creates a new **[Command](command.md)** object, that lets you run Opus commands from a script. |
-| Date | *none*  <br />or \<variant:date\>  <br />or *JScript Date* | *object*:**[Date](date.md)** | Creates a new **[Date](date.md)** object. If a date value is provided the new object will be initialized to that value, otherwise the date will be set to the current local time. The provided value can be one of the following:<br /><br />- Another **Date** object<br />- A string in the form "yyyymmdd"<br />- A string in the form "yyyy-mm-dd hh:mm:ss.mmm" (or part thereof)<br />- A JScript **Date** object<br />- A unix epoch time value (seconds since 1/1/1970). |
-| Filter | *none*  <br />or \<string\> | *object:***[Filter](filter.md)** | Creates a new **[Filter](filter.md)** object, which lets you control recursive filtering when running commands from scripts. You can optionally provide a [textual filter](/Manual/file_operations/filtered_operations/textual_filters.md) string to initialise the filter with. Check the **valid** property of the new **Filter** object to find out whether this string was parsed successfully or not. |
-| Map | *none*  <br />or \<variant:key\>,  <br />\<variant:value\>... | *object*:**[Map](map.md)** | Creates a new **[Map](map.md)** object. If no arguments are provided, the **Map** will be empty. Otherwise, the **Map** will be pre-initialized with the supplied key/value pairs.<br /><br />//For <example://><br /><br />    Map("firstname","fred","lastname","bloggs");<br /><br />The individual keys and values can be different types. |
-| StringSet | *none*  <br />or \<string\>, ... | *object*:**[StringSet](stringset.md)** | Creates a new case-sensitive **[StringSet](stringset.md)** object. If no arguments are provided, the **StringSet** will be empty. Otherwise it will be pre-initialized with the supplied strings; for example:<br /><br />    StringSet("dog","cat","pony");<br /><br />You can also pass an array of strings or **[Vector](vector.md)** object to initialise the set. |
-| StringSetI | *none*  <br />or \<string\>, ... | *object*:**[StringSet](stringset.md)** | Creates a new case-insensitive **[StringSet](stringset.md)** object. If no arguments are provided, the **StringSet** will be empty. Otherwise it will be pre-initialized with the supplied strings. |
-| StringTools | *none* | *object*:**[StringTools](stringtools.md)** | Creates a new **[StringTools](stringtools.md)** object, that provides helper functions for string encoding and decoding. |
-| UnorderedSet | *none*  <br />or *variants*... | object:**[UnorderedSet](unorderedset.md)** | Creates a new **[UnorderedSet](unorderedset.md)** object. If no arguments are provided the **UnorderedSet** will be empty. Otherwise it will be pre-initialized with the supplied elements.<br /><br />You can also pass an array or **[Vector](vector.md)** to initialise the set. |
-| Vector | *none*  <br />or \<int:elements\>  <br />or *variants...*  <br />or *object:***[vector](vector.md)**  <br />or *JScript Array* | *object:***[Vector](vector.md)** | Creates a new **[Vector](vector.md)** object.<br /><br />If no arguments are provided, the **Vector** will be empty.<br /><br />If a single integer argument is provided, the **Vector** will be pre-initialized to that number of elements.<br /><br />You can also pass another **[Vector](vector.md)** or a *JScript* array, or most enumerable objects, as the argument to initialise the new **Vector** with the contents of an existing collection.<br /><br />If more than one argument is provided, the **Vector** will be pre-initialized with those elements; for example:<br /><br />    Vector("dog","cat","horse");<br /><br />The individual elements can be different types.<br /><br />If you want to create a **Vector** with just a single element, it is best to create an empty **Vector** and then add the element as a second step. Passing a single element during creation can have unexpected results, as it may be interpreted as one of the other cases. (Many of the scripting objects can be implicitly converted into integers or collections.) |
+<table>
+<thead><tr><th>
+Method Name</th><th>
+
+**Arguments**</th><th>
+Return Type</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+Blob</td><td>
+
+*none*  
+or \<int:size\>  
+or \<nobr\>\<byte, byte, ...\>\</nobr\>  
+or \<**[Blob](blob.md)**:source\></td><td>
+
+*object:***[Blob](blob.md)**</td><td>
+
+Returns a new **[Blob](blob.md)** object, that lets you access and manipulate a chunk of binary data from a script. If no parameters are given the new **Blob** will be empty - you can set its size using the **resize** method - otherwise you can specify the initial size as a parameter.
+
+You can also create a **Blob** pre-filled with data by specifying the actual byte values (e.g. *Blob(72,69,76,76,79)*).
+
+If another **Blob** (or an array - see the documentation on the **Blob** object for a discussion of this) is given then the new **Blob** will be created as a copy of the existing one.
+</td></tr><tr><td>
+BusyIndicator</td><td>
+
+*none*</td><td>
+
+*object:***[BusyIndicator](busyindicator.md)**</td><td>
+
+Creates a new **[BusyIndicator](busyindicator.md)** object, that lets you control the breadcrumbs bar busy indicator from your script.
+</td></tr><tr><td>
+Command</td><td>
+
+*none*</td><td>
+
+*object:***[Command](command.md)**</td><td>
+
+Creates a new **[Command](command.md)** object, that lets you run Opus commands from a script.
+</td></tr><tr><td>
+Date</td><td>
+
+*none*  
+or \<variant:date\>  
+or *JScript Date*</td><td>
+
+*object*:**[Date](date.md)**</td><td>
+
+Creates a new **[Date](date.md)** object. If a date value is provided the new object will be initialized to that value, otherwise the date will be set to the current local time. The provided value can be one of the following:
+
+- Another **Date** object
+- A string in the form "yyyymmdd"
+- A string in the form "yyyy-mm-dd hh:mm:ss.mmm" (or part thereof)
+- A JScript **Date** object
+- A unix epoch time value (seconds since 1/1/1970).
+</td></tr><tr><td>
+Filter</td><td>
+
+*none*  
+or \<string\></td><td>
+
+*object:***[Filter](filter.md)**</td><td>
+
+Creates a new **[Filter](filter.md)** object, which lets you control recursive filtering when running commands from scripts. You can optionally provide a [textual filter](/Manual/file_operations/filtered_operations/textual_filters.md) string to initialise the filter with. Check the **valid** property of the new **Filter** object to find out whether this string was parsed successfully or not.
+</td></tr><tr><td>
+Map</td><td>
+
+*none*  
+or \<variant:key\>,  
+\<variant:value\>...</td><td>
+
+*object*:**[Map](map.md)**</td><td>
+
+Creates a new **[Map](map.md)** object. If no arguments are provided, the **Map** will be empty. Otherwise, the **Map** will be pre-initialized with the supplied key/value pairs.
+
+//For <example://>
+
+    Map("firstname","fred","lastname","bloggs");
+
+The individual keys and values can be different types.
+</td></tr><tr><td>
+StringSet</td><td>
+
+*none*  
+or \<string\>, ...</td><td>
+
+*object*:**[StringSet](stringset.md)**</td><td>
+
+Creates a new case-sensitive **[StringSet](stringset.md)** object. If no arguments are provided, the **StringSet** will be empty. Otherwise it will be pre-initialized with the supplied strings; for example:
+
+    StringSet("dog","cat","pony");
+
+You can also pass an array of strings or **[Vector](vector.md)** object to initialise the set.
+</td></tr><tr><td>
+StringSetI</td><td>
+
+*none*  
+or \<string\>, ...</td><td>
+
+*object*:**[StringSet](stringset.md)**</td><td>
+
+Creates a new case-insensitive **[StringSet](stringset.md)** object. If no arguments are provided, the **StringSet** will be empty. Otherwise it will be pre-initialized with the supplied strings.
+</td></tr><tr><td>
+StringTools</td><td>
+
+*none*</td><td>
+
+*object*:**[StringTools](stringtools.md)**</td><td>
+
+Creates a new **[StringTools](stringtools.md)** object, that provides helper functions for string encoding and decoding.
+</td></tr><tr><td>
+UnorderedSet</td><td>
+
+*none*  
+or *variants*...</td><td>
+
+object:**[UnorderedSet](unorderedset.md)**</td><td>
+
+Creates a new **[UnorderedSet](unorderedset.md)** object. If no arguments are provided the **UnorderedSet** will be empty. Otherwise it will be pre-initialized with the supplied elements.
+
+You can also pass an array or **[Vector](vector.md)** to initialise the set.
+</td></tr><tr><td>
+Vector</td><td>
+
+*none*  
+or \<int:elements\>  
+or *variants...*  
+or *object:***[vector](vector.md)**  
+or *JScript Array*</td><td>
+
+*object:***[Vector](vector.md)**</td><td>
+
+Creates a new **[Vector](vector.md)** object.
+
+If no arguments are provided, the **Vector** will be empty.
+
+If a single integer argument is provided, the **Vector** will be pre-initialized to that number of elements.
+
+You can also pass another **[Vector](vector.md)** or a *JScript* array, or most enumerable objects, as the argument to initialise the new **Vector** with the contents of an existing collection.
+
+If more than one argument is provided, the **Vector** will be pre-initialized with those elements; for example:
+
+    Vector("dog","cat","horse");
+
+The individual elements can be different types.
+
+If you want to create a **Vector** with just a single element, it is best to create an empty **Vector** and then add the element as a second step. Passing a single element during creation can have unexpected results, as it may be interpreted as one of the other cases. (Many of the scripting objects can be implicitly converted into integers or collections.)
+</td></tr></tbody>
+</table>
 

@@ -2,17 +2,56 @@
 
 The following codes can be used to display various simple dialogs when the command is run. This lets you provide information (like selecting a file or a folder, or entering a string) at "run-time" rather than incorporating the value into the command itself. For more flexibility, you can use a [script dialog](/Manual/scripting/script_dialogs/README.md).
 
-| Long form | Short form | Description |
-| --- | --- | --- |
-| {dlgopen} | {Rf} | Displays an **Open File** dialog, which lets you select an existing filename to pass to the command. |
-| {dlgmulti} | {Rm} | Displays an **Open File** dialog in multiple selection mode, which lets you select one or more existing files. |
-| {dlgsave} | {RF} | Displays a **Save File** dialog, which lets you enter a new filename to pass to the command. |
-| {dlgfolder} | {Rd} | Displays a **Select Folder** dialog, which lets you select a folder to pass to the command. |
-| {dlgstring} | {Rs} | Displays a dialog that lets you enter an arbitrary string. |
-| {dlgstringS} | {RS} | The same as `{dlgstring}` except the contents of the string field are automatically selected (only applies if a default value is specified - see below). |
-| {dlgpassword} | {Rp} | The same as `{dlgstring}` except the contents of the string field are obscured - useful for entering passwords. |
-| {dlgchoose} | {Rc} | Displays a drop-down list that lets you choose from a list of values. |
-| {dlgchooseS} | {RC} | The same as `{dlgchoose}` except the value list is automatically sorted. |
+<table>
+<thead><tr><th>
+Long form</th><th>
+Short form</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+{dlgopen}</td><td>
+{Rf}</td><td>
+
+Displays an **Open File** dialog, which lets you select an existing filename to pass to the command.
+</td></tr><tr><td>
+{dlgmulti}</td><td>
+{Rm}</td><td>
+
+Displays an **Open File** dialog in multiple selection mode, which lets you select one or more existing files.
+</td></tr><tr><td>
+{dlgsave}</td><td>
+{RF}</td><td>
+
+Displays a **Save File** dialog, which lets you enter a new filename to pass to the command.
+</td></tr><tr><td>
+{dlgfolder}</td><td>
+{Rd}</td><td>
+
+Displays a **Select Folder** dialog, which lets you select a folder to pass to the command.
+</td></tr><tr><td>
+{dlgstring}</td><td>
+{Rs}</td><td>
+Displays a dialog that lets you enter an arbitrary string.
+</td></tr><tr><td>
+{dlgstringS}</td><td>
+{RS}</td><td>
+
+The same as `{dlgstring}` except the contents of the string field are automatically selected (only applies if a default value is specified - see below).
+</td></tr><tr><td>
+{dlgpassword}</td><td>
+{Rp}</td><td>
+
+The same as `{dlgstring}` except the contents of the string field are obscured - useful for entering passwords.
+</td></tr><tr><td>
+{dlgchoose}</td><td>
+{Rc}</td><td>
+Displays a drop-down list that lets you choose from a list of values.
+</td></tr><tr><td>
+{dlgchooseS}</td><td>
+{RC}</td><td>
+
+The same as `{dlgchoose}` except the value list is automatically sorted.
+</td></tr></tbody>
+</table>
 
 ##### Parameters for {dlgopen}, {dlgmulti}, {dlgsize}
 
