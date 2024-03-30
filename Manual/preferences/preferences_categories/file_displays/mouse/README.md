@@ -7,7 +7,11 @@ This page contains various options relating to the behavior of the mouse in file
 - **Allow drag and drop into sub-folders**: Normally when you drag a file over a sub-folder you can drop it to move or copy it to that folder. If you turn this option off, sub-folders won't appear as drop targets unless you are also holding down the <kbd>Shift</kbd> (to move), <kbd>Ctrl</kbd> (to copy) or <kbd>Alt</kbd> (to make a shortcut) keys. This can be useful if, for example, you have trouble with drag and drop due to physical disability - there's nothing worse than seeing a file vanish into an unknown sub-folder because you dropped it on it accidentally.
 - **Hot-tracking of mouse cursor**: When using visual styles, file displays usually highlight the item under the mouse pointer (known as the "hot" item) as you move the mouse around. If you find this distracting, you can turn it off here.
 - **Hover to switch source/destination state**: In a dual display Lister, hovering the mouse over the destination file display for the configured time will automatically switch the source and destination states around.
-- **Mouse wheel + <kbd>Ctrl</kbd> to adjust font and thumbnail sizes**: <img src="/media/13/zoom_text.png" class="align-right" data-query="?nolink" alt="zoom_text.png" /> Holding the <kbd>Ctrl</kbd> key and turning the mouse wheel over the file display will act like a zoom function. When you do this, an icon appears in the location bar.
+- **Mouse wheel + <kbd>Ctrl</kbd> to adjust font and thumbnail sizes**: 
+
+![zoom_text.png](/Manual/images/media/13/zoom_text.png)
+
+ Holding the <kbd>Ctrl</kbd> key and turning the mouse wheel over the file display will act like a zoom function. When you do this, an icon appears in the location bar.
   This shows you your current zoom level, and lets you reset it or make it permanent (by updating your Preferences font configuration). 
 
 - **Mouse wheel + <kbd>Shift</kbd> to navigate back and forward**: If your mouse doesn't have dedicated back/forward buttons, you can hold the <kbd>Shift</kbd> and turn the wheel to simulate them.

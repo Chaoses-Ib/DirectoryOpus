@@ -2,7 +2,11 @@
 
 The various Preferences pages have been categorized in an attempt to group conceptually-related topics. Another advantage of dividing the pages into categories is that individual categories can be collapsed to hide their contents, which is very useful with so many different pages of options!
 
-<img src="/media/13/prefs_categories.png" class="align-right" data-query="?nolink" />
+
+
+![](/Manual/images/media/13/prefs_categories.png)
+
+
 
 - **[Colors And Fonts](/Manual/preferences/preferences_categories/colors_and_fonts/README.md)**: Options relating to the appearance of Opus (colors, fonts, etc.) including dark mode and themes.
 - **[File Displays](/Manual/preferences/preferences_categories/file_displays/README.md)**: Options that control the behavior of the area of the Lister that displays files.

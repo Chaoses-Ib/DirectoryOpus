@@ -18,7 +18,11 @@ The pop-up displays the resolution and size of the image at the top. The drop-do
 
 The **Delete** button at the bottom lets you remove the cover art image.
 
-<img src="/media/13/metadata_-_coverart_context.png" class="align-right" data-query="?nolink" />  You can also right-click on the pop-up window to display a context menu with additional actions:
+
+
+![](/Manual/images/media/13/metadata_-_coverart_context.png)
+
+  You can also right-click on the pop-up window to display a context menu with additional actions:
 
 - **Type**: The **Type** sub-menu lets you change the image type (as an alternative to the drop-down at the bottom of the image).
 - **Set description**: This command lets you assign a description string to the image.

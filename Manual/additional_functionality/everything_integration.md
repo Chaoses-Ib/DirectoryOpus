@@ -17,7 +17,15 @@ Everything 1.5 is currently in "alpha testing", and although it can be configure
 
 ##### Configuring Everything to work with Opus
 
-<img src="/media/13/everything_options.png" class="align-right" data-query="?direct&amp;200" width="200" /><img src="/media/13/everything_indexes.png" class="align-right" data-query="?direct&amp;200" width="200" />A couple of Everything options need to be turned on in order for Opus to be able to work with it properly.
+
+
+![](/Manual/images/media/13/everything_options.png)
+
+
+
+![](/Manual/images/media/13/everything_indexes.png)
+
+A couple of Everything options need to be turned on in order for Opus to be able to work with it properly.
 
 On the *General* page, make sure the **Start Everything on system startup** option is turned on. Everything needs to be running in the background for Opus to be able to talk to it.
 
@@ -44,7 +52,11 @@ The various options on the [Folder Sizes](/Manual/preferences/preferences_catego
 
 ##### Searching
 
-<img src="/media/13/everything_search.png" class="align-right" data-query="?nolink" />Opus can also use Everything for indexed searching, in much the same way it can use the Windows Search index.
+
+
+![](/Manual/images/media/13/everything_search.png)
+
+Opus can also use Everything for indexed searching, in much the same way it can use the Windows Search index.
 
 The main interface to this is the [search field](/Manual/basic_concepts/searching_and_filtering/windows_search.md) that by default appears in the top-right of the Lister. Use the drop-down button on the left to select either *Everything* (searches below the current folder) or *Global Everything* (searches all indexed locations).
 

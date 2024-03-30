@@ -17,7 +17,11 @@ Internally, these actions are defined by the items on the **Events** tab for the
 
 ##### Configuring drag-and-drop actions
 
-<img src="/media/13/default_draganddrop.png" class="align-right" data-query="?nolink" />This screenshot shows the [File Type editor](/Manual/file_types/filetype_editor/README.md) for the **All files and folders** file type. The events are all defined as some variant of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.
+
+
+![](/Manual/images/media/13/default_draganddrop.png)
+
+This screenshot shows the [File Type editor](/Manual/file_types/filetype_editor/README.md) for the **All files and folders** file type. The events are all defined as some variant of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.
 
 - Drag-and-drop: `Copy MOVEWHENSAME` moves the file on the same drive, and copies it otherwise.
 - Drag-and-drop+<kbd>Alt</kbd>: `Copy MAKESHORTCUT` makes a shortcut to the file.

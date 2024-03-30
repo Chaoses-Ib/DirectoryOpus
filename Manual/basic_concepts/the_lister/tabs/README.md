@@ -39,7 +39,11 @@ You can create and manage your tab groups from the [Folder Tabs / Groups](/Manua
 
 ##### Default menu commands
 
-<img src="/media/13/tab_menu.png" class="align-right" data-query="?nolink" />The **Folder / Folder Tabs** menu in the default toolbars contains a number of commands used to control tabs:
+
+
+![](/Manual/images/media/13/tab_menu.png)
+
+The **Folder / Folder Tabs** menu in the default toolbars contains a number of commands used to control tabs:
 
 - **New Tab for Current**: Opens the current folder in a new tab.
 - **New Tab for Parent**: Opens the parent of the current folder in a new tab.
@@ -65,7 +69,11 @@ You can manipulate a folder tab with the mouse in the following ways:
 
 ##### Folder tab context menu
 
-<img src="/media/13/tab_context_menu.png" class="align-right" data-query="?nolink" />Right-click a folder tab to see its context menu. Note that the commands in the menu can vary depending on whether you're in single or dual-display mode. The menu can also be edited via the [Customize](/Manual/customize/README.md) system.
+
+
+![](/Manual/images/media/13/tab_context_menu.png)
+
+Right-click a folder tab to see its context menu. Note that the commands in the menu can vary depending on whether you're in single or dual-display mode. The menu can also be edited via the [Customize](/Manual/customize/README.md) system.
 
 - **Groups**: This sub-menu lets you access any [tab groups](/Manual/basic_concepts/the_lister/tabs/tab_groups.md) you have defined. You can also use this to save the current set of tabs as a new group.
   When selecting a group from this menu you can hold down either the <kbd>Shift</kbd> or the <kbd>Ctrl</kbd> keys to override the tab group's **Close existing Folder Tabs** setting; <kbd>Shift</kbd> means existing tabs will not be closed, <kbd>Ctrl</kbd> means they will.

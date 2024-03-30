@@ -6,7 +6,11 @@ These buttons make use of the [source and destination](/Manual/basic_concepts/so
 
 ##### Copy Files
 
-<img src="/media/13/copy_menu.png" class="align-right" data-query="?nolink" /> The drop-down menu attached to the **Copy Files** button contains the following file copy commands:
+
+
+![](/Manual/images/media/13/copy_menu.png)
+
+ The drop-down menu attached to the **Copy Files** button contains the following file copy commands:
 
 - **Copy Files**: Copy selected files and folders to the destination folder.
 - **Copy As**: Lets you enter new filenames or provide a wildcard pattern to [rename files as they are copied](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md)
@@ -22,7 +26,11 @@ These buttons make use of the [source and destination](/Manual/basic_concepts/so
 
 ##### Move
 
-<img src="/media/13/move_menu.png" class="align-right" data-query="?nolink" /> The drop-down menu attached to the **Move** button contains the following commands:
+
+
+![](/Manual/images/media/13/move_menu.png)
+
+ The drop-down menu attached to the **Move** button contains the following commands:
 
 - **Move**: Move selected files and folders to the destination.
 - **Move As**: Enter new filenames or a wildcard pattern to [rename files as they are moved](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md).

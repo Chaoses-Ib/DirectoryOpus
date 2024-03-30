@@ -1,6 +1,10 @@
 # View Modes
 
-<img src="/media/13/view_mode_menu.png" class="align-right" data-query="?nolink" />Files and folders in the file displays can be shown in a number of different view modes. You can change view mode using the drop-down **View** menu in the default toolbar.
+
+
+![](/Manual/images/media/13/view_mode_menu.png)
+
+Files and folders in the file displays can be shown in a number of different view modes. You can change view mode using the drop-down **View** menu in the default toolbar.
 
 The three buttons to the right of the **View** menu provide quick access to the most commonly used view modes:
 

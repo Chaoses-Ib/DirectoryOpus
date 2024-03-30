@@ -8,7 +8,7 @@ A [video version of these highlights](https://www.youtube.com/watch?v=K57m_Ogy8L
 
 Dark Mode, Light Mode, *Any Colors You Like* Mode. For the whole program.
 
-  <img src="/popup&gt;/media/13/dark_light_purple.png" data-query="?" alt="dark_light_purple_600.png" />
+  ![dark_light_purple_600.png](/Manual/images/popup&gt;/media/13/dark_light_purple.png)
 
 (This manual also has dark mode! Use *Toggle Theme* at the top.)  
 Built-in Dark and Light themes:

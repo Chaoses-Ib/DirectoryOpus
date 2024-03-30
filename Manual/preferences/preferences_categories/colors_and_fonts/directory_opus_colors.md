@@ -17,7 +17,11 @@ Note that when you edit colors on this page you're only editing the colors in th
 
 ##### Editing Colors
 
-<img src="/media/13/color_picker.png" class="align-right" data-query="?nolink" /> The color picker button ![](/Manual/images/media/13/color_control.png) is the main control for editing colors. Some color pickers have a checkbox on them, which lets the associated color be enabled or disabled. Clicking the button displays the color picker.
+
+
+![](/Manual/images/media/13/color_picker.png)
+
+ The color picker button ![](/Manual/images/media/13/color_control.png) is the main control for editing colors. Some color pickers have a checkbox on them, which lets the associated color be enabled or disabled. Clicking the button displays the color picker.
 
 The color picker lets you choose a color using both the red/green/blue and hue/saturation/luminance models. The current color values are shown at the top-left of the picker - you can click there to type new values in directly. If the color in question supports transparency, an additional slider lets you set the alpha value from 0 (fully transparent) to 255 (fully opaque).
 

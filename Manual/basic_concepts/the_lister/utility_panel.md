@@ -2,7 +2,11 @@
 
 The Utility Panel is a multi-purpose panel that appears at the bottom of the Lister whenever certain functions are activated. It acts as a container for several different functions - various tools and log files are displayed that way.
 
-When the utility panel is displayed, you can switch between its various modes using the dropdown in the title bar.<img src="/media/13/utility_pane_dropdown.png" class="align-right" data-query="?nolink" />
+When the utility panel is displayed, you can switch between its various modes using the dropdown in the title bar.
+
+![](/Manual/images/media/13/utility_pane_dropdown.png)
+
+
 
 ##### Tools
 

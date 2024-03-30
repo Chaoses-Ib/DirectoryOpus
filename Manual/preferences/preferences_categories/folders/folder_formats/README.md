@@ -6,7 +6,11 @@ The Folder Formats system is powerful but rather complex. There's an [FAQ on it 
 
 There's also the [Automatic Formats](/Manual/preferences/preferences_categories/folders/folder_formats/automatic_formats.md) system, which can remember changes to folder formats automatically rather than you having to configure them by hand.
 
-The Formats list is grouped into different sections: <img src="/media/13/folder_formats.png" class="align-right" data-query="?nolink" /> 
+The Formats list is grouped into different sections: 
+
+![](/Manual/images/media/13/folder_formats.png)
+
+ 
 
 ##### Favorite Formats
 

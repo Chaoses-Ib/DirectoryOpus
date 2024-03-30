@@ -24,7 +24,11 @@ You can clear the quick filter at any time by pressing the <kbd>Esc</kbd> key.
 
 ##### Folder format filters rather than quick filter
 
-<img src="/media/13/filter_field_2.png" class="align-right" data-query="?nolink" />If you click the icon on the left of the field, a pop-up menu opens that lets you configure exactly how the filter field behaves.
+
+
+![](/Manual/images/media/13/filter_field_2.png)
+
+If you click the icon on the left of the field, a pop-up menu opens that lets you configure exactly how the filter field behaves.
 
 The **Files**, **Folders** and **Files and Folders** options let you set the field to control the [folder format](/Manual/basic_concepts/folder_options/README.md) filters rather than the quick field. When one of these options is chosen, the **Show** and **Hide** options also become available. These options work together to control exactly which of the folder format filters the field affects:
 

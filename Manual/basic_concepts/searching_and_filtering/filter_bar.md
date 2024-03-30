@@ -33,7 +33,11 @@ The "file" and "folder" icons on the filter bar that show the file and folder to
 
 ##### Filter options
 
-<img src="/media/13/filter_bar_menu.png" class="align-right" data-query="?nolink" />The options button shows a menu that lets you control how the filter is applied:
+
+
+![](/Manual/images/media/13/filter_bar_menu.png)
+
+The options button shows a menu that lets you control how the filter is applied:
 
 - **Ignore diacritics**: Ignore accent characters when filtering.
 - **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with `+`, which means it **must** be present, and `-` which means it **must not** be present.
@@ -44,7 +48,11 @@ Use the **Save as default** command to save the current settings as the defaults
 
 ##### Filetype filtering
 
-<img src="/media/13/filter_bar_filetypes.png" class="align-right" data-query="?nolink" />The filetypes button shows a menu that lets you quickly filter by file extension or filetype group, based on the actual contents of the folder.
+
+
+![](/Manual/images/media/13/filter_bar_filetypes.png)
+
+The filetypes button shows a menu that lets you quickly filter by file extension or filetype group, based on the actual contents of the folder.
 
 The top part of the menu refers to filetype groups - in this example, there is one file from the Documents group, five from the Images group, and so on.
 

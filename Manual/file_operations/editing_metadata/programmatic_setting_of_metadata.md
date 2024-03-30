@@ -2,7 +2,11 @@
 
 Using the **[SetAttr](/Manual/reference/command_reference/internal_commands/setattr.md) META** command it is possible to automate changes to file metadata.
 
-<img src="/media/13/star_rating_menu.png" class="align-right" data-query="?nolink" />
+
+
+![](/Manual/images/media/13/star_rating_menu.png)
+
+
 
 For example, you could set up a menu to apply different ratings to files.
 

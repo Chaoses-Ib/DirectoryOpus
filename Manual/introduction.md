@@ -1,4 +1,7 @@
-# Introduction <img src="/media/13/opus13_box_front.png" class="align-right" data-query="?nolink" /> *Welcome to Directory Opus, your Windows file manager!*
+# Introduction
+![](/Manual/images/media/13/opus13_box_front.png)
+
+*Welcome to Directory Opus, your Windows file manager!*
 
 Here's what Opus offers:
 

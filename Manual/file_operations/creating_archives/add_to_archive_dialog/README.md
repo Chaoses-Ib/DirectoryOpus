@@ -2,7 +2,11 @@
 
 When you use the **Archive Files** button or context menu commands, the **Add to Archive** dialog box is displayed.
 
-<img src="/media/13/add_to_archive.png" class="align-right" data-query="?nolink" /> The top of the dialog is always the same and is where you select the archive type, path and name.
+
+
+![](/Manual/images/media/13/add_to_archive.png)
+
+ The top of the dialog is always the same and is where you select the archive type, path and name.
 
 The **Archive Type** drop-down lets you choose from any of the archive formats that Opus is able to write to. (Some formats are read-only and won't be shown here.) Opus supports multiple archive formats, with Zip built-in and formats like 7z and RAR handled by a plugin. Third-party plugins can also add to this list.
 

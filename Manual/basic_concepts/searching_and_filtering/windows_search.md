@@ -20,7 +20,11 @@ To search the current folder, click in the search field (or press <kbd>F3</kbd>)
 
 ##### Choosing the search engine
 
-<img src="/media/13/quicksearch_options.png" class="align-right" data-query="?nolink" />To select a different search engine, click the button on the left of the search field to dropdown the menu.
+
+
+![](/Manual/images/media/13/quicksearch_options.png)
+
+To select a different search engine, click the button on the left of the search field to dropdown the menu.
 
 Select the search engine you want to use from the top part of the menu. Each search engine has its own set of options, and these are shown in the bottom half of the menu.
 
