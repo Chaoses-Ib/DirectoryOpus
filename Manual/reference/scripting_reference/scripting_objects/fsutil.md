@@ -11,6 +11,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 CancelWatchChanges</td><td>
+
 \<string:id\></td><td>
 
 *none*</td><td>
@@ -18,6 +19,7 @@ CancelWatchChanges</td><td>
 Cancels folder or file change monitoring previously established by a call to the **WatchChanges** method. The **id** parameter is the ID you assigned to your watcher when it was created.
 </td></tr><tr><td>
 ComparePath</td><td>
+
 \<string:path1\>  
 \<string:path2\>  
 \<string:flags\></td><td>
@@ -34,6 +36,7 @@ The optional **flags** parameter lets you modify the comparison behavior. This p
 | **p** | Returns **True** if *path2* is equal to or a **parent** of *path1*. |
 </td></tr><tr><td>
 DisplayName</td><td>
+
 \<string:path\>  
 \<string:flags\></td><td>
 
@@ -58,6 +61,7 @@ Drives</td><td>
 Returns a **[Vector](vector.md)** of **[Drive](drive.md)** objects, one for each drive on the system.
 </td></tr><tr><td>
 Exists</td><td>
+
 \<string:path\>  
 \<string:flags\></td><td>
 
@@ -68,6 +72,7 @@ Returns **True** if the specified file, folder or device exists, or **False** ot
 The optional *flags* parameter can be set to **w** to use wildcards in the final path component.
 </td></tr><tr><td>
 GetADSNames</td><td>
+
 \<string:path\></td><td>
 
 *object:***[StringSet](stringset.md)**</td><td>
@@ -75,12 +80,14 @@ GetADSNames</td><td>
 Returns a **[StringSet](stringset.md)** containing the names of any alternate data streams (ADS) found for the specified file or folder.
 </td></tr><tr><td>
 GetErrorMsg</td><td>
+
 \<int:error\></td><td>
 
 *string*</td><td>
 Returns the localized text description for a system error code.
 </td></tr><tr><td>
 GetFolderPair</td><td>
+
 \<string:path\>  
 \<string:flags\></td><td>
 
@@ -100,6 +107,7 @@ Returns the [pair](/Manual/preferences/preferences_categories/frequently_used_pa
 | **g** | Go up to first existing parent                |
 </td></tr><tr><td>
 GetItem</td><td>
+
 \<string:path\></td><td>
 
 *object*:**[Item](item.md)**</td><td>
@@ -107,6 +115,7 @@ GetItem</td><td>
 Creates an **[Item](item.md)** object for the specified file path.
 </td></tr><tr><td>
 GetMetadata</td><td>
+
 \<string:path\></td><td>
 
 *object:***[Metadata](metadata.md)**</td><td>
@@ -140,6 +149,7 @@ The optional **type** argument is a string that lets you control how the propert
 If neither is specified, both raw and display names can match. Note that if a shell property is returned by the system as a SAFEARRAY type, it will be converted automatically to a **[Vector](vector.md)** object.
 </td></tr><tr><td>
 GetShellPropertyList</td><td>
+
 \<string:pattern\>  
 \<string:type\></td><td>
 
@@ -159,6 +169,7 @@ The optional **type** argument is a string that lets you restrict the list of pr
 If neither is specified, both raw and display names can match.
 </td></tr><tr><td>
 GetTempDirPath</td><td>
+
 \<int:lifetime\></td><td>
 
 *object:***[Path](path.md)**</td><td>
@@ -166,6 +177,7 @@ GetTempDirPath</td><td>
 Creates a temporary folder (with a unique name) and returns the path to it in a **[Path](path.md)** object. Temporary folders created with this method have a limited lifetime after which Opus will automatically delete them (it will also clean them up when it's shutdown and restarted). The default lifetime is 20 minutes; you can change this using the optional parameter.
 </td></tr><tr><td>
 GetTempFile</td><td>
+
 \<string:suffix\>  
 \<string:prefix\>  
 \<string:flags\>  
@@ -203,6 +215,7 @@ When delete-on-close is used, other things may not be able to open the file unle
 The optional **window** parameter lets you associate the **File** object with a **[Tab](tab.md)** or a **[Lister](lister.md)**, which will be used if Opus needs to display any dialogs (e.g. a UAC elevation dialog).
 </td></tr><tr><td>
 GetTempFilePath</td><td>
+
 \<string:suffix\>  
 \<string:prefix\></td><td>
 
@@ -219,6 +232,7 @@ Between the suffix and prefix, Opus will insert additional characters into the n
 As an example, **DOpus.FSUtil.GetTempFilePath(".txt","cat-")** might generate *C:\Users\Leo\AppData\Local\Temp\cat-202106230928470962.txt* for a file path.
 </td></tr><tr><td>
 GetType</td><td>
+
 \<string:path\>  
 \<string:flags\></td><td>
 
@@ -290,6 +304,7 @@ To create a *signed* value instead, specify "**s**" as the first parameter and s
     DOpus.FSUtil.NewFileSize("s", -1024)
 </td></tr><tr><td>
 NewPath</td><td>
+
 \<string:path\></td><td>
 
 *object:***[Path](path.md)**</td><td>
@@ -297,6 +312,7 @@ NewPath</td><td>
 Creates a new **[Path](path.md)**object initialised to the provided path string.
 </td></tr><tr><td>
 NewWild</td><td>
+
 \<string:pattern\>  
 \<string:flags\></td><td>
 
@@ -371,6 +387,7 @@ The optional third parameter takes either a **window** object or a string indica
     Set F = DOpus.FSUtil.OpenFile("C:\Test.txt","wrcf","NoElevate")
 </td></tr><tr><td>
 PathType</td><td>
+
 \<string:path\></td><td>
 
 *string*</td><td>
@@ -391,6 +408,7 @@ Returns a string indicating the underlying "namespace" type of the specified fil
 This method is different to **GetType** which tells you whether something is a file or a directory.
 </td></tr><tr><td>
 ReadDir</td><td>
+
 \<string:path\>  
 \<string:flags\></td><td>
 
@@ -409,6 +427,7 @@ The optional **flags** string can include zero or more flag characters (not case
 If you don't need any flags, skip the second argument entirely. You may see older scripts pass **True** and **False** as the second argument, to turn recursion on and off; that is deprecated but remains supported for compatibility.
 </td></tr><tr><td>
 Resolve</td><td>
+
 \<string:path\>  
 \<string:flags\></td><td>
 
@@ -435,6 +454,7 @@ The optional **flags** string can include the following letter (not case-sensiti
 Note that **[Path](path.md)** objects also have a similar **Resolve** method which modifies them in-place.
 </td></tr><tr><td>
 SameDrive</td><td>
+
 \<string:path1\>  
 \<string:path2\>  
 \<string:flags\></td><td>
@@ -458,6 +478,7 @@ The optional **flags** string can contain zero or more of the following letters 
 When neither **z** nor **Z** are specified, archives are essentially treated like normal directories and will be considered on the "same drive" as any path pointing to the same drive the archive is on, including other archive paths on that drive.
 </td></tr><tr><td>
 WatchChanges</td><td>
+
 \<string:id\>  
 \<string:path\>  
 \<string:flags\></td><td>

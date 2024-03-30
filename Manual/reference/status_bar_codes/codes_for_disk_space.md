@@ -12,6 +12,7 @@ Details
 **Free disk space**  
 Displays the amount of free space on the drive.  
 The size can be displayed in either bytes, or an automatic mode where the unit (bytes, KB, MB or GB) is automatically chosen depending on the size.</td><td>
+
 {dfb}  
 {dfDb}  
 {dfLb}  
@@ -33,6 +34,7 @@ Free space on the drive in the source file display (automatic units)
 
 **Used disk space**  
 Displays the amount of space in use on the drive.</td><td>
+
 {dub}  
 {duDb}  
 {duLb}  
@@ -54,6 +56,7 @@ Used space on the drive in the source file display (automatic units)
 
 **Total disk space**  
 Displays the total size of the drive.</td><td>
+
 {dtb}  
 {dtDb}  
 {dtLb}  
@@ -79,6 +82,7 @@ Total space on the drive in the source file display (automatic units)
 
 **Percentage of disk space free**  
 Displays the amount of free space on the drive as a percentage of the total size.</td><td>
+
 {pf}  
 {pfD}  
 {pfL}  
@@ -92,6 +96,7 @@ Percentage of free space on the drive in the source file display
 
 **Percentage of disk space used  
 **Displays the amount of used space on the drive as a percentage of the total size.</td><td>
+
 {pu}  
 {puD}  
 {puL}  

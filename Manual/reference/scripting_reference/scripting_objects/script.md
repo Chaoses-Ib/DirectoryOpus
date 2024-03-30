@@ -65,6 +65,7 @@ Loads an image file from the specified external file. If your script is bundled 
 The returned **[Image](image.md)** object can be given as the value of the **[Control](control.md).label** property for a static control in a [script dialog](/Manual/scripting/script_dialogs/README.md) (when that control is in "image" mode). You can also assign as to the **icon** property of a **[Dialog](dialog.md)** object to specify a custom window icon for your script dialog.
 </td></tr><tr><td>
 LoadResources</td><td>
+
 \<string:name\> or  
 \<string:XML\></td><td>
 
@@ -73,12 +74,14 @@ LoadResources</td><td>
 Loads external [script resources](/Manual/scripting/resources/README.md) and makes them available to the script. You can either provide a filename or a raw XML string. If your script is bundled as a [script package](/Manual/scripting/script_add-ins/script_package.md), the resource file must have a **.odxml** extension for **LoadResources** to be able to find it in the package.
 </td></tr><tr><td>
 RefreshColumn</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>
 If your script implements any custom columns, you can use this method to cause them to be regenerated if they are currently shown in any tabs. You may want to do this, for example, in response to the user modifying your script's configuration. Pass the name of the column you want to regenerate as the argument to this method.
 </td></tr><tr><td>
 UpdateFAYTFlags</td><td>
+
 \<string:name\>  
 \<int:flags\></td><td>
 

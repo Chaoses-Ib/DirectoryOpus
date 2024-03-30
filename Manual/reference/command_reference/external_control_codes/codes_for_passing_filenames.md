@@ -22,6 +22,7 @@ Description
 Passes the full path and filename of each selected item. Files are passed one at a time - a command that uses this code will be repeated once for each additional selected item. If no files are selected the command will still be run, passing an empty string for this code.  
 *Full paths, one at a time, selected items not required, long filenames, source file display*
 </td></tr><tr><td>
+
 {filepath\$}</td><td>
 {f}</td><td>
 
@@ -30,9 +31,11 @@ The "need" form of **{filepath}** (requires at least one selected item in the fi
 </td></tr><tr><td>
 {file}</td><td>
 {o!}</td><td>
+
 Passes the filename only of each selected item (without its path). Multiple files are passed one at a time.  
 Filenames only, one at a time, selected items not required, long filenames, source file display
 </td></tr><tr><td>
+
 {file\$}</td><td>
 {o}</td><td>
 
@@ -45,6 +48,7 @@ The "need" form of **{file}**.
 Passes the full path and filename of all selected items at once. The command will only be run once, no matter how many items are selected - the names of all selected items will be passed on the command line separated by spaces. You can use the **sep=** modifier (described below) to specify an alternative separator character.  
 *Full paths, all at once, selected items not required, long filenames, source file display*
 </td></tr><tr><td>
+
 {allfilepath\$}</td><td>
 {F}</td><td>
 
@@ -53,9 +57,11 @@ The "need" form of **{allfilepath}**.
 </td></tr><tr><td>
 {allfile}</td><td>
 {O!}</td><td>
+
 Passes the filename only of all selected items at once. File paths are not passed.  
 Filenames only, all at once, selected items not required, long filenames, source file display
 </td></tr><tr><td>
+
 {allfile\$}</td><td>
 {O}</td><td>
 
@@ -68,6 +74,7 @@ Filenames only, all at once, selected items required, long filenames, source fil
 Passes the full path and filename of each selected item, in short (8.3) format. This is useful for running 16 bit programs or other legacy software that can't handle long filenames.  
 *Full paths, one at a time, selected items not required, short filenames, source file display*
 </td></tr><tr><td>
+
 {filepathshort\$}</td><td>
 {fs}</td><td>
 
@@ -76,9 +83,11 @@ The "need" form of **{filepathshort}**.
 </td></tr><tr><td>
 {fileshort}</td><td>
 {os!}</td><td>
+
 Passes the filename only (no paths) of each selected item, in short (8.3) format.  
 Filenames only, one at a time, selected items not required, short filenames, source file display
 </td></tr><tr><td>
+
 {fileshort\$}</td><td>
 {os}</td><td>
 
@@ -91,6 +100,7 @@ Filenames only, one at a time, selected items required, short filenames, source 
 Passes the short (8.3) form of the full path and filename of all selected items at once.  
 *Full paths, all at once, selected items not required, short filenames, source file display*
 </td></tr><tr><td>
+
 {allfilepathshort\$}</td><td>
 {Fs}</td><td>
 
@@ -99,9 +109,11 @@ The "need" form of **{allfilepathshort}**.
 </td></tr><tr><td>
 {allfileshort}</td><td>
 {Os!}</td><td>
+
 Passes the filename only of all selected items at once, in short (8.3) format.  
 Filenames only, all at once, selected items not required, short filenames, source file display
 </td></tr><tr><td>
+
 {allfileshort\$}</td><td>
 {Os}</td><td>
 
@@ -114,6 +126,7 @@ Filenames only, all at once, selected items required, short filenames, source fi
 Passes the full path and filename of each selected item in the destination file display. Files are passed one at a time - a command that uses this code will be repeated once for each additional selected item. If no files are selected in the destination, or there is currently no destination, the command will still be run, passing an empty string for this code.  
 *Full paths, one at a time, selected items not required, long filenames, destination file display*
 </td></tr><tr><td>
+
 {filepathdest\$}</td><td>
 {fd}</td><td>
 
@@ -122,9 +135,11 @@ The "need" form of **{filepathdest}**. If there are no files selected in the des
 </td></tr><tr><td>
 {filedest}</td><td>
 {od!}</td><td>
+
 Passes the filename only of each selected item from the destination file display (without its path). Multiple files are passed one at a time.  
 Filenames only, one at a time, selected items not required, long filenames, destination file display
 </td></tr><tr><td>
+
 {filedest\$}</td><td>
 {od}</td><td>
 
@@ -137,6 +152,7 @@ Filenames only, one at a time, selected items required, long filenames, destinat
 Passes the full path and filename of all selected items, from the destination file display, all at once. The command will only be run once, no matter how many items are selected - the names of all selected items will be passed on the command line separated by spaces.  
 *Full paths, all at once, selected items not required, long filenames, destination file display*
 </td></tr><tr><td>
+
 {allfilepathdest\$}</td><td>
 {Fd}</td><td>
 
@@ -145,9 +161,11 @@ The "need" form of **{allfilepathdest}**.
 </td></tr><tr><td>
 {allfiledest}</td><td>
 {Od!}</td><td>
+
 Passes the filename only of all selected items at once, from the destination file display. File paths are not passed.  
 Filenames only, all at once, selected items not required, long filenames, destination file display
 </td></tr><tr><td>
+
 {allfiledest\$}</td><td>
 {Od}</td><td>
 
@@ -160,6 +178,7 @@ Filenames only, all at once, selected items required, long filenames, destinatio
 Passes the full path and filename of each selected item, in short (8.3) format, from the destination file display. This is useful for running 16 bit programs or other legacy software that can't handle long filenames.  
 *Full paths, one at a time, selected items not required, short filenames, destination file display*
 </td></tr><tr><td>
+
 {filepathshortdest\$}</td><td>
 {fsd}</td><td>
 
@@ -168,9 +187,11 @@ The "need" form of **{filepathshortdest}**.
 </td></tr><tr><td>
 {fileshortdest}</td><td>
 {osd!}</td><td>
+
 Passes the filename only (no paths) of each selected item in the destination file display, in short (8.3) format.  
 Filenames only, one at a time, selected items not required, short filenames, destination file display
 </td></tr><tr><td>
+
 {fileshortdest\$}</td><td>
 {osd}</td><td>
 
@@ -183,6 +204,7 @@ Filenames only, one at a time, selected items required, short filenames, destin
 Passes the short (8.3) form of the full path and filename of all selected items at once, from the destination file display.  
 *Full paths, all at once, selected items not required, short filenames, destination file display*
 </td></tr><tr><td>
+
 {allfilepathshortdest\$}</td><td>
 {Fsd}</td><td>
 
@@ -191,9 +213,11 @@ The "need" form of **{allfilepathshortdest}**.
 </td></tr><tr><td>
 {allfileshortdest}</td><td>
 {Osd!}</td><td>
+
 Passes the filename only of all selected items at once, in short (8.3) format, from the destination file display.  
 Filenames only, all at once, selected items not required, short filenames, destination file display
 </td></tr><tr><td>
+
 {allfileshortdest\$}</td><td>
 {Osd}</td><td>
 

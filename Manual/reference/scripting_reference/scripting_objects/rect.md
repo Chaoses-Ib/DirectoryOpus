@@ -66,6 +66,7 @@ Description
 ToString</td><td>
 
 *none*</td><td>
+
 \<string\></td><td>
 
 Returns a string describing the rectangle's position and size, as a convenience when debugging scripts. The format is "(L,T - R,B; WxH)" i.e. Left, Top, Right, Bottom, Width, and Height.

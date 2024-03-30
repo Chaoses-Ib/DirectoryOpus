@@ -108,6 +108,7 @@ FinishFile</td><td>
 Finish the current file. If the byte size of the current file has been set the total progress will be advanced by any remaining bytes.
 </td></tr><tr><td>
 GetAbortState</td><td>
+
 \<bool:autoPause\>  
 \<string:wanted\>  
 \<bool:simple\></td><td>
@@ -184,18 +185,21 @@ SetFileSize</td><td>
 Sets the size of the current file.
 </td></tr><tr><td>
 SetFiles</td><td>
+
 \<int:count\></td><td>
 
 *none*</td><td>
 Sets the total number of files.
 </td></tr><tr><td>
 SetFilesProgress</td><td>
+
 \<int:count\></td><td>
 
 *none*</td><td>
 Sets the total completed file count.
 </td></tr><tr><td>
 SetFromTo</td><td>
+
 \<string:header\>  
 \<string:from\>  
 \<string:to\></td><td>
@@ -206,18 +210,21 @@ Sets the text at the top of the dialog that indicates the source and destination
 If you omit the *to* argument entirely (not just passing an empty string), the destination line will become blank, including the *To:* header. Use that if you want the second line to be used sometimes but not always. If you never want anything on the second line, use the **SetStatus** method instead as it will not add space for the extra line.
 </td></tr><tr><td>
 SetName</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>
 Sets the name of the current file.
 </td></tr><tr><td>
 SetPercentProgress</td><td>
+
 \<int:percent\></td><td>
 
 *none*</td><td>
 Sets the current progress as a percentage (from 0 to 100).
 </td></tr><tr><td>
 SetStatus</td><td>
+
 \<string:status\></td><td>
 
 *none*</td><td>
@@ -226,12 +233,14 @@ Sets the text displayed in the status line at the top of the dialog.
 This sets a single-line status message, while **SetFromTo** can be used to indicate source and destination paths on two lines.
 </td></tr><tr><td>
 SetTitle</td><td>
+
 \<string:title\></td><td>
 
 *none*</td><td>
 Sets the title of the dialog.
 </td></tr><tr><td>
 SetType</td><td>
+
 \<string:type\></td><td>
 
 *none*</td><td>
@@ -247,6 +256,7 @@ Show</td><td>
 Displays the progress indicator dialog. Call this once you have created the dialog using the **Init** method.
 </td></tr><tr><td>
 SkipFile</td><td>
+
 \<bool:complete\></td><td>
 
 *none*</td><td>
@@ -261,6 +271,7 @@ StepBytes</td><td>
 Step the byte progress indicator the specified number of bytes.
 </td></tr><tr><td>
 StepFiles</td><td>
+
 \<int:count\></td><td>
 
 *none*</td><td>

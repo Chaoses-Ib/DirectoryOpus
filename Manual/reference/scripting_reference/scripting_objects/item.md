@@ -257,6 +257,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 InGroup</td><td>
+
 \<string:group\></td><td>
 
 *bool*</td><td>
@@ -272,6 +273,7 @@ By default, both the internal name and the display name are checked, and a match
 To get a list of all file type groups which the file matches, use the **groups** property instead (see the section above).
 </td></tr><tr><td>
 Labels</td><td>
+
 \<string:category\>  
 \<string:flags\></td><td>
 
@@ -286,6 +288,7 @@ The second optional argument contains flags keywords that control how the label
 If explicit labels aren't requested, any global wildcard/filter labels will be returned, along with any per-folder labels configured for the item's folder. Per-folder *content type* and *folder type* labels, however, are not currently returned by this function.
 </td></tr><tr><td>
 MatchFilter</td><td>
+
 \<object:filter\>  
 or \<string:filter\></td><td>
 
@@ -296,6 +299,7 @@ Returns **True** if the item matches the specified filter. The *filter* argument
 You can also pass a [textual filter](/Manual/file_operations/filtered_operations/textual_filters.md) in string form, to parse the filter and compare the item in one operation, although if you're comparing multiple items it would be much more efficient to create the **Filter** first.
 </td></tr><tr><td>
 Open</td><td>
+
 \<string:mode\>  
 \<object:window\></td><td>
 
@@ -325,6 +329,7 @@ The optional *window* parameter lets you associate the **File** object with a **
 A **File** object is always returned, even if the file could not be opened. Check **File.error** on the returned object immediately after creating it to see if opening the file succeeded. Even if the file was not be opened, some of the object's methods may still work. For example, if a file doesn't exist then you can't open it or set its attributes, but permissions on an existing file may allow you to set its attributes while blocking you from modifying it or vice versa.
 </td></tr><tr><td>
 ShellProp</td><td>
+
 \<string:property\>  
 \<string:type\></td><td>
 

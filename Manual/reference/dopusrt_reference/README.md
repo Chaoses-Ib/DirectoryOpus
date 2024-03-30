@@ -103,6 +103,7 @@ Deactivate a running double-click manager. You can use this command if you want 
 **/dde**</td><td>
 
 *(no arguments)*</td><td>
+
 Run a DDE server to listen for DDE commands relating to opening folders.
 
 This is used in Explorer Replacement mode when you double-click on a folder. You do not need to run this command manually.

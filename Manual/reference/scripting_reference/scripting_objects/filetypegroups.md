@@ -27,6 +27,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 GetGroup</td><td>
+
 \<string:group\></td><td>
 
 *object:***[FiletypeGroup](filetypegroup.md)**  
@@ -38,6 +39,7 @@ If Opus is not running in English, the translated name is compared first; if not
 Returns a **[FiletypeGroup](filetypegroup.md)** object or **False** if not found.
 </td></tr><tr><td>
 MatchExt</td><td>
+
 \<string:filename\></td><td>
 
 *object:***FiletypeGroups**</td><td>
@@ -45,9 +47,11 @@ MatchExt</td><td>
 Returns a new **FiletypeGroups **object containing the subset of groups that the specified filename (or file extension) is a member of. You would normally only call this method on the object returned by the **[DOpus](dopus.md).filetypegroups** property.
 </td></tr><tr><td>
 Translate</td><td>
+
 \<string:group\></td><td>
 
 *string*</td><td>
+
 Returns the translated name of the named built-in file type group.  
 If not found, or no translation exists, the input string is returned.
 

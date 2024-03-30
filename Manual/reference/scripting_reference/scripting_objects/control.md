@@ -220,6 +220,7 @@ Autosizes the control, if the control type supports autosize. Returns **True** i
 If the optional *height* parameter is set to true, the control will be autosized vertically as well as horizontally.
 </td></tr><tr><td>
 DeselectItem</td><td>
+
 \<int:position\>
 
 or
@@ -235,12 +236,14 @@ You can specify either the index of the item to select (0 means the first item,
 You can also specify **-1** to deselect all items in the list box.
 </td></tr><tr><td>
 EnableGroupView</td><td>
+
 \<bool:enable\></td><td>
 none</td><td>
 
 Only applies to *list view* controls. By default group view is off; after adding groups with the **AddGroup** method, use **EnableGroupView** to turn group view on.
 </td></tr><tr><td>
 GetGroupById</td><td>
+
 \<int:id\></td><td>
 
 object:**[DialogListGroup](dialoglistgroup.md)**</td><td>
@@ -248,14 +251,17 @@ object:**[DialogListGroup](dialoglistgroup.md)**</td><td>
 Returns a **[DialogListGroup](dialoglistgroup.md)**object representing the group with the specified ID that you've previous added to a *list view* control using the **AddGroup** method.
 </td></tr><tr><td>
 GetItemAt</td><td>
+
 \<int:position\></td><td>
 
 object:**[DialogListItem](dialoglistitem.md)**</td><td>
 
 Returns a **[DialogListItem](dialoglistitem.md)** object representing the item contained in the control at the specified index (*list box*, *combo box* or *list view*). Item 0 represents the first item in the list, item 1 the second, and so on.
 </td></tr><tr><td>
+
 GetItemByLabel  
 GetItemByName</td><td>
+
 \<string:name\></td><td>
 
 object:**[DialogListItem](dialoglistitem.md)**</td><td>
@@ -285,6 +291,7 @@ Instead of the *name* and *value* you can also pass a **[DialogListItem](dialogl
 The return value indicates the position in the list of the new item.
 </td></tr><tr><td>
 MoveItem</td><td>
+
 \<int:position\>  
 or  
 \<object:item\>  
@@ -297,12 +304,14 @@ Moves an existing item to a new location (*list box*, *combo box* or *list view*
 The return value indicates the position in the list of the moved item.
 </td></tr><tr><td>
 RemoveGroup</td><td>
+
 \<int:id\></td><td>
 none</td><td>
 
 Removes the specified group from a *list view* control.
 </td></tr><tr><td>
 RemoveItem</td><td>
+
 \<int:position\>  
 or  
 \<object:item\></td><td>
@@ -313,6 +322,7 @@ Removes an item from the control (*list box, combo box or list view*). You can p
 You can also specify **-1** to completely clear the contents of the control, removing all items at once.
 </td></tr><tr><td>
 SelectItem</td><td>
+
 \<int:position\>  
 or  
 \<object:item\>  
@@ -330,6 +340,7 @@ For a *tab control*, you can change which page is visible by specifying the name
 The return value indicates the new selected index.
 </td></tr><tr><td>
 SelectRange</td><td>
+
 \<int:start\>  
 \<int:end\>
 
@@ -347,24 +358,28 @@ The return value is a **[Vector](vector.md)** with two members that provide the
 In a *list box* or *list view* control, this method selects a range of items.
 </td></tr><tr><td>
 SetFont</td><td>
+
 \<int:id\></td><td>
 none</td><td>
 
 Sets the font used by the control to the specified font. The *id* parameter must have come from a previous call to **[Dialog](dialog.md).CreateFont**. You can use 0 to reset the font to its default.
 </td></tr><tr><td>
 SetItemWidth</td><td>
+
 \<int:width\></td><td>
 none</td><td>
 
 Sets the width in pixels of items in a list view control that's set to **list** or **smallicon** mode. Specify **-1** to automatically size the items.
 </td></tr><tr><td>
 SetPos</td><td>
+
 \<int:x\>  
 \<int:y\></td><td>
 none</td><td>
 Sets the position of this control. The x and y coordinates are specified in pixels.
 </td></tr><tr><td>
 SetPosAndSize</td><td>
+
 \<int:x\>  
 \<int:y\>  
 \<int:cx\>  
@@ -373,6 +388,7 @@ none</td><td>
 Sets the position and size of the control, in a single operation. All coordinates are specified in pixels.
 </td></tr><tr><td>
 SetSize</td><td>
+
 \<int:cx\>  
 \<int:cy\></td><td>
 none</td><td>

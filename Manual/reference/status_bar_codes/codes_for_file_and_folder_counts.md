@@ -11,6 +11,7 @@ Details
 
 **Number of selected folders**  
 Displays the number of selected folders.</td><td>
+
 {sd}  
 {sdD}  
 {sdL}  
@@ -24,6 +25,7 @@ Selected folders in the source file display
 
 **Number of selected files**  
 Displays the number of selected files.</td><td>
+
 {sf}  
 {sfD}  
 {sfL}  
@@ -37,6 +39,7 @@ Selected files in the source file display
 
 **Number of selected items**  
 Displays the total number of selected files and folders.</td><td>
+
 {si}  
 {siD}  
 {siL}  
@@ -52,6 +55,7 @@ Selected items in the source file display
 Displays the total size of all selected files (and folders, if their size has been [calculated](/Manual/basic_concepts/folder_sizes.md)).
 
 The size can be displayed in either bytes, or an automatic mode where the unit (bytes, KB, MB or GB) is automatically chosen depending on the size.</td><td>
+
 {sb}  
 {sbDb}  
 {sbLb}  
@@ -73,6 +77,7 @@ Size of selected items in the source file display (automatic units)
 
 **Size of all selected files**  
 Displays the total size of all selected files (does not include selected folders).</td><td>
+
 {sbf}  
 {sbfDb}  
 {sbfLb}  
@@ -94,6 +99,7 @@ Size of selected files in the source file display (automatic units)
 
 **Size of all selected folders**  
 Displays the total size of all selected folders (does not include selected files). A folder's size must have been previously [calculated](/Manual/basic_concepts/folder_sizes.md) for it to be included in this total.</td><td>
+
 {sbd}  
 {sbdDb}  
 {sbdLb}  
@@ -119,6 +125,7 @@ Size of selected folders in the source file display (automatic units)
 
 **Total number of folders**  
 Displays the total number of folders.</td><td>
+
 {td}  
 {tdD}  
 {tdL}  
@@ -132,6 +139,7 @@ Total folders in the source file display
 
 **Total number of files**  
 Displays the total number of files.</td><td>
+
 {tf}  
 {tfD}  
 {tfL}  
@@ -145,6 +153,7 @@ Total files in the source file display
 
 **Total number of items**  
 Displays the total number of files and folders.</td><td>
+
 {ti}  
 {tiD}  
 {tiL}  
@@ -160,6 +169,7 @@ Total items in the source file display
 Displays the total size of all files (and folders, if their size has been [calculated](/Manual/basic_concepts/folder_sizes.md)).
 
 The size can be displayed in either bytes, or an automatic mode where the unit (bytes, KB, MB or GB) is automatically chosen depending on the size.</td><td>
+
 {tb}  
 {tbDb}  
 {tbLb}  
@@ -181,6 +191,7 @@ Size of items in the source file display (automatic units)
 
 **Size of all files**  
 Displays the total size of all files (does not include folders).</td><td>
+
 {tbf}  
 {tbfDb}  
 {tbfLb}  
@@ -202,6 +213,7 @@ Size of files in the source file display (automatic units)
 
 **Size of all folders**  
 Displays the total size of all folders (does not include files). A folder's size must have been previously [calculated](/Manual/basic_concepts/folder_sizes.md) for it to be included in this total.</td><td>
+
 {tbd}  
 {tbdDb}  
 {tbdLb}  
@@ -223,6 +235,7 @@ Size of folders in the source file display (automatic units)
 
 **Number of hidden folders**  
 Displays the number of folders that have been hidden from the file display via the various [filters](/Manual/basic_concepts/searching_and_filtering/README.md).</td><td>
+
 {hd}  
 {hdD}  
 {hdL}  
@@ -236,6 +249,7 @@ Hidden folders in the source file display
 
 **Number of hidden files**  
 Displays the number of hidden files.</td><td>
+
 {hf}  
 {hfD}  
 {hfL}  
@@ -249,6 +263,7 @@ Hidden files in the source file display
 
 **Number of hidden items**  
 Displays the total number of hidden files and folders.</td><td>
+
 {hi}  
 {hiD}  
 {hiL}  
@@ -264,6 +279,7 @@ Hidden items in the source file display
 Displays the total size of all hidden files (and folders, if their size has been [calculated](/Manual/basic_concepts/folder_sizes.md)).
 
 The size can be displayed in either bytes, or an automatic mode where the unit (bytes, KB, MB or GB) is automatically chosen depending on the size.</td><td>
+
 {hb}  
 {hbDb}  
 {hbLb}  
@@ -285,6 +301,7 @@ Size of hidden items in the source file display (automatic units)
 
 **Size of hidden files**  
 Displays the total size of all hidden files (does not include folders).</td><td>
+
 {hbf}  
 {hbfDb}  
 {hbfLb}  
@@ -306,6 +323,7 @@ Size of hidden files in the source file display (automatic units)
 
 **Size of hidden folders**  
 Displays the total size of all hidden folders (does not include files). A folder's size must have been previously [calculated](/Manual/basic_concepts/folder_sizes.md) for it to be included in this total.</td><td>
+
 {hbd}  
 {hbdDb}  
 {hbdLb}  
@@ -339,6 +357,7 @@ Indicates if *[Show Everything](/Manual/basic_concepts/searching_and_filtering/s
 
 **Number of file groups**  
 If the file display is set to group by a column this code returns the number of distinct file groups.</td><td>
+
 {grp}  
 {grpD}  
 {grpL}  

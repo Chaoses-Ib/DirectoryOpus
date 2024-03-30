@@ -120,6 +120,7 @@ AddFilesFromClipboard</td><td>
 Adds the contents of the clipboard to the collection of items this command is to act upon. This method supports both files and file paths copied to the clipboard as text. The return value is the new number of items in the collection.
 </td></tr><tr><td>
 AddFilesFromFile</td><td>
+
 \<string:path\>  
 \<string:encoding\></td><td>
 
@@ -131,6 +132,7 @@ The encoding of the file is assumed to be ANSI, unless it has a BOM (byte-order-
 The return value is the new number of items in the collection.
 </td></tr><tr><td>
 AddFilesFromFolder</td><td>
+
 \<string:path\></td><td>
 
 *int*</td><td>
@@ -138,6 +140,7 @@ AddFilesFromFolder</td><td>
 Adds the contents of the specified folder to the collection of items this command is to act upon. You can pass the folder's path as either a *string* or a **[Path](path.md)** object. You can also append a [wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md) to the path to only add files matching the specified pattern.
 </td></tr><tr><td>
 AddLine</td><td>
+
 \<string:instruction\></td><td>
 
 *none*</td><td>
@@ -167,6 +170,7 @@ ClearFiles</td><td>
 Clears the collection of items this command is to act upon.
 </td></tr><tr><td>
 ClearModifier</td><td>
+
 \<string:modifier\></td><td>
 
 *none*</td><td>
@@ -232,6 +236,7 @@ Run</td><td>
 Runs the command that has been built up with this object. The return value indicates whether or not the command ran successfully. Zero indicates the command could not be run or was aborted; any other number indicates the command was run for at least some files. (Note that this is not the "exit code" for external commands. For external commands it only indicates whether or not Opus launched the command. If you need the exit code of an external command, use the WScript.Shell Run or Exec methods to run the command.) You can use the **Results** property to find out more information about the results of the command, and also discover which files (if any) failed using the **failed** property of each **[Item](item.md)** in the **files** collection.
 </td></tr><tr><td>
 RunCommand</td><td>
+
 \<string:instruction\></td><td>
 
 *int*</td><td>
@@ -239,6 +244,7 @@ RunCommand</td><td>
 Runs the single line command given by the *instruction* argument. Calling this method is the equivalent of adding the single line with the **AddLine** method and then calling the **Run** method.
 </td></tr><tr><td>
 SetDest</td><td>
+
 \<string:path\></td><td>
 
 *none*</td><td>
@@ -269,6 +275,7 @@ Configures the command to use the files in the specified **[Items](items.md)** c
 You can also pass one of the other collection types, the same as with the **AddFiles** method.
 </td></tr><tr><td>
 SetModifier</td><td>
+
 \<string:modifier\>  
 \<string:value\></td><td>
 
@@ -288,6 +295,7 @@ SetProgress</td><td>
 Lets you share the progress indicator from one command with another command. You can pass this method the value of **progress** property obtained from another **Command** object.
 </td></tr><tr><td>
 SetQualifiers</td><td>
+
 \<string:qualifiers\></td><td>
 
 *none*</td><td>
@@ -297,6 +305,7 @@ This method lets you control which qualifier keys the command run by this object
 The *qualifiers* argument must consist of one or more of the following strings (comma-separated): **none**, **shift**, **ctrl**, **alt**, **lwin**, **rwin**, **win**.
 </td></tr><tr><td>
 SetSource</td><td>
+
 \<string:path\></td><td>
 
 *none*</td><td>
@@ -312,6 +321,7 @@ SetSourceTab</td><td>
 Sets the command's source to the specified tab. The source path will be initialized from the tab automatically (so you don't need to call **SetSource** as well as **SetSourceTab**).
 </td></tr><tr><td>
 SetType</td><td>
+
 \<string:type\></td><td>
 
 *none*</td><td>

@@ -117,6 +117,7 @@ Create</td><td>
 Creates and returns a new **[DOpusFactory](dopusfactory.md)** object, which can be used to create various lightweight helper objects like **[Blob](blob.md)**, **[Map](map.md)** and **[Vector](vector.md)**.
 </td></tr><tr><td>
 Delay</td><td>
+
 \<int:time\></td><td>
 
 *none*</td><td>
@@ -301,6 +302,7 @@ If the second argument is provided and set to **True**, the message will be dis
 If the optional third argument is provided and set to **True** then the log message will have a timestamp prepended to it. Timestamps only appear in the utility panel, not in places like the Command Editor's output panel. Error messages always get timestamps so if the second argument is **True** then the third is ignored
 </td></tr><tr><td>
 ReloadScript</td><td>
+
 \<string:file\></td><td>
 
 *none*</td><td>
@@ -308,6 +310,7 @@ ReloadScript</td><td>
 Causes Opus to reload and reinitialize the specified script. You must provide the full pathname of the script on disk (if a script add-in wants to reload itself you can pass the value of the **[Script](script.md).file** property).
 </td></tr><tr><td>
 SendKey</td><td>
+
 \<string:key\></td><td>
 
 *bool*</td><td>
@@ -331,6 +334,7 @@ Places the specified text, or **[Items](items.md)** object (or similar, see belo
 When passing a file list, you can also give a **[Vector](vector.md)** of **[Item](item.md)** or **[Path](path.md)** objects, or full path strings, instead of a collection. Or a **[StringSet](stringset.md)** or **[UnorderedSet](unorderedset.md)** of full path strings.
 </td></tr><tr><td>
 Toolbars</td><td>
+
 \<string:type\></td><td>
 
 object:**[Toolbars](toolbars.md) **</td><td>

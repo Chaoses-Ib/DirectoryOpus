@@ -1049,6 +1049,7 @@ VIEWPANECMD</td><td>
 /K</td><td>
 
 \<*command*\></td><td>
+
 Sends commands to the Lister's viewer pane.
 
 Most of the available commands correspond to buttons in the viewer pane's toolbar and context menu, and exist so you can create hotkeys to perform the same actions.

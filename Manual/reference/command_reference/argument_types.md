@@ -30,6 +30,7 @@ The argument can accept multiple values (e.g. a list of files).
 </td></tr><tr><td>
 /R</td><td>
 Raw</td><td>
+
 The argument accepts a "raw" value. For these arguments, the rest of the command line following the argument name is taken as the value.  
 Arguments of this type are the only ones that do not require quotes around values which contain spaces.
 </td></tr></tbody>

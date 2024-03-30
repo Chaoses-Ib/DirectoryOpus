@@ -13,6 +13,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 AddColumn</td><td>
+
 \<string:name\></td><td>
 
 *int*</td><td>
@@ -26,12 +27,14 @@ AutoSize</td><td>
 Automatically sizes all columns in the list view to fit their content.
 </td></tr><tr><td>
 DeleteColumn</td><td>
+
 \<int:index\></td><td>
 
 *none*</td><td>
 Deletes the specified column.
 </td></tr><tr><td>
 GetColumnAt</td><td>
+
 \<int:index\></td><td>
 
 *object:*  
@@ -49,6 +52,7 @@ Returns the order which the list's columns are displayed on the screen. This may
 The vector contains the index of each column in the order it appears. As an example, if you create a list with three columns (indexes 0, 1, 2) and move the last one (2) to the start, the returned vector will contain three integers: 2,0,1.
 </td></tr><tr><td>
 InsertColumn</td><td>
+
 \<string:name\>  
 \<int:position\></td><td>
 

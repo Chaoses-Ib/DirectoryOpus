@@ -27,6 +27,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 EscapeString</td><td>
+
 \<string:input\>  
 \<string:type\></td><td>
 
@@ -42,6 +43,7 @@ The optional type argument lets you specify the conversion:
 Note that these modes cannot be combined.
 </td></tr><tr><td>
 Match</td><td>
+
 \<string:test\></td><td>
 
 *bool*</td><td>
@@ -49,6 +51,7 @@ Match</td><td>
 Compares the specified string against the previously-parsed pattern, and returns **True** if it matches.
 </td></tr><tr><td>
 Parse</td><td>
+
 \<string:pattern\>  
 \<string:flags\></td><td>
 

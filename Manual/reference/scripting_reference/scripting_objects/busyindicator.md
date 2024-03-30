@@ -58,6 +58,7 @@ Removes the busy indicator from display, but does not destroy its internal data.
 Returns boolean success. Failure usually means the lister or tab was closed.
 </td></tr><tr><td>
 Init</td><td>
+
 \<object:window\>  
 \<string:description\>  
 \<bool:visible\></td><td>
@@ -75,10 +76,12 @@ Show</td><td>
 *none*</td><td>
 
 *bool*</td><td>
+
 Displays the busy indicator.  
 Returns boolean success. Failure usually means the lister or tab was closed.
 </td></tr><tr><td>
 Update</td><td>
+
 \<string:description\>  
 \<int:percentage\></td><td>
 

@@ -76,6 +76,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 Add</td><td>
+
 \<int:value\>  
 \<string:type\></td><td>
 
@@ -181,6 +182,7 @@ Reset</td><td>
 Resets the date to the current local date/time.
 </td></tr><tr><td>
 Set</td><td>
+
 \<date:newdate\></td><td>
 
 *none*</td><td>
@@ -195,6 +197,7 @@ Sets the value of this **Date** object to the supplied date. *newdate* can be:
 - The string "now" (sets to the current time)
 </td></tr><tr><td>
 Sub</td><td>
+
 \<int:value\>  
 \<string:type\></td><td>
 

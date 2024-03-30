@@ -61,12 +61,14 @@ clear</td><td>
 Clears the contents of the **StringSet**.
 </td></tr><tr><td>
 erase</td><td>
+
 \<string\></td><td>
 
 *none*</td><td>
 Erases the string if it exists in the set.
 </td></tr><tr><td>
 exists</td><td>
+
 \<string\></td><td>
 
 *bool*</td><td>
@@ -74,6 +76,7 @@ exists</td><td>
 Returns **True** if the specified string exists in the set.
 </td></tr><tr><td>
 insert</td><td>
+
 \<string\></td><td>
 
 *bool*</td><td>

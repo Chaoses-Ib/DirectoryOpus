@@ -24,6 +24,7 @@ DarkModeApps</td><td>
 *none*</td><td>
 
 *bool*</td><td>
+
 Returns true if Windows is configured to run applications in Dark Mode, and false otherwise.
 
 Always returns false on older versions of Windows which did not have a Dark Mode.

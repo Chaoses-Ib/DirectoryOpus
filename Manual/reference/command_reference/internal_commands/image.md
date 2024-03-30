@@ -117,6 +117,7 @@ The converted image will be saved in BMP format.
 </td></tr><tr><td>
 CROP</td><td>
 /K</td><td>
+
 \<arguments\></td><td>
 
 Crops selected images. The crop parameters can be specified in several ways:

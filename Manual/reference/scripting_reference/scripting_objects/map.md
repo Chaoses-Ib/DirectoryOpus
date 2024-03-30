@@ -106,12 +106,14 @@ clear</td><td>
 Clears the contents of the **Map**.
 </td></tr><tr><td>
 erase</td><td>
+
 \<variant:key\></td><td>
 
 *none*</td><td>
 Erases the element matching the specified key, if it exists in the map.
 </td></tr><tr><td>
 exists</td><td>
+
 \<variant:key\></td><td>
 
 *bool*</td><td>
@@ -119,6 +121,7 @@ exists</td><td>
 Returns **True** if the specified key exists in the map.
 </td></tr><tr><td>
 get</td><td>
+
 \<variant:key\></td><td>
 
 *variant*</td><td>
@@ -133,6 +136,7 @@ merge</td><td>
 Merges the contents of another **Map** with this one.
 </td></tr><tr><td>
 set</td><td>
+
 \<variant:key\>  
 \<variant:value\></td><td>
 

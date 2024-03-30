@@ -45,6 +45,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 SetHeading</td><td>
+
 \<string:heading\></td><td>
 
 *none*</td><td>
@@ -54,6 +55,7 @@ If this is a separator (i.e. the **separator** property returns **True**) this l
 Note that changes you make to the list are not saved until you call the **[Favorites](favorites.md).Save** method.
 </td></tr><tr><td>
 SetName</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>

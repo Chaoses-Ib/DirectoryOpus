@@ -25,14 +25,17 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 Get</td><td>
+
 \<string:name\>  
 \<string:language\></td><td>
 
 *string*</td><td>
+
 Returns the text of a string specified by name. The name must match the name used in the string resources.  
 Optionally you can provide a language name as the second parameter, to retrieve a string from a particular language. Otherwise, the string is returned in the current language.
 </td></tr><tr><td>
 HasLanguage</td><td>
+
 \<string:language\></td><td>
 
 *bool*</td><td>

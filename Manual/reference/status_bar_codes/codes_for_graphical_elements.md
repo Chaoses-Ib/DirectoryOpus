@@ -7,6 +7,7 @@ The following codes are used to display various graphical elements in the status
 Code</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
+
 {fl}  
 {gfl}</td><td>
 

@@ -140,6 +140,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 AddFile</td><td>
+
 \<string:filepath\>  
 \<int:index\></td><td>
 
@@ -169,6 +170,7 @@ IsOnCurrentDesktop</td><td>
 Returns **True** if the viewer is on the current virtual desktop.
 </td></tr><tr><td>
 MoveToDesktop</td><td>
+
 \<string:desktop\></td><td>
 
 *bool*</td><td>
@@ -176,6 +178,7 @@ MoveToDesktop</td><td>
 Moves the viewer window to the specified virtual desktop. Returns **True** if successful.
 </td></tr><tr><td>
 RemoveFile</td><td>
+
 \<int:index\> or  
 \<string:filepath\></td><td>
 
@@ -184,9 +187,11 @@ RemoveFile</td><td>
 Removes the specified file from the viewer's current list of files. You can either pass the 0-based index of the file to remove, or the filepath (either as a string or a **[Path](path.md)** object).
 </td></tr><tr><td>
 SetTaskbarGroup</td><td>
+
 \<string:group\></td><td>
 
 *bool*</td><td>
+
 Used to change how the viewer window is grouped with other Opus windows on the taskbar. Specify a group name to move the window into an alternative group, or omit the group argument to reset back to the default group. If one or more windows are moved into the same group, they will be grouped together, separate from other the default group.
 
 This only works when taskbar grouping is enabled. Group names are limited to 103 characters and will be truncated if longer. Spaces and dots in group names are automatically converted to underscores.

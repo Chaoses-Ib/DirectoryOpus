@@ -98,12 +98,14 @@ clear</td><td>
 Clears the contents of the **Vector**.
 </td></tr><tr><td>
 erase</td><td>
+
 \<int:index\></td><td>
 
 *none*</td><td>
 Erases the element at the specified index.
 </td></tr><tr><td>
 exchange</td><td>
+
 \<int:index1\>  
 \<int:index2\></td><td>
 
@@ -119,6 +121,7 @@ front</td><td>
 Returns the first element in the **Vector**.
 </td></tr><tr><td>
 insert</td><td>
+
 \<int:index\>  
 \<variant:value\></td><td>
 
@@ -134,6 +137,7 @@ pop_back</td><td>
 Removes the last element of the **Vector**.
 </td></tr><tr><td>
 push_back</td><td>
+
 \<variant:value\></td><td>
 
 *none*</td><td>
@@ -141,6 +145,7 @@ push_back</td><td>
 Adds the provided value to the end of the **Vector**.
 </td></tr><tr><td>
 reserve</td><td>
+
 \<int:capacity\></td><td>
 
 *none*</td><td>
@@ -150,6 +155,7 @@ Reserves space in the **Vector** for the specified number of elements (increases
 Note that **Vectors** grow dynamically - you don't have to specifically reserve or resize them. However if you want to add a large number of elements to a **Vector** it can be more efficient to reserve space for them first.
 </td></tr><tr><td>
 resize</td><td>
+
 \<int:size\></td><td>
 
 *none*</td><td>

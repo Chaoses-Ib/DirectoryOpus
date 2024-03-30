@@ -122,6 +122,7 @@ Returns a collection of **[Tab](tab.md)** objects that represent all tabs in thi
 tabgroupleft</td><td>
 
 *string*</td><td>
+
 Returns the name of the Folder Tab Group which was last loaded into the left half of the Lister, or an empty string if no group has been loaded.
 
 The name only changes when a Folder Tab Group is loaded. The current tabs may no longer resemble the named tab group if the user has made changes since the group was loaded. The name persists across restarts, through the Default Lister and saved Layouts.
@@ -258,6 +259,7 @@ IsOnCurrentDesktop</td><td>
 Returns **True** if the Lister is on the current virtual desktop.
 </td></tr><tr><td>
 MoveToDesktop</td><td>
+
 \<string:desktop\></td><td>
 
 *bool*</td><td>
@@ -265,6 +267,7 @@ MoveToDesktop</td><td>
 Moves the Lister window to the specified virtual desktop. Returns **True** if successful.
 </td></tr><tr><td>
 SetTaskbarGroup</td><td>
+
 \<string:group\></td><td>
 
 *bool*</td><td>

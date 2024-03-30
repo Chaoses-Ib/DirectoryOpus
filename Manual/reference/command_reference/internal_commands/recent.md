@@ -37,6 +37,7 @@ Clears the recent folders list.
 </td></tr><tr><td>
 COPY</td><td>
 /O</td><td>
+
 \<Copy command arguments\></td><td>
 
 Selecting a folder from the recent list will trigger the **Copy** command with the specified arguments. For example, you could have one drop-down recent list for **Copy** and another for **Move**, using different arguments. Note that if more than one **Copy** command argument is specified they must be enclosed in quotes.

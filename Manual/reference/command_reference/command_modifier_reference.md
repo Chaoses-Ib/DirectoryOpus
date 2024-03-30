@@ -85,6 +85,7 @@ The button will be disabled if a command clause test is false. This is similar t
 | **@disableif:Set DUAL=toggle**  | button will be disabled if the Lister is in dual-display mode     |
 | **@disableif:!Set DUAL=toggle** | button will be disabled if the Lister is NOT in dual-display mode |
 </td></tr><tr><td>
+
 @disableifpath  
 @disableifpathr</td><td>
 
@@ -145,6 +146,7 @@ The button will be enabled if a command clause test is true. This is similar to 
 | **@enableif:Set DUAL=toggle**  | button will be enabled if the Lister is in dual-display mode     |
 | **@enableif:!Set DUAL=toggle** | button will be enabled if the Lister is NOT in dual-display mode |
 </td></tr><tr><td>
+
 @enableifpath  
 @enableifpathr</td><td>
 
@@ -164,6 +166,7 @@ Paths may use aliases, environment variables, {apppath} codes, and so on, only w
 | **@enableifpath:{apppath\|dopus.exe}**   | *enable if in the folder where Opus is installed*                |
 | **@enableifpath:shell**                  | *enable if in a hosted virtual folder*                           |
 </td></tr><tr><td>
+
 @eval  
 @evalalways</td><td>
 TOBEDONE
@@ -243,6 +246,7 @@ The button will be hidden if a command clause test is false. This is similar to
 | **@hideif:Set DUAL=toggle**  | *button will be hidden if the Lister is in dual-display mode*     |
 | **@hideif:!Set DUAL=toggle** | *button will be hidden if the Lister is NOT in dual-display mode* |
 </td></tr><tr><td>
+
 @hideifpath  
 @hideifpathr</td><td>
 
@@ -293,6 +297,7 @@ You can also use a **!** character to negate the test. It must be the first thin
 |-----------------------------|--------------------------------------------------------|
 | **@hidenosel:!type=\*.jpg** | *hide button if files ending with ".jpg" are selected* |
 </td></tr><tr><td>
+
 @icon  
 @icon!  
 @iconp</td><td>
@@ -322,6 +327,7 @@ In the command editor, you can **Ctrl**+click the **@icon:** string to select th
 
 Toolbar buttons that use **@icon** with **RECYCLEBINEMPTY** will refresh themselves automatically when the recycle bin state changes (this lets you have a button whose icon reflects the state of the recycle bin).
 </td></tr><tr><td>
+
 @if  
 @ifset</td><td>
 
@@ -404,6 +410,7 @@ For example,
     @ifsel:else
     <show an error message>
 </td></tr><tr><td>
+
 @ifpath  
 @ifpathr</td><td>
 
@@ -700,6 +707,7 @@ Supported qualifier keys are `shift`, `ctrl`, `alt` and `win`.
 
 As well as letters and numbers, the following named keys are also supported: `backspace`, `capslock`, `delete`, `down`, `end`, `enter`, `escape`, `home`, `insert`, `left`, `numlock`, `pagedown`, `pageup`, `pause`, `printscr`, `right`, `scrlock`, `space`, `tab`, `up`.
 </td></tr><tr><td>
+
 @showifpath  
 @showifpathr</td><td>
 

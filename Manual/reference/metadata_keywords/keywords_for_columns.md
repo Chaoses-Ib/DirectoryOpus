@@ -184,6 +184,7 @@ Bit depth</td><td>
 picdepth
 </td></tr><tr><td>
 Dimensions</td><td>
+
 picsize  
 dimensions
 </td></tr><tr><td>
@@ -254,6 +255,7 @@ Date digitized</td><td>
 datedigitized
 </td></tr><tr><td>
 Date taken</td><td>
+
 datetaken  
 shootingtime
 </td></tr><tr><td>
@@ -463,6 +465,7 @@ Aspect ratio</td><td>
 aspectratio
 </td></tr><tr><td>
 Audio codec</td><td>
+
 audiocodec  
 mp3type
 </td></tr><tr><td>
@@ -485,10 +488,12 @@ Data rate</td><td>
 datarate
 </td></tr><tr><td>
 Dimensions</td><td>
+
 picsize  
 dimensions
 </td></tr><tr><td>
 Duration</td><td>
+
 duration  
 mp3songlength
 </td></tr><tr><td>
@@ -553,6 +558,7 @@ Artists</td><td>
 mp3artist
 </td></tr><tr><td>
 Audio codec</td><td>
+
 audiocodec  
 mp3type
 </td></tr><tr><td>
@@ -578,6 +584,7 @@ Copyright</td><td>
 copyright
 </td></tr><tr><td>
 Disc number</td><td>
+
 mp3disc  
 mp3disk
 </td></tr><tr><td>

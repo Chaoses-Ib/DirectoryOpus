@@ -69,6 +69,7 @@ If you want to use the **SetAttr** method to modify the attributes of a file you
 You may also want to close a file manually if you want to delete it, as some scripting languages (e.g. *JScript*) have lazy garbage collection and otherwise may keep the file handle open much longer than you intend.
 </td></tr><tr><td>
 Read</td><td>
+
 \<<blob:target>\>  
 \<int:size\></td><td>
 
@@ -82,6 +83,7 @@ If you provide a **Blob** then the return value indicates the number of bytes re
 If **Read** returns zero (or an empty **Blob**), you can use the **error** property to test if anything went wrong, or if the file simply had no more data.
 </td></tr><tr><td>
 Seek</td><td>
+
 \<int:delta\>  
 \<string:method\></td><td>
 
@@ -121,6 +123,7 @@ When you pass a string you can also use **+** and **-** to turn some attributes 
 The return value is **True** if the operation was successful.
 </td></tr><tr><td>
 SetTime</td><td>
+
 \<date:modify\>  
 \<date:create\>  
 \<date:access\></td><td>
@@ -134,6 +137,7 @@ Timestamps are specified as local time - use **SetTimeUTC** to specify them as U
 The return value is **True** for success.
 </td></tr><tr><td>
 SetTimeUTC</td><td>
+
 \<date:modify\>  
 \<date:create\>  
 \<date:access\></td><td>
@@ -157,6 +161,7 @@ Truncates the file at the current position of the write cursor. You can use this
 The return value is **True** for success.
 </td></tr><tr><td>
 Write</td><td>
+
 \<<blob:source>\> or \<string:source\>  
 \<int:from\>  
 \<int:size\></td><td>

@@ -72,6 +72,7 @@ Delete</td><td>
 Deletes the specified favorite or sub-folder. Note that changes you make to the list are not saved until you call the **Save** method.
 </td></tr><tr><td>
 Find</td><td>
+
 \<string:name\>  
 \<int:index\></td><td>
 
@@ -90,6 +91,7 @@ Save</td><td>
 Saves any changes you've made to the favorites list. Once you call this method changes you have made will be reflected in Preferences and the favorites list in Listers. Note that you can only call this method on the main "root" **Favorites** object obtained from the **[DOpus](dopus.md).favorites** property
 </td></tr><tr><td>
 SetName</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>

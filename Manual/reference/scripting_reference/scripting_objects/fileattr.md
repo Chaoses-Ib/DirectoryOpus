@@ -19,54 +19,63 @@ Description
 
 Returns a string representing the attributes that are set (similar to the format displayed in the *Attr* column in the file display).
 </td></tr><tr><td>
+
 a  
 archive</td><td>
 
 *bool*</td><td>
 A file or directory that has changes which need archiving. The A bit is usually set on new or modifies files, and may then be cleared by backup software after it has added the changes to a backup.
 </td></tr><tr><td>
+
 c  
 compressed</td><td>
 
 *bool*</td><td>
 A file or directory that is compressed. For a file, all of the data in the file is compressed. For a directory, compression is the default for newly created files and subdirectories.
 </td></tr><tr><td>
+
 e  
 encrypted</td><td>
 
 *bool*</td><td>
 A file or directory that is encrypted. For a file, all data streams in the file are encrypted. For a directory, encryption is the default for newly created files and subdirectories.
 </td></tr><tr><td>
+
 h  
 hidden</td><td>
 
 *bool*</td><td>
 The file or directory is hidden. It is not included in an ordinary directory listing.
 </td></tr><tr><td>
+
 i  
 nonindexed</td><td>
 
 *bool*</td><td>
 The file or directory is not to be indexed by the content indexing service.
 </td></tr><tr><td>
+
 o  
 offline</td><td>
 
 *bool*</td><td>
 The data of a file is not available immediately. This attribute indicates that the file data is physically moved to offline storage. This attribute is used by Remote Storage, which is the hierarchical storage management software. Applications should not arbitrarily change this attribute.
 </td></tr><tr><td>
+
 p  
 pinned</td><td>
 
 *bool*</td><td>
 The data of the file is to be kept available at all times; it should not be offloaded to offline storage.
 </td></tr><tr><td>
+
 r  
 readonly</td><td>
 
 *bool*</td><td>
 A file that is read-only. Applications can read the file, but cannot write to it or delete it. This attribute is not honored on directories.
 </td></tr><tr><td>
+
 s  
 system</td><td>
 

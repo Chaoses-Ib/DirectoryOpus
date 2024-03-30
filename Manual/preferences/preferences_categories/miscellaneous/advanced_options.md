@@ -272,6 +272,7 @@ At the time of writing, the option affects the progress dialog's speed graph.
 
 **dlldir_security**</td><td>
 </td><td>
+
 This option, enabled by default, prevents Opus from loading DLLs from the current working directory. This reduces the risk of "binary planting" exploits which can trick your computer into running untrusted software when you open things like photos or music from folders in which someone has hidden a malicious DLL.
 
 Turning this option off will reduce your security but may be needed if it causes problems with poorly written shell extensions or other third party software which is installed on your computer. (Such software is typically only tested with Windows Explorer, which does not traditionally used the more secure mode which Opus uses by default.)
@@ -475,6 +476,7 @@ When an icon contains neither of the requested sizes, one of its other sizes is 
 
 **window_corners**</td><td>
 </td><td>
+
 Allows you to override the operating sytem's default style of window corners. "Automatic" uses the standard for your version of Windows. You can also choose from square corners and two sizes of round corners.
 
 It can also affect the intensity of the shadow the OS draws around the active window.
@@ -665,6 +667,7 @@ When turned on, pasting clipboard image data to a file (by pressing <kbd>Ctrl+V<
 
 **psd_image_preference**</td><td>
 </td><td>
+
 Photoshop PSD files can have up to three embedded images: A small (164x164) thumbnail with very lossy compression and no opacity/alpha data; a full-size, flattened preview image, stored in a lossless format, which can include opacity/alpha data; and finally the full, layered image data in Photoshop's internal format. (The layered data is not decoded by Opus, and few things other than Photoshop itself will render it.)
 
 By default, Opus uses the small thumbnail image for thumbnails and the full-size preview image for the viewer. The setting allows you to override this so that one image or the other is used for both thumbnails and the viewer.
@@ -979,6 +982,7 @@ A regular expression which filters the **notify_debug** output by path. If this 
 
 **notify_max_time**</td><td>
 Global</td><td>
+
 The maximum amount of time, in milliseconds, each file display will spend processing change notifications from the filesystem before considering other inputs and events.
 
 Defaults to 50 milliseconds. In rare situations, you may need to raise this from its default value if events are being generated faster than they are consumed. You can also specify 0 (zero) to process change events indefinitely, although you would probably only want to do so as a test, not as a permanent setting. If this is set to zero, or set too high, file displays could become less responsive to user input when a lot of filesystem events are being generated.

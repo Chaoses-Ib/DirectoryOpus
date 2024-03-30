@@ -8,6 +8,7 @@ Property Name</th><th>
 Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
+
 \<configuration property\></td><td>
 
 *variant*</td><td>

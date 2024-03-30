@@ -9,6 +9,7 @@ The following status bar codes are used to style text, display miscellaneous in
 Code</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
+
 \<b\>...\</b\>   
 \<i\>...\</i\>   
 \<u\>...\</u\></td><td>
@@ -22,6 +23,7 @@ Use HTML-style tags to make text on the status bar bold, italic, or underlined.
 \<i\>This Will Be Italic Text\</i\>  
 \<u\>This Will Be Underlined Text\</u\>
 </td></tr><tr><td>
+
 \<#RRGGBB\>...\</#\></td><td>
 
 **Text color**  
@@ -237,6 +239,7 @@ As with **{ifpath:...}**, and with similar caveats to those discussed in its sec
 
 We do not recommend testing paths on network drives, as that can cause major delays if the drive is slow or unreachable. (Windows takes up to 30 seconds to decide a network path cannot be accessed, and can block the program attempting the access until then.) Testing paths on removable drives, or testing the existence of them, may also have unwanted side-effects, but depends on the type of drive you are testing.
 </td></tr><tr><td>
+
 {if:...}   
 {ifset:...}</td><td>
 

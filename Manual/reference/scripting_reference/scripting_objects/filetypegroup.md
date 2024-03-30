@@ -25,6 +25,7 @@ User-defined groups have internal names which are unique, automatically generate
 display_name</td><td>
 
 *string*</td><td>
+
 Returns the display name of this group.  
 The display name is what you see in the File Types editor. Display names may be translated differently in different languages.
 </td></tr><tr><td>
@@ -49,6 +50,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 MatchExt</td><td>
+
 \<string:filename\></td><td>
 
 *bool*</td><td>

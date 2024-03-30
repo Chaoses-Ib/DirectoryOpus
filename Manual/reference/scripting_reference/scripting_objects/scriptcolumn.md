@@ -158,6 +158,7 @@ Set to **True** to prevent the file display being sorted by this column.
 timeout</td><td>
 
 *int*</td><td>
+
 Time, in milliseconds, before Opus may give up waiting for calculation of a column value.  
 Defaults to 10000 (i.e. 10 seconds). Set to 0 (zero) to force Opus to wait forever in all situations.  
 The timeout is not always applicable. When Opus asks a script for column data to show in a file display, the timeout is not used because the calculation happens in the background and doesn't hold anything up. But Opus can give up waiting if a column takes too long in situations where it does hold up other things. This is to avoid blocking forever when scripts get stuck in infinite loops.  

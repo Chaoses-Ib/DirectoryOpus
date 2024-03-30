@@ -74,6 +74,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 Delete</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>
@@ -81,6 +82,7 @@ Delete</td><td>
 Deletes the named variable from the collection. You can also specify a [wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md) to delete multiple variables (or \* for all).
 </td></tr><tr><td>
 Exists</td><td>
+
 \<string:name\></td><td>
 
 *bool*</td><td>
@@ -88,6 +90,7 @@ Exists</td><td>
 Returns **True** if the named variable exists in the collection, or **False** if it doesn't exist.
 </td></tr><tr><td>
 Get</td><td>
+
 \<string:name\></td><td>
 
 *variant*</td><td>
@@ -96,6 +99,7 @@ Returns the value of the named variable.
 You can use this method as an alternative to indexing the collection. One difference to note is that this method directly returns the *value* stored in the variable. If you need the **[Var](var.md)** object which contains the value (for example, to call **var.Delete** or change **var.persist**) then you should index the collection instead. An example of how to do that is in the **Set** documentation, just below.
 </td></tr><tr><td>
 Set</td><td>
+
 \<string:name\>  
 \<variant:value\></td><td>
 

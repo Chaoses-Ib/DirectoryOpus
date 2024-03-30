@@ -26,6 +26,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 Add</td><td>
+
 \<string:name\>  
 \<string:path\></td><td>
 
@@ -34,6 +35,7 @@ Add</td><td>
 Adds a new alias to the system with the specified name and path. Note that you should **not** provide the leading forward-slash (/) in the alias name.
 </td></tr><tr><td>
 Delete</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>

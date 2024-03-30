@@ -112,9 +112,11 @@ You can provide either a **[Blob](blob.md)** object or a string as the *source* 
 Otherwise, *format* must be set to a valid code-page name (e.g. **"gb2312"**, **"utf-8"** etc.), or a Windows code-page ID (e.g. **936**, **65001**). The source will be encoded using the specified code-page and a **[Blob](blob.md)** is returned.
 </td></tr><tr><td>
 IsASCII</td><td>
+
 \<string:input\></td><td>
 
 *bool*</td><td>
+
 Tests the input string to see if it only contains characters that can be represented in ASCII.
 
 If the result is false, the string is not safe to save into a text file unless you use a Unicode format such as UTF-8.
@@ -122,6 +124,7 @@ If the result is false, the string is not safe to save into a text file unless y
 This check is not affected by locales or codepages. Instead, it tests whether the string consists of only 7-bit ASCII characters, such that no characters will be lost or modified if you save the string to a text file and then load it back on any other computer.
 </td></tr><tr><td>
 LanguageStr</td><td>
+
 \<string:name\> or  
 \<int:id\></td><td>
 
@@ -155,9 +158,11 @@ The optional flags are:
 | **s** | subdirectory mode: replace `:` with `;` and remove `\\` from UNC paths |
 </td></tr><tr><td>
 RemoveDiacritics</td><td>
+
 \<string:input\></td><td>
 
 *string*</td><td>
+
 Returns a copy of the input string with any diacritics (accent symbols) removed. For example, "á" would be converted to "a".
 
 This function uses the same rules that are used by the "ignore diacritics" options for pattern matching throughout Opus.

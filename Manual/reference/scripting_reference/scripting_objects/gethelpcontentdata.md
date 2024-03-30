@@ -22,6 +22,7 @@ Adds a PNG or JPG image and makes it available for your help pages. You can use 
 ` If your script is bundled as a [script package](/Manual/scripting/script_add-ins/script_package.md) you can include image files in a sub-directory of the package called **help**, and then load them easily using the **[Script](script.md).LoadHelpImage** method.
 </td></tr><tr><td>
 AddHelpPage</td><td>
+
 \<string:name\>  
 \<string:title\>  
 \<string:body\></td><td>

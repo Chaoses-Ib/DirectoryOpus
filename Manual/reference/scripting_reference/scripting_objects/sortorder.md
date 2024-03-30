@@ -11,6 +11,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 GetOrder</td><td>
+
 \<string:name\></td><td>
 
 *object:***[Vector](vector.md)**</td><td>
@@ -27,6 +28,7 @@ SetOrder</td><td>
 You can pass this method a **[Vector](vector.md)** of strings to change the sort order of the current folder. You can optionally provide the name of a sort order as the second parameter if you’ve got more than one sort order defined.
 </td></tr><tr><td>
 ResetOrder</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>

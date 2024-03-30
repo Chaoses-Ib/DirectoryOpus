@@ -299,6 +299,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 AddHotkey</td><td>
+
 \<string:name\>  
 \<string:key\></td><td>
 
@@ -316,6 +317,7 @@ AutoSize</td><td>
 If a dialog has auto-sizing controls that depend on the sizes of other controls, and you make changes to their sizes at runtime, you can call this method to force the dialog to recalculate all relative control sizes once you've made the required changes.
 </td></tr><tr><td>
 CancelWatchDir</td><td>
+
 \<string:id\></td><td>
 
 *none*</td><td>
@@ -363,6 +365,7 @@ The optional second and third parameters are only used when the control is in a 
 Note that none of the controls will exist until **Create** has been called.
 </td></tr><tr><td>
 DelHotkey</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>
@@ -387,6 +390,7 @@ The optional second parameter lets you control which actions are available. This
 The string this method returns indicates the result of the drag. For a left button drag, this will be "copy", "move", "link" or "drop". For a right-button drag it will always be "drop". If the drag is cancelled it will return "cancel".
 </td></tr><tr><td>
 DestroyFont</td><td>
+
 \<int:id\></td><td>
 
 *none*</td><td>
@@ -394,6 +398,7 @@ DestroyFont</td><td>
 Destroys the specified font using the ID that was returned by the **CreateFont** method.
 </td></tr><tr><td>
 EndDlg</td><td>
+
 \<int:result\></td><td>
 
 *none*</td><td>
@@ -401,6 +406,7 @@ EndDlg</td><td>
 Ends a [script dialog](/Manual/scripting/script_dialogs/README.md) running in detached mode. Normally dialogs end automatically when the user clicks the close button or another button that has its **Close Dialog** property set to **True**. This method lets you end a dialog under script control. The optional parameter specifies the result code that the **Dialog.result** property will return.
 </td></tr><tr><td>
 Folder</td><td>
+
 \<string:title\>  
 \<string:default\>  
 \<bool:expand\>  
@@ -430,6 +436,7 @@ The return value will evaluate to **False** when the dialog is closed, which is 
 If the dialog is not already visible (because **Show** has not been called) then it will become visible when you first call **GetMsg**.
 </td></tr><tr><td>
 GetString</td><td>
+
 \<string:message\>  
 \<string:default\>  
 \<string:max\>  
@@ -453,6 +460,7 @@ Displays a text entry dialog allowing the user to enter a string. The optional p
 The return value is the entered string, or an empty value if the dialog was cancelled. The index of the button selected by the user will be available via the **result** property once this method returns. The left-most button is index **1**, the next button is index **2**, and so on. If a dialog has more than one button then by definition the last (right-most) button is the "cancel" button and so this will return index **0**.
 </td></tr><tr><td>
 KillTimer</td><td>
+
 \<string:name\></td><td>
 
 *none*</td><td>
@@ -460,6 +468,7 @@ KillTimer</td><td>
 Stops the specified timer. The timer must previously have been created by a call to the **SetTimer** method.
 </td></tr><tr><td>
 LoadPosition</td><td>
+
 \<string:id\>  
 \<string:type\></td><td>
 
@@ -472,6 +481,7 @@ The **id** string is a string that Opus can use to identify your dialog or the s
 The optional type parameter lets you control which position elements are restored - specify *"pos"* to only restore the position, *"size"* to only restore the size, or *"pos,size"* to restore both (this is also the default, so you can also omit the argument all together).
 </td></tr><tr><td>
 Multi</td><td>
+
 \<string:title\>  
 \<string:default\>  
 \<object:window\></td><td>
@@ -546,6 +556,7 @@ The icon is automatically removed when your dialog closes. It's also restored au
 Please note that only one icon per dialog is supported.
 </td></tr><tr><td>
 Open</td><td>
+
 \<string:title\>  
 \<string:default\>  
 \<object:window\></td><td>
@@ -561,6 +572,7 @@ Displays a "Browse to Open File" dialog that lets the user select a single file.
 A single **[Item](item.md)** object is returned to indicate the file selected by the user. This object will have an additional **result** property that will be **False** if the user cancelled the dialog - the other normal **Item** properties will only be valid if **result** is **True**.
 </td></tr><tr><td>
 Request</td><td>
+
 \<string:message\>  
 \<string:buttons\>  
 \<string:title\>  
@@ -590,6 +602,7 @@ The return value is the same as the object's **result** property, and represents
 If the dialog is not already visible (because neither **Show** nor **GetMsg** were called) then it will become visible when you call **RunDlg**. (Compatibility note: Prior to Opus 12.22, scripts needed to call **Show** explicitly.)
 </td></tr><tr><td>
 Save</td><td>
+
 \<string:title\>  
 \<string:default\>  
 \<object:window\>  
@@ -609,6 +622,7 @@ The optional *type* parameter consists of one or more pairs of strings, separate
 A **[Path](path.md)** object is returned to indicate the file chosen by the user. This object will have an additional **result** property that will be **False** if the user cancelled the dialog, and the other normal **Path** properties will only be valid if **result** is **True.**
 </td></tr><tr><td>
 SavePosition</td><td>
+
 \<string:id\></td><td>
 
 *none*</td><td>
@@ -620,6 +634,7 @@ Normally you would call **LoadPosition** before displaying your dialog, and **Sa
 The **id** string is a string that Opus can use to identify your dialog or the script it comes from. The template name of the dialog will be automatically appended to this. For example, you might specify **id** as *"kundal"* - Opus would then internally save the position of a dialog called *"dialog1"* as *"kundal!dialog1"*. Make sure you pick a string that other script authors are unlikely to use as Opus has no other way of telling the saved positions apart.
 </td></tr><tr><td>
 SetTimer</td><td>
+
 \<int:period\>  
 \<string:name\></td><td>
 
@@ -642,6 +657,7 @@ If the **detach** property is **False**, the call will not return until the dial
 If the **detach** property is **True**, the call will return immediately and the return value is meaningless. You should then either run a message loop for the “detached” dialog, or call **RunDlg** to run the standard loop.
 </td></tr><tr><td>
 SetTaskbarGroup</td><td>
+
 \<string:group\></td><td>
 
 *bool*</td><td>
@@ -654,6 +670,7 @@ Only works with custom script dialogs (i.e. when you are using the **template** 
 Returns true on success.
 </td></tr><tr><td>
 Vars</td><td>
+
 \<string:id\></td><td>
 
 *object:***[Vars](vars.md)**</td><td>
@@ -663,6 +680,7 @@ Returns a **[Vars](vars.md)** object that represents the variables that are sco
 The **id** string is a string that Opus can use to identify your dialog or the script it comes from. The template name of the dialog will be automatically appended to this. For example, you might specify **id** as *"kundal"* - Opus would then internally save these variables for a dialog called *"dialog1"* as *"kundal!dialog1"*. Make sure you pick a string that other script authors are unlikely to use as Opus has no other way of telling the saved variables apart.
 </td></tr><tr><td>
 WatchDir</td><td>
+
 \<string:id\>  
 \<string:path\>  
 \<string:flags\></td><td>

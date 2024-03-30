@@ -131,6 +131,7 @@ Parent</td><td>
 Removes the last component of the path. Returns **False** if the path does not have a valid parent.
 </td></tr><tr><td>
 ReplaceStart</td><td>
+
 \<string:old\>  
 \<string:new\>  
 \<bool:wholepath\></td><td>
@@ -140,6 +141,7 @@ ReplaceStart</td><td>
 Compares the beginning of the path with the "old" string, and if it matches replaces it with the "new" string. The match is performed at the path component level - for example, an "old" string of "C:\Foo" would match the path "C:\Foo\Bar" but not "C:\FooBar". If the optional *wholepath* argument is set to **True** then the whole path must match rather than just its beginning. Returns **True** if the string matched the path or **False** otherwise.
 </td></tr><tr><td>
 Resolve</td><td>
+
 \<string:flags\></td><td>
 
 *none*</td><td>
@@ -185,6 +187,7 @@ Sets the path represented by the **Path** object to the specified *string*.
 You can also set one **Path** object to the value of another. If you pass a **[Vector](vector.md)** of strings the path will be built from the items in the vector.
 </td></tr><tr><td>
 Split</td><td>
+
 \<int:first\>  
 \<int:count\></td><td>
 

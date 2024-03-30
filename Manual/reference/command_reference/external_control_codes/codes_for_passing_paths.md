@@ -18,6 +18,7 @@ Description
 {s!}</td><td>
 Source path, long filenames, not required.
 </td></tr><tr><td>
+
 {sourcepath\$}</td><td>
 {s}</td><td>
 Source path, long filenames, required.
@@ -26,6 +27,7 @@ Source path, long filenames, required.
 {d!}</td><td>
 Destination path, long filenames, not required.
 </td></tr><tr><td>
+
 {destpath\$}</td><td>
 {d}</td><td>
 Destination path, long filenames, required.
@@ -34,6 +36,7 @@ Destination path, long filenames, required.
 {ss!}</td><td>
 Source path, short filenames, not required.
 </td></tr><tr><td>
+
 {sourcepathshort\$}</td><td>
 {ss}</td><td>
 Source path, short filenames, required.
@@ -42,6 +45,7 @@ Source path, short filenames, required.
 {ds!}</td><td>
 Destination path, short filenames, not required.
 </td></tr><tr><td>
+
 {destpathshort\$}</td><td>
 {ds}</td><td>
 Destination path, short filenames, required.

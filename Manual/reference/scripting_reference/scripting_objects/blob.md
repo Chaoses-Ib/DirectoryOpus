@@ -29,6 +29,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 Compare</td><td>
+
 \<<Blob:source>\>  
 \<int:to\>  
 \<int:from\>  
@@ -69,6 +70,7 @@ As well as copying from another **Blob**, you can use this method to initialise 
 If this **Blob** is not currently large enough to contain the copied data it will be resized automatically.
 </td></tr><tr><td>
 Find</td><td>
+
 \<<Blob:search>\>  
 \<int:from\>  
 \<int:size\></td><td>
@@ -95,6 +97,7 @@ Init</td><td>
 Initialises the contents of the **Blob** (every byte within the blob will be set to 0). Equivalent to *Set(0)*.
 </td></tr><tr><td>
 Resize</td><td>
+
 \<int:size\></td><td>
 
 *none*</td><td>
@@ -110,6 +113,7 @@ Reverse</td><td>
 Reverses the contents of the **Blob**.
 </td></tr><tr><td>
 Set</td><td>
+
 \<byte:value\>  
 \<int:to\>  
 \<int:size\></td><td>
@@ -119,8 +123,10 @@ Set</td><td>
 Sets the contents of the **Blob** to the specified byte value (every byte within the blob will be set to that value). By default the whole **Blob** will be affected. The option *to* parameter lets you specify a byte offset to start at, and the optional *size* parameter lets you control the number of bytes affected.
 </td></tr><tr><td>
 ToArray</td><td>
+
 \<int:from\>  
 \<int:size\></td><td>
+
 SAFEARRAY of  
 VT_UI1</td><td>
 
@@ -129,8 +135,10 @@ from - specifies the byte offset within the source **Blob** to copy from. Defaul
 size - specifies the number of bytes to copy. Defaults to the full size of the source **Blob**.
 </td></tr><tr><td>
 ToVBArray</td><td>
+
 \<int:from\>  
 \<int:size\></td><td>
+
 SAFEARRAY of  
 VT_VARIANT</td><td>
 

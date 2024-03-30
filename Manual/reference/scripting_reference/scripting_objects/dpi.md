@@ -29,6 +29,7 @@ Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 Divide</td><td>
+
 \<int:value\></td><td>
 
 *int*</td><td>
@@ -36,6 +37,7 @@ Divide</td><td>
 Divides the provided size by the system DPI; e.g. if the system DPI was set to 150%, **DPI.Divide(60)** would return **40.**
 </td></tr><tr><td>
 Scale</td><td>
+
 \<int:value\></td><td>
 
 *int*</td><td>
