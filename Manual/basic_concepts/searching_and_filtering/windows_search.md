@@ -20,8 +20,6 @@ To search the current folder, click in the search field (or press <kbd>F3</kbd>)
 
 ##### Choosing the search engine
 
-
-
 ![](/Manual/images/media/13/quicksearch_options.png)
 
 To select a different search engine, click the button on the left of the search field to dropdown the menu.

@@ -17,8 +17,6 @@ Internally, these actions are defined by the items on the **Events** tab for the
 
 ##### Configuring drag-and-drop actions
 
-
-
 ![](/Manual/images/media/13/default_draganddrop.png)
 
 This screenshot shows the [File Type editor](/Manual/file_types/filetype_editor/README.md) for the **All files and folders** file type. The events are all defined as some variant of the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.

@@ -18,8 +18,6 @@ The pop-up displays the resolution and size of the image at the top. The drop-do
 
 The **Delete** button at the bottom lets you remove the cover art image.
 
-
-
 ![](/Manual/images/media/13/metadata_-_coverart_context.png)
 
   You can also right-click on the pop-up window to display a context menu with additional actions:

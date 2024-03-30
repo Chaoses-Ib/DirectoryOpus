@@ -1,10 +1,6 @@
 # Directory Opus 13 - Tips for Upgrading from Opus 12
 
-
-
 ![](/Manual/images/release_history/o13up_01_upgrade.png)
-
-
 
 #### Basics
 

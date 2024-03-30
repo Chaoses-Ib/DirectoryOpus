@@ -14,11 +14,7 @@ The buttons above the presets list let you manage your presets. The **Last Renam
 
 The drop-down **Manage** menu provides various commands for managing your presets (you can also right-click a preset to display its context menu).
 
-
-
 ![](/Manual/images/media/13/preset_management_menu.png)
-
-
 
 - **Save**: Updates the currently loaded preset with the current settings from the rename dialog.
 - **Save As**: Save the current rename dialog settings a sa new preset.

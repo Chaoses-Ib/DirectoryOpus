@@ -344,7 +344,30 @@ whitebalance
 
 ##### Programs
 
-\<commandtable columns="2"\> \$\$ Column \$\$ Keyword \$\$ Copyright \$\$ copyright \$\$ Company \$\$ companyname \$\$ Module Description \$\$ moddesc \$\$ Module Version \$\$ modversion \$\$ Product Name \$\$ prodname \$\$ Product Version \$\$ prodversion \</commandtable\>
+<table>
+<thead><tr><th>
+Column</th><th>
+Keyword
+</th></tr></thead><tbody><tr><td>
+Copyright</td><td>
+copyright
+</td></tr><tr><td>
+Company</td><td>
+companyname
+</td></tr><tr><td>
+Module Description</td><td>
+moddesc
+</td></tr><tr><td>
+Module Version</td><td>
+modversion
+</td></tr><tr><td>
+Product Name</td><td>
+prodname
+</td></tr><tr><td>
+Product Version</td><td>
+prodversion
+</td></tr></tbody>
+</table>
 
 ##### File Size
 

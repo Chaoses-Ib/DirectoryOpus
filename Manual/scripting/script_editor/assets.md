@@ -1,7 +1,5 @@
 # Script Assets
 
-
-
 ![](/Manual/images/media/13/scripteditor_assets.png)
 
  The Assets panel in the script editor is where you view and manage the various files and resources that are part of your script.

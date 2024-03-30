@@ -33,8 +33,6 @@ The "file" and "folder" icons on the filter bar that show the file and folder to
 
 ##### Filter options
 
-
-
 ![](/Manual/images/media/13/filter_bar_menu.png)
 
 The options button shows a menu that lets you control how the filter is applied:
@@ -47,8 +45,6 @@ The options button shows a menu that lets you control how the filter is applied:
 Use the **Save as default** command to save the current settings as the defaults.
 
 ##### Filetype filtering
-
-
 
 ![](/Manual/images/media/13/filter_bar_filetypes.png)
 

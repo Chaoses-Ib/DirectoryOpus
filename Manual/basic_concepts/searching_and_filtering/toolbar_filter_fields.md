@@ -24,8 +24,6 @@ You can clear the quick filter at any time by pressing the <kbd>Esc</kbd> key.
 
 ##### Folder format filters rather than quick filter
 
-
-
 ![](/Manual/images/media/13/filter_field_2.png)
 
 If you click the icon on the left of the field, a pop-up menu opens that lets you configure exactly how the filter field behaves.

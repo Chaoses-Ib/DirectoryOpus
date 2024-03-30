@@ -6,8 +6,6 @@ These buttons make use of the [source and destination](/Manual/basic_concepts/so
 
 ##### Copy Files
 
-
-
 ![](/Manual/images/media/13/copy_menu.png)
 
  The drop-down menu attached to the **Copy Files** button contains the following file copy commands:
@@ -25,8 +23,6 @@ These buttons make use of the [source and destination](/Manual/basic_concepts/so
 - **Copy Settings**: Opens the [Copying Files](/Manual/preferences/preferences_categories/file_operations/copying_files/README.md) Preferences page.
 
 ##### Move
-
-
 
 ![](/Manual/images/media/13/move_menu.png)
 

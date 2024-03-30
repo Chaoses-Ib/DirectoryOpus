@@ -14,8 +14,6 @@ The info tooltip also shows where the Lister came from (in this case a system la
 
 ##### Format commands via info icon right-click menu
 
-
-
 ![](/Manual/images/media/13/status_info_menu.png)
 
 Right-click the status bar info icon to show its context menu. This gives you access to various folder format-related commands.

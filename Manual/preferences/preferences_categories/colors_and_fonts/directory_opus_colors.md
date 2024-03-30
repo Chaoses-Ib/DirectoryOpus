@@ -17,8 +17,6 @@ Note that when you edit colors on this page you're only editing the colors in th
 
 ##### Editing Colors
 
-
-
 ![](/Manual/images/media/13/color_picker.png)
 
  The color picker button ![](/Manual/images/media/13/color_control.png) is the main control for editing colors. Some color pickers have a checkbox on them, which lets the associated color be enabled or disabled. Clicking the button displays the color picker.

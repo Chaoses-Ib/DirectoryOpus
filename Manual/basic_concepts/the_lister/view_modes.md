@@ -1,7 +1,5 @@
 # View Modes
 
-
-
 ![](/Manual/images/media/13/view_mode_menu.png)
 
 Files and folders in the file displays can be shown in a number of different view modes. You can change view mode using the drop-down **View** menu in the default toolbar.

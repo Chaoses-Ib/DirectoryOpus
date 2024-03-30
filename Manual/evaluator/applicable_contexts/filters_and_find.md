@@ -19,9 +19,76 @@ The special variables `subfolder` and `quick_filter` tell you which mode the exp
   
 The variables available to the evaluator in this context are:
 
-\<commandtable columns="3"\> \$\$ Variable \$\$ Type \$\$ Description \$\$ \<nobr\>*column name*\</nobr\> \$\$ *varies* \$\$ All the [column keywords](/Manual/reference/metadata_keywords/keywords_for_columns.md) are available as variables in this evaluation context.
+<table>
+<thead><tr><th>
+Variable</th><th>
+Type</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
 
-Note that some keywords may use characters like a `:` that aren't valid in variable names - to access them, use the [val](/Manual/reference/evaluator/val.md) function. \$\$ file_name \$\$ *string* \$\$ Returns the full name of the file the filter is being run for. This may be different from **file** which (as a column keyword), returns the value of the *Name* column (which e.g. may have file extensions hidden). \$\$ filter_args \$\$ *string* \$\$ In *quick filter mode*, this returns the value of the argument string that follows the pre-defined filter name in the quick filter. For example a quick filter of `?bigfiles:5` would invoke a filter called "bigfiles", and (if it was an evaluation filter) pass it the value "5" in this variable. \$\$ is_dir \$\$ *bool* \$\$ Returns **true** if the expression is being run for a folder, **false** if it's being run for a file. \$\$ opt_anyword \$\$ *bool* \$\$ In *quick filter mode*, returns **true** if the "any word" option is enabled. \$\$ opt_ignore \$\$ *bool* \$\$ In *quick filter mode*, returns **true** if the "ignore diacritics" option is enabled. \$\$ opt_partial \$\$ *bool* \$\$ In *quick filter mode*, returns **true** if the "partial match" option is enabled. \$\$ opt_regex \$\$ *bool* \$\$ In *quick filter mode*, returns **true** if the "regular expression" option is enabled. \$\$ quick_filter \$\$ *bool* \$\$ Returns **true** if the expression is being called for a quick filter. \$\$ subfolder \$\$ *bool* \$\$ Returns **true** if the expression is being called in *recurse mode*. \</commandtable\>
+\<nobr\>*column name*\</nobr\></td><td>
+
+*varies*</td><td>
+
+All the [column keywords](/Manual/reference/metadata_keywords/keywords_for_columns.md) are available as variables in this evaluation context.
+
+Note that some keywords may use characters like a `:` that aren't valid in variable names - to access them, use the [val](/Manual/reference/evaluator/val.md) function.
+</td></tr><tr><td>
+file_name</td><td>
+
+*string*</td><td>
+
+Returns the full name of the file the filter is being run for. This may be different from **file** which (as a column keyword), returns the value of the *Name* column (which e.g. may have file extensions hidden).
+</td></tr><tr><td>
+filter_args</td><td>
+
+*string*</td><td>
+
+In *quick filter mode*, this returns the value of the argument string that follows the pre-defined filter name in the quick filter. For example a quick filter of `?bigfiles:5` would invoke a filter called "bigfiles", and (if it was an evaluation filter) pass it the value "5" in this variable.
+</td></tr><tr><td>
+is_dir</td><td>
+
+*bool*</td><td>
+
+Returns **true** if the expression is being run for a folder, **false** if it's being run for a file.
+</td></tr><tr><td>
+opt_anyword</td><td>
+
+*bool*</td><td>
+
+In *quick filter mode*, returns **true** if the "any word" option is enabled.
+</td></tr><tr><td>
+opt_ignore</td><td>
+
+*bool*</td><td>
+
+In *quick filter mode*, returns **true** if the "ignore diacritics" option is enabled.
+</td></tr><tr><td>
+opt_partial</td><td>
+
+*bool*</td><td>
+
+In *quick filter mode*, returns **true** if the "partial match" option is enabled.
+</td></tr><tr><td>
+opt_regex</td><td>
+
+*bool*</td><td>
+
+In *quick filter mode*, returns **true** if the "regular expression" option is enabled.
+</td></tr><tr><td>
+quick_filter</td><td>
+
+*bool*</td><td>
+
+Returns **true** if the expression is being called for a quick filter.
+</td></tr><tr><td>
+subfolder</td><td>
+
+*bool*</td><td>
+
+Returns **true** if the expression is being called in *recurse mode*.
+</td></tr></tbody>
+</table>
 
 The return value from the evaluation expression depends on the mode it was called in, although in all cases it must return a *bool*:
 

@@ -1,7 +1,8 @@
-# Introduction
+# Introduction 
+
 ![](/Manual/images/media/13/opus13_box_front.png)
 
-*Welcome to Directory Opus, your Windows file manager!*
+ *Welcome to Directory Opus, your Windows file manager!*
 
 Here's what Opus offers:
 

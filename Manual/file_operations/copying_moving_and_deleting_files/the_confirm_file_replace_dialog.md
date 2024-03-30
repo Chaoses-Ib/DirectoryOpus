@@ -24,11 +24,7 @@ The context menu displayed when right-clicking a file's thumbnail (or icon) can 
 
 Fundamentally, you need to decide if you still want to copy the file or not. If you **do** still want to copy the file, your available choices are:
 
-
-
 ![](/Manual/images/media/13/replace_-_replace.png)
-
-
 
 - **Replace:** Copy the incoming file over the top of the existing one. You can click the main part of the button to do this. Alternatively, click the arrow on the right of the button to open the menu, then choose the first option.
 - **Replace All:** Replace the current file, and automatically replace any subsequent clashing files for the remainder of the operation. You can use the menu to choose this or, as a shortcut, hold the <kbd>Shift</kbd> key while clicking the **Replace** button.
@@ -49,11 +45,7 @@ The filename edit field responds to the same (configurable) control keys that th
 
 If you decide you **do not** want to copy the file after all, the available choices are:
 
-
-
 ![](/Manual/images/media/13/replace_-_skip.png)
-
-
 
 - **Skip:** Skip over this file. The incoming file is not copied and the existing file is left alone. You can click the main part of the button to do this. Alternatively, click the arrow on the right of the button to open the menu, then choose the first option.
 - **Skip All:** Skip over this file, and skip all subsequent clashing files for the remainder of the operation. You can use the menu to choose this or, as a shortcut, hold the <kbd>Shift</kbd> key while clicking the **Skip** button.

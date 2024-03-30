@@ -14,11 +14,7 @@ The drop-down menu attached to the **Delete** button on the default toolbar cont
 
 ##### Delete menu
 
-
-
 ![](/Manual/images/media/13/delete_dropdown.png)
-
-
 
 - **Delete**: Delete selected files or folders, to the recycle bin by default
 - **Secure Wipe**: [Securely deletes](/Manual/file_operations/copying_moving_and_deleting_files/deleting_files/secure_delete.md) selected files or folders so they can't be recovered

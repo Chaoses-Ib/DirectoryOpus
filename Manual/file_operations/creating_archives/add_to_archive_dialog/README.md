@@ -2,8 +2,6 @@
 
 When you use the **Archive Files** button or context menu commands, the **Add to Archive** dialog box is displayed.
 
-
-
 ![](/Manual/images/media/13/add_to_archive.png)
 
  The top of the dialog is always the same and is where you select the archive type, path and name.

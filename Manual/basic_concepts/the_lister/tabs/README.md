@@ -39,8 +39,6 @@ You can create and manage your tab groups from the [Folder Tabs / Groups](/Manua
 
 ##### Default menu commands
 
-
-
 ![](/Manual/images/media/13/tab_menu.png)
 
 The **Folder / Folder Tabs** menu in the default toolbars contains a number of commands used to control tabs:
@@ -68,8 +66,6 @@ You can manipulate a folder tab with the mouse in the following ways:
 - Right-clicking a tab displays the tab's context menu.
 
 ##### Folder tab context menu
-
-
 
 ![](/Manual/images/media/13/tab_context_menu.png)
 

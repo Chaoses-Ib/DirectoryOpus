@@ -6,8 +6,6 @@ When the utility panel is displayed, you can switch between its various modes us
 
 ![](/Manual/images/media/13/utility_pane_dropdown.png)
 
-
-
 ##### Tools
 
 These are all accessed from the **Tools** menu:

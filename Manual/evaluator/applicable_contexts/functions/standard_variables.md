@@ -1,5 +1,92 @@
 A number of variables are available to the evaluator in this context. Note that some are only applicable to toolbars in the [standalone image viewer](/Manual/additional_functionality/viewing_images/README.md), and some only apply to Lister toolbars.
 
-\<commandtable columns="3"\> \$\$ Variable \$\$ Type \$\$ Description \$\$ dest \$\$ *path* \$\$ The current destination path. \$\$ dest_shell \$\$ *bool* \$\$ **True** if the destination is a shell (virtual) folder hosted by Explorer, otherwise **false**. \$\$ expanded \$\$ *uint* \$\$ Returns the number of expanded directories. \$\$ fullscreen \$\$ *bool* \$\$ *Viewer only*. **True** if the viewer is fullscreen, otherwise **false**. \$\$ key_repeat \$\$ *bool* \$\$ **True** if the function was launched from a repeated key press (i.e. the key was held down). \$\$ seldirs \$\$ *uint* \$\$ Returns the number of selected directories. \$\$ selfiles \$\$ *uint* \$\$ Returns the number of selected files. \$\$ selimage \$\$ *bool* \$\$ *Viewer only*. **True** if an area of the image has been selected, **false** otherwise. \$\$ selitems \$\$ *uint* \$\$ Returns the total number of selected items. \$\$ source \$\$ *path* \$\$ The current source path. \$\$ source_shell \$\$ *bool* \$\$ **True** if the source is a shell (virtual) folder hosted by Explorer, otherwise **false**. \$\$ totaldirs \$\$ *uint* \$\$ Returns the total number of directories. \$\$ totalfiles \$\$ *uint* \$\$ Returns the total number of files. \$\$ totalitems \$\$ *uint* \$\$ Returns the total number of items. \$\$ viewmode \$\$ *str* \$\$ Returns the current view mode in the file display. Values are **largeicons**, **smallicons**, **list**, **details**, **power**, **thumbnails** and **tiles**. \</commandtable\>
+<table>
+<thead><tr><th>
+Variable</th><th>
+Type</th><th>
+Description
+</th></tr></thead><tbody><tr><td>
+dest</td><td>
+
+*path*</td><td>
+The current destination path.
+</td></tr><tr><td>
+dest_shell</td><td>
+
+*bool*</td><td>
+
+**True** if the destination is a shell (virtual) folder hosted by Explorer, otherwise **false**.
+</td></tr><tr><td>
+expanded</td><td>
+
+*uint*</td><td>
+Returns the number of expanded directories.
+</td></tr><tr><td>
+fullscreen</td><td>
+
+*bool*</td><td>
+
+*Viewer only*. **True** if the viewer is fullscreen, otherwise **false**.
+</td></tr><tr><td>
+key_repeat</td><td>
+
+*bool*</td><td>
+
+**True** if the function was launched from a repeated key press (i.e. the key was held down).
+</td></tr><tr><td>
+seldirs</td><td>
+
+*uint*</td><td>
+Returns the number of selected directories.
+</td></tr><tr><td>
+selfiles</td><td>
+
+*uint*</td><td>
+Returns the number of selected files.
+</td></tr><tr><td>
+selimage</td><td>
+
+*bool*</td><td>
+
+*Viewer only*. **True** if an area of the image has been selected, **false** otherwise.
+</td></tr><tr><td>
+selitems</td><td>
+
+*uint*</td><td>
+Returns the total number of selected items.
+</td></tr><tr><td>
+source</td><td>
+
+*path*</td><td>
+The current source path.
+</td></tr><tr><td>
+source_shell</td><td>
+
+*bool*</td><td>
+
+**True** if the source is a shell (virtual) folder hosted by Explorer, otherwise **false**.
+</td></tr><tr><td>
+totaldirs</td><td>
+
+*uint*</td><td>
+Returns the total number of directories.
+</td></tr><tr><td>
+totalfiles</td><td>
+
+*uint*</td><td>
+Returns the total number of files.
+</td></tr><tr><td>
+totalitems</td><td>
+
+*uint*</td><td>
+Returns the total number of items.
+</td></tr><tr><td>
+viewmode</td><td>
+
+*str*</td><td>
+
+Returns the current view mode in the file display. Values are **largeicons**, **smallicons**, **list**, **details**, **power**, **thumbnails** and **tiles**.
+</td></tr></tbody>
+</table>
 
 As well as the above variables, you can also use [evaluator functions](/Manual/reference/evaluator/README.md) like [ischecked](/Manual/reference/evaluator/ischecked.md) and [isenabled](/Manual/reference/evaluator/isenabled.md) to query other information about the state of the Lister.

@@ -17,11 +17,7 @@ Everything 1.5 is currently in "alpha testing", and although it can be configure
 
 ##### Configuring Everything to work with Opus
 
-
-
 ![](/Manual/images/media/13/everything_options.png)
-
-
 
 ![](/Manual/images/media/13/everything_indexes.png)
 
@@ -51,8 +47,6 @@ On a large folder the speed boost from using the index can be dramatic.
 The various options on the [Folder Sizes](/Manual/preferences/preferences_categories/folders/folder_sizes/README.md) Preferences page can be used to configure how Opus uses Everything for folder sizes.
 
 ##### Searching
-
-
 
 ![](/Manual/images/media/13/everything_search.png)
 

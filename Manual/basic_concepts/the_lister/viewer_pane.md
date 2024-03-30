@@ -63,8 +63,6 @@ Depending on the plugin (if any) used to view a particular file, not all of the 
 
 ##### Viewer pane context menu
 
-
-
 ![](/Manual/images/media/13/viewer_pane_context_menu.png)
 
 The viewer pane also has a context menu - although this too can vary depending on the plugin - accessed by right-clicking on the currently displayed image.
