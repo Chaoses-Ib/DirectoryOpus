@@ -1,6 +1,6 @@
 # 文件窗口
 
-Opus 中的主文件管理器窗口称为“文件窗口”浏览器。
+Opus 中的主文件管理器窗口称为“文件窗口”。
 
 ![](/Manual/images/media/13/lister_simple.png)
 
