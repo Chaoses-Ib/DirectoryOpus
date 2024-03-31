@@ -9,6 +9,9 @@
 - [目录](SUMMARY.md)
 - 镜像：[GitBook](https://chaoses-ib.gitbook.io/directory-opus/)（支持 AI 搜索）、~~[看云](https://www.kancloud.cn/chaoses/directory-opus/content)~~、~~[FastGit](https://hub.fastgit.xyz/Chaoses-Ib/DirectoryOpus)~~
 
+> [!TIP]
+> 可安装用户脚本 [Directory Opus 中文手册](https://greasyfork.org/zh-CN/scripts/491353-directory-opus-chinese-manual?locale_override=1) 来在打开 DOpus 的官方英文手册（<kbd>F1</kbd>）时自动跳转到中文手册的相应页面。
+
 ## 为什么要使用第三方文件管理器？
 文件系统是目前使用最为广泛的数据组织形式，文件管理器是在 GUI（图形用户界面）下对这一系统的主要管理工具。如果你对使用文件系统进行数据组织有较强的依赖，文件管理器的好坏会在一定程度上影响你的工作效率。而 Windows 的官方文件管理器，即 Windows 文件资源管理器（Windows File Explorer）在功能性上并不出色，相比大部分第三方文件管理器都有所欠缺。因此，如果你需要提高自己的文件管理效率，使用第三方文件管理器是一种不错的方法。
 

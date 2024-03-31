@@ -1,3 +1,7 @@
+# 目录
+> [!TIP]
+> 可安装用户脚本 [Directory Opus 中文手册](https://greasyfork.org/zh-CN/scripts/491353-directory-opus-chinese-manual?locale_override=1) 来在打开 DOpus 的官方英文手册（<kbd>F1</kbd>）时自动跳转到中文手册的相应页面。
+
 - [版权](/Manual/copyrights.zh.md "copyrights")
 - [许可证](/Manual/licence/README.zh.md "licence")
   - [最终用户许可条件](/Manual/licence/end_user.zh.md "licence:end_user")
