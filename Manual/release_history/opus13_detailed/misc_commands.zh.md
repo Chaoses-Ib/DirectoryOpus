@@ -186,7 +186,7 @@
   - “HEADING=Xyz”而是使用“Xyz”作为标题。
   - 在新默认工具栏的各个位置使用。
   - //<示例：//> `Go DRIVEBUTTONS=lettersbeforelabels HEADING`
-- `Favorites` 和 `Prefs LAYOUTLIST` 命令有新的 `MENUMARKERS` 参数，该参数会导致为生成按钮列表的顶级菜单中的任何菜单显示箭头字形。
+- `Favorites` 和 `Prefs LAYOUTLIST` 命令有新的 `MENUMARKERS` 参数，该参数会导致为生成按钮列表的顶级菜单中的任何菜单显示箭头标志。
 - `Favorites EXCLUDEBRANCH` -- 允许通配符在工具栏/菜单上显示它时排除收藏列表的分支，
   - 收藏栏的“其他收藏”菜单使用它来避免显示“收藏栏”分支的第二个副本，该副本显示在工具栏本身上。
 - `Favorites BRANCH` -- 根据指定的分支过滤收藏列表。（也可以通过 `PATH` 参数完成，但 `BRANCH` 对于单个分支来说具有更简单的语法。）

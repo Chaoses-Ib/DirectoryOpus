@@ -18,7 +18,7 @@
 
 ![](/Manual/images/media/menu_button_2.png)
 
-较小的一部分 - 包含箭头字形 - 显示下拉菜单。单击按钮的箭头部分会下拉菜单。
+较小的一部分 - 包含箭头标志 - 显示下拉菜单。单击按钮的箭头部分会下拉菜单。
 
 ![](/Manual/images/media/menu_button_3.png)
 

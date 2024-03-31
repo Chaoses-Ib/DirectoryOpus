@@ -469,7 +469,7 @@ MENUMARKERS</td><td>
 
 *(无值)*</td><td>
 
-与 **LAYOUTLIST** 一起使用时，如果生成的布局列表包含任何子菜单，则顶级按钮将显示一个指示下拉菜单的字形。
+与 **LAYOUTLIST** 一起使用时，如果生成的布局列表包含任何子菜单，则顶级按钮将显示一个指示下拉菜单的标志。
 
 *示例：* `Prefs LAYOUTLIST MENUMARKERS`
 </td></tr><tr><td>
