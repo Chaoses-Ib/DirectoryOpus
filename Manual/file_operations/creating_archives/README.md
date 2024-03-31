@@ -8,7 +8,7 @@ Enter the name of the archive (or accept the default name) and use the **Archive
 
 See the documentation for the [Create Folder](creating_folders.md) dialog for more information about using this function.
 
-##### Adding files to a new archive
+### Adding files to a new archive
 
 Once you've created a new archive, you can add files to it in several ways. Opus treats archives exactly like a folder; this means you can:
 

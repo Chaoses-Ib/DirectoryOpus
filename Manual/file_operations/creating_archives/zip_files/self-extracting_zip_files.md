@@ -8,7 +8,7 @@ To create a self-extracting archive, you must first [create the source Zip archi
 
 This context menu can be disabled through the [Archive Context Menu](/Manual/preferences/preferences_categories/zip_and_other_archives/archive_context_menu.md) Preferences page, so if you don't see it when you right-click on a Zip file you may need to go and turn it on.
 
-##### Self-Extracting Archive options
+### Self-Extracting Archive options
 
 The **Create Self-Extracting Archive** dialog gives you several options that control the final self-extracting archive:
 
@@ -22,7 +22,7 @@ The **Create Self-Extracting Archive** dialog gives you several options that con
 
 Once you have chosen your parameters, click the **OK** button to perform the actual conversion process. You should be left with a **.exe** file slightly larger than the original Zip archive.
 
-##### The self-extractor
+### The self-extractor
 
 When someone runs your self-extracting archive, they will see a window similar to this:
 

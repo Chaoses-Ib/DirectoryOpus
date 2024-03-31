@@ -6,7 +6,7 @@ These options apply when Opus implements its own display for the *Desktop* folde
 
 You can configure the file display format for *Desktop* when the native display is enabled using the [Folder Formats](../folder_formats/README.md) page, by adding a **Path Format** for the desktop folder.
 
-##### Desktop contents
+### Desktop contents
 
 - **All Users / Shared Desktop contents**: Includes desktop files and folders from the *All Users* desktop. As well as the special folders like *This PC*, *Network*, etc, the desktop presents a merged view of two underlying disk folders, which is where files that you drop on the desktop are actually stored. One folder contains your own personal files, and the other contains files that are accessible to all users. This option lets you hide the All Users files, leaving only your own personal files displayed.
 - **Collections**: Includes a link to the *File Collections* root folder (the folder that displays all your top-level [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/README.md)).
@@ -20,6 +20,6 @@ You can configure the file display format for *Desktop* when the native display 
 - **Recycle Bin**: Includes a link to the *Recycle Bin* folder.
 - **This PC**: Includes an item for the *Computer* virtual folder (the folder that displays your disk drives and network shares).
 
-##### Additional folders
+### Additional folders
 
 The **Include additional folders when using Windows Search from the Desktop** option at the bottom of the page controls which folders are searched when you use Windows Search (e.g. via the search field in the top right of the Lister) from the Desktop folder. By default, Opus only searches your personal Desktop folder (**/desktopdir**) and, if configured to appear, the shared desktop folder (**/commondesktopdir**). If this option is turned on the search will include the profile and shared Desktop folders and also the Documents folder, and potentially others. (It is up to Windows exactly which folders are searched, and you'll see similar from Explorer.)

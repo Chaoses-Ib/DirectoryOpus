@@ -1,6 +1,6 @@
 # String Editor
 
-##### String resources
+### String resources
 
 While script dialogs provide a multi-lingual interface in the form of [language overlays](dialog_editor/language_overlays.md), scripts can also use *string resources* which provide an easy way for a script to support multiple languages for ad-hoc strings.
 
@@ -20,7 +20,7 @@ This tests the current language Opus is running in and prints an appropriate “
 
     DOpus.Output DOpus.Strings.Get("error")
 
-##### String editor
+### String editor
 
 To add a new string resource language, switch to the *Resources* tab in the script editor, right-click the script file in question, and choose **New Strings** from the context menu. Opus will prompt you to select the language you want to add strings for.
 

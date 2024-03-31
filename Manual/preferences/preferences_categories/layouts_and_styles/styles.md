@@ -4,7 +4,7 @@ This page lets you create and edit [Lister styles](/Manual/basic_concepts/the_li
 
 Use the toolbar buttons above the list to create and manage styles. Double-click an existing style, or select it and click the **Edit** button to edit it.
 
-##### Edit Lister Style
+### Edit Lister Style
 
 Creating or editing a style brings up the **Edit Lister Style** dialog.
 
@@ -23,7 +23,7 @@ Below these fields are a number of checkboxes and drop-downs that let you define
 - **Format Lock**: The style can turn the [Format Lock](/Manual/basic_concepts/folder_options/locking_the_format.md) on or off.
 - **Filmstrip**: This option puts the Lister into a special mode with the Viewer Pane turned on, and a single scrollable row of thumbnails shown in a single file display.
 
-##### File display configuration
+### File display configuration
 
 Below the options for the Lister elements are additional options that let you configure the folder, folder format and tabs that the style displays. If these options are turned off then the style will only reconfigure the Lister - it won't change what folder the Lister is currently showing - but you can also define a style that reads a new folder, opens a set of tabs, etc.
 

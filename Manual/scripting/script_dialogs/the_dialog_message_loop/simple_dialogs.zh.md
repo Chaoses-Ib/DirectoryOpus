@@ -6,7 +6,7 @@
 
 以下是一个使用简单方法显示对话框的脚本示例。还包括用于对话框的原始 XML。如果您想尝试此示例，请创建一个新的工具栏按钮，并将脚本代码粘贴到命令编辑器的 **Script Code** 标签页中，并将资源 XML 粘贴到 **Resources** 标签页中。所有以下示例均以 VBScript 编写。
 
-##### 脚本代码 - VBScript
+### 脚本代码 - VBScript
 
     Function OnClick(ByRef clickData)
       Set Dlg = DOpus.Dlg
@@ -16,7 +16,7 @@
       DOpus.Output "Return code = " & retVal
     End Function
 
-##### 脚本代码 - JScript
+### 脚本代码 - JScript
 
     function OnClick(clickData) {
       var Dlg = DOpus.Dlg;
@@ -26,7 +26,7 @@
       DOpus.Output("Return code = " + retVal);
     }
 
-##### 资源
+### 资源
 
     <resources>
       <resource name="testdlg" type="dialog">

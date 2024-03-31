@@ -9,11 +9,11 @@
 
 使用上下文菜单 **添加到压缩包文件** 命令，或从工具栏中选择 **压缩包文件** 命令，显示 [添加到压缩包文件对话框](/Manual/file_operations/creating_archives/add_to_archive_dialog/README.zh.md)。
 
-##### 压缩包文件上下文菜单
+### 压缩包文件上下文菜单
 
 访问此功能最简单的方法是通过上下文菜单。在配置中的 [压缩包文件上下文菜单](/Manual/preferences/preferences_categories/zip_and_other_archives/archive_context_menu.zh.md) 页面中，你可以启用或禁用上下文菜单命令，以将文件添加到各种压缩包文件格式。每当你右击一个或多个文件和文件夹时，将显示这些命令。
 
-##### 添加到指定的压缩包文件
+### 添加到指定的压缩包文件
 
 这些命令将立即将选定的文件和文件夹添加到一个新的压缩包文件中。新压缩包文件将位于源文件所在的文件夹中，并且其名称将与第一个选定的文件相同。
 
@@ -23,7 +23,7 @@
 
 [配置](/Manual/preferences/preferences_categories/zip_and_other_archives/archive_context_menu.zh.md) 页面允许你选择显示用于 *添加到指定压缩包文件* 命令的格式。
 
-##### 添加到压缩包文件
+### 添加到压缩包文件
 
 这些命令还会将所选文件和文件夹添加到一个新压缩包文件中，但不会立即创建压缩包文件，而是会给你一个文件名和路径、压缩包类型以及针对所选压缩包文件格式的各种参数的选择。
 

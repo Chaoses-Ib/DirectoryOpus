@@ -5,7 +5,7 @@ There are two different ways to copy updated files (that is, copy newer files ov
 - The **Update All** and **Update Existing** commands offer a simple one-way form of file synchronization
 - The **[Synchronize](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.md)** tool offers a full, two-way synchronization system, that lets you see and control which files are going to be copied or deleted
 
-##### The "Update" commands
+### The "Update" commands
 
 The **Update All** and **Update Existing** commands are found in the drop-down menu attached to the **Copy Files** button on the default toolbar.
 

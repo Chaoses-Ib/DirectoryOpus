@@ -7,7 +7,7 @@ Copy-and-paste (or cut-and-paste) is possibly the simplest method of moving file
 
 Moving files using the clipboard is implemented in almost all file managers the same way, although Opus does extend this functionality in a few ways, which it's worth being aware of.
 
-##### Copy queues
+### Copy queues
 
 Although these functions use the internal **[Clipboard](/Manual/reference/command_reference/internal_commands/clipboard.md)** command to initiate them, when you paste files into a Lister, the actual file copy or move is implemented "behind-the-scenes" using the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command.
 
@@ -15,7 +15,7 @@ This means that features like the [copy queue](copy_queues/README.md) are avai
 
 You can control the queuing using the various arguments for the **[Clipboard](/Manual/reference/command_reference/internal_commands/clipboard.md)** command.
 
-##### Pasting text and graphics data
+### Pasting text and graphics data
 
 If the clipboard contains text or graphics data, you can paste that in a Lister as if it were a real file. Opus will create a new file and write the clipboard data to it automatically.
 
@@ -26,7 +26,7 @@ You can modify the format that graphics data is saved in (Bitmap, GIF, PNG or JP
 
 The name of the new file can be controlled using the various arguments for the **[Clipboard](/Manual/reference/command_reference/internal_commands/clipboard.md)** command.
 
-##### Incremental clipboard
+### Incremental clipboard
 
 The **ADD** argument for the internal **[Clipboard](/Manual/reference/command_reference/internal_commands/clipboard.md)** command lets you add selected files to any that are already on the clipboard. For example, you could copy a few files from one folder, a few from another folder, and a few from a third folder, and then paste them all into the destination in one go.
 

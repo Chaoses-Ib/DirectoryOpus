@@ -12,7 +12,7 @@ The six tabs at the top of the dialog give you access to the various options tha
 
 In some contexts the six tabs will have checkboxes which let you turn the individual pages on or off - for example, a saved format can override just part of the default format.
 
-##### Saving a folder format
+### Saving a folder format
 
 The **Save** button at the bottom of the dialog is a quick way to manage the stored folder format for the current folder. If you want to change an aspect of the display for a folder permanently there are two ways to do it; you can go into Preferences, to the [Folder Formats](/Manual/preferences/preferences_categories/folders/folder_formats/README.md) page, and define a folder format for that folder. Or, using the Folder Format dialog, you can make the changes in real time and then save them to create a folder format automatically.
 

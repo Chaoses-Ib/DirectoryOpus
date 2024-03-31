@@ -1,4 +1,4 @@
-##### Directory Opus 13 - Detailed release notes
+### Directory Opus 13 - Detailed release notes
 
 # Split / Join
 

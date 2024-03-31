@@ -17,7 +17,7 @@ There are three main types of arguments:
 - *Optional arguments* combine the behaviour of switch and value arguments. An optional argument can appear by itself, to activate the default behaviour of that argument, or it can be used to provide a value when appropriate.
   For example, the command **Copy ADDTOARCHIVE** defaults to creating a Zip archive. In this instance, **ADDTOARCHIVE** is acting like a switch. If you want to override the default behaviour, and create a 7-Zip archive instead, the command would be **Copy ADDTOARCHIVE=.7z**. 
 
-##### Command templates
+### Command templates
 
 Each command has what's called a *template* - a full listing of all of the arguments the command accepts. The template marks each argument with one or more qualifiers to indicate what type of argument it is. You never actually type these qualifiers - they are not part of the argument name, they are merely a clue as to the type of the argument. For example, let's look at the beginning of the template for the **Copy** command.
 
@@ -33,7 +33,7 @@ This is not the whole template, just the first few arguments as an example. Let'
 - **BURNCD** is a switch argument (indicated by the **/S** qualifier). This argument is used to initiate the burning of a CD or DVD using the Windows staged disc burning system. The argument takes no value, simply specifying the keyword is enough to activate its behaviour. For example, **Copy BURNCD**.
 - **CLEARREADONLY** is a value argument, and the template indicates that it only accepts one of two specific keywords - **yes** or **no**. In this particular instance, the argument is used to override the default setting of a Preferences option. If the argument value is given as **yes** (i.e. **Copy CLEARREADONLY=yes**), read-only attributes are cleared when copying files from a CD, and if given as **no**, the read-only attributes are not cleared. If the argument is not provided at all, the current setting of the Preferences flag is used instead.
 
-##### Argument qualifiers
+### Argument qualifiers
 
 The qualifiers that you will see in the command templates are as follows. Remember that you **never** type the qualifiers when using arguments - they are merely a clue as to the argument type.
 
@@ -82,7 +82,7 @@ Arguments of this type are the only ones that do not require quotes around value
 
 Some commands also have an argument that accepts a value, but is not marked with either /K or /O. For example, the **FILE** argument for the **Copy** command lets you specify the file or files to copy - and so clearly it takes a value, but it is not marked as such with the /K qualifier. This is a special type of argument - the *default argument*. In these cases, the use of the argument name itself is optional - you can provide it if desired, but you can also leave it out. For example, **Copy FILE C:\foo.txt TO D:\\** is equivalent to **Copy C:\foo.txt TO D:\\**. A command can have at most one default argument.
 
-##### Command parsing and embedded spaces
+### Command parsing and embedded spaces
 
 At this point we should discuss the issue of command parsing, spaces, and values. When Opus parses a command line, it uses the template for the command in question to identify the various arguments that you have provided. Take the following example command:
 
@@ -105,7 +105,7 @@ An equals sign is generally optional when providing a value for an argument. Tha
 - When the value you are providing is also another argument for the command, you **must** use the equals sign. For example, `Copy CREATEFOLDER sendmail` would not behave as intended (copying selected files into a new folder called "sendmail") because **SENDMAIL** is also an argument for the command. Instead, you must provide the equals sign, as in `Copy CREATEFOLDER=sendmail`.
 - When you are providing multiple values for a **/M** argument, the equals sign must not be used.
 
-##### Multiple value arguments
+### Multiple value arguments
 
 Some arguments accept multiple values. For example, the **FILE** argument to the **Copy** command is marked as /M, indicating that you can provide one or more values for the argument. When you do provide multiple values, each value must be separated by spaces. For example:
 

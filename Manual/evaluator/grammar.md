@@ -2,7 +2,7 @@
 
 The grammar of the evaluator is similar to that of JScript (Javascript) and C++.
 
-##### Brief introduction
+### Brief introduction
 
 Generally, evaluation of an expression proceeds from left-to-right. Standard BODMAS rules apply to mathematical operators - you can use parentheses `()` to change the order of evaluation. If an evaluation expression contains more than one clause, each clause must end with a semi-colon `;` character.
 
@@ -16,7 +16,7 @@ The evaluator provides a number of [functions](/Manual/reference/evaluator/READM
 
 You can use comments, which are ignored by the evaluator - they must begin with a `//`.
 
-##### Return values
+### Return values
 
 Most contexts that invoke the evaluator expect a return value. For example, an evaluation expression to modify a button label would return a string to use as the label of the button.
 
@@ -28,7 +28,7 @@ Evaluation expressions also have an *implicit return value* if the `return` keyw
 
 For example, you can insert the value of the evaluator variable "source" directly into a command line with the code `{=source=}`. This is equivalent to `{=return source;=}`.
 
-##### Operators
+### Operators
 
 The following mathematical operators are supported:
 
@@ -132,7 +132,7 @@ Other operators:
 | \[ \] | Used to define a *value container*. A value container is a variable that can contain other variables - kind of like a *struct* in C++ or a Javascript object array.                                                                                                                                                                                                          |
 | .     | Used to access a member variable of a *value container*.                                                                                                                                                                                                                                                                                                                     |
 
-##### If / ElseIf / Else
+### If / ElseIf / Else
 
 The main form of flow control in the evaluator begins with an `if` clause. The condition to test must appear inside parentheses. The condition (which can include function calls and mathemetical operations) is evaluated as either true or false. If the result is true, the code branch immediately following the `if` is entered. If that code branch needs to contain more than a single clause, you must open a scope using a `{` brace character.
 
@@ -167,7 +167,7 @@ If an `else` clause is provided then the code following it is only executed if n
 
 Note that only one (at most) of the `if`, `elseif` or `else` clauses in a block will have its code executed. If the block does not end with an `else` then its possible that none of the code within the block would be executed (i.e. if all conditions evaluate to false).
 
-##### Ternary Operator
+### Ternary Operator
 
 The *ternary* or *comparison* operator is the only operator that takes three parameters rather than two. It's basically a shorthand form of `if`/`else`.
 

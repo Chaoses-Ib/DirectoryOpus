@@ -8,13 +8,13 @@ For confidential or sensitive documents, the secure delete function can be used 
 
 You should use this function with some caution!
 
-##### Secure delete on a per-file basis
+### Secure delete on a per-file basis
 
 The easiest way to securely delete one or more files is to use the **Secure Wipe** command in the drop-down attached to the **Delete** button on the toolbar.
 
 When you run this command, selected files and folders will be overwritten the number of times specified on the **[File Operations / Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md)** page in Preferences.
 
-##### Always using secure delete
+### Always using secure delete
 
 If you always want to use secure delete, you can turn on the **Use Secure Wipe** option on the **[Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md)** page in Preferences.
 

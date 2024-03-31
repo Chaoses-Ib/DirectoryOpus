@@ -2,7 +2,7 @@
 
 This page contains options relating to expanding and collapsing of branches in the folder tree.
 
-##### Folder content population
+### Folder content population
 
 The **Automatically expand to current folder** option controls how the tree expands folders as you navigate in the file display.
 
@@ -18,7 +18,7 @@ You can choose how the folders are populated when they expand automatically to 
 
 The tree will always show you your current folder (and the path leading to it) so the population options only affect the display of other items in the expanded folders. When you expand an item manually, its contents are always fully populated - so if the tree has partially expanded an item, you can click on its expansion button to fully expand it and reveal the rest of its contents. These options can dramatically improve performance when navigating folders on slow devices like networks - rather than having to read the full contents of all folders leading up to your current location (which can be very slow over a network), the tree will simply display the folders leading to your current path (and since it already knows what those folders are, it doesn't have to read any information from the network to do this).\</WRAP\>
 
-##### Other options
+### Other options
 
 - **Animate expanding branches**: When a branch expands the contents slide out instead of appearing instantly.
 - **Collapse non-selected branches**: The tree will automatically collapse any expanded branches that aren't needed to show you your current location. This can help keep the tree compact and easier to navigate as you move around the file system.
@@ -32,7 +32,7 @@ The tree will always show you your current folder (and the path leading to it) s
   - **Only remember if pinned**: Only pinned folders will be remembered - other folders won't have their expansion state preserved.
 - **Remember expanded items for tabs**: The expansion state of folders in the Folder Tree will be preserved between tabs. That is, when you switch away from a tab, Opus remembers which folders in the folder tree were expanded and which were collapsed, and restores this state when you switch back to that tab.
 
-##### Drag-and-drop
+### Drag-and-drop
 
 - **Expand branches when dragging over the tree**: When you drag files over the tree, the tree will automatically expand any collapsed folders that you hover over with the mouse. This lets you drag and drop files to sub-folders that aren't necessarily visible when the drag and drop begins.
 - **Collapse after drag (spring-loaded)**: Folders that automatically expand during drag-and-drop will collapse again when the drag is complete.

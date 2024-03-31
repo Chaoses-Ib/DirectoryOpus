@@ -2,7 +2,7 @@
 
 The **Change Attributes & Timestamps** dialog lets you modify both the attributes of a file and its timestamps. To access this function, select the files and folders you wish to modify and choose the **Attributes** command from the **Properties** drop-down menu.
 
-##### Attributes
+### Attributes
 
 *Attributes* are the set of "flags" that all files and folders have, that control certain properties of the file entry as part of the filesystem. File attributes are displayed in the **Attr** column in the file display (in details and power mode) using a single letter to represent each attribute.
 
@@ -61,7 +61,7 @@ If a folder is set as encrypted then all new files created in that folder will 
 </tbody>
 </table>
 
-##### Modifying attributes
+### Modifying attributes
 
 The **Attributes** section of the dialog lets you modify attributes in two ways:
 
@@ -70,14 +70,14 @@ The **Attributes** section of the dialog lets you modify attributes in two ways:
 
 - **Turn on** and **Turn off**: Select either or both of these options if you want to turn specific attributes on and/or off while leaving others unchanged.
 
-##### Timestamps
+### Timestamps
 
 *Timestamps* are the various time and date values stored for each file and folder. The timestamps you can modify through this dialog are:
 
 - **Creation time**: The timestamp that represents when the file was first created.
 - **Last modified time**: The timestamp that represents the last time the file was modified.
 
-##### Modifying timestamps
+### Modifying timestamps
 
 The **Timestamps** section of the dialog lets you choose which timestamps you wish to modify.
 
@@ -90,7 +90,7 @@ The dropdown to the right of the time field lets you set the value of the timest
 
 ![](/Manual/images/media/13/timestamp_now.png)
 
-##### Copying timestamps from other sources
+### Copying timestamps from other sources
 
 You can use the **Copy from** dropdown to set each file's timestamp from another source:
 
@@ -105,11 +105,11 @@ You can use the **Copy from** dropdown to set each file's timestamp from another
 
 If you select to copy a timestamp that a file doesn't have (e.g. an image value but the file isn't an image) then no change is made to its timestamp.
 
-##### Applying time shifts
+### Applying time shifts
 
 The **Time shift** field lets you apply a time shift to each file's existing timestamp. See the [Time Shifting](editing_metadata/time_shifting.md) page for more information.
 
-##### Making changes to sub-folder contents
+### Making changes to sub-folder contents
 
 The **Sub-folders** section of the dialog lets you control what happens how folders are processed by this function.
 

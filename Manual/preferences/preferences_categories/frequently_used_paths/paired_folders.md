@@ -8,7 +8,7 @@ Paired folders can be based on absolute paths or regular expressions. Regular ex
 
 When you add or edit a folder pair, the *Paired Folder* dialog is shown.
 
-##### Paired Folder editor
+### Paired Folder editor
 
 You can configure the folders in the pair in two different ways.
 

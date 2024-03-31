@@ -13,7 +13,7 @@ By default filter and wildcard labels assignments will "stack" on top of each ot
 
 Note that filter and wildcard label assignments can be rearranged to control their priority.
 
-##### Wildcard labels
+### Wildcard labels
 
 ![](/Manual/images/media/13/label_wildcard.png)
 

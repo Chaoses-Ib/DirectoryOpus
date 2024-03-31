@@ -6,7 +6,7 @@ The Preferences dialog is the main interface for configuring Directory Opus. Alm
 
 The first time you go into Preferences a short tutorial will step you through the key elements of the dialog.
 
-##### Searching Preferences
+### Searching Preferences
 
 The *Search* field at the bottom-left of the dialog can be used to filter Preferences for those pages and options that match what you type. To use the search filter, click on it (or press **F3**) and start typing.
 
@@ -18,7 +18,7 @@ Any pages and items on those pages that match the search term are highlighted.
 
 To clear the filter and display all pages again, click the little **X** button at the right of the search field, or activate the field and press the **Escape** key.
 
-##### Apply vs Save
+### Apply vs Save
 
 Most pages in Preferences require you to click **OK** or **Apply**, in the bottom right, before their changes take effect.
 
@@ -28,13 +28,13 @@ You can identify those pages by the ![prefs_autoapply.png](/Manual/images/media/
 
 Whichever type of page you are on, you can always click **Cancel** to revert any changes you have made since you last clicked **Apply** or **Save**. The *Preferences Menu*, discussed below, also give you more granular choices for reverting changes to some or all Preferences pages.
 
-##### Favorite Pages
+### Favorite Pages
 
 Pages you use a lot can be favorited, which puts a gold star next to them and adds a shortcut to them in the special *Starred* category at the top of the list.
 
 A page's favorite status can be toggled by clicking the star next to its name when the mouse is over it, or via the context menu when you right-click a page in the list.
 
-##### Preferences Menu
+### Preferences Menu
 
 At the very top-right of the Preferences dialog is the ![prefs_menu.png](/Manual/images/media/13/prefs_menu.png) button, which opens the menu. This contains a number of useful commands:
 
@@ -57,7 +57,7 @@ At the very top-right of the Preferences dialog is the ![prefs_menu.png](/Manual
 
 Some Preferences pages also add additional items to the top of the menu.
 
-##### Page List Context Menu
+### Page List Context Menu
 
 Right-click the page list for a small menu of options:
 

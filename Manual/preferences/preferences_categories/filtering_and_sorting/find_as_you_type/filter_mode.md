@@ -5,7 +5,7 @@ This page contains options relating to the [Find-As-You-Type](/Manual/basic_conc
 - **Allow <kbd>Enter</kbd> key to open selected item**: Pressing the <kbd>Enter</kbd> key will open the item with focus rather than simply closing the FAYT.
 - **Select first matching item**: The first item that matches the filter will be automatically selected.
 
-##### Filter Mode
+### Filter Mode
 
 (Opus 13.3.4 and above) These options control the behaviour of the filter.
 

@@ -6,7 +6,7 @@ For most virtual folders, Opus provides a display of the folder by "hosting" Exp
 
 For the two most commonly used virtual folders - *This PC* and *Desktop* - Opus has the option of providing its own display (known as "native display") instead of hosting Explorer. The advantage of this is that then the full gamut of Opus functionality is available, including folder formats, configurable colors and images, and (for *Desktop*) Opus commands like Advanced Rename, etc. For the most part the Opus-provided displays of these folders will look exactly the same as the hosted form, so you may not even realise it is Opus and not Explorer providing the display.
 
-##### When hosting Explorer
+### When hosting Explorer
 
 - **Enable background images**: With this option on, Opus will try to use your background image settings when it is displaying a [virtual folder](virtual_folders/README.md) that's implemented by Explorer. As these folders are provided by the operating system and Opus merely hosts them as a container, it won't necessarily work!
 - **Enable custom fonts**: With this option on, your choice of File Display font will be applied to virtual folders in addition to the normal folders which Opus handles itself. Virtual folders are handled by Windows, or sometimes third-party components, and are largely outside of Opus's control. Opus can ask them to use a different font, but this can result in cosmetic issues or even crashes. If you run into problems using virtual folders, or when opening new windows or tabs, you should turn this option off again.

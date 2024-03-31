@@ -50,7 +50,7 @@ The evaluator will implicitly convert variable types if needed. For example, if 
 
 You can use the **[typeof](/Manual/reference/evaluator/typeof.md)** function to determine a variable's type.
 
-##### Variable names
+### Variable names
 
 Ordinary variables must begin with a letter; after that, they can contain any number of letters, numbers or symbols like `_` and `$`.
 
@@ -65,7 +65,7 @@ You can also access environment variables from evaluation code as you can in nor
 
 You can set environment variables from evaluation code too but note that this only affects the environment inside Opus itself - globally the rest of the system won't see the changed value.
 
-##### Numeric constants
+### Numeric constants
 
 You can express numeric constants in a number of ways:
 
@@ -77,7 +77,7 @@ You can express numeric constants in a number of ways:
 - `true` and `false` are also available as boolean constants.
 - `pi` is predefined as the value of π.
 
-##### Value containers
+### Value containers
 
 A *value container* is a variable that can contain other variables - similar to a *struct* in C++ or a *map* in JavaScript.
 

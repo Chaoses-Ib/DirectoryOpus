@@ -4,7 +4,7 @@ The *Script Management* dialog shows you all your installed [script add-ins](/Ma
 
 To get to the Script Management dialog, use the **Scripts** command in the default **Settings** menu. If you're using old toolbars without that command in them, you can add it from the **Customize / Default Toolbars** tab. The raw command is `Prefs SCRIPTS`.
 
-##### Script list
+### Script list
 
 Your installed scripts are shown in the list, with a number of columns:
 
@@ -19,17 +19,17 @@ Scripts can specify a group as part of their initialisation - if any scripts hav
 
 By default [include file scripts](script_add-ins/include_files.md) are also shown in the list, but you can hide them with the command in the **File** menu.
 
-##### Installing a new script
+### Installing a new script
 
 The easiest way to install a new script is with the **File \> Install** command (or click the **Install** button on the toolbar).
 
 The [script installer](/Manual/scripting/script_management/installer.md) will open to guide you through the install process. You can install single script files (e.g. `.js` or `.js.txt`), script packages (`.osp` files) and script install files (`.opusscriptinstall` files) this way.
 
-##### Creating a new script
+### Creating a new script
 
 Click the **New** button to create a new script. The *[Create New Script](/Manual/scripting/script_management/new_script.md)* dialog opens.
 
-##### Script management
+### Script management
 
 Select a script from the list to see information about it at the bottom of the dialog.
 

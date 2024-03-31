@@ -6,7 +6,7 @@
 
 无论你以何种方式创建分离的对话框，在它显示之后，你的脚本都必须运行一个消息循环，直到对话框关闭。假设你的 **[Dialog](/Manual/reference/scripting_reference/scripting_objects/dialog.zh.md)** 对象名为 *Dlg*，那么基本消息循环看起来像这样：
 
-##### 基本消息循环 - VBScript
+### 基本消息循环 - VBScript
 
     Do
       Set Msg = Dlg.GetMsg
@@ -14,7 +14,7 @@
         ' 此处将放置你的处理对话框事件的代码。
     Loop
 
-##### 基本消息循环 - JScript
+### 基本消息循环 - JScript
 
     while (true) {
       var Msg = Dlg.GetMsg();
@@ -32,7 +32,7 @@
 
 以下脚本代码与前面示例中的相同资源演示了一个简单分离对话框。如果你想尝试此示例，请创建一个新的工具栏按钮，然后将脚本代码粘贴到命令编辑器的 **Script Code** 标签页，并将资源 XML 粘贴到 **Resources** 标签页。
 
-##### 脚本代码 - VBScript
+### 脚本代码 - VBScript
 
     Function OnClick(ByRef clickData)
       Set Dlg = DOpus.Dlg
@@ -48,7 +48,7 @@
       DOpus.Output "Return code = " & Dlg.result
     End Function
 
-##### 脚本代码 - JScript
+### 脚本代码 - JScript
 
     function OnClick(clickData) {
       var Dlg = DOpus.Dlg;
@@ -64,7 +64,7 @@
       DOpus.Output("Return code = " + Dlg.result);
     }
 
-##### 资源
+### 资源
 
     <resources>
       <resource name="testdlg" type="dialog">

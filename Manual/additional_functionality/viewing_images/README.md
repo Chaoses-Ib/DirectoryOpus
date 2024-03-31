@@ -2,13 +2,13 @@
 
 Opus has two main image viewers. Both can be used to view images, movies, documents and other formats for which a plugin exists.
 
-##### Viewer pane
+### Viewer pane
 
 There's the integrated [Viewer Pane](/Manual/basic_concepts/the_lister/viewer_pane.md), which is embedded within a Lister:
 
 ![](/Manual/images/media/13/viewer_pane.png)
 
-##### Standalone viewer
+### Standalone viewer
 
 There's also a standalone (floating) image viewer.
 
@@ -16,7 +16,7 @@ There's also a standalone (floating) image viewer.
 
 The main difference is the [Viewer Pane](/Manual/basic_concepts/the_lister/viewer_pane.md) is tied to a Lister whereas the standalone viewer acts almost like a separate utility. The standalone viewer also has basic image editing functions which the viewer pane does not.
 
-##### Accessing the standalone viewer
+### Accessing the standalone viewer
 
 You can access the standalone viewer in several ways:
 
@@ -27,7 +27,7 @@ You can access the standalone viewer in several ways:
 - The internal **[Show](/Manual/reference/command_reference/internal_commands/show.md)** command will display selected files in the standalone viewer. This command is available on the drop-down menu attached to the **Slideshow** button.  
 - From outside of Opus, you can use the `d8viewer.exe` or `dopusrt.exe /show` commands to open files with the Opus viewer.
 
-##### Options for the standalone viewer
+### Options for the standalone viewer
 
 There are a number of options that control the appearance and behaviour of the standalone viewer. These can be found in the **[Viewer](/Manual/preferences/preferences_categories/viewer/README.md)** category in Preferences. By default, the viewer will:
 

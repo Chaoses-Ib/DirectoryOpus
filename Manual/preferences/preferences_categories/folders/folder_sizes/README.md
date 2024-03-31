@@ -8,7 +8,7 @@ This page lets you control whether or not Opus automatically [calculates folder 
 - **Use Everything to calculate folder sizes where possible**: If [Everything by Voidtools](https://voidtools.com) is installed, Opus can leverage its index to calculate folder sizes much faster than normal.
   - **Calculate automatically even if automatic calculation is otherwise disabled**: If Everything is installed, then a folder's size will be automatically calculated if it's been indexed, even if the other settings on this page would normally mean its size wouldn't be calculated.
 
-##### Per-folder overrides
+### Per-folder overrides
 
 The list at the bottom lets you override size calculation on per-folder basis. You can add specific folders or use a wildcard string.
 

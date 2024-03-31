@@ -8,7 +8,7 @@ This page contains options that affect how Opus deletes files. Some of the opti
 - **Automatically select next file after deleting**: If this option is turned on, the file in the list following the deleted files will be automatically selected. This is useful in conjunction with the [Viewer Pane](/Manual/basic_concepts/the_lister/viewer_pane.md) when you want to inspect and optionally delete multiple images, for example.
 - **Delete to Recycle Bin where possible**: With this option on, Opus will delete to the system Recycle Bin whenever it's able to. If the recycle bin is disabled (globally, or for a particular drive), or when deleting from locations like network folders that don't support the Recycle Bin, files will be deleted directly (and therefore no undo would be available in those cases). This option can be overridden with the `RECYCLE` and `NORECYCLE` arguments, and the `SHIFT` argument can also affect whether the Recycle Bin is used or not.
 
-##### When not using the Recycle Bin
+### When not using the Recycle Bin
 
 When Opus deletes a file directly, as opposed to moving it to the Recycle Bin, the following options affect the behavior:
 

@@ -10,7 +10,7 @@ At the bottom is a field labelled **Example file**. This lets you select a file 
 
 Clicking the **Add** or **Edit** button displays the column editor.
 
-##### Column editor
+### Column editor
 
 ![evalcolumn_editor.png](/Manual/images/media/13/evalcolumn_editor.png)
 

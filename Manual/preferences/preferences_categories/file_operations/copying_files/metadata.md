@@ -1,6 +1,6 @@
 # Metadata
 
-##### Copy Alternate Data Streams
+### Copy Alternate Data Streams
 
 This option controls the copying of metadata that is stored in NTFS *Alternate Data Streams* (ADS). This metadata can include things like comments, tags, rating information and [labels](/Manual/file_operations/labels.md), depending on the file formats and configuration involved.
 
@@ -20,7 +20,7 @@ By default, file copying is delegated to a very-high-level API provided by Windo
 
 On the other hand, if you configure Opus to copy files using custom, lower-level code, then Opus can choose when to copy the NTFS ADS streams and will only copy them if you really want them. That may be slightly faster, but the custom code may also be slower in other ways (depending on hardware, drivers, etc.).
 
-##### Copy file descriptions
+### Copy file descriptions
 
 This attempts to preserve any description assigned to the copied files, if it is not already being preserved via the **Copy to new file** option above.
 
@@ -28,7 +28,7 @@ This can be overridden by the `Copy` command's `COPYDESC` argument.
 
 Turning this option on imposes extra per-file overheads when copying. You should generally only turn this on when using the DESCRIPT.ION file comment system that stores descriptions in a special file within each folder. If you are using NTFS ADS to store file comments, use the **Copy to new file** option above, instead.
 
-##### Copy sparse files as sparse
+### Copy sparse files as sparse
 
 Sparse files are a special feature of the NTFS file system that allows regions of a file to be marked as "empty" (containing all zero bytes), with those regions not using up any drive space. For example, a sparse 1GB file consisting of all zeroes could occupy almost no space. Sparse files are used in specialized applications like virtual machines. Some download tools also use them to track which regions of files have been downloaded.
 

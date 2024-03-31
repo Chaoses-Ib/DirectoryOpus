@@ -2,7 +2,7 @@
 
 These options affect the [standalone viewer](/Manual/additional_functionality/viewing_images/README.md) - the Opus viewer that opens in a separate window. Options that affect the [Viewer Pane](/Manual/basic_concepts/the_lister/viewer_pane.md) are configured on a [separate page](../viewer_pane.md).
 
-##### Left mouse button
+### Left mouse button
 
 This lets you control what the left mouse button does when you click it in on the image. The options you can choose from the drop-down are:
 
@@ -20,15 +20,15 @@ Below the drop-down is the following options:
 
 - **Click left/right edges to go to previous/next picture**: Clicking the left and right edges of the window will advance to the next or previous image irrespective of the actual setting for the mouse button. You can control the percentage of the window width that Opus considers to be "the edge" (the default is 20%).
 
-##### Left double-click
+### Left double-click
 
 This lets you control what the left button does when you **double-click** it on the image; the options are mostly the same as for the **Left mouse button** setting except you can't choose **Select clipboard region** or **Scroll image** for double-click.
 
-##### Middle button
+### Middle button
 
 This lets you define what the middle mouse button does when you click it on the image; the options are the same as for the **Left mouse button** setting.
 
-##### Mouse wheel
+### Mouse wheel
 
 This lets you control what the mouse wheel does when you turn it over the viewer window. Note that the viewer ignores this setting when viewing some file types. For example, when viewing a text file the wheel always scrolls up and down. The options in the drop-down are:
 

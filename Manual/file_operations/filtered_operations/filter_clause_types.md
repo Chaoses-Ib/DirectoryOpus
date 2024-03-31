@@ -4,7 +4,7 @@ Each clause has a type which specifies exactly which attribute of a candidate fi
 
 There are a number of clause types that apply to all types of file and folder.
 
-##### Attributes
+### Attributes
 
 Lets you match based on the file's attributes.
 
@@ -78,11 +78,11 @@ If a folder is set as compressed then all new files created in that folder will
 </tbody>
 </table>
 
-##### Availability
+### Availability
 
 Lets you match based on a file's offline status (for cloud storage).
 
-##### Contains
+### Contains
 
 Searches files for the supplied text string.
 
@@ -102,7 +102,7 @@ The options that affect the search are:                    �
 - **Partial match**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
 - **Ignore diacritics**: Ignores diacritics (accented characters).
 
-##### Date
+### Date
 
 Compares the file's timestamp, but only looks at date and not the time.
 
@@ -112,17 +112,17 @@ The parameters that affect a **Date** comparison are:             �
 - Comparison type: Select from *After*, *Before*, *Between* and *Within*.
 - Comparison date: Enter the actual date to compare against. For *After* and *Before* this is a single date. For *Between* this is two dates (making a range the date must fall within), and for *Within* this is a relative date from the current day in days, months, weeks or years.
 
-##### Date/Time
+### Date/Time
 
 Compares the file's timestamp, comparing both date and time.
 
 This is similar to a **Date** except that both the time and date portions of the timestamp are compared - you specify both a date and time to compare against. *Within* is not an available comparison type for **Date/Time** clauses.
 
-##### Description
+### Description
 
 Compares the file's description (if it has one assigned to it). The search options are the same as for a **Contains** clause (except for the **Assume UTF-8** option).
 
-##### Document
+### Document
 
 Lets you filter on various document fields, applicable to files like Office or PDF documents.
 
@@ -146,11 +146,11 @@ A drop-down lets you select from the various document fields to compare against:
 
 The document fields that take a string parameter to compare against (which are most of them) support [standard wildcards](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) for the search.
 
-##### Filter
+### Filter
 
 This lets you refer to another pre-configured filter (one listed on the [Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.md) page in Preferences). For example, you could have a standard filter that excludes certain types of files that you never want to process it, and then refer to that in other, more specific filters that you create later on. Referencing another filter saves you from having to duplicate all those filters' parameters, and also any changes you make later to the referenced filter will automatically have effect on any filters that use it.
 
-##### Full path
+### Full path
 
 This lets you match a file or folder on its full pathname (which includes its own filename).
 
@@ -158,7 +158,7 @@ For example, `C:\Data\Pictures\*\*.jpg` would match any file ending in **.jpg** 
 
 Wildcards in Full path clauses are applied to the string as a whole, rather than on individual path components.
 
-##### Image
+### Image
 
 Lets you filter on various image-related fields. All recognized image formats are supported.
 
@@ -207,17 +207,17 @@ The drop-down lets you select from the various fields you can compare on:
 
 The image fields that take a string parameter to compare against (for example, **Camera make** or **model**) support [standard wildcards](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) for the search.
 
-##### Label
+### Label
 
 Matches a file on the basis of its assigned [label](../labels.md) (if it has one).
 
 A drop-down control displays a list of the [configured labels](/Manual/file_operations/labels.md) for you to choose from, or you can type in a pattern to match label names by wildcard.
 
-##### Location
+### Location
 
 This is similar to **Full Path** except it only considers the location (path) of the file, but not the filename. This can be particularly useful when searching [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/README.md), as it lets you filter for files based on their real location on disk.
 
-##### Music
+### Music
 
 Lets you filter on various music-related fields. All recognized music formats are supported.
 
@@ -249,7 +249,7 @@ Use the drop-down to select from the various fields you can compare on:
 
 The music fields that take a string parameter to compare against (for example, **Album** or **Genre**) support [standard wildcards](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) for the search.
 
-##### Name
+### Name
 
 Compares the file's name against the specified string.
 
@@ -262,19 +262,19 @@ The options for a **Name** clause are:                     
 - **Partial match**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
 - **Ignore diacritics**: Ignores diacritics (accented characters).
 
-##### Owner
+### Owner
 
 Match against the file's owner. [Standard wildcards](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) are enabled for this search; if you don't specify any wildcards then the search will automatically perform a partial match (so "Fred" will match "Frederick" automatically).
 
-##### Path length
+### Path length
 
 Lets you search for files or folders based on the total path length (that is, the number of characters in the full file path, including its name). This is useful for identifying files whose paths exceed the normal Windows 260 character path length limit.
 
-##### Rating
+### Rating
 
 Match the rating assigned to the file or folder (if any). You can rate your files using the **[Metadata Pane](/Manual/basic_concepts/the_lister/metadata_pane.md)**.
 
-##### Script column
+### Script column
 
 Test the file or folder against a [column generated by a script add-in](/Manual/scripting/example_scripts/adding_a_new_column.md).
 
@@ -282,7 +282,7 @@ Details depend on the type of column the script adds, but will generally be simi
 
 Filtering using script columns allows you to expand the capabilities of Opus's filtering in arbitrary ways, based on anything you can express as a script. Some script add-ins provide columns intended more for filtering than display, although there is no technical difference between the two. A common use for this is to filter folders based on the files they contain, by writing a script column which looks inside each folder and populates a column with "Yes" and "No" values (or similar) to signal whether it should match or not.
 
-##### Shell column
+### Shell column
 
 Match the value of any column added by third-party shell extension handlers.
 
@@ -299,7 +299,7 @@ The drop-down gives you a list of available columns, and you can use [standard p
 | &&   | and                   |
 | \|\| | or                    |
 
-##### Size
+### Size
 
 Compare the file's size.
 
@@ -313,7 +313,7 @@ A **Size** clause can also be used to compare the size of folders. Because calcu
 
 ![](/Manual/images/media/13/filter_-_empty_dirs.png)
 
-##### Subfolder
+### Subfolder
 
 This is a special type of sub-clause that controls which folders a recursive operation will descend into. When Opus encounters a sub-folder that it would normally enter as part of an operation (for example, when copying a folder containing multiply-nested sub-folders), it tests each sub-folder against the **Subfolder** clause. If it fails, the operation skips that sub-folder and all its contents completely.
 
@@ -327,11 +327,11 @@ On the other hand, with the **Full path** and **Location** clauses, Opus will st
 
 *Note: Subfolder clauses do not work with the [Synchronize](../copying_moving_and_deleting_files/copying_updated_files/synchronize.md) tool.*
 
-##### Tags
+### Tags
 
 Compares against any tags assigned to the file. [Standard wildcards](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) are enabled for this search; if you don't specify any wildcards then the search will automatically perform a partial match (so "account" will match "accounting" automatically). The string you enter is compared against all tags assigned to the file separately, so if you want to match two specific tags, you need to use two separate **Tags** clauses.
 
-##### Target
+### Target
 
 If a file is a junction, shortcut or link, the **Target** clause lets you match on what it points to (the path of the target of the shortcut).
 
@@ -348,7 +348,7 @@ You can choose from the following options:
 - **File**: Only match shortcuts that point to files.
 - **Folder**: Only match shortcuts that point to folders.
 
-##### Time
+### Time
 
 Similar to a **Date** clause, this compares the file's timestamp, but only looks at the time portion and not the date.
 
@@ -358,7 +358,7 @@ The parameters that affect a **Time** comparison are:
       * Comparison type: Select from //After//, //Before//,  //Between// and //Within//.  
       * Comparison time: Enter the actual time to compare against. For  //After// and //Before// this is a single time. For //Between//  this is two times (making a range the time must fall within), and for  //Within// this is a relative time from the current time within  hours, minutes or seconds. The time for a //Within// comparison is  relative to //now// - that is, if the current time when the filter is  used is 15:35 and the clause specified **within 1 hour**,  anything dated the current date between 14:35 and 15:35 would match, but a  file from yesterday at 15:10 would not.
 
-##### Type
+### Type
 
 This lets you match a file by file type.
 

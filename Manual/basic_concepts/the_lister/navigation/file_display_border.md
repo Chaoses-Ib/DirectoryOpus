@@ -4,7 +4,7 @@ The location bar is a title bar that appears at the top of the file display area
 
 ![](/Manual/images/media/13/file_display_toolbar.png)
 
-##### Default location bar toolbar
+### Default location bar toolbar
 
 The main component of the default toolbar is the [breadcrumbs location field](breadcrumbs_location_field.md) which shows you the current folder and lets you navigate within the current hierarchy.
 
@@ -24,7 +24,7 @@ To the right of the location field the buttons are:
 
 This is a fully [configurable toolbar](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/README.md), and as such you can add your own buttons and modify or remove the default ones. See the page on the [File Display toolbar](../toolbars/the_default_toolbars/file_display_toolbar.md) for more information about these buttons.
 
-##### Source / destination state
+### Source / destination state
 
 Some operations, like copying files, inherently require two folders to be involved - the source and the destination.
 
@@ -34,7 +34,7 @@ Single display Listers by default do not have a source/destination state as such
 
 See the **[Source and Destination](../../source_and_destination.md)** topic for more information about the source/destination concept.
 
-##### Static header mode
+### Static header mode
 
 In **[Location Bar / Toolbars](/Manual/preferences/preferences_categories/location_bar/toolbars.md)** you can choose to turn the File Display toolbar off, in which case the location bar reverts to a simpler, static header:
 

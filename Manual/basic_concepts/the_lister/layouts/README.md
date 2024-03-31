@@ -2,7 +2,7 @@
 
 A Lister Layout is a saved collection of one or more Listers that you can re-open at any time. They're a great way to define separate environments for different tasks - and switching between them is as easy as clicking a button.
 
-##### What's saved in a layout
+### What's saved in a layout
 
 Almost everything about the state of a saved Lister is remembered, including:
 
@@ -16,7 +16,7 @@ Almost everything about the state of a saved Lister is remembered, including:
 
 Although layouts save everything, you can choose which settings are restored when you load a saved layout.
 
-##### Saving a layout
+### Saving a layout
 
 There's no "layout editor" - instead, layouts are created when you save your currently open Listers as a set.
 
@@ -25,11 +25,11 @@ The commands to do this are in the **Settings / Lister Layouts** menu:
 - **Save This Lister**: Saves only the currently active Lister to the layout.
 - **Save All Listers**: Saves **all** open Listers to the layout.
 
-##### Virtual desktops
+### Virtual desktops
 
 If you are using the virtual desktops feature in Windows 10 and above, only the windows on the active virtual desktop will be saved by default. You can change this using the **Save Listers on all virtual desktops** option when saving the layout.
 
-##### Editing layouts
+### Editing layouts
 
 The **Edit Layout** command in the **Settings / Lister Layouts** menu takes you to the [Layouts](/Manual/preferences/preferences_categories/layouts_and_styles/layouts.md) page in Preferences.
 
@@ -37,7 +37,7 @@ From this page you can view a list of all your saved layouts, rename them, re-or
 
 You can also update a saved Layout using the **Update** button on the *Edit Layout* dialog.
 
-##### Loading a layout
+### Loading a layout
 
 The **Settings / Lister Layouts** menu shows a list of your layouts - simply select one from there to load it.
 
@@ -45,7 +45,7 @@ There's an option on the [Windows Integration](/Manual/preferences/preferences_c
 
 You can also create shortcuts to layouts by dragging the layout from the list on the **[Layouts](/Manual/preferences/preferences_categories/layouts_and_styles/layouts.md)** Preferences page, and dropping it on the desktop.
 
-##### Options when you load a layout
+### Options when you load a layout
 
 Each layout has a set of options that controls how it's loaded by default (the default options can be overridden using the `Prefs` internal command).
 
@@ -61,7 +61,7 @@ The [Layouts](/Manual/preferences/preferences_categories/layouts_and_styles/layo
 
 To change a layout's options, double-click it (or select it and click the **Edit** button) in the list on the [Layouts](/Manual/preferences/preferences_categories/layouts_and_styles/layouts.md) page.
 
-##### A note on folder formats and toolbars
+### A note on folder formats and toolbars
 
 Folder formats and toolbars stored within layouts can be a point of confusion, particularly when you want to update the defaults.
 

@@ -9,11 +9,11 @@ This page contains various options that let you adjust the behavior of File Disp
 - **Preserve folder format edits between folders**: Normally when you modify the folder format in a file display and then change folder, the modified format is preserved (unless the new folder has its own saved format that overrides). If you turn this option off, ad-hoc changes are not preserved and the format will reset every time you change folder.
 - **Show sort header in icon modes**: Normally column headers are only shown in details and Power mode. If you turn this option on, column headers will be shown in the icon modes (like thumbnails) too. Although there are no columns in those modes, you can still use the header as a convenient way to sort or group the file list.
 
-##### Single display
+### Single display
 
 - **Single display Listers have source/destinaiton modes**: When a Lister is in dual-display mode, one side is always the source and one side is always the destination. When a Lister is in single display mode, it's possible for one whole Lister to be the source and another one to be the destination. With this option turned off, single display Listers don't participate as source/destination. See [Source and Destination](/Manual/basic_concepts/source_and_destination.md) for more information.
 
-##### Dual display
+### Dual display
 
 - **Set new panel to source when switching to dual file display**: When you switch a Lister into dual display mode, this option causes the newly opened file display to become the source, and the original file display the destination.
 - **Specify initial folder when switching to dual file display**: Normally when you switch a Lister into dual display mode, the folder that was already open is opened in the second file display. This option lets you specify a specific folder that will be the default for the newly opened display (so you could, for instance, always have the second file display open to display the Desktop). The **Tab group** option lets you configure a tab group to be opened automatically when switching to dual display mode (instead of just a folder).

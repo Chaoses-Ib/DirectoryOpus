@@ -14,7 +14,7 @@ This page contains options that affect the behavior of toolbars and menus.
 - **Simulate middle mouse click with <kbd>Ctrl</kbd> + left click**: Opus lets you assign [three completely separate functions](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/multiple_function_buttons.md) to toolbar buttons that can be accessed with the left, right and middle mouse buttons. If your mouse doesn't have a middle button, you can use this option to still take advantage of this functionality - holding the <kbd>Ctrl</kbd> key down when you left-click a toolbar button will be treated as a middle-click instead.
 - **Slide auto-hide floating toolbars when hiding and revealing**: When a floating toolbar is docked to the edge of the screen it can be set to auto-hide - it will move itself off-screen so as to take up as little screen real estate as possible, and reappear automatically when you move the mouse over it. If this option is on, the toolbar will use a slide effect when it moves in and out of view, instead of appearing or disappearing immediately.
 
-##### Floating toolbar timings
+### Floating toolbar timings
 
 - **Reveal delay**: Specifies a delay before the toolbar starts to appear. For example, if this is set to 250 milliseconds (250 ms) then the toolbar will only start to appear if the mouse is over it for a quarter of a second, helping to avoid triggering it accidentally when moving the mouse nearby.
 - **Hide delay**: Specifies a delay before the toolbar starts to hide. For example, if this is set to 500 milliseconds (500 ms) then the toolbar will not start to hide until half a second after the mouse has left it.

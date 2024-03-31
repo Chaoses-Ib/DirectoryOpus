@@ -8,7 +8,7 @@ We recommend that you set Opus to start automatically when Windows starts, using
 
 You can also treat Opus like a traditional file manager, that you run when you need it and exit when not using it. The installer can place shortcut icons on the desktop and in the start menu, and you can use these icons to run Opus. You can also pin the icon to the taskbar and launch it that way.
 
-##### Quitting Opus
+### Quitting Opus
 
 To quit Opus when you're done using it, select the **Exit Directory Opus** command from the **File** menu in a Lister, or right-click on the taskbar notification icon (if enabled) and choose the exit command from that menu.
 

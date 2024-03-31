@@ -10,7 +10,7 @@ Keypresses can trigger several types of action:
 
 A number of keys are defined by default, and you can examine them to see how they're configured. For example, the <kbd>Ctrl+A</kbd> key to select the entire contents of the edit field is defined as a simple regular expression that matches the entire string.
 
-##### Control key list
+### Control key list
 
 The top half of this page displays a list of defined keys.
 
@@ -20,29 +20,29 @@ The top half of this page displays a list of defined keys.
 
 When you select a key from the list, the bottom half of the page displays its configuration.
 
-##### Control key configuration
+### Control key configuration
 
 - **Name**: Defines a name for the control key, to be shown in the list.
 - **Key**: The key itself. This is the key you'll need to press in the edit field to activate the action.
 - **Type**: The action type. The various action types are described below.
 
-##### Type: Select via RegEx Match
+### Type: Select via RegEx Match
 
 This action type lets you select a part of the filename using a regular expression. The pattern should include a capture group. The pattern is compared to the entire filename, and if it matches, the portion corresponding to the capture group will be selected.
 
 For example, say you want a key to automatically select the prefix `Copy X of` where X is a number. You could use the regular expression \<nobr\>`(Copy \d of ).*`\</nobr\>. Pressing the associated control key would automatically select the matching prefix.
 
-##### Type: Select via RegEx Search
+### Type: Select via RegEx Search
 
 In contrast to **Select via RegEx Match**, this action performs a *search* on the filename using the provided regular expression. This means that the pattern may match multiple times within the filename. The selection will be moved from one match to the next every time you press the key.
 
 The default **Select words** preset is an example of this. It uses the pattern \<nobr\>`[^\s\.]+`\</nobr\> which basically means "match all characters up to a space or a fullstop". Pressing <kbd>Ctrl+S</kbd> once will select the first word, pressing it again will select the second, and so on.
 
-##### Type: Modify via Rename Preset
+### Type: Modify via Rename Preset
 
 This type lets you select one of your [rename presets](/Manual/file_operations/renaming_files/advanced_rename/rename_presets.md) to apply to the filename when the key is pressed. Note that the name in the edit field will be updated but the file itself is not renamed until you press <kbd>Enter</kbd> as normal (i.e. the rename preset is applied to the text in the field, not the file itself).
 
-##### Type: Modify via Evaluator Clause
+### Type: Modify via Evaluator Clause
 
 This type lets you use an [evaluator clause](/Manual/evaluator/README.md) to change the selection (or position the cursor) and/or modify the contents of the edit field.
 
@@ -53,6 +53,6 @@ The evaluator clause is given variables which tell it the original name, the cur
 
 See [Rename Control Keys](/Manual/evaluator/applicable_contexts/rename_control_keys.md) in the Evaluator Reference section for full details.
 
-##### Testing your control key
+### Testing your control key
 
 At the bottom of the dialog are two text fields, which let you test the results of the selected control key. In the **Test name** field, you should type or paste an example filename that you want to test against. The results of the test are shown in the **Result** field below.

@@ -1,6 +1,6 @@
 # Title Bar
 
-##### Lister window title
+### Lister window title
 
 By default, the Lister title bar displays just the name of the current folder. You can change that here.
 
@@ -42,7 +42,7 @@ Consider a title of `%!%N -  %!Directory Opus` for example:
 
 If you need something even more custom or dynamic, the titlebars for individual windows can also be overridden via commands and scripts.
 
-##### Lister window icon
+### Lister window icon
 
 You can choose whether to show the Opus logo as the Lister's window icon, or the icon for the current folder.
 

@@ -27,7 +27,7 @@ The dialog also provides a simple interface for testing the options you have cho
 
 Finally, the dialog has an **Use options for future buttons** checkbox which lets you choose particular settings and then always use them when dropping new programs on a toolbar. If you use toolbars as launchers and edit them a lot, this may save you some time.
 
-##### Dialog options
+### Dialog options
 
 The dialog's main options are as follows:
 
@@ -107,7 +107,7 @@ The **Allow shortcuts to override** checkbox, if on, means Opus will use the *st
 - **Use options for future buttons**
   The dialog always remembers the last settings you used the next time it appears, but you can turn on this option to make it use those settings automatically without appearing at all. If you do that, you can hold down <kbd>Ctrl</kbd> while dropping a program to turn the option off and make the dialog appear again.
 
-##### Command preview and testing the button
+### Command preview and testing the button
 
 - The **Command preview** part of the dialog lets you see and test the command which the options above have generated.
   Testing can be important because different programs need different options, and the only way to tell is to try them or read the other program's manual.
@@ -126,7 +126,7 @@ The **Allow shortcuts to override** checkbox, if on, means Opus will use the *st
 
   If the **Test Run** button is disabled, it means you have chosen **Require files/folders** without adding any to the Test items list, or something similar.
 
-##### Completing the new button
+### Completing the new button
 
 - If you click **OK**, the new button will be configured based on the options you have specified.
   If **Always use these settings** (discussed above in detail) is on, the settings will then be used next time you drop a program on a toolbar, unless you hold down **Ctrl**.

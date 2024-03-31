@@ -5,7 +5,7 @@ This page contains various options that apply to archive handling in general, ir
 - **Open archives as read-only by default**: If this is turned on, when you navigate to an existing archive it will automatically be treated as read-only by Opus. You will not be able to make changes to the contents of the archive without turning off [read-only mode](/Manual/file_operations/creating_archives/zip_files/read-only_mode.md). (This works with the internal Zip support as well as 7z, RAR, TAR, etc. archives handled by the official Archives plugin. Support within third-party VFS plugins may vary.)
 - **Packed column units**: When you are viewing the contents of a zip file in a file display you can add several zip-specific columns to the file display, including the *Packed* column. This column displays the compressed or "packed" size of files within the archive. You can use this option to change the units the *Packed* column displays file sizes in (*bytes*, *KB *or *auto* - which means Opus chooses the most appropriate unit automatically).
 
-##### Auto-extract
+### Auto-extract
 
 Auto-extract lets you run installers directly from an archive by double-clicking the setup file.
 

@@ -10,7 +10,7 @@ This page contains options that control the appearance and behavior of file disp
 
   
 
-##### File selection / highlighting style
+### File selection / highlighting style
 
 Lets you control both how selected files are displayed and which areas of the line respond to mouse clicks for selecting files.
 

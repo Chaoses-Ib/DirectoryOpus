@@ -11,7 +11,7 @@ As well as letting you make a new folder, the *Create Folder* dialog offers some
 - You can make multiple sub-folders under the same parent folder at once
 - You can automatically navigate to the newly created folder or folders
 
-##### Making a single folder
+### Making a single folder
 
 ![](/Manual/images/media/13/create_folder.png) 
 
@@ -19,7 +19,7 @@ This shows the *Create Folder* in single folder mode.
 
 The two numbers displayed in below the name field indicate the length of the name you have entered and the total length of the path once the folder is created. This can be useful to ensure that your path length doesn't grow beyond the normal maximum of 259 characters - although Opus has no problems dealing with longer paths than that, many other programs may have trouble.
 
-##### Making a folder tree
+### Making a folder tree
 
 You can create a whole tree of sub-folders at once by entering the folder names separated by slashes. For example:
 
@@ -27,13 +27,13 @@ You can create a whole tree of sub-folders at once by entering the folder names 
 
 This would create a folder called *One* in the current location, then a sub-folder in *One* called *Two*, a sub-folder in *Two* called *Three*, and so on, all in the one operation.
 
-##### Making multiple folders at once
+### Making multiple folders at once
 
 If you turn on the **Create multiple folders** option you can create multiple folders simultaneously in the current location. If this is turned on the name field changes to a multi-line text box that lets you enter as many names as you like (one per line):
 
 ![](/Manual/images/media/13/create_folder_multi.png)
 
-##### Making multiple child folders
+### Making multiple child folders
 
 In the above example, the new folders will all be created relative to the current folder. You can also create multiple child-folders at the same sub-folder level using the vertical bar character (`|`) to separate the child folder names.
 
@@ -41,11 +41,11 @@ In the above example, the new folders will all be created relative to the curren
 
 The above example will create two child folders, *2023* and *2024*, and below those create 12 sub-folders (one for each month of the year).
 
-##### Using the dialog in multiple folder mode
+### Using the dialog in multiple folder mode
 
 In **Create multiple folders** mode, the <kbd>Enter</kbd> key moves to a new line in the text box, but you can still quickly *OK* the dialog by pushing <kbd>Enter</kbd> twice on the last line, or by pushing <kbd>Shift+Enter</kbd> on any line. Since double-tapping <kbd>Enter</kbd> at the end is only one extra keystroke, even when only creating a single folder, you may find it convenient to leave the dialog in this mode all the time.
 
-##### Automatically reading the new folder
+### Automatically reading the new folder
 
 The drop-down menu attached to the **OK** button lets you choose what to do with the new folder once it's been created.
 

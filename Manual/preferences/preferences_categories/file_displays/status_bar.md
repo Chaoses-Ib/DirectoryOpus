@@ -7,7 +7,7 @@ These options control the status bar, which appears at the bottom of the Lister 
 
 - **Keep status bars at the bottom of the Lister**: In a dual-display Lister with two separate status bars, the status bars are normally displayed at the bottom of the file displays themselves. Often this means they are at the bottom of the physical window, but this isn't always the case - for example, a toolbar could be positioned between the status bars and the bottom of the window. This option lets you move them to the very bottom of the Lister. If the option to use two independent status bars is turned off then the single status bar is always displayed at the bottom of the Lister.
 
-##### Status Bar definition
+### Status Bar definition
 
 You can tell Opus exactly what information to display on the status bar. By default a count of files, folders (and how many are selected) is shown, but you can configure the display to include much more information, including total playing time for music files and bar graphs to represent things like the proportion of space selected files would take up on a DVD. The text that tells Opus what to display on the status bar is known as its *definition*.
 

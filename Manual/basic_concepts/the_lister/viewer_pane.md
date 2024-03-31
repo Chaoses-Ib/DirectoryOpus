@@ -4,15 +4,15 @@ The Viewer Pane is an integrated image and document viewer that can be displayed
 
 ![](/Manual/images/media/13/viewer_pane.png)
 
-##### Accessing the viewer pane
+### Accessing the viewer pane
 
 The easiest way to display the Viewer Pane in a Lister is with the ![](/Manual/images/media/13/menu_toolbar_-_viewer_pane.png) button on the default toolbar. You can also press <kbd>F7</kbd>, or select the **Viewer Pane** command from the **Lister** dropdown menu.
 
-##### Viewing a file
+### Viewing a file
 
 With the viewer pane displayed, viewing a file is as simple as selecting it in the file display. Opus can natively show many types of image files, and comes with [plugins](/Manual/preferences/preferences_categories/viewer/viewer_plugins.md) to display common document formats like Word and PDF files (providing suitable viewers are installed in the system). The title bar of the viewer pane displays the name of the currently viewed file, as well as some information about it - if it's an image format, it will generally display the resolution and type of image. For files that require the use of a plugin, the name of the plugin will generally be shown.
 
-##### Viewer pane title bar
+### Viewer pane title bar
 
 ![](/Manual/images/media/13/viewerpane_titlebar.png)
 
@@ -30,11 +30,11 @@ There are a number of buttons in the viewer pane's title bar:
 - **Toggle Layout**: This will toggle the layout of the viewer pane between vertical (displayed to the right of the Lister, as in the above screenshot) and horizontal (displayed at the bottom of the Lister).
 - **Close**: Closes the viewer pane.
 
-##### Scrolling the viewer
+### Scrolling the viewer
 
 Using the **mouse wheel** over the viewer pane will move images and documents up and down (where applicable, and assuming third party viewers don't use the wheel for something else). Holding the <kbd>Alt</kbd> key also allows you to scroll left and right with the mouse wheel with Opus's built-in image viewer and plugins that support it.
 
-##### Control bar
+### Control bar
 
 ![](/Manual/images/media/13/viewerpane_controlbar.png)
 
@@ -57,11 +57,11 @@ The buttons in the control bar are:
 - **Print**: Lets you print the currently viewed image or document.
 - **Settings**: This is a shortcut that takes you to the **[Viewer / Viewer Pane](/Manual/preferences/preferences_categories/viewer/viewer_pane.md)** page in Preferences.
 
-##### Not all plugins support all functions
+### Not all plugins support all functions
 
 Depending on the plugin (if any) used to view a particular file, not all of the above functions may be supported. For example, some plugins may not support rotating the display, and in this case the rotate left and rotate right functions would be unavailable.
 
-##### Viewer pane context menu
+### Viewer pane context menu
 
 ![](/Manual/images/media/13/viewer_pane_context_menu.png)
 

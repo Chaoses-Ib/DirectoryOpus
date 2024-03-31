@@ -2,7 +2,7 @@
 
 The Default Lister is a special [saved layout]() that consists of a single Lister. It is generally used whenever a "new" Lister is opened and a specific saved layout is not specified. The default Lister exists automatically - you do not need to create it yourself - and by default, it is updated automatically whenever you close a Lister.
 
-##### When is the default Lister used?
+### When is the default Lister used?
 
 There are many different ways that a new Lister can be opened, and whether the default Lister is used or not depends on the method you open the Lister and any settings that may affect that particular method.
 
@@ -15,11 +15,11 @@ There are many different ways that a new Lister can be opened, and whether the d
 - Double-clicking the Opus taskbar notification icon will open the default Lister if the appropriate option is enabled on the **[Launching Opus / From the Taskbar icon](/Manual/preferences/preferences_categories/launching_opus/launching_opus_from_the_taskbar_icon.md)** Preferences page.
 - A lister opened using the raw `Go NEW` command will generally use the default Lister.
 
-##### When is the default Lister NOT used?
+### When is the default Lister NOT used?
 
 The default Lister isn't used whenever a saved Lister layout is opened - either by manually opening the layout, or by triggering an action (like double-click on the desktop) that's configured to open a layout.
 
-##### Default Lister options
+### Default Lister options
 
 The [Default Lister](/Manual/preferences/preferences_categories/layouts_and_styles/default_lister.md) Preferences page contains options that control how the default Lister is used. Three options are worth mentioning here:
 

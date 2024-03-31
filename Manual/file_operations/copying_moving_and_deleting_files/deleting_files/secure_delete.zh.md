@@ -8,13 +8,13 @@
 
 使用此功能时需要小心谨慎！
 
-##### 单独对每个文件执行安全删除
+### 单独对每个文件执行安全删除
 
 安全删除一个或多个文件的最简单方法是使用工具栏上 **删除** 按钮关联的下拉菜单中的 **安全擦除** 命令。
 
 运行此命令时，选定的文件和文件夹将被覆盖指定的次数，该次数在 **配置** 中的 **[文件操作/删除文件](/Manual/preferences/preferences_categories/file_operations/deleting_files.zh.md)** 页面中指定。
 
-##### 始终使用安全删除
+### 始终使用安全删除
 
 如果你一直希望使用安全删除，你可以打开 **配置** 中 **[删除文件](/Manual/preferences/preferences_categories/file_operations/deleting_files.zh.md)** 页面的 **使用安全擦除** 选项。
 

@@ -12,7 +12,7 @@ This screenshot shows the command editor when it is in Advanced mode (the functi
 
 In these screenshots you can see that the **Start in** field has been converted to a **cd** command (to set the **c**urrent **d**irectory) and the **Run** setting has been converted to a **@runmode** modifier. There are a number of command modifiers that you can use for commands in Advanced mode. Another one is shown above: in the **Copy File** function, the **@keydown** modifier is used to change the button's function based on whether the **Shift** key is held down or not. See the [Command modifiers](../command_modifiers.md) page for more information on modifiers.
 
-##### Function types
+### Function types
 
 The **Function** drop-down in Advanced mode lets you select from three types of functions:
 
@@ -21,7 +21,7 @@ The **Function** drop-down in Advanced mode lets you select from three types of
 - **[Script Function](/Manual/scripting/script_functions.md)**: This type is used to define a button written using an ActiveX scripting language like VBScript or JScript. After selecting this, additional controls will appear to let you select the scripting language. See the page on [Scripting](/Manual/scripting/README.md) for more details on scripts.
 - **WSL Script Function**: This option is available if you have WSL (Windows Subsystem for Linux) installed from the Windows Store under Windows 10. It lets you run a WSL (Bash) script from within Opus.
 
-##### Function editing
+### Function editing
 
 The multi-line text field is where you enter the instructions that make up the command. The toolbar along the top of the field contains a number of drop-downs that can help you build up the command:
 

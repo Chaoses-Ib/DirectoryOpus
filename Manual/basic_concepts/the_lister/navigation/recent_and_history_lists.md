@@ -2,7 +2,7 @@
 
 Opus maintains two separate lists of recently visited folders.
 
-##### Recent list
+### Recent list
 
 The recent list is a global list of your most recently visited folders. It is displayed in the **Recent Locations** sub-menu in the drop-down menu shown when you right-click the the **Back** button on the [Location Bar toolbar](file_display_border.md).
 
@@ -12,7 +12,7 @@ It can also be shown in the [folder tree](folder_tree.md) - turn on the **Recent
 
 You can configure the recent list from the **[Recent List](/Manual/preferences/preferences_categories/frequently_used_paths/recent_list.md)** page in Preferences.
 
-##### History list
+### History list
 
 The history list is also a list of the most recently visited folders, but it is maintained on a per-file display (or per-tab) basis. The history list forms the basis of the **[back and forward](up_forwards_back.md)** navigation actions - when you click the back button, you are moving back through the history list.
 

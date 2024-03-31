@@ -1,15 +1,15 @@
-##### Directory Opus 13 - Detailed release notes
+### Directory Opus 13 - Detailed release notes
 
 # Miscellaneous Scripting
 
-#### General
+## General
 
 - See [Script IDE](script_ide.md) for details of the new script editor and management UIs.
 - Some scripting changes are mentioned in other sections instead of here.
 
 ------------------------------------------------------------------------
 
-#### System settings
+## System settings
 
 - New OnSystemSettingChange event, fires when system settings change. SystemSettingChangeData.type provides the change type:
   - "Environment" when environment variables change.
@@ -30,7 +30,7 @@
 
 ------------------------------------------------------------------------
 
-#### Paths
+## Paths
 
 - Path.Resolve method, which is like the older DOpus.FSUtil.Resolve, but modifies a Path object in-place.
 - Path.Normalize which normalizes the path string by:
@@ -43,7 +43,7 @@
 
 ------------------------------------------------------------------------
 
-#### Dates
+## Dates
 
 - Opus Date objects can now be created directly from JScript Date objects.
 - Date.Set method now accepts a Unix epoch time directly.
@@ -52,7 +52,7 @@
 
 ------------------------------------------------------------------------
 
-#### File change notification
+## File change notification
 
 - Dialog.WatchDir(\<id\>, \<dir\>, \<flags\>)
   - Let scripts monitor a folder or file for changes via a dialog.
@@ -77,7 +77,7 @@
 
 ------------------------------------------------------------------------
 
-#### Taskbar notifications
+## Taskbar notifications
 
 - DOpus.Notify(\<title\>, \<msg\>, \<flags\>)
   - Displays a system notification, in the corner of the screen.
@@ -99,7 +99,7 @@
 
 ------------------------------------------------------------------------
 
-#### Dialogs
+## Dialogs
 
 - Msg.buttons property tells you which mouse buttons ("left", "right", "middle") were down when the message was generated.
 - New Markup Text Controls allow dialogs to use basic markup, including hyperlinks, bold, italics and font colors.
@@ -119,7 +119,7 @@
 
 ------------------------------------------------------------------------
 
-#### Filter objects
+## Filter objects
 
 - New Filter object to work with filters, such as used by Tools \> Find Files \> Advanced.
 - DOpusFactory.Filter() -- Method. Create a new filter object.
@@ -131,7 +131,7 @@
 
 ------------------------------------------------------------------------
 
-#### Miscellaneous
+## Miscellaneous
 
 - Added "duration" and "durationh" script column types. Displays the provided (integer) value as a duration:
   - Value represents the number of seconds.

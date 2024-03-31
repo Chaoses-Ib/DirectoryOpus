@@ -6,11 +6,11 @@ The Metadata Pane is an integrated metadata viewer and editor that can be displa
 
 ![](/Manual/images/media/13/metadata_example.png) 
 
-##### Showing the metadata pane
+### Showing the metadata pane
 
 The easiest way to display the metadata pane in a Lister is with the ![](/Manual/images/media/13/metapane_button.png) button on the default toolbar. You can also press <kbd>F9</kbd>, or select the **Metadata Pane** command from the **Lister** dropdown menu.
 
-##### Metadata pane title bar
+### Metadata pane title bar
 
 The title bar of the metadata pane displays the name of the currently selected file. It also has two arrow buttons that let you move the selection to the previous or next file in the Lister.
 

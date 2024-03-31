@@ -32,7 +32,7 @@
 
 **Ctrl+Tab**可用于在元数据编辑器中的字段和主查看器之间移动输入焦点。
 
-##### 编辑查看器工具栏和键
+### 编辑查看器工具栏和键
 
 独立图像查看器中的工具栏和上下文菜单是完全可配置的，[与列表中的所有工具栏和菜单一样](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/README.zh.md)。此外，您可以创建仅在查看器中激活的热键。
 
@@ -55,7 +55,7 @@ Show VIEWERCMD=zoom,reset `
 
 鼠标滚轮和鼠标按钮的行为可以通过配置进行更改。例如，您可以让左鼠标按钮前进到下一张图像，或者关闭查看器（如果您愿意）。
 
-##### 底部控制栏
+### 底部控制栏
 
 查看器底部的可选控制栏与 [查看器窗格](/Manual/basic_concepts/the_lister/viewer_pane.zh.md)中的控制栏相同 - 它包含用于常用功能的按钮。您可以使用**查看/控制栏**命令启用或禁用它。与查看器顶部的主要工具栏不同，该工具栏无法编辑。
 ![](/Manual/images/media/viewer_pane_-_control_bar.png)

@@ -6,11 +6,11 @@ The snippets panel lets you create and manage *code snippets*. These are intende
 
 Opus maintains multiple sets of snippets for different languages - the dropdown at the top of the panel lets you select the language you want. You can add your own languages by duplicating one of the standard language files in the `/dopusdata/Script Snippets` folder.
 
-##### Adding snippets
+### Adding snippets
 
 To add your own snippet, copy it to the clipboard, and then right-click on the list background (or on the *Your Snippets* heading, if it's visible), and choose the **Paste New Snippet** command. You can rename and delete existing snippets using the context menu as well.
 
-##### Using snippets
+### Using snippets
 
 To use a snippet, you can either:
 

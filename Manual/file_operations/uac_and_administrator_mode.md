@@ -6,7 +6,7 @@ When UAC is enabled (which it is, by default), users and the programs they launc
 
 ![](/Manual/images/media/13/user_account_control.png)
 
-##### Explorer gets treated differently
+### Explorer gets treated differently
 
 Unfortunately Microsoft somewhat [botched](http://www.pretentiousname.com/opus9/page4.html#vistauac) the implementation of UAC in Explorer. Vista was widely derided for the sheer number of UAC prompts you needed to click through to perform routine or mundane tasks. Simply creating a folder could result in four individual prompts, leading many people to simply turn UAC off altogether.
 
@@ -14,11 +14,11 @@ Since Windows 7, Microsoft over-reacted to the criticism and have dramatically t
 
 We have always viewed UAC as a commendable (if poorly-executed) attempt to improve the security of Windows, and we recommend both leaving it set to **Always notify** in the Windows security settings. Opus natively supports UAC, in a much more sensible way than Explorer, and you won't find performing administrative tasks in Opus difficult or irritating at all.
 
-##### Performing administrative tasks in Opus
+### Performing administrative tasks in Opus
 
 When performing a file operation in a protected location, like *C:\Program Files*, Opus will display a UAC prompt as in the screenshot above. It tries to be smart about this - it will only prompt once per function, unlike Explorer which can sometimes prompt up to four times for the one operation.
 
-##### Elevating for a period of time
+### Elevating for a period of time
 
 If you are performing multiple administrative tasks, you can use the **Administrator Mode** function to temporarily elevate the current Lister.\<WRAP\>
 
@@ -32,6 +32,6 @@ Select the timeout, and click OK. Opus will then display a UAC prompt to elevate
 
 Any operations you perform in an Administrator mode Lister will be automatically elevated - no further UAC prompts will need to be shown. Note though that any programs you launch from that Lister will also be elevated.
 
-##### Elevation in functions
+### Elevation in functions
 
 You can configure a toolbar button or hotkey that launches an external program to launch the program elevated using the **@admin** [command modifier](/Manual/customize/creating_your_own_buttons/command_modifiers.md).

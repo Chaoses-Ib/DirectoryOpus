@@ -6,6 +6,6 @@ Opus will ask you to confirm the change. You can also choose to automatically tr
 
 When Opus restarts, the language will be changed.
 
-##### Toolbar glossary
+### Toolbar glossary
 
 The **Toolbar Glossary** button lets you create a comparative glossary of toolbar commands between the current language and the selected language. If you want to discuss Opus with another user (e.g. on the [forum](https://resource.dopus.com)) you might want to use this command so you can find out what the toolbar button labels are in another language.

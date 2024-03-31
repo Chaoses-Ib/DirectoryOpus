@@ -1,4 +1,4 @@
-#### Vars
+## Vars
 
 The **Vars** object represents a collection of user and script-defined variables. There are a number of different sets of variables, with differing scopes. Some sets support persistent variables, that are saved and re-loaded from one session to the other.
 

@@ -10,7 +10,7 @@ The *Number Files* preset shown above has been made a favorite, which moves it t
 
 The buttons above the presets list let you manage your presets. The **Last Rename** button loads the settings for the last-performed rename operation.
 
-##### Manage menu
+### Manage menu
 
 The drop-down **Manage** menu provides various commands for managing your presets (you can also right-click a preset to display its context menu).
 
@@ -25,7 +25,7 @@ The drop-down **Manage** menu provides various commands for managing your preset
 - **Import Preset File**: Import a preset that someone else has shared with you.
 - **Reset Default Presets**: Lets you reset one or more of the default presets. Opus shows a list and lets you choose which ones to restore. The default presets are added to the list, they don't replace any existing presets you already have.
 
-##### Putting presets in groups
+### Putting presets in groups
 
 The **Assign To Group** command in the **Manage** dropdown menu lets you put your presets into groups, which can be very useful if you've got a lot of presets to keep track of.
 

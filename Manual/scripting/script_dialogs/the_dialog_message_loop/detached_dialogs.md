@@ -6,7 +6,7 @@ To create a detached dialog, set the **[Dialog](/Manual/reference/scripting_refe
 
 However you create the detached dialog, after it's been displayed your script has to run a message loop until the dialog closes. Assuming your **[Dialog](/Manual/reference/scripting_reference/scripting_objects/dialog.md)**object is called *Dlg*, a basic message loop looks like this:
 
-##### Basic Message Loop - VBScript
+### Basic Message Loop - VBScript
 
     Do
       Set Msg = Dlg.GetMsg
@@ -14,7 +14,7 @@ However you create the detached dialog, after it's been displayed your script ha
         ' Your code to process dialog events will go here.
     Loop
 
-##### Basic Message Loop - JScript
+### Basic Message Loop - JScript
 
     while (true) {
       var Msg = Dlg.GetMsg();
@@ -32,7 +32,7 @@ Just like in a simple dialog, *Button* controls with their **Close Dialog** prop
 
 The following script code, along with the same resources from the previous example, demonstrate a simple detached dialog. If you want to experiment with this example, create a new toolbar button, and paste the script code into the **Script Code** tab of the command editor, and the resources XML into the **Resources** tab.
 
-##### Script Code - VBScript
+### Script Code - VBScript
 
     Function OnClick(ByRef clickData)
       Set Dlg = DOpus.Dlg
@@ -48,7 +48,7 @@ The following script code, along with the same resources from the previous examp
       DOpus.Output "Return code = " & Dlg.result
     End Function
 
-##### Script Code - JScript
+### Script Code - JScript
 
     function OnClick(clickData) {
       var Dlg = DOpus.Dlg;
@@ -64,7 +64,7 @@ The following script code, along with the same resources from the previous examp
       DOpus.Output("Return code = " + Dlg.result);
     }
 
-##### Resources
+### Resources
 
     <resources>
       <resource name="testdlg" type="dialog">

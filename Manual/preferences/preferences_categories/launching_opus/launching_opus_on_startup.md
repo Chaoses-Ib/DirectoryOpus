@@ -5,7 +5,7 @@ The settings on this page let you set Opus to run automatically when Windows sta
 - **Launch Directory Opus automatically on system startup**: When Windows boots, Directory Opus will start running automatically. Having Opus always running means opening a Lister is much quicker, and it also lets you take advantage of configurable [system-wide hotkeys](/Manual/additional_functionality/system-wide_hotkeys.md) and [floating toolbars](/Manual/additional_functionality/floating_toolbars/README.md). Run-on-startup is implemented by adding a shortcut to the *Startup* program group in the Start menu.
   - **Don't open any Listers**: No Listers will open when Opus runs on system startup. The options below still apply if you quit Opus and then start it up again manually.
 
-##### What happens when Opus starts up
+### What happens when Opus starts up
 
 - **Open the Default Lister**: The Default Lister is opened.
 - **Open the Listers that were open when the program was last closed**: When Opus quits it remembers which Listers were opened, and restores them the next time it starts.

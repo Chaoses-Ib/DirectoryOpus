@@ -4,19 +4,19 @@ The **Folder Images** page lets you change the background image and color in spe
 
 The list of folders is split into different groups:
 
-##### Folders
+### Folders
 
 This group defines images and colors for specific folders. You can also define an image for a path using a wildcard string.
 
-##### System folders
+### System folders
 
 Defines images for certain special locations. There are currently only two locations in this group - the **Computer** folder, which applies when Opus displays that folder itself rather than hosting Explorer, and the **Portable Devices** folder, which applies when viewing the root of the [mtp:](/Manual/basic_concepts/virtual_file_system/mtp.md) namespace.
 
-##### Content Types
+### Content Types
 
 The Content Types section defines images for [file type groups](/Manual/file_types/file_type_groups.md). When the [Content Types](/Manual/basic_concepts/folder_options/content_types.md) system is enabled, these images will be used automatically when a folder containing enough of those types of files is read.
 
-##### Folder Types
+### Folder Types
 
 This section defines default images for certain types of folder when a specific image hasn't been defined. The types are:
 
@@ -34,13 +34,13 @@ This section defines default images for certain types of folder when a specific 
       * **Search Results**: A file collection that is used to present quick search results.
       * **Synchronize**: Applies whenever the [[:file_operations:copying_moving_and_deleting_files:copying_updated_files:synchronize|Synchronize]] tool is used. 
 
-##### Working with the folder list
+### Working with the folder list
 
 The toolbar above the list lets you add or remove specific folders and path wildcards. A path wildcard can be defined using the standard Opus [wildcard system](/Manual/reference/wildcard_reference/pattern_matching_syntax.md), or using [regular expressions](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.md). If the **Expand aliases** option is turned on then Opus will attempt to expand folder aliases and environment variables in the entered string before performing the pattern matching.
 
 To enable an image for a particular folder or type of folder, turn its checkbox on. When the item is selected, the bottom part of the dialog will show that image's settings
 
-##### Image settings
+### Image settings
 
 ![](/Manual/images/media/13/folder_images.png)
 

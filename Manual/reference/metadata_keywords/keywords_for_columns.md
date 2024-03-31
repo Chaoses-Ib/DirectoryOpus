@@ -8,7 +8,7 @@ Note that some columns appear in multiple categories. For historic reasons, colu
 
 Where columns are used to output text (for example, when generating filenames for a rename, or when displaying info tips), the format of dates, times and numeric values can be overridden.
 
-##### Date and time fields
+### Date and time fields
 
 Date and time fields let you configure the date format, the time format, or both. For example,
 
@@ -20,7 +20,7 @@ Date and time fields let you configure the date format, the time format, or both
 
 As you can see in the examples, **D#** is used to mark the date format, **T#** is used to mark the time format, and **A#** indicates both date and time codes are present. See the [Codes for date and time](../command_reference/external_control_codes/codes_for_date_and_time.md) page for information on date and time formats.
 
-##### Numeric fields
+### Numeric fields
 
 Numeric fields let you control zero-padding. For example,
 
@@ -33,9 +33,9 @@ The filename can be retrieved without the file extension using **{name\|noext}**
 
 ------------------------------------------------------------------------
 
-#### Column keywords
+## Column keywords
 
-##### Date and Time
+### Date and Time
 
 <table>
 <thead><tr><th>
@@ -77,7 +77,7 @@ modifiedtime
 </td></tr></tbody>
 </table>
 
-##### Documents
+### Documents
 
 <table>
 <thead><tr><th>
@@ -128,7 +128,7 @@ title
 </td></tr></tbody>
 </table>
 
-##### Name and Path
+### Name and Path
 
 <table>
 <thead><tr><th>
@@ -170,7 +170,7 @@ shortname
 </td></tr></tbody>
 </table>
 
-##### Picture Dimensions
+### Picture Dimensions
 
 <table>
 <thead><tr><th>
@@ -214,7 +214,7 @@ picwidth
 </td></tr></tbody>
 </table>
 
-##### Picture Metadata
+### Picture Metadata
 
 <table>
 <thead><tr><th>
@@ -342,7 +342,7 @@ whitebalance
 </td></tr></tbody>
 </table>
 
-##### Programs
+### Programs
 
 <table>
 <thead><tr><th>
@@ -369,7 +369,7 @@ prodversion
 </td></tr></tbody>
 </table>
 
-##### File Size
+### File Size
 
 <table>
 <thead><tr><th>
@@ -405,7 +405,7 @@ uncompressedsize
 </td></tr></tbody>
 </table>
 
-##### General
+### General
 
 <table>
 <thead><tr><th>
@@ -477,7 +477,7 @@ userdesc
 </td></tr></tbody>
 </table>
 
-##### Movies
+### Movies
 
 <table>
 <thead><tr><th>
@@ -564,7 +564,7 @@ picwidth
 </td></tr></tbody>
 </table>
 
-##### Music
+### Music
 
 <table>
 <thead><tr><th>

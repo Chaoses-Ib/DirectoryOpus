@@ -1,4 +1,4 @@
-#### Func
+## Func
 
 The **Func** object is passed to a script when it is invoked via a command. In a [script function](/Manual/scripting/script_functions.md), it is passed to the **[OnClick](../scripting_events/onclick.md)** method as the **[ClickData](clickdata.md).func** property, and in a script add-in that [adds an internal command](/Manual/scripting/example_scripts/adding_a_new_internal_command.md), via the **[ScriptCommandData](scriptcommanddata.md).func** property. The **Func** object provides information about the default source and destination of the command, as well as details about how it was invoked.
 

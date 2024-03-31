@@ -1,6 +1,6 @@
 Previous: [Opus 13 Highlights - Page 2](/Manual/release_history/opus13/page2.md) # Directory Opus 13 - Highlights - Page 3
 
-#### Folder Tree
+## Folder Tree
 
 Adjustable spacing and indentation:
 
@@ -26,7 +26,7 @@ Network servers are cached across restarts, and you can control which machines a
 
 ------------------------------------------------------------------------
 
-#### Thumbnails
+## Thumbnails
 
 Improved display of long names, and Find-As-You-Type highlights:
 
@@ -43,7 +43,7 @@ Folders can be given custom thumbnail styles:
 
 ------------------------------------------------------------------------
 
-#### Folder Tabs
+## Folder Tabs
 
 Locked tabs can be prevented from closing:
 
@@ -60,7 +60,7 @@ Both vertical and horizontal tab bars now scroll with the mouse wheel:
 
 ------------------------------------------------------------------------
 
-#### Find As You Type (FAYT)
+## Find As You Type (FAYT)
 
 Type <kbd>'</kbd> into the file display to search with Opus, or type <kbd>+</kbd> to search your machine with Everything:
 

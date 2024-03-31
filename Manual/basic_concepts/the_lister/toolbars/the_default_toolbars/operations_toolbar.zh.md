@@ -6,7 +6,7 @@
 
 ![](/Manual/images/media/13/operations_toolbar.png)
 
-##### 复制文件
+### 复制文件
 
 父按钮将[复制](/Manual/file_operations/copying_moving_and_deleting_files/README.zh.md)选中的文件和文件夹到目标文件夹。附加在此按钮中的下拉菜单包含以下附加命令：
 
@@ -17,13 +17,13 @@
 * **发送到**：此子菜单包含系统***发送到***菜单，可将选定的文件和文件夹发送到不同目标地址。使用此下拉菜单相当于对文件右击，然后从*发送到*上下文菜单中进行选择。
 * **复制过滤器**：此命令在当前文件窗口中打开或关闭递归[复制过滤器](/Manual/file_operations/filtered_operations/README.zh.md)。
 
-##### 移动文件
+### 移动文件
 
 父按钮将[移动](/Manual/file_operations/copying_moving_and_deleting_files/README.zh.md)选中的文件和文件夹到目标地址。下拉菜单包含以下附加命令：
 
 * **移动为**：此命令支持你在移动文件时为它们[提供新的文件名](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.zh.md)——一次一个或使用通配符批量为所有选定的文件提供文件名。
 
-##### 重命名
+### 重命名
 
 父命令支持你使用**[高级重命名](/Manual/file_operations/renaming_files/advanced_rename/README.zh.md)**对话框来重命名选定的文件和文件夹。下拉菜单包含一些关于原始重命名命令如何“编写脚本”来执行特殊重命名任务的示例：
 
@@ -34,7 +34,7 @@
 * **时间戳名称**：将日期和时间戳追加到选定文件名的后面。
 * **下划线转换为空格**：将文件名中任何下划线替换为空格。
 
-##### 新建文件夹
+### 新建文件夹
 
 父命令显示一个对话框，允许你在活动文件列表中新建一个文件夹。如果你当前位于[文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)根文件夹中，将新建一个集合，如果你当前位于[库](/Manual/basic_concepts/virtual_file_system/libraries.zh.md)根文件夹中，将新建一个库。下拉菜单包含以下附加命令：
 
@@ -44,7 +44,7 @@
 * **新建日期文件夹**：在当前文件列表中新建一个文件夹，其名称为当前日期和时间。
 * **移至日期文件夹**：使用当前日期和时间新建一个文件夹，并将所有选定文件和文件夹自动移动到该文件夹。
 
-##### 删除
+### 删除
 
 父按钮将删除所有选定的文件和文件夹。默认情况下，如果可能，回收站将用于提供可撤消的删除，但这可以通过[配置](/Manual/preferences/preferences_categories/file_operations/deleting_files.zh.md)进行修改。在附加的下拉菜单中可找到以下附加命令：
 

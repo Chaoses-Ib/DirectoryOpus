@@ -5,7 +5,7 @@
 - **在系统启动时自动启动 Directory Opus**：[Windows 启动时，Directory Opus 将自动开始运行。始终运行 Opus 意味着打开文件窗口要快得多，并且它还使您可以使用可配置的[系统级热键](/Manual/additional_functionality/system-wide_hotkeys.zh.md) 和[浮动工具栏](/Manual/additional_functionality/floating_toolbars/README.zh.md)。通过向开始菜单中的*Startup* 程序组添加快捷方式来实现启动时运行。
   - **不要打开任何文件窗口**： 当 Opus 在系统启动时运行时，不会打开任何文件窗口。如果您退出 Opus，然后手动重新启动它，则以下选项仍适用。
 
-##### Opus 启动时发生的情况
+### Opus 启动时发生的情况
 
 - **打开默认文件窗口**：打开默认文件窗口。
 - **打开程序上次关闭时打开的文件窗口**： 当 Opus 退出时，它会记住打开了哪些文件窗口，并在下次启动时还原它们。

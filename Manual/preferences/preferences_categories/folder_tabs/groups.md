@@ -10,7 +10,7 @@ The **Mark as hidden** button lets you mark a group as hidden, to stop it appear
 
 To edit a tab group, select it and click the **Edit** button (or double-click it). This shows the *Edit Tab Group* dialog.
 
-##### Edit Tab Group dialog
+### Edit Tab Group dialog
 
 The **Name** field lets you modify the tab group name, and the **Description** field lets you assign your own description to the group. The other options at the top are:
 
@@ -27,7 +27,7 @@ Each entry in the list below represents a tab, or more specifically, a folder th
 
 You can also use the palette button to the right of **Link Tab** to assign an [edge color](edge_colors.md) to the tab.
 
-##### Tab labels
+### Tab labels
 
 You can assign any label you like to a tab - it doesn't have to have the name of the folder displayed on it. Click the **Edit Tab** button to edit a tab's label (or to change the folder for an existing tab). You can use several special "tokens" to insert information in the tab label:
 

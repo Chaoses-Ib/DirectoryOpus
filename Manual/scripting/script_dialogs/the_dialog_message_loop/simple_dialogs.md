@@ -6,7 +6,7 @@ To allow the user to close the dialog you should add one or more *Button* contro
 
 Below is an example of a script that displays a dialog using the simple method. The raw XML for the dialog is also included. If you want to experiment with this example, create a new toolbar button, and paste the script code into the **Script Code** tab of the command editor, and the resources XML into the **Resources** tab. All the following examples are written in VBScript.
 
-##### Script Code - VBScript
+### Script Code - VBScript
 
     Function OnClick(ByRef clickData)
       Set Dlg = DOpus.Dlg
@@ -16,7 +16,7 @@ Below is an example of a script that displays a dialog using the simple method. 
       DOpus.Output "Return code = " & retVal
     End Function
 
-##### Script Code - JScript
+### Script Code - JScript
 
     function OnClick(clickData) {
       var Dlg = DOpus.Dlg;
@@ -26,7 +26,7 @@ Below is an example of a script that displays a dialog using the simple method. 
       DOpus.Output("Return code = " + retVal);
     }
 
-##### Resources
+### Resources
 
     <resources>
       <resource name="testdlg" type="dialog">

@@ -12,7 +12,7 @@ This dialog also provides an example of a resizable dialog. You can make any dia
 
 If you want to experiment with this example, create a new toolbar button (with the type to *Script Function*) and paste the script code into the **Script Code** tab of the command editor, and the resources XML into the **Resources** tab. All the following examples are written in VBScript.
 
-##### Code
+### Code
 
     Function OnClick(ByRef clickData)
 
@@ -49,7 +49,7 @@ If you want to experiment with this example, create a new toolbar button (with t
     End Function
      
 
-##### Resources
+### Resources
 
     <resources>
     <resource name="books" type="dialog">

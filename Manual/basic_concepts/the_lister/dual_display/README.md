@@ -4,7 +4,7 @@ The term *dual-display mode* refers to the display of two independent file displ
 
 Dual-display mode makes it particularly easy to compare the contents of two folders, or copy or move files between two folders, without needing to open multiple windows or change folder a lot. Another common use is to display the same folder in both displays, in two different view modes - for example, details mode in one and thumbnails in the other.
 
-##### Switching into dual-display mode
+### Switching into dual-display mode
 
 The easiest way to put a Lister into dual-display mode is with the buttons on the default toolbar:
 
@@ -15,7 +15,7 @@ You can also press <kbd>F6</kbd>, which toggles between single-display and dual-
 
 When a Lister first goes into dual-display mode, the currently displayed folder will be duplicated in the new display by default. You can change this to always show a particular folder or tab group with the options on the **[File Displays / Options](/Manual/preferences/preferences_categories/file_displays/options/README.md)** Preferences page.
 
-##### Copying files in dual-display mode
+### Copying files in dual-display mode
 
 When a Lister is in dual-display mode you can copy or move files from one display to the other using drag-and-drop or copy-and-paste.
 

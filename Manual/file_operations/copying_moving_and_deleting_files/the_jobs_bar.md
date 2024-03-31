@@ -8,13 +8,13 @@ You can configure the *Jobs Bar* to appear automatically whenever a job is start
 
 The *Jobs Bar* buttons also let you manage the jobs directly. Click a button to display its progress dialog - click it again to hide it.
 
-##### Context menu
+### Context menu
 
 If you right-click the button a context menu is displayed that lets you pause, resume or abort the job.
 
 ![](/Manual/images/media/13/jobs_bar_menu.png)
 
-##### Streamlining your copy workflow
+### Streamlining your copy workflow
 
 If you're using the *Jobs Bar* you may also like to configure Opus to minimize all progress indicators automatically. This can dramatically streamline your workflow - if you are launching multiple simultaneous file operations it can be incredibly distracting to have progress indicators popping up in front of the Lister every time you launch an operation.
 

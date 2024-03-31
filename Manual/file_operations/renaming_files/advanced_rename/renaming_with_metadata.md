@@ -23,7 +23,7 @@ The back-slashes that we've inserted between these fields has the effect of movi
 
 The [Keywords for Columns](/Manual/reference/metadata_keywords/keywords_for_columns.md) page contains a full list of the keywords that can be used by the **Rename** function.
 
-##### Additional codes for rename
+### Additional codes for rename
 
 As well as the full list of columns, the following codes can be used in the **New name** field:
 
@@ -43,11 +43,11 @@ If you want to use rename to move files into new folders, adding `$.\` at the s
 
 The original filename can be retrieved without the file extension using `{name|noext}`.
 
-##### Legal filenames
+### Legal filenames
 
 Sometimes metadata may contain characters that aren't valid in filenames. For example, the **{time}** field normally formats the time using colons (*HH:MM:SS*), and colons are not legal filename characters. By default illegal characters will be converted to the closest legal alternative (so for example, a colon will be converted to a semi-colon). However you may wish to control this process yourself:
 
-##### Date and time fields
+### Date and time fields
 
 Date and time fields let you configure the date format, the time format, or both. For example,
 
@@ -57,13 +57,13 @@ Date and time fields let you configure the date format, the time format, or both
 
 As you can see in the examples, `D#` is used to mark the date format, and `T#` is used to mark the time format. See the [Codes for date and time](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.md) page for information on date and time formats.
 
-##### Numeric fields
+### Numeric fields
 
 Numeric fields let you control zero-padding. For example,
 
 - `{size|#8}`: Zero-pads the size in bytes to eight places (e.g. *00045412*)
 - `{mp3track|#2}`: Zero-pads the track number to two places (e.g. *08*)
 
-##### Including literal metadata codes
+### Including literal metadata codes
 
 If for some reason you want to include a metadata code in the new filename literally (e.g. you really want to call a file *Blah{size}*) you can escape the leading `{` with another `{` character. E.g. `*{{size}` as a new name would add the literal string `{size}` to the name of every file.

@@ -6,7 +6,7 @@ These options apply when Opus implements its own display for the *This PC* folde
 
 You can configure the file display format for *This PC* when the native display is enabled using the [Folder Formats](../folder_formats/README.md) page, using the item in the **System folders** category.
 
-##### This PC configuration
+### This PC configuration
 
 - **Group drives by storage type**: When turned on local disk drives in the *This PC* folder will have separate groups for HDD, SSD and Other (unknown) - when off, all drives will be listed as "Local drives".
 - **Include *Files Stored on This Computer***: This option adds a group to the *This PC* folder which contains links to the document folders on this machine (your own personal folder, and the shared documents folder).

@@ -6,7 +6,7 @@ For example, you can define a style that opens the [viewer pane](viewer_pane.md)
 
 Styles can also cause a new folder to be read, multiple [folder tabs](tabs/README.md) to be created and can also modify the [format](../folder_options/README.md) of the currently displayed folder.
 
-##### Pre-defined styles
+### Pre-defined styles
 
 The styles that Opus pre-defines are:
 
@@ -21,16 +21,16 @@ The styles that Opus pre-defines are:
 
 These styles are just examples; of course you are free to modify or delete them, and you can also create your own.
 
-##### Creating a style
+### Creating a style
 
 Use the [Layouts and Styles / Styles](/Manual/preferences/preferences_categories/layouts_and_styles/styles.md) Preferences page to create and manage styles.
 
-##### Applying a style to the Lister
+### Applying a style to the Lister
 
 The **Lister** dropdown menu shows a list of styles. Select one from the list to load it. You can also right-click the styles in the list to update them with the current Lister settings.
 
 You can also use the `Prefs STYLE` raw command - this is useful if you want to create [hotkeys](/Manual/customize/the_customize_dialog/keys.md) to quickly switch between multiple Lister configurations.
 
-##### Style tabs
+### Style tabs
 
 Another way to switch styles is with the style tabs. You can add these to a toolbar from the **[Commands](/Manual/customize/the_customize_dialog/commands.md)** tab of the *Customize* dialog. Type `tabs` into the search field and look for the **Lister Styles - Tabs** command, and then drag it to a toolbar to add it.

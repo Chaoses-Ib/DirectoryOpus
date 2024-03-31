@@ -10,7 +10,7 @@ This page contains options that control the appearance of the file display in *T
 
   
 
-##### Thumbnails in tiles
+### Thumbnails in tiles
 
 You can optionally have *Tiles* mode also display thumbnails for files.
 

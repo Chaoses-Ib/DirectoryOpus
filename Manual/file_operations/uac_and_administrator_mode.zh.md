@@ -6,7 +6,7 @@ UAC（[用户帐户控制](http://en.wikipedia.org/wiki/User_Account_Control)）
 
 ![](/Manual/images/media/13/user_account_control.png)
 
-##### 资源管理器被区别对待
+### 资源管理器被区别对待
 
 不幸的是，Microsoft 稍稍[搞砸了](http://www.pretentiousname.com/opus9/page4.html#vistauac)资源管理器中 UAC 的实现。人们广泛嘲笑 Vista，因为它需要点击过多的 UAC 提示才能执行例程或日常任务。仅仅创建一个文件夹就会产生四个单独的提示，导致许多人直接关闭 UAC。
 
@@ -14,11 +14,11 @@ UAC（[用户帐户控制](http://en.wikipedia.org/wiki/User_Account_Control)）
 
 我们一直将 UAC 视为一项值得称赞（虽然执行得很差）的尝试，以提高 Windows 的安全性，我们建议在 Windows 安全设置中将其设置为 **始终通知**。Opus 本机支持 UAC，比资源管理器更合理的方式，您不会发现使用 Opus 执行管理任务困难或烦人。
 
-##### 在 Opus 中执行管理任务
+### 在 Opus 中执行管理任务
 
 在受保护的位置（如 *C:\Program Files*）执行文件操作时，Opus 将显示如上图所示的 UAC 提示。它非常智能——它只会针对每项功能提示一次，这与资源管理器有所不同，资源管理器有时会针对一项操作最多提示四次。
 
-##### 在一段时间内提升
+### 在一段时间内提升
 
 如果您要执行多项管理任务，您可以使用 **管理员模式** 功能来临时提升当前的文件窗口。
 
@@ -32,6 +32,6 @@ UAC（[用户帐户控制](http://en.wikipedia.org/wiki/User_Account_Control)）
 
 您在管理员模式文件窗口中执行的任何操作都会自动提升——无需显示任何进一步的 UAC 提示。但请注意，您从该文件窗口启动的任何程序也会被提升。
 
-##### 在功能中提升
+### 在功能中提升
 
 您可以配置工具栏按钮或热键启动外部程序，以使用 **@admin** [命令修饰符](/Manual/customize/creating_your_own_buttons/command_modifiers.zh.md) 启动提升的程序。

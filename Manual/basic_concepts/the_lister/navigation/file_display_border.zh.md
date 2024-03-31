@@ -4,7 +4,7 @@
 
 ![](/Manual/images/media/13/file_display_toolbar.png)
 
-##### 默认地址栏工具栏
+### 默认地址栏工具栏
 
 默认工具栏的主要组件是 [面包屑地址栏](breadcrumbs_location_field.zh.md)，它向您显示当前文件夹并允许您在当前层次结构内导航。
 
@@ -24,7 +24,7 @@
 
 这是一个完全 [可配置的工具栏](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/README.zh.md)，因此您可以添加您自己的按钮并修改或移除默认按钮。请参阅 [文件列表工具栏](../toolbars/the_default_toolbars/file_display_toolbar.zh.md) 页面以了解有关这些按钮的更多信息。
 
-##### 源/目标状态
+### 源/目标状态
 
 复制文件等某些操作本质上需要涉及两个文件夹 - 源文件夹和目标文件夹。
 
@@ -34,7 +34,7 @@
 
 有关源/目标概念的更多信息，请参阅 **[源和目标](../../source_and_destination.zh.md)** 主题。
 
-##### 静态标题模式
+### 静态标题模式
 
 在 **[地址栏/工具栏](/Manual/preferences/preferences_categories/location_bar/toolbars.zh.md)** 中，您可以选择关闭文件列表工具栏，在这种情况下，地址栏将恢复为一个更简单的静态标题：
 

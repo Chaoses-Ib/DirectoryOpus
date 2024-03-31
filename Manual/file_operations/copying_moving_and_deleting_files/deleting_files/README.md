@@ -12,7 +12,7 @@ If you hold the <kbd>Shift</kbd> key down when pressing <kbd>Del</kbd> or clicki
 
 The drop-down menu attached to the **Delete** button on the default toolbar contains several commands and options relating to deleting files:
 
-##### Delete menu
+### Delete menu
 
 ![](/Manual/images/media/13/delete_dropdown.png)
 
@@ -27,7 +27,7 @@ The drop-down menu attached to the **Delete** button on the default toolbar cont
 - **Enable Delete Filter**: Activates the [recursive filter](../filtered_operations/README.md) for the Delete function, which lets you selectively delete the contents of selected sub-folders.
 - **Delete Settings**: Opens the [Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md) Preferences page.
 
-##### Delete options
+### Delete options
 
 The **[File Operations / Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.md)** Preferences page contains several options that let you configure the Delete function in Opus. You can choose whether Opus asks you for confirmation before the delete (you can even have it ask you before each file if you like), and the use of the recycle bin can be configured. You can also choose whether files marked as read-only can be deleted without a special confirmation prompt.
 

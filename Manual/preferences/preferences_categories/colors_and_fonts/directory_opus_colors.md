@@ -15,7 +15,7 @@ Selecting a category from the color list displays its associated colors on the r
 
 Note that when you edit colors on this page you're only editing the colors in the current set ("dark" or "light") - use the options on the [themes](themes.md) page to select which color set is in use.
 
-##### Editing Colors
+### Editing Colors
 
 ![](/Manual/images/media/13/color_picker.png)
 
@@ -44,7 +44,7 @@ Some of these commands may be disabled depending on the current color value (e.g
 
 The commands in that menu are also available when you right-click the color picker button itself (so for example, you don't need to show the color picker in order to copy the color to the clipboard).
 
-##### File and Folder Colors
+### File and Folder Colors
 
 - **File display background**: The background color of the file display area. You can also set a different color that's used when a file display is in [destination](/Manual/basic_concepts/source_and_destination.md) mode (either in a single file display Lister or as part of a dual display Lister), also when it's off (i.e. a single file display Lister that isn't either the source or destination). You can also set separate colors for when the [quick filter](/Manual/basic_concepts/searching_and_filtering/filter_bar.md) is active. 
   If you turn off the destination or background colors, the main background color will be used for both source and destination file displays (and similarly, if the 'filtered' colors are turned off the main colors will be used instead).
@@ -68,7 +68,7 @@ The commands in that menu are also available when you right-click the color pick
     * **Thumbnails**: Colors used for thumbnail borders, both for folders and for images. You can also select the colors for the various thumbnails overlays.
     * **Tiles**: Colors used to draw tiles in tiles mode.
 
-##### Other Colors
+### Other Colors
 
 - **Cloud status icons**: Colors used to draw the status icons for files stored in cloud services (e.g. Dropbox or Onedrive). This only affects the separate Status column (which is optional), not any icon overlays added by the cloud service itself.
 - **Code editor**: Colors used in the code editor (used mainly in the [command editor](/Manual/customize/creating_your_own_buttons/command_editor/advanced_command_editor.md) and in the [script editor](/Manual/scripting/script_editor/README.md).)

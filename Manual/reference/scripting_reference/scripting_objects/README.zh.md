@@ -9,7 +9,7 @@
 
 属性和方法之间的主要区别是，方法可以（但并不总是）接受修改其行为的参数，并且不必（但通常会）返回结果。
 
-#### 变量类型
+## 变量类型
 
 返回结果的属性和方法可以返回许多不同类型的变量，方法通常使用一个或多个参数，这些参数也可以是多种类型。ActiveX 脚本语言通常是 *无类型的* - 也就是说，不必预先定义变量的类型，并且从一种类型转换为另一种类型通常（但并非总是）自动进行。Opus 脚本主要使用以下类型的变量：
 
@@ -23,14 +23,14 @@
 - *Object* - 一个具有已定义方法和属性的 Opus 脚本对象（如下所列的对象类型之一）。某些对象既可以是对象，又可以是集合 - 也就是说，它们具有方法和属性，但也可以像集合一样进行枚举。某些对象还具有一个 *默认值* - 也就是说，仅使用对象名称而不使用任何方法或属性将返回它们自己的值。例如，**Metadata** 对象的默认值是一个表示可用主要元数据类型的字符串。还可以使用特殊 **def_value** 属性名称引用对象的默认值。
 - *Variant* - 任何类型的变量（这与几个对象一起使用 - 例如，**Var** 对象可以存储一个变体）
 
-#### 全局对象
+## 全局对象
 
 Opus 在通过 Opus 调用脚本时为脚本提供了两个作为全局变量的对象：
 
 - **[DOpus](/Manual/reference/scripting_reference/scripting_objects/dopus.zh.md)**: 此**对象可供 *所有* 脚本使用。它提供了各种辅助方法和集合，可用于访问诸如文件窗口和工具栏之类的对象。
 - **[Script](/Manual/reference/scripting_reference/scripting_objects/script.zh.md)**: 当调用其各种事件处理程序时，此**对象将提供给 [脚本插件](/Manual/scripting/script_add-ins/README.zh.md)**。它提供了与脚本本身相关的信息。
 
-#### 事件对象
+## 事件对象
 
 Opus 在脚本中的一个方法中提供许多对象作为参数。例如，当调用 [脚本函数](/Manual/scripting/script_functions.zh.md)（例如，单击按钮时），Opus 将调用其 **OnClick** 方法，并向其传递一个 **ClickData** 对象。
 
@@ -69,7 +69,7 @@ Opus 在脚本中的一个方法中提供许多对象作为参数。例如，当
 - **[TabClickData](/Manual/reference/scripting_reference/scripting_objects/tabclickdata.zh.md)**：此对象传递给 **[OnTabClick](scripting_events/ontabclick.zh.md)** 事件，此事件在按住限定符键时单击标签页时调用。
 - **[ViewerEventData](/Manual/reference/scripting_reference/scripting_objects/viewereventdata.zh.md)**：此对象传递给 **[OnViewerEvent](scripting_events/onviewerevent.zh.md)** 事件，此事件在独立 [图像查看器](/Manual/additional_functionality/viewing_images/README.zh.md) 中发生某些事件时调用。
 
-#### 其他对象
+## 其他对象
 
 其余对象全部使用上面列出的对象提供的属性或方法来获取。例如，**文件窗口** 对象是使用 **DOpus.listers** 集合属性获取的，并且 **Vector** 对象是使用 **DOpusFactory.Vector** 方法获取的。
 

@@ -6,7 +6,7 @@ The filter bar is a small text field that pops up at the bottom of the file disp
 
 The filter bar appears as soon as you press the activation key and you can continue typing immediately to begin filtering the list.
 
-##### Filtering the file display
+### Filtering the file display
 
 In the above screenshot, we have filtered the `C:\Windows\System32` directory to show all files that end in `.msc`. You can see from the status bar that this resulted in 4,671 items being hidden from the display, leaving only 21 .msc files visible.
 
@@ -14,24 +14,24 @@ The filter bar displays these statistics as well, in slightly more detail (it br
 
 The filter bar affects what is called the "quick filter". This filter is applied on top of the filters set via the [Folder Formats](../folder_options/README.md) system, and the global filtering options on the **[Global Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.md)** Preferences page. It doesn't override these filters - so any files hidden via these other methods will stay hidden no matter what the quick filter is set to.
 
-##### Clearing the filter
+### Clearing the filter
 
 To clear the filter, press <kbd>Esc</kbd> or click the X button on the filter bar.
 
 By default the filter bar will disappear automatically when the filter is cleared, but there's an option on the [Filter Bar](/Manual/preferences/preferences_categories/filtering_and_sorting/filter_bar.md) Preferences page to keep it open all the time if you prefer.
 
-##### Indicating when a quick filter is active
+### Indicating when a quick filter is active
 
 You can configure the file display to display a different background color whenever the quick filter is active, using the File display background settings on the **[Directory Opus Colors](/Manual/preferences/preferences_categories/colors_and_fonts/directory_opus_colors.md)** page in Preferences.
 
-##### Quickly hiding or showing files and folders
+### Quickly hiding or showing files and folders
 
 The "file" and "folder" icons on the filter bar that show the file and folder totals are clickable:
 
 - Click the first file / folder icons to temporarily **hide** all files / folders.
 - Click the second file / folder icons to temporarily **show** all files / folders.
 
-##### Filter options
+### Filter options
 
 ![](/Manual/images/media/13/filter_bar_menu.png)
 
@@ -44,7 +44,7 @@ The options button shows a menu that lets you control how the filter is applied:
 
 Use the **Save as default** command to save the current settings as the defaults.
 
-##### Filetype filtering
+### Filetype filtering
 
 ![](/Manual/images/media/13/filter_bar_filetypes.png)
 
@@ -56,11 +56,11 @@ The bottom part of the menu lists the file extensions that appear in the current
 
 Select a group or extension from the menu to quickly filter on that type (you can also select more than one at once).
 
-##### Show everything
+### Show everything
 
 The **Show everything** option provides a quick toggle for the *[Show Everything](show_everything.md)* mode - a way to temporarily disable filters and display all files and folders in the current folder.
 
-##### Filtering in Flat View
+### Filtering in Flat View
 
 When the file display you are filtering is in [Flat View mode](../flat_view.md) the **Filter folders in Flat view** option appears.
 
@@ -68,7 +68,7 @@ This lets you control whether the filter applies to folders or only to files. Wh
 
 The default state of this option can be changed by modifying the **flatview_folder_filters** option on the **[Miscellaneous / Advanced](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.md)** page in Preferences.
 
-##### Using the FAYT for quick filtering
+### Using the FAYT for quick filtering
 
 You can also use the [find-as-you-type](../the_lister/find-as-you-type_field.md) field for quick filtering (although it doesn't have the additional functionality the filter bar does).
 

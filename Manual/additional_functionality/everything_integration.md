@@ -6,7 +6,7 @@ Everything is primarily an *indexed search tool*. By default it builds and maint
 
 Note that Everything doesn't index file **content**, only basic file metadata.
 
-##### Everything versions
+### Everything versions
 
 Currently Directory Opus officially supports version 1.4 of Everything (the current release version as of time of writing is 1.4.1.1024).
 
@@ -15,7 +15,7 @@ Everything 1.5 is currently in "alpha testing", and although it can be configure
 > [!NOTE]
 > To use Opus with the Everything 1.5 alpha, you need to set `alpha_instance=0` in the *everything.ini* file. Make sure you restart Everything after changing the ini file.
 
-##### Configuring Everything to work with Opus
+### Configuring Everything to work with Opus
 
 ![](/Manual/images/media/13/everything_options.png)
 
@@ -34,7 +34,7 @@ Although not required by Opus, you can use the *Indexes / Folders* page to add t
 
 Finally, we recommend making sure there are no exclusions set on the *Indexes / Exclude* page. While not important for searching, if you want to use Everything in Opus to get fast folder sizes, it's important nothing is left out of the index or else file counts will be inaccurate.
 
-##### Fast folder sizes
+### Fast folder sizes
 
 Opus has always been able to show folder sizes, either by turning on one of the options to calculate them automatically, or manually using the `GetSizes` command. However, calculating folder sizes can be quite slow. The filesystem doesn't keep track of how many files a folder contains, so to calculate the size requires reading the contents of the folder (and of all sub-folders, and all sub-sub-folders, and so on) and adding up the sizes.
 
@@ -46,7 +46,7 @@ On a large folder the speed boost from using the index can be dramatic.
 
 The various options on the [Folder Sizes](/Manual/preferences/preferences_categories/folders/folder_sizes/README.md) Preferences page can be used to configure how Opus uses Everything for folder sizes.
 
-##### Searching
+### Searching
 
 ![](/Manual/images/media/13/everything_search.png)
 

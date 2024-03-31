@@ -4,17 +4,17 @@ The Folder Tree is a common user-interface both for navigation and representing 
 
 ![](/Manual/images/media/13/tree.png) 
 
-##### Relationship to the file display
+### Relationship to the file display
 
 Normally, there is one file display and one tree. In a dual-display Lister, there are two file displays, but you have the option of using one or two trees. If you have two trees then each file display has its own - but a single tree can be shared by both file displays. In this mode, the tree will change to display the location of the active, or source, file display, and clicking on a folder in the tree will only change the location of the source file display).
 
-##### Navigation
+### Navigation
 
 Navigating using the tree is as simple as clicking on a folder; the file display attached to that tree will instantly change location to display the contents of the folder you clicked on.
 
 If the folder tree has input focus (i.e. if it is the active user-interface element in the Lister, and keystrokes are directed to it), then it's also possible to navigate with the keyboard using the cursor keys.
 
-##### Keyboard interface
+### Keyboard interface
 
 The folder tree supports several keyboard commands by default:
 
@@ -30,17 +30,17 @@ Using the [Customize](/Manual/customize/README.md) system it's also possible to 
 - <kbd>\*</kbd> to expand all folders
 - <kbd>Ctrl+Space</kbd> toggles a folder's pinned state, if pins are enabled in [Preferences](/Manual/preferences/preferences_categories/folder_tree/expand_collapse/pins.md).
 
-##### Displaying child folders
+### Displaying child folders
 
 The small glyph displayed to the left of each item in the folder tree is known as the *expansion button*. If you're using a different version of Windows or a third-party theme, this may look different to the screenshot above, but in general the glyph has two main states - *open* and *closed*.
 
 In the above screenshot, the **Desktop**, **This PC** and **Local Disk** branches are *open* - the folders have been expanded, and their child folders in the hierarchy are visible. The other branches are closed - their sub-folders are not displayed. The **Logs** and **PerfLogs** branches don't show a glyph at all - this indicates that the folders have no sub-folders, and so can't be expanded.
 
-##### Context menu
+### Context menu
 
 As in other programs, you can access the context menu for an item in the tree by right-clicking on it. From the keyboard, you can press <kbd>Shift+F10</kbd> to display the context menu for the selected item. Some keyboards also have a dedicated key to the right of the space bar for this.
 
-##### Renaming folders
+### Renaming folders
 
 You can use the folder tree to rename folders (those that support being renamed, anyway). This can be activated in several ways:
 
@@ -55,11 +55,11 @@ In Opus the rename field has some features not found in Explorer:
 - The <kbd>Up</kbd> and <kbd>Down</kbd> let you apply the current folder's new name and start renaming an adjacent folder.
 - Various keys can be used to transform the selected text. See the page on [inline rename](/Manual/file_operations/renaming_files/inline_rename.md) for more information.
 
-##### Drag and drop
+### Drag and drop
 
 You can copy or move files to folder in the tree using drag and drop. You can also drag folders out of the tree to copy or move (or create shortcuts to) them.
 
-##### Folder tree title buttons
+### Folder tree title buttons
 
 The title bar has a number of buttons to help work with the folder tree.
 
@@ -74,7 +74,7 @@ From left to right they are:
 
 There's also an option in Preferences to enable a lock button in the title bar. When locked the tree stops following the file display around, and won't change location automatically.
 
-##### Path highlighting
+### Path highlighting
 
 The tree can be configured to highlight the path to the currently selected folder as a visual aid. It can make the current selection in the folder tree much more conspicuous. The highlight can be displayed all the time, or only when the tree itself is active.
 

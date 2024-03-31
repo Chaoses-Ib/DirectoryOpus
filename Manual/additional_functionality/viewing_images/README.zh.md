@@ -2,13 +2,13 @@
 
 Opus 具有两个主要图像查看器。两个查看器均可用于查看图像、电影、文档和其他格式，这些格式存在插件。
 
-##### 查看器窗格
+### 查看器窗格
 
 此程序集成了 [查看器窗格](/Manual/basic_concepts/the_lister/viewer_pane.zh.md)，该窗格嵌入在文件窗口中：
 
 ![](/Manual/images/media/13/viewer_pane.png)
 
-##### 单独查看器
+### 单独查看器
 
 这里还有单独的（浮动）图像查看器。
 
@@ -16,7 +16,7 @@ Opus 具有两个主要图像查看器。两个查看器均可用于查看图像
 
 主要区别在于 [查看器窗格](/Manual/basic_concepts/the_lister/viewer_pane.zh.md) 绑定到文件窗口，而单独查看器几乎像独立实用程序一样。单独查看器还具有基本的图像编辑功能，而查看器窗格没有。
 
-##### 访问单独查看器
+### 访问单独查看器
 
 有数种方式可用于访问单独查看器：
 
@@ -28,7 +28,7 @@ Opus 具有两个主要图像查看器。两个查看器均可用于查看图像
 
 - 从 Opus 外部，可以使用 `d8viewer.exe` 或 `dopusrt.exe /show` 命令用 Opus 查看器打开文件。
 
-##### 单独查看器的选项
+### 单独查看器的选项
 
 有许多选项可用于控制单独查看器的外观和行为。这些选项可在配置的 **[查看器](/Manual/preferences/preferences_categories/viewer/README.zh.md)** 类别中找到。默认情况下，查看器将：
 

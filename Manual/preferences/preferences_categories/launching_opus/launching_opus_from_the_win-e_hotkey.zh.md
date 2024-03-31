@@ -13,7 +13,7 @@
 - **打开默认文件窗口**：始终使用 [默认文件窗口](/Manual/basic_concepts/the_lister/the_default_lister.zh.md) 的设置打开一个新的文件窗口。如果你启用了 **关闭已经存在的文件窗口** 选项，则在打开布局之前任何现有的文件窗口都将关闭 - 如果此选项关闭，则现有的文件窗口将不受影响。
 - **运行命令**：允许你在每次按下热键时输入一条要运行的命令。这可用于执行更复杂的操作，包括运行外部程序。这必须是一条在按钮或热键上合理的命令。你可以使用 [Opus 内部命令](/Manual/customize/creating_your_own_buttons/internal_command_arguments.zh.md) 或外部程序（向其传递参数，使用 [标准控制代码](/Manual/customize/creating_your_own_buttons/passing_files_to_external_programs.zh.md)）。如果你想要运行多于一条简单的单行命令，你可以创建一个更复杂的 [用户定义命令](/Manual/customize/creating_your_own_buttons/user-defined_commands.zh.md），然后在此处指定用户命令的名称。
 
-##### Windows 10 之前的 Win+E
+### Windows 10 之前的 Win+E
 
 在早期版本的 Windows 上，我们无法对 Win + E 热键拥有如此多的控制权，它通常会导致在默认文件管理器中打开*此电脑*，如果 Opus 设置为替换资源管理器，那么文件管理器就是 Opus。
 

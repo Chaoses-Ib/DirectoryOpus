@@ -2,12 +2,12 @@
 
 Contains options relating to thumbnails generated for folders (rather than for files).
 
-##### Folder thumbnails
+### Folder thumbnails
 
 - **Display thumbnails for folders**: This option enables the display of thumbnails for folders as well as for files.
 - **Use Windows folder thumbnails where possible**: If turned on, Opus will try to retrieve folder thumbnails from Explorer before generating its own. You may want this on if you want thumbnails in Opus to match what you see in Explorer.
 
-##### Directory Opus folder thumbnails
+### Directory Opus folder thumbnails
 
 These options are used when Opus generates its own folder thumbnails, rather than retrieving them from Explorer.
 

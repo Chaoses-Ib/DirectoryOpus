@@ -1,8 +1,8 @@
-##### Directory Opus 13 - Detailed release notes
+### Directory Opus 13 - Detailed release notes
 
 # Miscellaneous Commands
 
-#### {Codes}
+## {Codes}
 
 - The `{clip}` code can now be asked to sanitize clipboard text:
   - `{clip|cleanfilename}` -- For use as a filename.
@@ -21,7 +21,7 @@
 
 ------------------------------------------------------------------------
 
-#### @Modifiers
+## @Modifiers
 
 - Added positive versions of negative modifiers:
   - These make it easier to express a positive condition directly, instead of having to think in terms of a double negative.
@@ -165,7 +165,7 @@ Anything between the two buttons will be hidden if the first button's `@hideif` 
 
 ------------------------------------------------------------------------
 
-#### New commands and arguments
+## New commands and arguments
 
 - These are only the commands that didn't fit in other sections.
 - Commands to change Preferences settings:

@@ -12,7 +12,7 @@
 
 如果您想尝试此示例，创建新的工具栏按钮（类型为*脚本函数*）并将脚本代码粘贴到命令编辑器的 **脚本代码** 标签页中，将资源 XML 粘贴到 **资源** 标签页中。以下所有示例均使用 VBScript 编写。
 
-##### 代码
+### 代码
 
     Function OnClick(ByRef clickData)
 
@@ -49,7 +49,7 @@
     End Function
      
 
-##### 资源
+### 资源
 
     <resources>
     <resource name="books" type="dialog">

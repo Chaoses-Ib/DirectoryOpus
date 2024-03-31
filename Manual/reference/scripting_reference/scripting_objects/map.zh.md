@@ -14,7 +14,7 @@
     dog -> woof
     snake -> hiss
 
-##### JScript 示例：
+### JScript 示例：
 
     var map = DOpus.Create.Map();
 
@@ -32,7 +32,7 @@
      DOpus.Output(key + " -> " + value);
     }
 
-##### VBScript 示例：
+### VBScript 示例：
 
     Dim map, key, value
     Set map = DOpus.Create.Map

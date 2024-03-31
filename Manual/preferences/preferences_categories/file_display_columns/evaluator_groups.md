@@ -16,7 +16,7 @@ Your configured schemes are shown in the list. Use the toolbar buttons above the
 
 Clicking the **Add** or **Edit** button displays the scheme editor.
 
-##### Grouping scheme editor
+### Grouping scheme editor
 
 ![group_scheme_editor.png](/Manual/images/media/13/group_scheme_editor.png)
 
@@ -28,7 +28,7 @@ The **Description** is shown in the menu when selecting a column to group by.
 
 The **Definition** tab is where the group scheme is defined.
 
-##### Definition tab
+### Definition tab
 
 Schemes can either use *static groups* or *dynamic groups*.
 
@@ -46,7 +46,7 @@ The **Sort groups alphabetically** option controls the order that groups are ord
 
 The **Reverse group order** option reverses the sort order of the groups.
 
-##### Columns tab
+### Columns tab
 
 This tab is where you specify which columns a scheme applies to. This affects what is shown in group menus (as shown in the screenshot above) - a scheme won't be offered there unless it's been associated with the column in question.
 

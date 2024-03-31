@@ -4,13 +4,13 @@ These options affect the [location bar](/Manual/basic_concepts/the_lister/naviga
 
 The main choice to make on this page is whether you want the location bar displayed as a toolbar, or displayed as a static header (to mimic versions of Opus prior to 11).
 
-##### Display as a toolbar
+### Display as a toolbar
 
 This option is on by default, and enables the use of one or more toolbars at the top of each file display. The factory toolbar used for this is [File Display](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/file_display_toolbar.md), but you can use the lists to select your own toolbars.
 
 The list on the left displays your available toolbars, and the list on the right shows those that have been selected for use in the location bar.
 
-##### Display as a static header
+### Display as a static header
 
 This option disables the file display toolbar, and instead displays a static header that displays the current folder path and several small navigation and control buttons. While the displayed path has some functionality (e.g. you can click individual segments similar to the [breadcrumbs location field](/Manual/basic_concepts/the_lister/navigation/breadcrumbs_location_field.md)), it is nowhere near as flexible as a toolbar.
 

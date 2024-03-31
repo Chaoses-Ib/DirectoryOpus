@@ -4,15 +4,15 @@
 
 ![](/Manual/images/media/13/viewer_pane.png)
 
-##### 访问查看器窗格
+### 访问查看器窗格
 
 在文件窗口中显示查看器窗格的最简单方法是用默认工具栏上的 ![](/Manual/images/media/13/menu_toolbar_-_viewer_pane.png) 按钮。您还可以按 <kbd>F7</kbd>，或从 **文件窗口** 下拉菜单中选择 **查看器窗格** 命令。
 
-##### 查看文件
+### 查看文件
 
 在查看器窗格显示的情况下，查看文件就像在文件列表中选择它一样简单。Opus 本机可以显示许多类型的图像文件，并带有 [插件](/Manual/preferences/preferences_categories/viewer/viewer_plugins.zh.md) 来显示常见文档格式，如 Word 和 PDF 文件（只要系统中安装了合适的查看器）。查看器窗格的标题栏显示当前查看的文件的名称，以及一些关于它的信息 - 如果它是图像格式，它通常会显示分辨率和图像类型。对于需要使用插件的文件，通常会显示插件的名称。
 
-##### 查看器窗格标题栏
+### 查看器窗格标题栏
 
 ![](/Manual/images/media/13/viewerpane_titlebar.png)
 
@@ -34,7 +34,7 @@
 
 在查看器窗格上使用**鼠标滚轮**将上下移动图像和文档（如果适用，并假设第三方查看器不会将滚轮用于其他用途）。按住 <kbd>Alt</kbd> 键，您还可以使用 Opus 的内置图像查看器和支持它的插件，使用鼠标滚轮向左和向右滚动。
 
-##### 控制栏
+### 控制栏
 
 ![](/Manual/images/media/13/viewerpane_controlbar.png)
 
@@ -57,11 +57,11 @@
 - **打印**：可打印当前查看的图像或文档。
 - **设置**：这是一个快捷方式，它将带您到配置中的 **[查看器 / 查看器窗格](/Manual/preferences/preferences_categories/viewer/viewer_pane.zh.md)** 页面。
 
-##### 并非所有插件都支持所有功能
+### 并非所有插件都支持所有功能
 
 根据用于查看特定文件的插件（如果有），并非所有上述功能都受支持。例如，有些插件可能不支持旋转显示，在这种情况下，向左旋转和向右旋转函数将不可用。
 
-##### 查看器窗格上下文菜单
+### 查看器窗格上下文菜单
 
 ![](/Manual/images/media/13/viewer_pane_context_menu.png)
 

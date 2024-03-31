@@ -6,7 +6,7 @@ When the utility panel is displayed, you can switch between its various modes us
 
 ![](/Manual/images/media/13/utility_pane_dropdown.png)
 
-##### Tools
+### Tools
 
 These are all accessed from the **Tools** menu:
 
@@ -14,7 +14,7 @@ These are all accessed from the **Tools** menu:
 - [Synchronize](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.md): Synchronize the contents of two different folders.
 - [Find Duplicate Files](/Manual/additional_functionality/duplicate_file_finder.md): Search your computer for any duplicated files (or for duplicates of a specific file).
 
-##### Logs
+### Logs
 
 These are all accessed from the **Help / Logs** menu.
 
@@ -24,7 +24,7 @@ These are all accessed from the **Help / Logs** menu.
 - **Email Log**: Displays a log of any [outgoing email](/Manual/preferences/preferences_categories/internet/email.md) that Opus has sent.
 - **Script Log**: Displays output from [scripts](/Manual/scripting/README.md) and [the evaluator](/Manual/evaluator/README.md).
 
-##### Shrinking the panel
+### Shrinking the panel
 
 The panel has a button in the top-right corner which shrinks (collapses) it down to just its title bar - this can be useful if, for example, you're running a long find operation and want to do other work while you're waiting.
 

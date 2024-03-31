@@ -6,7 +6,7 @@ Most of these buttons require one or more files or folders to be selected before
 
 ![](/Manual/images/media/13/operations_toolbar.png)
 
-##### Copy Files
+### Copy Files
 
 The parent button will [copy](/Manual/file_operations/copying_moving_and_deleting_files/README.md) selected files and folders to the destination folder. The drop-down attached to this button contains the following additional commands:
 
@@ -17,13 +17,13 @@ The parent button will [copy](/Manual/file_operations/copying_moving_and_deletin
 - **Send To**: This sub-menu contains the system ***Send To*** menu that lets you send selected files and folders to various destinations. Using this drop-down menu is equivalent to right-clicking on the file and selecting from the *Send To* context menu.
 - **Copy Filter**: This command toggles the recursive [copy filter](/Manual/file_operations/filtered_operations/README.md) on or off in the current Lister.
 
-##### Move Files
+### Move Files
 
 The parent button will [move](/Manual/file_operations/copying_moving_and_deleting_files/README.md) selected files and folders to the destination. The drop-down menu contains the following additional commands:
 
 - **Move As**: This command lets you [provide new filenames](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md) for the files as they are moved - either one at a time, or for all selected files as a batch using a wildcard.
 
-##### Rename
+### Rename
 
 The parent command lets you rename selected files and folders using the **[Advanced Rename](/Manual/file_operations/renaming_files/advanced_rename/README.md)** dialog. The drop-down menu contains several examples of how the raw Rename command can be "scripted" to perform specialized renaming tasks:
 
@@ -34,7 +34,7 @@ The parent command lets you rename selected files and folders using the **[Advan
 - **Time-Stamp Names**: Appends a date- and time-stamp to the names of selected files.
 - **Underscores to Spaces**: Replaces any underscores in filenames with spaces.
 
-##### New Folder
+### New Folder
 
 The parent command displays a dialog that lets you create a new folder in the active file display. If you are currently in the [File Collections](/Manual/basic_concepts/virtual_file_system/file_collections/README.md) root folder, a new collection will be created, and if you are currently in the [Libraries](/Manual/basic_concepts/virtual_file_system/libraries.md) root folder, a new library will be created. The drop-down menu contains the following additional commands:
 
@@ -44,7 +44,7 @@ The parent command displays a dialog that lets you create a new folder in the ac
 - **New Dated Folder**: Creates a new folder in the current file display with the current date and time as its name.
 - **Move into Dated Folder**: Creates a new folder using the current date and time, and automatically moves any selected files and folders into it.
 
-##### Delete
+### Delete
 
 The parent button will delete all selected files and folders. By default the recycle bin will be used to provide an undoable delete if possible, although this can be modified through [Preferences](/Manual/preferences/preferences_categories/file_operations/deleting_files.md). The following additional commands can be found in the attached drop-down menu:
 
@@ -52,11 +52,11 @@ The parent button will delete all selected files and folders. By default the rec
 - **Remove From Collection**: When used within a [file collection](/Manual/basic_concepts/virtual_file_system/file_collections/README.md), this command removes all selected items from that collection. If you use the parent **Delete** command on collection items, the real files and folders are deleted - use the **Remove** command to remove them from the collection without deleting the actual files.
 - **Delete Filter**: This command toggles the recursive [delete filter](/Manual/file_operations/filtered_operations/README.md) on or off in the current Lister.
 
-##### Admin
+### Admin
 
 This button turns on [Administrator Mode](/Manual/file_operations/uac_and_administrator_mode.md) in the current Lister.
 
-##### Archive Files
+### Archive Files
 
 The parent command lets you add all selected files and folders to a [new archive](/Manual/file_operations/creating_archives/add_to_archive_dialog/README.md) in the current folder (you will be prompted for the archive type and parameters). The drop-down menu contains the following additional commands:
 
@@ -67,7 +67,7 @@ The parent command lets you add all selected files and folders to a [new archive
 - **Extract to Destination**: Extracts the contents of any selected archives to the destination folder.
 - **Extract to Destination Folders**: Extracts the contents of any selected archives to new folders in the destination.
 
-##### Properties
+### Properties
 
 The parent button displays the system Properties dialog for all selected items. The drop-down menu commands are:
 
@@ -76,13 +76,13 @@ The parent button displays the system Properties dialog for all selected items. 
       * **Edit Metadata**: Displays the **[[:file_operations:editing_metadata|Set Metadata]]** dialog that lets you edit the metadata for any selected files. 
       * **Set Label**: This sub-menu lets you assign a label to selected files and folders. Labelled files can be shown in different colors and/or font styles. Use the **[[:preferences:preferences_categories:labels:label_definitions|Label Definitions]]** page in Preferences to create and edit your labels.
 
-##### Slideshow
+### Slideshow
 
 This button launches a [slideshow](/Manual/additional_functionality/viewing_images/README.md) of all selected image files. If no files are selected, all image files in the current folder will be displayed. The drop-down menu commands are:
 
       * **Show Pictures**: Displays selected files in the standalone viewer. 
       * **Play Sounds**: Plays selected files in the internal sound player.
 
-##### Help
+### Help
 
 The Help menu contains links to various useful web sites (the main [GP Software](http://www.gpsoft.com.au/) support site as well as the [Opus Resource Centre](http://resource.dopus.com/)), as well as a link to this help site itself and the check for updates function. It also has a **Secure Screenshot** command which lets you take screenshots of Opus with the names of potentially sensitive files obscured.

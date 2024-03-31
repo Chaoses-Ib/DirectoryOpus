@@ -8,7 +8,7 @@ The options here let you launch Opus or run another command by double-clicking o
 - **Open a saved Lister layout**: Opens a saved [Lister layout](/Manual/basic_concepts/the_lister/layouts/README.md). If you turn on the **Close existing Listers** option then any existing Listers will be closed before opening the layout - if this is off, existing Listers will be unaffected.
 - **Run a command**: Lets you enter a command to be run whenever the desktop is double-clicked. This can be used to perform more complex actions including running external programs. This must be a command that would make sense on a button or hotkey. You can use [Opus internal commands](/Manual/customize/creating_your_own_buttons/internal_command_arguments.md) or external programs (passing arguments to them using the [standard control codes](/Manual/customize/creating_your_own_buttons/passing_files_to_external_programs.md)). If you want to run more than a simple single-line command, you can create a more complicated [user-defined command](/Manual/customize/creating_your_own_buttons/user-defined_commands.md) and then specify the name of the user command here.
 
-##### DOpusRT
+### DOpusRT
 
 When any of the double-click options are enabled, Opus launches a small helper application called **[DOpusRT.exe](/Manual/reference/dopusrt_reference/README.md)** that runs continuously in the background. This is added to the registry to run automatically on startup, and means that double-click on the desktop works even when Opus itself isn't running (**DOpusRT.exe** will launch Opus automatically if it's not already running when you double-click).
 

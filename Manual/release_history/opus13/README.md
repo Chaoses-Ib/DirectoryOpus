@@ -2,7 +2,7 @@
 
 ![](/Manual/images/media/13/logo_opus13.png)
 
-#### Highlights Video
+## Highlights Video
 
 If you prefer watching to reading, a video version of these highlights can be found here:
 
@@ -10,7 +10,7 @@ If you prefer watching to reading, a video version of these highlights can be fo
 
 \_\_\_\_
 
-#### Table of contents
+## Table of contents
 
   
 [Highlights - Page 1](/Manual/release_history/opus13/page1.md)

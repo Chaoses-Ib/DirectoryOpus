@@ -32,7 +32,7 @@ There are several other actions and hotkeys which you can find via the menu at t
 
 **Ctrl+Tab** can be used to shift the input focus between a field in the metadata editor and the main viewer.
 
-##### Editing Viewer Toolbar and Keys
+### Editing Viewer Toolbar and Keys
 
 The toolbar and context menu in the standalone image viewer are fully configurable, [just like all the toolbars and menus in the Lister](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/README.md). Additionally, you can create hotkeys that are only active in the viewer.
 
@@ -55,7 +55,7 @@ See the [Command modifier reference](/Manual/reference/command_reference/command
 
 The behaviour of the mouse wheel and mouse buttons can be changed via Preferences. For example, you can make the left mouse button advance to the next image or close the viewer if you prefer.
 
-##### Bottom control bar
+### Bottom control bar
 
 The optional control bar at the bottom of the viewer is the same as the one in the [Viewer Pane](/Manual/basic_concepts/the_lister/viewer_pane.md) - it contains buttons for commonly used functions. You can enable or disable it using the **View / Control Bar** command. Unlike the main toolbar at the top of the viewer, this one can't be edited.
 

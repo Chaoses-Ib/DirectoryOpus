@@ -4,7 +4,7 @@ Normally when a command acts on a folder, the entire contents of that folder are
 
 File filters let you control which items within folders are processed. You might want to only copy the image files from sub-folders; or you might want to delete any **.tmp** files but leave all others unaffected. You can use a file filter to accomplish this.
 
-##### Functions that support recursive filters
+### Functions that support recursive filters
 
 There are a number of functions that support the use of file filters:
 
@@ -18,7 +18,7 @@ There are a number of functions that support the use of file filters:
 - **Print Folder**: The **[Print / Export Folder Listing](/Manual/additional_functionality/print_folder.md)** command in the **Tools** menu lets you use a filter to control which files are printed to the list.
 - **Labels**: You can use the **[Labels](labels.md)** system to automatically color or highlight files and folders that match complex filters.
 
-##### Defining a filter
+### Defining a filter
 
 When using a filter in a function, there are two ways to define it:
 
@@ -30,7 +30,7 @@ Several of the [internal commands](/Manual/reference/command_reference/internal_
 - With the name of a filter; for example, `Copy FILTER <filtername>`. In this case, the filter must have been pre-configured and stored.
 - With the filter definition itself, in [text format](/Manual/file_operations/filtered_operations/textual_filters.md); for example, `Copy FILTERDEF name match *.jpg`.
 
-##### The filter control
+### The filter control
 
 ![](/Manual/images/media/13/file_filter.png) 
 

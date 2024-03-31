@@ -15,6 +15,6 @@ When you edit a favorite (double-click it, or select it and click the **Edit** b
 
 By default the favorites list isn't sorted, and new favorites are added to the bottom of the list. You can use the **Sort** button to sort the list at any time, or turn on the **Automatically sort newly added Favorites** option at the bottom of the page to have new favorites sorted automatically.
 
-##### Menu accelerators
+### Menu accelerators
 
 If you put `&` before a character in a favorite's name, that character will become an accelerator key. For example, if you name a favorite `&Videos` and then open the Favorites menu, the `V` key will activate that item. This is different to adding a hotkey to a favorite: Accelerators only work when the menu is open, while hotkeys are always active even if the menu is closed. If you wish to use a literal `&` character in your label, use two next to each other: \<nobr\>`Cats && Dogs`\</nobr\> will display as \<nobr\>`Cats & Dogs`\</nobr\> in the menu.

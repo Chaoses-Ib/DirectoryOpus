@@ -19,6 +19,6 @@ For each folder type, you can select from three options:
 - **Prevent loading**: Prevents automatic loading of the folder. A message will be displayed at the top of the file display with a link you can click to trigger the read.
 - **Load on tab activation**: Prevents the loading initially if the tab isn't the active one, but will load the folder automatically the first time the tab is activated.
 
-##### Specific folders
+### Specific folders
 
 At the bottom of the page is a list that lets you apply the same options to specific folders or wildcard patterns. E.g. you could have network drives set to generally not load automatically using the option above, but override it for one specific server by adding the path to the Folders list.

@@ -4,7 +4,7 @@ The third way of copying files, besides copy-and-paste and drag-and-drop, is to 
 
 These buttons make use of the [source and destination](/Manual/basic_concepts/source_and_destination.md) concept. Selected files will be copied or moved from the current source folder to the current destination - or, if there is no current destination folder, Opus will prompt you to select the destination folder.
 
-##### Copy Files
+### Copy Files
 
 ![](/Manual/images/media/13/copy_menu.png)
 
@@ -22,7 +22,7 @@ These buttons make use of the [source and destination](/Manual/basic_concepts/so
 - **Enable Copy Filter**: Turns on the [recursive filter](../filtered_operations/README.md), which lets you selectively copy the contents of sub-folders.
 - **Copy Settings**: Opens the [Copying Files](/Manual/preferences/preferences_categories/file_operations/copying_files/README.md) Preferences page.
 
-##### Move
+### Move
 
 ![](/Manual/images/media/13/move_menu.png)
 

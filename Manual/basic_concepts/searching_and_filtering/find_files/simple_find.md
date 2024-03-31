@@ -8,7 +8,7 @@ The labels on the left of each criterion appear in **bold** when something is de
 
 You can use the following criteria with simple find:
 
-##### Name
+### Name
 
 Search by filename. The options for **Name** are:
 
@@ -19,7 +19,7 @@ Search by filename. The options for **Name** are:
 - **Case sensitive**: Makes the search case-sensitive (upper and lower-case letters will not be treated as the same).
 - **Partial match**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
 
-##### Text
+### Text
 
 Searches the file's contents, rather than the file's name. If a string is specified here then each file (if it also matches the other criteria) will be searched to see if it contains the specified text. Searching for containing text can make a search much slower. File types that don't store their data as plain text require an IFilter for content searching to work, and these are the same IFilter components which Windows and other software also use.
 
@@ -27,7 +27,7 @@ The options for **Text** are mostly the same as for **Name**, with the addition 
 
 - **Assume UTF8**: Tells Opus to assume that plain text files without a Byte Order Mark (BOM) are encoded in UTF8 rather than your computer's default 8-bit character set.
 
-##### Type
+### Type
 
 Search for files or folders of a certain type. For example, instead of specifying `*.bmp` for the **Name** field, you can select **File Type**, **Bitmap Image** from the drop-downs to find bitmap files.
 
@@ -38,7 +38,7 @@ Search for files or folders of a certain type. For example, instead of specifyin
 - **File Type Group**: Search files belonging to a specified file type group. You can use the second drop-down control to choose the group to search for.
 - **File Type**: Search files of a particular file type. Use the second drop-down to choose the file type to search for.
 
-##### Date
+### Date
 
 Search for files by their last modification date. Only the date is considered, not the time. The following options are available for the **Date** drop-down:
 
@@ -50,7 +50,7 @@ Search for files by their last modification date. Only the date is considered, n
 - **Not Between**: The datestamp must **not** be between the two dates (it must be either earlier than the first date or later than the second).
 - **Within**: Lets you specify a date relative to the current date. For example, **Within 7 days** to search for files modified within the past week.
 
-##### Time
+### Time
 
 Search based on a file's last modification time. Only the time is considered, not the date. Seconds are also ignored - you only need to specify the hours and minutes of the time to search for. The following options are available:
 
@@ -64,7 +64,7 @@ Search based on a file's last modification time. Only the time is considered, no
 - **+/- Six Hours**: The timestamp must be within six hours of the specified time.
 - **Within**: Lets you specify a time relative to the current time. For example, **Within 30 minutes** to search for files modified in the past half-hour.
 
-##### Size
+### Size
 
 Search for a file by size. The size value must be given in **KB** (kilobytes). When the size is compared, it is rounded to the nearest kilobyte, so a search for **Size Equals 1** (kb) would find a file that was 1400 bytes. The options available are:
 

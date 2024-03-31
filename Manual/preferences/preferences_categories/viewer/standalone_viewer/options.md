@@ -8,12 +8,12 @@ These options affect the [standalone image viewer](/Manual/additional_functional
 - **Show thumbnails in Marked Pictures pane**: Thumbnails of each [marked image](/Manual/additional_functionality/viewing_images/image_marking.md) will be shown in the *Marked Pictures* pane in the viewer. You can configure the thumbnail size below.
 - **Use EXIF information to auto-rotate pictures**: Most modern digital cameras contain an orientation sensor that records into the image the orientation of the camera when the picture was taken. If this option is turned on Opus will read the orientation information from the image and automatically rotate the displayed picture so that it appears the right way up. The actual image file on disk is not modified, only the display in the viewer.
 
-##### Viewer title bar
+### Viewer title bar
 
 - **Custom title**: Lets you completely configure the string used in the  title bar. If you turn this option on, the text you provide will be used to generate the title string. See below for more information.
 - **Display full path**: Turn this option on to display the full path to each file in the title bar of the viewer window. If turned off, only the filename will be shown.
 
-##### Custom title bar
+### Custom title bar
 
 You can use several special "tokens" in the title string to insert various pieces of information:
 

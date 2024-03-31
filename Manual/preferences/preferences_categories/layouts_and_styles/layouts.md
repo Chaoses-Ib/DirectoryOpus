@@ -15,7 +15,7 @@ Use the **Move Up**, **Move Down** and **Sort** buttons to change the order of l
 
 You can open a Lister layout by using the layout list in the *Settings / Lister Layouts* menu or the context menu on the desktop (if the option in [Windows Integration](../miscellaneous/windows_integration/README.md) is on). You can also create shortcuts to layouts by dragging the layout from the list (or using the **Create shortcut** button) and dropping it on the desktop.
 
-##### Layout options
+### Layout options
 
 Layouts have various options and to the right of each layout in the list a number of flag letters are shown that represent these options:
 
@@ -29,7 +29,7 @@ Layouts have various options and to the right of each layout in the list a numbe
 | V   | Restore each Lister to its original virtual desktop |
 | H   | Hide this layout from layout lists                  |
 
-##### Editing Layouts
+### Editing Layouts
 
 Click the **Edit** button or double-click a layout to edit it.
 
@@ -45,7 +45,7 @@ Click the **Edit** button or double-click a layout to edit it.
 - **Restore each Lister to its original virtual desktop**: If you save a layout containing Listers on multiple virtual desktops, they'll be restored to the same desktop when the layout is opened.
 - **Hide this layout from layout lists**: This option lets you mark a layout that is hidden when the layout list is displayed. Layouts that are hidden can still be accessed using the `Prefs LAYOUT` command.
 
-##### Updating an existing layout
+### Updating an existing layout
 
 The **Update** button on the *Edit Layout* dialog makes it easier to update an existing saved layout.
 

@@ -14,7 +14,7 @@ The options below let you configure what happens when you push the hotkey:
 - **Open a saved Lister layout**: Opens a saved [Lister layout](/Manual/basic_concepts/the_lister/layouts/README.md). If you turn on the **Close existing Listers** option then any existing Listers will be closed before opening the layout - if this is off, existing Listers will be unaffected.
 - **Run a command**: Lets you enter a command to be run whenever the hotkey is pushed. This can be used to perform more complex actions including running external programs. This must be a command that would make sense on a button or hotkey. You can use [Opus internal commands](/Manual/customize/creating_your_own_buttons/internal_command_arguments.md) or external programs (passing arguments to them using the [standard control codes](/Manual/customize/creating_your_own_buttons/passing_files_to_external_programs.md)). If you want to run more than a simple single-line command, you can create a more complicated [user-defined command](/Manual/customize/creating_your_own_buttons/user-defined_commands.md) and then specify the name of the user command here.
 
-##### Win+E before Windows 10
+### Win+E before Windows 10
 
 On earlier versions of Windows, we do not have as much control over the Win + E hotkey and it will typically cause the *This PC* to open in the default file manager, which will be Opus if it is set to replace Explorer.
 

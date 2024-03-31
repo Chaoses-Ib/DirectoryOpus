@@ -9,7 +9,7 @@ This page contains general options relating to [folder tabs](/Manual/basic_conce
 - **Treat tab label as folder when dragged or right-clicked**: Normally you can drag tabs around, or access their context menu, by clicking anywhere on the tab. If this option is turned on, the tab is split into two parts for the purpose of mouse clicks. The icon acts as the hotspot for the tab, and the label acts as the hotspot for the folder displayed on the tab. So with this option on, you need to click and drag the icon if you want to drag the tab, or right-click the icon if you want to access the tab's context menu. Right-clicking the label will display the context menu for the folder, not the tab, and dragging from the label will represent a drag of the actual folder, which lets you copy the folder or create a shortcut to it using drag and drop.
 - **Truncate long labels with "..." instead of fading out**: If a tab label has to be truncated to fit, the label will end with an ellipsis rather than the tab itself fading out.
 
-##### When currently selected tab is clicked
+### When currently selected tab is clicked
 
 Controls what happens when you click the already selected tab.
 
@@ -17,7 +17,7 @@ Controls what happens when you click the already selected tab.
 - **Go to previous**: Clicking the already selected tab will activate the previously selected tab.
 - **Do nothing**: Clicking the tab does nothing.
 
-##### Closing tabs
+### Closing tabs
 
 Besides the below options, you can close tabs by clicking them with the middle mouse button (if you have one) or by right-clicking them and choosing **Close Tab** from the context menu.
 

@@ -4,7 +4,7 @@ The options on this page control which file attributes and timestamps are copied
 
 Note that options which apply to *copying* files also apply when *moving* files if the move is performed by creating a copy and then deleting the original. The other way of moving files is to simply rename them from one place to another, which inherently preserves all aspects of the original file, but that is only possible when the source and destination are on the same logical drive.
 
-##### Attributes
+### Attributes
 
 Attributes are the single-letter flags shown in the *Attr* column which can mark a file as **R** (read-only), **H** (hidden), and so on.
 
@@ -13,7 +13,7 @@ Attributes are the single-letter flags shown in the *Attr* column which can mark
   - **Clear read-only flag when copying from optical media**: Files that reside on CDs and DVDs are implicitly read-only, and normally this attribute is preserved along with any others when you copy these files. If this option is on, the **R** attribute will be cleared when these files are copied. You can override this with the `CLEARREADONLY` argument.
 - **Mark original files as archived after being copied (clear the A flag)**: This clears the **A** attribute on the original files after they have been copied, which in turn indicates to some backup software that the original files already have backup copies. You can override this with the `MARKSOURCEARCHIVE` argument.
 
-##### Timestamps
+### Timestamps
 
 - **Copy modified timestamp**: The timestamp indicating when the file was last written to will be preserved.
 - **Copy created timestamp**: The timestamp indicating when the file was first created will be preserved.

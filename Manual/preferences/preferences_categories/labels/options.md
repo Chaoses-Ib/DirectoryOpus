@@ -2,7 +2,7 @@
 
 This page contains general options relating to [labels](/Manual/file_operations/labels.md).
 
-##### Enable label storage in the file system
+### Enable label storage in the file system
 
 There are two ways that Opus can store labels that are assigned to a specific file or folder (as opposed to a wildcard or filter-based label).
 
@@ -11,6 +11,6 @@ There are two ways that Opus can store labels that are assigned to a specific fi
 
 If **Enable label storage in the file system** is turned on, Opus will try to store labels in NTFS data streams, and only fall back on your configuration if necessary. The **Warn if labels can't be stored in the file system** will make Opus show you a warning if this happens.
 
-##### Apply wildcard and filter labels to explicitly labelled files
+### Apply wildcard and filter labels to explicitly labelled files
 
 By default explicitly applied labels override wildcard labels, but this option lets wildcard labels stack on top of explicitly-assigned ones.

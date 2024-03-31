@@ -7,7 +7,7 @@
 - **打开默认文件窗口**：使用[默认文件窗口](/Manual/basic_concepts/the_lister/the_default_lister.zh.md)的设置打开一个新的文件窗口。如果你打开**关闭现有的文件窗口**选项，那么在打开布局之前任何现有的文件窗口都将会被关闭 - 如果关闭，则现有的文件窗口将不受影响。
 - **运行一个命令**：使你能够在双击桌面时输入要运行的命令。这可以用来执行更复杂的操作，包括运行外部程序。这必须是一个在按钮或热键上有意义的命令。你可以使用[Opus 内部命令](/Manual/customize/creating_your_own_buttons/internal_command_arguments.zh.md)或外部程序（使用[标准控制代码](/Manual/customize/creating_your_own_buttons/passing_files_to_external_programs.zh.md)将参数传递给它们）。如果你想要运行一个简单单行命令更多，你可以创建更复杂的[用户定义命令](/Manual/customize/creating_your_own_buttons/user-defined_commands.zh.md），然后在这里指定用户命令的名称。
 
-##### DOpusRT
+### DOpusRT
 
 当启用任何双击选项时，Opus 会启动一个名为**[DOpusRT.exe](/Manual/reference/dopusrt_reference/README.zh.md)**的小型帮助程序，它会在后台持续运行。它被添加到注册表中以在启动时自动运行，这意味着即使 Opus 自身未运行，双击桌面同样可以工作（**DOpusRT.exe** 会在双击时自动启动 Opus，如果它在未运行）。
 

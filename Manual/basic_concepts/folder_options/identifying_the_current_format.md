@@ -8,11 +8,11 @@ A feature is provided to try to help with this problem. If you hover the mouse o
 
 In the above example we can see that the current format in this file display started as an [auto-remembered format](auto_folder_formats.md), but was then modified by a command that turned on a column (in this case, the user right-clicked the column header and added the *Created* column).
 
-##### Additional information
+### Additional information
 
 The info tooltip also shows where the Lister came from (in this case a system layout called **Last Closed Listers** - i.e. it was open when Opus was shutdown previously). If applicable it can also show where the background image came from (if the [Folder Images](/Manual/preferences/preferences_categories/folders/folder_images.md) system is in use).
 
-##### Format commands via info icon right-click menu
+### Format commands via info icon right-click menu
 
 ![](/Manual/images/media/13/status_info_menu.png)
 
@@ -35,6 +35,6 @@ The next group of commands lets you reset the format in various ways:
 
 At the bottom, the **Edit Status Bar** command takes you to the [File Displays / Status Bar](/Manual/preferences/preferences_categories/file_displays/status_bar.md) Preferences page, where the status bar definition can be configured.
 
-##### The status bar icon can be removed
+### The status bar icon can be removed
 
 The ![](/Manual/images/media/13/info.png) icon is generated on the status bar using the `{fl}` code. Since the status bar is configurable via Preferences, it's possible this code can be removed - in which case the icon won't be visible. In that case, you can add it back from the [File Displays / Status Bar](/Manual/preferences/preferences_categories/file_displays/status_bar.md) Preferences page.

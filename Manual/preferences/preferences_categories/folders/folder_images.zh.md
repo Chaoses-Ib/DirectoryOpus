@@ -4,19 +4,19 @@
 
 文件夹列表分为不同的组：
 
-#### 文件夹
+## 文件夹
 
 此组定义特定文件夹的图像和颜色。你也可以使用通配符字符串为路径定义图像。
 
-#### 系统文件夹
+## 系统文件夹
 
 为某些特殊位置定义图像。此组中当前只有两个位置 - **计算机** 文件夹，当 Opus 显示文件夹本身而不是托管资源管理器时适用，和 **便携式设备** 文件夹，当查看 [mtp:](/Manual/basic_concepts/virtual_file_system/mtp.zh.md) 命名空间的根目录时适用。
 
-#### 内容类型
+## 内容类型
 
 内容类型部分为 [文件类型组](/Manual/file_types/file_type_groups.zh.md) 定义图像。当 [内容类型](/Manual/basic_concepts/folder_options/content_types.zh.md) 系统启用时，当读取包含足够数量此类文件的文件夹时，将自动使用这些图像。
 
-#### 文件夹类型
+## 文件夹类型
 
 此部分为特定类型的文件夹定义默认图像，当未定义特定图像时。类型有：
 
@@ -34,13 +34,13 @@
       * **搜索结果**: 用于呈现快速搜索结果的文件合集。
       * **同步**: 每当 [[:file_operations:copying_moving_and_deleting_files:copying_updated_files:synchronize|同步]] 工具使用时适用。 
 
-#### 使用文件夹列表
+## 使用文件夹列表
 
 列表上方的工具栏允许你添加或移除特定文件夹和路径通配符。可以使用标准 Opus [通配符系统](/Manual/reference/wildcard_reference/pattern_matching_syntax.zh.md) 或使用 [正则表达式](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.zh.md) 定义路径通配符。如果启用了 **展开别名** 选项，则 Opus 将尝试在执行模式匹配前展开输入字符串中的文件夹别名和环境变量。
 
 要为特定文件夹或文件夹类型启用图像，请启用其复选框。当选中该项目时，对话框的底部将显示该图像的设置。
 
-#### 图像设置
+## 图像设置
 
 ![](/Manual/images/media/13/folder_images.png)
 

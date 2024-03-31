@@ -14,7 +14,7 @@ When you **Share** a script from the *Script Management* dialog, Opus bundles it
 
 The script installer window lists the scripts that are going to be installed. If a script provides a version number, this is shown along with the currently installed version number if an earlier version of the script exists. You can selectively turn scripts on and off in the installer in case a script package installs multiple scripts and you only want a particular one.
 
-##### Install Script Results
+### Install Script Results
 
 Once the script install is complete, Opus shows a summary of what was installed.
 

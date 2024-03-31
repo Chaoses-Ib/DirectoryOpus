@@ -1,10 +1,10 @@
 Previous: [Opus 13 Highlights - Table of contents](/Manual/release_history/opus13/README.md) # Directory Opus 13 - Highlights - Page 1
 
-#### Highlights Video
+## Highlights Video
 
 A [video version of these highlights](https://www.youtube.com/watch?v=K57m_Ogy8Lg) is on our YouTube channel.
 
-#### Dark Mode and Themes
+## Dark Mode and Themes
 
 Dark Mode, Light Mode, *Any Colors You Like* Mode. For the whole program.
 
@@ -26,7 +26,7 @@ Make Windows 11's scrollbars look like Windows 10's:
 
 ------------------------------------------------------------------------
 
-#### Fonts
+## Fonts
 
 Change more fonts, including dialogs and tooltips:
 
@@ -36,7 +36,7 @@ Change more fonts, including dialogs and tooltips:
 
 ------------------------------------------------------------------------
 
-#### File Copying
+## File Copying
 
 Performance improvements, and support for server-side copy offload. (See [Detailed release notes: File Copying](/Manual/release_history/opus13_detailed/file_copying.md) for particulars.)
 
@@ -49,7 +49,7 @@ Destination placeholders for files about to be copied:
 
 ------------------------------------------------------------------------
 
-#### Everything (Indexed Search)
+## Everything (Indexed Search)
 
 [Everything](https://www.voidtools.com/)'s search index can be used within Opus.
 

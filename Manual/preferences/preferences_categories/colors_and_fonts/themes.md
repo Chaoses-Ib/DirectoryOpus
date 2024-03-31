@@ -6,7 +6,7 @@ The themes list shows your currently installed themes (as well as the default da
 
 Use the toolbar to manage your themes. You can use the **Import** and **Export** functions to share themes you've created with others.
 
-##### Creating a new theme
+### Creating a new theme
 
 To create a theme from your current configuration, click the **New** button. You'll be prompted to enter a name and other information like author and a description. You can choose which parts of your configuration are saved in the theme - for example, you can save just colors without affecting fonts if you like.
 
@@ -29,10 +29,10 @@ You must provide a number of parameters when saving a theme:
 
 Once you've defined your theme click the **OK** button to save it.
 
-##### Cloning an existing theme
+### Cloning an existing theme
 
 The **Clone** button lets you take the details from an existing theme, although note it doesn't clone that theme's color settings - only the information in the *Save New Theme* dialog is cloned. To make a full duplicate of an existing theme including its color settings, use the **Duplicate** button on the main Preferences page.
 
-##### Updating a theme
+### Updating a theme
 
 When you edit an existing theme, the *Edit Theme* dialog has an **Update Content** button on it. This lets you update the settings of an existing theme.

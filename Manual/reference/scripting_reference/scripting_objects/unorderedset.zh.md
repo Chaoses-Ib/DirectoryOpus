@@ -4,7 +4,7 @@
 
 向 **UnorderedSet** 添加对象时应小心。与字符串和数字不同，容器只会将两个对象视为相等，如果它们是同一个对象（即相同的实例/引用）。具有相同值的不同对象不会被视为相等，并且可以同时存在于同一个 **UnorderedSet** 中。
 
-##### JScript 示例：
+### JScript 示例：
 
 > **var** us = DOpus.Create.UnorderedSet();
 

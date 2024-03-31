@@ -6,7 +6,7 @@ User-defined commands are pre-defined commands that you create yourself. Effecti
 
 Use the toolbar to create and manage your user commands.
 
-##### Editing a user command
+### Editing a user command
 
 ![](/Manual/images/media/13/user_command.png)
 
@@ -18,7 +18,7 @@ Editing a user command is similar to [editing a normal toolbar button](/Manual/c
 - **Template**: This specifies the *argument template* for the command - see below for more details.
 - **Hide from Commands menu**: The command won't be displayed in drop-down command lists. This lets you create user commands that you can still use in buttons and hotkeys (or, for example, on a Preferences page like [Folder Tree Selection Events](/Manual/preferences/preferences_categories/folder_tree/selection_events.md)), but they won't clutter up the command list.
 
-##### Argument templates
+### Argument templates
 
 If you want to be able to pass arguments to your user command you need to give it an argument template. This uses the [same syntax](/Manual/customize/creating_your_own_buttons/internal_command_arguments.md) as for internal Opus commands.
 
@@ -33,7 +33,7 @@ You could use this example command from a toolbar button like so:
 | Command line: | `Select_Files_Of_Type txt` |
 | Runs:         | `Select *.txt`             |
 
-##### More complex templates
+### More complex templates
 
 In the above example, `EXT` is a string argument and so the value supplied is passed through unchanged to the user command, but for boolean options the behaviour is different. For example, consider the following user command:
 
@@ -82,7 +82,7 @@ Your template can also specify a list of values for an option switch which will 
 | Command line: | `ExampleCmd EXAMPLE=two`             |
 | Runs:         | `C:\DummyProgram.exe two`            |
 
-##### Conditional testing
+### Conditional testing
 
 You can use the `@if:` [command modifier](/Manual/reference/command_reference/command_modifier_reference.md) to test the value of user command arguments to introduce simple conditional behaviour to your user commands (without resorting to scripting). For example:
 

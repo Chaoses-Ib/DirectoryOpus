@@ -2,7 +2,7 @@
 
 This page contains options that control the sizes of [Folder Tabs](/Manual/basic_concepts/the_lister/tabs/README.md).
 
-##### Horizontal tabs
+### Horizontal tabs
 
 When tabs run along the top or bottom of the Lister, these options apply.
 
@@ -13,7 +13,7 @@ When tabs run along the top or bottom of the Lister, these options apply.
 - **Minimum tab size**: The minimum width of a tab, in pixels. Tabs will never be narrower than the width you set here.
 - **Reduce tab sizes to fit available space**: As the number of tabs increases the size of each tab will be reduced to avoid the tabs overflowing the available space.
 
-##### Vertical tabs
+### Vertical tabs
 
 When tabs run down the left or right sides of the Lister, these options apply.
 

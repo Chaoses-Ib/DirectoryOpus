@@ -20,7 +20,7 @@ The info tip definition (the image above illustrates the default info tip for th
 
 You can see that for the **.jpg** file in the above screenshot, all the EXIF information defined in the info tip is shown, but the info tip for the **.bmp** file simply displays the top line (**{desc}** produces the *800 x 599 x 24 Bitmap Image* description and **{thumbnail}** displays the image's thumbnail).
 
-##### Inserting information
+### Inserting information
 
 Information about the file is inserted into the info tip using `{ ... }` codes, containing a keyword referring to a file information column.
 
@@ -28,11 +28,11 @@ The keywords used in info tips are the same as used by the [Rename](/Manual/file
 
 You can also insert information using the [evaluator](/Manual/evaluator/README.md).
 
-##### Special code: {foldersize}
+### Special code: {foldersize}
 
 This code applies to the info tips for folders, and its use will cause Opus to calculate the total size of the folder when its info tip is displayed. This lets you display the size of a folder by simply hovering over it. You can add the **noprefix** keyword to suppress the default ***Size:*** prefix - for example, `{foldersize:noprefix}`.
 
-##### Special code: {foldercontents}
+### Special code: {foldercontents}
 
 This code also applies to folders; it will result in Opus displaying the names of the first few files and sub-folders contained in the folder. You can control the output with these keywords:
 
@@ -43,7 +43,7 @@ This code also applies to folders; it will result in Opus displaying the names o
 - **maxitems**: To limit the maximum total number of items (files and folders, combined), use the **maxitems** keyword. Where a single **{foldercontents}** tag lists both files and folders, the limit applies to the count of both together, not to each category individually. The default maximum is 10 items in total (files and folders). Note that there is a hard maximum of 20 items *in each category* (files or folders) and thus a hard maximum of 40 items in total. When there are more items than the maximum, the list or lists will be truncated with `...`. For example: `{foldercontents:files,maxitems=20}`
 - **maxitemlength**: To limit the maximum length of each individual item, use the **maxitemlength** keyword. Note that there is a hard maximum of 260 characters, and a default limit of 40 characters. When a name is too long, it will be truncated with `...`. For example: `{foldercontents:maxitemlength=20}`
 
-##### Special code: {thumbnail}
+### Special code: {thumbnail}
 
 This code displays the thumbnail for the file if Opus is able to generate one. You can configure how the thumbnail is displayed by appending a border style value to the code:
 
@@ -57,11 +57,11 @@ Additionally, you can configure the size of the thumbnail. By default thumbnails
       * **{thumbnail:1:512}** displays the thumbnail with normal border and 512 pixels in size (the image will be scaled to preserve the correct aspect ratio) 
       * **{thumbnail:0:64}** displays the thumbnail with no border, 64 pixels in size
 
-##### Special code: {infotip}
+### Special code: {infotip}
 
 This code causes Opus to display the standard, system info tip for the file (if there is one). This would be the text that is shown in the tooltip in Explorer when you hover over the file. The main use for this is to display information from third-party *tooltip shell extensions* that you may have installed.
 
-##### Hide sections
+### Hide sections
 
 You can create *hide sections* that hide text when certain information isn't available. For example, you could show the GPS coordinates of an image if it has them, but you might not want the labels for those fields to be visible if it doesn't.
 
@@ -75,7 +75,7 @@ This might display, for example, `Size: 1024 x 768` for an image, but would disp
 
 You can also define hide sections using the [evaluator](/Manual/evaluator/README.md).
 
-##### HTML markup
+### HTML markup
 
 Any text you enter into the info tip definition that isn't a **{..}** code is displayed as-is (unless it appears on a line that uses a non-applicable **{..}** code, in which case the whole line is omitted as described above). You can also use some simple HTML-style markup codes to control font styles in the info tip:
 
@@ -84,7 +84,7 @@ Any text you enter into the info tip definition that isn't a **{..}** code is di
 - **\<i\>..\</i\>**: This displays the text between the tags in *italics.*
 - **\<u\>..\</u\>**: This underlines the text between the tags.
 
-##### Other information
+### Other information
 
 At the bottom of the info tip page are several buttons:
 

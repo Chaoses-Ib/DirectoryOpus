@@ -4,13 +4,13 @@
 
 此页面上的主要选择是，将地址栏显示为工具栏，还是显示为静态标题（模拟 Opus 11 之前的版本）。
 
-##### 显示为工具栏
+### 显示为工具栏
 
 此选项默认打开，可以在每个文件列表的顶部使用一个或多个工具栏。为此使用的默认工具栏是 [文件列表](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/file_display_toolbar.zh.md)，但您可以通过列表选择您自己的工具栏。
 
 左侧的列表显示您的可用工具栏，右侧的列表显示已选择用于地址栏的工具栏。
 
-##### 显示为静态标题
+### 显示为静态标题
 
 此选项会禁用文件列表工具栏，而是显示一个静态标题，该标题显示当前文件夹路径和几个小的导航和控制按钮。虽然显示的路径具有一些功能（例如，您可以单击各个片段，类似于 [面包屑位置字段](/Manual/basic_concepts/the_lister/navigation/breadcrumbs_location_field.zh.md)），但它远不如工具栏灵活。
 

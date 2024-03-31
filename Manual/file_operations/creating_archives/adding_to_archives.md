@@ -9,11 +9,11 @@ There are a number of ways to add files to an archive using Opus.
 
 Using the context menu **Add to Archive** command, or selecting the **Archive Files** command from the toolbar, displays the [Add to Archive dialog](/Manual/file_operations/creating_archives/add_to_archive_dialog/README.md).
 
-##### Archive context menu
+### Archive context menu
 
 The easiest way to access this functionality is via the context menu. In the [Archive Context Menu](/Manual/preferences/preferences_categories/zip_and_other_archives/archive_context_menu.md) page in Preferences you can turn on or off context menu commands for adding files to various archive formats. These commands will be shown whenever you right-click on one or more files and folders.
 
-##### Add to named archive
+### Add to named archive
 
 These commands will add the selected files and folders immediately to a new archive. The new archive will be located in the same folder as the source files, and it will be given the same name as the first selected file.
 
@@ -23,7 +23,7 @@ For example, if you right-click a file called *Presentation.doc* the context men
 
 The [Preferences](/Manual/preferences/preferences_categories/zip_and_other_archives/archive_context_menu.md) page lets you choose which formats an *Add to Named Archive* command will be displayed for.
 
-##### Add to archive
+### Add to archive
 
 These commands will also add the selected files and folders toÂ a new archive, but instead of immediately creating the archive you will be given a choice of filename andÂ path, archive type, and various parameters specific to the archive format chosen.
 

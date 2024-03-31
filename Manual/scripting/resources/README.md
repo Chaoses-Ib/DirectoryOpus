@@ -2,7 +2,7 @@
 
 You may have noticed in the section on [Script dialogs](script_dialogs/README.md) that scripts can have “resources” associated with them. This is XML-formatted data that provides resources to the script but doesn’t actually form part of the script code.
 
-##### Defining resources
+### Defining resources
 
 There are two ways a script can define resources:
 
@@ -33,7 +33,7 @@ There are two ways a script can define resources:
 
 - Script resources can be loaded from an external file, or a raw XML string, using the **[Script](/Manual/reference/scripting_reference/scripting_objects/script.md).LoadResources** method. Note that if the script is included in a package the resource file must have *.odxml* as a file extension.
 
-##### Resource types
+### Resource types
 
 There are two types of script resource currently in use, dialogs and strings. You generally don't need to edit the resources directly:
 

@@ -19,7 +19,7 @@ When you add or edit a style, the style editor is shown.
 
 This is the default configuration for CD cover art. Because it's a default, the overlay image settings ("Style image") can't be changed (except for the **Thumbnail size** option, described below), so lets look at the bottom part of the dialog, which specifies the identification criteria. There are multiple ways a folder can be identified as matching a particular style - note that if **any** of the following tests match, the style will be activated.
 
-##### Specific thumbnail files
+### Specific thumbnail files
 
 This field uses [standard pattern matching](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) by default, or [regular expressions](/Manual/reference/wildcard_reference/regular_expression_syntax.md) if the option is turned on.
 
@@ -27,13 +27,13 @@ It lets you enter one or more filenames or filename patterns (one per line). If 
 
 The CD cover art style by default looks for three different filenames: `coverart.jpg`, `coverart.png` and `cover.jpg`.
 
-##### Shell folder type
+### Shell folder type
 
 Detects whether a folder has been assigned a type (or "kind") via the Properties / Customize tab. If it matches the specified type, the thumbnail style will be activated.
 
 The CD cover art style looks for folders that have been set to "Music" via this mechanism.
 
-##### Folder contents
+### Folder contents
 
 Identifies a folder by its contents. You can specify either a file type group, or individual filenames (or regular expressions), or both. Opus will read the contents of the folder and count how many files match the given criteria - if the specified minimum number is found, the style will be activated.
 
@@ -43,7 +43,7 @@ The CD cover art style looks for files that match the Music file type group, ign
 
   
 
-##### Style image configuration
+### Style image configuration
 
 ![](/Manual/images/media/13/thumbstyle_frame.png)
 

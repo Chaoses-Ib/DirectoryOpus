@@ -2,7 +2,7 @@
 
 The Default Lister is generally used whenever a "new" Lister is opened. By default, the default Lister configuration is updated automatically whenever you close a Lister - so in the simplest terms, if you close one Lister and then open another, you'll normally get back what you had before.
 
-##### When is the default Lister used?
+### When is the default Lister used?
 
 There are many different ways that a new Lister can be opened, and whether the default Lister is used or not depends on the method you open the Lister and any settings that may affect that particular method.
 
@@ -15,11 +15,11 @@ There are many different ways that a new Lister can be opened, and whether the d
 - Double-clicking the Opus taskbar notification icon will open the default Lister if the appropriate option is enabled on the **[Launching Opus / From the Taskbar icon](/Manual/preferences/preferences_categories/launching_opus/launching_opus_from_the_taskbar_icon.md)** Preferences page.
 - A lister opened using the raw `Go NEW` command will generally use the default Lister.
 
-##### When is the default Lister NOT used?
+### When is the default Lister NOT used?
 
 The default Lister isn't used whenever a saved [Lister layout](layouts/README.md) is opened - either by manually opening the layout, or by triggering an action (like double-click on the desktop) that's configured to open a layout.
 
-##### Default Lister options
+### Default Lister options
 
 The [Default Lister](/Manual/preferences/preferences_categories/layouts_and_styles/default_lister.md) Preferences page contains options that control how the default Lister is used. Three options are worth mentioning here:
 
@@ -27,6 +27,6 @@ The [Default Lister](/Manual/preferences/preferences_categories/layouts_and_sty
 - **Ignore toolbars of Default Lister**: Similarly, the toolbars stored in the default Lister will be ignored if this option is on, and the [default toolbar set](toolbars/the_default_toolbars/README.md) will be used instead.
 - **Update Default Lister automatically when closing a Lister option**: If turned off, you can update the default Lister settings manually using the **Set As Default Lister** command in the **Settings** dropdown menu.
 
-##### Updating the Default Lister manually
+### Updating the Default Lister manually
 
 TOBEDONE

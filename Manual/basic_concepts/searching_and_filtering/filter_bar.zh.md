@@ -6,7 +6,7 @@
 
 按激活键后立即出现过滤栏，您可以继续立即键入以开始过滤列表。
 
-##### 过滤文件列表
+### 过滤文件列表
 
 在上述屏幕截图中，我们已经过滤 `C:\Windows\System32` 目录以显示所有以 `.msc` 结尾的文件。您可以从状态栏中看到，这导致 4,671 项从显示中隐藏，只留下 21 个 .msc 文件可见。
 
@@ -14,24 +14,24 @@
 
 过滤栏会影响所谓的“快速过滤”。此过滤器应用于通过 [文件夹格式](../folder_options/README.zh.md) 系统设置的过滤器之上，以及 **[全局过滤器](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.zh.md)** 配置页面上的全局过滤选项之上。它不会覆盖这些过滤器 - 因此，通过这些其他方法隐藏的任何文件都会保持隐藏状态，无论快速过滤器设置为如何。
 
-##### 清除过滤器
+### 清除过滤器
 
 要清除过滤器，请按 <kbd>Esc</kbd> 或单击过滤栏上的 X 按钮。
 
 默认情况下，清除过滤器后过滤栏会自动消失，但在 [过滤栏](/Manual/preferences/preferences_categories/filtering_and_sorting/filter_bar.zh.md) 配置页面上有一个选项，可以根据您的选择始终保持打开状态。
 
-##### 指示何时激活快速过滤器
+### 指示何时激活快速过滤器
 
 您可以配置文件列表，以便在激活快速过滤器时显示不同的背景颜色，方法是使用配置中 **[Directory Opus Colors](/Manual/preferences/preferences_categories/colors_and_fonts/directory_opus_colors.zh.md)** 页面的文件列表背景设置。
 
-##### 快速隐藏或显示文件和文件夹
+### 快速隐藏或显示文件和文件夹
 
 过滤栏上显示文件和文件夹总数的“文件”和“文件夹”图标是可点击的：
 
 - 单击第一个文件/文件夹图标以暂时 **隐藏** 所有文件/文件夹。
 - 单击第二个文件/文件夹图标以暂时 **显示** 所有文件/文件夹。
 
-##### 过滤器选项
+### 过滤器选项
 
 ![](/Manual/images/media/13/filter_bar_menu.png)
 
@@ -44,7 +44,7 @@
 
 使用 **保存为默认值** 命令将当前设置保存为默认值。
 
-##### 文件类型过滤
+### 文件类型过滤
 
 ![](/Manual/images/media/13/filter_bar_filetypes.png)
 
@@ -56,11 +56,11 @@
 
 从菜单中选择一个组或扩展名以快速按该类型进行过滤（您还可以一次选择多个）。
 
-##### 显示所有
+### 显示所有
 
 **显示所有** 选项提供了对 *[显示所有](show_everything.zh.md)* 模式的快速切换 - 一种暂时禁用过滤器并显示当前文件夹中所有文件和文件夹的方法。
 
-##### 在平面视图中过滤
+### 在平面视图中过滤
 
 当您正在过滤的文件列表处于 [平面视图模式](../flat_view.zh.md) 中时，会出现 **在平面视图中过滤文件夹** 选项。
 
@@ -68,7 +68,7 @@
 
 可以通过修改配置中 **[杂项/高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上的 **flatview_folder_filters** 选项来更改此选项的默认状态。
 
-##### 使用即时查找快速过滤
+### 使用即时查找快速过滤
 
 您还可以使用 [即时查找](../the_lister/find-as-you-type_field.zh.md) 字段进行快速过滤（尽管它不具有过滤栏的附加功能）。
 

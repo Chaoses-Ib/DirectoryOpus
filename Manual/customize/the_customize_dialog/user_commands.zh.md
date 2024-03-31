@@ -2,7 +2,7 @@
 
 使用工具栏创建和管理用户命令。
 
-##### 编辑用户命令
+### 编辑用户命令
 
 ![](/Manual/images/media/13/user_command.png)
 
@@ -14,7 +14,7 @@
 - **模板**：这指定了命令的*参数模板* - 更多详细信息，请参阅以下内容。
 - **从命令菜单中隐藏**：该命令将不会显示在下拉命令列表中。这允许您创建用户命令，您仍然可以在按钮和热键（或者例如在配置页面上，例如[文件夹树选择事件](/Manual/preferences/preferences_categories/folder_tree/selection_events.zh.md)）中使用它们，但它们不会弄乱命令列表。
 
-##### 参数模板
+### 参数模板
 
 如果您想将参数传递给您的用户命令，您需要为它提供一个参数模板。这使用与内部 Opus 命令 [相同的语法](/Manual/customize/creating_your_own_buttons/internal_command_arguments.zh.md)。
 
@@ -29,7 +29,7 @@
 | 命令行: | `Select_Files_Of_Type txt` |
 | 运行:         | `Select *.txt`             |
 
-##### 更复杂的模板
+### 更复杂的模板
 
 在上面的示例中，`EXT` 是一个字符串参数，因此提供的值会原样传递给用户命令，但对于布尔选项，行为不同。例如，考虑以下用户命令：
 
@@ -78,7 +78,7 @@
 | 命令行: | `ExampleCmd EXAMPLE=two`             |
 | 运行:         | `C:\DummyProgram.exe two`            |
 
-##### 条件测试
+### 条件测试
 
 您可以使用 [命令修饰符](/Manual/reference/command_reference/command_modifier_reference.zh.md) `@if:` 来测试用户命令参数的值，以便为用户命令引入简单的条件行为（无需求助于脚本）。例如：
 

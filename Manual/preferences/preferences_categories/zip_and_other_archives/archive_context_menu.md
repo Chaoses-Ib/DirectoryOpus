@@ -4,26 +4,26 @@ Opus can add items to the context menu for files and folders that lets you acces
 
 Use the **Enable Archive context menu** option at the top of the page to enable or disable the context menu support. The list of options below that is grouped into five sections:
 
-##### Add to Archive
+### Add to Archive
 
 The options in this section will add context menu items that invoke the *[Add to Archive](/Manual/file_operations/creating_archives/adding_to_archives.md)* dialog box for the selected files. The *Add to Archive* dialog lets you choose the archiving format to use, so you really only need one option from this section selected. The format you select here will be the default when the dialog box opens, so you can turn on multiple formats in order to have a quick way of invoking the dialog with the format already chosen.
 
-##### Add to Named Archive
+### Add to Named Archive
 
 The options in this section will add context menu items that immediately create archives in the specified format. The name of the new archive will be based on the first selected item. You won't have any way to control archiving options using these commands - the archives are created immediately.
 
-##### Archive and Email
+### Archive and Email
 
 These options add context menu commands that archive the selected files and send them automatically as an email (using the settings on the [Email](../internet/email.md) page).
 
-##### Extract
+### Extract
 
 These options add context menu commands that let you extract archive contents.
 
 - **Extract from archives**: When you right-click on a file in a format that Opus recognizes (or drag and drop such a file with the right mouse button), Opus will add context menu items to let you extract the archive contents to the current folder.
 - **Convert to Self-Extracting Archive**: When you right-click on a Zip file, Opus will add a command that lets you convert the file to a [self-extracting archive](/Manual/file_operations/creating_archives/zip_files/self-extracting_zip_files.md). This is only available for Zip archives.
 
-##### Options
+### Options
 
 This section contains options that affect the archive context menus.
 

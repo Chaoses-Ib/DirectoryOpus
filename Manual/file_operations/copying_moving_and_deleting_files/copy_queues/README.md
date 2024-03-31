@@ -4,13 +4,13 @@ In Explorer, if you start a copy (or move) operation and then, while it is still
 
 ![](/Manual/images/media/13/copy_queue.png)
 
-##### Progress indicator Queue tab
+### Progress indicator Queue tab
 
 When a copy job is queued, a Queue tab is added to the progress indicator to display a summary of the queued jobs (as shown in the screenshot above). You can use the controls next to each queued job to manage the queue (change queue order, start jobs immediately or abort queued jobs).
 
 By default Opus will notify you when a job is automatically queued, but you can disable this message with the **Display confirmation when a job is queued** option on the **[File Operations / Copying Files](/Manual/preferences/preferences_categories/file_operations/copying_files/README.md)** page in Preferences. Note that when jobs are queued, clicking the **Abort** button at the bottom of the progress dialog will give you the option to abort only the currently executing job, or all jobs.
 
-##### Automatic queue rules
+### Automatic queue rules
 
 By default, the copy queue is used automatically if:
 
@@ -24,7 +24,7 @@ Those are just the default rules. Preferences settings, command arguments, and s
 
 There is no interaction between the rules. Ultimately, each copy or move is assigned to a particular queue when it starts, and waits behind other operations in the same queue, while operations in other queues can run in parallel. For example, if you are copying into an archive on drive D:, the copy will be assigned to the queue for that archive; if you start another copy into the same archive, it will be in the same queue and wait behind the first copy; but if you then start a third copy into a normal folder on drive D:, it will be assigned to a different queue and run in parallel, despite all three operations involding the same drive. The two copies into the same archive end up in one queue (due to the higher priority rule about archives), while the third copy into a normal folder ends up in a different queue (due to the lower priority rule about fixed local drives).
 
-##### Manual queue management
+### Manual queue management
 
 Normally Opus manages the copy queue automatically (as described above), but you can use the internal **[Copy](/Manual/reference/command_reference/internal_commands/copy.md)** command to manage queuing manually if desired. Using the **QUEUE** argument you can create a queue with a specified name (this name will then be shown in the title bar of the progress dialog).
 

@@ -4,7 +4,7 @@
 
 这些按钮使用 [来源和目标](/Manual/basic_concepts/source_and_destination.zh.md) 概念。选定的文件将从当前来源文件夹复制或移动到当前目标文件夹 - 如果没有当前目标文件夹，Opus 将提示您选择目标文件夹。
 
-##### 复制文件
+### 复制文件
 
 ![](/Manual/images/media/13/copy_menu.png)
 
@@ -22,7 +22,7 @@
 - **启用复制过滤器**: 启用 [递归过滤器](../filtered_operations/README.zh.md)，它允许您有选择地复制子文件夹的内容。
 - **复制设置**: 打开 [复制文件](/Manual/preferences/preferences_categories/file_operations/copying_files/README.zh.md) 偏好设置页面。
 
-##### 移动
+### 移动
 
 ![](/Manual/images/media/13/move_menu.png)
 

@@ -12,7 +12,7 @@ You can use the **UNATTENDED** argument of the internal **[Copy](/Manual/referen
 
 Turning on unattended mode adds the **Errors** tab to the copy progress dialog, which collects and displays all errors resulting from the operation.
 
-##### Handling filename collisions
+### Handling filename collisions
 
 The options underneath *When file exists:* let you configure how Opus is to handle a filename collision (that is, when a file in the destination already exists with the same name as one being copied). Normally the [Replace Dialog](../the_confirm_file_replace_dialog.md) would be shown, but this option lets you instruct Opus to handle the situation in several different ways:
 
@@ -25,7 +25,7 @@ The options underneath *When file exists:* let you configure how Opus is to hand
 - **Merge folders without asking**: Overrides the **Ask for confirmation before merging existing folders** option on the **[Copying Files / Confirmation](/Manual/preferences/preferences_categories/file_operations/copying_files/confirmation.md)** page in Preferences.
 - **Skip identical**: Any conflicting files will be automatically skipped if they are identical (same size and date).
 
-##### Retrying failed copies
+### Retrying failed copies
 
 The **Retry** button at the bottom of the tab lets you retry any failed copies.
 

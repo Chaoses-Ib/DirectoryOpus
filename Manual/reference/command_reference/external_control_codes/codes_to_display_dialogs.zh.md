@@ -53,7 +53,7 @@
 </td></tr></tbody>
 </table>
 
-##### {dlgopen}、{dlgmulti}、{dlgsize}的参数
+### {dlgopen}、{dlgmulti}、{dlgsize}的参数
 
 这些代码的模板是`{code|<title>|<default>}`。
 
@@ -77,7 +77,7 @@
 
 例如，`{dlgopen|||noext}`会从选定的文件名中去掉扩展名。
 
-##### {dlgfolder}的参数
+### {dlgfolder}的参数
 
 此代码的模板是`{dlgfolder|<title>|<default>}`。
 
@@ -89,7 +89,7 @@
 
 例如，`{dlgfolder||C:\Program Files|expand}`将会把**C:\Program Files**设置为默认文件夹，并自动在显示的对话框中将其展开。
 
-##### {dlgstring}、{dlgstringS}和{dlgpassword}的参数
+### {dlgstring}、{dlgstringS}和{dlgpassword}的参数
 
 这些代码的模板是`{code|<message>|<default>}`。
 
@@ -113,7 +113,7 @@
 
 例如，`{dlgpassword|Please enter your password twice.||confirm|doublequotes}`。
 
-##### {dlgchoose}、{dlgchooseS}的参数
+### {dlgchoose}、{dlgchooseS}的参数
 
 这些代码的模板是`{code|<message>|<option 1>[=<value 1>][+<option 2>[=<value 2>]...]}`。
 

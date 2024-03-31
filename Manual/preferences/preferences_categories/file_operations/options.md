@@ -8,7 +8,7 @@ This page contains miscellaneous options relating to file operations.
 - **Shutdown Directory Opus when all functions finish**: Opus will shutdown automatically once you close the last Lister and no functions are running in the background. This makes Opus behave more like a traditional application that you run, use and then exit when finished with. We recommend that you keep Opus running in the background even when you're not using it as it makes it much quicker to open Listers, and means things like [system-wide hotkeys](/Manual/additional_functionality/system-wide_hotkeys.md) and [floating toolbars](/Manual/additional_functionality/floating_toolbars/README.md) can work, but if you don't want to use it like this you can turn this option on.
 - **Maximum undo entries**: The maximum number of operations that will be shown in the [undo list](/Manual/file_operations/tracking_and_undoing_file_operations.md).
 
-##### Use template when creating shortcuts
+### Use template when creating shortcuts
 
 This template is used to define the new name of a shortcut to an existing file or folder (for example, when you drag & drop a file with the right button and choose *Create Shortcut Here* from the context menu). You can use two codes in the template string to insert information:
 

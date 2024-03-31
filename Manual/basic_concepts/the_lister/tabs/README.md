@@ -10,7 +10,7 @@ To switch between tabs, simply click on the tab you want to become active. Using
 
 Folder tabs are enabled by default - even if only one tab is actually open, the *tab bar* will be displayed at the bottom of the file display (or in a dual-display Lister, at the bottom of each file display). There are a number of options in the **[Folder Tabs](/Manual/preferences/preferences_categories/folder_tabs/README.md)** Preferences category that let you control the folder tabs system. For example, you can configure it so that the tab bar is only displayed when there is more than one tab open, or display the tabs vertically on the left or right of the file display.
 
-##### Opening a new tab
+### Opening a new tab
 
 There are a number of ways to open a new tab.
 
@@ -23,13 +23,13 @@ You can configure these from the [Folder Tabs / Folder Tab Bar](/Manual/preferen
 
 The <kbd>Alt</kbd> double-click behavior is configured via the [File Types](/Manual/file_types/README.md) system.
 
-##### Tab colors
+### Tab colors
 
 Tabs can be colored individually, to make them easier to identify. If you right-click on a folder tab you can select the **Set Tab Color** command from the context menu, which lets you change the color.
 
 ![](/Manual/images/media/13/colorful_tabs.png)
 
-##### Tab groups
+### Tab groups
 
 Folder Tab Groups are sets of predefined tabs (folders) that can be opened in one operation. For example, you might have a set of work folders for a particular project that you always need quick access to. You could define a tab group that opens all the folders in folder tabs, and then when you're ready to work on that project, you only need to select the group in order to open all those folders at once.
 
@@ -37,7 +37,7 @@ Tab groups preserve colors and names you've assigned to your individual tabs.
 
 You can create and manage your tab groups from the [Folder Tabs / Groups](/Manual/preferences/preferences_categories/folder_tabs/groups.md) Preferences page.
 
-##### Default menu commands
+### Default menu commands
 
 ![](/Manual/images/media/13/tab_menu.png)
 
@@ -53,7 +53,7 @@ The **Folder / Folder Tabs** menu in the default toolbars contains a number of c
 - **Save Tabs**: Save tabs in the current source file display as a tab group.
 - **Save Tabs (Both Sides)**: Save tabs from both file displays as a single tab group.
 
-##### Using tabs with the mouse
+### Using tabs with the mouse
 
 You can manipulate a folder tab with the mouse in the following ways:
 
@@ -65,7 +65,7 @@ You can manipulate a folder tab with the mouse in the following ways:
 - Normally tabs display the name of the folder they are showing, but if you click the left button on the label of the currently active tab, you are able to assign your own name to the tab. Once a tab has an assigned name it will not change even if you change folders in the tab.
 - Right-clicking a tab displays the tab's context menu.
 
-##### Folder tab context menu
+### Folder tab context menu
 
 ![](/Manual/images/media/13/tab_context_menu.png)
 
@@ -93,7 +93,7 @@ Right-click a folder tab to see its context menu. Note that the commands in the 
 - **Position**: Change the position of the tab bar.
 - **Settings**: Provides a quick link to the tab bar settings in Preferences.
 
-##### Custom tab labels
+### Custom tab labels
 
 When you customise a tab's label (by renaming it), you can use several special "tokens" to insert information in the tab label:
 
@@ -111,7 +111,7 @@ Consider `%!(%R) %!%N`, for example. If `%R` expands to nothing and `%P` expands
 
 If you need something even more custom or dynamic, the labels for individual tabs can also be overridden via commands and scripts.
 
-##### Linked tabs
+### Linked tabs
 
 In a dual-display Lister, a folder tab on one side of the Lister can be linked with a tab on the other side. When two tabs are linked, selecting one in the Lister to make it active automatically activates the linked tab too. Linked tabs are displayed in different colors from unlinked tabs, and you can configure these colors from the **[Directory Opus Colors](/Manual/preferences/preferences_categories/colors_and_fonts/directory_opus_colors.md)** page in preferences.
 
@@ -121,11 +121,11 @@ You can hold various qualifier keys down to modify the linked state of a tab whe
 - <kbd>Ctrl+Shift</kbd>-click a tab to toggle navigation lock mode on or off (see below).
 - <kbd>Shift</kbd>-click a tab to override the normal behavior when clicking linked tabs (e.g., its partner tab will not come to the front as normal).
 
-##### Navigation Lock tabs
+### Navigation Lock tabs
 
 You can also place linked tabs into Navigation Lock mode, using the \*\*Navigation Lock \*\*option in the context menu. When linked tabs are in this mode the destination tab will always follow the source tab whenever the folder changes, in a similar manner to **[Navigation Lock](dual_display/navigation_lock.md)**.
 
-##### Locked tabs
+### Locked tabs
 
 Folder tabs can be locked in a number of different ways. Primarily, when a tab is locked, it always displays the same folder. It can also be prevented from closing, although this is optional.
 

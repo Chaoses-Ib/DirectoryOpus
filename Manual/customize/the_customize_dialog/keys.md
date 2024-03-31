@@ -2,7 +2,7 @@
 
 The Keys page lets you view and configure "keyboard shortcuts" or "hotkeys" (combinations of keys) that can be used to run commands or launch programs. Opus lets you assign one or more keys to a toolbar button or menu command, and pressing the key has the same effect as clicking the button. You can also create "hotkey-only" functions, which only exist as key assignments and aren't linked to a toolbar.
 
-##### Categories
+### Categories
 
 The category list lets you view keys by category or show all keys together. The categories are:
 
@@ -22,7 +22,7 @@ The category list lets you view keys by category or show all keys together. The 
   - **Hotkeys**: Hotkey-only functions.
   - **Toolbar**: Keys assigned to buttons in the image viewer toolbar.
 
-##### Keys
+### Keys
 
 The list shows one entry for each key combination assigned. The checkboxes next to each key in the list let you temporarily disable a hotkey without having to delete it.
 
@@ -34,7 +34,7 @@ For example, the path field on the location bar has three key assignments by def
 
 At the bottom of the page are two fields that let you filter the hotkey list. You can search separately by key and by command.
 
-##### Editing keys
+### Editing keys
 
 Use the toolbar at the top of the page to manipulate the hotkeys. The **New** drop-down menu lets you create four types of keys here:
 
@@ -47,7 +47,7 @@ No other key types can be created from here - instead, you create them "in situ"
 
 However, most existing keys can be modified here - the only exception are the keys which are configured in Preferences (*Favorite Folders* and *Quick Keys*) - using the **Change Key** field at the top of the page.
 
-##### Import and Export
+### Import and Export
 
 In the ![](/Manual/images/media/13/prefs_menu.png) page menu at the top-right of the dialog are commands for exporting and importing hotkey lists.
 

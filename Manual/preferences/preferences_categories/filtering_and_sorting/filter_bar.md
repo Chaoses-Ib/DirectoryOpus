@@ -13,7 +13,7 @@ These options affect the [Filter Bar](/Manual/basic_concepts/searching_and_filte
 
 - **Real-time filtering**: When turned on, the file display will be filtered in real-time, as you edit the filter. If turned off, you must press the <kbd>Enter</kbd> key to activate the filter you have typed.
 
-##### Default settings
+### Default settings
 
 The following options adjust the default filter settings of the filter bar. You can use the ![](/Manual/images/media/13/button_edit.png) button on the filter bar itself to change these options on-the-fly.
 

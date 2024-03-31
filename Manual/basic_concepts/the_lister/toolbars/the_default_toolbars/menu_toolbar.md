@@ -4,7 +4,7 @@ This toolbar contains the "traditional" drop-down menus, as well as controls for
 
 ![](/Manual/images/media/13/menu_toolbar.png)
 
-##### Left-hand side
+### Left-hand side
 
 On the left-hand side of this toolbar are several drop-down menus:
 
@@ -23,7 +23,7 @@ On the left-hand side of this toolbar are several drop-down menus:
   - **[File Types](/Manual/file_types/README.md)** (change what happens when you double-click or right-click on specific types of files)
   - **[Script Management](/Manual/scripting/script_management/README.md)** (install, create and manage [script add-ins](/Manual/scripting/script_add-ins/README.md))
 
-##### Right-hand side
+### Right-hand side
 
 On the right-hand side are the following menus and commands:
 

@@ -9,7 +9,7 @@ Contains options that affect the appearance of *Power* mode file displays.
 
   
 
-##### File selection / highlighting style
+### File selection / highlighting style
 
 Lets you control both how selected files are displayed and which areas of the line respond to mouse clicks for selecting files.
 

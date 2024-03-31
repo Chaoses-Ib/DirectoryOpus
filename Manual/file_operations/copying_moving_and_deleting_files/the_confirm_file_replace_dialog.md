@@ -6,11 +6,11 @@ When copying files around, you'll often encounter the case where the file you're
 
 The goal of this dialog is to show you enough information about the existing file (the one that already exists in the target folder) and the new file (the one you are copying) to help you decide what action to take.
 
-##### Basic information
+### Basic information
 
 The basic information that's presented for the two files is **Name**, **Location**, **Size**, **Date** (the last modified date) and **Desc** (the file's description). When this information is different between the two files it is displayed in **bold**, making it easier to see at a glance how the two files differ (except for the locations, since they are almost always different and highlighting them would make the more important differences harder to notice). The dialog also uses two little icons to indicate which file is larger and which is newer.
 
-##### Thumbnails
+### Thumbnails
 
 If possible, thumbnail images are also displayed for the two files - if not, the file's icon will be displayed. The thumbnails (or icons) have some additional functionality:
 
@@ -20,7 +20,7 @@ If possible, thumbnail images are also displayed for the two files - if not, th
 
 The context menu displayed when right-clicking a file's thumbnail (or icon) can be customized using the [File Types](/Manual/file_types/README.md) system. For example, you could add a command to compare the two files using an external comparison tool.
 
-##### Proceeding with the file copy
+### Proceeding with the file copy
 
 Fundamentally, you need to decide if you still want to copy the file or not. If you **do** still want to copy the file, your available choices are:
 
@@ -41,7 +41,7 @@ In addition to the automatic rename options discussed above, you can also manual
 
 The filename edit field responds to the same (configurable) control keys that the [inline rename](../renaming_files/inline_rename.md) function supports.
 
-##### Abandoning the file copy
+### Abandoning the file copy
 
 If you decide you **do not** want to copy the file after all, the available choices are:
 
@@ -53,6 +53,6 @@ If you decide you **do not** want to copy the file after all, the available choi
 
 You can also abort the whole operation by clicking the **Abort** button or closing the dialog.
 
-##### Resuming FTP transfers
+### Resuming FTP transfers
 
 If you are copying a file to or from an [FTP site](/Manual/ftp/README.md), and the remote FTP server supports *resume*, you will also have the choice to **Resume** the copy (as well as a drop-down for **Resume All**). If you select the **Resume** option Opus will attempt to resume the file transfer where it was (presumably) interrupted previously. For example, if the file you are copying is 100 KB and the existing file is only 50 KB, Opus would start transferring data from the 50 KB mark. This option will only be available if the existing file is smaller than the new one. You need to be sure of what you're doing when you select this option, as it would be very easy to wind up with a corrupted file if you accidentally resume copying the wrong file.

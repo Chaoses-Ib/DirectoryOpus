@@ -6,19 +6,19 @@ The search field on the Menu toolbar lets you quick run a search on the current
 - **Everything**: If you have [Everything by voidtools](https://voidtools.com) installed, you can run both local and global indexed searches using this tool.
 - **Opus search**: Uses the Opus internal find tool. This is a non-indexed search.
 
-##### Indexed vs non-indexed
+### Indexed vs non-indexed
 
 Both Windows Search and Everything are indexed searches - they use a pre-calculated index. The advantage of this is that results are normally returned almost immediately.
 
 Not all locations are necessarily indexed, however, and in these cases Windows Search will be similar in speed to the Opus find tool. Note that Everything doesn't currently support searching non-indexed locations.
 
-##### Using the quick search field
+### Using the quick search field
 
 ![](/Manual/images/media/13/search_field.png) 
 
 To search the current folder, click in the search field (or press <kbd>F3</kbd>) and enter your search term. By default all search engines perform a partial search so you can normally just enter one or two keywords (or parts of words) to find the files you're looking for.
 
-##### Choosing the search engine
+### Choosing the search engine
 
 ![](/Manual/images/media/13/quicksearch_options.png)
 
@@ -26,7 +26,7 @@ To select a different search engine, click the button on the left of the search 
 
 Select the search engine you want to use from the top part of the menu. Each search engine has its own set of options, and these are shown in the bottom half of the menu.
 
-##### Windows Search
+### Windows Search
 
 By default the Windows Search system will return files that match your keywords both in contents and in filename. If you want greater control over the search results, you can enter a more complex query string using [Advanced Query Syntax](http://msdn.microsoft.com/en-us/library/aa965711%28v=vs.85%29.aspx).
 
@@ -35,7 +35,7 @@ The options for Windows Search are:
 - **Natural query syntax**: Allows natural query syntax (NQS) as well as advanced query syntax (AQS). NQS is a query syntax that is more relaxed than AQS, and is similar to human language.
 - **Automatic wildcards**: Query expressions are treated as if each word in the query had the wildcard character \* appended to it (unless followed by punctuation other than a parenthesis).
 
-##### Everything
+### Everything
 
 Two different types of Everything search are available:
 
@@ -51,7 +51,7 @@ The options for Everything are:
 
 You can use Everything's [query syntax](https://www.voidtools.com/support/everything/searching/) for greater control over the search results.
 
-##### Opus search
+### Opus search
 
 The *Opus search* option uses the the [Opus find tool](find_files/README.md) to run a search below the current folder. This is a non-indexed search and so may be significantly slower than the indexed search options (depending on how big the folder is).
 
@@ -67,7 +67,7 @@ The options for Opus search are:
 - **Partial match**: The string you enter can match part of the filename, and does not have to match the whole filename.
 - **Assume UTF-8 with no BOM**: Tells Opus to assume that plain text without a Byte Order Mark (BOM) are encoded in UTF8 rather than your computer's default 8-bit character set.
 
-##### Quick search results
+### Quick search results
 
 ![](/Manual/images/media/13/windows_search.png) 
 
@@ -75,10 +75,10 @@ In the above screenshot we've searched the **Documents** library for any documen
 
 To clear the search results and return to the folder you searched in, you can click the **Back** toolbar button, or use the close button in the search field to clear the search term.
 
-##### Saving the search results
+### Saving the search results
 
 If you want to save the results of an indexed search permanently, right-click on the background of the file display (not on a file) or on the status bar, and select the **Save as Stored Query** command from the context menu to save the search as a [stored query file collection](../virtual_file_system/file_collections/stored_queries.md).
 
-##### Quick search from the FAYT field
+### Quick search from the FAYT field
 
 You can also run a quick search from the [find-as-you-type](../the_lister/find-as-you-type_field.md) field, by pressing the activation key for the search engine you want to use.

@@ -2,7 +2,7 @@
 
 Selecting files with the mouse or keyboard, in all [view modes](../the_lister/view_modes.md) except Power mode, works similarly to Explorer.
 
-##### Selecting files with the mouse
+### Selecting files with the mouse
 
 - Left-click a single file to select that file and deselect all others.
 - <kbd>Ctrl</kbd>+left-click a file will toggle the selection state of that file, leaving all others unchanged.
@@ -14,7 +14,7 @@ Selecting files with the mouse or keyboard, in all [view modes](../the_lister/vi
 - **Middle**-click on a file to toggle its selection state (equivalent to <kbd>Ctrl</kbd>+left-click). You can also use the middle button to drag a selection rectangle that inverts the selections of files you drag over (equivalent to <kbd>Ctrl</kbd>+left-drag).
 - You can also use the right button to drag a selection rectangle; once the button is released, the context menu will be shown for all selected items.
 
-##### Selecting files with the keyboard
+### Selecting files with the keyboard
 
 - <kbd>Ctrl+A</kbd> is the default hotkey to select all items in the list (the same as the **Edit / Select All** command).
 - <kbd>Ctrl+I</kbd> inverts the selection state of all items in the list (the same as **Edit / Invert Selection**).
@@ -25,22 +25,22 @@ Selecting files with the mouse or keyboard, in all [view modes](../the_lister/vi
 - <kbd>Ins</kbd> toggles the selection of the current item, and automatically moves the input focus to the next item in the list.
 - Typing a partial filename will activate the [find-as-you-type](../the_lister/find-as-you-type_field.md) field and place the selection on the first file matching the entered string.
 
-##### Middle mouse button
+### Middle mouse button
 
 Note that some mouse drivers map the middle mouse button to another function by default - if you find middle-click isn't working as expected, see the [FAQ](https://resource.dopus.com/t/how-to-make-logitech-mid-back-forward-buttons-work-in-opus/2972) for some hints on how to fix it. You can also configure Opus to treat a single middle-click as a double middle-click, which lets you obtain behavior similar to a web browser (e.g. single middle-click to open a folder in a new tab). See the **[File Displays / Mouse](/Manual/preferences/preferences_categories/file_displays/mouse/README.md)** Preferences page for details on that.
 
-##### Power mode
+### Power mode
 
 In power mode, mouse and keyboard selection works slightly differently by default (although the behaviour of the mouse can be modified quite a lot from the **[File Display Modes / Power Mode](/Manual/preferences/preferences_categories/file_display_modes/power_mode/README.md)** Preferences page).
 
-##### Selecting with the mouse in Power mode
+### Selecting with the mouse in Power mode
 
 - Left-clicking a single file will invert the selection state of that file, but will not disturb the selection state of any other items.
 - You can select a range of files by simply clicking and dragging up or down (i.e. keep the mouse button down and move the mouse cursor up or down). If the file you click on first is already selected, dragging up or down will deselect all files dragged over.
 - Clicking an empty part of the file display does not, by default, deselect any files. You can drag a selection rectangle by clicking on an empty part of the file display and dragging with the button held down - the selection rectangle will invert the selection state of any items you drag over.
 - Note that because dragging up or down is used to select files, a drag and drop operation can only be initiated by dragging left or right.
 
-##### Selecting with the keyboard in Power mode
+### Selecting with the keyboard in Power mode
 
 - Power mode is primarily a mouse-based interface, and by default Power mode file displays are not in "keyboard mode" - so pressing the cursor keys will simply scroll the list (if it can scroll) and will not select any files.
 - Pressing the <kbd>Ctrl</kbd> key toggles the file display in and out of keyboard mode. When in keyboard mode, a focus indicator is shown and the cursor keys will move the focus indicator from one file to the next (although they will not, by themselves, cause any files to be selected).
@@ -49,7 +49,7 @@ In power mode, mouse and keyboard selection works slightly differently by defaul
 - When range-selecting with <kbd>Shift</kbd>, reversing direction will undo the selection you just applied. For example, if you press <kbd>Shift+Down</kbd> four times to select the first four files, and then (while still holding <kbd>Shift</kbd>), press <kbd>Up</kbd> twice, the last two selected files will be deselected.
 - <kbd>Ctrl+A</kbd> and <kbd>Ctrl+I</kbd> work the same as with the other view modes (see above), as does the [find-as-you-type](../the_lister/find-as-you-type_field.md) field.
 
-##### Power mode selection is persistent
+### Power mode selection is persistent
 
 The default behaviour of power mode is for file selections to be persistent (that is, files do not deselect by themselves - you have to deselect them manually). In other file display modes you can simply click on an empty area to deselect all files, but in power mode:
 

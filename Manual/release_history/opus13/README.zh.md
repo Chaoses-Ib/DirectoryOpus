@@ -2,7 +2,7 @@
 
 ![](/Manual/images/media/13/logo_opus13.png)
 
-#### 精彩视频
+## 精彩视频
 
 如果您更喜欢观看而非阅读，可以在此找到这些精彩内容的视频版本：
 
@@ -10,7 +10,7 @@
 
 —
 
-#### 目录
+## 目录
 
 [亮点 - 第 1 页](/Manual/release_history/opus13/page1.zh.md)
 

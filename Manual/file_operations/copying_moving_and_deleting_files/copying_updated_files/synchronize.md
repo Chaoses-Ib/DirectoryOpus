@@ -11,14 +11,14 @@ Synchronize is a two-step process:
 - First a **comparison** stage is run, which identifies files that need to be copied and/or deleted
 - Secondly the actual **synchronize** takes place, once you've verified that the results of the comparison stage are correct
 
-##### Comparison mode
+### Comparison mode
 
 The left half of the panel contains options that control the comparison stage.
 
 - **Copy files in both directions**: Files will be copied in both directions (a *two-way copy*). The comparison in this mode is simply based on file modification date - where the same file exists in both locations, the newer one will be copied over the top of the older one.
 - **Copy files from left to right**: Files will be copied from the left to the right (or from **source** to **destination** - a *one-way copy*) only. In this mode you can choose the comparison method used to determine whether a file needs to be updated or not.
 
-##### One-way copy mode options
+### One-way copy mode options
 
 In one-way copy mode, the comparison methods you can choose are:
 
@@ -36,7 +36,7 @@ Other options available in one-way copy mode:
 - **Delete files from destination that aren't in the source**: Deletes files from the destination directory if they don't exist in the source folder. This option is not available in two-way copy mode since in that mode files that exist in one folder but not the other will be copied.
 - **Delete before copy**: When the above option is enabled, this option makes Opus perform the delete operation before the copy operation, instead of after. You may want to use this option if you are worried that the destination drive won't have enough space.
 
-##### General comparison options
+### General comparison options
 
 Other options which control the comparison stage in both one-way and two-way mode:
 
@@ -46,7 +46,7 @@ Other options which control the comparison stage in both one-way and two-way mod
 - **Ignore seconds**: Ignores seconds when comparing the dates of two files. For example, the dates **21-Feb-2010 10:35:12** and **21-Feb-2010 10:35:38** would be considered the same with this option turned on. This can be useful when synchronizing between locations that don't store timestamps to the same resolution (e.g. some FTP servers don't store seconds at all, so without this option your files would almost always look like they were out-of-date even if they weren't).
 - **Only compare existing files**: Normally the synchronize function will copy files that don't exist as well as those that already exist but are different (based on the comparison method chosen). If this option is turned on then only files that already exist but are different will be copied - files that don't already exist on both sides will be ignored.
 
-##### Synchronize location
+### Synchronize location
 
 The fields on the right of the panel determine which folders are synchronized. Depending on the **Synchronize left-to-right** option, these fields are either called **Source** and **Destination**, or **Left** and **Right**.
 
@@ -64,7 +64,7 @@ The options below the location fields are:
 - **Synchronize sub-folder contents**: Turn this option on if you want to synchronize the contents of sub-folders in the source and destination folder. If you leave this off then only files in the specified folders themselves will be synchronized.
 - **Synchronize everything (including hidden files)**: Ignores any filters in effect in the source and destination and synchronizes all files, including any that are normally hidden.
 
-##### Excluding locations
+### Excluding locations
 
 The **Exclude** field lets you specify folders that are excluded from the synchronize operation.
 
@@ -74,7 +74,7 @@ This field lets you enter one or more paths, or filenames, or wildcard patterns.
 
 The two options in the drop-down let you automatically exclude hidden folders and system folders from the operation.
 
-##### Performing the comparison
+### Performing the comparison
 
 Synchronization is a two-stage process - *comparison* followed by *synchronization*. The comparison stage is when Opus compares the source and destination folders and works out what needs to be copied and/or deleted.
 
@@ -89,13 +89,13 @@ After setting your desired options, click the **Compare** button in the bottom-r
 7.  If the **Hide unaffected files** option is on, any files not selected for synchronization will be removed from the display.
 8.  The results of the comparison will be summarised in a dialog box.
 
-##### Comparison results
+### Comparison results
 
 ![](/Manual/images/media/13/sync_-_compare1.png) 
 
 At this point, you can click the **Synchronize** button to begin the synchronization. If however you want to check the file list first to see exactly what's going to happen, or you want to make changes to the files selected for synchronization or to the comparison options, you can click the **Close** button to return to the Lister. You'll then see the following kind of display in the file list.
 
-##### Reviewing and changing synchronize actions
+### Reviewing and changing synchronize actions
 
   
 ![](/Manual/images/media/13/sync_-_file_list.png) 
@@ -104,13 +104,13 @@ This screenshot corresponds to a one-way copy comparison. The files that have be
 
 If you are dealing with a large number of files, you may wish to remove from the display those that you have marked to not be synchronized. To do this, right-click the background of the file display and choose the **Hide unaffected items** command from the context menu. Any files that are not marked as either copy or delete will be removed from the display. You can redisplay the hidden files with the **Reveal hidden items** command.
 
-##### Comparison errors
+### Comparison errors
 
 The results summary dialog will also inform you of any errors encountered during the comparison stage. An error can arise if a file on one side of the comparison has the same name as a folder on the other side.
 
 If conflicts arise, the files and folders concerned will be skipped by the synchronization process - but if you want to investigate further and rectify the issue, you can click the **Conflicts** which appears in the summary dialog. This will return you to the Lister and highlight the conflicting items for you.
 
-##### Performing the synchronize
+### Performing the synchronize
 
 Once you've verified (and possibly modified) the synchronize actions, you can begin the synchronization by clicking the **Synchronize** button in the bottom-right corner of the panel.
 

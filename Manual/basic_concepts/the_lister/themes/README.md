@@ -1,4 +1,4 @@
-#### Themes
+## Themes
 
 A theme is a subset of your Opus configuration containing just the color, font, and image settings. You can switch between different themes or share them with others.
 
@@ -8,7 +8,7 @@ To access the themes system, select the [Colors and Fonts / Themes](/Manual/pref
 
 The Themes page displays a list of all themes you have installed. Initially your themes list will be empty - you can find themes to download on the [Opus Resource Centre](http://www.gpsoft.com.au/DScripts/redirect.asp?page=themes).
 
-##### Applying themes
+### Applying themes
 
 When you select a theme from the list and click the **Apply** button to apply it to your configuration, you can choose which aspects of the theme are applied - you don't have to apply all elements the theme provides.
 

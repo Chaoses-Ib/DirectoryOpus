@@ -12,23 +12,23 @@ The Formats list is grouped into different sections:
 
  
 
-##### Favorite Formats
+### Favorite Formats
 
 These are formats that aren't linked to a specific folder, but instead can be applied quickly to any folder through a drop-down list in the Lister's *Folder* menu.
 
-##### Path Formats
+### Path Formats
 
 This group contains formats that have been defined for specific folders. You can also define a format for a path using a wildcard string.
 
-##### System folders
+### System folders
 
 Contains formats that can be defined for certain special locations. There are currently only two formats in this group - the **Computer** folder, which is used when Opus displays that folder itself rather than hosting Explorer, and the **Portable Devices** folder, which is used when viewing the root of the [mtp:](/Manual/basic_concepts/virtual_file_system/mtp.md) namespace.
 
-##### Content Type Formats
+### Content Type Formats
 
 The Content Type section contains formats that are defined for [file type groups](/Manual/file_types/file_type_groups.md). When the [Content Types](/Manual/basic_concepts/folder_options/content_types.md) system is enabled, these formats will be used automatically when a folder containing enough of those types of files is read. For example, the Content Type format for the Images group can be set to switch the display into thumbnails mode. If you navigated to a folder that contained mostly images, this format would be applied automatically.
 
-##### Folder Type Formats
+### Folder Type Formats
 
 This section defines the default formats that are used for certain types of folder when a specific format hasn't been defined. The default types are:
 
@@ -46,13 +46,13 @@ This section defines the default formats that are used for certain types of fold
       * **Search Results**: The default format for a File Collection that is used to present quick search results. This will override the **Collection** format for these collections. 
       * **Synchronize**: This is a format that is applied whenever the [[:file_operations:copying_moving_and_deleting_files:copying_updated_files:synchronize|Synchronize]] tool is used. 
 
-##### Default Format
+### Default Format
 
 The last group contains a single item - the *User Default* format. This is the "format of last resort" that's used if no other format has been defined (see below).
 
   
 
-##### How folder formats are used
+### How folder formats are used
 
 Whenever you navigate to a new folder, Opus consults the Formats list to work out what format to display it with. The list is searched from top-to-bottom:
 
@@ -64,7 +64,7 @@ Whenever you navigate to a new folder, Opus consults the Formats list to work ou
 
 (As a side note: There are some cases when the above doesn't happen when you navigate to a new folder. If you have edited the format in the current file display with the **[Folder Format](/Manual/basic_concepts/folder_options/README.md)** dialog, your manually edited format will be maintained until you navigate to a folder with its own specific format defined. And if you have the [format lock](/Manual/basic_concepts/folder_options/locking_the_format.md) turned on, the format will **never** automatically change).
 
-##### Working with the format list
+### Working with the format list
 
 Firstly, you'll notice that some formats in the list have checkboxes - this lets you turn a format on or off (in the case of Path Formats, it lets you temporarily disable a format without deleting it from the list).
 
@@ -82,7 +82,7 @@ As well as using the toolbar buttons, you can also:
 - Double-click a format to quickly edit it
 - Right-click a format to copy its definition and paste it into another, an existing format to your favorites list, or copy the definition of a favorite format into another format.
 
-##### Editing a format
+### Editing a format
 
 ![](/Manual/images/media/13/format_editor.png)
 
@@ -92,7 +92,7 @@ This dialog contains several tabs with options that control various aspects of t
 
 See the [Folder Formats](/Manual/basic_concepts/folder_options/README.md) page for a full discussion of the options available for folder formats.
 
-##### Inheritable columns
+### Inheritable columns
 
 At the bottom of the **Columns** tab is the **Include columns from other matching formats** option. This option affects which columns are displayed when this format is in use.
 
@@ -101,7 +101,7 @@ At the bottom of the **Columns** tab is the **Include columns from other matchin
 
 In the second case, the method used to find a folder format described above is modified slightly. The first matching format is still used, but the search doesn't stop immediately - Opus will continue down the order of priority looking for other formats that match, and apply any columns (and only columns - no other settings) that those formats define. This process stops as soon as a matching format is encountered that doesn't have the **Include columns from other matching formats** option turned on.
 
-##### Apply to sub-folders
+### Apply to sub-folders
 
 At the very bottom of the **Edit Format** dialog is the **Use as the default format for all sub-folders** option.
 

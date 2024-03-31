@@ -6,7 +6,7 @@
 
 ![](/Manual/images/media/13/utility_pane_dropdown.png)
 
-#### 工具
+## 工具
 
 这些都可以从 **工具** 菜单中访问：
 
@@ -14,7 +14,7 @@
 - [同步](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.zh.md): 同步两个不同文件夹的内容。
 - [查找重复文件](/Manual/additional_functionality/duplicate_file_finder.zh.md): 在你的电脑中查找任何重复文件（或特定文件的重复项）。
 
-#### 日志
+## 日志
 
 这些都可以从 **帮助 / 日志** 菜单中访问。
 
@@ -24,7 +24,7 @@
 - **电子邮件日志**: 显示 Opus 已发送的所有 [发送电子邮件](/Manual/preferences/preferences_categories/internet/email.zh.md) 的日志。
 - **脚本日志**: 显示来自 [脚本](/Manual/scripting/README.zh.md) 和 [求值器](/Manual/evaluator/README.zh.md) 的输出。
 
-#### 缩小面板
+## 缩小面板
 
 面板右上角有一个按钮，可以将它缩小（折叠）到只显示标题栏，例如，如果你正在运行长时间的查找操作，当你在等待时想要做其他工作，这会很管用。
 

@@ -1,4 +1,4 @@
-#### Args
+## Args
 
 The **Args** object is passed to a script when it is invoked via a command, via the **[Func](func.md).args** property. It is used when a command added by a script has a [command line template](../../command_reference/argument_types.md) and provides access to any arguments provided on the command line.
 

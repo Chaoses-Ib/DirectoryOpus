@@ -11,7 +11,7 @@ To use this functionality, select the files you want to copy or move and then se
 
 If you simply enter a new name and click **OK**, the file will be copied or moved using the name you supplied. If you had multiple files selected then the dialog will reappear after the first file has been copied, to prompt you for a new name for the second file (and so on).
 
-##### Renaming using wildcards
+### Renaming using wildcards
 
 As an alternative to entering a new name for each file, you can use a simple wildcard system to rename all copied or moved files at once. This is not a full pattern matching (or regular expressions) system; instead, the only wildcard character that's recognised is \* (the asterisk). This is the same system used in the **[Simple Wildcard Rename](../../renaming_files/simple_wildcard_rename.md)** function. The asterisk is used to mark areas of text that are to be matched and retained from the old to new names.
 

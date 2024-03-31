@@ -8,13 +8,13 @@ Opus lets you edit file metadata in three ways:
 - The **Set Metadata** dialog works like a typical file operation - it displays a dialog letting you choose the changes to make, and then when you click **OK** the changes will be applied to all selected files.
 - [Programmatically](/Manual/file_operations/editing_metadata/programmatic_setting_of_metadata.md), using the `SetAttr META` command, you can create buttons or hotkeys that automatically modify the metadata of selected files.
 
-##### Displaying the metadata pane
+### Displaying the metadata pane
 
 To display the **Metadata Pane** in the Lister, select the **Metadata Pane** command from the **Lister** drop-down menu. The pane will update in real time as you select and deselect files in the file display.
 
 In the standalone [image viewer](/Manual/additional_functionality/viewing_images/README.md), select **Edit Metadata** from the **Edit** menu.
 
-##### Displaying the Set Metadata dialog
+### Displaying the Set Metadata dialog
 
 To invoke the **Set Metadata** dialog, select the files you wish to edit, and choose the **Edit Metadata** command from the drop-down **Properties** menu.
 
@@ -22,7 +22,7 @@ Whichever method of editing you choose, the same display is used to both display
 
 ![](/Manual/images/media/13/metadata_example.png) 
 
-##### Metadata categories
+### Metadata categories
 
 The list of metadata properties is divided into a number of categories. The categories and properties shown will change, depending on the type or types of files you have selected. Individual categories can be collapsed to hide their contents by clicking the small ![](/Manual/images/media/metadata_collapse.png) button to the left of the category name.
 
@@ -35,7 +35,7 @@ The list of metadata properties is divided into a number of categories. The cate
 - **[Extended Properties](/Manual/file_operations/editing_metadata/extended_properties.md)**: These are properties that are nominally available for all file types, like **Comment**, **Rating** and **Tags**. If the selected file formats support those properties natively (for example, **JPEG** files do) then the information will be stored in the file itself. If the selected file formats don't support these properties (like **.txt** files, for example) then Opus will attempt to store the information in an [Alternate Data Stream](http://en.wikipedia.org/wiki/Alternate_data_stream) attached to the file. Because only NTFS file systems support the ADS system, these properties won't be available for files stored on other file systems. If the *Rating* column is displayed in the file display, you can edit a file’s rating directly by clicking the stars (rather than going through the Metadata panel).
 - **Standard Properties**: These are properties that are applicable to all files - attributes and timestamps. You can modify these properties through the metadata system as an alternative to using the **[Change Attributes & Times](changing_attributes.md)** dialog. The two timestamp properties have a **Select operation** field that lets you enter a *[time shift](/Manual/file_operations/editing_metadata/time_shifting.md)* string that will perform relative adjustments to the current value of the date fields.
 
-##### Editing metadata
+### Editing metadata
 
 To edit a value in the metadata display, simply click it to invoke the editing controls. The type of control used will depend on the field being edited. For example, for a string this will be a text edit field, but for a property with only certain options to choose from this might be a drop-down list.
 
@@ -45,25 +45,25 @@ When a property has been modified it is indicated with a red triangle to the lef
 
 ![](/Manual/images/media/13/metadata_edit_example.png) 
 
-##### Changing multiple files at once
+### Changing multiple files at once
 
 You can edit the metadata of multiple files simultaneously simply by selecting multiple files at once (for the **Metadata Pane**), or by having multiple files selected when invoking the **Edit Metadata** command. Only properties that all selected files have in common can be edited. For example, if you select four image files at once, all the **Document** and **Picture Properties** fields will be shown as normal, but if you select four image files and one music file, only the few **Document** fields they have in common will be available.
 
 When the metadata display first initialises it shows the current values of the various properties of the selected files. If multiple files are selected and they have different values for a given property, the indication *multiple values* is shown. If you edit a property when multiple files are selected, the new value will be applied to all files.
 
-##### Working with the multi-value fields
+### Working with the multi-value fields
 
 Some fields (e.g. tags, authors) support multiple values. To use this, separate each value with a semi-colon. When multiple files are selected, you can use the `+` and `-` prefixes to add and remove specific values while leaving any other values alone.
 
 You can turn on the **Add to multi-value fields by default** option on the [Metadata / Editor](/Manual/preferences/preferences_categories/file_operations/metadata/editor.md) Preferences page to add new values by default in this situation (without having to type a `+`).
 
-##### Copying metadata with drag-and-drop
+### Copying metadata with drag-and-drop
 
 Using drag-and-drop, you can copy certain combinations of properties from one file to one or many target files. When you are editing the metadata for one or more files in the metadata pane or the separate dialog, you can drag-and-drop another file over the properties list. If you drag with the left button, a default set of properties will be copied; dragging with the right mouse button displays a popup menu that lets you choose which properties you want to copy from the dropped file.
 
 ![](/Manual/images/media/13/copy_metadata.png) 
 
-##### Applying your changes
+### Applying your changes
 
 In the **Set Metadata** dialog, once you have finished editing the metadata, click the **OK** button to apply the changes to the selected files.
 

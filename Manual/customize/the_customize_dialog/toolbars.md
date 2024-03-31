@@ -10,7 +10,7 @@ Double-clicking a toolbar in the list will cause any instances of that toolbar t
 
 When you select a toolbar from the list, you are able to edit a number of settings on the right-hand side of the page.
 
-##### Options
+### Options
 
 - **Image size**: Specify the image size (*small* or *large*) for buttons on the toolbar. If you select *default* then the buttons' own settings will be used.
 - **Image state**: Specify the image state (*on* or *off*) for all buttons on the toolbar, or select *default* to use each individual button's own settings.
@@ -19,7 +19,7 @@ When you select a toolbar from the list, you are able to edit a number of settin
 - **Font**: Turn this option on if you want to specify a font for button labels. If turned off the font configured on the [Fonts](/Manual/preferences/preferences_categories/colors_and_fonts/fonts.md) page of Preferences will be used instead.
 - **Always enable this toolbar's keys in Listers**: Any hotkeys defined within the toolbar will be active in Listers whether or not the toolbar itself is currently visible. This is used for the two main default toolbars (*Menu* and *Operations*), so that even if you turn them off, standard keys like <kbd>Ctrl+A</kbd> (for *Select All*) will still function.
 
-##### Custom background settings
+### Custom background settings
 
 This section lets you override the background color and image of individual toolbars (which by default comes from the [Directory Opus Colors](/Manual/preferences/preferences_categories/colors_and_fonts/directory_opus_colors.md) page in Preferences.)
 
@@ -27,6 +27,6 @@ See the [Images](/Manual/preferences/preferences_categories/colors_and_fonts/ima
 
 If **Submenus inherit background** is turned on then any drop-down menus from the toolbar (and any of their child menus) will display the same background image as the parent toolbar.
 
-##### Page menu
+### Page menu
 
 The **Import Toolbar** and **Export Toolbar **commands in the ![](/Manual/images/media/13/prefs_menu.png) page menu (top-right of the dialog) let you export the selected toolbar so you can share it with other people, or import toolbars you have received from others.

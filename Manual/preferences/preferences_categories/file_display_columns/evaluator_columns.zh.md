@@ -10,7 +10,7 @@
 
 单击 **添加** 或 **编辑** 按钮将显示列编辑器。
 
-##### 列编辑器
+### 列编辑器
 
 ![evalcolumn_editor.png](/Manual/images/media/13/evalcolumn_editor.png)
 

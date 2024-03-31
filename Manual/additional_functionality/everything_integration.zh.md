@@ -6,7 +6,7 @@ Everything 是一款 *索引搜索工具*。它默认会在您的本地硬盘中
 
 请注意，Everything 不会索引文件 **内容**，只索引基本文件元数据。
 
-##### Everything 版本
+### Everything 版本
 
 目前，Directory Opus 官方支持 Everything 1.4 版（截至撰写本文的时间，当前发布版本为 1.4.1.1024）。
 
@@ -15,7 +15,7 @@ Everything 1.5 目前正处于“alpha 测试”阶段，虽然可以将其配�
 > [!NOTE]
 > 若要将 Opus 与 Everything 1.5 alpha 版本结合使用，则需要在 *everything.ini* 文件中设置 `alpha_instance=0`。务必在更改 ini 文件后重新启动 Everything。
 
-##### 配置 Everything 与 Opus 协同工作
+### 配置 Everything 与 Opus 协同工作
 
 ![](/Manual/images/media/13/everything_options.png)
 
@@ -34,7 +34,7 @@ Everything 1.5 目前正处于“alpha 测试”阶段，虽然可以将其配�
 
 最后，我们建议确保在 *索引 / 排除* 页面中未设置任何排除内容。虽然对于搜索来说并不重要，但如果您想要使用 Everything 在 Opus 中获取快速的文件夹大小，则必须将所有内容都纳入索引，否则文件计数将不准确。
 
-##### 快速文件夹大小
+### 快速文件夹大小
 
 Opus 一直都能显示文件夹大小，方法是打开某个选项以自动计算它们，或者手动使用 `GetSizes` 命令。但是，计算文件夹大小可能会很慢。文件系统并不会追踪文件夹中包含了多少个文件，因此计算大小需要读取文件夹的内容（以及所有子文件夹和所有子子文件夹等内容）并汇总大小。
 
@@ -46,7 +46,7 @@ Opus 一直都能显示文件夹大小，方法是打开某个选项以自动计
 
 [文件夹大小](/Manual/preferences/preferences_categories/folders/folder_sizes/README.zh.md) 选项页面上的各种选项可用于配置 Opus 如何使用 Everything 计算文件夹大小。
 
-##### 搜索
+### 搜索
 
 ![](/Manual/images/media/13/everything_search.png)
 

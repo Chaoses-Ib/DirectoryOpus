@@ -1,6 +1,6 @@
 Previous: [Opus 13 Highlights - Page 3](/Manual/release_history/opus13/page3.md) # Directory Opus 13 - Highlights - Page 4
 
-#### Viewer
+## Viewer
 
 New movie player based on modern APIs:
 
@@ -55,7 +55,7 @@ Support for AVIF (AV1) images:
 
 ------------------------------------------------------------------------
 
-#### Image Converter
+## Image Converter
 
 New UI, with support for presets, which save the whole dialog's setup:
 
@@ -75,7 +75,7 @@ Lossless JPEG rotation isn't new, but can now be turned off in the UI, allowing 
 
 ------------------------------------------------------------------------
 
-#### Metadata Display
+## Metadata Display
 
 Overhauled display of video metadata, now using MediaInfo:
 
@@ -84,7 +84,7 @@ Selected and total duration now on the default status bar when similar columns i
   
 ----
 
-#### Metadata Editing
+## Metadata Editing
 
 Support for ID3v2 tags in WAV files:
 

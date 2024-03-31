@@ -2,7 +2,7 @@
 
 There are two features in Opus that help you keep track of changes you have made to files and folders.
 
-##### Undo
+### Undo
 
 The **Undo** command can (usually) be used to undo the most recent action. Most actions can be undone - for example, if you rename a group of files incorrectly with a wildcard, you can undo the rename fairly easily. File deletes, however, can not be undone unless the delete was done to the recycle bin. You can find the **Undo** command in the **Edit** menu in a Lister (or press <kbd>Ctrl+Z</kbd>).
 
@@ -10,7 +10,7 @@ The **Undo** command can (usually) be used to undo the most recent action. Most 
 
 Opus maintains a history of undoable functions. From the **Undo List** sub-menu, you can see the ten most recent actions, and undo any of them by selecting it from the list. Selecting the **More...** command from that sub-menu displays the [Utility Panel](/Manual/basic_concepts/the_lister/utility_panel.md), showing the **Undo Log** page. This page displays a full list of undoable actions, and you can undo one, many or all actions from this page at the click of a button.
 
-##### File Log
+### File Log
 
 While the undo log only shows the most recent undoable actions in the current session, the file log** **maintains a persistent log of all file operations (undoable or not). You can access the **File Log** from the [Utility Panel](/Manual/basic_concepts/the_lister/utility_panel.md), or select the command directly from the **Help** menu.
 

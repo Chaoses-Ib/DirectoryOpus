@@ -53,7 +53,7 @@ The same as `{dlgchoose}` except the value list is automatically sorted.
 </td></tr></tbody>
 </table>
 
-##### Parameters for {dlgopen}, {dlgmulti}, {dlgsize}
+### Parameters for {dlgopen}, {dlgmulti}, {dlgsize}
 
 The template for these codes is `{code|<title>|<default>}`.
 
@@ -77,7 +77,7 @@ These codes also support the modifiers listed under [Codes for passing filenames
 
 For example `{dlgopen|||noext}` would strip the extension from the selected filename.
 
-##### Parameters for {dlgfolder}
+### Parameters for {dlgfolder}
 
 The template for this codes is `{dlgfolder|<title>|<default>}`.
 
@@ -89,7 +89,7 @@ This code supports the modifiers listed under [Codes for passing paths](codes_fo
 
 For example `{dlgfolder||C:\Program Files|expand}` would set **C:\Program Files** as the default folder and automatically expand it in the displayed dialog.
 
-##### Parameters for {dlgstring}, {dlgstringS} and {dlgpassword}
+### Parameters for {dlgstring}, {dlgstringS} and {dlgpassword}
 
 The template for these codes is `{code|<message>|<default>}`.
 
@@ -113,7 +113,7 @@ If both `doublequotes` and `confirm` are needed at once, they can be specified i
 
 For example, `{dlgpassword|Please enter your password twice.||confirm|doublequotes}`.
 
-##### Parameters for {dlgchoose}, {dlgchooseS}
+### Parameters for {dlgchoose}, {dlgchooseS}
 
 The template for these codes is `{code|<message>|<option 1>[=<value 1>][+<option 2>[=<value 2>]...]}`.
 

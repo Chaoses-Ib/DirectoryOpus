@@ -2,11 +2,11 @@
 
 每当要对文件执行某项操作（复制、删除或仅查看）时，您都必须先选择该文件。Directory Opus 中的大多数文件操作都会对所有当前选定的文件（及文件夹）进行操作，因此了解如何选择文件以及如何得知选择的文件数量很重要。
 
-##### 手动选择文件
+### 手动选择文件
 
 有关使用鼠标或键盘选择文件的信息，请参阅[使用鼠标或键盘](/Manual/basic_concepts/selecting_files/selecting_with_the_mouse_and_keyboard/README.zh.md)。
 
-##### 自动选择文件
+### 自动选择文件
 
 内部的[选择](/Manual/reference/command_reference/internal_commands/select.zh.md)命令允许您通过很多不同方式自动选择文件。默认的**编辑**菜单有许多预定义的**选择**命令：
 
@@ -29,7 +29,7 @@
 - **复选框到选择**：设置选择以匹配复选框状态。
 - **选择重复项...**：显示[重复文件查找程序](/Manual/additional_functionality/duplicate_file_finder.zh.md)的选择对话框。
 
-##### 状态栏上显示的计数
+### 状态栏上显示的计数
 
 了解当前选择了多少个文件和文件夹的最简单方法是查看[状态栏](the_lister/status_bar.zh.md)。
 

@@ -11,7 +11,7 @@ Say you have a bunch of utility functions that you like to use repeatedly. You c
 
 If instead you keep your utility functions in an include file, you can then *include* that file into other scripts - automatically gaining access to the functions within it, but with only one copy of the code needed.
 
-##### Include file requirements
+### Include file requirements
 
 The easiest way to create an include file is using the [script editor](../script_editor/README.md).
 
@@ -23,7 +23,7 @@ While include files are just script files like any other, there are a few import
 
 Include files can be *private* or *shared*. Private include files, when bundled into a [script package](script_package.md), can only be used by scripts in that package. Shared include files can be used by all installed Opus scripts. To mark an include file as shared, the `OnInitIncludeFile` event must be implemented.
 
-##### Using include files
+### Using include files
 
 To use an include file from another script, use the `@include` directive at the top of the script file, For example,
 

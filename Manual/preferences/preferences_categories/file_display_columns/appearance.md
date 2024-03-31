@@ -4,13 +4,13 @@ This page lets you configure the appearance of specific columns when the Lister 
 
 The **Current sort column** entry is a special set of colors and styles that applies to whichever field the file list is currently sorted by (or if multiple sort fields are defined, the primary sort field). While you can set its font styles here, its colors are set on the [Directory Opus Colors](../colors_and_fonts/directory_opus_colors.md) page.
 
-##### Custom color and font settings
+### Custom color and font settings
 
 Turn on the **Custom color and font settings** to enable color and font style overrides for the selected column.
 
 The list of fields allows you to see the field colors and styles at a glance. If the checkbox is not set for a field then its colors, while visible in the list itself, are not currently enabled and will not affect the colors used to display files. If an arrow appears on the right of a field's name then that field is set to sort in reverse. The checkboxes and arrows are independent of each other; that is, you can enable reverse sorting without having to turn on special colors, and vice versa.
 
-##### Other per-column options
+### Other per-column options
 
 - **Default width**: Lets you configure a default width for every field. This is especially useful in configuring the default width of the *Thumbnail* column. Note that some columns have their default width set in pixels, and some in characters.
 - **Middle ellipsis**: Normally when the text in a column doesn't fit, its end is truncated and an ellipsis (...) displayed at the end. If you turn this option on, the truncation happens in the middle of the string, so you will see the beginning and the end instead of just the beginning.

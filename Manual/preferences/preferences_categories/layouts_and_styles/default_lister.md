@@ -6,7 +6,7 @@ This page contains options that affect the way the [default Lister](/Manual/basi
 - **Ignore toolbars of Default Lister**: When you set a Lister as the default, the toolbars it is using are also saved. If you turn this option on, the saved toolbars will be ignored when opening a new default Lister. Instead, your *Default Toolbar Set* will be used, and can be updated via **Settings / Toolbars / Set As Default Toolbar Set**.
 - **Update Default Lister automatically when closing a Lister**: If this option is turned on then whenever you close a Lister, its settings will be saved as the new default. If you open a Lister, modify it in some way and close it again, the default Lister settings will be updated automatically. You will then get those new default settings back when you open a new Lister.
 
-##### Default Lister positioning
+### Default Lister positioning
 
 This controls where new Listers appear on-screen when they are opened using the default Lister settings. Listers opened via a saved layout aren't affected by these options. If your default Lister is maximized then new Listers will also be maximized and the positioning options mainly just determine which monitor will be used.
 
@@ -14,7 +14,7 @@ This controls where new Listers appear on-screen when they are opened using the 
 - **Always in the same position**: The new Lister always opens in the exact position, and on the same monitor, where the default Lister was saved. The mouse pointer's position does not affect where the new Lister opens. If the default Lister's position is partially off-screen or between two monitors, the new Lister will be the same.
 - **Always over the mouse pointer**: The new Lister always opens underneath the mouse pointer. For example, if you have two monitors and the mouse is in the top-right corner of your second monitor then the new Lister will open in the same corner, regardless of where the Default Lister was saved. The new Lister's position will be adjusted to ensure it does not go off the edge of the monitor it opens on.
 
-##### Virtual desktops
+### Virtual desktops
 
 These options apply when using virtual desktops under Windows 10 and above:
 

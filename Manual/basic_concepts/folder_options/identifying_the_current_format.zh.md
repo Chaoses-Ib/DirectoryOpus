@@ -8,11 +8,11 @@
 
 在上面的示例中，我们可以看到这个文件列表中的当前格式开始于 [自动记忆的格式](auto_folder_formats.zh.md)，但后来被打开了一个列的命令修改了（在本例中，用户右键单击列头并添加了 *创建时间* 列）。
 
-##### 更多信息
+### 更多信息
 
 信息工具提示还显示文件窗口的来源（在本例中是一个名为 **上次关闭的文件窗口** 的系统布局——即上次关闭 Opus 时它处于打开状态）。如果适用，它还可以显示背景图片的来源（如果 [文件夹图片](/Manual/preferences/preferences_categories/folders/folder_images.zh.md) 系统正在使用中）。
 
-##### 通过信息图标的右键单击菜单执行格式命令
+### 通过信息图标的右键单击菜单执行格式命令
 
 ![](/Manual/images/media/13/status_info_menu.png)
 
@@ -35,6 +35,6 @@
 
 在底部，**编辑状态栏** 命令会转到你 [文件列表/状态栏](/Manual/preferences/preferences_categories/file_displays/status_bar.zh.md)配置页面，可以在其中配置状态栏定义。
 
-##### 能够移除状态栏图标
+### 能够移除状态栏图标
 
 ![](/Manual/images/media/13/info.png) 图标是在状态栏中使用 `{fl}` 代码生成的。由于状态栏可通过配置配置，因此可能可以移除此代码——如果是这样，图标将不可见。在这种情况下，你可以从 [文件列表/状态栏](/Manual/preferences/preferences_categories/file_displays/status_bar.zh.md)配置页面中添加它。

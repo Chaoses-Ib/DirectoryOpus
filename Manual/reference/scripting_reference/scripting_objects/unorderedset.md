@@ -6,7 +6,7 @@ You can create a new **UnorderedSet** using the **[DOpusFactory](dopusfactory.md
 
 Care should be taken when adding objects to an **UnorderedSet**. Unlike strings and numbers, the container will only consider two objects equal if both are the exact same object (i.e. same instance/reference). Two separate objects with the same value will not be considered equal, and can both exist in the same **UnorderedSet** at once.
 
-##### JScript Example:
+### JScript Example:
 
     var us = DOpus.Create.UnorderedSet();
 

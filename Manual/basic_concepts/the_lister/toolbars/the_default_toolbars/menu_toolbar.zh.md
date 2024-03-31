@@ -4,7 +4,7 @@
 
 ![](/Manual/images/media/13/menu_toolbar.png)
 
-##### 左侧
+### 左侧
 
 此工具栏的左侧有几个下拉菜单：
 
@@ -23,7 +23,7 @@
   - **[文件类型](/Manual/file_types/README.zh.md)**（更改双击或右击特定类型文件时发生的情况）
   - **[脚本管理](/Manual/scripting/script_management/README.zh.md)**（安装、创建和管理 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md)）
 
-##### 右侧
+### 右侧
 
 右侧有以下菜单和命令：
 

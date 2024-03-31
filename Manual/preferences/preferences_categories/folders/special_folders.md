@@ -1,6 +1,6 @@
 # Special Folders
 
-##### Desktop folders
+### Desktop folders
 
 This list shows any special folders that third-party software has added to the desktop. Often (but not always) these are used for cloud storage (e.g. OneDrive, Dropbox). Folders that Opus identifies as cloud storage will:
 
@@ -16,7 +16,7 @@ The **Show** column lets you control where the folder is shown; choose from:
 - **Both**: Appears in both the folder tree and the file display.
 - **Hide**: The folder won't be shown at all.
 
-##### Other cloud folders
+### Other cloud folders
 
 Some cloud software doesn't add a folder to the desktop - for example, Google Drive often adds its own drive letter to the system instead. If you use cloud software that isn't shown in the **Desktop folders** list, you can add its location here to have Opus trigger the *Cloud Storage* folder format automatically for that folder as well.
 

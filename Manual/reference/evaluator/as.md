@@ -2,7 +2,7 @@
 
 The **As** operator performs two functions - conversion and formatting.
 
-##### Conversion: varname As type
+### Conversion: varname As type
 
 Converts the variable *varname* to the specified *type*. Valid types are:
 
@@ -26,7 +26,7 @@ When converting from a string to a date, valid input formats are:
 
 Times must be in 24-hour format, minutes and seconds are optional. If a time is specified on its own, today's date is assumed.
 
-##### Formatting: varname As format
+### Formatting: varname As format
 
 Formats the variable *varname* using the specified formatting code.
 
@@ -46,7 +46,7 @@ Various formatting operations are available.
 
 Where it makes sense the above codes can be combined, e.g. **%\_+8** would internal-justify a number to 8 places whether it was positive or negative.
 
-#### File size format
+## File size format
 
 Use ***value* as size** to automatically format a number as a file size using the default settings. You can also use the following keywords to control the units:
 

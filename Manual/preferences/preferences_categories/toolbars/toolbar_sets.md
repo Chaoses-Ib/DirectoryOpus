@@ -10,7 +10,7 @@ Underneath the list, the **Behavior** drop-down lets you assign a default behavi
 - **Replace existing toolbars** - all currently open toolbars are closed and replaced with the toolbars in the set.
 - **Toggle existing toolbars** - if all the toolbars in the set are turned on, they are removed and replaced with the toolbars from the default set. Otherwise, any toolbars in the set that aren't currently on are turned on. This option lets you quickly toggle between the default set and another toolbar set.
 
-##### Creating a new set
+### Creating a new set
 
 Toolbar sets are created using the toolbars in an existing Lister as a template. To add a new toolbar set, first pick a Lister and open or close the appropriate toolbars. Then click the **New** button on this page. The following dialog will open:
 

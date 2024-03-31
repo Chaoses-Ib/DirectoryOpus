@@ -9,7 +9,7 @@ An object has two main types of interface that you can call on:
 
 The main distinction between properties and methods is that methods can (but don't always) accept arguments that modify their behavior, and don't have to (but often do) return a result.
 
-#### Variable types
+## Variable types
 
 Properties and methods that return a result can return a number of different types of variables, and methods often take one or more parameters that can also be a number of types. ActiveX scripting languages are generally *typeless* - that is, a variable's type does not have to be defined in advance, and conversion from one type to another is often (but not always) automatic. Opus scripting mainly uses variables of the following types:
 
@@ -23,14 +23,14 @@ Properties and methods that return a result can return a number of different typ
 - *Object* - an Opus script object with defined methods and properties (one of the object types listed below). Some objects can be both an object and a collection - that is, they have methods and properties, but can also be enumerated like a collection. Some objects also have a *default value* - that is, simply using the object's name without any method or property will return a value of its own. For example, the **Metadata** object's default value is a string indicating the primary type of metadata available. You can also refer to an object's default value using the special **def_value** property name.
 - *Variant* - a variable of any type (this is used with a few objects - for example, a **Var** object can store a variant)
 
-#### Global objects
+## Global objects
 
 There are two objects that are provided to scripts as global variables when they are invoked by Opus:
 
 - **[DOpus](/Manual/reference/scripting_reference/scripting_objects/dopus.md)**: This** **object is available to *all* scripts. It provides various helper methods, and collections that let you access things like Listers and toolbars.
 - **[Script](/Manual/reference/scripting_reference/scripting_objects/script.md)**: This** **object is provided to [script add-ins](/Manual/scripting/script_add-ins/README.md) when their various event handlers are invoked. It provides information relating to the script itself.
 
-#### Event objects
+## Event objects
 
 There are a number of objects that Opus provides as parameters to methods within a script. For example, when a [script function](/Manual/scripting/script_functions.md) is invoked (e.g. when the button is clicked), Opus calls its **OnClick** method, passing it a **ClickData** object.
 
@@ -69,7 +69,7 @@ There are a number of objects that Opus provides as parameters to methods withi
 - **[TabClickData](/Manual/reference/scripting_reference/scripting_objects/tabclickdata.md)**: This object is provided to the **[OnTabClick](scripting_events/ontabclick.md)** event, which is called whenever a tab is clicked with a qualifier key held down.
 - **[ViewerEventData](/Manual/reference/scripting_reference/scripting_objects/viewereventdata.md)**: This object is provided to the **[OnViewerEvent](scripting_events/onviewerevent.md)** event, which is called whenever certain events occur in a standalone [image viewer](/Manual/additional_functionality/viewing_images/README.md).
 
-#### Other objects
+## Other objects
 
 The remaining objects are all obtained using methods or properties provided by the objects listed above. For example, a **Lister** object is obtained using the **DOpus.listers** collection property, and a **Vector** object is obtained using the **DOpusFactory.Vector** method.
 

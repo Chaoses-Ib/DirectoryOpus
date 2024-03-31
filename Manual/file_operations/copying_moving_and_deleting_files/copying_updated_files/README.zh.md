@@ -5,7 +5,7 @@
 - **更新全部**和**更新现有文件**命令提供了一种简单的单向文件同步形式
 - **[同步](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.zh.md)**工具提供了一种完整的双向同步系统，让你可以看到并控制要复制或删除哪些文件
 
-##### “更新”命令
+### “更新”命令
 
 **更新全部**和**更新现有文件**命令位于默认工具栏**复制文件**按钮上的下拉菜单中。
 

@@ -1,4 +1,4 @@
-#### Var
+## Var
 
 The **Var** object represents an individual user or script-defined variable. Individual **Var** objects can be accessed or enumerated from the **[Vars](vars.md)** object.
 

@@ -12,7 +12,7 @@
 
 附加到默认工具栏上 **Delete** 按钮的下降菜单包含多个与删除文件相关的命令和选项：
 
-##### Delete 菜单
+### Delete 菜单
 
 ![](/Manual/images/media/13/delete_dropdown.png)
 
@@ -27,7 +27,7 @@
 - **Enable Delete Filter**：激活 Delete 功能的 [递归过滤器](../filtered_operations/README.zh.md)，该过滤器让您可以选择性地删除选定子文件夹的内容。
 - **Delete Settings**：打开 [Deleting Files](/Manual/preferences/preferences_categories/file_operations/deleting_files.zh.md) 配置页面。
 
-##### Delete 选项
+### Delete 选项
 
 **[文件操作 / 删除文件](/Manual/preferences/preferences_categories/file_operations/deleting_files.zh.md)** 配置页面包含多个选项，这些选项允许您在 Opus 中配置 Delete 功能。您可以选择是否让 Opus 在删除之前询问您确认（如果您愿意，它甚至可以在每个文件之前询问您），并且可以配置回收站的使用。您还可以选择是否可以在没有特殊确认提示的情况下删除标记为只读的文件。
 

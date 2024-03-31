@@ -15,7 +15,7 @@ The options on the [Copying Files / Metadata](/Manual/preferences/preferences_ca
 
 Whichever system you elect to use, you can assign a description to a file in two ways.
 
-##### The Set Description dialog
+### The Set Description dialog
 
 Use the **Description** command in the **Properties** drop-down on the default toolbar (or press <kbd>Ctrl+P</kbd>) to show the *Set Description* dialog.
 
@@ -26,7 +26,7 @@ The dialog displays the current description (if any) and lets you clear or edit 
 - **Apply to all selected items**: The same description will be set for all selected items. If turned off, only the first selected item will have its description set, and the dialog will re-open for the next item.
 - **Apply to all files within selected folders**: The function will operate recursively - all files inside any selected folders will be given the same description.
 
-##### The metadata editor
+### The metadata editor
 
 You can also set the description with the [Metadata Pane](/Manual/basic_concepts/the_lister/metadata_pane.md) or the [Set Metadata](editing_metadata/README.md) dialog. These let you edit the description for selected files using the **Comment** field in the **Extended Properties** category.
 

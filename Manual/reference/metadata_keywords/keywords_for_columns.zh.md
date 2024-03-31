@@ -8,7 +8,7 @@
 
 当列用于输出文本（例如，在为重命名生成文件名或显示信息提示时），可以覆盖日期、时间和数值的格式。
 
-##### 日期和时间字段
+### 日期和时间字段
 
 日期和时间字段允许你配置日期格式、时间格式或两者。例如，
 
@@ -20,7 +20,7 @@
 
 如你从示例中看到，**D#** 用于标记日期格式，**T#** 用于标记时间格式，**A#** 表示日期和时间代码均存在。有关日期和时间格式的信息，请参阅 [日期和时间代码](../command_reference/external_control_codes/codes_for_date_and_time.zh.md) 页面。
 
-##### 数值字段
+### 数值字段
 
 数值字段允许你控制零填充。例如，
 
@@ -33,9 +33,9 @@
 
 ------------------------------------------------------------------------
 
-#### 列关键字
+## 列关键字
 
-##### 日期和时间
+### 日期和时间
 
 <table>
 <thead><tr><th>
@@ -77,7 +77,7 @@ modifiedtime
 </td></tr></tbody>
 </table>
 
-##### 文档
+### 文档
 
 <table>
 <thead><tr><th>
@@ -128,7 +128,7 @@ title
 </td></tr></tbody>
 </table>
 
-##### 名称和路径
+### 名称和路径
 
 <table>
 <thead><tr><th>
@@ -170,7 +170,7 @@ shortname
 </td></tr></tbody>
 </table>
 
-##### 图片尺寸
+### 图片尺寸
 
 <table>
 <thead><tr><th>
@@ -214,7 +214,7 @@ picwidth
 </td></tr></tbody>
 </table>
 
-##### 图片元数据
+### 图片元数据
 
 <table>
 <thead><tr><th>
@@ -341,7 +341,7 @@ whitebalance
 </td></tr></tbody>
 </table>
 
-##### 程序
+### 程序
 
 <table>
 <thead><tr><th>
@@ -368,7 +368,7 @@ prodversion
 </td></tr></tbody>
 </table>
 
-##### 文件大小
+### 文件大小
 
 <table>
 <thead><tr><th>
@@ -404,7 +404,7 @@ uncompressedsize
 </td></tr></tbody>
 </table>
 
-##### 常规
+### 常规
 
 <table>
 <thead><tr><th>
@@ -476,7 +476,7 @@ userdesc
 </td></tr></tbody>
 </table>
 
-##### 电影
+### 电影
 
 <table>
 <thead><tr><th>
@@ -563,7 +563,7 @@ picwidth
 </td></tr></tbody>
 </table>
 
-##### 音乐
+### 音乐
 
 <table>
 <thead><tr><th>

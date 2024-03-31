@@ -2,11 +2,11 @@
 
 Whenever you want to do something with a file (copy it, delete it, or just view it) you must select it first. Most file operations in Directory Opus operate on all currently selected files (and folders), so it's important to know how to select files, and how to tell how many files you have selected.
 
-##### Selecting files manually
+### Selecting files manually
 
 See [Using the mouse or keyboard](/Manual/basic_concepts/selecting_files/selecting_with_the_mouse_and_keyboard/README.md) for information on how to select files using the mouse or keyboard.
 
-##### Selecting files automatically
+### Selecting files automatically
 
 The internal [Select](/Manual/reference/command_reference/internal_commands/select.md) command lets you select files automatically in many different ways. The default **Edit** menu has a number of pre-defined **Select** commands:
 
@@ -29,7 +29,7 @@ Even more commands are available in the **Edit / Select Other** sub-menu:
 - **Checkboxes to Selection**: Set the selection to match the checkbox state.
 - **Select Duplicates...**: Displays the selection dialog for the [duplicate file finder](/Manual/additional_functionality/duplicate_file_finder.md).
 
-##### Counts shown on the status bar
+### Counts shown on the status bar
 
 The easiest way to tell how many files and folders are currently selected is to look in the [status bar](the_lister/status_bar.md).
 

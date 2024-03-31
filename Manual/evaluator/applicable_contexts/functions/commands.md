@@ -2,7 +2,7 @@
 
 The evaluator can be used to generate entire command lines. There are two types of command lines it can generate.
 
-##### Executable commands
+### Executable commands
 
 When the function is run, the return value from the evaluation expression will be executed as if it had always been part of the function.
 
@@ -10,13 +10,13 @@ To use this, simply begin the line with a `=` character, followed by the express
 
 If the expression doesn't return a string to run as a command, the line is simply skipped over and execution moves on to the next line in the function. This lets you have functions that are composed of multiple evaluator command lines with a final command returned at the end.
 
-##### Dynamic commands
+### Dynamic commands
 
 In this mode, it can generate commands that are used to generate dynamic lists of buttons. For example, `Go DRIVEBUTTONS` is a [dynamic button](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.md) that generates a list of drive buttons.
 
 This mode is accessed using the **@ctx:** modifier. The command returned by the expression will be used to generate dynamic buttons.
 
-##### Variables
+### Variables
 
 ![](page>standard_variables&nodate&nouser&nofooter)
 

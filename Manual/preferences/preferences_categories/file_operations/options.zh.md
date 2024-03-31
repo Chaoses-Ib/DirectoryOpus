@@ -8,7 +8,7 @@
 - **当所有功能完成后关闭 Directory Opus**：在您关闭最后一个文件窗口并且没有正在后台运行的功能时，Opus 将自动关闭。这使得 Opus 表现得更像是一个传统应用程序，您可以在用完后运行、使用，然后退出。我们建议您在不使用 Opus 时仍将其保留在后台运行状态，因为它可以更快速地打开文件窗口，并且这意味着诸如 [系统级热键](/Manual/additional_functionality/system-wide_hotkeys.zh.md) 和 [浮动工具栏](/Manual/additional_functionality/floating_toolbars/README.zh.md) 之类的东西可以工作，但如果您不想像这样使用它，则可以打开此选项。
 - **最大撤消项**：将显示在 [撤消列表](/Manual/file_operations/tracking_and_undoing_file_operations.zh.md) 中的操作的最大数量。
 
-##### 创建快捷方式时使用模板
+### 创建快捷方式时使用模板
 
 此模板用于定义现有文件或文件夹的快捷方式的新名称（例如，当您使用右键拖放文件并从上下文菜单中选择*在此创建快捷方式*时）。您可以在模板字符串中使用两个代码插入信息：
 

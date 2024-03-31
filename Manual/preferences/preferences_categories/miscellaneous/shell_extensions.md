@@ -12,7 +12,7 @@ Right-click an extension to block or unblock it, and to get more information abo
 
 The ![](/Manual/images/media/13/prefs_menu.png) page menu in the top-right corner of the page has commands to block items manually, and to import and export your block list if you want to move it to another system.
 
-##### Other options
+### Other options
 
 At the bottom of the page are two related options:
 

@@ -1,10 +1,10 @@
 # Creating Script Dialogs
 
-##### In script add-ins
+### In script add-ins
 
 Dialogs can be created via the *Resources* tab in the [script editor](../script_editor/README.md).
 
-##### In button functions
+### In button functions
 
 When you're in [Customize](/Manual/customize/README.md) mode and editing a button that's set as a *[Script Function](../script_functions.md)*, a **Resources** tab is visible:
 

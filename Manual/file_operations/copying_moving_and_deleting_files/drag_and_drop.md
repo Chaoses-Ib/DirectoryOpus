@@ -2,7 +2,7 @@
 
 Drag-and-drop is a common way of moving files around in Windows. In Opus, drag-and-drop is controlled by the **[File Types](/Manual/file_types/README.md)** system.
 
-##### Default drag-and-drop behavior
+### Default drag-and-drop behavior
 
 The default behavior is the same as in Explorer:
 
@@ -15,7 +15,7 @@ The default behavior is the same as in Explorer:
 
 Internally, these actions are defined by the items on the **Events** tab for the **All files and folders** file type. Whereas in Explorer these actions are fixed, in Opus they are configurable.
 
-##### Configuring drag-and-drop actions
+### Configuring drag-and-drop actions
 
 ![](/Manual/images/media/13/default_draganddrop.png)
 
@@ -30,7 +30,7 @@ Although not shown here, the **Drop Menu** tab also defines the contents of the 
 
 Editing these functions modifies the drag-and-drop behaviour in Opus. For example, if you wanted drag-and-drop to always copy (rather than moving on the same drive), you could edit the command definition to `Copy RENAMEWHENSAME` (the same as the *Drag-and-drop+*<kbd>Ctrl</kbd> event).
 
-##### Overriding behaviour for specific file types
+### Overriding behaviour for specific file types
 
 The **All files and folders** file type is a special file type that by definition matches everything - both files and folders. You can use the File Types system to define overriding events for specific file types. For example, you could configure drag-and-drop of a Zip file to extract the contents of the archive when dropped with the <kbd>Shift</kbd> key held down.
 

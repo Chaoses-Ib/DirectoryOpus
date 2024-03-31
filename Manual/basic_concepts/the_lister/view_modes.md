@@ -14,7 +14,7 @@ You can use the [Folder Format](../folder_options/README.md) system to automatic
 
 In the modes that **don't** display any information besides the filename, you can hover over a file to view its info tip (tooltip). The info tip will often show you lots of pertinent information about a file, and you can configure exactly what's shown from the [File Types](/Manual/file_types/filetype_editor/info_tip.md) dialog.
 
-##### Large icons
+### Large icons
 
 Displays the folder contents using large icons.
 
@@ -22,7 +22,7 @@ Displays the folder contents using large icons.
 
 The "large" icon size is defined by Windows itself; this is normally 32 x 32 pixels (scaled for system DPI).
 
-##### Small icons
+### Small icons
 
 Displays the folder contents using small icons.
 
@@ -30,7 +30,7 @@ Displays the folder contents using small icons.
 
 The "small" icon size is defined by Windows; this is normally 16 x 16 pixels (scaled for system DPI).
 
-##### List
+### List
 
 Similar to Small Icons, this mode displays the folder contents with a small icon and label.
 
@@ -38,7 +38,7 @@ Similar to Small Icons, this mode displays the folder contents with a small icon
 
 This view mode is popular with many people as it displays the most files at once in each file display. The layout in this mode is different to almost all other modes - instead of icons running left-to-right and then top-to-bottom, the order is reversed - files are displayed in columns running down the file display, and the display scrolls horizontally rather than vertically.
 
-##### Details
+### Details
 
 Displays the folder contents as a table, with rows for each file and columns for information about each file.
 
@@ -48,7 +48,7 @@ This mode can display additional columns of information for each file besides th
 
 When in Details mode you can hold the <kbd>Ctrl</kbd> key down and turn the mouse wheel to increase or decrease the font size used to display the folder contents.
 
-##### Details+Thumbnails
+### Details+Thumbnails
 
 This is not strictly a view mode in its own right - instead, this is standard **Details** mode with the **Thumbnail** column added.
 
@@ -58,7 +58,7 @@ The width of the column determines the size of the thumbnail - you can set the 
 
 The **[File Display Modes / Details](/Manual/preferences/preferences_categories/file_display_modes/details_mode.md)** and **[File Display Modes / Power Mode](/Manual/preferences/preferences_categories/file_display_modes/power_mode/README.md)** Preferences pages both have options that let you configure the *Thumbnail* column's aspect ratio (it defaults to 16:9), whether thumbnails in the column have a border displayed, and whether the file icon should be automatically hidden whenever the *Thumbnail* column is visible.
 
-##### Power
+### Power
 
 This is very similar to Details mode (it looks identical), except the behaviour of the list when [interacting with it using the mouse and keyboard](../selecting_files/selecting_with_the_mouse_and_keyboard/README.md) can be configured to a far greater extent.
 
@@ -66,7 +66,7 @@ By default Power mode uses persistent selection - unlike the other view modes, f
 
 When in Power mode you can hold the <kbd>Ctrl</kbd> key down and turn the mouse wheel to increase or decrease the font size used to display the folder contents.
 
-##### Thumbnails
+### Thumbnails
 
 This mode displays thumbnails for files and folders, which is particularly useful for image or video files.
 
@@ -76,7 +76,7 @@ Opus can generate thumbnails for many different file formats; files that a thum
 
 By default Opus will display a special toolbar - the [Images Toolbar](toolbars/the_default_toolbars/images_toolbar.md) - whenever the file display is set to thumbnails mode. This contains several commands for manipulating images, as well as a slider for adjusting thumbnail size. You can also increase or decrease the thumbnail size by holding the <kbd>Ctrl</kbd> key down and turning the mouse wheel.
 
-##### Tiles
+### Tiles
 
 This mode combines large icons (or optionally thumbnails) with the ability of Details mode to display information besides the filename.
 

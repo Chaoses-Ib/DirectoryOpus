@@ -2,7 +2,7 @@
 
 This page lets you control exactly what all three mouse buttons do in a *Power* mode file display. You can select actions for what happens when you click on a file, and also what happens when you drag and drop files with each of the three buttons.
 
-##### Button click actions
+### Button click actions
 
 For each of the three buttons, the options for clicking are:
 
@@ -22,7 +22,7 @@ For each of the three buttons, the options for clicking are:
 
 Some button modes that don't show a context menu explicitly also support showing one if the button is held down for a certain amount of time; the **Context menu after...** option lets you configure this time in milliseconds.  
 
-##### Drag and drop options
+### Drag and drop options
 
 The options for drag and drop are:
 
@@ -30,7 +30,7 @@ The options for drag and drop are:
 - **Immediate action**: Dragging an item and releasing it will immediately perform the default drop action.
 - **Show menu**: Dragging an item and releasing it will display the drag and drop action menu.
 
-##### Range selection
+### Range selection
 
 The **Range selection in *select* and *toggle* modes** option lets you enable additional keyboard support for range selection with certain mouse button choices. Normally, you select a range of files in *Power* mode by clicking and dragging with the mouse. The options here mean you can also select multiple files by clicking the first file and holding <kbd>Shift</kbd>, <kbd>Ctrl</kbd> or <kbd>Alt</kbd> while clicking a second file to select everything between the two.
 

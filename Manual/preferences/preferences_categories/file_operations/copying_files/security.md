@@ -7,7 +7,7 @@ Options that control file permissions and security settings when copying files. 
 
 - **Copy security permissions when copying, or moving between drives**: This reproduces the security permissions of each file on each respective copy, assuming the source and destination filesystems support Windows file permissions. When turned off, copied files inherit the permissions of the folders they are copied into, which is usually what you want. This can be overridden by the `COPYSECURITY` argument.
 
-##### Update permissions/encryption to match destination when moving on same drive
+### Update permissions/encryption to match destination when moving on same drive
 
 Normally, when you move a file on the same drive (an operation that doesn't involve a new file being created), it will keep its original permissions. This can cause problems when you move files into a folder with different permissions. For example, if you moved a private file into a shared public folder, the file would keep its original permissions and not be accessible to users of the share. Turning on this option causes Opus to update the permissions of the moved file to match the folder it has been moved into.
 

@@ -7,7 +7,7 @@
 
 使用剪贴板移动文件几乎在所有文件管理器中都是以相同的方式实现的，尽管 Opus 在某些方面扩展了此功能，因此值得了解它。
 
-##### 复制队列
+### 复制队列
 
 虽然这些功能使用内部**[剪贴板](/Manual/reference/command_reference/internal_commands/clipboard.zh.md)**命令来启动，但是当您将文件粘贴到文件窗口时，实际的文件复制或移动将使用内部**[复制](/Manual/reference/command_reference/internal_commands/copy.zh.md)**命令“以幕后方式”执行。
 
@@ -15,7 +15,7 @@
 
 您可以使用**[剪贴板](/Manual/reference/command_reference/internal_commands/clipboard.zh.md)**命令的各种参数来控制排队。
 
-##### 粘贴文本和图形数据
+### 粘贴文本和图形数据
 
 如果剪贴板包含文本或图形数据，则可以将其粘贴到文件窗口中，就像它是一个真实的文件一样。Opus 将创建一个新文件并自动将剪贴板数据写入其中。
 
@@ -26,7 +26,7 @@
 
 可以使用 **[剪贴板](/Manual/reference/command_reference/internal_commands/clipboard.zh.md)** 命令的各种参数来控制新文件的名称。
 
-##### 增量剪贴板
+### 增量剪贴板
 
 内部**[剪贴板](/Manual/reference/command_reference/internal_commands/clipboard.zh.md)**命令的 **ADD** 参数允许您将选定的文件添加到已在剪贴板上的任何文件中。例如，您可以从一个文件夹复制一些文件、从另一个文件夹复制一些文件、从第三个文件夹复制一些文件，然后一次性将它们全部粘贴到目标位置。
 

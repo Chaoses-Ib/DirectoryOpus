@@ -1,6 +1,6 @@
 Previous: [Opus 13 Highlights - Page 5](/Manual/release_history/opus13/page5.md) # Directory Opus 13 - Highlights - Page 6
 
-#### Columns
+## Columns
 
 More "friendly dates" choices:
 
@@ -26,7 +26,7 @@ Alternative ways to group columns (including built-in ones) can be defined:
 
 ------------------------------------------------------------------------
 
-#### Preferences
+## Preferences
 
 Pages you use often can be favorited:
 
@@ -37,7 +37,7 @@ Privacy settings let you clear or turn off suggestions based on previous actions
 
 ------------------------------------------------------------------------
 
-#### Customize
+## Customize
 
 Customize and Preferences are no longer on-top. When either is open, Lister titlebars have buttons to show, OK or Cancel them:
 
@@ -60,7 +60,7 @@ Button editor can show generated command lines as they run:
 
 ------------------------------------------------------------------------
 
-#### Script IDE
+## Script IDE
 
 New IDE for making script add-ins:
 
@@ -71,7 +71,7 @@ Allows editing script code and resources:
 
 ------------------------------------------------------------------------
 
-#### More!
+## More!
 
 See the [detailed list of changes](/Manual/release_history/opus13_detailed/README.md) for even more!
 

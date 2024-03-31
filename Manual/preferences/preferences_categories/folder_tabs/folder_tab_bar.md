@@ -2,7 +2,7 @@
 
 This page contains various options that control the appearance and behavior of the tab bar where [Folder Tabs](/Manual/basic_concepts/the_lister/tabs/README.md) appear.
 
-##### Opening new tabs
+### Opening new tabs
 
 From the tab bar itself there are two ways to open new tabs:
 
@@ -23,7 +23,7 @@ You can also control where the new tab is positioned:
 
   
 
-##### Use popup menu
+### Use popup menu
 
 When the tab bar is horizontal, there are two options for how tabs are handled when the available space is not enough to show them all at once (when tabs are displayed vertically, a scrollbar will appear that lets you scroll up and down the tabs if they don't all fit.)
 
@@ -38,7 +38,7 @@ The options that control this are:
 
   
 
-##### Other settings
+### Other settings
 
 - **Display folder tab bar**: Controls when the tab bar is displayed. You can't have zero tabs - there's always at least one tab open, but you can choose whether or not to display the tab bar when there is only one tab.
   - **Always**: Folder tabs will always be displayed, even if there's only one tab open.
