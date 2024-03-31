@@ -73,6 +73,7 @@
   - [变量](DO/脚本/变量.md)
 
 ## 官方手册
+- [目录](/Manual/SUMMARY.zh.md)
 - [版权](/Manual/copyrights.zh.md)
 - [许可证](/Manual/licence/README.zh.md)
   - [最终用户许可条件](/Manual/licence/end_user.zh.md)
