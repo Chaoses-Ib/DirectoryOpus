@@ -1,6 +1,6 @@
-# Evaluator 语法
+# 求值器语法
 
-Evaluator 的语法类似于 JScript (Javascript) 和 C++。
+求值器的语法类似于 JScript (Javascript) 和 C++。
 
 ##### 简介
 
@@ -12,9 +12,9 @@ Evaluator 的语法类似于 JScript (Javascript) 和 C++。
 
 可以使用 `=` 分配变量。无需预先声明变量。变量是 [类型的](variable_types.zh.md)，但没有强类型——类型将被推断，类型之间的转换是自动的。还可以使用 `as` 运算符进行显式转换。
 
-Evaluator 提供了许多 [函数](/Manual/reference/evaluator/README.zh.md)。要调用函数，函数名后面需要跟括号 `()`。如果函数接受任何参数，这些参数必须用逗号分隔并出现在括号内——但即使函数不接受参数也需要括号。
+求值器提供了许多 [函数](/Manual/reference/evaluator/README.zh.md)。要调用函数，函数名后面需要跟括号 `()`。如果函数接受任何参数，这些参数必须用逗号分隔并出现在括号内——但即使函数不接受参数也需要括号。
 
-可以使用注释，Evaluator 会忽略它们——它们必须以 `//` 开头。
+可以使用注释，求值器会忽略它们——它们必须以 `//` 开头。
 
 ##### 返回值
 

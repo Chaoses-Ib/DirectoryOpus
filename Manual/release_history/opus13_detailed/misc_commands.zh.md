@@ -16,8 +16,8 @@
   - {file|regex=<pattern>|to=<new name>} -- 输出正则表达式搜索和替换的结果（如果模式匹配）。
   - {file|regex!=<pattern>|to=<new name>} -- 如上所述，但如果模式不匹配，则输出原始名称不变。
   - 如果模式包含 \| 字符，请用引号将其引起来。
-- 可以将 Evaluator 代码的结果插入到 {=...=} 之间的命令中。例如，这将变为“Echo 60”：`Echo {=12*5=}`
-- 也可以通过在最前面加上 = 字符来让整行由 Evaluator 生成。例如，这也会变为“Echo 60”：`=return "Echo " + (12*5);`.
+- 可以将求值器代码的结果插入到 {=...=} 之间的命令中。例如，这将变为“Echo 60”：`Echo {=12*5=}`
+- 也可以通过在最前面加上 = 字符来让整行由求值器生成。例如，这也会变为“Echo 60”：`=return "Echo " + (12*5);`.
 
 ------------------------------------------------------------------------
 
@@ -69,15 +69,15 @@
 - @logusage -- 新修饰符，使用传递给外部程序的任何文件以及程序本身来更新系统最近列表。
   - 为打开方式菜单自动打开了 @logusage。
 - @output -- 新修饰符，从一个普通命令中将剩余行输出到脚本日志。
-- @if 和类似子句现在可以使用 Evaluator 代码来测试各种事情：
-  - 使用 = 开始条件以指定它是 Evaluator 代码。
+- @if 和类似子句现在可以使用求值器代码来测试各种事情：
+  - 使用 = 开始条件以指定它是求值器代码。
   - 变量 selfiles、seldirs、selitems 返回已选择项的数量。
   - 变量 totalfiles、totaldirs、totalitems 返回项的总数。
   - 变量 source 和 dest 返回源路径和目标路径。
   - 变量 source_shell 和 dest_shell 告诉您源或目标是否显示虚拟 Shell 文件夹（例如回收站）。
   - 变量 viewmode 返回当前文件列表模式。
   - 在查看器中，变量 selimage 报告是否选择了部分图像，变量 fullscreen 报告查看器是否为全屏。
-  - Evaluator 代码还具有 IsSelected() 函数来测试选择。采用通配符模式，可选择性地添加“files:”或“dirs:”前缀，并返回匹配项的数量。
+  -求值器代码还具有 IsSelected() 函数来测试选择。采用通配符模式，可选择性地添加“files:”或“dirs:”前缀，并返回匹配项的数量。
   - IsChecked() 和 IsEnabled() 也可能很有用。
   - *示例 1：* 仅当选择了正好两个 .jpg 文件时才启用按钮：\<WRAP\>
 
@@ -100,8 +100,8 @@
 
 \</WRAP\>
 
-- @label -- 新修饰符，使用 Evaluator 代码动态更改按钮的标签。
-  - 可以使用 Evaluator 函数和各种变量，具体取决于上下文。
+- @label -- 新修饰符，使用求值器代码动态更改按钮的标签。
+  - 可以使用求值器函数和各种变量，具体取决于上下文。
   - 变量包括“dual”（如果为双栏则为 true）、“source”（源路径）、“dest”（目标路径）、“original_label”（按钮的正常名称，例如，如果要添加到其中而不是完全替换它）。
   - //<示例://> `@label=viewmode=="details" ? "详细模式" : "其他模式"`
   - 按钮工具提示可以动态更改。请参阅查看器工具栏的编辑 \> 复制以获取示例。
@@ -122,7 +122,7 @@
 
 如果满足第一个按钮的 @hideif 条件（或未满足 @showif 条件），则介于这两个按钮之间的一切都会被隐藏。 \</WRAP\>
 
-- @disableiftab -- 新修饰符，使用 Evaluator 代码来禁用文件夹标签页上下文菜单中的项，该菜单现在可自定义。
+- @disableiftab -- 新修饰符，使用求值器代码来禁用文件夹标签页上下文菜单中的项，该菜单现在可自定义。
   - 变量 sel 给出选定的标签页索引（从 0 开始；如果右键单击标签页栏背景，则为 -1）。
   - 变量 dual 在双栏窗口中为 true。
   - 变量 countdual 给出双栏窗口另一侧的标签页数。
@@ -134,9 +134,9 @@
     - @disableiftab:(sel == -1) || dual -- 如果未选择标签页或在双栏器中，则禁用。
 - 增加了 @enableifpath:shell、@disableifpath:shell 等来测试当前文件夹是否是虚拟 Shell 命名空间。
 - 默认工具栏使用此按钮在回收站等资源管理器的文件夹中禁用“详细信息 + 缩略图”按钮，因为该功能在那里不起作用。
-- 还可以使用 Evaluator 与对应的 `source_shell` 和 `dest_shell` 变量。例如：`@disableif:=source_shell`
-- `@eval` 和 `@evalalways` -- 运行 Evaluator 代码作为动态测试的一部分，还可以选择将其作为命令本身的一部分。
-  - 通常用于设置在后面的行中使用的 Evaluator 变量。
+- 还可以使用求值器与对应的 `source_shell` 和 `dest_shell` 变量。例如：`@disableif:=source_shell`
+- `@eval` 和 `@evalalways` -- 运行求值器代码作为动态测试的一部分，还可以选择将其作为命令本身的一部分。
+  - 通常用于设置在后面的行中使用的求值器变量。
   - 示例：\<WRAP\>
 
     @eval:type = PathType(source);
@@ -148,18 +148,18 @@
 
       * 只有在动态更新按钮的 label、visibility 和 enabled/disabled 状态时，才运行 `<ib:inline-code><code>@eval:</code></ib:inline-code>` 后面的代码。不会在单击按钮时运行。
       * 在 //两种// 情况下，`<ib:inline-code><code>@evalalways:</code></ib:inline-code>` 后面的代码都会运行，允许您设置在执行命令和更新其标签等时都使用的变量。
-      * Evaluator 代码还可以使用 `<ib:inline-code><code>{=...=}</code></ib:inline-code>` 语法插入到普通命令行的中间。
-      * Evaluator 代码还可以通过以 `<ib:inline-code><code>=</code></ib:inline-code>` 字符开头命令行生成整个命令行。
+      * 求值器代码还可以使用 `<ib:inline-code><code>{=...=}</code></ib:inline-code>` 语法插入到普通命令行的中间。
+      * 求值器代码还可以通过以 `<ib:inline-code><code>=</code></ib:inline-code>` 字符开头命令行生成整个命令行。
     * `<ib:inline-code><code>@admin:no</code></ib:inline-code>` -- 防止后续行触发 UAC 提示。`<ib:inline-code><code>@admin:yes</code></ib:inline-code>` 可用于重新启用它们。
     * `<ib:inline-code><code>@ifexists</code></ib:inline-code>` -- 如果路径以 `<ib:inline-code><code>wild:</code></ib:inline-code>` 为前缀，则您可以在最终路径组件中指定通配符。
       * //示例：// `<ib:inline-code><code>@ifexists:wild:C:\Win*</code></ib:inline-code>`
     * `<ib:inline-code><code>@icon</code></ib:inline-code>`：
       * 现在允许引用图标路径，修复了包含逗号的路径的问题。
-      * 可以在测试内部命令时运行 Evaluator 代码。                        
+      * 可以在测试内部命令时运行求值器代码。                        
         * //示例：// `<ib:inline-code><code>@icon:"file.ico",=<eval code></code></ib:inline-code>`
-      * 还可以使用 Evaluator 直接返回图标路径。                       
+      * 还可以使用求值器直接返回图标路径。                       
         * //示例：// `<ib:inline-code><code>@icon=InStr(source, "production")!=-1 ? "Prod.ico" : "Staging.ico"</code></ib:inline-code>`
-    * `<ib:inline-code><code>@ctx</code></ib:inline-code>` -- 新的修饰符，允许 Evaluator 代码与生成按钮列表的内部命令一起使用。                 
+    * `<ib:inline-code><code>@ctx</code></ib:inline-code>` -- 新的修饰符，允许求值器代码与生成按钮列表的内部命令一起使用。                 
       * 完整的手册会有更详细的说明，但 `@ctx` 非常深奥。大多数人永远不需要使用或理解它。
       * 它存在的目的是为了使新的“收藏栏”显示收藏树的一个命名分支，其中名称会根据不同的语言/区域设置而改变。
 
@@ -200,7 +200,7 @@
 - 添加了 `FILTERDEF` 参数到几个命令中，以便您可以将复杂过滤器的详细信息指定为命令本身的一部分：
   - 基本上来说，任何可以采用命名过滤器的命令现在都可以在命令本身中直接给出过滤器定义，将所有内容保存在一个位置。
   - 这还允许脚本动态修改过滤器详细信息，或在运行时生成整个过滤器。
-  - 还允许将 Evaluator 代码用于过滤。
+  - 还允许将求值器代码用于过滤。
   - 在单独的 [Find](find.zh.md) 部分中进行了更多讨论。
   - `Find FILTERDEF` -- 过滤要查找的文件/文件夹。还可以与重复文件查找器和同步工具一起使用，这些工具可以通过 Find 命令运行。
   - `SetAttr FILTERDEF` -- 过滤要更改的文件/文件夹。
