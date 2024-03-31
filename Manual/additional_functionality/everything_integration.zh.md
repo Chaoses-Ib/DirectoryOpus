@@ -52,6 +52,6 @@ Opus 一直都能显示文件夹大小，方法是打开某个选项以自动计
 
 Opus 还可以使用索引搜索 Everything，就像使用 Windows 搜索索引的方式一样。
 
-该功能的主要界面是 [搜索字段](/Manual/basic_concepts/searching_and_filtering/windows_search.zh.md)，该字段默认显示在列表查看器的右上角。使用左侧的下拉按钮以选择 *Everything*（在当前文件夹下搜索）或 *全局 Everything*（搜索所有已编制索引的位置）。
+该功能的主要界面是 [搜索字段](/Manual/basic_concepts/searching_and_filtering/windows_search.zh.md)，该字段默认显示在文件窗口的右上角。使用左侧的下拉按钮以选择 *Everything*（在当前文件夹下搜索）或 *全局 Everything*（搜索所有已编制索引的位置）。
 
 您还可以使用 [即时查找字段](/Manual/basic_concepts/the_lister/find-as-you-type_field.zh.md) 从 Everything 搜索，并且可以将 Everything 用作传统 [查找文件](/Manual/basic_concepts/searching_and_filtering/find_files/README.zh.md) 工具的“预过滤器”，以缩小搜索范围。
