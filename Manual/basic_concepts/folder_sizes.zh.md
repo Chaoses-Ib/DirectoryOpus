@@ -6,7 +6,7 @@
 
 Opus 能够计算文件夹的大小，并像文件大小一样在文件列表中显示该大小。
 
-> [!注意]
+> [!NOTE]
 > 如果你安装了 [voidtools 的 Everything](https://voidtools.com)，Opus 可以使用其搜索索引为已建立索引的位置大幅加快此计算。
 
 有两种方法可以在 Directory Opus 中触发此行为 - 手动和自动。

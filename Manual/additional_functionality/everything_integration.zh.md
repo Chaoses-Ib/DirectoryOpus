@@ -12,7 +12,7 @@ Everything 是一款 *索引搜索工具*。它默认会在您的本地硬盘中
 
 Everything 1.5 目前正处于“alpha 测试”阶段，虽然可以将其配置为也与 Opus 一起使用，但直到其稳定版本发布，我们仍不会正式支持它。
 
-> [！注意]
+> [!NOTE]
 > 若要将 Opus 与 Everything 1.5 alpha 版本结合使用，则需要在 *everything.ini* 文件中设置 `alpha_instance=0`。务必在更改 ini 文件后重新启动 Everything。
 
 ##### 配置 Everything 与 Opus 协同工作
