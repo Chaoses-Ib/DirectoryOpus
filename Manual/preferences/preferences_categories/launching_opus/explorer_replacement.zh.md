@@ -1,4 +1,4 @@
-#资源管理器替换
+# 资源管理器替换
 
 此页面允许你配置 [资源管理器替换](/Manual/basic_concepts/explorer_replacement.zh.md) 系统，该系统控制在何时何种情况下 Opus 将替换资源管理器（通常在一个新资源管理器窗口打开时）。
 

@@ -305,7 +305,7 @@
         - [在特定文件夹中](/Manual/preferences/preferences_categories/labels/label_assignments/in_specific_folders.zh.md)
       - [选项](/Manual/preferences/preferences_categories/labels/options.zh.md)
     - [启动 Opus](/Manual/preferences/preferences_categories/launching_opus/README.zh.md)
-      - [Explorer Replacement](/Manual/preferences/preferences_categories/launching_opus/explorer_replacement.zh.md)
+      - [资源管理器替换](/Manual/preferences/preferences_categories/launching_opus/explorer_replacement.zh.md)
       - [来自桌面](/Manual/preferences/preferences_categories/launching_opus/launching_opus_from_the_desktop.zh.md)
       - [任务栏图标](/Manual/preferences/preferences_categories/launching_opus/launching_opus_from_the_taskbar_icon.zh.md)
       - [来自 Win + E 热键](/Manual/preferences/preferences_categories/launching_opus/launching_opus_from_the_win-e_hotkey.zh.md)
