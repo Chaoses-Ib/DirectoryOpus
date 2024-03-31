@@ -1,0 +1,32 @@
+**DialogListColumn** 对象表示 [脚本对话框](/Manual/scripting/script_dialogs/README.zh.md) 中的 *详细信息* 模式 *列表视图* 控件中的列。使用 **[控件](control.zh.md).columns** 属性获取 **[DialogListColumns](dialoglistcolumns.zh.md)** 对象，然后枚举它以获取各个 **DialogListColumn** 对象。
+
+<table>
+<thead><tr><th>
+属性名称</th><th>
+返回类型</th><th>
+描述
+</th></tr></thead><tbody><tr><td>
+名称</td><td>
+
+*字符串*</td><td>
+返回或设置列的名称。
+</td></tr><tr><td>
+调整大小</td><td>
+
+*布尔值*</td><td>
+
+如果希望在列表视图水平调整大小时自动调整此列，请将此属性设置为 **True**。一次只能将一列设置为自动调整大小。
+</td></tr><tr><td>
+排序</td><td>
+
+*整数*</td><td>
+
+如果列表视图当前通过此列向前排序，则返回 **1**；如果列表视图当前通过此列向后排序，则返回 **-1**；否则返回 **0**。设置此属性将重新对列表进行排序。
+</td></tr><tr><td>
+宽度</td><td>
+
+*整数*</td><td>
+
+返回或设置列的宽度（以像素为单位）。将其设置为 **-1** 以自动调整列的大小以适应其内容。可以使用 [DialogListColumns](dialoglistcolumns.zh.md)**.AutoSize** 方法一次自动调整所有列的大小。
+</td></tr></tbody>
+</table>

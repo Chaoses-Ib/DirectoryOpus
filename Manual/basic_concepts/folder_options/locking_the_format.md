@@ -1,6 +1,6 @@
 # Locking the Format
 
-Opus lets you **lock** the format in the file display. When the format is locked, automatic changes to the format are disabled - the display format won't change at all as you navigate from one folder to another, unless you manually change it using the [Folder Options]() dialog.
+Opus lets you **lock** the format in the file display. When the format is locked, automatic changes to the format are disabled - the display format won't change at all as you navigate from one folder to another, unless you manually change it using the [Folder Options](folder_options_dialog/README.md) dialog.
 
 ##### Toggling the format lock
 
@@ -10,7 +10,7 @@ Right-click the ![](/Manual/images/media/13/info.png) information icon on the st
 
 When the format is locked, the information icon on status bar turns into a ![](/Manual/images/media/13/tab_-_locked.png) padlock icon instead.
 
-When the format lock is on the current folder format is preserved. You can still make manual changes using the [Folder Format]() dialog (or by clicking the column headers in details mode, etc.), but it won't automatically change again until after you turn the lock off.
+When the format lock is on the current folder format is preserved. You can still make manual changes using the [Folder Format](folder_formats.md) dialog (or by clicking the column headers in details mode, etc.), but it won't automatically change again until after you turn the lock off.
 
 ##### Turning off the lock
 
