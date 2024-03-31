@@ -365,7 +365,7 @@ NOUSEIMAGEDATA</td><td>
 
 *(无值)*</td><td>
 
-当它与 **CONVERT** 参数（在独立图像查看器中）一起使用时，它会覆盖 **@useimagedata** 命令修改器并使图像转换器从磁盘加载图像，而不是从查看器获取图像。
+当它与 **CONVERT** 参数（在独立图像查看器中）一起使用时，它会覆盖 **@useimagedata** 命令修饰符并使图像转换器从磁盘加载图像，而不是从查看器获取图像。
 
 *示例：* `Image CONVERT NOUSEIMAGEDATA`
 </td></tr><tr><td>

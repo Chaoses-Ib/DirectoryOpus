@@ -80,7 +80,7 @@
 
 ##### 条件测试
 
-您可以使用 [命令修改器](/Manual/reference/command_reference/command_modifier_reference.zh.md) `@if:` 来测试用户命令参数的值，以便为用户命令引入简单的条件行为（无需求助于脚本）。例如：
+您可以使用 [命令修饰符](/Manual/reference/command_reference/command_modifier_reference.zh.md) `@if:` 来测试用户命令参数的值，以便为用户命令引入简单的条件行为（无需求助于脚本）。例如：
 
     @if:&&EXAMPLE&&=one
     C:\Program1.exe

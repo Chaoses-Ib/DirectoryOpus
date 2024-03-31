@@ -536,7 +536,7 @@
       - [对话框显示代码](/Manual/reference/command_reference/external_control_codes/codes_to_display_dialogs.zh.md)
       - [日期和时间的代码](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.zh.md)
       - [Codes for clipboard and variables](/Manual/reference/command_reference/external_control_codes/codes_for_clipboard_and_variables.zh.md)
-    - [命令修改器参考](/Manual/reference/command_reference/command_modifier_reference.zh.md)
+    - [命令修饰符参考](/Manual/reference/command_reference/command_modifier_reference.zh.md)
   - [脚本参考](/Manual/reference/scripting_reference/README.zh.md)
     - [脚本对象](/Manual/reference/scripting_reference/scripting_objects/README.zh.md)
       - [关于 AboutData**](/Manual/reference/scripting_reference/scripting_objects/aboutdata.zh.md)

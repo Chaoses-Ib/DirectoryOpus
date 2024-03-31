@@ -34,4 +34,4 @@ UAC（[用户帐户控制](http://en.wikipedia.org/wiki/User_Account_Control)）
 
 ##### 在功能中提升
 
-您可以配置工具栏按钮或热键启动外部程序，以使用 **@admin** [命令修改器](/Manual/customize/creating_your_own_buttons/command_modifiers.zh.md) 启动提升的程序。
+您可以配置工具栏按钮或热键启动外部程序，以使用 **@admin** [命令修饰符](/Manual/customize/creating_your_own_buttons/command_modifiers.zh.md) 启动提升的程序。
