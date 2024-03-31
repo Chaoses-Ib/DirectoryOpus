@@ -188,7 +188,7 @@
     - [控制浮动工具栏](/Manual/additional_functionality/floating_toolbars/controlling_floating_toolbars.zh.md)
   - [系统级热键](/Manual/additional_functionality/system-wide_hotkeys.zh.md)
   - [导出到 USB](/Manual/additional_functionality/exporting_to_usb.zh.md)
-  - [与任何内容集成](/Manual/additional_functionality/everything_integration.zh.md)
+  - [与 Everything 集成](/Manual/additional_functionality/everything_integration.zh.md)
   - [擦除所有空白](/Manual/additional_functionality/erase_empty_space.zh.md)
   - [文件类型概览](/Manual/additional_functionality/filetype_summary.zh.md)
   - [更新检查器](/Manual/additional_functionality/update_checker.zh.md)

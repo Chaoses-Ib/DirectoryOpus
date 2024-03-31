@@ -1,4 +1,4 @@
-# 与任何内容集成
+# 与 Everything 集成
 
 Directory Opus 可自动与热门工具 [Everything by voidtools](https://voidtools.com) 集成。
 
