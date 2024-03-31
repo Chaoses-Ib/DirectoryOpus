@@ -22,16 +22,16 @@
 
       * **压缩包文件**: ZIP 和其他压缩包文件。
       * **云存储**: 云存储文件夹（OneDrive、Dropbox 等）
-      * **合集**: 一般 [[:basic_concepts:virtual_file_system:file_collections|文件合集]] 文件夹。 
-      * **重复文件**: 用于显示 [[:additional_functionality:duplicate_file_finder|重复文件查找器]] 结果的文件合集。
-      * **查找结果**: 用于显示 [[:basic_concepts:searching_and_filtering:find_files|查找工具]] 结果的文件合集。
+      * **集合**: 一般 [[:basic_concepts:virtual_file_system:file_collections|文件集合]] 文件夹。 
+      * **重复文件**: 用于显示 [[:additional_functionality:duplicate_file_finder|重复文件查找器]] 结果的文件集合。
+      * **查找结果**: 用于显示 [[:basic_concepts:searching_and_filtering:find_files|查找工具]] 结果的文件集合。
       * **平面视图**: 每当文件列表放入 [[:basic_concepts:flat_view|平面视图]] 模式时适用。 
       * **FTP**: FTP 站点。 
       * **本地驱动器**: 位于本地驱动器（如固定硬盘 C:）上的文件夹。 
       * **网络驱动器**: 位于网络驱动器上的文件夹。
       * **便携式设备**: 位于便携式设备（如手机和照相机）上的文件夹。 
       * **可移动驱动器**: 可移动驱动器，如 USB 闪存驱动器。 
-      * **搜索结果**: 用于呈现快速搜索结果的文件合集。
+      * **搜索结果**: 用于呈现快速搜索结果的文件集合。
       * **同步**: 每当 [[:file_operations:copying_moving_and_deleting_files:copying_updated_files:synchronize|同步]] 工具使用时适用。 
 
 ## 使用文件夹列表

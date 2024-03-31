@@ -1,4 +1,4 @@
-**FileGroup**对象展示文件组的信息（当文件列表设置按特定列分组时）。**[Tab](tab.zh.md).filegroups**属性返回一个表示当前文件分组的合集，以及**[Item](item.zh.md).filegroup**属性返回特定文件的当前文件分组。
+**FileGroup**对象展示文件组的信息（当文件列表设置按特定列分组时）。**[Tab](tab.zh.md).filegroups**属性返回一个表示当前文件分组的集合，以及**[Item](item.zh.md).filegroup**属性返回特定文件的当前文件分组。
 
 说明：如果您需要知道文件位于哪个*文件类型组*，而不是如何根据当前可显示列分组文件，请查阅[FiletypeGroup](filetypegroup.zh.md)对象。
 

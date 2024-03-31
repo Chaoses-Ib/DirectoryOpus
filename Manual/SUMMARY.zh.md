@@ -84,7 +84,7 @@
   - [文件夹大小](/Manual/basic_concepts/folder_sizes.zh.md)
   - [虚拟文件系统](/Manual/basic_concepts/virtual_file_system/README.zh.md)
     - [系统虚拟文件夹](/Manual/basic_concepts/virtual_file_system/system_virtual_folders.zh.md)
-    - [文件合集](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)
+    - [文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)
       - [存储的查询](/Manual/basic_concepts/virtual_file_system/file_collections/stored_queries.zh.md)
     - [库](/Manual/basic_concepts/virtual_file_system/libraries.zh.md)
     - [压缩包](/Manual/basic_concepts/virtual_file_system/archives.zh.md)
