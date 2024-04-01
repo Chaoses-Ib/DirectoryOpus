@@ -1,12 +1,12 @@
-# 高级
+# 高级选项
 
-此页面包含被认为是“高级”选项的列表。它们通常是一些大多数用户不需要了解更不用说更改的晦涩设置。
+此页面包含被视为“高级”选项的列表。这些通常是晦涩的设置，大多数用户不需要了解，更不用说更改它们了。
 
-每个选项都有一个名称和一个值。值可以是布尔值（true/false）、数字、字符串或从下拉列表中选择。要编辑选项的值，双击现有值，或选择该选项并按 <kbd>F2</kbd>。当选项未设置为其默认值时，会以粗体显示。
+每个选项都有一个名称和一个值。该值可以是布尔值（true/false）、数值、字符串或从下拉列表中选择。要编辑选项的值，请双击现有值或选择该选项并按 <kbd>F2</kbd>。当选项未设置为其默认值时，它将以粗体显示。
 
-选择一个选项后，其描述将显示在页面底部。用星号标记的项目是全局设置 - 它们会影响计算机的所有用户。你可以选择一个选项并单击底部的 **重置** 按钮将其重置为默认值。
+当您选择一个选项时，它的描述将显示在页面底部。用星号标记的项目是全局设置 - 它们影响计算机的所有用户。您可以通过选择它并单击底部的 **复位** 按钮来将其选项重置为其默认值。
 
-如果您正在寻找一个特定的选项，您可以使用顶部的搜索字段按名称或描述进行搜索。如果您只想查看已从其默认值修改的设置，可以使用搜索字段右侧的 **隐藏未更改的设置** 复选框。
+如果您正在寻找一个特定的选项，则可以使用顶部的搜索字段按名称或描述进行搜索。如果您希望仅查看您已从默认值修改的设置，可以使用搜索字段右侧的 **隐藏未更改设置** 复选框。
 
 <table>
 <thead><tr><th>
@@ -18,226 +18,226 @@
 选项</td><td>
 
 ** 全局？ **</td><td>
-说明
+描述
 </td></tr><tr><td>
 
 **clipboard_datestamps**</td><td>
 </td><td>
-粘贴剪贴板中的图像或文本数据到新文件中时，会使用类似“Clipboard Image.bmp”和“Clipboard Text.txt”这样的名称，如果需要，还会添加一个数字后缀以使其唯一。打开此选项将在这些文件名开头添加一个 YYYY-MM-DD HH-MM-SS 时间戳。当粘贴和转换多个数据片段时，以及在标准文件打开对话框中选择它们时（否则无法正确地对名称进行分类），这有助于按顺序排列它们。
+粘贴图像或文本数据从剪贴板到新文件时，使用诸如“Clipboard Image.bmp”和“Clipboard Text.txt”等名称，并根据需要添加数字后缀以使其唯一。打开此选项将在这些文件名开头添加YYYY-MM-DD HH-MM-SS日期时间戳。在粘贴和转换多个数据片段以及在标准的文件打开对话框中选择它们时，这有助于按顺序保存这些数据片段，否则这些对话框无法正确对名称进行排序。
 </td></tr><tr><td>
 
 **clipboard_text_encoding**</td><td>
 </td><td>
-指定在将剪贴板中的文本粘贴到文件中时要使用的默认文本编码。
+指定粘贴文本从剪贴板到文件时要使用的默认文本编码。
 </td></tr><tr><td>
 
 **compress_collections**</td><td>
 </td><td>
 
-压缩 [文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md) 以节省磁盘空间。如果关闭，文件集合将另存为未压缩的 XML 文件 - 如果集合中有很多文件，这会导致文件占用大量空间。
+压缩[文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)以节省磁盘空间。如果关闭，文件集合将被保存为未压缩的XML文件 - 如果一个集合中有很多文件，这会导致文件占用大量空间。
 </td></tr><tr><td>
 
 **config_backup_name**</td><td>
 </td><td>
 
-用于生成配置备份的默认名称的模板。在执行备份时仍然可以手动编辑名称，但这会更改其初始值。
+用于生成配置备份默认名称的模板。在执行备份时，您仍然可以手动编辑名称，但这会更改其初始名称。
 
-模板支持日期和时间的 `D#`、`T#` 和 `A#` 前缀（如 [此处](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.zh.md) 所述）和环境变量。请注意，要使用日期和时间代码，必须将它们括在 `{}` 大括号中（例如 `D#yyyy-MM-dd`）。
+模板支持`D#`、`T#`和`A#`前缀，用于日期和时间（如[此处](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.zh.md)所述）和环境变量。请注意，要使用日期和时间代码，您必须将它们括在`{}`中，例如`{D#yyyy-MM-dd}`。
 
-（Opus 13.3.4 及以上版本：）默认使用本地时间，但你可以使用 `UTC#` 前缀来代替使用 UTC（例如 `UTC#T#HH-mm`）。
+（Opus 13.3.4及更高版本：）默认使用本地时间，但是如果您希望使用UTC，可以添加`UTC#`前缀（例如`{UTC#T#HH-mm}`）。
 </td></tr><tr><td>
 
 **dblclk_distance**</td><td>
 </td><td>
-鼠标光标在双击时移动的距离（以像素为单位）。
+鼠标光标移动以进行双击注册的最大距离（以像素为单位）。
 </td></tr><tr><td>
 
 **display_release_history**</td><td>
 </td><td>
-打开后，在安装新版本后首次使用 Directory Opus 时，帮助文件中的版本历史记录页面将自动打开。这有助于了解新版本中的新功能、修复和其他更改。关闭此选项以防止版本历史记录页面自动出现。
+当打开此选项时，在安装新版本后首次使用Directory Opus时，帮助文件中的发布历史记录页面将自动打开。它帮助您了解新版本中的新功能、修复和其他更改。关闭该选项以防止发布历史页面自动出现。
 </td></tr><tr><td>
 
 **drag_distance**</td><td>
 </td><td>
-鼠标光标需要移动以初始化拖放的像素距离。如果要完全禁用拖放，请将其设置为 0。
+鼠标光标需要移动的像素距离才能启动拖放。如果您想完全禁用拖放，请将此设置设为0。
 </td></tr><tr><td>
 
 **find_extension_func**</td><td>
 </td><td>
 
-在 Windows XP 上，Opus 会注册一个 [搜索处理程序](http://msdn.microsoft.com/en-us/library/bb776834(v=vs.85).aspx) ，该处理程序使你可以从开始菜单访问 Opus 查找功能。你可以使用此选项配置 Opus 作为对搜索处理程序做出响应而运行的命令。如果未指定，将使用默认的 [查找](/Manual/reference/command_reference/internal_commands/find.zh.md) 命令。
+在Windows XP上，Opus注册了一个[搜索处理程序](http://msdn.microsoft.com/en-us/library/bb776834(v=vs.85).aspx) ，它允许您从开始菜单访问Opus查找功能。您可以使用此选项配置Opus响应搜索处理程序时运行的命令。如果未指定，则使用默认的[查找](/Manual/reference/command_reference/internal_commands/find.zh.md)命令。
 </td></tr><tr><td>
 
 **find_unique_collections**</td><td>
 </td><td>
 
-不要让同时进行的 [查找](/Manual/basic_concepts/searching_and_filtering/find_files/README.zh.md) 操作为结果使用相同的集合。查找功能默认在 *查找结果* [文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md) 中呈现其结果。如果并行运行两个或更多查找操作，此选项将导致为第二个和后续任务的输出文件集合的名称进行修改以使其唯一，以便结果不会混杂。
+不要让同时执行的[查找](/Manual/basic_concepts/searching_and_filtering/find_files/README.zh.md)操作对结果使用同一个集合。查找功能默认为将结果显示在*查找结果* [文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)中。如果您并行运行两个或更多个查找操作，此选项会修改第二个及后续任务输出文件集合的名称以使其唯一，以便结果不会混在一起。
 </td></tr><tr><td>
 
 **flatview_folder_filters**</td><td>
 </td><td>
 
-启用 [扁平视图](/Manual/basic_concepts/flat_view.zh.md) 中的子文件夹过滤。默认情况下，当文件列表为扁平视图时，快速过滤器（即由 [过滤器栏](/Manual/basic_concepts/searching_and_filtering/filter_bar.zh.md) 设置的过滤器）不会应用于文件夹。这样做是因为从列表中过滤出文件夹时，其所有内容也会自动被过滤出，这可能会导致不希望的结果。当文件列表为扁平视图模式时，过滤器栏会显示一个复选框选项，让你可以打开或关闭文件夹过滤，并且可以使用此选项来控制该复选框的默认状态（也就是说，如果你通常确实希望快速查看过滤器同时适用于扁平视图中的文件夹和文件，请打开此选项。）
+启用在[平面视图](/Manual/basic_concepts/flat_view.zh.md)中过滤子文件夹。默认情况下，当文件列表在平面视图中时，快速过滤器（即由[过滤栏](/Manual/basic_concepts/searching_and_filtering/filter_bar.zh.md)设置的过滤器）不会应用于文件夹。原因是当一个文件夹从列表中过滤出来时，其所有内容也会自动被过滤出来，这可能会导致不想要的结果。当文件列表在平面视图模式时，过滤栏会显示一个复选框选项，让您打开或关闭文件夹过滤，您可以使用此选项控制该复选框的默认状态（也就是说，如果您通常希望快速视图过滤器也应用于平面视图中的文件夹和文件，请打开此选项。）
 </td></tr><tr><td>
 
 **go_up_always_back**</td><td>
 </td><td>
 
-`后退` 命令通常会重新读取父文件夹，即使你之前访问过它并且它在历史列表中，而且你可以添加 **返回** 参数（即 **后退 返回**）以使 Opus 在可能的情况下（在转到父文件夹时保留文件选择）使用历史。如果你打开此选项，那么 **后退** 始终会表现得好像它也指定了 **返回** 参数。
+`上移`命令通常重新读取父文件夹，即使您之前访问过它并且它位于历史记录列表中，您也可以添加 **返回** 参数（即**上移 返回**）以使Opus在可能的情况下使用历史记录（保留文件选择）访问父文件夹。如果打开此选项，则**上移**总是表现得好像指定了**返回**参数一样。
 </td></tr><tr><td>
 
 **image_locate_services**</td><td>
 </td><td>
 
-让你可以配置 `图像定位` 命令使用的图像定位服务。每行由用于引用服务的关键字、等号和将在默认 Web 浏览器中打开的 URL 组成。插入代码 `%lat%` 和 `%lon%` 用于传递图像的纬度和经度。
+允许您配置`Image LOCATE`命令使用的图像定位服务。每一行都包含用于引用服务的关键字、等号和将在默认网络浏览器中打开的URL。插入代码`%lat%`和`%lon%`用于传递图像的纬度和经度。
 </td></tr><tr><td>
 
 **layout_string**</td><td>
 </td><td>
 
-此选项让你可以定义给保存在桌面上的 [列表布局](/Manual/basic_concepts/the_lister/layouts/README.zh.md) 的名称（通过偏好设置中的 [布局](../layouts_and_styles/layouts.zh.md) 页面）。您必须指定包含代码 `%1` 的字符串 - 该代码将用布局名称替换为生成的快捷方式。如果未对此选项指定任何内容，则默认为 `布局 '%1'`。
+此选项允许您定义从[布局](../layouts_and_styles/layouts.zh.md)页中放到桌面的[文件窗口布局](/Manual/basic_concepts/the_lister/layouts/README.zh.md)的名称。您必须指定包含代码`%1`的字符串 - 此代码将被生成快捷方式中的布局名称替换。如果未为该选项指定任何内容，默认值为`布局 '%1'`。
 </td></tr><tr><td>
 
 **manual_sort_names**</td><td>
 </td><td>
 
-让你可以定义其他 [手动排序](/Manual/basic_concepts/sorting_and_grouping/manual_sorting.zh.md) 顺序。Opus 可以记住不止一个手动排序顺序，你可以轻松地在你的命名顺序之间切换。例如，你可以在工作时使用一个手动排序顺序，在家里使用另一个手动排序顺序。你必须将每个名称输入单独的一行。如果您未指定任何名称，则将只有一个未命名的手动排序顺序。
+允许您定义附加的[手动排序](/Manual/basic_concepts/sorting_and_grouping/manual_sorting.zh.md)顺序。Opus可以记住多个手动排序顺序，您可以轻松地在命名的顺序之间切换。例如，您可能有一个在工作中使用的手动排序顺序，另一个在家中使用。您必须在单独的行上输入每个名称。如果您没有指定任何名称，则将只会有一个未命名的手动排序顺序可用。
+
+
 </td></tr><tr><td>
 
 **navlock_warn_verbose**</td><td>
 </td><td>
 
-在导航锁开启时，输入其中一方无法镜像的相对路径会在文件列表上显示一条警告。默认情况下，当 **navlock_warn_verbose** 为 **True** 时，这条警告很长，并且解释可以通过返回上一个文件夹，让两边重新同步，同时还提供了手动重新同步当前文件夹对或完全关闭导航锁的选项。如果你将 **navlock_warn_verbose** 设置为 **False**，将显示一条更短且不那么显眼的讯息。如果你已经理解导航锁的工作原理，并且已经多次阅读过较长的讯息，请切换到较短的讯息。
+当导航锁打开时，在一边输入相对路径而另一边无法镜像会导致出现一个警告覆盖在文件列表中。默认情况下，当**navlock_warn_verbose**设置为**True**时，此警告很长，并解释您可以返回到之前的文件夹以使两边重新同步，还可以提供手动重新同步当前文件夹对或完全关闭导航锁的选项。如果您将**navlock_warn_verbose**设置为**False**，则会显示一条较短、较不醒目的消息。如果您已经了解导航锁的工作原理并已经多次阅读较长的消息，请切换到较短的消息。
 </td></tr><tr><td>
 
 **pinyin_support**</td><td>
 </td><td>
-Opus 对拼音提供了一些支持（一种使用西方键盘输入中文字符的方法）。默认情况下，如果 Opus 以中文运行，即时查找和过滤器栏都支持拼音来进行搜索/过滤。此选项允许你覆盖自动设置并特别启用或禁用拼音支持。
+Opus有一些拼音支持（一种使用西方键盘输入中文的方法）。默认情况下，如果Opus以中文运行，即时查找和过滤栏都支持拼音用于搜索/过滤。此选项允许您覆盖自动设置并明确启用或禁用拼音支持。
 </td></tr><tr><td>
 
 **powermode_singledrag**</td><td>
 </td><td>
 
-[增强模式](/Manual/basic_concepts/the_lister/view_modes.zh.md) 文件列表默认具有持久选择 - 当你点击未选项目时，它会将其选中，但不会自动取消选取任何其他已选项目。通常当你点击项目并将其拖出时，也会拖动所有其他已选文件。当此选项开启时，如果你点击单个文件并将其拖动到左侧或右侧，只有该文件将成为拖动的一部分 - 任何其他已选文件都不会。
+[增强模式](/Manual/basic_concepts/the_lister/view_modes.zh.md)文件列表默认具有持久选择 - 当您单击未选择的项目时，它会将其选中，但不会自动取消选择任何其他已选项目。通常，当您单击项目并将其拖出时，所有其他选定的文件也会一起拖动。当此选项打开时，如果您单击单个文件并将其向左或向右拖动，只有该文件将成为拖动的一部分 - 任何其他选定的文件都不会。
 </td></tr><tr><td>
 
 **powershell_exe**</td><td>
 </td><td>
-允许你指定将要使用的默认 PowerShell 可执行文件。例如，你可能希望将默认 PowerShell 菜单项打开 PowerShell 7，而不是 Windows PowerShell。
+允许您指定要使用的默认PowerShell可执行文件。例如，您可能希望默认的PowerShell菜单项打开PowerShell 7而不是Windows PowerShell。
 </td></tr><tr><td>
 
 **rename_default_focus**</td><td>
 </td><td>
-选择 [重命名](/Manual/file_operations/renaming_files/advanced_rename/README.zh.md) 对话框中的哪个字段默认获得输入焦点 - *旧的名称* 或 *新的名称* 字段。重命名脚本可以覆盖此设置。
+
+选择[重命名](/Manual/file_operations/renaming_files/advanced_rename/README.zh.md)对话框中默认获取输入焦点的字段 - *旧名称*或*新名称*字段。重命名脚本可以覆盖此设置。
 </td></tr><tr><td>
 
 **save_button_editor_pos**</td><td>
 </td><td>
-保存 [命令编辑器](/Manual/customize/creating_your_own_buttons/command_editor/README.zh.md) 对话框的默认位置。如果你启用此选项，Opus 会在关闭命令编辑器时记住其位置，并在下次打开它时使用该已保存的位置。如果关闭，命令编辑器将显示在其父窗口的中央。
+
+保存[命令编辑器](/Manual/customize/creating_your_own_buttons/command_editor/README.zh.md)对话框的默认位置。如果您打开此选项，Opus将在关闭时记住命令编辑器的放置，并在下次打开一个命令编辑器时使用该已保存位置。如果关闭，命令编辑器将居中显示在其父窗口上。
 </td></tr><tr><td>
 
 **searchfield_autostart**</td><td>
 </td><td>
-让你可以控制从文件窗口搜索字段停止键入搜索后多长时间自动开始。如果设置为 0，则使用在 [即时查找](/Manual/preferences/preferences_categories/filtering_and_sorting/find_as_you_type/README.zh.md) 页面上为即时查找配置的值。
+允许您控制停止从文件窗口搜索字段键入搜索后多久自动开始。如果设置为0，则使用[边输入文件边查找](/Manual/preferences/preferences_categories/filtering_and_sorting/find_as_you_type/README.zh.md)页面上为即时查找配置的值。
 </td></tr><tr><td>
 
 **scroll_lock**</td><td>
 </td><td>
-如果 **Scroll Lock** 键开启，光标键将滚动文件列表而不更改焦点项目。
+
+如果**滚动锁定**键打开，光标键将在不更改焦点项的情况下滚动文件列表。
 </td></tr><tr><td>
 
 **search_warn_nonindexed**</td><td>
 </td><td>
-如果为真，如果你在未编入索引的文件夹上使用 Windows 搜索，并且搜索花费了超过几秒钟，Opus 将显示横幅警告你搜索可能会很慢，因为该文件夹未编入索引。如果关闭，将不会显示警告。（这不会对 Opus 的内置查找文件功能产生影响。查找文件独立于 Windows 搜索索引，并且不会显示类似的横幅。）
+当值为true时，如果您对未编制索引的文件夹使用Windows搜索，并且搜索花费了几秒钟，Opus将显示一个横幅警告，通知您搜索可能会很慢，因为该文件夹未编制索引。如果关闭，将不会显示警告。（这不会对Opus内置的查找文件功能产生任何影响。查找文件功能独立于Windows搜索索引，并且不会显示类似横幅。）
 </td></tr><tr><td>
 
 **setwallpaper_file**</td><td>
 </td><td>
-`Properties SETWALLPAPER` 命令可用于将选定的图像文件设置为桌面壁纸。默认情况下，选定文件会被复制到你的文档文件夹，但你可以通过为此选项指定一个完整路径和文件名来覆盖此位置。指定的文件名必须以 **.bmp** 或（在 Vista 及更高版本中）**.jpg** 结尾。
+
+`属性 SETWALLPAPER`命令可用于将所选图像文件设置为桌面壁纸。默认情况下，选定的文件被复制到您的文档文件夹，但是您可以通过为此选项指定完整的路径和文件名来覆盖位置。指定的文件名必须以**.bmp**或（在Vista和更高版本中）**.jpg**结尾。
 </td></tr><tr><td>
 
 **single_click_rename**</td><td>
 </td><td>
-如果你启用了 [单点模式](/Manual/basic_concepts/selecting_files/selecting_with_the_mouse_and_keyboard/single-click_mode.zh.md)，并且文件列表处于 [详细信息模式](/Manual/basic_concepts/the_lister/view_modes.zh.md) 且在 [偏好设置](../file_display_modes/details_mode.zh.md) 中启用了整行选择，通常无法使用鼠标发起 [内联重命名](/Manual/file_operations/renaming_files/inline_rename.zh.md)，因为在该行上的任何一点点击都会打开该项目。启用此选项后，你可以使用鼠标发起内联重命名 - 通过悬停选择该项后，你可以点击文件名 *以外* 的该行上的任意位置以开始重命名。
+
+如果您启用了[单击模式](/Manual/basic_concepts/selecting_files/selecting_with_the_mouse_and_keyboard/single-click_mode.zh.md)，并且文件列表在[详细信息模式](/Manual/basic_concepts/the_lister/view_modes.zh.md)中，并在[配置](../file_display_modes/details_mode.zh.md)中启用了整行选择，则通常无法使用鼠标启动[内联重命名](/Manual/file_operations/renaming_files/inline_rename.zh.md)，因为单击该行中的任何位置都会打开该项目。启用此选项后，您可以使用鼠标启动内联重命名 - 一旦通过悬停选择条目，您可以在该行上的任何位置（而不是文件名）单击以开始重命名。
 </td></tr><tr><td>
 
 **slow_dblclk_rename**</td><td>
 </td><td>
-将其设置为 **False** 以禁用可以通过“慢速双击”（在双击时间之外点击已选文件或文件夹）进入内联重命名模式的标准功能。如果禁用了慢速双击重命名，你仍然可以使用 **F2** 键进入内联重命名模式。
+将其设置为**False**以禁用标准功能，该功能使您可以通过“慢双击”（在双击时间之外单击已选中的文件或文件夹）进入内联重命名模式。如果禁用了慢双击重命名，您仍然可以使用**F2**键进入内联重命名模式。
 </td></tr><tr><td>
 
 **status_metadata_trigger**</td><td>
 </td><td>
-控制状态栏（如果显示选定或总媒体持续时间（时间长度））何时可能会触发计算该数据，如果文件列表中的其他任何内容尚未触发它。
 
-计算媒体持续时间涉及独立地打开和解析每个文件中的数据，并且这可能需要一些时间并占用磁盘或网络，尤其是在文件很多的情况下。
+控制状态栏（如果显示所选或总媒体持续时间（时间长度））可能触发该数据的计算时间，如果文件列表中还没有其他内容触发它。
 
-如果已经为文件列表中的某一列（例如 **持续时间** 列）计算了持续时间，则此设置无效，因为状态栏会重新使用这些计算。此设置仅更改状态栏本身是否可以触发计算。
+计算媒体持续时间包括单独打开和解析每个文件中的数据，这可能需要一些时间并占用磁盘或网络，特别是当有很多文件时。
 
-如果状态栏定义不包含任何 [媒体持续时间代码](/Manual/reference/status_bar_codes/codes_for_music_and_video_duration.zh.md) - 即 **{smp3}** 或 **{tmp3}** - 那么此设置也不适用，因为状态栏不会触发其不感兴趣的数据计算。
+如果已为文件列表中的一列（例如**持续时间**列）计算了持续时间，则该设置是可变的，因为状态栏将重新使用这些计算。该设置仅更改状态栏本身是否可以触发计算。
 
-默认设置为 **从不**，这意味着状态栏本身永远不会触发计算，只有当其他内容计算出持续时间信息时才会显示它。
+如果状态栏定义不包括任何[媒体持续时间代码](/Manual/reference/status_bar_codes/codes_for_music_and_video_duration.zh.md) -- 即 **{smp3}**或**{tmp3}** -- 那么该设置也是可变的，因为状态栏不会触发对其不感兴趣的数据的计算。
 
-选择 **始终** 设置意味着状态栏将在所有情况下触发持续时间计算。
+默认设置是**永不**，这意味着状态栏永远不会自行触发计算，并且仅在其他内容计算时显示持续时间信息。
 
-选择 **始终，平板视图和集合除外** 设置意味着状态栏可以触发持续时间计算，但启用 [平板视图](/Manual/basic_concepts/flat_view.zh.md) 或处于 [文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md) 中时除外。平板视图和集合通常涉及大量文件，因此是极端情况。
+选择**始终**设置意味着状态栏将在所有情况下触发持续时间计算。
+
+选择**始终，平面视图和集合除外**设置意味着状态栏可以触发持续时间计算，但当[平面视图](/Manual/basic_concepts/flat_view.zh.md)启用时或处于[文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)中时除外。平面视图和集合通常涉及大量文件，这使得它们成为最坏的情况。
 </td></tr><tr><td>
 
 **styles_update_previous**</td><td>
 </td><td>
-如果你已经更改了文件窗口的外观（通过手动打开或关闭用户界面元素，或通过 [文件窗口样式](/Manual/basic_concepts/the_lister/styles.zh.md)），`Prefs STYLE` 命令让你可以将文件窗口返回到其初始外观。如果你启用此选项，那么当选择新的文件窗口样式时，将被认为是“上一个”样式的内容会被更新（因此从那时起 `Prefs STYLE=^prev` 将重置文件窗口为该样式，而不是其初始布局）。
-<table>
-<thead><tr><th>
 
-**Category: General **</th><th>
-</th><th>
+如果您对文件窗口的外观进行了更改（通过手动打开或关闭用户界面元素，或通过[文件窗口样式](/Manual/basic_concepts/the_lister/styles.zh.md)），则`配置样式`命令允许您将文件窗口恢复到其初始外观。如果您打开此选项，那么只要选择了新的文件窗口样式，就会更新“上一个”样式（因此从那时起，`配置样式=^prev`会将文件窗口重置为该样式，而不是其初始布局）。
 
-</th></tr></thead><tbody><tr><td>
-
-Option</td><td>
-
-** Global? **</td><td>
-Description
 </td></tr><tr><td>
 
 **tab_click_nofocus**</td><td>
 </td><td>
 
-点击 [文件夹标签页](/Manual/basic_concepts/the_lister/tabs/README.zh.md) 将其置于前面时，通常会激活该文件列表并将其设置为源。如果此选项处于打开状态，则单击目标文件列表中的标签页将使源/目标状态保持不变。
+单击[文件夹标签页](/Manual/basic_concepts/the_lister/tabs/README.zh.md)使其出现在最前面通常会激活该文件列表并使其成为源。如果此选项打开，那么单击目标文件列表中的标签页将使源/目标状态保持不变。
 </td></tr><tr><td>
 
 **utility_panel_autoshrink**</td><td>
 </td><td>
-可以使用此设置使实用程序面板在执行查找、重复文件或同步操作后自动缩小到仅包含其标题。单击设置以打开一个菜单，您可以在其中为每个操作打开或关闭自动缩小功能。
+
+此设置可用于在执行查找、重复文件或同步操作后自动将实用程序面板缩小为仅显示其标题。单击设置以打开一个菜单，您可以在其中为每个操作打开或关闭自动缩小。
 </td></tr><tr><td>
 
 **wheel_acceleration**</td><td>
 </td><td>
-Opus 在使用鼠标滚轮在文件列表中滚动的过程中通常会应用少量的加速，但是您可以在需要时使用此选项禁用它。
+
+Opus通常在使用鼠标滚轮在文件列表中滚动时应用少量的加速，但是如果需要，您可以使用此选项禁用它。
 </td></tr><tr><td>
 
 **wordbreak_char_names**</td><td>
 </td><td>
 
-这可以让你指定一个或多个将在编辑文本框中用作“单词分隔”字符的字符，在编辑文件名（例如内联重命名）时。单词分隔字符会影响当您按下 **Ctrl+向左** 或 **Ctrl+向右** 键时光标停止的位置。空格始终被视为单词分隔。
+当编辑文件名（例如内联重命名）时，这允许您指定一个或多个将用作编辑字段中“单词断开”字符的字符。单词断开字符会影响在按**Ctrl+左**或**Ctrl+右**键时光标停止的位置。空格始终被视为单词断开。
 </td></tr><tr><td>
 
 **wordbreak_char_paths**</td><td>
 </td><td>
 
-这可以让你配置在编辑路径（例如在 [Breadcrumb 路径字段](/Manual/basic_concepts/the_lister/navigation/breadcrumbs_location_field.zh.md) 中）时编辑文本框中的其他单词分隔字符。标准路径分隔符（**:/\\**) 始终被视为单词分隔符。
+当编辑路径（例如在[面包屑路径字段](/Manual/basic_concepts/the_lister/navigation/breadcrumbs_location_field.zh.md)中）时，这允许您在编辑字段中配置其他单词断开字符。标准路径分隔符（**:/\\**)总被视为单词断开。
 </td></tr><tr><td>
 
 **wsl_distribution**</td><td>
 </td><td>
-如果您安装了多个 WSL 发行版，此选项可以让您控制 Opus 使用哪个发行版来启动 WSL 命令。
+如果您安装了多个WSL发行版，此选项允许您控制Opus使用哪个发行版来启动WSL命令。
 </td></tr></tbody>
 </table>
 
 <table>
 <thead><tr><th>
 
-**Category: Compatibility**</th><th>
+**类别：兼容性**</th><th>
 </th><th>
 
 </th></tr></thead><tbody><tr><td>
@@ -250,154 +250,247 @@ Opus 在使用鼠标滚轮在文件列表中滚动的过程中通常会应用少
 **convert_descriptions**</td><td>
 </td><td>
 
-将旧描述文件转换成 *descript.ion* 格式。除非您从非常老版本的 Directory Opus 迁移，否则您可能永远不需要设置此。
+将旧描述文件转换为*descript.ion*格式。除非您正在从Directory Opus的极旧版本迁移，否则您永远不需要设置此项。
 </td></tr><tr><td>
 
 **def_func_cd_sourcedir**</td><td>
 </td><td>
-
-从未指定当前目录的按钮启动程序时，将当前源目录用作默认当前目录。出于安全原因，此类功能的默认设置是将当前目录设置为 *C:\Windows\System32* 目录。
+从不指定当前目录的按钮启动程序时，使用当前源目录作为默认当前目录。出于安全原因，此类功能的默认设置是将当前目录设置为*C:\Windows\System32*目录。
 </td></tr><tr><td>
 
 **direct2d**</td><td>
 </td><td>
 
-控制 Direct2D 如何用来渲染 UI 的某些部分。某些地方使用 Direct2D 来提供更好的性能或质量更高的渲染。
+控制Direct2D如何用于渲染UI的某些部分。Direct2D在某些地方被用来提供更好的性能或更好的质量渲染。
 
-**Normal** 是默认选项，它启用 Direct2D，并允许操作系统决定使用硬件（GPU）还是软件（CPU）渲染。
+**正常**是默认选项，启用Direct2D并允许操作系统决定使用硬件（GPU）渲染还是软件（CPU）渲染。
 
-如果您认为您的 GPU 硬件或驱动程序有问题，并且希望强制 Direct2D 在您的 CPU 上渲染所有内容，则可以选择“**强制 CPU 渲染**”。
+如果认为GPU硬件或驱动程序有问题，并且想强制Direct2D在CPU上渲染所有内容，则可以选择**强制CPU渲染**。
 
-可以选择“**禁用**”来阻止使用 Direct2D。
+可以选择**禁用**以防止使用Direct2D。
 
-在编写本文时，该选项会影响进度对话框的速度图。
+在撰写本文时，该选项影响进度对话框的速度图。
 </td></tr><tr><td>
 
 **dlldir_security**</td><td>
 </td><td>
 
-此选项默认处于启用状态，可防止 Opus 从当前工作目录加载 DLL。这降低了“二进制植入”漏洞的风险，当您从有人隐藏了恶意 DLL 的文件夹中打开照片或音乐等内容时，该漏洞会欺骗您的计算机运行不受信任的软件。
+此选项在默认情况下启用，可防止Opus从当前工作目录加载DLL。这降低了“二进制植入”攻击的风险，当您在有人隐藏了恶意DLL的文件夹中打开照片或音乐等文件时，它可以诱使您的计算机运行不受信任的软件。
 
-关闭此选项会降低您的安全性，但如果您遇到的问题是由计算机上安装的编写不良的 shell 扩展程序或其他第三方软件引起的，则可能需要。 （此类软件通常仅与 Windows资源管理器兼容，而 Windows资源管理器并未采用 Opus 默认使用的更为安全的方式。）
+关闭此选项会降低您的安全性，但如果它导致问题，可能是由编写得很差的壳扩展或安装在您计算机上的其他第三方软件引起的，则可能需要关闭它。（此类软件通常只针对Windows资源管理器进行测试，后者传统上不使用Opus默认使用的更安全的模式。）
 
-此选项仅影响 Opus，以及您从 Opus 启动的软件（如果有）。这不是一个系统范围的设置（尽管如果您希望它更安全，则可以设置一个系统范围的设置；搜索网络了解更多 CWDIllegalInDllSearch 相关信息）。
+此选项仅影响Opus以及您从Opus启动的软件。它不是一个系统范围的设置（尽管如果您想更加安全，也可以进行一项设置；在网络上搜索CWDIllegalInDllSearch以了解更多信息）。
 
-从便携式 USB 安装运行时无法修改此选项。
+从可移植USB安装程序运行时无法修改此选项。
 </td></tr><tr><td>
 
 **dragdrop_async**</td><td>
 </td><td>
 
-当文件从另一个程序拖放到 Opus 中时，Opus 通常会将其处理放到后台，这样窗口就会一直处于响应状态。如果您拖放内容的程序支持异步拖放的 Windows API，那么这永远不会是个问题；但是，很多程序不支持该 API。
+当文件从另一个程序拖放到Opus时，Opus通常会在后台处理它们，以便其窗口保持响应。如果您从中拖动的程序支持Windows 用于异步拖放的API，那么这永远不是问题；但是，大量的程序不支持该API。
 
-当 **dragdrop_async** 处于启用状态时，Opus 会尝试在后台处理 *所有* 拖放，如有必要则会曲解规则，除非它检测到是从已知存在此问题程序拖放而来。如果此选项处于关闭状态，Opus 将变得更加严格，并将仅处理明确支持它的程序的后台拖放。
+当**dragdrop_async**开启时，Opus将尝试在后台处理*所有*拖放，如果必须的话，它会打破规则，除非它检测到来自已知有此类问题的程序的拖放。如果关闭此选项，Opus将更加严格，并且仅为明确支持它的程序在后台处理拖放。
 
-如果您在从某些程序将文件拖放到 Opus 时遇到问题，请尝试关闭此选项，看看是否可以提高兼容性。缺点是，您有时可能必须等到拖放完成，然后才能继续使用拖放到的窗口。
+如果您在从某些程序将文件拖到Opus时遇到问题，请尝试关闭此选项，看看它是否可以提高兼容性。缺点是您有时可能不得不等到拖放完成之后才能继续使用您拖放到的窗口。
 </td></tr><tr><td>
 
 **flush_com_libraries**</td><td>
 </td><td>
 
-默认情况下，Opus 在不再需要 COM 库（通常是 shell 扩展 DLL）时，会积极要求它们卸载。这会导致组件崩溃，如果它们说可以在仍然在进程中执行代码时，它们可以卸载是不正确的。将此设置切换为 **False** 可能会减少这些故障组件的问题。
+默认情况下，Opus在不再需要COM库时会主动要求COM库（通常是壳扩展DLL）卸载它们。这可能会导致组件在其仍在进程中运行代码时错误地表示可以卸载而导致崩溃。将此设置切换为**False**可以减少那些故障组件的问题。
 </td></tr><tr><td>
 
 **function_default_async**</td><td>
 </td><td>
 
-默认情况下，包含单个命令的功能将作为 [异步](/Manual/customize/creating_your_own_buttons/synchronous_and_asynchronous_functions.zh.md) 运行，而包含两个或更多个命令的功能将作为 [同步](/Manual/customize/creating_your_own_buttons/synchronous_and_asynchronous_functions.zh.md) 运行。此选项可以让您覆盖此行为，并默认让所有功能（单个或多个命令）都作为异步。
+默认情况下，只包含一个命令的函数将[异步](/Manual/customize/creating_your_own_buttons/synchronous_and_asynchronous_functions.zh.md)运行，而包含两个或更多个命令的函数将[同步](/Manual/customize/creating_your_own_buttons/synchronous_and_asynchronous_functions.zh.md)运行。此选项允许您覆盖此行为，并默认使所有函数（单个或多个命令）异步运行。
 </td></tr><tr><td>
 
 **global_explorer_replacement**</td><td>
 全局</td><td>
 
-[资源管理器替换](/Manual/basic_concepts/explorer_replacement.zh.md) 模式通常是每个用户的设置，但如果您打开此选项，资源管理器替换模式设置将对机器的所有用户生效。这可以提高 Opus 拦截某些对资源管理器的调用的能力，但通常您会将其关闭。
+[资源管理器替代](/Manual/basic_concepts/explorer_replacement.zh.md)模式通常是每个用户的设置，但是如果您打开此选项，则资源管理器替代模式设置将对机器的所有用户都是全局的。这可能会提高Opus拦截某些对资源管理器调用的能力，但通常情况下您会将其关闭。
 </td></tr><tr><td>
 
 **mp3_custom_comments**</td><td>
 </td><td>
 
-MP3 ID3v2 标签用于注释并没有严格定义，并且不同的第三方工具经常使用自己的此标签表单。您可以使用此选项让 Opus 用指定的描述来写 COMM 标签，当使用 [元数据窗格](/Manual/basic_concepts/the_lister/metadata_pane.zh.md) 时，这可以使它与这些工具兼容。例如，MediaMonkey 将其 COMM 标签标记为 **Songs-DB_Custom1**，所以您应该将此字符串放入 **mp3_custom_comments** 值中，以便使 Opus MP3 注释与 MediaMonkey 兼容。如果您使用多个工具，您可以在每行添加多个注释描述，Opus 将为每个注释写一个单独的 COMM 标签。
+MP3 ID3v2标签用于注释没有严格的定义，而不同的第三方工具通常使用自己的此标签的格式。当使用[元数据面板](/Manual/basic_concepts/the_lister/metadata_pane.zh.md)时，您可以使用此选项使Opus使用指定的描述来撰写COMM标签，以便与这些工具兼容。例如，MediaMonkey将COMM标签标记为**Songs-DB_Custom1**，因此您将这个字符串放入**mp3_custom_comments**值中，以使Opus MP3注释与MediaMonkey兼容。如果您使用多个工具，可以添加多个注释描述，每行一个，并且Opus将为每个描述撰写一个单独的COMM标签。
+
+
+</td></tr><tr><td>
+
+**no_async_icons**</td><td>
+</td><td>
+
+不应该异步检索图标的文件类型。通常，Opus在后台线程上检索文件图标以获得更好的性能，但我们偶尔发现某些文件类型的图标无法在后台成功生成。多个文件扩展名应该用分号分隔。请注意，以下扩展名会自动阻止在后台提取图标： **.msg;.oft;.xnk**
+</td></tr><tr><td>
+
+**patch_edit_control_dpi**</td><td>
+</td><td>
+允许您禁用修复高DPI下垂直对齐的Edit控件补丁。如果补丁程序导致未来版本的Windows出现问题，则使用此项。
+</td></tr><tr><td>
+
+**patch_text_apis**</td><td>
+</td><td>
+
+将其设置为*True*（默认值），Opus将使用一些Windows文本渲染和测量API进行修补，旨在使其使用一致的字体字距。这应该使字符间距看起来更好和更一致。它还应该防止拉丁字符的字符串在从末尾添加或删除非拉丁字符时以不同的方式间距，这可能导致文本溢出其边界。但是，由于此设置修改了操作系统API（仅在dopus.exe中），它可能会导致在Opus中运行的第三方代码出现兼容性问题。如果您在Opus中看到文本渲染或布局问题，请查看关闭此项是否有帮助，并请通过Directory Opus技术支持论坛报告您的发现。
+</td></tr><tr><td>
+
+**regex_style**</td><td>
+</td><td>
+
+设置Opus使用的[正则表达式](/Manual/reference/wildcard_reference/regular_expression_syntax.zh.md)的样式。默认值为*TR1 ECMAScript*，但您可以更改此值以恢复旧版Opus支持的原始正则表达式样式。如果您有大量已保存的[重命名](/Manual/file_operations/renaming_files/advanced_rename/README.zh.md)预设由于某种原因不适用于新版本的正则表达式，您可能只想这样做。
+</td></tr><tr><td>
+
+**zip_large_file_support**</td><td>
+</td><td>
+
+启用对大型Zip文件提供支持。大型Zip文件支持单个项目和大于4 GB的档案，以及档案中超过65536个单独的项目。大型Zip支持在默认情况下启用，但如果您需要保持与旧版档案的兼容性，则可以关闭此选项。即使此选项关闭，Opus也会始终读取大型Zip文件 - 它仅仅控制Opus创建的档案类型。
+</td></tr></tbody>
+</table>
+
 <table>
 <thead><tr><th>
 
-分类：外观 </th><th>
+**类别：外观**</th><th>
 </th><th>
 
 </th></tr></thead><tbody><tr><td>
 选项</td><td>
 
-**是否全局**</td><td>
+** 全局？ **</td><td>
 描述
 </td></tr><tr><td>
 
 **collection_icon_default**</td><td>
 </td><td>
 
-不匹配任何其他类型的单独文件集合的自定义默认图标。
+对于不匹配任何其他类型的集合的单个文件集合，自定义默认图标。
 
-此设置会更改默认图标。也可以通过属性对话框更改特定集合的图标。
+此设置更改默认图标。您还可以通过其属性对话框更改特定集合的图标。
 
-你可以指定独立的 .ICO 文件的路径（如 `C:\MyIcon.ico`），也可以指定 .EXE 和 .DLL 文件中的图标，使用数字 ID 来选择特定的图标（如 `/system/imageres.dll,101`）。
+您可以指定独立的.ICO文件的路径（例如`C:\MyIcon.ico`），或使用数字ID指定.EXE和.DLL文件中的图标以选择特定图标（例如`/system/imageres.dll,101`）。
 </td></tr><tr><td>
 
 **collection_icon_find**</td><td>
 </td><td>
 
-与 **collection_icon_default** 类似，但具体针对为查找结果和搜索查询生成的集合。
+类似于**collection_icon_default**，但针对为查找结果和搜索查询生成的集合特定。
 </td></tr><tr><td>
 
 **collection_icon_flickr**</td><td>
 </td><td>
 
-与 **collection_icon_default** 类似，但具体针对为 Flickr 同步生成的集合。
+类似于**collection_icon_default**，但针对为Flickr同步生成的集合特定。
 </td></tr><tr><td>
 
 **collection_icon_marked**</td><td>
 </td><td>
 
-与 **collection_icon_default** 类似，但具体针对通过在查看器中标记图像生成的标记图片集合。
+类似于**collection_icon_default**，但针对通过在查看器中标记图像生成的标记图片集合特定。
 </td></tr><tr><td>
 
 **collections_icon**</td><td>
 </td><td>
 
-[文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md) 根文件夹的自定义图标。
+[文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)根文件夹的自定义图标。
 
-这只影响真正的“文件集合”根文件夹。上述其他设置涵盖了各种类型的单独集合。
+这仅影响实际的“文件集合”根文件夹。上面其他设置涵盖各种类型的单个集合。
 
-你可以指定独立的 .ICO 文件的路径（如 `C:\MyIcon.ico`），也可以指定 .EXE 和 .DLL 文件中的图标，使用数字 ID 来选择特定的图标（如 `/system/imageres.dll,101`）。
+您可以指定独立的.ICO文件的路径（例如`C:\MyIcon.ico`），或使用数字ID指定.EXE和.DLL文件中的图标以选择特定图标（例如`/system/imageres.dll,101`）。
 </td></tr><tr><td>
 
 **context_menu_icon_set**</td><td>
 </td><td>
 
-某些上下文菜单包含 Opus 自动生成的项，而且除了将图标集移动到列表顶部并影响 *所有* 工具栏和菜单图标之外，你没有机会更改其中使用的图标尺寸或样式。由于你可能希望在上下文菜单中使用比其他所有地方都更小的图标集，因此此设置允许你指定另一个集来代替普通集。Opus 会在生成上下文菜单项以添加到压缩包和从压缩包提取时使用此设置。请注意，这仅适用于在 Opus 内部显示菜单时；资源管理器中的类似菜单一开始不使用图标集。
+某些上下文菜单包含Opus自动生成的项目，在这些项目中，您没有机会更改图标的大小或样式，除非将图标集移动到列表顶部并影响*所有*工具栏和菜单图标。由于您可能希望在上下文菜单中使用比在其他任何地方都小的图标集，因此此设置允许您指定另一个集以代替正常集。Opus在生成用于在压缩包中添加和提取的上下文菜单项时将使用此设置。请注意，这仅适用于在Opus内显示菜单时；资源管理器中的类似菜单一开始不使用图标集。
 
-名称应与图标集的 XML “name”属性匹配，*而不是* “display_name”。例如，如果图标集定义为 `<iconset name="flat_small"> ... <display_name>Small Icon Set (Flat)</display_name>` 那么你应在设置中键入 “flat_small”，而不是 “Small Icon Set (Flat)”。
+名称应与图标集的XML“name”属性匹配，*不*匹配其“display_name”。例如，如果图标集使用`<iconset name="flat_small"> ... <display_name>Small Icon Set (Flat)</display_name>`定义，那么您应在该设置中键入“flat_small”，而不是“Small Icon Set (Flat)”。
 </td></tr><tr><td>
 
 **custom_network_folder_icons**</td><td>
 </td><td>
 
-当设置为 *True* 时，在网络驱动器上的位置字段和文件夹标签页中，可以显示单独的自定义文件夹图标。（在本地驱动器上以及文件列表本身中，系统始终支持自定义文件夹图标，但受 **[配置 / 文件夹](../folders/README.zh.md)** 下 **显示以下内容的常规图标...** 设置的约束。）
+如果设置为 *True*，则当位于网络驱动器上时，可以在位置字段和文件夹标签页中显示单独自定义的文件夹图标。（在本地驱动器上，以及在文件列表本身中，自定义文件夹图标始终受支持，受**[配置/文件夹](../folders/README.zh.md)**下的**显示通用图标...**设置的约束。）
 
-如果你有指向非常慢或无法访问的网络驱动器的文件夹标签页，那么打开此设置可能会导致性能下降，甚至暂时冻结。自定义文件夹图标通常通过文件夹的属性对话框进行配置，但 Windows 会隐藏网络文件夹的选项，这可能是出于性能原因，也可能是因为你需要确保你指定的图标路径对所有网络客户端都可以访问。你仍可以手动创建自定义图标元数据，或将本地自定义文件夹复制到网络驱动器。因此，在网络驱动器上拥有自定义文件夹图标是有可能的，但这种情况很少见，你只有在使用它们时才应打开此设置。
+如果您有指向非常慢或无法访问的网络驱动器的文件夹标签页，打开此项可能会导致速度变慢，甚至暂时冻结。自定义文件夹图标通常通过文件夹的“属性”对话框进行配置，但是Windows隐藏了网络文件夹的选项，这可能出于性能原因，或者是因为您需要确保指定的图标路径对所有网络客户端都可访问。您仍可以手动创建自定义图标元数据，或将本地自定义文件夹复制到网络驱动器。因此，在网络驱动器上拥有自定义文件夹图标是可能的，但这很少见，并且只有当您使用它们时才应打开此项。
 </td></tr><tr><td>
 
 **glass_status_bar**</td><td>
 </td><td>
 
-当设置为 *True* 时，使用 Windows“玻璃”效果绘制其背景的状态栏。这在 Windows 7 上看起来不错，但在较新版本的 Windows 上几乎没有意义。
+如果设置为 *True*，则使用Windows的“glass”效果绘制状态栏及其背景。这在Windows 7上看起来不错，但在更新的Windows版本中却毫无意义。
 
-除非在全系统范围内启用了玻璃（即，可以使用桌面窗口组成），并且在 **配置 / 显示 / 状态栏** 下打开了 **保持状态栏位于文件窗口底部**，否则此设置无效。
+除非在系统范围内启用glass（即启用桌面窗口合成），并且在**配置/显示/状态栏**下打开了**将状态栏保留在文件窗口的底部**，否则此设置无效。
 </td></tr><tr><td>
 
 **gloss_and_gradients**</td><td>
 </td><td>
 
-启用各种用户界面元素中的光泽和渐变效果。如果你更喜欢扁平、更无聊的外观，请将其关闭。
+启用各种用户界面元素中的光泽和渐变效果。如果您更喜欢更平坦、更单调的外观，请关闭此项。
 
-当设置为 *自动* 时，如果仍在 Windows 8 或更高版本上，则会选择一个平坦简单的外观，如果在 Windows 7 上，则会选择一个带有渐变的闪亮外观。
+如果设置为*自动*，则在Windows 8或更高版本上选择平坦简单的外观，在Windows 7上选择具有渐变的光泽外观。
+
+
+</td></tr><tr><td>
+
+**grid_lines_first_last**</td><td>
+</td><td>
+
+更改水平网格线在文件列表中的绘制方式。这主要是为了帮助在视觉上将文件列表列标题与它下面的文件和文件夹分开，因为有些Windows版本绘制标题时没有下边缘，并且背景颜色与它下面的所有内容相同。
+
+如果将其设置为**第一**或**两者**并带有实心网格线，则交替模式从第一个项目开始，而不是从第二个项目开始。如果将其设置为**第一**或**两者**并带有细网格线，则在第一个项目之前（就在列标题下面）绘制额外的网格线（但这仅在文件列表使用视觉样式时，并且行间距为0或1）。
+
+将此选项设置为**最后**或**两者**并带有细网格线，将在最后一个项目之后添加额外的网格线，而不是跳过。**最后**选项对实心网格线没有影响。
+
+在所有情况下，此设置对组标题下的项目没有影响，因为组标题已经有自己的线。
+</td></tr><tr><td>
+
+**no_contextmenu_fix**</td><td>
+</td><td>
+
+如果为[工具栏](../toolbars/toolbar_appearance.zh.md)选择“Office 2003”风格，Opus必须执行一些操作来使所有者绘制的第三方上下文菜单扩展看起来不错。如果您发现Opus的魔法还不够好，您可以使用此选项禁用它。
+</td></tr><tr><td>
+
+**progress_smoothing**</td><td>
+</td><td>
+在Vista及以上版本中平滑进度条更新。关闭以获得即时跳跃的无延迟进度条当更新时。
+</td></tr><tr><td>
+
+**resize_grips**</td><td>
+</td><td>
+默认情况下，为了提高外观（尤其是在带有内联状态栏的双水平模式下），文件窗口没有可见的调整手柄。如果您愿意，可以使用此选项重新打开手柄。
+</td></tr><tr><td>
+
+**thumb_48x48_icons**</td><td>
+</td><td>
+
+启用为缩略图和平铺使用48x48图标。这样做会有取舍：
+
+- 如果关闭此设置，则既没有256x256版本也没有32x32版本图标会显得很难看。
+- 如果开启此设置，既没有256x256版本也没有48x48版本图标会显得很难看。32x32图标比48x48图标常见得多，因此该设置默认关闭。
+
+（确切的图标大小因系统DPI设置而异。此处使用的尺寸适用于标准DPI。）
+
+每个图标可以包含其不同尺寸的不同版本。无论此设置如何，Opus始终首选具有它们的256x256高质量图标版本。对于没有256x256版本的图标，如果设置关闭，Opus会请求32x32版本；如果设置打开，Opus会请求48x48版本。
+
+当图标不包含任何请求的大小时，将选择其其他大小之一并缩放以适合。这是由Windows本身完成的，并且缩放不是高质量的，调整大小的图标变得模糊和混乱。Windows不会说出哪些尺寸的图标可以缩放，也不会指示图标何时必须缩放以适应请求的大小，因此结果的质量取决于请求的大小，并且某些图标会以任何方式显示得很差。
+
+（此选项会影响类似于.EXE文件的内容的图标。它不会影响实际的.ICO文件，因为Opus能够为它们生成缩略图而不会出现这些问题和妥协。）
+</td></tr><tr><td>
+
+**window_corners**</td><td>
+</td><td>
+
+允许您覆盖操作系统窗口角的默认样式。“自动”使用您的Windows版本的标准。您还可以选择正方形角和两种大小的圆角。
+
+它还会影响操作系统围绕活动窗口绘制的阴影强度。
+
+（仅在Windows 11或更高版本中可用。）
+</td></tr></tbody>
+</table>
+
 <table>
 <thead><tr><th>
 
@@ -414,83 +507,84 @@ MP3 ID3v2 标签用于注释并没有严格定义，并且不同的第三方工�
 **copy_allow_delegation**</td><td>
 </td><td>
 
-为 **True** 时，允许 Opus 将如何复制文件的详细信息委派给 Windows。
+如果**True**，允许Opus向Windows委派文件复制方式的详细信息。
 
-Windows 提供了一个用来复制文件的高级 API，该 API 以难以理解且未记录的方式进行优化，并且设备制造商倾向于根据该 API 来测试和优化自己的硬件和驱动程序。通常情况下，你无法在性能和兼容性方面超越此 API；在最好的情况下，你只能与之相等。
+Windows提供了一个非常高级别的文件复制API，它以深奥且未记录的方式进行优化，并且也是设备制造商倾向于针对其硬件和驱动程序进行测试和优化的API。对于性能和兼容性，您通常无法击败此API；充其量，您可以与其相等。
 
-Opus 还拥有自己的自定义文件复制代码，其工作级别稍低，并且至关重要的是，适用于并非简单文件到文件复制的情况。此自定义代码通常与高级 API 速度相同，但在某些情况下，它的速度较慢（例如，对于非常关注缓冲区大小或其他参数的特定设备或网络配置）。
+Opus还拥有自己的自定义文件复制代码，它在稍低级别的工作，并且至关重要的是，在并非简单文件到文件复制的情况下。此自定义代码通常与其最高级别的API速度相同，但有些情况下它会更慢（例如，对于对缓冲大小或其他参数高度敏感的特定设备或网络配置）。
 
-默认情况下，Opus 对普通的文件到文件复制使用高级 API。在无法使用该 API 的情况下，Opus 会自动回退到其自己的自定义代码。这些情况包括复制到压缩包或 FTP 站点或从中复制、在保存稀疏数据时复制以及拆分和合并文件。
+默认情况下，Opus对普通的文件到文件复制使用非常高级别的API。在无法使用该API的情况下，Opus会自动采用其自己的自定义代码。这些情况包括将内容复制到或从压缩包和FTP网站，在保留稀疏数据的情况下复制，以及拆分和加入文件。
 
-如果你将 **copy_allow_delegation** 设置为 **False**，则 Opus 将始终使用其自定义文件复制代码，即使在不需要的情况下也是如此。在某些罕见的情况下，如果 Windows 文件复制 API 出于某种原因较慢，或者你想要强制使用非缓冲 I/O，你可能需要这么做。一般来说，我们不建议你修改此设置。
+如果您将**copy_allow_delegation**设置为**False**，Opus将始终使用其自定义文件复制代码，即使在不需要使用的情况下也是如此。在某些罕见情况下，出于某种原因Windows文件复制API较慢，或者您希望强制使用非缓冲I/O时，您可能需要这样做。一般情况下，我们不建议您修改此设置。
 
-`Copy DELEGATE` 参数可用于针对各个按钮、热键等覆盖此设置。
+`Copy DELEGATE`参数可用于覆盖单个按钮、热键等的此设置。
 </td></tr><tr><td>
 
 **copy_buffer_size**</td><td>
 </td><td>
 
-自定义文件复制代码使用的缓冲区大小。单位可以是 KB、MB 或 GB。如果未指定单位，则默认为 KB。
+自定义文件复制代码使用的缓冲区大小。单位可以是KB、MB或GB。如果未指定单位，则默认为KB。
 
-这指定了 Opus 在使用其自己的自定义代码[复制文件](/Manual/file_operations/copying_moving_and_deleting_files/README.zh.md) 时一次读取或写入的数据量。虽然这无关紧要，但某些 USB 设备或网络似乎对复制缓冲区的尺寸很敏感。如果你发现复制的速度或可靠性远低于预期，请尝试增大或减小缓冲区大小。
+这指定了Opus在使用自己的自定义代码[复制文件](/Manual/file_operations/copying_moving_and_deleting_files/README.zh.md)时，一次读写的数据量。尽管这并不重要，但某些USB设备或网络似乎对复制缓冲区的大小很敏感。如果您发现复制的速度或可靠性远低于预期，请尝试增加或减少缓冲区大小。
 
-`Copy BUFSIZE` 命令可用于针对各个按钮、热键等覆盖此设置。
+`Copy BUFSIZE`命令可用于覆盖单个按钮、热键等的此设置。
 
-此缓冲区是除了文件系统、硬件等提供的任何缓冲之外的缓冲；它与由 **copy_nonbufferio_threshold** 设置控制的非缓冲 IO 模式无关。
+此缓冲区是对文件系统、硬件等提供的任何缓冲区的补充；它与由**copy_nonbufferio_threshold**设置控制的非缓冲IO模式无关。
 
-在 **copy_allow_delegation** 为 **True** 的通常情况下，**copy_buffer_size** 和 **copy_nonbufferio_threshold** 设置对普通的文件到文件复制没有影响，但仍然可以影响拆分/合并文件、从压缩包复制等特殊情况。
+在**copy_allow_delegation**为**True**的通常情况下，**copy_buffer_size**和**copy_nonbufferio_threshold**设置对正常的文件到文件复制没有影响，但仍会影响特殊情况，例如拆分/加入文件、从压缩包中复制等。
 </td></tr><tr><td>
 
 **copy_nonbufferio_threshold**</td><td>
 </td><td>
 
-文件大小阈值，高于此阈值时，将使用自定义文件复制代码以非缓冲模式执行到本地设备或从本地设备执行的复制。非缓冲模式绕过了 Windows 提供的文件系统缓冲区。单位可以是 KB、MB 或 GB。如果未指定单位，则默认为 MB。
+文件大小阈值，高于该阈值时，使用自定义文件复制代码进行的到或来自本地设备的复制将在非缓冲模式下执行。非缓冲模式绕过了Windows提供的文件系统缓冲区。单位可以是KB、MB或GB。如果未指定单位，则默认为MB。
 
-对于非常大的文件，以非缓冲模式复制可以提高内存效率、复制速度和 UI 响应能力。另一方面，对于较小的文件或某些设备，非缓冲模式可能会减慢速度。在极少数情况下，非缓冲模式可能根本不起作用（例如，如果你有错误报告其扇区大小的设备）。
-将值设为 0（零）以禁用非缓冲模式。出于兼容性原因，其默认情况下处于禁用状态。如果你希望启用它，我们建议 1 MB 作为良好的起始值。
+对于非常大的文件，以非缓冲模式复制可以提高内存效率、复制速度和UI响应速度。另一方面，非缓冲模式可能会减慢较小文件或某些设备的速度。在极少数情况下，非缓冲模式可能根本无法工作（例如，如果您有报告其扇区大小错误的设备）。
 
-`Copy NONBUFIO` 命令可用于覆盖单个按钮、热键等处的此设置。
+将值设置为0（零）以禁用非缓冲模式。出于兼容性原因，它在默认情况下被禁用。如果您希望启用它，我们建议1 MB是一个很好的起始值。
 
-在通常情况下，如果 **copy_allow_delegation** 为 **True**，则 **copy_buffer_size** 和 **copy_nonbufferio_threshold** 设置对普通文件到文件拷贝没有影响，但仍会影响特殊情况，例如拆分/合并文件、从压缩包中拷贝等。
+`Copy NONBUFIO`命令可用于覆盖单个按钮、热键等的此设置。
+
+在**copy_allow_delegation**为**True**的通常情况下，**copy_buffer_size**和**copy_nonbufferio_threshold**设置对正常的文件到文件复制没有影响，但仍会影响特殊情况，例如拆分/加入文件、从压缩包中复制等。
 </td></tr><tr><td>
 
 **dos_automap_unc_paths**</td><td>
 </td><td>
 
-在 [MS-DOS 批处理命令](/Manual/customize/creating_your_own_buttons/ms-dos_batch_commands.zh.md) 中自动创建 UNC 路径的驱动器映射。这使你能够通过 UNC 路径直接在网络驱动器上运行 DOS 批处理脚本。
+在[MS-DOS批处理命令](/Manual/customize/creating_your_own_buttons/ms-dos_batch_commands.zh.md)中为UNC路径自动创建驱动器号映射。这使您可以直接从UNC路径在网络驱动器上运行DOS批处理脚本。
 </td></tr><tr><td>
 
 **move_netshare_semantics**</td><td>
 </td><td>
 
-在移动文件夹时对 PGP Netshare 进行特殊处理。与文件相比，移动文件夹时 PGP Netshare 的行为有所不同 - 如果发现移动文件夹到受 Netshare 保护的位置会失败，请启用此选项。
+移动文件夹时的PGP Netshare特殊处理。与文件相比，当移动文件夹时，PGP Netshare的行为不同 - 如果您发现将文件夹移动到受Netshare保护的位置失败，请打开此选项。
 </td></tr><tr><td>
 
 **network_errors**</td><td>
 全局</td><td>
 
-指定指示网络身份验证错误的错误代码。某些网络文件系统在用户名/密码身份验证错误的情况下会返回未记录的错误代码 - 如果你发现尝试连接到网络驱动器时只得到一个错误对话框，你应当记录错误代码并将其添加到此选项。当 Opus 收到该错误代码时，它将把它视为一个身份验证故障，并提示你提供凭证来访问该资源。你可以使用分号将其分隔开来以指定多个错误代码（例如 **50;1003;1245**）。
+指定表示网络身份验证错误的错误代码。某些网络文件系统在用户名/密码身份验证错误的情况下返回未记录的错误代码 - 如果您发现尝试连接到网络驱动器时只会收到错误对话框，您应该注意错误代码并将其添加到此选项中。当Opus接收到该错误代码时，它将将其视为身份验证失败，并提示您输入凭据以访问资源。您可以通过分号分隔多个错误代码来指定它们（例如**50;1003;1245**）。
 </td></tr><tr><td>
 
 **no_copy_dir_dates**</td><td>
 </td><td>
-禁用文件夹时间戳的拷贝。在拷贝时仅保护文件的时间戳；作为一个拷贝操作的一部分创建的文件夹将有当前的时间和日期。
+禁用复制文件夹时间戳。仅在复制时保留文件的时间戳；作为复制操作的一部分创建的文件夹将具有当前时间和日期。
 </td></tr><tr><td>
 
 **remember_net_paths**</td><td>
 </td><td>
 
-Opus 通常记住在系统文件打开或保存对话框中使用的前一个路径（例如，当你使用 [配置备份或恢复](../../backing_up_and_restoring_preferences.zh.md) 功能时），但出于性能原因，它并不记住网络路径。如果你希望 Opus 也记住网络路径，请启用此选项。
+Opus通常记住在系统文件打开或保存对话框中使用的上一个路径（例如，当您使用[配置备份或还原](../../backing_up_and_restoring_preferences.zh.md)功能时），但出于性能原因，它不会记住网络路径。如果您希望Opus也记住网络路径，请打开此选项。
 </td></tr><tr><td>
 
 **size_on_disk_thorough**</td><td>
 </td><td>
 
-默认情况下处于关闭状态。如果启用，文件夹大小计算将显著变慢，但当使用特别的 NTFS 压缩模式时，Opus 将在“磁盘大小”列中显示更准确的信息。
+默认情况下关闭。如果打开，文件夹大小计算将显着变慢，但当使用晦涩的NTFS压缩模式时，Opus将在“磁盘大小”列中显示更准确的信息。
 
-这不会影响像 Zip 压缩包和其他非文件系统压缩方法的报告大小。同样，对于通过文件属性对话框可以开启的标准 NTFS 压缩模式，所报告的大小也不会受到影响。差异在于只能通过 Windows compact.exe 命令设置的特殊 NTFS 压缩模式，例如 /EXE:LZX。Windows 中的一个错误导致用这些模式压缩的文件被错误地报告为未压缩。没有办法知道这些压缩模式正在使用，报告这些模式的磁盘大小值的正确方法是在 *每个文件* 进行额外的查询。这个额外的查询非常慢，尤其是在网络驱动器上，并且在重新读取文件夹时，该数据不会被操作系统缓存。
+这不会影响诸如Zip压缩包和其他非文件系统压缩方法之类的内容报告的大小。类似地，对于标准NTFS压缩模式（例如您可以通过文件的属性对话框打开的模式）报告的大小也不会受到影响。区别在于只能通过Windows compact.exe命令设置的不寻常的NTFS压缩模式，例如/EXE:LZX。Windows中的一个bug意味着用这些模式压缩的文件被错误地报告为未压缩。没有办法知道这些压缩模式是否正在使用，正确报告其磁盘上的大小值的唯一方法是对*每个文件*执行附加查询。这个额外的查询速度非常慢，尤其是在网络驱动器上，并且在重新读取文件夹时，操作系统不会缓存数据。
 
-我们建议除非你确实需要更准确的信息，否则将此设置保留关闭状态。
+我们建议关闭此设置，除非您确实需要更准确的信息。
 </td></tr></tbody>
 </table>
 
@@ -509,35 +603,34 @@ Opus 通常记住在系统文件打开或保存对话框中使用的前一个路
 
 **ftp_copy_buffer_size**</td><td>
 </td><td>
-FTP 拷贝缓冲区大小（以字节为单位）。这定义了通过 FTP 传输文件时使用的缓冲区的大小的。你通常不需要更改此项。
+FTP复制缓冲区大小（以字节为单位）。这定义了通过FTP传输文件时使用的缓冲区大小。您通常不需要更改此设置。
 </td></tr><tr><td>
 
 **ftp_dblclk_cache_time**</td><td>
 </td><td>
-
-从 [FTP](/Manual/ftp/README.zh.md) 网站双击文件时的缓存时间（以分钟为单位）。当你在 FTP 网站上双击一个文件来打开它时，Opus 会下载该文件并将它保存到一个临时文件夹。如果你在指定的时间内再次双击同一个文件，它将使用已下载的文件来保存再次文件的下载。默认情况下，它被设为 0，这就意味着文件不会为了双击而自动缓存。
+从[FTP](/Manual/ftp/README.zh.md)站点双击文件进行缓存的时间（以分钟为单位）。当您双击一个文件在FTP站点上打开它时，Opus会下载该文件并将其保存在一个临时文件夹中。如果您在指定的时间内再次双击同一文件，那么已经下载的文件将被用来保存再次下载文件。默认情况下，将其设置为0，这意味着文件不会自动缓存以双击。
 </td></tr><tr><td>
 
 **ftp_do_not_cache**</td><td>
 </td><td>
 
-通常，[FTP](/Manual/ftp/README.zh.md) 系统会缓存远程网站的目录列表以提高性能。如果你希望在每次更改 FTP 网站的文件夹时强制刷新远程目录，请启用此选项。
+通常，[FTP](/Manual/ftp/README.zh.md)系统会缓存远程站点的目录列表以提高性能。如果您想强制在您每次在FTP站点上更改文件夹时刷新远程目录，请打开此选项。
 </td></tr><tr><td>
 
 **ftp_no_case_sensitive**</td><td>
 </td><td>
 
-FTP 网站通常是区分大小写的（例如，名为 *TEST.TXT* 的文件将与名为 *test.txt* 的文件不同）。设置此选项以禁用 FTP 站点的区分大小写。
+FTP站点通常区分大小写（例如，名为*TEST.TXT*的文件不同于名为*test.txt*的文件）。设置此选项以禁用FTP网站的大小写敏感性。
 </td></tr><tr><td>
 
 **ftp_no_pasv_change**</td><td>
 </td><td>
-如果 Opus 检测到作为被动 (PASV) FTP 连接结果指定的地址是一个不可路由的地址，它将尝试将此地址更正为该网站的可路由地址。如果你启用此选项，那么 Opus 将尝试使用指定的不可路由地址，这仅在 FTP 服务器与客户端机器位于同一网络上的情况下才成功。
+如果Opus检测到有非路由地址指定为被动（PASV）FTP连接的结果，它将尝试将其更正为该站点的路由地址。如果您打开此选项，那么Opus将尝试使用指定的非路由地址，这只有在FTP服务器与客户端计算机在同一网络上时才会成功。
 </td></tr><tr><td>
 
 **ftp_ssl_verbose**</td><td>
 </td><td>
-导致 FTP 日志在 SSL 连接时显示扩展输出。
+导致FTP日志在SSL连接期间显示扩展的输出。
 </td></tr></tbody>
 </table>
 
@@ -551,65 +644,63 @@ FTP 网站通常是区分大小写的（例如，名为 *TEST.TXT* 的文件将�
 选项</td><td>
 
 ** 全局？ **</td><td>
-描述
+Description
 </td></tr><tr><td>
 
 **amiga_icon_borders**</td><td>
 </td><td>
-在缩略图模式中显示 Amiga 图标周边的边框。
+在缩略图模式下在Amiga图标周围显示边框。
 </td></tr><tr><td>
 
 **amiga_icon_palette**</td><td>
 </td><td>
-在显示传统 Amiga 图标时使用的调色板。
+显示旧版Amiga图标时使用的调色板。
 </td></tr><tr><td>
 
 **clipboard_image_paste**</td><td>
 </td><td>
 
-如果你在你的剪贴板中有图像（例如通过 PrtScn 键），并粘贴到文件夹中，Opus 将保存剪贴板图像到一个文件中。此设置更改了将要使用的图像格式：JPG、PNG、BMP 或 GIF。
+如果您在剪贴板中有一个图像（例如通过PrtScn键）并粘贴到文件夹中，Opus会将剪贴板图像保存为一个文件。此设置更改了将使用的图像格式：JPG、PNG、BMP或GIF。
 
-你还可以设置你的 <kbd>Ctrl+V</kbd> 热键来运行 `Clipboard PASTE AS=ask`，当你在文件夹中粘贴图像时，使 Opus 提示你输入图像格式（和文件名）。在这种情况下，此设置决定了默认选择的格式。
+您还可以设置<kbd>Ctrl+V</kbd>热键运行`Clipboard PASTE AS=ask`，以便在您将图像粘贴到文件夹时让Opus提示您图像格式（和文件名）。在这种情况下，此设置确定默认选定的格式。
 </td></tr><tr><td>
 
 **clipboard_image_paste_dpi**</td><td>
 </td><td>
-当启用时，粘贴剪贴板图像数据到一个文件（通过在列表中按下 <kbd>Ctrl+V</kbd>）会自动缩放它以补偿系统 DPI。
+当打开，粘贴剪贴板图像数据到一个文件（通过按 <kbd>Ctrl+V</kbd> 在一个文件窗口）将自动缩放它以补偿系统DPI。
 </td></tr><tr><td>
 
 **psd_image_preference**</td><td>
 </td><td>
 
-Photoshop PSD 文件最多可以有三个嵌入图像：一个非常有损的压缩和没有不透明/α 数据的小型（164x164）缩略图；一个存储在无损格式中的全尺寸扁平预览图像，可以包括不透明度/α 数据；最后是 Photoshop 内部格式的完整分层图像数据。（分层数据不会被 Opus 解码，而且除了 Photoshop 本身之外，很少有其他东西会呈现它。）
-默认情况下，Opus 将小的缩略图图像用于缩略图，并将全尺寸预览图像用于查看器。此设置允许你覆盖此设置，以便在缩略图和查看器中使用一张图像或另外一张图像。
+Photoshop PSD文件最多可以有三个嵌入图像：一个带有有损压缩的不透明/alpha数据的小（164x164）缩略图；一个全尺寸、压缩的预览图像，存储在一个无损格式，可以包含不透明/alpha数据；最后是Photoshop内部格式的全层图像数据。（Opus不会解码分层数据，除了Photoshop本身之外，其他很少有东西能够渲染它。）
 
-如果你希望 Opus 显示大于 164x164 像素或有透明度/alpha 数据的 PSD 缩略图，请选择在查看器和缩略图中使用预览图像的选项。
 
-但是，某些 PSD 文件没有有效的预览图像，所以也有永远不使用预览图像并始终使用小缩略图（即使在查看器中）的选项。PSD 是否包含一个平面预览图像取决于它是如何从 Photoshop 中保存的。“最大化兼容性”或类似的选项应该开启，以便包含预览图像。在 Photoshop CC 2015.5.0 中，该选项位于配置/文件处理下方。在某些情况下，如果没有“真实”的预览图像，就会有一个由 Photoshop 所写的带有文本的黑白色占位符，告诉你没有预览图像。不幸的是，某些版本的 Photoshop 在某些情况下会写一个损坏的占位符图像。（数据格式良好，但它表示的图像不是。在任何一种情况下，Opus 都很难检测到是否有“真实”的预览图像，还是只是一个占位符，因为两者都是经过编码后存在于文件中的不同像素数据，该部分与真实预览图像完全相同。）如果你的工作流程无法更改并导致 PSD 文件缺失或损坏的预览图像，你可以告诉 Opus 始终使用小的缩略图，即使在查看器中也是如此，这样你至少可以大致了解每个文件的样子。
+默认情况下，Opus将缩略图用于小缩略图，并将全尺寸预览图像用于查看器。该设置允许您覆盖此设置，以便在缩略图和查看器中使用一个图像或另一个图像。
+
+如果您希望Opus显示大于164x164的PSD缩略图，或带有不透明度/alpha数据，请选择使用预览图像作为查看器和缩略图的选项。
+
+但是，一些PSD文件没有有效的预览图像，因此还有一个选项是永远不使用预览图像，即使在查看器中也是如此，始终使用小缩略图。PSD是否包含平面预览图像取决于它是如何从Photoshop中保存的。“最大化兼容性”或类似的选项应打开以包含预览图像。在Photoshop CC 2015.5.0中，该选项位于配置/文件处理”下。在某些情况下，如果没有“真实”预览图像，将会有一个由Photoshop编写的带有文本的黑白占位符，告诉您没有预览图像。不幸的是，某些版本的Photoshop在某些情况下会写入一个损坏的占位符图像。（数据格式良好，但它所代表的图像却不是。在任何一种情况下，对于Opus来说，很难检测到是否存在“真实”预览图像，或者仅仅是一个占位符，因为两者都只是被编码到与真实预览图像完全相同的文件部分中的不同的像素数据。）如果无法更改工作流程并导致PSD文件预览图像丢失或损坏，您可以告诉Opus始终使用小缩略图，即使在查看器中也是如此，这样您至少可以大致了解每个文件的样貌。
 </td></tr><tr><td>
 
 **tiff_assume_alpha**</td><td>
 </td><td>
-
-假设没有指定含义的 TIFF 图像中的第四个频道是（非倍增的）alpha。如果关闭此选项，则 32 位 TIFF 图像必须指定它包含一个有效的 alpha 通道，以便 Opus 将其视为这样。
+假设未指定其含义的文件中TIFF图像中的第4通道是（非乘）alpha。关闭此选项后，32位TIFF图像必须指定它包含一个有效的alpha通道，Opus才能将其视为有效。
 </td></tr><tr><td>
 
 **tiff_max_doc_metadata**</td><td>
 </td><td>
-
-Opus 将尝试从中提取文档元数据的 TIFF 图像的最大大小（以兆字节为单位）。这可以防止非常大的 TIFF 出现问题，例如那些由 Photoshop 保存的图像。
+Opus将尝试从中提取文档元数据的TIFF图像的最大大小（以兆字节为单位）。这可以防止出现非常大的TIFF图片，例如，由Photoshop保存的图片。
 </td></tr><tr><td>
 
 **use_color_management**</td><td>
 </td><td>
-
-在加载图像时使用颜色管理。如果启用，Opus 将检查图像文件是否包含颜色配置文件，如果包含，它将使用你指定的 ICC 文件（或默认的 sRGB 配置文件）来更准确地渲染图像。目前，仅用于 JPEG 和 PNG 图像。
+加载图像时使用色彩管理。如果启用，Opus将检查图像文件是否包含色彩配置文件，如果包含，它将使用您指定的ICC文件（或默认sRGB配置文件）来更准确地渲染图像。目前，这只用于JPEG和PNG图像。
 </td></tr><tr><td>
 
 **viewer_disable_internal**</td><td>
 </td><td>
-
-允许你禁用查看器和预览窗格中的内置图像格式。这不会影响查看器插件（它们已经可以直接禁用）；事实上，其目的是允许你使用插件和第三方组件覆盖内部查看器，而在它们无法自行完成的情况下（通常是不知道任何关于 Opus 的预览处理程序和 ActiveX 控件）。例如，你可能希望将 TIFF 查看器转移到可以处理多页 TIFF 的第三方 ActiveX 控件。该设置是一个字符串，用于列出你想禁用的图像类型。将其设置为 **tiff** 将禁用内部 TIFF 查看器。将其设置为 **JPG,PNG** 将禁用内部 JPG 和 PNG 查看器。
+允许您在查看器和预览窗格中禁用内置图像格式。不影响查看器插件（这些插件可以直接禁用）；事实上，目的是允许您使用插件和第三方组件覆盖内部查看器，而它们自己无法做到这一点（通常是预览处理程序和ActiveX控件，它们对Opus一无所知）。例如，您可能希望将TIFF查看器转移到处理多页TIFF的第三方ActiveX控件。该设置是一个字符串，列出您要禁用的图像类型。将它设置为**tiff**将禁用内部TIFF查看器。将其设置为**JPG,PNG**将禁用内部JPG和PNG查看器。
 </td></tr></tbody>
 </table>
 
@@ -629,100 +720,100 @@ Opus 将尝试从中提取文档元数据的 TIFF 图像的最大大小（以兆
 **custom_date_format**</td><td>
 </td><td>
 
-通常，Opus 会在显示日期（例如在文件窗口的日期列中）时使用由系统（或当前语言环境）定义的日期格式。此设置允许你覆盖它并指定你自己的自定义格式。
+Opus通常在显示日期（例如，在文件窗口的日期列中）时使用系统（或当前区域设置）定义的日期格式。此设置允许您覆盖它并指定您自己的自定义格式。
 
-请参阅 [日期和时间代码](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.zh.md) 页面，了解有关日期和时间格式的信息。
+有关日期和时间格式的信息，请参见[日期和时间代码](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.zh.md)页面。
 </td></tr><tr><td>
 
 **custom_date_format_long**</td><td>
 </td><td>
 
-类似于 **custom_date_format**，但用在使用长（更详细）日期格式的地方。许多地方没有使用长日期格式，因此如果你不确定，**custom_date_format** 更可能是你想要的。
+类似于**custom_date_format**，但用于使用较长（较详细）的日期格式的地方。在许多地方都不会使用较长的日期格式，因此如果不确定，**custom_date_format**可能是您想要的内容。
 </td></tr><tr><td>
 
 **custom_time_format**</td><td>
 </td><td>
 
-通常，Opus 会在显示时间（例如在文件窗口的日期/时间列中）时使用由系统（或当前语言环境）定义的时间格式。此设置允许你覆盖它并指定你自己的自定义格式。
+Opus通常在显示时间（例如，在文件窗口的日期/时间列中）时使用系统（或当前区域设置）定义的时间格式。此设置允许您覆盖它并指定您自己的自定义格式。
 
-请参阅 [日期和时间代码](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.zh.md) 页面，了解有关日期和时间格式的信息。
+有关日期和时间格式的信息，请参见[日期和时间代码](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.zh.md)页面。
 </td></tr><tr><td>
 
 **deffmt_cloud_availability**</td><td>
 </td><td>
 
-防止 **云存储** 文件夹格式自动添加 **可用性** 列。
+防止自动将**Availability**列添加到**Cloud Storage**文件夹格式中。
 
-当你保存新的默认文件夹格式并选择替换所有现有格式的选项时，一些格式会自动添加额外的列。在大多数情况下，这些列很重要，但是可以通过像这样的选项来覆盖某些列。
+当您保存新的默认文件夹格式并选择替换所有现有格式的选项时，一些格式会自动添加额外列。在大多数情况下，这些列很重要，但有些可以通过此类选项进行覆盖。
 </td></tr><tr><td>
 
 **deffmt_cloud_status**</td><td>
 </td><td>
 
-防止 **云存储** 文件夹格式自动添加 **状态**（**状态图标**）列。（请参阅上文中的 **deffmt_cloud_availability**。）
+防止自动将**Status** (**状态图标**) 列添加到**Cloud Storage**文件夹格式中。（参见上文所述的**deffmt_cloud_availability**。）
 </td></tr><tr><td>
 
 **desc_show_info**</td><td>
 </td><td>
 
-对于每个文件，**说明** 列通常会显示：
+对于每个文件，**Description**列通常显示：
 
-- 元数据摘要。（例如图片类型和尺寸、音频编解码器和比特率。）
-- 用户定义的描述（如果有）。（这可以通过默认工具栏上的 **属性、描述** 命令设置。某些文件类型也允许在它们的标签中设置用户定义的描述/注释。）
-- 目标路径（如果文件是快捷方式或链接）。此选项允许你从“说明”列中删除用户定义的描述和/或目标。例如，如果你已添加了单独的 **用户说明** 和 **目标** 列，那么你可能只想将元数据摘要保留在 **说明** 列中。
+- 元数据摘要。（例如，图片类型和尺寸、音频编解码器和比特率。）
+- 用户自定义描述（如果有）。（这可以通过默认工具栏上的**属性，说明**命令设置。某些文件类型还允许在其标签中自定义描述/注释。）
+- 目标路径（如果文件是快捷方式或链接）。此选项允许您从“说明”列中删除用户定义的说明和/或目标。例如，如果您添加了单独的**用户说明**和**目标**列，则您可能只想将元数据摘要保留在**说明**列中。
 </td></tr><tr><td>
 
 **display_folder_extensions**</td><td>
 </td><td>
 
-如果启用此选项，则文件夹将被视为具有扩展名（后缀），仅用于显示（即在 *名称* 和 *扩展名* 列中）。例如，名为“Hello.World”的文件夹将显示“World”在扩展名列中，而不是不显示任何内容。
+如果启用此选项，则文件夹将被视为具有扩展名（后缀）仅用于显示目的（即在*名称*和*扩展名*列中）。例如，名为“Hello.World”的文件夹将在扩展名列中显示“World”，而不是不显示任何内容。
 </td></tr><tr><td>
 
 **file_size_units**</td><td>
 </td><td>
 
-指定在显示文件大小和磁盘空间时要使用的单位。传统形式是使用二进制单位（基于 2^10）和“十进制”前缀（1 KB = 1024 字节）。你还可以选择使用十进制（基于 10^3）单位（1 KB = 1000 字节）或二进制单位（1 KiB = 1024 字节）。请参阅 [此维基百科页面](http://en.wikipedia.org/wiki/Binary_prefix) 了解更多信息。
+指定在显示文件大小和磁盘空间时要使用的单位。传统形式是使用二进制单位（2^10为基数）和“十进制”前缀（1 KB = 1024 字节）。您还可以选择使用十进制单位（10^3为基数）（1 KB = 1000 字节）或二进制单位（1 KiB = 1024 字节）。有关详细信息，请参见[此Wikipedia页面](http://en.wikipedia.org/wiki/Binary_prefix)。
 </td></tr><tr><td>
 
 **graphs_separate_files_dirs**</td><td>
 </td><td>
-
-出现在文件列表中的条形图（相对大小、相对年龄）是针对文件和文件夹分别计算的。如果你关闭此选项，它们将针对所有项目进行计算。
+在文件列表中显示的条形图（相对大小、相对年龄）分别计算文件和文件夹。如果您关闭此选项，它们将计算所有项目。
 </td></tr><tr><td>
 
 **group_column_maxwidth**</td><td>
 </td><td>
-指定**组**列的最大宽度。当文件列表列设置为自动调整大小时，此选项可防止**组**列增长超过指定的像素数。
+
+指定*组*列的最大宽度。当文件列表列被设置为自动大小时，此选项可以防止*组*列增长超过指定像素数。
 </td></tr><tr><td>
 
 **image_res_units**</td><td>
 </td><td>
 
-用于与图像分辨率相关的列（**分辨率（X)），分辨率（Y）**）。如果未设置，则每个图像文件本身都会指定单位，因此您可能在任何一个目录中都会出现英寸和厘米的混合 - 设置此选项将覆盖图像并始终显示一致的单位。
+用于与图像分辨率相关的列（*分辨率（X），分辨率（Y）*）的单位。如果不设置，则每个图像文件本身指定单位，因此在任何一个目录中都可以混合使用英寸和厘米 - 设置此选项将覆盖图像并始终显示一致的单位。
 </td></tr><tr><td>
 
 **image_size_units**</td><td>
 </td><td>
 
-用于与图像大小相关的列（**物理宽度，物理高度，物理大小**）。如果未设置，则每个图像文件本身都会指定单位，因此您可能在任何一个目录中都会出现英寸和厘米的混合 - 设置此选项将覆盖图像并始终显示一致的单位。
+用于与图像大小相关的列（*物理宽度，物理高度，物理大小*）的单位。如果不设置，则每个图像文件本身指定单位，因此在任何一个目录中都可以混合使用英寸和厘米 - 设置此选项将覆盖图像并始终显示一致的单位。
 </td></tr><tr><td>
 
 **multipart_extensions**</td><td>
 </td><td>
 
-“多部分文件扩展名”是由多个部分组成的文件扩展名，这些部分由点分隔。例如，在 Unix 世界中，**.tar.gz** 文件非常常见。在许多情况下（重命名、排序等），将整个字符串视为文件扩展名，而不仅仅是 Windows 中的标准**gz**，这很有意义。Opus 会对多种档案格式自动执行此操作，并且**multipart_extensions** 选项也允许您添加您自己的自定义扩展名。每行输入一个扩展名。
+“多部分文件扩展名”是一种由多个部分组成的文件扩展名，这些部分由点分隔。例如，在Unix世界中**.tar.gz**文件非常普遍。在许多情况下（重命名、排序等），将此整个字符串视为文件扩展名更有意义，而不仅仅是**.gz**，就像Windows上的标准一样。Opus会自动执行此操作以进行多种压缩包格式，而**multipart_extensions**选项还允许您添加您自己的自定义扩展名。每行输入一个扩展名。
 </td></tr><tr><td>
 
 **name_group_high_pri_chars**</td><td>
 </td><td>
 
-当按文件名[分组](/Manual/basic_concepts/sorting_and_grouping/README.zh.md) 文件列表时，以这些字符开头的文件将被放入列表顶部的“高优先级”组中。通常，以非字母字符或数字开头的文件将被放置在*未指定*组中，但是您可以使用此选项，例如，将以 **!** 或 **\#** 开头的文件放在一个单独的组中。
+按文件名[分组](/Manual/basic_concepts/sorting_and_grouping/README.zh.md)文件列表时，以这些字符开头的文件将被放置在列表顶部的“高优先级”组中。通常，以非字母字符或数字开头的文件将被放置在*未指定*组中，但您可以使用此选项（例如）将以**！**或**\#**开头的文件放置在单独的组中。
 </td></tr><tr><td>
 
 **show_sharing_overlays**</td><td>
 </td><td>
 
-Windows 7 删除了共享文件夹的图标覆盖（![](/Manual/images/media/sharing_overlay.png)），但许多人喜欢此功能，所以 Opus 替换了自己的功能。如果您不想看到这些覆盖层，请关闭此选项。如果通过 [文件列表列/图标](/Manual/preferences/preferences_categories/file_display_columns/icons.zh.md) 选项页面中*显示快捷方式箭头和其他图标覆盖*选项完全关闭覆盖层，则此选项将不起作用。
+Windows 7去掉了共享文件夹的图标覆盖（![](/Manual/images/media/sharing_overlay.png)），但很多人喜欢这项功能，所以Opus用自己的功能代替了它。如果您不想看到这些覆盖，请关闭此选项。如果通过[文件列表列/图标](/Manual/preferences/preferences_categories/file_display_columns/icons.zh.md)配置页面上的*显示快捷方式箭头和其他图标覆盖*选项完全关闭了覆盖，此选项将不起作用。
 </td></tr></tbody>
 </table>
 
@@ -736,63 +827,60 @@ Windows 7 删除了共享文件夹的图标覆盖（![](/Manual/images/media/sha
 选项</td><td>
 
 ** 全局？ **</td><td>
-说明
+描述
 </td></tr><tr><td>
 
 **context_menu_max_files**</td><td>
 </td><td>
 
-由于为大量文件生成上下文菜单可能需要花费 काफी时间，因此当您右键单击选定的大于一定数量的文件时，Opus 会显示确认消息。该限制默认为 1000，但您可以更改此限制，也可以将其设置为 **0** 以完全不进行确认。
+由于为大量文件生成上下文菜单可能需要相当长的时间，因此当您右键单击时选择了超过定义数量的文件时，Opus会显示确认消息。限制默认设置为1000，但您可以更改此设置或将其设置为**0**，以便完全不确认。
 </td></tr><tr><td>
 
 **everything_max_results**</td><td>
 </td><td>
-设置 Everything 搜索可以返回的搜索结果数量限制。
+设置Everything搜索可以返回的搜索结果数量限制。
 </td></tr><tr><td>
 
 **long_operation_notify_time**</td><td>
 </td><td>
-如果 UI 线程中的操作花费的时间超过指定的时间，Opus 将显示一个通知对话框，让您取消操作。
+如果阻止UI线程的操作花费的时间超过指定时间，Opus将显示一个通知对话框，允许您取消该操作。
 </td></tr><tr><td>
 
 **max_folder_thumb_time**</td><td>
 </td><td>
-指定 Opus 在为文件夹生成缩略图时花费的最大时间（以毫秒为单位）。
+指定Opus生成文件夹缩略图时花费的最大时间（以毫秒为单位）。
 </td></tr><tr><td>
 
 **max_md5_file_size**</td><td>
 </td><td>
-
-指定 Opus 在文件窗口中显示其中一个校验和列时将计算其哈希的最大文件大小（以千字节为单位）。如果文件大于此大小，则仍可以通过 `GetSizes HASH` 命令手动生成其校验和。
+指定文件列表中显示校验和列之一时Opus计算其散列的最大文件大小（以千字节为单位）。如果文件大于此大小，则仍可以使用`GetSizes HASH`命令手动生成其校验和。
 
 **特殊值：**
 
-- **0** - 忽略文件大小，始终自动计算文件哈希。
-- **1** - 忽略文件大小，从不自动计算文件哈希。
+- **0** - 忽略文件大小并始终自动计算文件哈希。
+- **1** - 忽略文件大小，切勿自动计算文件哈希。
 
-（此设置的名称具有历史意义，它适用于所有哈希 - 不仅限于 MD5。）
+（此设置的名称具有历史意义，它适用于所有哈希 - 不仅仅是MD5。）
 </td></tr><tr><td>
 
 **max_thumbnail_mem_size**</td><td>
 </td><td>
-每个文件列表的内存中缩略图的最大内存（以兆字节为单位）。Opus 将丢弃超出视图的缩略图，以将每个文件列表的缩略图的内存使用率保持在指定的大小以下。如果设置为 0，则没有限制。
+每个文件列表的内存中缩略图的最大内存（以兆字节为单位）。Opus将丢弃视外缩略图，以将每个文件列表的缩略图的内存使用量保持在指定大小以下。如果设置为0，则没有限制。
 </td></tr><tr><td>
 
 **max_thumbnail_size**</td><td>
 </td><td>
-
-Opus 将生成的缩略图的最大像素大小（宽度和高度）。较大的缩略图需要更多内存。这控制了可在 [缩略图](../file_display_modes/thumbnails_mode/README.zh.md) 页面的“选项”中选择的最大尺寸缩略图，还通过 [缩略图大小](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/field_buttons/README.zh.md) 滑块控制。
+Opus生成缩略图的最大像素大小（宽度和高度）。较大的缩略图需要更多内存。这控制了可以在配置中的[缩略图](../file_display_modes/thumbnails_mode/README.zh.md)页面上选择的最大大小缩略图，还可以通过[缩略图大小](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/field_buttons/README.zh.md)滑块。
 </td></tr><tr><td>
 
 **suggestion_popup_lines**</td><td>
 </td><td>
-配置弹出式建议列表中一次显示的行数。
+配置弹出式建议列表中一次显示多少行。
 </td></tr><tr><td>
 
 **zip_dblclk_cache_time**</td><td>
 </td><td>
-
-从 ZIP 文件中双击文件并缓存的时间（以分钟为单位）。当您双击文件以从 ZIP 文件中将其打开时，Opus 会提取文件（以及可能的是其他文件，视 [压缩包选项](../zip_and_other_archives/archive_options.zh.md) 选项页面中的自动提取选项而定），并将其保存到临时文件夹中。如果您在指定时间内再次双击同一文件，则已提取的文件将用于再次提取文件。默认情况下，此设置设置为 0，这意味着不会自动缓存文件以进行双击。
+从ZIP文件内双击文件的缓存时间（以分钟为单位）。当您双击一个文件从一个ZIP文件中打开它时，Opus会提取该文件（并且可能还有其他文件，这取决于[压缩包选项](../zip_and_other_archives/archive_options.zh.md)配置页面上的自动提取选项），并将其保存到一个临时文件夹。如果您在指定的时间内再次双击同一文件，那么已经提取的文件将被用来保存再次提取的文件。默认情况下，它设置为0，这意味着不会自动缓存文件以双击。
 </td></tr></tbody>
 </table>
 
@@ -806,147 +894,136 @@ Opus 将生成的缩略图的最大像素大小（宽度和高度）。较大的
 选项</td><td>
 
 ** 全局？ **</td><td>
-说明
+描述
 </td></tr><tr><td>
 
 **clipboard_change_delay**</td><td>
 </td><td>
-处理剪贴板更改事件前的延迟（以毫秒为单位）。如果 Opus 正在运行时，某些软件（例如 Microsoft Office）在修改剪贴板时遇到问题，您可能需要增加这个延迟。
+处理剪贴板更改事件之前的延迟（以毫秒为单位）。如果您发现某些软件（例如Microsoft Office）在Opus运行时修改剪贴板时有问题，您可能需要增加此设置。
 </td></tr><tr><td>
 
 **collection_change_delay**</td><td>
 </td><td>
-
-处理 [文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md) 中外部删除/重命名操作前的延迟（以毫秒为单位）。如果您发现将文件保存在其他程序（例如 Word）中编辑时，它们会从文件集合中消失，则您可能需要增加这个延迟。
+在[文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)中处理外部删除/重命名操作之前的延迟（以毫秒为单位）。如果您发现文件在其他程序（例如Word）中编辑时从文件集合中消失，您可能需要增加此设置。
 </td></tr><tr><td>
 
 **context_menu_debug**</td><td>
 </td><td>
-输出上下文菜单扩展的调试信息。有关调试上下文菜单问题的更多信息，请参阅[常见问题解答](https://resource.dopus.com/t/crash-exit-or-high-cpu-when-right-clicking-certain-files/1335)。Directory Opus Light 的用户可以将注册表值 **HKEY_CURRENT_USER\SOFTWARE\GPSoftware\Directory Opus\ContextMenuDebug** (DWORD) = 1 设置为此选项的替代方案。
+输出上下文菜单扩展的调试信息。有关调试上下文菜单问题的更多信息，请参见[常见问题解答](https://resource.dopus.com/t/crash-exit-or-high-cpu-when-right-clicking-certain-files/1335)。Directory Opus Light的用户可以设置注册表值**HKEY_CURRENT_USER\SOFTWARE\GPSoftware\Directory Opus\ContextMenuDebug** (DWORD) = 1作为此选项的替代方案。
 </td></tr><tr><td>
 
 **crash_debug_button**</td><td>
 </td><td>
-打开后，在 Opus 崩溃对话框中添加一个“调试”按钮，允许您调用常规 Windows 崩溃行为。如果安装了即时调试器，则这将允许您在其当前状态下调试该进程。此选项仅在您是正在开发插件或 Shell 扩展的开发人员时才应打开；不太可能对其他人有用。
+当打开时，会在Opus崩溃对话框中添加一个“调试”按钮，允许您调用正常的Windows崩溃行为。如果安装了即时调试器，这将允许您在当前状态下调试进程。此选项仅在您是正在开发插件或 Shell 扩展的开发人员时应打开；它不太可能对其他任何人有用。
+
+
 </td></tr><tr><td>
 
 **crash_handler**</td><td>
+</td><td>
 
+Opus包括一个自定义崩溃处理程序，旨在提供有关崩溃的信息，GP Software可以使用这些信息来追踪原因。它保存了进程内存部分的日志（“转储”），您可以使用帮助菜单中的内置崩溃提交工具自动上传这些日志。崩溃处理程序部分由一个单独的进程（dopusrt.exe）管理，Opus自动启动此进程（并且如果它被终止，它将自动重新启动）。
 
-Opus 包含一个自定义崩溃处理程序，旨在提供有关崩溃的信息，以便 GP Software 可以使用这些信息来追踪原因。它会保存进程内存部分的日志（“转储”），并且你可以使用帮助菜单中的内置的崩溃提交工具将这些信息自动上传。崩溃处理程序部分由一个单独的进程（dopusrt.exe）进行管理，Opus 会自动启动该进程（并且如果该进程终止，则会自动重启该进程）。
-
-如果你由于某些原因不希望使用崩溃处理程序（例如，如果该程序本身导致了问题），请将此标志设置为 **False**。
+如果您出于某种原因不想使用崩溃处理程序（例如，如果它自己导致了问题），请将此标志设置为**False**。
 </td></tr><tr><td>
 
 **crash_log_memory**</td><td>
-
-
-当启用此设置时，自动生成的崩溃日志（也称为“崩溃转储”）将包含进程中的所有内存。当诊断问题时，这可能会更有用，但也会显著增加文件大小以及包含私有数据的可能性。除非技术支持要求你这样做，否则不应该启用此设置。
+</td><td>
+当打开时，自动生成的崩溃日志（也称为“崩溃转储”）将包括进程中的所有内存。当诊断问题时，这可以使它们更有用，但也大大增加了它们的文件大小和包含私有数据的可能性。除非技术支持要求，否则您不应打开此设置。
 </td></tr><tr><td>
 
 **debug_icon_data**</td><td>
-
-
-通常情况下，你不应该修改此设置。技术支持人员可能会要求你启用此设置，以帮助诊断第三方组件生成的图标存在的问题。
+</td><td>
+您通常不应该修改此设置。技术支持可能要求您启用它以帮助诊断由第三方组件生成的图标的问题。
 </td></tr><tr><td>
 
 **mixed_dpi_mitigations**</td><td>
+</td><td>
 
+Windows中有大量的错误是由使用具有不同DPI的多个显示器触发（不仅仅是高DPI显示器，而是只有一个屏幕且它们未全部设置为相同的缩放系数）。其中一些Windows错误也可以通过更改DPI而不是重新启动来触发。
 
-Windows 有大量错误，这些错误是由使用具有不同 DPI 的多个显示器触发的（不仅是高 DPI 显示器，还有多个屏幕且未将所有屏幕设置为相同缩放比例时）。使用某些 Windows 错误还可能通过更改 DPI 并在不重启的情况下触发。
+**mixed_dpi_mitigations**设置控制Opus用于尝试使Windows在使用多DPI显示器时正常运行的某些解决方法。不幸的是，这些缓解措施本身可能会在某些计算机上引起问题，而解决这些问题则在其他计算机上引起问题。如果关闭缓解措施，则Windows错误的主要症状是弹出菜单和工具提示在错误的位置打开，并且非常大或小。当缓解措施打开时，性能会受到很小的影响，并且如果出现问题，当弹出菜单或工具提示打开时屏幕闪烁的可能性，或其他意外的视觉故障。
 
-**mixed_dpi_mitigations** 设置控制 Opus 用于尝试使 Windows 在使用具有多个 DPI 的显示器时正常运行的某些权宜措施。不幸的是，这些权宜措施在解决某些电脑上的问题时可能会导致其他问题。如果关闭了这些权宜措施，则 Windows 错误的主要症状是弹出菜单和工具提示在错误的地方打开，并且非常大或小。当启用这些权宜措施时，会造成轻微的性能损失，如果出现问题，则弹出菜单或工具提示打开或其他意外视觉故障时，屏幕闪烁。
+当设置为*自动*时，Opus将检测系统是否处于混合DPI模式，并在处于此模式时打开缓解措施，同时在不处于此模式时避免这些缓解措施。
 
-当设置为 *Automatic* 时，Opus 会检测系统是否处于混合 DPI 模式，并在处于该模式时启用权宜措施，而在不处于该模式时避免它们。
-
-此设置仅在 Windows 8.1 及更高版本中可见；更早的操作系统版本不支持具有不同 DPI 的多个显示器。
+此设置仅在Windows 8.1及更高版本中可见；较早的操作系统版本不支持具有不同DPI的多个显示器。
 </td></tr><tr><td>
 
 **mtp_enable**</td><td>
-
-
-此选项可用于禁用对 MTP（便携式）设备的内部支持。当关闭此选项时，将通过承载的 Windows资源管理器视图访问设备。
+</td><td>
+此选项可用于禁用对MTP（便携式）设备的内部支持。关闭后，将通过托管的Windows资源管理器视图访问设备。
 </td></tr><tr><td>
 
 **no_external_change_notify**</td><td>
-
-
-不要监控外部文件更改。这使你可以禁用检测在 Opus 外部发生的更改 - Opus 本身执行的文件操作将被注意到并在文件窗口中反映出来。
+</td><td>
+不要监视外部文件更改。这使您可以禁用对Opus外部发生的文件更改的检测 - 只有Opus本身执行的文件操作才能被注意到并在文件窗口中反映出来。
 </td></tr><tr><td>
 
 **notify_debug**</td><td>
+</td><td>
+输出文件通知的调试信息。如果您在Opus无法注意到发生在Opus之外的文件更改时遇到问题，技术支持可能会要求您打开此开关以收集调试信息。
 
+打开此选项会降低性能。除非您正在调查问题，否则请不要打开它，并在完成后将其关闭。
 
-为文件通知输出调试信息。如果你在处理 Opus 没有注意到在 Opus 之外发生的更改的问题时，技术支持人员可能会要求你启用此设置以收集调试信息。
-
-启用此选项将降低性能。除非在调查问题时，否则不要启用此设置，并在完成后将其关闭。
-
-请参阅 [常见问题](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786) 了解更多信息。
+有关详细信息，请参见[常见问题解答](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786)。
 </td></tr><tr><td>
 
 **notify_debug_exclude**</td><td>
-
-
-正则表达式按路径过滤 **notify_debug** 输出。如果定义了此正则表达式，则只有路径（或子字符串）与正则表达式匹配时才会报告该路径。
+</td><td>
+按路径过滤**notify_debug**输出的正则表达式。如果定义了此正则表达式，则仅当路径（或其子字符串）与正则表达式匹配时才会报告该路径。
 </td></tr><tr><td>
 
 **notify_debug_include**</td><td>
-
-
-正则表达式按路径过滤 **notify_debug** 输出。如果定义了此正则表达式，则只有路径（或子字符串）与正则表达式不匹配时才会报告该路径。
+</td><td>
+按路径过滤**notify_debug**输出的正则表达式。如果定义了此正则表达式，则仅当路径（或其子字符串）与正则表达式不匹配时才会报告该路径。
 </td></tr><tr><td>
 
 **notify_max_time**</td><td>
 全局</td><td>
 
-每次文件列表在考虑其他输入和事件之前花费处理来自文件系统更改通知的最高时间量（以毫秒为单位）。
+每个文件列表用于处理来自文件系统更改通知的最大时间（以毫秒为单位），然后考虑其他输入和事件。
 
-默认为 50 毫秒。在极少数情况下，如果事件生成速度快于消耗速度，则可能需要将其从默认值升高。你还可以指定 0（零）来无限期地处理更改事件，尽管你可能只想将其作为测试执行，而不是作为永久设置。如果将其设置为零或设置得太高，则当生成大量文件系统事件时，文件列表可能不太能对用户输入做出响应。
+默认为50毫秒。在极少数情况下，如果您生成事件的速度快于使用它们的速度，您可能需要将其从默认值提高。您还可以指定0（零）无限期地处理更改事件，尽管您可能只想将这样做作为测试，而不是永久设置。如果将其设置为零或设置得太高，则当生成大量文件系统事件时，文件列表可能对用户输入的响应较差。
 
-这是一个全局设置。如果你为一台机器上的一个用户更改它，那么它将影响所有其他用户，这很可能是必需的。在多用户系统上，如果设置由一个用户更改，则其他人将看不到更改，直到他们重新启动 Opus。
+这是一个全局设置。如果您为计算机上的一个用户更改它，它会影响所有其他用户，正如很可能所需要的那样。在多用户系统上，如果一个用户更改了此设置，其他人将看不到此更改，直到他们重新启动Opus。
 </td></tr><tr><td>
 
 **notify_min_items**</td><td>
 全局</td><td>
 
-在检查 **notify_max_time** 时间限制之前要处理的最小事件数。请参见上面 **notify_max_time** 的描述，了解你可能希望提高此设置的情况，以及该设置对多个用户如何起作用。
+在检查**notify_max_time**时间限制之前处理的最小事件数。有关您可能希望提高此设置以及此设置如何对多个用户起作用的情况，请参阅上文中的**notify_max_time**描述。
 </td></tr><tr><td>
 
 **script_output_level**</td><td>
+</td><td>
+允许您调整在*脚本日志*中显示的诊断输出类型（*[实用程序面板](/Manual/basic_concepts/the_lister/utility_panel.zh.md)/其他日志*）。
 
-
-可让你调整 *脚本日志* (*[实用程序面板](/Manual/basic_concepts/the_lister/utility_panel.zh.md) / 其他日志*) 中显示的诊断输出类型。
-
-这会影响来自 Opus 本身和插件 DLL 的诊断。始终会显示从调用 **DOpus.Output** 方法的脚本发送到日志的输出。
+这会影响来自Opus本身和插件DLL的诊断。从调用**DOpus.Output**方法的脚本发送到日志的输出始终显示。
 </td></tr><tr><td>
 
 **script_output_throttle**</td><td>
+</td><td>
+打开时，在*脚本日志*（*[实用程序面板](/Manual/basic_concepts/the_lister/utility_panel.zh.md)/其他日志*）中显示的诊断输出将抑制重复太频繁的相同消息。
 
+如果某诊断消息触发得太频繁，则通常应将其保留为打开状态，以防止性能问题。如果您正在使用插件DLL并且需要记录重复事件而不丢失任何事件，则将其关闭将很有用。
 
-当启用时，*脚本日志* (*[实用程序面板](/Manual/basic_concepts/the_lister/utility_panel.zh.md) / 其他日志*) 中显示的诊断输出将抑制重复得太频繁的相同消息。
-
-如果诊断消息被触发得太频繁，则通常应该将其保留为启用状态以防止性能问题。如果你正在处理插件 DLL，并且需要记录重复事件而没有任何事件被丢弃，则关闭它可能会很有用。
-
-这会影响来自 Opus 本身和插件 DLL 的诊断。始终会显示从调用 **DOpus.Output** 方法的脚本发送到日志的输出。
+这会影响来自Opus本身和插件DLL的诊断。从调用**DOpus.Output**方法的脚本发送到日志的输出始终显示。
 </td></tr><tr><td>
 
 **shellchange_debug**</td><td>
-
-
-输出 Shell 文件通知的调试信息。如果你在处理 Opus 没有注意到在 Opus 之外发生的更改的问题时，技术支持人员可能会要求你启用此设置以收集调试信息。请参阅 [常见问题](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786) 了解更多信息。
+</td><td>
+输出shell文件通知的调试信息。如果您在Opus无法注意到发生在Opus之外的文件或文件夹更改时遇到问题，技术支持可能会要求您打开此开关以收集调试信息。有关详细信息，请参见[常见问题解答](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786)。
 </td></tr><tr><td>
 
 **sync_debug**</td><td>
+</td><td>
+通常应将其关闭，但可能会要求您将其打开以调试[同步工具](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.zh.md)做出的决定。如果您在此选项处于打开状态时使用“同步”工具，则桌面上将创建一个包含调试信息的文件。
 
 
-通常应该将其保留为关闭状态，但你可能会被要求将其启用以调试 [同步工具](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.zh.md) 做出的决策。如果你在启用此选项时使用同步工具，则将在桌面上创建一个包含调试信息的
-**缩略图调试**
+</td></tr><tr><td>
 
-<td>
-
-</td>
-
-<td>
-
-输出缩略图生成的调试信息。技术支持可能会让你打开此开关来收集调试信息。这会降低性能，因此在不需要时应该将其关闭。
+**thumbnail_debug**</td><td>
+</td><td>
+输出用于生成缩略图的调试信息。技术支持可能会要求您打开此开关以收集调试信息。将降低性能，并且在不必要时应将其关闭。
 </td></tr></tbody>
+</table>
