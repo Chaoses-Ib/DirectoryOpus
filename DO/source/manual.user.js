@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Directory Opus Chinese Manual
 // @name:zh-CN  Directory Opus 中文手册
-// @version     0.1.1
+// @version     0.1.2
 // @description 在打开 Directory Opus 的官方英文手册（F1）时自动跳转到中文手册的相应页面。
 // @author      Chaoses-Ib
 // @homepageURL https://github.com/Chaoses-Ib/DirectoryOpus
@@ -10,7 +10,7 @@
 // @icon        https://github.com/Chaoses-Ib/DirectoryOpus/blob/54399fa4994ca40695a196eeef8fc906754fc907/DO/images/README/Logo-128.png?raw=true
 // @license     MIT
 // @namespace   https://github.com/Chaoses-Ib
-// @match       *://docs.dopus.com/doku.php
+// @match       *://docs.dopus.com/doku.php?id=*
 // @run-at      document-start
 // @grant       none
 // ==/UserScript==
