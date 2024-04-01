@@ -11,7 +11,7 @@
 ### 压缩设置
 
 - **压缩级别**: 当添加文件到 zip 文件时，这让您可以设置默认的压缩级别。如果使用 [添加到压缩包文件](/Manual/file_operations/creating_archives/README.zh.md) 对话框，您可以在此时覆盖它。有六个压缩级别可供选择，从 *存储*（根本不进行压缩，因此是最快的）到 *最佳*（产生最高级别的压缩，但压缩包时间更长）。
-- **增强型压缩级别**: 此选项激活了一个 [增强型压缩算法](http://en.wikipedia.org/wiki/DEFLATE#Deflate64.2FEnhanced_Deflate)，该算法可能与某些 zip 工具向后不兼容 - 如果您要向其他人发送 zip 文件，您应该确保他们可以解压此类压缩包文件。
+- **增强型压缩级别**: 此选项激活了一个 [增强型压缩算法](http://en.wikipedia.org/wiki/DEFLATE#Deflate64.2FEnhanced_Deflate)，该算法可能与某些 zip 工具向后不兼容 - 如果您要向其它人发送 zip 文件，您应该确保他们可以解压此类压缩包文件。
 
 ### 文件扩展名
 

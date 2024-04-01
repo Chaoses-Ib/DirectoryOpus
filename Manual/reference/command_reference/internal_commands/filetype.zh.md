@@ -62,7 +62,7 @@ CONTEXTOPTIONS</td><td>
 
 **INCLUDE=***\<类型\>*</td><td>
 
-当与 **CONTEXTMENU Directory\Background** 结合使用时，这让你可以包含特定文件类型（且排除所有其他文件类型）从添加的 shell *新建* 菜单中。请注意，你必须将值用引号引起来，因为它包含一个等号，否则会混淆命令解析器。
+当与 **CONTEXTMENU Directory\Background** 结合使用时，这让你可以包含特定文件类型（且排除所有其它文件类型）从添加的 shell *新建* 菜单中。请注意，你必须将值用引号引起来，因为它包含一个等号，否则会混淆命令解析器。
 
 *示例：* `FileType CONTEXTMENU Directory\Background CONTEXTOPTIONS "INCLUDE=.bmp,.jpg,.gif"`
 </td></tr><tr><td>
@@ -215,7 +215,7 @@ PATH</td><td>
 
 *\<路径\>*</td><td>
 
-将其与 **NEW** 参数结合使用，以便在当前源文件列表外的其他位置创建新文件。请注意，当使用此参数时，新创建的文件不会自动进入内联重命名模式。
+将其与 **NEW** 参数结合使用，以便在当前源文件列表外的其它位置创建新文件。请注意，当使用此参数时，新创建的文件不会自动进入内联重命名模式。
 
 *示例:* `FileType NEW .txt PATH "{destpath}"`
 </td></tr><tr><td>
@@ -264,7 +264,7 @@ SHELLVERB</td><td>
 
 *\<动词\>*</td><td>
 
-当与 **ACTION=shellex** 结合使用时，**SHELLVERB** 参数允许你指定文件类型动词，以请求 Shell 执行。这与 **ACTION** 参数的其他可能值有些重叠，主要区别在于执行是由 Windows Shell（而不是 Opus）执行，而且你可以同时使用 **SHELLCLASS** 参数。
+当与 **ACTION=shellex** 结合使用时，**SHELLVERB** 参数允许你指定文件类型动词，以请求 Shell 执行。这与 **ACTION** 参数的其它可能值有些重叠，主要区别在于执行是由 Windows Shell（而不是 Opus）执行，而且你可以同时使用 **SHELLCLASS** 参数。
 *示例：* `FileType ACTION=shellex SHELLCLASS=Photoshop.Image.20 SHELLVERB=print`
 </td></tr><tr><td>
 摘要</td><td>

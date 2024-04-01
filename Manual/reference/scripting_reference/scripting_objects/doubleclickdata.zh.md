@@ -10,13 +10,13 @@ call</td><td>
 
 *bool*</td><td>
 
-将此属性设置为 **False** 可防止在这次操作期间对所有其他文件调用**[OnDoubleClick](../scripting_events/ondoubleclick.zh.md)** 事件（这只在双击多个文件时才有效）。所有剩余的文件都将根据其默认处理程序打开。
+将此属性设置为 **False** 可防止在这次操作期间对所有其它文件调用**[OnDoubleClick](../scripting_events/ondoubleclick.zh.md)** 事件（这只在双击多个文件时才有效）。所有剩余的文件都将根据其默认处理程序打开。
 </td></tr><tr><td>
 cont</td><td>
 
 *bool*</td><td>
 
-将此属性设置为 **False**，以在此操作期间完全中止对所有其他文件的双击处理（这只在双击多个文件时才有效）。
+将此属性设置为 **False**，以在此操作期间完全中止对所有其它文件的双击处理（这只在双击多个文件时才有效）。
 </td></tr><tr><td>
 early</td><td>
 

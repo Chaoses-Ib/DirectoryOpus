@@ -1077,7 +1077,7 @@ UNATTENDED</td><td>
 
 **yes**</td><td>
 
-启用 [无人值守复制](/Manual/file_operations/copying_moving_and_deleting_files/copy_queues/unattended_operation.zh.md) 模式。在此模式下，Opus 不会显示任何确认提示或错误对话框 - 复制将持续到结束，并在完成时对任何错误进行总结。像 **WHENEXISTS** 这样的其他参数用于控制在某些情况下发生的情况。
+启用 [无人值守复制](/Manual/file_operations/copying_moving_and_deleting_files/copy_queues/unattended_operation.zh.md) 模式。在此模式下，Opus 不会显示任何确认提示或错误对话框 - 复制将持续到结束，并在完成时对任何错误进行总结。像 **WHENEXISTS** 这样的其它参数用于控制在某些情况下发生的情况。
 
 *示例：`Copy UNATTENDED=yes TO=@myftpsite WHENEXISTS=replace`
 </td></tr><tr><td>
@@ -1095,7 +1095,7 @@ UPDATEALL</td><td>
 
 *(无值)*</td><td>
 
-更新目标文件夹中的文件（一种简单的单向同步方式](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/README.zh.md)）。仅未在目标中存在的文件，或已经存在但不同于源文件的文件将被复制 - 其他人将被跳过。
+更新目标文件夹中的文件（一种简单的单向同步方式](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/README.zh.md)）。仅未在目标中存在的文件，或已经存在但不同于源文件的文件将被复制 - 其它人将被跳过。
 
 （将其与 **UPDATEEXISTING** 相比较，后者只更新已经存在的文件。）
 
@@ -1238,7 +1238,7 @@ WHENEXISTS</td><td>
 
 **recycle**</td><td>
 
-替换文件时，如果可能，请将原始文件删除到回收站。你可以将此标志与其他选项结合使用。
+替换文件时，如果可能，请将原始文件删除到回收站。你可以将此标志与其它选项结合使用。
 
 请注意，**撤消**不能用于自动还原这些文件，但你可以手动从回收站中检索它们。
 

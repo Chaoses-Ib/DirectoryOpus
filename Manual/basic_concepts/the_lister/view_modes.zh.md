@@ -36,7 +36,7 @@
 
 ![](/Manual/images/media/13/view_mode_-_list.png)
 
-这种视图模式受到很多人的欢迎，因为它同时在每个文件列表中显示最多的文件。该模式中的布局不同于几乎所有其他模式 - 而不是从左到右，然后从上到底显示图标，这个顺序是倒置的 - 文件以向下延伸到文件列表中的列展示，显示垂直而不是水平滚动。
+这种视图模式受到很多人的欢迎，因为它同时在每个文件列表中显示最多的文件。该模式中的布局不同于几乎所有其它模式 - 而不是从左到右，然后从上到底显示图标，这个顺序是倒置的 - 文件以向下延伸到文件列表中的列展示，显示垂直而不是水平滚动。
 
 ### 详细信息
 
@@ -44,7 +44,7 @@
 
 ![](/Manual/images/media/13/view_mode_-_details_001.png)
 
-此模式除了文件名外，还可以显示每列有关每个文件的其他信息列。您可以使用 **[文件夹格式](../folder_options/README.zh.md)** 系统选择要显示哪些列。请参阅 **[文件列表模式 / 详细信息模式](/Manual/preferences/preferences_categories/file_display_modes/details_mode.zh.md)** 偏好设置页面，了解详细模式下可配置的设置说明。您还可以配置网格线等内容，以便在列表中明显界定项目。
+此模式除了文件名外，还可以显示每列有关每个文件的其它信息列。您可以使用 **[文件夹格式](../folder_options/README.zh.md)** 系统选择要显示哪些列。请参阅 **[文件列表模式 / 详细信息模式](/Manual/preferences/preferences_categories/file_display_modes/details_mode.zh.md)** 偏好设置页面，了解详细模式下可配置的设置说明。您还可以配置网格线等内容，以便在列表中明显界定项目。
 
 在 **详细信息** 模式中，您可以按住 <kbd>Ctrl</kbd> 键并转动鼠标滚轮以增加或减小用于显示文件夹内容的字体大小。
 
@@ -62,7 +62,7 @@
 
 这与 **详细信息** 模式非常相似（看起来一模一样），但列表在通过鼠标和键盘与之交互时的行为可以在更大程度上配置。
 
-默认情况下，**加强** 模式使用持久选择 - 与其他视图模式不同，当您单击文件列表中的空白处时，文件不会自动取消选择。请参阅 **[文件列表模式 / 加强模式](/Manual/preferences/preferences_categories/file_display_modes/power_mode/README.zh.md)** 和 **[加强模式 / 按钮](/Manual/preferences/preferences_categories/file_display_modes/power_mode/buttons.zh.md)** 偏好设置页面，了解 **加强** 模式配置选项的完整说明。
+默认情况下，**加强** 模式使用持久选择 - 与其它视图模式不同，当您单击文件列表中的空白处时，文件不会自动取消选择。请参阅 **[文件列表模式 / 加强模式](/Manual/preferences/preferences_categories/file_display_modes/power_mode/README.zh.md)** 和 **[加强模式 / 按钮](/Manual/preferences/preferences_categories/file_display_modes/power_mode/buttons.zh.md)** 偏好设置页面，了解 **加强** 模式配置选项的完整说明。
 
 在 **加强** 模式中，您可以按住 <kbd>Ctrl</kbd> 键并转动鼠标滚轮以增加或减小用于显示文件夹内容的字体大小。
 

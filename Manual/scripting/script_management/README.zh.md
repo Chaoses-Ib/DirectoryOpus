@@ -40,5 +40,5 @@
 - **配置**：配置脚本参数（如果脚本有的话）。
 - **编辑**：打开 [脚本编辑器](script_editor/README.zh.md) 来编辑脚本。
 - **转换为程序包**：将独立的脚本文件转换为 [脚本程序包](script_add-ins/script_package.zh.md)。
-- **分享**：将脚本转换为 [脚本安装文件](/Manual/scripting/script_management/installer.zh.md) 以与其他 Opus 13 用户分享。
+- **分享**：将脚本转换为 [脚本安装文件](/Manual/scripting/script_management/installer.zh.md) 以与其它 Opus 13 用户分享。
 - **删除**：删除选定的脚本。

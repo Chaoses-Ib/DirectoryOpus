@@ -10,7 +10,7 @@ fields</td><td>
 
 *对象:***[CustomFieldData](customfielddata.zh.md)**</td><td>
 
-返回一个 **[CustomFieldData](customfielddata.zh.md)** 对象，脚本可以使用该对象向 *重命名* 对话框添加自定义字段。在此方法中添加到对象的每个属性都将在对话框中创建一个新字段，使用户可以向重命名脚本提供其他信息。
+返回一个 **[CustomFieldData](customfielddata.zh.md)** 对象，脚本可以使用该对象向 *重命名* 对话框添加自定义字段。在此方法中添加到对象的每个属性都将在对话框中创建一个新字段，使用户可以向重命名脚本提供其它信息。
 </td></tr><tr><td>
 field_labels</td><td>
 

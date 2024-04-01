@@ -6,4 +6,4 @@
 - [脚本函数](/Manual/scripting/script_functions.zh.md) 通过其 **[OnClick](/Manual/reference/scripting_reference/scripting_events/onclick.zh.md)** 事件进行调用 - 虽然实现此方法是可选的，因为在运行脚本按钮或热键时会执行整个脚本来。实现 **OnClick** 的优点是传递给方法的 **[ClickData](scripting_objects/clickdata.zh.md)** 对象可提供有关该命令环境的有用信息。
 - [重命名脚本](/Manual/scripting/rename_scripts/README.zh.md) 提供了一个对要重命名的每个文件都调用的事件。由于历史原因，有多个可实现的重命名事件 — 最简单且推荐使用 **[OnGetNewName](/Manual/reference/scripting_reference/scripting_events/ongetnewname.zh.md)** 事件。
 
-除了过时的重命名事件（**Rename_GetNewName** 和 **Rename_GetNewName2**）之外，所有事件函数都有一个参数 — 一个特定于事件的数据对象，它在每次调用事件时从 Opus 传递给脚本。每个对象都包含与该事件相关的属性（有时还有方法）。使用单个对象的好处是将来可以在不更改事件本身的函数签名的情况下添加其他属性。
+除了过时的重命名事件（**Rename_GetNewName** 和 **Rename_GetNewName2**）之外，所有事件函数都有一个参数 — 一个特定于事件的数据对象，它在每次调用事件时从 Opus 传递给脚本。每个对象都包含与该事件相关的属性（有时还有方法）。使用单个对象的好处是将来可以在不更改事件本身的函数签名的情况下添加其它属性。

@@ -4,7 +4,7 @@
 
 对话框顶部的六个标签页让你可以访问作为文件夹格式一部分可以配置的各个选项。
 
-- **[列](/Manual/basic_concepts/folder_options/folder_options_dialog/columns/README.zh.md)**：让你选择在详细信息模式和高级模式的文件列表中显示哪些列。列的选择也会影响其他显示模式，因为你只能按已启用的列对列表进行排序。你可以在这个标签页中配置列宽和排序顺序。
+- **[列](/Manual/basic_concepts/folder_options/folder_options_dialog/columns/README.zh.md)**：让你选择在详细信息模式和高级模式的文件列表中显示哪些列。列的选择也会影响其它显示模式，因为你只能按已启用的列对列表进行排序。你可以在这个标签页中配置列宽和排序顺序。
 - **[排序](/Manual/basic_concepts/folder_options/folder_options_dialog/sorting.zh.md)**：与如何对文件列表进行排序的选项相关（与对哪些列进行排序无关）。
 - **[分组](/Manual/basic_concepts/folder_options/folder_options_dialog/grouping.zh.md)**：与如何对文件列表进行分组的选项相关。
 - **[显示](/Manual/basic_concepts/folder_options/folder_options_dialog/display.zh.md)**：包含影响文件列表显示的各种选项（视图模式等）。

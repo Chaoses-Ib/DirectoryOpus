@@ -1,6 +1,6 @@
 # 脚本
 
-Directory Opus 脚本接口让你可以使用任何已安装的 ActiveX 脚本语言编写脚本。这允许脚本使用你可能已知晓的常用语言编写。JScript（JavaScript 的变体）和 VBScript 已内置于 Windows 中，在兼容性、帮助和来自 Directory Opus 支持论坛的示例方面通常是最简单的选择，并且易于与其他用户共享。其他语言如 Perlscript 和 Python 可以从第三方提供者处获取。
+Directory Opus 脚本接口让你可以使用任何已安装的 ActiveX 脚本语言编写脚本。这允许脚本使用你可能已知晓的常用语言编写。JScript（JavaScript 的变体）和 VBScript 已内置于 Windows 中，在兼容性、帮助和来自 Directory Opus 支持论坛的示例方面通常是最简单的选择，并且易于与其它用户共享。其它语言如 Perlscript 和 Python 可以从第三方提供者处获取。
 
 通过脚本接口你可以：
 
@@ -12,7 +12,7 @@ Directory Opus 脚本接口让你可以使用任何已安装的 ActiveX 脚本�
 - 显示对话框和弹出菜单
 - 访问剪贴板、环境变量和目录别名
 - 扩展 Opus 内部命令的列表
-- 添加可以显示在文件列表和信息提示中的其他文件和目录信息列
+- 添加可以显示在文件列表和信息提示中的其它文件和目录信息列
 - 基于特定事件自动触发脚本
 - 保存和加载配置（Opus 提供了一个可以用来编辑脚本配置的编辑器）
 
@@ -26,7 +26,7 @@ Directory Opus 脚本接口让你可以使用任何已安装的 ActiveX 脚本�
 
 请参阅 [脚本参考](scripting/README.zh.md) 部分，了解 Opus 脚本对象的完整指南，以及 [示例脚本](/Manual/scripting/example_scripts/README.zh.md) 部分，了解各种类型的脚本的某些示例。
 
-通过 **DOpus.Output** 函数从脚本输出的任何错误/警告或文本都会显示在 *脚本日志* 面板（作为 *实用面板* 的一部分）中。你可以使用 **[配置 / 其他 / 高级](preferences/preferences_categories/miscellaneous/advanced_options.zh.md): script_output_level** 选项来选择在日志中显示的信息类型。
+通过 **DOpus.Output** 函数从脚本输出的任何错误/警告或文本都会显示在 *脚本日志* 面板（作为 *实用面板* 的一部分）中。你可以使用 **[配置 / 其它 / 高级](preferences/preferences_categories/miscellaneous/advanced_options.zh.md): script_output_level** 选项来选择在日志中显示的信息类型。
 
 你还可以使用 **[CLI](additional_functionality/cli.zh.md)** 工具来设计和测试临时脚本。更多：
 

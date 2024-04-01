@@ -89,4 +89,4 @@ viewmode</td><td>
 </td></tr></tbody>
 </table>
 
-除了上述变量，还可以使用 [求值函数](/Manual/reference/evaluator/README.zh.md)，如 [ischecked](/Manual/reference/evaluator/ischecked.zh.md) 和 [isenabled](/Manual/reference/evaluator/isenabled.zh.md) 来查询有关文件窗口状态的其他信息。
+除了上述变量，还可以使用 [求值函数](/Manual/reference/evaluator/README.zh.md)，如 [ischecked](/Manual/reference/evaluator/ischecked.zh.md) 和 [isenabled](/Manual/reference/evaluator/isenabled.zh.md) 来查询有关文件窗口状态的其它信息。

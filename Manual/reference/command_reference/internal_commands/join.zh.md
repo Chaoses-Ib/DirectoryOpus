@@ -16,7 +16,7 @@
 -</td><td>
 -</td><td>
 
-显示**[合并文件](/Manual/additional_functionality/joining_files.zh.md)** 对话框。所有当前选中的文件都将添加到列表中；你可以在对话框中重新整理此列表、从列表中删除项目，并添加其他项目。
+显示**[合并文件](/Manual/additional_functionality/joining_files.zh.md)** 对话框。所有当前选中的文件都将添加到列表中；你可以在对话框中重新整理此列表、从列表中删除项目，并添加其它项目。
 
 *示例：* `Join`
 </td></tr><tr><td>

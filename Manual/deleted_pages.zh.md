@@ -30,7 +30,7 @@
 
   * 文件操作
     * [[:preferences:preferences_categories:file_operations:copy_attributes]] - 移动到 [[:preferences:preferences_categories:file_operations:copying_files:attributes]]
-    * [[:preferences:preferences_categories:file_operations:copy_options]] - 大多移动到 [[:preferences:preferences_categories:file_operations:copying_files:confirmation]]，也可能是其他复制页面
+    * [[:preferences:preferences_categories:file_operations:copy_options]] - 大多移动到 [[:preferences:preferences_categories:file_operations:copying_files:confirmation]]，也可能是其它复制页面
     * [[:preferences:preferences_categories:file_operations:file_operations_options]] - 移动到 [[:preferences:preferences_categories:file_operations:options]]
     * [[:preferences:preferences_categories:file_operations:inline_rename]] - 移动到 [[:preferences:preferences_categories:file_operations:renaming_files]]
     * [[:preferences:preferences_categories:file_operations:filters]] - 移动到 [[:preferences:preferences_categories:filtering_and_sorting:filters]]
@@ -59,6 +59,6 @@
     * [[:preferences:preferences_categories:toolbars:scripts]] - 已删除（已转至单独对话框）
 
   * 查看器
-    * [[:preferences:preferences_categories:viewer:viewer_appearance]] - 移动到 [[:preferences:preferences_categories:viewer:standalone_viewer:size_and_position]] 和其他页面
-    * [[:preferences:preferences_categories:viewer:viewer_behavior]] - 移动到 [[:preferences:preferences_categories:viewer:standalone_viewer]] 和其他页面
+    * [[:preferences:preferences_categories:viewer:viewer_appearance]] - 移动到 [[:preferences:preferences_categories:viewer:standalone_viewer:size_and_position]] 和其它页面
+    * [[:preferences:preferences_categories:viewer:viewer_behavior]] - 移动到 [[:preferences:preferences_categories:viewer:standalone_viewer]] 和其它页面
     * [[:preferences:preferences_categories:viewer:mouse_buttons]] - 移动到 [[:preferences:preferences_categories:viewer:standalone_viewer:mouse_buttons]]

@@ -10,7 +10,7 @@
 - 将脚本文件（**.js**、**.vbs** 等）复制到压缩文件中。
 - 完成后，重命名压缩文件，使其具有 **.osp** 后缀。
 
-如果您愿意，可以将 **.osp** 添加到配置中“**[Zip 和其他压缩文件/Zip 文件](/Manual/preferences/preferences_categories/zip_and_other_archives/README.zh.md)**”页面中识别出的 Zip 文件扩展名列表，以便在 Opus 中更轻松地处理脚本包。
+如果您愿意，可以将 **.osp** 添加到配置中“**[Zip 和其它压缩文件/Zip 文件](/Manual/preferences/preferences_categories/zip_and_other_archives/README.zh.md)**”页面中识别出的 Zip 文件扩展名列表，以便在 Opus 中更轻松地处理脚本包。
 
 如果您想添加脚本可以引用的图标：
 

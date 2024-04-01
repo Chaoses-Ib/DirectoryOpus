@@ -1,4 +1,4 @@
-\<evalcmd\>  FileCount && int && 与指定条件匹配的项数。 && selected && bool && **True** 表示已选定项，**False** 表示所有项。 && pattern && string && 文件名通配符模式。使用 **dirs:** 前缀仅匹配目录或使用 **files:** 前缀仅匹配文件。 && \[pattern...\] && string && 其他文件名模式... \</evalcmd\>
+\<evalcmd\>  FileCount && int && 与指定条件匹配的项数。 && selected && bool && **True** 表示已选定项，**False** 表示所有项。 && pattern && string && 文件名通配符模式。使用 **dirs:** 前缀仅匹配目录或使用 **files:** 前缀仅匹配文件。 && \[pattern...\] && string && 其它文件名模式... \</evalcmd\>
 
 返回与 *pattern* 匹配的项总数。仅针对所选项目计数时，为 *selected* 参数指定 **true**。
 

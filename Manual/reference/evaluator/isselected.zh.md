@@ -1,4 +1,4 @@
-\<evalcmd\> IsSelected 和布尔值或整数 && 已选项目的测试结果。 && pattern && 字符串 && 带有前缀 **dirs: 的文件名通配符模式** 只匹配目录，或者 **files:只匹配文件。&& \[pattern...\] && 字符串 &&其他文件名模式... \</evalcmd\>
+\<evalcmd\> IsSelected 和布尔值或整数 && 已选项目的测试结果。 && pattern && 字符串 && 带有前缀 **dirs: 的文件名通配符模式** 只匹配目录，或者 **files:只匹配文件。&& \[pattern...\] && 字符串 &&其它文件名模式... \</evalcmd\>
 
 只指定了一个 *pattern*，如果匹配该模式的项目已选，则返回 **True**，否则返回 **False**。
 

@@ -1,6 +1,6 @@
 # 标签上下文菜单
 
-[文件夹标签上下文菜单](/Manual/customize/the_customize_dialog/context_menus.zh.md) 中的函数可以使用求值器，就像在任何其他 [工具栏或菜单](functions/README.zh.md) 中一样，但是在此求值上下文中，可以使用以下特定于文件夹标签的变量：
+[文件夹标签上下文菜单](/Manual/customize/the_customize_dialog/context_menus.zh.md) 中的函数可以使用求值器，就像在任何其它 [工具栏或菜单](functions/README.zh.md) 中一样，但是在此求值上下文中，可以使用以下特定于文件夹标签的变量：
 
 <table>
 <thead><tr><th>

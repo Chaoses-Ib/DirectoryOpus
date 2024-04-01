@@ -58,4 +58,4 @@ Opus 在此模式下提供了一些额外的功能，可能无法立即显现出
 
 ### 完全可配置的按键行程
 
-默认情况下，还定义了许多其他的按键行程 - 它们都可以通过配置中的 [重命名文件 / 控制键](/Manual/preferences/preferences_categories/file_operations/renaming_files/control_keys.zh.md) 页进行配置。你可以看到定义了哪些键，更改它们的赋值和行为，甚至创建自己的键。
+默认情况下，还定义了许多其它的按键行程 - 它们都可以通过配置中的 [重命名文件 / 控制键](/Manual/preferences/preferences_categories/file_operations/renaming_files/control_keys.zh.md) 页进行配置。你可以看到定义了哪些键，更改它们的赋值和行为，甚至创建自己的键。

@@ -1,11 +1,11 @@
 # Directory Opus 13 - 详细发行说明
 
-# 其他脚本
+# 其它脚本
 
 ## 一般
 
 - 查看 [脚本 IDE](script_ide.zh.md) 以了解新脚本编辑器和管理 UI 的详情。
-- 某些脚本更改已在其他部分中提及，而非此处。
+- 某些脚本更改已在其它部分中提及，而非此处。
 
 ------------------------------------------------------------------------
 
@@ -19,7 +19,7 @@
   - 系统主题（视觉样式）更改时为“Theme”。
   - 打开或关闭 DWM 组合时为“DWMComposition”。
   - DWM 窗口框架颜色更改时为“DWMColorization”。
-  - WM_SETTINGCHANGE 系统消息也会触发此事件，其他类型值由 Microsoft 定义。其中可能包括“WindowMetrics”、“intl”、“Policy”、“ConvertibleSlateMode”、“SystemDockMode”等。
+  - WM_SETTINGCHANGE 系统消息也会触发此事件，其它类型值由 Microsoft 定义。其中可能包括“WindowMetrics”、“intl”、“Policy”、“ConvertibleSlateMode”、“SystemDockMode”等。
 - 如果 Opus 处于暗模式，则 SysInfo.DarkMode 返回 true。
 - 如果暗模式在操作系统级别（对于应用程序）启用，则 SysInfo.DarkModeApps 返回 true。
 - SysInfo.DPI 返回应用于 Opus 进程的 DPI 缩放。
@@ -127,7 +127,7 @@
 - Command.SetFilter() -- 方法。将过滤器与 Command 对象关联。
 - Command.ClearFilter() -- 方法。移除之前关联的过滤器。
 - 脚本可以通过运行“选择 FILTER”命令来使用关联的过滤器。
-- 脚本还可以运行“Select FILTERDEF ...”以在命令行定义过滤器。（在其他地方有更详细的描述。）
+- 脚本还可以运行“Select FILTERDEF ...”以在命令行定义过滤器。（在其它地方有更详细的描述。）
 
 ------------------------------------------------------------------------
 
@@ -143,7 +143,7 @@
   - 对于非活动（隐藏）标签页，Tab.source 和 Tab.dest 现在始终为 false。（以前，非活动标签页从上次活动的标签页中返回过时的信息。）
 - DOpus.文件窗口s.ToFront() -- 方法。将一个或多个窗口移至最前。
   - 接受窗口句柄或窗口句柄的向量。
-  - 最后一个窗口将位于其他窗口的顶部。其余的将堆叠在它下面，按相反的顺序。
+  - 最后一个窗口将位于其它窗口的顶部。其余的将堆叠在它下面，按相反的顺序。
 -文件窗口.WindowState -- 属性。提供窗口状态（“min”、“max”、“hidden”、“normal”）。
 -文件窗口.ViewPaneFile -- 属性。提供当前查看器窗格中（如果有）的文件路径。
 - Viewer.Parent文件窗口-- 属性。提供启动了独立查看器的列表（如果有）。

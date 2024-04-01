@@ -1,6 +1,6 @@
 # 项
 
-**Items** 对象使您能枚举一个或多个 **[Item](item.zh.md)** 对象的集合。**Items** 对象可从许多方法和属性中检索，包括 **[Dialog](dialog.zh.md)。Multi**、**[DOpus](dopus.zh.md).GetClip**、**[Command](command.zh.md).files** 和其他几个。
+**Items** 对象使您能枚举一个或多个 **[Item](item.zh.md)** 对象的集合。**Items** 对象可从许多方法和属性中检索，包括 **[Dialog](dialog.zh.md)。Multi**、**[DOpus](dopus.zh.md).GetClip**、**[Command](command.zh.md).files** 和其它几个。
 
 <table>
 <thead><tr><th>

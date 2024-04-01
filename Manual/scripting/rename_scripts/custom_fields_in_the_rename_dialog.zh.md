@@ -34,7 +34,7 @@
 
 每个字段还可以有一个标签，文本字段可以有一个“提示横幅”，当文本字段为空时会显示该“提示横幅”（如上所示）。配置这些选项有两种方法：
 
-- 使用 fields 对象的子属性。这是更简单的方法，而且还允许你访问除了标签和提示横幅之外的其他选项。
+- 使用 fields 对象的子属性。这是更简单的方法，而且还允许你访问除了标签和提示横幅之外的其它选项。
 - 旧方法是使用提供的两个额外的 **[Map](/Manual/reference/scripting_reference/scripting_objects/map.zh.md)** 对象（**GetCustomFieldData.field_labels** 和 **GetCustomFieldData.field_tips**）来允许你分配这些对象。
 
 使用上述子属性方法，你可以分配的属性如下：

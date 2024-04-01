@@ -1,4 +1,4 @@
-**OnInitIncludeFile** 事件对每个 [包含文件](/Manual/scripting/script_add-ins/include_files.zh.md) 脚本调用一次，以对其进行初始化。实现此事件是可选的，但强烈建议您实现，因为它允许您提供名称、**描述** 和其他信息，例如最小版本要求。
+**OnInitIncludeFile** 事件对每个 [包含文件](/Manual/scripting/script_add-ins/include_files.zh.md) 脚本调用一次，以对其进行初始化。实现此事件是可选的，但强烈建议您实现，因为它允许您提供名称、**描述** 和其它信息，例如最小版本要求。
 
 <table>
 <thead><tr><th>

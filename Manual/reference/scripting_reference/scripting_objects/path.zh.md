@@ -1,4 +1,4 @@
-**Path** 对象表示文件或文件夹路径。很多对象都有返回 **Path** 的属性，例如 **[Tab](tab.zh.md).path** 将制表符中的当前文件夹作为 **Path** 对象返回。你可以使用 **[DOpus](dopus.zh.md).**[FSUtil](fsutil.zh.md)**.NewPath** 方法，根据字符串（或其他 **Path**）创建新的 **Path** 对象。
+**Path** 对象表示文件或文件夹路径。很多对象都有返回 **Path** 的属性，例如 **[Tab](tab.zh.md).path** 将制表符中的当前文件夹作为 **Path** 对象返回。你可以使用 **[DOpus](dopus.zh.md).**[FSUtil](fsutil.zh.md)**.NewPath** 方法，根据字符串（或其它 **Path**）创建新的 **Path** 对象。
 
 <table>
 <thead><tr><th>
@@ -168,7 +168,7 @@ Root</td><td>
 
 *布尔值*</td><td>
 
-保留路径中的第一个组件，去掉其他所有组件。如果路径已经在根目录，则返回 **False**。
+保留路径中的第一个组件，去掉其它所有组件。如果路径已经在根目录，则返回 **False**。
 </td></tr><tr><td>
 Set</td><td>
 

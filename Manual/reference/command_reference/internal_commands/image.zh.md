@@ -44,7 +44,7 @@ AS</td><td>
 
 *\<输出文件名\>*</td><td>
 
-在转换图片时指定输出文件名。默认情况下，输出文件名与输入文件名相同，有可能包含其他后缀（通过 **ADDSUFFIX** 参数添加）以及不同的文件扩展名，前提是图片已转换为不同格式。
+在转换图片时指定输出文件名。默认情况下，输出文件名与输入文件名相同，有可能包含其它后缀（通过 **ADDSUFFIX** 参数添加）以及不同的文件扩展名，前提是图片已转换为不同格式。
 
 *示例：* `Image CONVERT=jpg AS=thumbnail.jpg WIDTH=128 HEIGHT=128`
 </td></tr><tr><td>
@@ -74,7 +74,7 @@ CONVERT</td><td>
 
 *(无值)*</td><td>
 
-在没有提供其他参数时，在互动模式下显示 [图片转换](/Manual/additional_functionality/image_conversion/README.zh.md) 对话框。
+在没有提供其它参数时，在互动模式下显示 [图片转换](/Manual/additional_functionality/image_conversion/README.zh.md) 对话框。
 
 *示例：* `Image CONVERT`
 </td></tr><tr><td>
@@ -293,7 +293,7 @@ NOAUTORUN</td><td>
 
 *(无值)*</td><td>
 
-即使命令行中的其他参数允许图像自动转换，如果指定了 **NOAUTORUN**，那么首先会打开转换对话框。这允许你使用其他参数预先配置对话框，然后手动进行最终调整。
+即使命令行中的其它参数允许图像自动转换，如果指定了 **NOAUTORUN**，那么首先会打开转换对话框。这允许你使用其它参数预先配置对话框，然后手动进行最终调整。
 
 *示例：* `Image CONVERT=png CROP=4:3 NOAUTORUN`
 </td></tr><tr><td>
@@ -412,7 +412,7 @@ PRESET</td><td>
 
 *\<名称\>*</td><td>
 
-对选定的图像调用已保存的预设。可以通过用户界面（用其他参数单独运行 `Image CONVERT`）创建预设 - 一旦保存，就可以使用 **PRESET** 参数自动执行它们。所提供的任何其他参数都将覆盖预设中的设置。
+对选定的图像调用已保存的预设。可以通过用户界面（用其它参数单独运行 `Image CONVERT`）创建预设 - 一旦保存，就可以使用 **PRESET** 参数自动执行它们。所提供的任何其它参数都将覆盖预设中的设置。
 
 *示例：* `Image CONVERT=jpg PRESET=HDResize`
 </td></tr><tr><td>

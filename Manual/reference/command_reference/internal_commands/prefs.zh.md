@@ -4,7 +4,7 @@
 
 - 显示 [配置](/Manual/preferences/README.zh.md) 对话框，让你更改大多数配置选项
 - 显示 [自定义](/Manual/customize/README.zh.md) 对话框以编辑工具栏、菜单和热键
-- 显示 [文件类型](/Manual/file_types/README.zh.md) 对话框以配置上下文菜单、双击操作和其他特定于文件类型设置
+- 显示 [文件类型](/Manual/file_types/README.zh.md) 对话框以配置上下文菜单、双击操作和其它特定于文件类型设置
 - 显示并编辑 [FTP 通讯簿](/Manual/ftp/ftp_address_book/README.zh.md)
 - [备份和恢复](/Manual/preferences/backing_up_and_restoring_preferences.zh.md) 你的配置
 - 加载并保存 [文件查看器布局](/Manual/basic_concepts/the_lister/layouts/README.zh.md)
@@ -46,7 +46,7 @@ BACKUP</td><td>
 
 *(无值)*</td><td>
 
-自动化配置备份进程。默认情况下，您的所有配置设置、工具栏、菜单和热键都将包含在备份中，但不会包括图像和声音等额外数据。此自变量的可选项用于控制哪些额外数据包含在备份中。使用 **TO** 自变量指定备份文件名称，**PASSWORD**、**DESC** 和 **QUIET** 自变量提供其他控制。
+自动化配置备份进程。默认情况下，您的所有配置设置、工具栏、菜单和热键都将包含在备份中，但不会包括图像和声音等额外数据。此自变量的可选项用于控制哪些额外数据包含在备份中。使用 **TO** 自变量指定备份文件名称，**PASSWORD**、**DESC** 和 **QUIET** 自变量提供其它控制。
 
 *范例：* `Prefs BACKUP TO="/desktop/PrefsBackup"`
 </td></tr><tr><td>
@@ -73,7 +73,7 @@ BACKUP</td><td>
 
 **data**</td><td>
 
-在备份中包含其他数据（对应于 **备份其他数据** 选项）。
+在备份中包含其它数据（对应于 **备份其它数据** 选项）。
 
 *范例：* `Prefs BACKUP=data TO="/desktop/PrefsBackup"`
 </td></tr><tr><td>
@@ -121,7 +121,7 @@ COLLAPSEALL</td><td>
 
 *(无值)*</td><td>
 
-在 **[配置](/Manual/preferences/README.zh.md)** 对话框中折叠所有类别。与 `PAGE` 自变量结合使用以显示新页面并折叠所有其他类别。
+在 **[配置](/Manual/preferences/README.zh.md)** 对话框中折叠所有类别。与 `PAGE` 自变量结合使用以显示新页面并折叠所有其它类别。
 
 *范例：* `Prefs PAGE=folderformats COLLAPSEALL`
 </td></tr><tr><td>
@@ -374,7 +374,7 @@ LAYOUTSAVE</td><td>
 
 **单个**</td><td>
 
-仅将活动文件窗口保存为布局。任何其他当前打开的文件窗口都不会包括在内。
+仅将活动文件窗口保存为布局。任何其它当前打开的文件窗口都不会包括在内。
 
 *示例：* `Prefs LAYOUTSAVE=single LAYOUTNAME="Current文件窗口"`
 </td></tr><tr><td>
@@ -392,7 +392,7 @@ LAYOUTSAVE</td><td>
 
 **更新当前**</td><td>
 
-如果当前文件窗口已经是布局的一部分，则该布局将被更新，并且不会提示你输入布局名称或其他任何选项。
+如果当前文件窗口已经是布局的一部分，则该布局将被更新，并且不会提示你输入布局名称或其它任何选项。
 
 *示例：* `Prefs LAYOUTSAVE=更新当前`
 </td></tr><tr><td>
@@ -411,7 +411,7 @@ LAYOUTTHISLISTER</td><td>
 
 **nopanels**</td><td>
 
-不将布局的面板（例如查看器窗格、双栏、实用工具面板）应用到当前窗口。（如果没有指定其他值，则根本什么都不会做。）
+不将布局的面板（例如查看器窗格、双栏、实用工具面板）应用到当前窗口。（如果没有指定其它值，则根本什么都不会做。）
 
 *示例：* `Prefs LAYOUT="Small文件窗口" LAYOUTTHISLISTER=nopanels,size`
 </td></tr><tr><td>
@@ -478,7 +478,7 @@ NOSCRIPT</td><td>
 
 *(无值)*</td><td>
 
-允许 [脚本](/Manual/scripting/README.zh.md) 运行 `Prefs LAYOUT` 命令，而无需触发其他脚本（或其本身）。添加 **NOSCRIPT** 参数将禁用 **[OnBeforeFolderChange](../../scripting_reference/scripting_events/onbeforefolderchange.zh.md)**、**[OnAfterFolderChange](../../scripting_reference/scripting_events/onafterfolderchange.zh.md)**、**[OnOpenTab](../../scripting_reference/scripting_events/onopentab.zh.md)** 和 **[OnOpen文件窗口](../../scripting_reference/scripting_events/onopenlister.zh.md)** 事件，这些事件原本会因打开文件窗口布局而触发。
+允许 [脚本](/Manual/scripting/README.zh.md) 运行 `Prefs LAYOUT` 命令，而无需触发其它脚本（或其本身）。添加 **NOSCRIPT** 参数将禁用 **[OnBeforeFolderChange](../../scripting_reference/scripting_events/onbeforefolderchange.zh.md)**、**[OnAfterFolderChange](../../scripting_reference/scripting_events/onafterfolderchange.zh.md)**、**[OnOpenTab](../../scripting_reference/scripting_events/onopentab.zh.md)** 和 **[OnOpen文件窗口](../../scripting_reference/scripting_events/onopenlister.zh.md)** 事件，这些事件原本会因打开文件窗口布局而触发。
 
 *示例：* `Prefs LAYOUT="My Layout" NOSCRIPT`
 </td></tr><tr><td>
@@ -582,7 +582,7 @@ SCRIPTDISABLE</td><td>
 
 *(无值)*</td><td>
 
-如果没有给出脚本名称，则此命令将切换全局选项以禁用所有脚本加载项。这将禁用您安装的任何事件脚本、命令脚本和列脚本。这通常用于测试问题是由于脚本还是其他原因造成的。
+如果没有给出脚本名称，则此命令将切换全局选项以禁用所有脚本加载项。这将禁用您安装的任何事件脚本、命令脚本和列脚本。这通常用于测试问题是由于脚本还是其它原因造成的。
 全局选项不会影响任何单独脚本的启用/禁用状态。换句话说，如果某个脚本已被禁用，而你随后全局禁用脚本，然后再次全局启用脚本，该脚本仍将处于禁用状态。全局设置和单独禁用所有脚本之间的另一个不同之处在于，全局设置还将影响在更改后安装的脚本。
 
 *示例：* `Prefs SCRIPTDISABLE`
@@ -608,7 +608,7 @@ SCRIPTDISABLE</td><td>
 
 *示例：* `Prefs SCRIPTDISABLE="My Package.osp\My Script.vbs"`
 
-通配符可以使处理脚本包变得更容易，还可以处理包含多个脚本或以.osp格式分发脚本给其他人，但作为文本文件私下处理它的脚本包：
+通配符可以使处理脚本包变得更容易，还可以处理包含多个脚本或以.osp格式分发脚本给其它人，但作为文本文件私下处理它的脚本包：
 
 *示例：* `Prefs SCRIPTDISABLE="My Package.osp\*"`  
 *示例：* `Prefs SCRIPTDISABLE="*My Script.vbs\*"`
@@ -709,7 +709,7 @@ SCRIPTS</td><td>
 
 *示例：* `Prefs SCRIPTS="My Package.osp\My Script.vbs"`
 
-通配符可以使处理脚本包变得更容易，还可以处理包含多个脚本或以.osp格式分发脚本给其他人，但作为文本文件私下处理它的脚本包：
+通配符可以使处理脚本包变得更容易，还可以处理包含多个脚本或以.osp格式分发脚本给其它人，但作为文本文件私下处理它的脚本包：
 
 *示例：* `Prefs SCRIPTS="My Package.osp\*"`  
 *示例：* `Prefs SCRIPTS="*My Script.vbs\*"`
@@ -730,7 +730,7 @@ SETLISTERDEFAULTS</td><td>
 
 *(无值)*</td><td>
 
-让你选择一个文件窗口保存为[默认文件窗口](/Manual/basic_concepts/the_lister/the_default_lister.zh.md)，或设置其他默认参数。
+让你选择一个文件窗口保存为[默认文件窗口](/Manual/basic_concepts/the_lister/the_default_lister.zh.md)，或设置其它默认参数。
 
 *示例：* `Prefs SETLISTERDEFAULTS`
 </td></tr><tr><td>
@@ -757,7 +757,7 @@ SETLISTERDEFAULTS</td><td>
 
 **nodeflister**</td><td>
 
-关闭保存*默认文件窗口*的同时，仍保存其他默认参数。
+关闭保存*默认文件窗口*的同时，仍保存其它默认参数。
 
 *示例：* `Prefs SETLISTERDEFAULTS=quiet,nodeflister`
 </td></tr><tr><td>
@@ -937,7 +937,7 @@ VFSPLUGINMANAGER</td><td>
 
 *(无值)*</td><td>
 
-在配置中显示 **[zip 及其他压缩包 / 压缩包和 VFS 插件](/Manual/preferences/preferences_categories/zip_and_other_archives/archive_and_vfs_plugins.zh.md)** 页面（相当于 `Prefs PAGE=vfsplugins`）。
+在配置中显示 **[zip 及其它压缩包 / 压缩包和 VFS 插件](/Manual/preferences/preferences_categories/zip_and_other_archives/archive_and_vfs_plugins.zh.md)** 页面（相当于 `Prefs PAGE=vfsplugins`）。
 
 *示例：* `Prefs VFSPLUGINMANAGER`
 </td></tr></tbody>

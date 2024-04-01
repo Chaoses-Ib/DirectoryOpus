@@ -9,14 +9,14 @@
 高级重命名对话框有五个不同的部分：
 
 - 左面板是 **[预设列表](/Manual/file_operations/renaming_files/advanced_rename/rename_presets.zh.md)**，您可以在其中加载和管理您的重命名预设。
-- 顶部部分控制 **[重命名模式](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/README.zh.md)**（如下所述），并允许您编辑 **旧名称** 和 **新名称** 字符串。除了其他内容之外，它们用于提供通配符模式或查找和替换字符串。
+- 顶部部分控制 **[重命名模式](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/README.zh.md)**（如下所述），并允许您编辑 **旧名称** 和 **新名称** 字符串。除了其它内容之外，它们用于提供通配符模式或查找和替换字符串。
 - **[操作](/Manual/file_operations/renaming_files/advanced_rename/rename_actions/README.zh.md)** 部分控制将应用于每个文件名的转换。脚本 **编辑** 按钮用于展开对话框以显示重命名脚本编辑器。
 - **[选项](/Manual/file_operations/renaming_files/advanced_rename/rename_options.zh.md)** 部分包含几个控制重命名操作的复选框。
 - 最后，**预览** 部分显示已转换文件名的预览。预览列表中列出的每个文件（子文件夹中的文件除外）都有一个复选框，您可以使用该复选框从重命名操作中删除该文件。
 
 ### 宏构建器
 
-当 **使用预览列表构建宏** 选项已打开时，预览列表还可用作 [宏构建器](/Manual/file_operations/renaming_files/advanced_rename/rename_actions/rename_macros.zh.md)，这是一个强大的批量编辑功能，可同时对每个文件名进行相同的更改。当该选项关闭时，您可以单独编辑新文件名。编辑单个名称非常适合对宏（或其他批处理操作）可能无法完全正确捕获的进行小更改。一旦文件的名称被直接编辑，它将以红色显示，并且名称将被锁定，直到执行重命名操作（或直到您清除自定义名称）。
+当 **使用预览列表构建宏** 选项已打开时，预览列表还可用作 [宏构建器](/Manual/file_operations/renaming_files/advanced_rename/rename_actions/rename_macros.zh.md)，这是一个强大的批量编辑功能，可同时对每个文件名进行相同的更改。当该选项关闭时，您可以单独编辑新文件名。编辑单个名称非常适合对宏（或其它批处理操作）可能无法完全正确捕获的进行小更改。一旦文件的名称被直接编辑，它将以红色显示，并且名称将被锁定，直到执行重命名操作（或直到您清除自定义名称）。
 
 宏构建器不能与剪贴板 **粘贴**、**前缀** 和 **追加** 命令（如下所述）同时使用；如果您使用它们，它将被关闭。如果您需要将宏应用于剪贴板中的名称，请粘贴新名称，然后单击应用，然后使用宏构建器。（请注意，宏构建器还可以使用剪贴板、以它自己的方式复制和粘贴。有关详细信息，请参阅 [宏构建器](/Manual/file_operations/renaming_files/advanced_rename/rename_actions/rename_macros.zh.md) 页面。）
 

@@ -11,7 +11,7 @@
 *字符串*</td><td>
 
 返回一个字符串，表示触发文件夹读取的操作。该字符串将为以下内容之一：*normal*、*refresh*、*refreshsearch*、*refreshsub*、*parent*、*root*、*back*、*forward*、*dblclk*。  
-*refreshsub* 操作表示文件夹（和子文件夹）正在刷新而平面视图已打开。其他操作名称应不言自明。
+*refreshsub* 操作表示文件夹（和子文件夹）正在刷新而平面视图已打开。其它操作名称应不言自明。
 </td></tr><tr><td>
 路径</td><td>
 

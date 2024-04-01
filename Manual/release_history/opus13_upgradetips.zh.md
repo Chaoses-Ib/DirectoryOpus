@@ -197,7 +197,7 @@
 
 <img src="/Manual/images/release_history/o13up_22_hotkeyreset.png" class="align-center" data-query="?nolink" alt="o13up_22_hotkeyreset.png" />
 
-## 其他配置设置
+## 其它配置设置
 
 配置中有很多新东西，但以下列表更多地与以前的功能有关，这些功能现在以不同的方式进行配置，或者如果您习惯于旧版本，您可能需要更改的功能。
 

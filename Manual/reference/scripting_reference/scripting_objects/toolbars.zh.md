@@ -25,7 +25,7 @@ fdb</td><td>
 如果 FDB 工具栏已禁用，则返回字符串 **!static** 以指示静态标头。  
 如果只配置了一个 FDB 工具栏（通常情况），则它将被作为一个简单字符串返回。  
 如果配置了多个 FDB 工具栏，则将返回一个字符串 **[Vector](vector.zh.md)**。  
-如果只需要第一个工具栏的名称而无需担心其他工具栏的数量（如果有），可以在 JScript 和 VBScript 中使用 **DOpus.toolbars.fdb(0)**。否则，在 VBScript 中使用 **TypeName(...)**，在 JScript 中使用 **typeof** 确定返回类型。
+如果只需要第一个工具栏的名称而无需担心其它工具栏的数量（如果有），可以在 JScript 和 VBScript 中使用 **DOpus.toolbars.fdb(0)**。否则，在 VBScript 中使用 **TypeName(...)**，在 JScript 中使用 **typeof** 确定返回类型。
 </td></tr><tr><td>
 viewer</td><td>
 

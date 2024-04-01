@@ -20,7 +20,7 @@
 可以使用简化的脚本创建自定义列：
 
   ![](/Manual/images/release_history/col_eval.png)  
-可以定义用于对列（包括内置列）进行分组的其他方式：
+可以定义用于对列（包括内置列）进行分组的其它方式：
 
   ![](/Manual/images/release_history/col_group_eval.png)  
 
@@ -75,7 +75,7 @@
 
 请参阅 [详细更改列表](/Manual/release_history/opus13_detailed/README.zh.md) 以获得更多信息！
 
-程序的几乎每个部分都有数百项其他更改，并针对上面讨论的所有内容提供更多详细信息。
+程序的几乎每个部分都有数百项其它更改，并针对上面讨论的所有内容提供更多详细信息。
 
 如果您正在从此前版本更新，您可能还想阅读有关 [Opus 12 升级提示的信息](/Manual/release_history/opus13_upgradetips.zh.md)。
 

@@ -1,6 +1,6 @@
 # 脚本参考
 
-Directory Opus 脚本接口是围绕 ActiveX 构建的。它的优点在于 Opus 脚本是 *与语言无关的* - 您可以使用机器上安装的任何 ActiveX 脚本语言。Windows 附带 **VBScript** 和 **JScript** 解释器，而且您还可以从第三方提供程序（例如 Perlscript、Python 等）添加其他语言。
+Directory Opus 脚本接口是围绕 ActiveX 构建的。它的优点在于 Opus 脚本是 *与语言无关的* - 您可以使用机器上安装的任何 ActiveX 脚本语言。Windows 附带 **VBScript** 和 **JScript** 解释器，而且您还可以从第三方提供程序（例如 Perlscript、Python 等）添加其它语言。
 
 脚本接口以多个 *对象* 和 *事件* 的形式呈现。
 

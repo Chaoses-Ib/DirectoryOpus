@@ -105,7 +105,7 @@ LABELCATEGORY</td><td>
 
 当用于生成标签列表的命令（例如 `Properties SETLABEL` 或 `Properties SETLABEL !menu`）时，此参数允许您按类别过滤生成列表。它接受一个或多个逗号分隔的通配符字符串，这些字符串允许您匹配要包含的类别的名称。
 
-使用 `Properties SETLABEL !reset` 命令重置标签时，还将使用指定的类别 - 如果同时使用了 **LABELCATEGORY**，则只会清除指定类别中的标签。它在默认的 **Properties** 下拉菜单中使用，提供了清除状态图标而不影响其他标签的命令。
+使用 `Properties SETLABEL !reset` 命令重置标签时，还将使用指定的类别 - 如果同时使用了 **LABELCATEGORY**，则只会清除指定类别中的标签。它在默认的 **Properties** 下拉菜单中使用，提供了清除状态图标而不影响其它标签的命令。
 
 您可以使用模式 **~**\* （意思是“任何东西都不是”）来匹配未分类的标签。
 
@@ -306,7 +306,7 @@ SETLABELTOGGLE</td><td>
 
 *示例:* `Properties SETLABEL=Bold SETLABELTOGGLE`
 
-与 **ADDLABEL** 结合使用以仅切换一个标签，同时保留文件的任何其他标签。
+与 **ADDLABEL** 结合使用以仅切换一个标签，同时保留文件的任何其它标签。
 
 *示例:* `Properties SETLABEL=Red SETLABELTOGGLE ADDLABEL`
 </td></tr><tr><td>
@@ -326,7 +326,7 @@ SETWALLPAPER</td><td>
 
 *(无值)*</td><td>
 
-将选定的图像文件设置为系统壁纸。Opus 将复制选定的图像文件（并在必要时转换其格式）- 您可以使用配置中 **[其他/高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上的 **setwallpaper_file** 选项来更改该副本的存储位置。
+将选定的图像文件设置为系统壁纸。Opus 将复制选定的图像文件（并在必要时转换其格式）- 您可以使用配置中 **[其它/高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上的 **setwallpaper_file** 选项来更改该副本的存储位置。
 
 *示例:* `Properties SETWALLPAPER`
 </td></tr><tr><td>

@@ -86,7 +86,7 @@ vars</td><td>
 
 *object:***[Vars](vars.zh.md)**</td><td>
 
-返回 **[Vars](vars.zh.md)** 收集用户和脚本定义的变量，这些变量是此脚本的局部变量。这些变量可通过 **[Script](script.zh.md).vars** 属性在脚本中的其他方法中使用。
+返回 **[Vars](vars.zh.md)** 收集用户和脚本定义的变量，这些变量是此脚本的局部变量。这些变量可通过 **[Script](script.zh.md).vars** 属性在脚本中的其它方法中使用。
 </td></tr><tr><td>
 version</td><td>
 

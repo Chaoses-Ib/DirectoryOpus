@@ -23,6 +23,6 @@
 
 - 使用 **@async** [命令修饰符](command_modifiers.zh.md)，强制命令异步运行。
 - 使用 **@sync** [命令修饰符](command_modifiers.zh.md)，强制命令同步运行。
-- 你可以在配置中的 **[其他/高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上设置 **function_default_async** 标记为 *真*，以使所有函数（单命令或多命令）默认情况下异步运行。
+- 你可以在配置中的 **[其它/高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上设置 **function_default_async** 标记为 *真*，以使所有函数（单命令或多命令）默认情况下异步运行。
 
 内部命令总是同步运行 - Opus 会总是在函数中的内部命令完成之前，再继续进行下一个指令。如果你想出于某种原因异步运行内部命令，可以使用 [DOpusRT](/Manual/reference/dopusrt_reference/README.zh.md) 命令（即 **dopusrt /cmd**）运行它 - 然后它将作为外部程序执行，并遵守 **@sync** 和 **@async** 修饰符。

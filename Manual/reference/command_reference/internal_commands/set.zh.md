@@ -788,7 +788,7 @@ DUAL</td><td>
 
 在横向和垂直之间切换双栏器模式的布局。如果双栏器模式当前未处于活动状态，则此命令不会产生任何效果，除非还提供了 **toggle** 关键字和 **horiz** 关键字或 **vert** 关键字。
 
-如果与其他关键字结合，则在以下情况下该功能将打开双栏器模式：尚未打开该模式；双栏器模式已经打开，但未处于预期方向，则切换布局（从横向到纵向或反之） ；如果双栏器模式已打开且已经处于预期方向，则关闭该模式。
+如果与其它关键字结合，则在以下情况下该功能将打开双栏器模式：尚未打开该模式；双栏器模式已经打开，但未处于预期方向，则切换布局（从横向到纵向或反之） ；如果双栏器模式已打开且已经处于预期方向，则关闭该模式。
 
 **示例：**`Set DUAL=togglelayout`
 </td></tr><tr><td>
@@ -797,7 +797,7 @@ DUAL</td><td>
 
 **source**</td><td>
 
-在打开双栏器模式后，新打开的文件列表将变为主位置。此值必须与实际导致双栏器模式打开的其他值之一组合使用。
+在打开双栏器模式后，新打开的文件列表将变为主位置。此值必须与实际导致双栏器模式打开的其它值之一组合使用。
 
 **示例：**`Set DUAL=toggle,source`
 </td></tr><tr><td>
@@ -1394,7 +1394,7 @@ FORMATLOCK</td><td>
 
 **on**</td><td>
 
-在当前文件窗口中启用[格式锁定](/Manual/basic_concepts/folder_options/locking_the_format.zh.md)。默认情况下，它适用于活动文件列表（具有焦点的那个），但你可以将其与其他参数结合使用以控制哪些文件列表受到影响。
+在当前文件窗口中启用[格式锁定](/Manual/basic_concepts/folder_options/locking_the_format.zh.md)。默认情况下，它适用于活动文件列表（具有焦点的那个），但你可以将其与其它参数结合使用以控制哪些文件列表受到影响。
 
 *示例：* `Set FORMATLOCK=on`
 </td></tr><tr><td>
@@ -1530,7 +1530,7 @@ FULLROWSELECT</td><td>
 
 **on**</td><td>
 
-启用整行选择。Preferences 中的 Power（**[文件列表模式/增强模式](/Manual/preferences/preferences_categories/file_display_modes/power_mode/README.zh.md)**）和 details（**[文件列表模式/详细信息](/Manual/preferences/preferences_categories/file_display_modes/details_mode.zh.md)**）[视图](/Manual/basic_concepts/the_lister/view_modes.zh.md）中都有单独的整行设置，默认情况下此命令将影响源文件列表中当前视图的设置。你可以使用此参数的其他关键字来控制受影响的视图。
+启用整行选择。Preferences 中的 Power（**[文件列表模式/增强模式](/Manual/preferences/preferences_categories/file_display_modes/power_mode/README.zh.md)**）和 details（**[文件列表模式/详细信息](/Manual/preferences/preferences_categories/file_display_modes/details_mode.zh.md)**）[视图](/Manual/basic_concepts/the_lister/view_modes.zh.md）中都有单独的整行设置，默认情况下此命令将影响源文件列表中当前视图的设置。你可以使用此参数的其它关键字来控制受影响的视图。
 
 *示例：* `Set FULLROWSELECT=on`
 </td></tr><tr><td>
@@ -1907,7 +1907,7 @@ GROUPCOMBINE</td><td>
 
 **other**</td><td>
 
-组将如 **normal** 选项一样合并，但是只有一个项目的组将进一步合并到一个名为 **其他** 的特殊组中。
+组将如 **normal** 选项一样合并，但是只有一个项目的组将进一步合并到一个名为 **其它** 的特殊组中。
 
 *示例:* `Set GROUPCOMBINE=other`
 </td></tr><tr><td>
@@ -2017,7 +2017,7 @@ HIDE</td><td>
 
 *(无值)*</td><td>
 
-隐藏任何 **Set** 命令工具栏按钮，在该按钮不可用时通常会被禁用，因为该功能不可用。此参数本身不执行任何操作 - 它仅与其他 **Set** 命令参数结合使用。
+隐藏任何 **Set** 命令工具栏按钮，在该按钮不可用时通常会被禁用，因为该功能不可用。此参数本身不执行任何操作 - 它仅与其它 **Set** 命令参数结合使用。
 
 例如，当当前不在 FTP 文件夹中时，命令 `Set FTPMODE=ascii` 通常会在工具栏中禁用，但命令 `Set FTPMODE=ascii HIDE` 会导致该按钮从工具栏中移除，而不是仅仅禁用。
 **设置**
@@ -2355,11 +2355,11 @@ LISTERTITLE</td><td>
 
 *示例：* `Set LISTERTITLE "Directory Opus - %N"`
 
-此命令通常作为切换方式，当指定标题已设置时，执行该命令会清除标题。你可以通过标题前加“notoggle:”来防止这种情况。这对于可能提出冗余标题设置请求并需检查其当前值以避免在其他情况下重置标题的事件驱动脚本而言非常有用。
+此命令通常作为切换方式，当指定标题已设置时，执行该命令会清除标题。你可以通过标题前加“notoggle:”来防止这种情况。这对于可能提出冗余标题设置请求并需检查其当前值以避免在其它情况下重置标题的事件驱动脚本而言非常有用。
 
 *示例：* `Set LISTERTITLE "notoggle:Directory Opus - %N"`
 
-**%!** 代码让你可以隐藏其中所有其他令牌都为空的字符串中的部分。
+**%!** 代码让你可以隐藏其中所有其它令牌都为空的字符串中的部分。
 
 *示例：* `Set LISTERTITLE "%!%T - %!Directory Opus"`
 
@@ -2370,7 +2370,7 @@ MANUALSORT</td><td>
 
 **on**</td><td>
 
-打开当前文件列表中的[手动排序](/Manual/basic_concepts/sorting_and_grouping/manual_sorting.zh.md)。将使用默认手动排序顺序，除非已配置其他手动排序名称以及你使用 *\<name>* 参数指定名称。
+打开当前文件列表中的[手动排序](/Manual/basic_concepts/sorting_and_grouping/manual_sorting.zh.md)。将使用默认手动排序顺序，除非已配置其它手动排序名称以及你使用 *\<name>* 参数指定名称。
 
 *示例：* `Set MANUALSORT=on,MySortOrder`
 </td></tr><tr><td>
@@ -2397,7 +2397,7 @@ MANUALSORT</td><td>
 
 *\<name>*</td><td>
 
-指定要使用的排序顺序的其他名称，该名称必须首先在配置中的 **[杂项/高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上配置 **manual_sort_names** 选项。
+指定要使用的排序顺序的其它名称，该名称必须首先在配置中的 **[杂项/高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上配置 **manual_sort_names** 选项。
 
 *示例：* `Set MANUALSORT=MySortOrder,toggle`
 </td></tr><tr><td>
@@ -2569,7 +2569,7 @@ NOOP</td><td>
 
 *(无值)*</td><td>
 
-保证没有任何操作。如果指定，其他参数将被忽略。可用于创建一个不执行任何操作的热键，以便按下该键不会触发即时查找或任何其他操作。
+保证没有任何操作。如果指定，其它参数将被忽略。可用于创建一个不执行任何操作的热键，以便按下该键不会触发即时查找或任何其它操作。
 
 *示例：* `Set NOOP`
 </td></tr><tr><td>
@@ -2692,7 +2692,7 @@ QUICKFILTERFLAGS</td><td>
 
 **set**</td><td>
 
-与其他标志结合使用时，确保这些标志始终保持开启。如果没有 **set** 或 **clear**，其他指定的标签将被 *切换*，即关闭时打开，打开时关闭。
+与其它标志结合使用时，确保这些标志始终保持开启。如果没有 **set** 或 **clear**，其它指定的标签将被 *切换*，即关闭时打开，打开时关闭。
 
 *示例：* `Set QUICKFILTERFLAGS=set,showfiles`
 </td></tr><tr><td>
@@ -2701,7 +2701,7 @@ QUICKFILTERFLAGS</td><td>
 
 **clear**</td><td>
 
-与其他标志结合使用时，确保这些标志始终保持关闭。如果没有 **set** 或 **clear**，其他指定的标签将被 *切换*，即关闭时打开，打开时关闭。
+与其它标志结合使用时，确保这些标志始终保持关闭。如果没有 **set** 或 **clear**，其它指定的标签将被 *切换*，即关闭时打开，打开时关闭。
 
 *示例：* `Set QUICKFILTERFLAGS=clear,showfiles`
 </td></tr><tr><td>
@@ -2856,7 +2856,7 @@ READONLY</td><td>
 
 **off**
 
-清除当前文件列表的只读标志。配置的**[Zip 及其他压缩包文件/Zip 文件](/Manual/preferences/preferences_categories/zip_and_other_archives/zip_file_options.zh.md)**页面上的**默认情况下以只读方式打开 Zip 文件**选项可以使 Zip 压缩包文件默认情况下为只读，然后你可以使用此命令来使其可写。
+清除当前文件列表的只读标志。配置的**[Zip 及其它压缩包文件/Zip 文件](/Manual/preferences/preferences_categories/zip_and_other_archives/zip_file_options.zh.md)**页面上的**默认情况下以只读方式打开 Zip 文件**选项可以使 Zip 压缩包文件默认情况下为只读，然后你可以使用此命令来使其可写。
 
 *示例:* `Set READONLY=off`
 </td></tr><tr><td>
@@ -3083,7 +3083,7 @@ SHOWFILTERATTR</td><td>
 
 *\<attributes\>*</td><td>
 
-设置源文件列表中的属性显示过滤器。只会显示已设置指定属性的文件，所有其他属性的文件将被隐藏。
+设置源文件列表中的属性显示过滤器。只会显示已设置指定属性的文件，所有其它属性的文件将被隐藏。
 
 *\<attributes\>* 值为以下一个或多个字母：**R**（只读）、**A**（压缩包）、**H**（隐藏）、**S**（系统）、**E**（加密）、**C**（压缩）、**O**（脱机）、**I**（非索引）、**P**（固定）。有关详细说明，请参阅[调整属性](/Manual/file_operations/changing_attributes.zh.md)。
 
@@ -3107,7 +3107,7 @@ SHOWFILTERFILENAME</td><td>
 
 *\<pattern\>*</td><td>
 
-将源文件列表中的文件名显示过滤器设置为指定的 [通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md)。只会显示与该模式匹配的文件，源文件列表中将隐藏所有其他文件。
+将源文件列表中的文件名显示过滤器设置为指定的 [通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md)。只会显示与该模式匹配的文件，源文件列表中将隐藏所有其它文件。
 
 提供的模式可使用 **regex:** 作为前缀，指定该模式为正则表达式。
 
@@ -3129,7 +3129,7 @@ SHOWFILTERFOLDERATTR</td><td>
 
 *\<attributes\>*</td><td>
 
-设置源文件列表中的文件夹属性显示过滤器。只会显示已设置指定属性的文件夹，所有其他属性的文件夹将被隐藏。
+设置源文件列表中的文件夹属性显示过滤器。只会显示已设置指定属性的文件夹，所有其它属性的文件夹将被隐藏。
 
 *\<attributes\>* 值为以下一个或多个字母：**R**（只读）、**A**（压缩包）、**H**（隐藏）、**S**（系统）、**E**（加密）、**C**（压缩）、**O**（脱机）、**I**（非索引）、**P**（固定）。有关详细说明，请参阅[调整属性](/Manual/file_operations/changing_attributes.zh.md)。
 
@@ -3162,7 +3162,7 @@ SHOWFILTERFOLDERS</td><td>
 
 *\<pattern\>*</td><td>
 
-将源文件列表中的文件夹显示过滤器设置为指定的 [通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md)。只会显示名称与该模式匹配的文件夹，源文件列表中将隐藏所有其他文件夹。
+将源文件列表中的文件夹显示过滤器设置为指定的 [通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md)。只会显示名称与该模式匹配的文件夹，源文件列表中将隐藏所有其它文件夹。
 
 提供的模式可使用 **regex:** 作为前缀，指定该模式为正则表达式。
 
@@ -3475,7 +3475,7 @@ SOUNDS</td><td>
 
 **on**</td><td>
 
-在配置中的 **[其他 / 声音](/Manual/preferences/preferences_categories/miscellaneous/sounds.zh.md)** 页面上打开 **启用声音事件** 选项。
+在配置中的 **[其它 / 声音](/Manual/preferences/preferences_categories/miscellaneous/sounds.zh.md)** 页面上打开 **启用声音事件** 选项。
 
 *示例:* `Set SOUNDS=on`
 </td></tr><tr><td>
@@ -3764,7 +3764,7 @@ TABPOSITION</td><td>
 
 **save**
 
-使此命令所做的更改永久生效（并将其应用到任何其他已打开的文件窗口）。
+使此命令所做的更改永久生效（并将其应用到任何其它已打开的文件窗口）。
 
 *示例:* `Set TABPOSITION=above,normal,save`
 
@@ -3934,7 +3934,7 @@ TABPOSITION</td><td>
 **TREESHOWPATHTOSEL**
 | 选项 | 键 | 值 | 描述 |
 |---|---|---|---|
-| TREESHOWPATHTOSEL | /K | **on** | 启用文件夹树的**突出显示到选定文件夹的路径**选项。这是一个全局设置，因此会影响所有文件窗口。启用后，**[文件夹树 / 外观](/Manual/preferences/preferences_categories/folder_tree/appearance.zh.md)**配置页面上的其他选项将生效。 |
+| TREESHOWPATHTOSEL | /K | **on** | 启用文件夹树的**突出显示到选定文件夹的路径**选项。这是一个全局设置，因此会影响所有文件窗口。启用后，**[文件夹树 / 外观](/Manual/preferences/preferences_categories/folder_tree/appearance.zh.md)**配置页面上的其它选项将生效。 |
 | TREESHOWPATHTOSEL | /K | **off** | 关闭树路径突出显示。 |
 | TREESHOWPATHTOSEL | /K | **toggle** | 切换树路径突出显示功能的开启和关闭状态。 |
 **UTILITY**
@@ -3955,7 +3955,7 @@ TABPOSITION</td><td>
 | UTILITY | /K | **toggle** | 在活动文件窗口中切换实用程序面板的开启和关闭状态。 |
 | UTILITY | /K | **focus** | 如果实用程序面板处于打开状态，则为其赋予焦点。如果与**toggle**一起使用，则只有当实用程序面板具有焦点时，它才会切换为关闭状态。 |
 | UTILITY | /K | **expand** | 如果实用程序面板处于收缩状态，则此参数与**toggle**结合使用会导致面板展开而不是关闭。 |
-| UTILITY | /K | **noexpand** | 当与**toggle**（或其他使面板启用的关键字）一起使用时，**noexpand**可以防止实用程序面板展开，如果它之前保存在收缩状态中。也就是说，它将被启用但仍保持收缩状态。 |
+| UTILITY | /K | **noexpand** | 当与**toggle**（或其它使面板启用的关键字）一起使用时，**noexpand**可以防止实用程序面板展开，如果它之前保存在收缩状态中。也就是说，它将被启用但仍保持收缩状态。 |
 **VIEW**
 | 选项 | 键 | 值 | 描述 |
 |---|---|---|---|

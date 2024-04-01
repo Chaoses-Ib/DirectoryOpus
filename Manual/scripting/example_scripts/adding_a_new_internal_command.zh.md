@@ -80,7 +80,7 @@
 
     // 构建要运行的 Select 命令行，该命令行实际上会选择文件。
     // 需要 FROMSCRIPT 参数以从命令对象中选择文件。
-    // DESELECTNOMATCH 参数用于取消选择所有其他文件，除非使用了脚本的 NODESELECT 参数。
+    // DESELECTNOMATCH 参数用于取消选择所有其它文件，除非使用了脚本的 NODESELECT 参数。
 
     strCommand = "Select FROMSCRIPT";
     if (!scriptCmdData.func.args.got_arg.nodeselect)

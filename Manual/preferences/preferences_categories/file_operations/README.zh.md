@@ -14,7 +14,7 @@
 - **[元数据](/Manual/preferences/preferences_categories/file_operations/metadata/README.zh.md)**：与元数据编辑相关的选项。
   - **[编辑器](/Manual/preferences/preferences_categories/file_operations/metadata/editor.zh.md)**：[元数据编辑器](/Manual/basic_concepts/the_lister/metadata_pane.zh.md) 的选项。
   - **[音乐流派](/Manual/preferences/preferences_categories/file_operations/metadata/music_genres.zh.md)**：在音频文件的元数据编辑器中显示的音乐流派。
-- **[选项](/Manual/preferences/preferences_categories/file_operations/options.zh.md)**：不适合任何其他页面的常规选项！
+- **[选项](/Manual/preferences/preferences_categories/file_operations/options.zh.md)**：不适合任何其它页面的常规选项！
 - **[进度指示符](/Manual/preferences/preferences_categories/file_operations/progress_indicators/README.zh.md)**：控制 Opus 在文件操作期间可以显示的进度指示符的选项。
   - **[计算文件数](/Manual/preferences/preferences_categories/file_operations/progress_indicators/counting_files.zh.md)**：控制文件夹中的文件数量（需要准确的进度指示符）。
   - **[作业栏](/Manual/preferences/preferences_categories/file_operations/progress_indicators/jobs_bar.zh.md)**：与 [作业栏](/Manual/file_operations/copying_moving_and_deleting_files/the_jobs_bar.zh.md) 相关的选项。

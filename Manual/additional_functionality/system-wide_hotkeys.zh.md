@@ -4,7 +4,7 @@
 
 - 工具栏和菜单按钮可以与热键相关联。在文件窗口中按此键将激活按钮的功能。
 - 列在您的 [收藏夹](/Manual/basic_concepts/the_lister/navigation/favorites.zh.md) 中的文件夹可以附加热键。在文件窗口中按该键将读取收藏夹文件夹。
-- 您可以创建不关联到按钮、工具栏或任何其他项的热键，它们是“纯”热键，独立存在。
+- 您可以创建不关联到按钮、工具栏或任何其它项的热键，它们是“纯”热键，独立存在。
 
 真正的热键通过 [Customize](/Manual/customize/README.zh.md) 对话框的 [Hotkeys](/Manual/customize/the_customize_dialog/keys.zh.md) 页面创建。您会发现可以通过此方式创建两种类型的热键：
 

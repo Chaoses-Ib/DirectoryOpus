@@ -5,7 +5,7 @@
 - 创建新的脚本、[脚本模块](script_add-ins/modules.zh.md) 和 [包含文件](script_add-ins/include_files.zh.md)。
 - 在多个标签页中使用语法高亮文本编辑器来编辑脚本（如果需要，也可以配置外部编辑器）。
 - 设计 [对话框](script_dialogs/README.zh.md) 和编辑 [字符串资源](resources/string_resources.zh.md)。
-- 添加图标、图像和其他支持的资源文件。
+- 添加图标、图像和其它支持的资源文件。
 - 方便地为各种 [脚本事件](/Manual/reference/scripting_reference/scripting_events/README.zh.md) 添加模板函数 (.js 和 .vbs)。
 - 保存并使用自己的文本片段（例如，对于您经常必须输入的样板代码）。
 

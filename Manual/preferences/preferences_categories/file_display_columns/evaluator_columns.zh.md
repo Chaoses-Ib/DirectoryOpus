@@ -1,6 +1,6 @@
 # 求值器列
 
-此页面允许您创建自己的列，它们可以使用 [求值器](/Manual/evaluator/README.zh.md) 来操作文件名或其他元数据以生成它们显示的文本。
+此页面允许您创建自己的列，它们可以使用 [求值器](/Manual/evaluator/README.zh.md) 来操作文件名或其它元数据以生成它们显示的文本。
 
 例如，您可以使用求值器的 [RegEx()](/Manual/reference/evaluator/regex.zh.md) 函数来提取文件名的一部分并将其显示在单独的列中。
 

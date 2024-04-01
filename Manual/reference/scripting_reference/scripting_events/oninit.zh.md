@@ -1,4 +1,4 @@
-**OnInit** 事件对于每个 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 仅调用一次，以对其进行初始化。在程序启动时，以及当 Opus 已在运行时添加或编辑脚本时，将调用此事件。实施 **OnInit** 事件是可选的，但强烈建议这样做，因为它使您可以提供要在配置中向用户显示的名称、描述和其他信息。它还为脚本提供了一种 [添加内部命令](/Manual/scripting/example_scripts/adding_a_new_internal_command.zh.md) 和 [列](/Manual/scripting/example_scripts/adding_a_new_column.zh.md) 的方法（尽管 **[OnAddCommands](onaddcommands.zh.md)** 和 **[OnAddColumns](onaddcolumns.zh.md)** 方法提供了更好的执行此操作的方法）。
+**OnInit** 事件对于每个 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 仅调用一次，以对其进行初始化。在程序启动时，以及当 Opus 已在运行时添加或编辑脚本时，将调用此事件。实施 **OnInit** 事件是可选的，但强烈建议这样做，因为它使您可以提供要在配置中向用户显示的名称、描述和其它信息。它还为脚本提供了一种 [添加内部命令](/Manual/scripting/example_scripts/adding_a_new_internal_command.zh.md) 和 [列](/Manual/scripting/example_scripts/adding_a_new_column.zh.md) 的方法（尽管 **[OnAddCommands](onaddcommands.zh.md)** 和 **[OnAddColumns](onaddcolumns.zh.md)** 方法提供了更好的执行此操作的方法）。
 
 <table>
 <thead><tr><th>

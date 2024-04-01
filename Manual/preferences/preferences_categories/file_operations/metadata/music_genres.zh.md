@@ -4,7 +4,7 @@
 
 **未使用的类型**清单显示了定义类型且未列出在清单上的类型，而**已列出的类型**则显示了即将列出的类型。
 
-使用 ![](/Manual/images/media/13/arrow_left.png) 和 ![](/Manual/images/media/13/arrow_right.png) 按钮可在两个清单之间迁移类型。您还可以双击一个类型以迁移到其他列表。
+使用 ![](/Manual/images/media/13/arrow_left.png) 和 ![](/Manual/images/media/13/arrow_right.png) 按钮可在两个清单之间迁移类型。您还可以双击一个类型以迁移到其它列表。
 
 您可以使用 ![](/Manual/images/media/13/arrow_up.png) 和 ![](/Manual/images/media/13/arrow_down.png) 按钮更改**已列出的类型**清单中类型的顺序。
 

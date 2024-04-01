@@ -12,7 +12,7 @@
 <td>![](/Manual/images/media/button_context_menu_1.png) </td>
 <td></td>
 <td><strong>剪切</strong>：将按钮剪切到剪贴板 - 当粘贴到工具栏上的另一个位置时，按钮将被移动。<br />
-<strong>复制</strong>：将按钮复制到剪贴板 - 您可以将副本粘贴到同一工具栏或其他工具栏。<br />
+<strong>复制</strong>：将按钮复制到剪贴板 - 您可以将副本粘贴到同一工具栏或其它工具栏。<br />
 <strong>粘贴</strong>：从剪贴板粘贴按钮 - 将按钮插入到您右键单击的按钮左侧。<br />
 <strong>删除</strong>：删除按钮。<br />
 <strong>编辑</strong>：编辑按钮。<br />
@@ -36,7 +36,7 @@
 <td>![](/Manual/images/media/button_context_menu_2.png) </td>
 <td></td>
 <td><strong>三个按钮</strong>选项不可用（不能将下拉菜单转换为多功能按钮），并且有一个新命令：<br /><br />
-<strong>转换为菜单按钮</strong>：此命令将下拉菜单（其唯一目的是下拉其他按钮的菜单）转换为下拉菜单按钮。菜单按钮组合了一个常规按钮（您可以为其分配功能）和一个下拉菜单。按钮的主体部分运行指定命令，而显示箭头符号的右侧较小按钮则用于弹开菜单。<br />
+<strong>转换为菜单按钮</strong>：此命令将下拉菜单（其唯一目的是下拉其它按钮的菜单）转换为下拉菜单按钮。菜单按钮组合了一个常规按钮（您可以为其分配功能）和一个下拉菜单。按钮的主体部分运行指定命令，而显示箭头符号的右侧较小按钮则用于弹开菜单。<br />
 ![](/Manual/images/media/menu_button.png) <br />
 有关更多详细信息，请参阅多功能按钮的<a href="drop-down_buttons_and_menus">下拉按钮和菜单</a>主题。</td>
 </tr>

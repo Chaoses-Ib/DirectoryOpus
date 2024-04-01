@@ -4,7 +4,7 @@
 
 此功能可使用 **dopusrt.exe /col** 命令访问，在 **/col** 之后，你必须提供 *集合命令* 和该集合命令的适当参数。
 
-与大多数命令行工具相同，如果路径或其他参数包含空格，你必须在周围“加上引号”。
+与大多数命令行工具相同，如果路径或其它参数包含空格，你必须在周围“加上引号”。
 
 <table>
 <thead><tr><th>
@@ -304,7 +304,7 @@ dopusrt.exe /col clear /full "Marked Pictures"**
   
 命名集合必须已创建为存储的查询（例如，使用 **dopusrt.exe /col create /query** 命令）。
 
-结合使用时，你可以使用 **/engine** 参数设置查询使用的搜索引擎。默认值为 Windows 搜索；其他选项为 **everything**、**everythingglobal** 和 **opus**。
+结合使用时，你可以使用 **/engine** 参数设置查询使用的搜索引擎。默认值为 Windows 搜索；其它选项为 **everything**、**everythingglobal** 和 **opus**。
 
 示例：  
 **dopusrt.exe /col setquery "Backup Files" name:\*.bak /engine=everything**

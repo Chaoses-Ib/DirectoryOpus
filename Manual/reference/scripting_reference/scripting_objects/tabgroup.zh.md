@@ -1,6 +1,6 @@
 # TabGroup
 
-**TabGroup** 对象表示[文件夹标签页组](/Manual/basic_concepts/the_lister/tabs/tab_groups.zh.md)或可将其他标签页组组织其中的文件夹。可以从 **[TabGroups](tabgroups.zh.md)** 对象访问或枚举单独的 **TabGroup** 对象。
+**TabGroup** 对象表示[文件夹标签页组](/Manual/basic_concepts/the_lister/tabs/tab_groups.zh.md)或可将其它标签页组组织其中的文件夹。可以从 **[TabGroups](tabgroups.zh.md)** 对象访问或枚举单独的 **TabGroup** 对象。
 
 <table>
 <thead><tr><th>

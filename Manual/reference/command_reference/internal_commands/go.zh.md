@@ -143,7 +143,7 @@ CURRENT</td><td>
 
 *(没有值)*</td><td>
 
-指明当前源文件夹。此参数用于在其他标签、文件窗口或文件列表中打开当前文件夹。
+指明当前源文件夹。此参数用于在其它标签、文件窗口或文件列表中打开当前文件夹。
 
 *示例：* `Go CURRENT OPENINDUAL`
 </td></tr><tr><td>
@@ -152,7 +152,7 @@ DESTPATH</td><td>
 
 *(没有值)*</td><td>
 
-指明当前目标文件夹。此参数用于在源文件列表（或其他文件窗口或标签）中打开目标文件夹。
+指明当前目标文件夹。此参数用于在源文件列表（或其它文件窗口或标签）中打开目标文件夹。
 
 *示例：* `Go DESTPATH`
 </td></tr><tr><td>
@@ -360,7 +360,7 @@ EXISTINGLISTER</td><td>
 
 *(无值)*</td><td>
 
-如果已在现有文件窗口中打开了指定的文件夹（包括其他窗口中的非活动文件夹标签），则该命令会激活该文件窗口及其内部的相应标签，且不执行任何其他操作。如果找到了另一个窗口，则会忽略该命令的其他参数。如果指定的路径尚未在另一个窗口中打开，则命令将继续执行，就像没有给出 **EXISTINGLISTER** 参数一样。
+如果已在现有文件窗口中打开了指定的文件夹（包括其它窗口中的非活动文件夹标签），则该命令会激活该文件窗口及其内部的相应标签，且不执行任何其它操作。如果找到了另一个窗口，则会忽略该命令的其它参数。如果指定的路径尚未在另一个窗口中打开，则命令将继续执行，就像没有给出 **EXISTINGLISTER** 参数一样。
 
 *示例：* `Go "C:\Program Files" NEW EXISTINGLISTER`
 </td></tr><tr><td>
@@ -535,7 +535,7 @@ FOLDERCONTENT</td><td>
 
 *(无值)*</td><td>
 
-在下拉菜单中显示 **PATH** 参数指定路径的内容（作为 [动态按钮](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.zh.md)）。生成的列表中的子文件夹可以选择，以便导航到该位置，并且可以选择生成列表中的文件以打开该文件。您还可以在项目上右键单击以显示其上下文菜单，并将文件拖放到文件夹（以复制或移动它们）或拖放到其他文件（以打开它们）。如果您将鼠标悬停在子文件夹上，它将展开以显示显示子文件夹内容的另一个菜单。
+在下拉菜单中显示 **PATH** 参数指定路径的内容（作为 [动态按钮](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.zh.md)）。生成的列表中的子文件夹可以选择，以便导航到该位置，并且可以选择生成列表中的文件以打开该文件。您还可以在项目上右键单击以显示其上下文菜单，并将文件拖放到文件夹（以复制或移动它们）或拖放到其它文件（以打开它们）。如果您将鼠标悬停在子文件夹上，它将展开以显示显示子文件夹内容的另一个菜单。
 
 与 **FOLDERCONTENT** 一起使用时，**PATH** 参数支持用竖线 (**\|**) 分隔的多个路径。例如，这可以让您在文件窗口中的下拉菜单中复制（无论如何，在一定程度上）Windows 开始菜单，方法是同时显示当前用户的开始文件夹和公共（所有用户）开始文件夹。
 
@@ -751,7 +751,7 @@ FOLDERCONTENT</td><td>
 
 生成列表专门用于将所选文件复制到列表中显示的文件夹中。当您从下拉菜单中选择某个子文件夹时，会修改标准行为。例如，如果您选择当前文件夹中的某些文件，然后从下拉 `Go FOLDERCONTENT` 菜单中选择某个子文件夹，这些文件将被复制到该文件夹。
 
-每个生成按钮都将运行 **Copy** 命令。您可以使用单独的 **COPYARGS** 参数指定每个生成按钮中包含的其他 **Copy** 命令参数。
+每个生成按钮都将运行 **Copy** 命令。您可以使用单独的 **COPYARGS** 参数指定每个生成按钮中包含的其它 **Copy** 命令参数。
 
 *示例：* `Go \\NAS\Music FOLDERCONTENT=nofiles,copy`
 </td></tr><tr><td>
@@ -775,7 +775,7 @@ FOLDERCONTENT</td><td>
 
 *示例：* `Go "C:\My Templates" FOLDERCONTENT=copytosource`
 
-每个生成按钮都将运行 **Copy** 命令。您可以使用单独的 **COPYARGS** 参数指定每个生成按钮中包含的其他 **Copy** 命令参数。
+每个生成按钮都将运行 **Copy** 命令。您可以使用单独的 **COPYARGS** 参数指定每个生成按钮中包含的其它 **Copy** 命令参数。
 
 *示例：* `Go C:\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no\*\*`
 
@@ -879,7 +879,7 @@ FROMSEL</td><td>
 
 *(无值)*</td><td>
 
-指示源文件列表中的第一个选定文件夹。此参数用于打开选定的文件夹（在当前文件列表、其他标签页、新的文件窗口等等中）。
+指示源文件列表中的第一个选定文件夹。此参数用于打开选定的文件夹（在当前文件列表、其它标签页、新的文件窗口等等中）。
 
 *示例:* `Go FROMSEL NEW`
 </td></tr><tr><td>
@@ -1047,7 +1047,7 @@ LASTACTIVELISTER</td><td>
 
 *(无值)*</td><td>
 
-将最近活动的文件窗口调到前面。如果当前没有有效的文件窗口打开，则将改为使用提供给该命令的任何其他参数。所以例如，您可以有一个全局热键，用于调出上一个文件窗口到前面，或在没有打开文件窗口时打开一个新文件窗口。
+将最近活动的文件窗口调到前面。如果当前没有有效的文件窗口打开，则将改为使用提供给该命令的任何其它参数。所以例如，您可以有一个全局热键，用于调出上一个文件窗口到前面，或在没有打开文件窗口时打开一个新文件窗口。
 
 *示例:* `Go LASTACTIVELISTER NEW`
 </td></tr><tr><td>
@@ -1065,7 +1065,7 @@ LAYOUT</td><td>
 
 *\<布局名称\>*</td><td>
 
-在新文件窗口中打开以指定 [布局](/Manual/basic_concepts/the_lister/layouts/README.zh.md) 加载的文件夹。如果布局包含多个文件窗口，则仅使用第一个文件窗口。可以使用 **Go** 命令的其他参数来覆盖布局中的设置。
+在新文件窗口中打开以指定 [布局](/Manual/basic_concepts/the_lister/layouts/README.zh.md) 加载的文件夹。如果布局包含多个文件窗口，则仅使用第一个文件窗口。可以使用 **Go** 命令的其它参数来覆盖布局中的设置。
 *\<name\>*</td><td>
 
 通过 **REMEMBERTREEEXPANSION** 和 **RESTORETREEEXPANSION** 使用时，指定名称来保存或加载文件夹树扩展。
@@ -1077,7 +1077,7 @@ NEW</td><td>
 
 *(无值)*</td><td>
 
-打开一个新的文件窗口。[默认文件窗口](/Manual/basic_concepts/the_lister/the_default_lister.zh.md) 设置被用于新打开的文件窗口，尽管 **Go** 命令的其他各种参数可以用于覆盖默认文件窗口的设置。
+打开一个新的文件窗口。[默认文件窗口](/Manual/basic_concepts/the_lister/the_default_lister.zh.md) 设置被用于新打开的文件窗口，尽管 **Go** 命令的其它各种参数可以用于覆盖默认文件窗口的设置。
 
 *示例:* `Go C:\ NEW`
 </td></tr><tr><td>
@@ -1346,7 +1346,7 @@ NEWTAB</td><td>
 
 **tofront**</td><td>
 
-将文件窗口置于前面。在其他窗口中打开标签页时非常有用。
+将文件窗口置于前面。在其它窗口中打开标签页时非常有用。
 
 *示例：`Go CURRENT NEWTAB=tofront OPENINDEST`
 </td></tr><tr><td>
@@ -1364,7 +1364,7 @@ NOSCRIPT</td><td>
 
 *(无值)*</td><td>
 
-允许 [脚本](/Manual/scripting/README.zh.md) 运行 **Go** 命令，而不会触发其他脚本（或它自己）。添加 **NOSCRIPT** 参数会禁用 **[OnBeforeFolderChange](../../scripting_reference/scripting_events/onbeforefolderchange.zh.md)**、**[OnAfterFolderChange](../../scripting_reference/scripting_events/onafterfolderchange.zh.md)**、**[OnOpenTab](../../scripting_reference/scripting_events/onopentab.zh.md)** 和 **[OnOpen文件窗口](../../scripting_reference/scripting_events/onopenlister.zh.md)** 事件，否则这些事件会因该命令而触发。
+允许 [脚本](/Manual/scripting/README.zh.md) 运行 **Go** 命令，而不会触发其它脚本（或它自己）。添加 **NOSCRIPT** 参数会禁用 **[OnBeforeFolderChange](../../scripting_reference/scripting_events/onbeforefolderchange.zh.md)**、**[OnAfterFolderChange](../../scripting_reference/scripting_events/onafterfolderchange.zh.md)**、**[OnOpenTab](../../scripting_reference/scripting_events/onopentab.zh.md)** 和 **[OnOpen文件窗口](../../scripting_reference/scripting_events/onopenlister.zh.md)** 事件，否则这些事件会因该命令而触发。
 </td></tr><tr><td>
 OPENCONTAINER</td><td>
 /O</td><td>
@@ -1498,7 +1498,7 @@ PATHENTRY</td><td>
 
 *(无值)*</td><td>
 
-以允许您在当前文件列表区导航到其他文件夹的特殊模式（“转到”模式）显示 [即时查找](/Manual/basic_concepts/the_lister/find-as-you-type_field.zh.md) 字段。此命令等效于 **[CLI](cli.zh.md) QUICKGO**。
+以允许您在当前文件列表区导航到其它文件夹的特殊模式（“转到”模式）显示 [即时查找](/Manual/basic_concepts/the_lister/find-as-you-type_field.zh.md) 字段。此命令等效于 **[CLI](cli.zh.md) QUICKGO**。
 *示例：* `Go PATHENTRY`
 </td></tr><tr><td>
 </td><td>
@@ -1835,7 +1835,7 @@ SWAP</td><td>
 SWITCHPATH</td><td>
 /K/M</td><td>
 
-*\<其他路径\> ...*</td><td>
+*\<其它路径\> ...*</td><td>
 
 在两个或更多路径间切换（或循环）。**PATH** 参数用于提供序列中的第一个路径，然后 **SWITCHPATH** 参数提供第二个和后续的路径。运行此命令时，Opus 会查看在源文件列表中显示的当前路径。如果它匹配 provided paths 中的一个，则会读取序列中的下一个路径（然后再读下一个、再下一个，如此类推）。如果当前路径不匹配 provided paths 中的任何一个，则会读取序列中的第一个路径。
 
@@ -2074,7 +2074,7 @@ TABGROUPLIST</td><td>
 
 **savecurrent**</td><td>
 
-在加载新建标签页组之前保存当前文件夹标签页组（如有）。如果没有此参数，加载其他标签页组时对标签页组的任何更改都将会丢失，除非你明确保存这些更改。
+在加载新建标签页组之前保存当前文件夹标签页组（如有）。如果没有此参数，加载其它标签页组时对标签页组的任何更改都将会丢失，除非你明确保存这些更改。
 
 在特殊情况下，单击当前标签页组的按钮将重新加载该组而无须先覆盖，从而使你可以复原到该组上一次保存的状态。
 
@@ -2082,7 +2082,7 @@ TABGROUPLIST</td><td>
 
 *示例:* `Go TABGROUPLIST=savecurrent`
 
-请注意，如果你希望 Opus 以这种方式自动保存标签页组，你可能还需要添加一些内容，以便在列表关闭时或在其他事件（如打开/关闭标签页或更改文件夹）时触发 **Go TABGROUPSAVE=!current,!quiet**，具体取决于你希望在何时更新标签页组。这可能仅在只使用一个列表的情况下有意义，因为多个列表可能对当前打开的组有不同的视图，并且会相互覆盖。但是，如果你希望自动保存标签页组，你可能已经在始终使用单窗口，因为其他人会为独立的标签页组使用独立的窗口，并在窗口之间切换，而不是在单窗口中切换组。
+请注意，如果你希望 Opus 以这种方式自动保存标签页组，你可能还需要添加一些内容，以便在列表关闭时或在其它事件（如打开/关闭标签页或更改文件夹）时触发 **Go TABGROUPSAVE=!current,!quiet**，具体取决于你希望在何时更新标签页组。这可能仅在只使用一个列表的情况下有意义，因为多个列表可能对当前打开的组有不同的视图，并且会相互覆盖。但是，如果你希望自动保存标签页组，你可能已经在始终使用单窗口，因为其它人会为独立的标签页组使用独立的窗口，并在窗口之间切换，而不是在单窗口中切换组。
 </td></tr><tr><td>
 TABGROUPLOAD</td><td>
 /K</td><td>
@@ -2251,7 +2251,7 @@ TABLIST</td><td>
 
 显示当前打开的文件夹标签列表（充当 [动态按钮](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.zh.md)）。从列表中选择标签将切换到该标签。您还可以将文件拖放到列表中的项目，将它们复制到该标签的文件夹中。
 
-默认情况下，显示的标签来自当前源文件列表，但您可以与 **OPENINLEFT**、**OPENINRIGHT** 和 **OPENINDEST** 自变量结合使用，以显示来自其他文件列表的标签。
+默认情况下，显示的标签来自当前源文件列表，但您可以与 **OPENINLEFT**、**OPENINRIGHT** 和 **OPENINDEST** 自变量结合使用，以显示来自其它文件列表的标签。
 
 *Example:* `Go TABLIST`
 </td></tr><tr><td>
@@ -2406,7 +2406,7 @@ TABMOVE</td><td>
 
 *(no value)*</td><td>
 
-将当前文件夹标签移动到其他文件列表。（有关在不更改侧面的情况下重新定位标签，请参见 **TABPOS**。）如果文件窗口尚未处于该模式，则将设置文件窗口为双显示模式。
+将当前文件夹标签移动到其它文件列表。（有关在不更改侧面的情况下重新定位标签，请参见 **TABPOS**。）如果文件窗口尚未处于该模式，则将设置文件窗口为双显示模式。
 
 *Example:* `Go TABMOVE`
 </td></tr><tr><td>
@@ -2442,7 +2442,7 @@ TABMOVE</td><td>
 
 **active**</td><td>
 
-如果指定了，则移动标签将变为活动标签。否则，其他文件列表中以前活动的标签仍然保持活动状态。
+如果指定了，则移动标签将变为活动标签。否则，其它文件列表中以前活动的标签仍然保持活动状态。
 
 *Example:* `Go TABMOVE=active,-2`
 </td></tr><tr><td>
@@ -2472,7 +2472,7 @@ TABNAME</td><td>
 | **%N** | 当前（源）文件夹的名称                     |
 | **%R** | 当前（源）文件夹的驱动器根目录         |
 | **%!** | 隐藏节                                    |
-**%!** 代码允许您隐藏字符串中所有其他标记为空的部分。
+**%!** 代码允许您隐藏字符串中所有其它标记为空的部分。
 
 *示例：* `Go TABNAME "%!驱动器 %R ： %!%N"`
 
@@ -2540,7 +2540,7 @@ TABPOS</td><td>
 
 *示例:* `Go NEW TITLE "Directory Opus - %N"`
 
-**%!** 代码允许你在部分中隐藏字符串，其中部分内的所有其他标记都是空的。
+**%!** 代码允许你在部分中隐藏字符串，其中部分内的所有其它标记都是空的。
 
 *示例:* `Go NEW TITLE "%!%T - %!Directory Opus"`
 
@@ -2760,7 +2760,7 @@ UNDOCLOSELISTER</td><td>
 
 **closeexisting**</td><td>
 
-重新打开上次关闭的文件窗口，并关闭所有其他打开的文件窗口。
+重新打开上次关闭的文件窗口，并关闭所有其它打开的文件窗口。
 
 *示例:* `Go UNDOCLOSELISTER=closeexisting`
 </td></tr><tr><td>
@@ -2769,7 +2769,7 @@ UP</td><td>
 
 *(无值)*</td><td>
 
-[向上](/Manual/basic_concepts/the_lister/navigation/up_forwards_back.zh.md) 导航到当前文件夹的父文件夹。你可以将此与 **OPENINDUAL** 等结合使用，在另一个文件列表或文件窗口中打开当前文件夹的父文件夹。这还可以与 **BACK** 参数结合使用 - 在这种情况下，如果当前文件夹的父文件夹也是历史列表中的上一个文件夹，Opus 将向后退而不是向上移动 - 保留文件选择和其他状态以前的文件夹。
+[向上](/Manual/basic_concepts/the_lister/navigation/up_forwards_back.zh.md) 导航到当前文件夹的父文件夹。你可以将此与 **OPENINDUAL** 等结合使用，在另一个文件列表或文件窗口中打开当前文件夹的父文件夹。这还可以与 **BACK** 参数结合使用 - 在这种情况下，如果当前文件夹的父文件夹也是历史列表中的上一个文件夹，Opus 将向后退而不是向上移动 - 保留文件选择和其它状态以前的文件夹。
 
 *Example:* `Go UP`
 </td></tr><tr><td>

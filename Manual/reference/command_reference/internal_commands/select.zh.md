@@ -168,7 +168,7 @@ DESELECTOTHERTYPE</td><td>
 
 *（无值）*</td><td>
 
-与 **TYPE** 参数一起使用以将选择限制为文件或文件夹（或使用 **ALLFILES** 和 **ALLDIRS** 参数），**DESELECTOTHERTYPE** 会导致取消选择所有其他类型的项
+与 **TYPE** 参数一起使用以将选择限制为文件或文件夹（或使用 **ALLFILES** 和 **ALLDIRS** 参数），**DESELECTOTHERTYPE** 会导致取消选择所有其它类型的项
 
 *示例：* `Select * TYPE=files DESELECTOTHERTYPE`
 </td></tr><tr><td>
@@ -290,7 +290,7 @@ FIRST</td><td>
 
 *(无值)*</td><td>
 
-选择源文件列表中的第一个项目，取消选择所有其他项目。
+选择源文件列表中的第一个项目，取消选择所有其它项目。
 
 *示例：`Select FIRST`
 </td></tr><tr><td>
@@ -421,7 +421,7 @@ LAST</td><td>
 
 *(无值)*</td><td>
 
-选择源文件列表中的最后一个项目，取消选择所有其他项目。
+选择源文件列表中的最后一个项目，取消选择所有其它项目。
 
 *示例：`Select LAST`
 </td></tr><tr><td>
@@ -448,7 +448,7 @@ NEXT</td><td>
 
 *(无值)*</td><td>
 
-选择文件列表中的下一个项目。紧跟在第一个当前选定项后面的第一个项目将被选中，所有其他项目将取消选中。
+选择文件列表中的下一个项目。紧跟在第一个当前选定项后面的第一个项目将被选中，所有其它项目将取消选中。
 *示例:* `Select NEXT`
 </td></tr><tr><td>
 </td><td>
@@ -501,7 +501,7 @@ PATTERN</td><td>
 
 *\<pattern\>*</td><td>
 
-指定通配符模式。与提供的模式匹配的所有项目都将被选择（或取消选择、隐藏等，具体取决于此命令的其他参数）。模式可以使用 [标准模式匹配](../../wildcard_reference/pattern_matching_syntax.zh.md) 语法进行指定，或者在提供了 **REGEXP** 参数的情况下使用 [正则表达式](../../wildcard_reference/regular_expression_syntax.zh.md)。**PATTERN** 参数还用于与 **FILTER** 参数一起提供预定义过滤器的名称。
+指定通配符模式。与提供的模式匹配的所有项目都将被选择（或取消选择、隐藏等，具体取决于此命令的其它参数）。模式可以使用 [标准模式匹配](../../wildcard_reference/pattern_matching_syntax.zh.md) 语法进行指定，或者在提供了 **REGEXP** 参数的情况下使用 [正则表达式](../../wildcard_reference/regular_expression_syntax.zh.md)。**PATTERN** 参数还用于与 **FILTER** 参数一起提供预定义过滤器的名称。
 
 这是 **Select** 命令的默认参数，因此无需提供 **PATTERN** 关键字。
 
@@ -512,7 +512,7 @@ PREV</td><td>
 
 *(无值)*</td><td>
 
-选择文件列表中的上一个项目。将选择最后一次当前选定项目之前的第一个项目，并取消选择所有其他项目。
+选择文件列表中的上一个项目。将选择最后一次当前选定项目之前的第一个项目，并取消选择所有其它项目。
 
 *示例:* `Select PREV`
 </td></tr><tr><td>
@@ -760,7 +760,7 @@ TYPE</td><td>
 
 强制选择仅影响文件 - 即使文件夹与模式匹配，它们也不会受到影响。
 
-您可以添加 **DESELECTOTHERTYPE** 参数以取消选择所有“其他”类型项。
+您可以添加 **DESELECTOTHERTYPE** 参数以取消选择所有“其它”类型项。
 
 *示例:* `Select a\* TYPE=files`
 </td></tr><tr><td>

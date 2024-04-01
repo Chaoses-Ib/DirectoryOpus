@@ -171,7 +171,7 @@ selstats</td><td>
 source</td><td>
 
 *布尔值*</td><td>
-返回此标签页当前是 [源](/Manual/basic_concepts/source_and_destination.zh.md)的 **True**，其他情况下返回 **False**。
+返回此标签页当前是 [源](/Manual/basic_concepts/source_and_destination.zh.md)的 **True**，其它情况下返回 **False**。
 
 请注意，如果标签页不是源，则不能总是假设它为目标。使用单独的 **dest** 属性。
 </td></tr><tr><td>

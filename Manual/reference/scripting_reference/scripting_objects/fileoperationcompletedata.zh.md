@@ -42,7 +42,7 @@ query</td><td>
 
 *bool*</td><td>
 
-第一次调用 **[OnFileOperationComplete](../scripting_events/onfileoperationcomplete.zh.md)** 事件时返回 **True**。你应该检查操作和其他属性，如果你决定要接收关于此操作的通知，则返回 **True**。在你第二次被调用时，操作完成后，这将为 **False**。
+第一次调用 **[OnFileOperationComplete](../scripting_events/onfileoperationcomplete.zh.md)** 事件时返回 **True**。你应该检查操作和其它属性，如果你决定要接收关于此操作的通知，则返回 **True**。在你第二次被调用时，操作完成后，这将为 **False**。
 </td></tr><tr><td>
 source</td><td>
 

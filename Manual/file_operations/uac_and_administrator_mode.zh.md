@@ -10,7 +10,7 @@ UAC（[用户帐户控制](http://en.wikipedia.org/wiki/User_Account_Control)）
 
 不幸的是，Microsoft 稍稍[搞砸了](http://www.pretentiousname.com/opus9/page4.html#vistauac)资源管理器中 UAC 的实现。人们广泛嘲笑 Vista，因为它需要点击过多的 UAC 提示才能执行例程或日常任务。仅仅创建一个文件夹就会产生四个单独的提示，导致许多人直接关闭 UAC。
 
-自 Windows 7 起，Microsoft 对此批评反应过度，大幅降低了 UAC 的强度——不幸的是，这是以牺牲系统安全性为代价的。默认的 UAC 设置（使用[白名单](http://www.pretentiousname.com/misc/win7_uac_whitelist2.html) 来防止资源管理器和其他 Windows 组件出现任何 UAC 提示）将其简化为安全系统的表象——同时，对没有能力列入白名单的其他第三方工具不利。
+自 Windows 7 起，Microsoft 对此批评反应过度，大幅降低了 UAC 的强度——不幸的是，这是以牺牲系统安全性为代价的。默认的 UAC 设置（使用[白名单](http://www.pretentiousname.com/misc/win7_uac_whitelist2.html) 来防止资源管理器和其它 Windows 组件出现任何 UAC 提示）将其简化为安全系统的表象——同时，对没有能力列入白名单的其它第三方工具不利。
 
 我们一直将 UAC 视为一项值得称赞（虽然执行得很差）的尝试，以提高 Windows 的安全性，我们建议在 Windows 安全设置中将其设置为 **始终通知**。Opus 本机支持 UAC，比资源管理器更合理的方式，您不会发现使用 Opus 执行管理任务困难或烦人。
 

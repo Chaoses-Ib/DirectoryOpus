@@ -523,7 +523,7 @@ PRESET</td><td>
 
 *\<预设名称\>*</td><td>
 
-加载指定的查找、同步或重复项预设。你提供的其他参数将覆盖预设设置 - 例如，你可以使用 **IN** 参数覆盖搜索路径。指定 **NOAUTORUN** 参数以防止操作自动开始。
+加载指定的查找、同步或重复项预设。你提供的其它参数将覆盖预设设置 - 例如，你可以使用 **IN** 参数覆盖搜索路径。指定 **NOAUTORUN** 参数以防止操作自动开始。
 
 *Example:* `Find PRESET=ImageFiles IN=D:\Downloads`
 </td></tr><tr><td>
@@ -570,7 +570,7 @@ QUERY</td><td>
 
 使用 [Windows 搜索](/Manual/basic_concepts/searching_and_filtering/windows_search.zh.md) 系统在指定的位置执行搜索。
 
-如果单独使用，没有其他参数，它就像在文件窗口的右上角的搜索字段中输入查询字符串以在当前文件夹下进行搜索。你还可以对指定的文件夹或自定义结果集合运行 Windows 搜索查询。
+如果单独使用，没有其它参数，它就像在文件窗口的右上角的搜索字段中输入查询字符串以在当前文件夹下进行搜索。你还可以对指定的文件夹或自定义结果集合运行 Windows 搜索查询。
 
 **QUERY** 参数后面的所有内容都将作为查询字符串传递给 Windows 搜索，因此 *必须* 是命令的最后一个参数。
 
@@ -609,7 +609,7 @@ RUNINPANEL</td><td>
 
 *(无值)*</td><td>
 
-**查找** 命令的正常自动执行会导致它在后台运行，没有可见的用户界面。**RUNINPANEL** 参数允许你打开重复项查找器或同步面板，使用其他参数对其进行初始化（包括加载预设），然后在用户界面中自动启动操作，与手动单击“Go”按钮完全相同。
+**查找** 命令的正常自动执行会导致它在后台运行，没有可见的用户界面。**RUNINPANEL** 参数允许你打开重复项查找器或同步面板，使用其它参数对其进行初始化（包括加载预设），然后在用户界面中自动启动操作，与手动单击“Go”按钮完全相同。
 
 将此与 **NOAUTORUN** 进行对比，它将打开面板但不会启动操作。
 
@@ -672,7 +672,7 @@ SYNC</td><td>
 
 *(无值)*</td><td>
 
-当与其他参数结合在一起时，这可以让你自动化 [同步](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.zh.md) 工具。其他相关参数包括 **FROM**, **TO**, **BOTHWAYS**, **DELETE**, **COMPARE**, **IGNORESECONDS**, **DSTCOMPENSATION**, **HIDEUNAFFECTED**, **ONLYEXISTING**。
+当与其它参数结合在一起时，这可以让你自动化 [同步](/Manual/file_operations/copying_moving_and_deleting_files/copying_updated_files/synchronize.zh.md) 工具。其它相关参数包括 **FROM**, **TO**, **BOTHWAYS**, **DELETE**, **COMPARE**, **IGNORESECONDS**, **DSTCOMPENSATION**, **HIDEUNAFFECTED**, **ONLYEXISTING**。
 
 该过程需要使用多个命令。 `Find SYNC` 在同步过程中执行第一步 - 比较。然后你需要使用 `Copy SYNC` 来执行所需的任何复制操作。最后，在完成后可以使用 `Set CLEARSYNC` 退出同步模式。
 

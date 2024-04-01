@@ -2,7 +2,7 @@
 
 通常，当命令对某个文件夹进行更改时，该文件夹的全部内容也会进行处理。例如，如果你选择一个文件夹并单击 **复制文件** 按钮，则该文件夹（包括全部内容）将被复制。
 
-文件过滤器使你可以控制文件夹内的哪些项目被处理。你可能只想复制子文件夹中的图像文件；或你想删除所有 **.tmp** 文件，但让所有其他文件保持不变。你可以使用文件过滤器来实现此目的。
+文件过滤器使你可以控制文件夹内的哪些项目被处理。你可能只想复制子文件夹中的图像文件；或你想删除所有 **.tmp** 文件，但让所有其它文件保持不变。你可以使用文件过滤器来实现此目的。
 
 ### 支持递归过滤器的功能
 
@@ -44,7 +44,7 @@
 - **选择：** 此按钮采用当前过滤器定义，并使用它选择当前文件列表中所有匹配的文件和文件夹。这允许你在运行命令之前查看过滤器在当前文件夹上的结果。
 - **跳过过滤器：** 跳过对当前操作使用过滤器，但过滤器仍保持启用状态（除非你也启用了 **此函数后禁用过滤器** 选项）。
 
-同样，这些选项仅适用于复制和删除过滤器。在你其他函数中使用过滤器时（例如， **[查找](/manual/basic_concepts/searching_and_filtering/find_files/README.zh.md)** 或 **[同步](copying_moving_and_deleting_files/copying_updated_files/synchronize.zh.md)** 工具），这些选项将不会显示。
+同样，这些选项仅适用于复制和删除过滤器。在你其它函数中使用过滤器时（例如， **[查找](/manual/basic_concepts/searching_and_filtering/find_files/README.zh.md)** 或 **[同步](copying_moving_and_deleting_files/copying_updated_files/synchronize.zh.md)** 工具），这些选项将不会显示。
 
 *过滤器：* 标签右侧的下拉菜单允许你访问功能，以便加载、保存和管理预先配置的过滤器。你还可以通过选项中的 [过滤器](/manual/preferences/preferences_categories/filtering_and_sorting/filters.zh.md) 页面执行此操作。
 

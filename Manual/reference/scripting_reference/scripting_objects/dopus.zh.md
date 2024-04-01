@@ -186,7 +186,7 @@ GetClipFormat</td><td>
 | **files_cut**    | 通过剪切（Ctrl-X）获取的文件，如果 **flags** 包含 **c**  |
 | **image**        | 位图数据                                          |
 | **text**         | 文本数据                                            |
-| \<empty string\> | 空剪贴板，或任何其他类型的数据           |
+| \<empty string\> | 空剪贴板，或任何其它类型的数据           |
 </td></tr><tr><td>
 Get文件窗口s</td><td>
 

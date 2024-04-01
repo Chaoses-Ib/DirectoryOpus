@@ -17,7 +17,7 @@
 [显示页面](ftp_address_book/display_page.zh.md)
 [索引页面](ftp_address_book/index_page.zh.md)
 [声音页面](ftp_address_book/sounds_page.zh.md)
-[其他页面](ftp_address_book/misc_page.zh.md)
+[其它页面](ftp_address_book/misc_page.zh.md)
 [速度页面](ftp_address_book/speed_page.zh.md)
 [特殊页面](ftp_address_book/special_page.zh.md)
 [代理页面](ftp_address_book/proxy_page.zh.md)

@@ -4,7 +4,7 @@
 
 由于 Microsoft 从未提供可供基于 Win32 的应用程序使用的“适当”深色模式，Directory Opus 中的深色模式采用钩取系统视觉样式系统，以便配置所有颜色。
 
-在此页面中进行的更改仅会影响 Directory Opus，不会影响其他 Windows 应用程序。
+在此页面中进行的更改仅会影响 Directory Opus，不会影响其它 Windows 应用程序。
 
 ![prefs_windowscolors.png](/Manual/images/media/13/prefs_windowscolors.png)
 

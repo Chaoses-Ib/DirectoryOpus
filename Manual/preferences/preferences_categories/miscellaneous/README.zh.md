@@ -1,6 +1,6 @@
-# 其他
+# 其它
 
-其他类别包含不适合归入其他类别的页面。
+其它类别包含不适合归入其它类别的页面。
 
 - **[高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)**：这是整个配置系统中最可怕的页面。您真的不需要查看此处内容。真的。
 - **[外部工具](/Manual/preferences/preferences_categories/miscellaneous/external_tools.zh.md)**：配置 Opus 中某些功能可以使用的一些外部工具。

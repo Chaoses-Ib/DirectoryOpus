@@ -11,7 +11,7 @@ action</td><td>
 *字符串*</td><td>
 
 返回一个字符串，用于表示触发文件夹读取的动作。该字符串将是下列值之一：*normal*、*refresh*、*refreshsearch*、*refreshsub*、*parent*、*root*、*back*、*forward*、*dblclk*。  
-*refreshsub* 动作表示在开启平面视图时刷新文件夹（和子文件夹）。其他动作名称应该不言自明。
+*refreshsub* 动作表示在开启平面视图时刷新文件夹（和子文件夹）。其它动作名称应该不言自明。
 </td></tr><tr><td>
 initial</td><td>
 

@@ -12,7 +12,7 @@
 
 过滤栏也会显示这些统计数据，稍加详细说明（将隐藏的项目计数分为隐藏文件和隐藏文件夹）。
 
-过滤栏会影响所谓的“快速过滤”。此过滤器应用于通过 [文件夹格式](../folder_options/README.zh.md) 系统设置的过滤器之上，以及 **[全局过滤器](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.zh.md)** 配置页面上的全局过滤选项之上。它不会覆盖这些过滤器 - 因此，通过这些其他方法隐藏的任何文件都会保持隐藏状态，无论快速过滤器设置为如何。
+过滤栏会影响所谓的“快速过滤”。此过滤器应用于通过 [文件夹格式](../folder_options/README.zh.md) 系统设置的过滤器之上，以及 **[全局过滤器](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.zh.md)** 配置页面上的全局过滤选项之上。它不会覆盖这些过滤器 - 因此，通过这些其它方法隐藏的任何文件都会保持隐藏状态，无论快速过滤器设置为如何。
 
 ### 清除过滤器
 

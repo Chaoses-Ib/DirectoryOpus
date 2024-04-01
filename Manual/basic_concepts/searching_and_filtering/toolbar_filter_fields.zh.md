@@ -14,7 +14,7 @@
 
 ![](/Manual/images/media/13/filter_field_1.png)
 
-默认情况下, 文件过滤项编辑快速过滤(与 [过滤栏](filter_bar.zh.md) 相同)。此过滤已应用于通过 [文件夹选项](../folder_options/README.zh.md) 系统设置的过滤和 **[全局过滤](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.zh.md)** 偏好设置页面上的全局过滤选项之上。它不会覆盖这些过滤 - 因此, 通过这些其他方法隐藏的任何文件都将保持隐藏, 无论快速过滤设置为什么。
+默认情况下, 文件过滤项编辑快速过滤(与 [过滤栏](filter_bar.zh.md) 相同)。此过滤已应用于通过 [文件夹选项](../folder_options/README.zh.md) 系统设置的过滤和 **[全局过滤](/Manual/preferences/preferences_categories/filtering_and_sorting/global_filters.zh.md)** 偏好设置页面上的全局过滤选项之上。它不会覆盖这些过滤 - 因此, 通过这些其它方法隐藏的任何文件都将保持隐藏, 无论快速过滤设置为什么。
 
 连接到该项的下拉列表（默认情况下）包含当前文件夹中存在的每种文件类型的条目 - 这提供了一种快速的方法来过滤特定的文件扩展名。
 

@@ -1,6 +1,6 @@
 # 控制键
 
-这个页面允许你配置在使用 [内联重命名](/Manual/file_operations/renaming_files/inline_rename.zh.md)（以及在大多数其他可以编辑文件名的位置）时选择或修改文件名部分的控制键。
+这个页面允许你配置在使用 [内联重命名](/Manual/file_operations/renaming_files/inline_rename.zh.md)（以及在大多数其它可以编辑文件名的位置）时选择或修改文件名部分的控制键。
 
 按键可以触发几种类型的操作：
 
@@ -15,7 +15,7 @@
 此页面的上半部分显示了一个已定义键的列表。
 
 - 使用 ![](/Manual/images/media/13/button_add.png) **添加** 和 ![](/Manual/images/media/13/button_delete.png) **删除** 按钮添加或删除控制键。
-- ![](/Manual/images/media/13/button_share.png) **共享** 按钮允许你与其他人共享控制键的定义
+- ![](/Manual/images/media/13/button_share.png) **共享** 按钮允许你与其它人共享控制键的定义
 - ![](/Manual/images/media/13/button_paste.png) **粘贴** 按钮允许你从剪贴板粘贴一个新的控制键
 
 当你从列表中选择一个密钥时，页面下半部分将显示其配置。

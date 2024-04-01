@@ -56,7 +56,7 @@ HASH</td><td>
 
 \<type></td><td>
 
-使用指定的哈希算法，为所有选定文件计算校验和。如果当前在文件列表中未显示适当的哈希列，则会自动添加该列。使用此命令会覆盖配置中 **[其他 / 高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面的 **max_md5_file_size** 设置。
+使用指定的哈希算法，为所有选定文件计算校验和。如果当前在文件列表中未显示适当的哈希列，则会自动添加该列。使用此命令会覆盖配置中 **[其它 / 高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面的 **max_md5_file_size** 设置。
 
 支持的哈希算法为 **md5**、**sha1**、**sha256**、**sha512**、**crc32**、**crc32_php**、**crc32_php_rev** 和 **blake3**。
 

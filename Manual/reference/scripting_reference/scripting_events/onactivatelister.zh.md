@@ -1,4 +1,4 @@
-**OnActivate文件窗口** 事件可以通过 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现，以便每当文件窗口窗口变为活动窗口或失去激活状态（归于其他窗口）时都能收到通知。
+**OnActivate文件窗口** 事件可以通过 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现，以便每当文件窗口窗口变为活动窗口或失去激活状态（归于其它窗口）时都能收到通知。
 
 <table>
 <thead><tr><th>

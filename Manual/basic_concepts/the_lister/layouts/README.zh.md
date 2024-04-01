@@ -8,7 +8,7 @@
 
 - 屏幕上的大小和位置
 - 它是在文件单视图还是双文件视图
-- 诸如查看器面板和元数据窗格等文件夹树和其他 UI 元素是否打开
+- 诸如查看器面板和元数据窗格等文件夹树和其它 UI 元素是否打开
 - 当前显示的文件夹或文件夹
 - 当前打开的任何文件夹标签页，以及当前激活的标签页
 - 当前文件夹和任何文件夹标签页的文件夹格式
@@ -50,7 +50,7 @@
 每个布局都有一组选项，它们控制了它的默认加载方式（可以使用 `Prefs` 内部命令覆盖默认选项）。
 
 - **Close all existing文件窗口s when loading this layout：**当布局中的文件窗口打开时，任何已打开的文件窗口都将关闭。
-  - **Close文件窗口s on all virtual desktops：**通常其他桌面上的文件窗口会保持原样；此选择也会将其关闭。
+  - **Close文件窗口s on all virtual desktops：**通常其它桌面上的文件窗口会保持原样；此选择也会将其关闭。
 - **Use folder formats saved within this lister：**布局中每个文件夹（位于每个标签页中）都会恢复为在保存布局时所具有的 [folder format (文件夹格式)](../folder_options/README.zh.md)。如果关闭，每个文件夹都将加载其默认格式。
 - **Use toolbars saved within this layout：**每个文件窗口都将使用在保存到布局时打开的 [toolbars (工具栏)](../the_lister/toolbars/README.zh.md) 打开，而不是默认工具栏集。
 - **Open layout relative to the monitor the mouse is currently on：**如果您有多个监视器，通常每个文件窗口都会恢复到在保存布局时所在的监视器。这会使它们重新在鼠标光标当前所在的监视器上打开。

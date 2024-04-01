@@ -69,7 +69,7 @@ Opus 在脚本中的一个方法中提供许多对象作为参数。例如，当
 - **[TabClickData](/Manual/reference/scripting_reference/scripting_objects/tabclickdata.zh.md)**：此对象传递给 **[OnTabClick](scripting_events/ontabclick.zh.md)** 事件，此事件在按住限定符键时单击标签页时调用。
 - **[ViewerEventData](/Manual/reference/scripting_reference/scripting_objects/viewereventdata.zh.md)**：此对象传递给 **[OnViewerEvent](scripting_events/onviewerevent.zh.md)** 事件，此事件在独立 [图像查看器](/Manual/additional_functionality/viewing_images/README.zh.md) 中发生某些事件时调用。
 
-## 其他对象
+## 其它对象
 
 其余对象全部使用上面列出的对象提供的属性或方法来获取。例如，**文件窗口** 对象是使用 **DOpus.listers** 集合属性获取的，并且 **Vector** 对象是使用 **DOpusFactory.Vector** 方法获取的。
 
@@ -84,7 +84,7 @@ Opus 在脚本中的一个方法中提供许多对象作为参数。例如，当
 - **[Command](/Manual/reference/scripting_reference/scripting_objects/command.zh.md)**：该对象用于运行 Opus 命令。它从 **ScriptCommandData.func** 或 **ClickData.func** 属性获取，也可以通过 **DOpusFactory.Command** 方法创建。
 - **[Control](/Manual/reference/scripting_reference/scripting_objects/control.zh.md)**：**Control** 对象表示 [脚本对话框](/Manual/scripting/script_dialogs/README.zh.md) 的控件；它允许你读取和修改控件的值（和内容）。
 - **[CustomFieldData](/Manual/reference/scripting_reference/scripting_objects/customfielddata.zh.md)**：**CustomFieldData** 对象通过 **[GetNewNameData](/Manual/reference/scripting_reference/scripting_objects/getnewnamedata.zh.md).custom** 属性提供给 [重命名脚本](/Manual/scripting/rename_scripts/README.zh.md)。它提供对脚本添加到*重命名*对话框的任何 [自定义字段](/Manual/scripting/rename_scripts/custom_fields_in_the_rename_dialog.zh.md) 的值访问。
-- **[Date](/Manual/reference/scripting_reference/scripting_objects/date.zh.md)**：该对象提供，以方便处理表示日期的变量。它从 **DOpusFactory.Date** 方法以及其他对象中的各种属性获取。
+- **[Date](/Manual/reference/scripting_reference/scripting_objects/date.zh.md)**：该对象提供，以方便处理表示日期的变量。它从 **DOpusFactory.Date** 方法以及其它对象中的各种属性获取。
 - **[Dialog](/Manual/reference/scripting_reference/scripting_objects/dialog.zh.md)**：该对象用于显示对话框或弹出菜单。它从 **Func.Dlg**, **Command.Dlg** 或 **DOpus.Dlg** 方法获取。
 - **[DialogListColumn](/Manual/reference/scripting_reference/scripting_objects/dialoglistcolumn.zh.md)**：**DialogListColumn** 对象表示 [脚本对话框。](/Manual/scripting/script_dialogs/README.zh.md) 中*详细信息*模式*列表视图*控件中的某列。通过枚举**[DialogListColumns](/Manual/reference/scripting_reference/scripting_objects/dialoglistcolumns.zh.md)**对象获取.**~control**
 - **[DialogListColumns](/Manual/reference/scripting_reference/scripting_objects/dialoglistcolumns.zh.md)**：**DialogListColumns** 对象允许查询或修改 [脚本对话框。](/Manual/scripting/script_dialogs/README.zh.md) 中*详细信息*模式*列表视图*控件中的列。使用 **[Control](/Manual/reference/scripting_reference/scripting_objects/control.zh.md).columns** 属性获取 **DialogListColumns** 对象。
@@ -93,7 +93,7 @@ Opus 在脚本中的一个方法中提供许多对象作为参数。例如，当
 - **[DialogOption](/Manual/reference/scripting_reference/scripting_objects/dialogoption.zh.md)**：该对象与 **Dialog** 对象联合使用。它允许指定要添加到对话框的复选框选项。
 - **[Dock](/Manual/reference/scripting_reference/scripting_objects/dock.zh.md)**：该对象表示浮动工具栏。工具栏对象提供集合，表示当前处于浮动状态的所有该工具栏的实例。
 - **[DocMeta](/Manual/reference/scripting_reference/scripting_objects/docmeta.zh.md)**：该对象提供与文档文件相关的元数据属性。它从 **Metadata** 对象获取。
-- **[DOpusFactory](/Manual/reference/scripting_reference/scripting_objects/dopusfactory.zh.md)**：该对象是帮助对象，可用于创建其他各类对象，如 **Map** 和 **Vector**。它从 **DOpus.Create** 方法获取。
+- **[DOpusFactory](/Manual/reference/scripting_reference/scripting_objects/dopusfactory.zh.md)**：该对象是帮助对象，可用于创建其它各类对象，如 **Map** 和 **Vector**。它从 **DOpus.Create** 方法获取。
 - **[DPI](/Manual/reference/scripting_reference/scripting_objects/dpi.zh.md)**：**DPI** 对象是帮助对象，提供若干与系统 DPI 设置相关的属性和方法。它通过 **[DOpus](/Manual/reference/scripting_reference/scripting_objects/dopus.zh.md).DPI** 属性返回。
 - **[Drive](/Manual/reference/scripting_reference/scripting_objects/drive.zh.md)**：**Drive** 对象提供有关系统上某驱动器（硬盘驱动器、CD ROM 等）的信息。系统上驱动器的 **Vector** 可从 **[FSUtil](/Manual/reference/scripting_reference/scripting_objects/fsutil.zh.md).Drives** 方法获取。
 - **[ExeMeta](/Manual/reference/scripting_reference/scripting_objects/exemeta.zh.md)**：该对象提供与可执行（程序）文件相关的元数据属性。它从 **Metadata** 对象获取。
@@ -142,7 +142,7 @@ Opus 在脚本中的一个方法中提供许多对象作为参数。例如，当
 - **[SortOrder](/Manual/reference/scripting_reference/scripting_objects/sortorder.zh.md)**：如果 [手动排序模式](/Manual/basic_concepts/sorting_and_grouping/manual_sorting.zh.md) 处于活动状态，则 **SortOrder** 对象由 **[Format](/Manual/reference/scripting_reference/scripting_objects/format.zh.md).manual_sort_order** 属性返回。它允许你查询和修改排序顺序。
 - **[StringTools](/Manual/reference/scripting_reference/scripting_objects/stringtools.zh.md)**：此对象提供用于字符串编码和解码的实用函数。它从 **DOpusFactory.StringTools** 方法中获取。
 - **[StringSet](/Manual/reference/scripting_reference/scripting_objects/stringset.zh.md)**：此对象与字符串的数组或向量（例如 **[Vector](/Manual/reference/scripting_reference/scripting_objects/vector.zh.md)**）类似，但其优势在于使用词典系统来定位字符串，而不是使用数字索引。它从 **DOpusFactory.StringSet** 和 **StringSetI** 方法中获取。
-- **[SysInfo](/Manual/reference/scripting_reference/scripting_objects/sysinfo.zh.md)**：**SysInfo** 对象由 **DOpusFactory.SysInfo** 方法创建。它允许脚本访问各种系统信息，脚本可能无法通过其他方式获取。
+- **[SysInfo](/Manual/reference/scripting_reference/scripting_objects/sysinfo.zh.md)**：**SysInfo** 对象由 **DOpusFactory.SysInfo** 方法创建。它允许脚本访问各种系统信息，脚本可能无法通过其它方式获取。
 - **[Tab](/Manual/reference/scripting_reference/scripting_objects/tab.zh.md)**：此对象代表一个文件窗口中的文件夹标签。文件窗口的标签通过各种文件窗口对象属性（例如 **文件窗口.activetab**）提供，并且还用于指定命令的来源/目标（例如 **Command.sourcetab**）。
 - **[TabGroup](/Manual/reference/scripting_reference/scripting_objects/tabgroup.zh.md)**：此对象代表一个 [文件夹标签组](/Manual/basic_concepts/the_lister/tabs/tab_groups.zh.md)。通过枚举 **[TabGroups](/Manual/reference/scripting_reference/scripting_objects/tabgroups.zh.md)** 对象来访问它。
 - **[TabGroups](/Manual/reference/scripting_reference/scripting_objects/tabgroups.zh.md)**：此对象提供访问权限，并且允许你修改已配置的 [文件夹标签组](/Manual/basic_concepts/the_lister/tabs/tab_groups.zh.md) 列表。它从 **[DOpus](/Manual/reference/scripting_reference/scripting_objects/dopus.zh.md).tabgroups** 属性中获取。

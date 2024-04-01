@@ -1,6 +1,6 @@
 # 重命名操作
 
-重命名对话框的 **操作** 部分可以让你除了主要的模式化操作（由对话框的 **[模式](rename_modes/README.zh.md)** 部分控制）之外，还能启用其他重命名操作。
+重命名对话框的 **操作** 部分可以让你除了主要的模式化操作（由对话框的 **[模式](rename_modes/README.zh.md)** 部分控制）之外，还能启用其它重命名操作。
 
 ![](/Manual/images/media/13/rename_actions.png)
 

@@ -1,6 +1,6 @@
 # 常用路径
 
-此类包含关于您最爱的文件夹或其他对您来说重要的文件夹的选项。您可以将文件夹添加至您的收藏列表，指定别名以便快速访问，并设置您经常同时使用的文件夹对。
+此类包含关于您最爱的文件夹或其它对您来说重要的文件夹的选项。您可以将文件夹添加至您的收藏列表，指定别名以便快速访问，并设置您经常同时使用的文件夹对。
 
 - **[收藏列表](/Manual/preferences/preferences_categories/frequently_used_paths/favorites_list.zh.md)**：创建并维护您的收藏文件夹列表，可以从文件窗口中的收藏菜单轻松访问。
 - **[文件夹别名](/Manual/preferences/preferences_categories/frequently_used_paths/folder_aliases.zh.md)**：指定重要文件夹的别名，以使在整个 Opus 中更轻松的访问它们。

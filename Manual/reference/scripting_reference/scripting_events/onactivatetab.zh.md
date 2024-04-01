@@ -1,4 +1,4 @@
-[脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 可以在每次制表符变为活动（即位于同一文件列表中其他制表符的前面）时实现 **OnActivateTab** 事件，以接收通知。
+[脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 可以在每次制表符变为活动（即位于同一文件列表中其它制表符的前面）时实现 **OnActivateTab** 事件，以接收通知。
 
 <table>
 <thead><tr><th>

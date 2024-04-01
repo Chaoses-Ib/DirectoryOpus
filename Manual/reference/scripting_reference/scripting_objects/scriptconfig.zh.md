@@ -1,4 +1,4 @@
-**ScriptConfig** 对象通过 **[ScriptInitData](scriptinitdata.zh.md).config** 和 **[Script](script.zh.md).config** 属性访问。**[ScriptInitData](scriptinitdata.zh.md).config** 属性允许一个脚本（在其 **[OnInit](../scripting_events/oninit.zh.md)** 方法中）指定其所支持的配置属性，并为它们提供默认值。然后，在 **[OnInit](../scripting_events/oninit.zh.md)** 中分配的属性将可以在配置中供用户编辑，并且用户编辑过的配置然后可以使用 **[Script](script.zh.md).config** 通过其他脚本方法来访问。
+**ScriptConfig** 对象通过 **[ScriptInitData](scriptinitdata.zh.md).config** 和 **[Script](script.zh.md).config** 属性访问。**[ScriptInitData](scriptinitdata.zh.md).config** 属性允许一个脚本（在其 **[OnInit](../scripting_events/oninit.zh.md)** 方法中）指定其所支持的配置属性，并为它们提供默认值。然后，在 **[OnInit](../scripting_events/oninit.zh.md)** 中分配的属性将可以在配置中供用户编辑，并且用户编辑过的配置然后可以使用 **[Script](script.zh.md).config** 通过其它脚本方法来访问。
 
 <table>
 <thead><tr><th>

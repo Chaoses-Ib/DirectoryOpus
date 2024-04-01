@@ -16,7 +16,7 @@
 [磁盘空间代码](/Manual/reference/status_bar_codes/codes_for_disk_space.zh.md)  
 [音乐和视频时长的代码](/Manual/reference/status_bar_codes/codes_for_music_and_video_duration.zh.md)  
 [图形元素的代码](/Manual/reference/status_bar_codes/codes_for_graphical_elements.zh.md)  
-[其他代码](/Manual/reference/status_bar_codes/other_codes.zh.md)  
+[其它代码](/Manual/reference/status_bar_codes/other_codes.zh.md)  
 [状态栏上的条形图和百分比](/Manual/reference/status_bar_codes/bar_graphs_and_percentages.zh.md)  
 [隐藏状态栏上的部分](/Manual/reference/status_bar_codes/hiding_sections_on_the_status_bar.zh.md)  
 [在状态栏上填充部分](/Manual/reference/status_bar_codes/padding_sections_on_the_status_bar.zh.md)

@@ -1,4 +1,4 @@
-一个 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 可以实现 **OnFileOperationComplete** 事件，以便在某些文件操作完成后收到通知。目前唯一支持此操作的文件操作是 **重命名** 命令，但将来可能添加其他命令。
+一个 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 可以实现 **OnFileOperationComplete** 事件，以便在某些文件操作完成后收到通知。目前唯一支持此操作的文件操作是 **重命名** 命令，但将来可能添加其它命令。
 
 接收通知是一个两步过程。Opus 最初会调用您的脚本询问您是否需要特定操作的通知。如果您肯定答复，您的脚本将在操作完成后再次被调用。
 

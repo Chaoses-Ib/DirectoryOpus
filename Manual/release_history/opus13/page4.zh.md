@@ -26,7 +26,7 @@
 Microsoft Edge 可用于预览窗格中的 Web 和 SVG 内容：
 
   ![](/Manual/images/release_history/viewer_edge_web.png)  
-Edge（和其他查看器）也可用于 PDF：
+Edge（和其它查看器）也可用于 PDF：
 
   ![](/Manual/images/release_history/viewer_edge_pdf.png)  
 使用与文件窗口关联的查看器，将第二个显示器变成全屏预览窗格：

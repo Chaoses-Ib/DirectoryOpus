@@ -1,6 +1,6 @@
 当查询文件夹的 [对](/Manual/preferences/preferences_categories/frequently_used_paths/paired_folders.zh.md)时，**[FSUtil](fsutil.zh.md).GetFolderPair** 方法会返回 **PairedFolder** 对象。
 
-务必在查询任何其他属性之前检查 **valid** 属性；如果 **valid** 为 **False**，则表示该文件夹没有对，因此不会存在其他属性。
+务必在查询任何其它属性之前检查 **valid** 属性；如果 **valid** 为 **False**，则表示该文件夹没有对，因此不会存在其它属性。
 
 <table>
 <thead><tr><th>

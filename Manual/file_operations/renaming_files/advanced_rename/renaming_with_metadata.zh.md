@@ -23,7 +23,7 @@
 
 [列关键字](/Manual/reference/metadata_keywords/keywords_for_columns.zh.md) 页面包含 **重命名** 功能可以使用的关键字的完整列表。
 
-### 重命令的其他代码
+### 重命令的其它代码
 
 除了全部列列表之外，还可以使用以下代码添加到 **新名称** 字段中：
 

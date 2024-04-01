@@ -28,8 +28,8 @@
 父命令支持你使用**[高级重命名](/Manual/file_operations/renaming_files/advanced_rename/README.zh.md)**对话框来重命名选定的文件和文件夹。下拉菜单包含一些关于原始重命名命令如何“编写脚本”来执行特殊重命名任务的示例：
 
 * **使用简单重命名**：打开此开关可使**重命名**按钮触发简单重命名对话框（仅支持基本的通配符重命名），而不是高级重命名对话框。
-* **单词大写**：将文件名中每个单词的首字母大写，将所有其他字母小写。
-* **设为 Web 安全**：通过移除任何可能在 URL 中引起问题字符（除了 `-`, `0-9`, `a-z`, `A-Z`, `.`, `_`, `]` 和 `+`，其他所有字符都应移除），使文件名适合在网站中使用。
+* **单词大写**：将文件名中每个单词的首字母大写，将所有其它字母小写。
+* **设为 Web 安全**：通过移除任何可能在 URL 中引起问题字符（除了 `-`, `0-9`, `a-z`, `A-Z`, `.`, `_`, `]` 和 `+`，其它所有字符都应移除），使文件名适合在网站中使用。
 * **对文件编号**：在所选文件名前插入递增数字。此功能作为一个 VBScript [重命名脚本](/Manual/file_operations/renaming_files/advanced_rename/rename_scripts.zh.md)来实现，因此提供了一个更为复杂重命名功能良好的示例。
 * **时间戳名称**：将日期和时间戳追加到选定文件名的后面。
 * **下划线转换为空格**：将文件名中任何下划线替换为空格。
@@ -48,7 +48,7 @@
 
 父按钮将删除所有选定的文件和文件夹。默认情况下，如果可能，回收站将用于提供可撤消的删除，但这可以通过[配置](/Manual/preferences/preferences_categories/file_operations/deleting_files.zh.md)进行修改。在附加的下拉菜单中可找到以下附加命令：
 
-* **安全擦除**：此命令使用[安全删除](/Manual/file_operations/copying_moving_and_deleting_files/deleting_files/secure_delete.zh.md)算法删除所有选定的文件，这使得其他人非常难以（如果不是不可能）恢复所删除信息。
+* **安全擦除**：此命令使用[安全删除](/Manual/file_operations/copying_moving_and_deleting_files/deleting_files/secure_delete.zh.md)算法删除所有选定的文件，这使得其它人非常难以（如果不是不可能）恢复所删除信息。
 * **从集合移除**：在[文件集合](/Manual/basic_concepts/virtual_file_system/file_collections/README.zh.md)中使用时，此命令从该集合中移除所有选定的项目。如果你对集合项目使用父**删除**命令，则真实的​​文件和文件夹将被删除——使用**移除**命令可以从集合中将它们移除，而无需删除实际文件。
 - **删除过滤器**：此命令在当前文件窗口中开启或关闭递归[删除过滤器](/Manual/file_operations/filtered_operations/README.zh.md)。
 
@@ -58,7 +58,7 @@
 
 **##### 压缩包文件**
 
-父命令可让你将所有选中的文件和文件夹添加到当前文件夹中的[新压缩包](/Manual/file_operations/creating_archives/add_to_archive_dialog/README.zh.md)（系统会提示你输入压缩包类型和参数）。下拉菜单中包含以下其他命令：
+父命令可让你将所有选中的文件和文件夹添加到当前文件夹中的[新压缩包](/Manual/file_operations/creating_archives/add_to_archive_dialog/README.zh.md)（系统会提示你输入压缩包类型和参数）。下拉菜单中包含以下其它命令：
 
 - **文件到单独压缩包**：将所有选中的项目添加到单独的压缩包中（每个选中的文件或文件夹一个压缩包）。此命令默认创建 ZIP 文件；你可以通过编辑命令来更改使用的压缩包格式（如将 **Copy ARCHIVE=single** 更改为 **Copy ARCHIVE=.7z,single** 以默认使用 7zip）。
 - **文件到目标压缩包**：这与父 **压缩包文件** 命令相同，只是新压缩包将创建在目标文件中。

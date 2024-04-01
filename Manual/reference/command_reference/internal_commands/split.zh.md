@@ -63,7 +63,7 @@ UUENCODE</td><td>
 
 *(无值)*</td><td>
 
-对输出文件进行 Uuencode 编码。Uuencode 编码有时用于通过不支持 8 位数据的 Usenet 或其他通信媒体传输文件。
+对输出文件进行 Uuencode 编码。Uuencode 编码有时用于通过不支持 8 位数据的 Usenet 或其它通信媒体传输文件。
 
 *示例：* `Split SIZE 1MB UUENCODE`
 </td></tr></tbody>

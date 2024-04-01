@@ -1,6 +1,6 @@
-**Command**对象被脚本用来运行Opus命令。从按钮或热键能够运行的任何命令都可以从脚本中运行 - 脚本甚至可以运行[其他脚本添加的命令](/Manual/scripting/example_scripts/adding_a_new_internal_command.zh.md)。从根本上说，使用**Command**对象类似于配置Opus按钮。你需要像给按钮的功能添加一行或多行命令那样，给该对象添加一行或多行命令。你可以告诉要针对哪些文件和文件夹执行操作，还可以使用该对象的各种方法和属性来修改命令的行为。一旦对象被初始化，就可以使用**Run**或**RunCommand**方法来调用命令。
+**Command**对象被脚本用来运行Opus命令。从按钮或热键能够运行的任何命令都可以从脚本中运行 - 脚本甚至可以运行[其它脚本添加的命令](/Manual/scripting/example_scripts/adding_a_new_internal_command.zh.md)。从根本上说，使用**Command**对象类似于配置Opus按钮。你需要像给按钮的功能添加一行或多行命令那样，给该对象添加一行或多行命令。你可以告诉要针对哪些文件和文件夹执行操作，还可以使用该对象的各种方法和属性来修改命令的行为。一旦对象被初始化，就可以使用**Run**或**RunCommand**方法来调用命令。
 
-**Command**对象可以通过**[DOpusFactory](dopusfactory.zh.md).Command**方法创建。默认情况下，此对象没有来源、目标、要操作的文件等 - 必须在运行命令之前使用适当的方法配置该命令。你还可以从**[Func](func.zh.md).command**属性中检索**Command**对象，在这种情况下，该命令的来源、目标、要操作的文件和其他几个属性都是预先初始化的。
+**Command**对象可以通过**[DOpusFactory](dopusfactory.zh.md).Command**方法创建。默认情况下，此对象没有来源、目标、要操作的文件等 - 必须在运行命令之前使用适当的方法配置该命令。你还可以从**[Func](func.zh.md).command**属性中检索**Command**对象，在这种情况下，该命令的来源、目标、要操作的文件和其它几个属性都是预先初始化的。
 
 <table>
 <thead><tr><th>

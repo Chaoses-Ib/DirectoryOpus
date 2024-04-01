@@ -29,13 +29,13 @@
   - 在文件窗口中，默认的工具菜单有一个“查找预设”子菜单，其中列出了所有已保存的预设。选择一个预设会立即运行已保存的搜索，而无需打开“查找”面板。
   - 工具菜单的“预设”子菜单还包括几个使用硬编码过滤器搜索当前目录下的示例：
     - 查找空文件夹 -- 查找完全为空的文件夹。
-    - 查找零字节文件夹 -- 查找仅包含空文件或其他空文件夹的文件夹。
+    - 查找零字节文件夹 -- 查找仅包含空文件或其它空文件夹的文件夹。
 - 排除文件夹：
   - 新的“排除”字段允许您排除文件和文件夹。默认情况下，排除回收站和系统卷信息文件夹。支持多个路径、通配符和正则表达式。语法选项：
     - `regex:xxxx` - 正则表达式必须匹配才能排除一个项。
     - `wild:xxxx` - 标准通配符必须匹配才能排除一个项。
 
-(如果使用了 `*?|` 字符，通配符将自动检测到，而不需要 `wild:` 前缀。其他作为有效路径字符的通配符字符需要一个显式的 `wild:` 前缀才能被解释为通配符。）
+(如果使用了 `*?|` 字符，通配符将自动检测到，而不需要 `wild:` 前缀。其它作为有效路径字符的通配符字符需要一个显式的 `wild:` 前缀才能被解释为通配符。）
 
         * <ib:inline-code><code>C:\Temp</code></ib:inline-code> - 完全限定路径；匹配路径本身和内容。
         * <ib:inline-code><code>C:\Temp\*</code></ib:inline-code> - 完全限定路径，带有通配符；仅匹配内容。
@@ -49,10 +49,10 @@
         * 带有前缀 <ib:inline-code><code>+</code></ib:inline-code> 的单词必须匹配（按任意顺序）。
         * 带有前缀 <ib:inline-code><code>-</code></ib:inline-code> 的单词不能匹配。
         * 没有 <ib:inline-code><code>+</code></ib:inline-code> 或 <ib:inline-code><code>-</code></ib:inline-code> 的单词可以匹配，并且只要指定了一个，就必须至少匹配一个。
-        * 如果指定了一个或多个文件扩展名，则将排除所有文件夹，并且文件必须匹配其中一个扩展名（除了指定的所有其他单词之外）。
+        * 如果指定了一个或多个文件扩展名，则将排除所有文件夹，并且文件必须匹配其中一个扩展名（除了指定的所有其它单词之外）。
         * 支持部分文件扩展名。“.jp”还将匹配“.jpg”。
         * 可以通过使用显式通配符禁止部分扩展名匹配：“*.jp”将仅匹配“.jp”，而不会匹配“.jpg”。
-        * 所有其他包含通配符的单词都将被视为开启了部分匹配，无论是否实际开启。
+        * 所有其它包含通配符的单词都将被视为开启了部分匹配，无论是否实际开启。
         * //示例：// 在关闭的部分匹配的情况下，“dog c?t” - “dog”将仅匹配“dog”（因为没有通配符字符），但“c?t”将匹配“cat”和“city”。
         * 请记住，上述规则仅适用于“任意单词”模式。当模式未开启时，无法使用这些规则。
         * 这些规则还适用于“过滤栏”处于“任意单词”模式时。
@@ -68,7 +68,7 @@
         * 完全绕过过滤系统，并对每个文件调用求值器。
         * 在过滤器定义前面加上前缀 <ib:inline-code><code>=</code></ib:inline-code>。
         * 如果过滤器文本控件中包含求值器代码，则无法将其切换出文本模式。求值器代码无法转换成传统的过滤器定义。
-        * 代码可以使用与求值器列相同的变量（如名称、picwidth 等）（请参阅发行说明中的其他地方）。
+        * 代码可以使用与求值器列相同的变量（如名称、picwidth 等）（请参阅发行说明中的其它地方）。
         * 代码应该返回 true 表示匹配，返回 false 表示跳过文件。
         * //示例 1：// <ib:inline-code><code>=ext(name) == ".jpg" && picwidth >= 1920</code></ib:inline-code>\
 * 还支持子文件夹递归。当求值器查询是否应该进入文件夹时，<ib:inline-code><code>subfolder</code></ib:inline-code> 变量将为 true。返回 true 以进入，返回 false 以跳过。默认搜索所有子文件夹。
@@ -88,5 +88,5 @@
       * <ib:inline-code><code>Go NEW=FindSimple</code></ib:inline-code> -- 显式使用“简单”模式在新窗口中打开查找面板。
       * <ib:inline-code><code>Go NEW=FindAdvanced</code></ib:inline-code> -- 显式使用“高级”模式在新窗口中打开查找面板。
       * <ib:inline-code><code>Find SHOWRESULTS=tab,left</code></ib:inline-code> -- 将结果发送到左侧（或右侧）的新标签页上。
-      * 查找命令的其他新参数：EXCLUDEHIDDEN、EXCLUDESYSTEM、IGNOREDIACRITICS、REGEXP、CASE、CONTREGEXP、CONTIGNOREDIACRITICS、CONTNOPARTIAL、CONTUTF8、QUERYENGINE。
+      * 查找命令的其它新参数：EXCLUDEHIDDEN、EXCLUDESYSTEM、IGNOREDIACRITICS、REGEXP、CASE、CONTREGEXP、CONTIGNOREDIACRITICS、CONTNOPARTIAL、CONTUTF8、QUERYENGINE。
       * <ib:inline-code><code>DOpusRT.exe /col /engine=everything setquery...</code></ib:inline-code> -- 请参见主手册中的 //外部操作文件集合//。

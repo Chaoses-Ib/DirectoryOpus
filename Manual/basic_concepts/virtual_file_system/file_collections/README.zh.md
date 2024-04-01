@@ -1,6 +1,6 @@
 # 文件集合
 
-文件集合是一个虚拟文件夹，能够充当其他文件和文件夹的容器。文件集合中的项目不必存储在同个物理文件夹中——它们可以保存在其他文件夹、其他磁盘中，甚至在其他（比如 FTP）[虚拟文件系统](/Manual/basic_concepts/virtual_file_system/README.zh.md) 中。当您向集合中添加项目时，实际上并不会移动或修改它们——Opus 仅仅存储原始文件的引用。
+文件集合是一个虚拟文件夹，能够充当其它文件和文件夹的容器。文件集合中的项目不必存储在同个物理文件夹中——它们可以保存在其它文件夹、其它磁盘中，甚至在其它（比如 FTP）[虚拟文件系统](/Manual/basic_concepts/virtual_file_system/README.zh.md) 中。当您向集合中添加项目时，实际上并不会移动或修改它们——Opus 仅仅存储原始文件的引用。
 
 ### 集合用于搜索结果
 
@@ -52,7 +52,7 @@
 
 ### 在 Opus 外部使用集合
 
-不幸的是，文件集合系统仅在 Directory Opus 中可用——您无法通过其他程序或资源管理器访问您的集合。然而，在偏好设置的 **[杂项 / Windows 集成](/Manual/preferences/preferences_categories/miscellaneous/windows_integration/README.zh.md)** 选项中提供了几个选项，它们可以将集合更紧密地集成到系统中：
+不幸的是，文件集合系统仅在 Directory Opus 中可用——您无法通过其它程序或资源管理器访问您的集合。然而，在偏好设置的 **[杂项 / Windows 集成](/Manual/preferences/preferences_categories/miscellaneous/windows_integration/README.zh.md)** 选项中提供了几个选项，它们可以将集合更紧密地集成到系统中：
 
 - **向桌面添加“文件集合”图标**：如果启用此选项，Opus 将在您的桌面上放置一个代表根文件集合文件夹的图标；双击它将打开一个显示文件集合的文件窗口。
 - **向“发送到”菜单中添加文件集合列表**：此选项会导致 Opus 为您的文件集合向 *发送到* 菜单（在右键单击文件并从其上下文菜单中选择 *发送到* 时显示的菜单）中添加链接。这允许您在 Opus 外部向文件集合添加项目。

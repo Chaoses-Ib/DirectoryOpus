@@ -83,7 +83,7 @@ FAILNOTEMPTY</td><td>
 
 *示例：* `Delete FAILNOTEMPTY NORECYCLE`
 
-如果你希望命令在遇到文件或非空文件夹后继续考虑其他项目，请改用 **SKIPNOTEMPTY**。
+如果你希望命令在遇到文件或非空文件夹后继续考虑其它项目，请改用 **SKIPNOTEMPTY**。
 </td></tr><tr><td>
 FILE</td><td>
 /M</td><td>

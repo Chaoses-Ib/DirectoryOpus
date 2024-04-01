@@ -6,7 +6,7 @@
 - [拖放](/Manual/file_operations/copying_moving_and_deleting_files/drag_and_drop.zh.md)：同样，Windows 上相当标准；使用鼠标将文件从一个文件夹拖放到另一个文件夹。
 - [工具栏按钮](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/README.zh.md)：几个默认工具栏按钮让你可以复制或移动选中的文件。
 
-其他文件复制相关功能包括：
+其它文件复制相关功能包括：
 
 - [复制队列](/Manual/file_operations/copying_moving_and_deleting_files/copy_queues/README.zh.md) 功能，让你可以排队多个文件复制操作以避免磁盘抖动或带宽争用。
 - 文件可以在复制时重命名，一次一个或使用 [通配符](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.zh.md)。

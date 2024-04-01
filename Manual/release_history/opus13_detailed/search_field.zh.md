@@ -4,7 +4,7 @@
 
 - 搜索字段通常位于文件窗口的右上角，现在支持多种方法：
   - Windows 搜索 -- 如同 Opus 12 中那样。
-  - Everything 搜索 --如果已安装 Voidtools Everything（参见 [其他章节](/Manual/release_history/opus13_detailed/everything.zh.md)），则你可以在当前文件夹中使用它进行索引搜索。
+  - Everything 搜索 --如果已安装 Voidtools Everything（参见 [其它章节](/Manual/release_history/opus13_detailed/everything.zh.md)），则你可以在当前文件夹中使用它进行索引搜索。
   - 全局 Everything 搜索 -- 与 Everything 搜索类似，但搜索计算机上的所有已编入索引文件夹。
   - Opus 搜索 -- 现在可以直接从搜索字段使用 Opus 自带的文件查找功能，而无需打开较大的查找面板：
     - 如果输入的字符串明文或通配符，它将视为一个通配符名称匹配。
