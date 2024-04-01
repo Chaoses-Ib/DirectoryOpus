@@ -422,7 +422,7 @@ Specifies the name of the toolbar - used in conjunction with the other arguments
 
 Makes the command apply to the current toolbar. When used from a toolbar button, the Toolbar command will apply to the toolbar the button is contained within.
 
-*Example:* `Toolbar NAME=\*this CLOSE`
+*Example:* `Toolbar NAME=*this CLOSE`
 </td></tr><tr><td>
 POS</td><td>
 /K</td><td>

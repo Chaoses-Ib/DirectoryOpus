@@ -405,8 +405,8 @@ Within the **Lister Column Header** **[Context Menu](/Manual/customize/the_custo
 | **%headerinsert%** | Turns into the position nearest where you right-clicked. Typically used to insert a column nearest where you right-clicked. If the position is not specified, the column will be added to the end of the existing columns. |
 
 *Example:* `Set COLUMNSADD picwidth`  
-*Example:* `Set COLUMNSADD desc(2),author(\*,\*)`  
-*Example:* `Set COLUMNSADD picwidth(\*,a)`  
+*Example:* `Set COLUMNSADD desc(2),author(*,*)`  
+*Example:* `Set COLUMNSADD picwidth(*,a)`  
 *Example:* `Set COLUMNSADD=Status(!1+Name)`
 </td></tr><tr><td>
 COLUMNSFREEZE</td><td>
@@ -1607,7 +1607,7 @@ The supplied pattern can be prefixed with **regex:** to specify the pattern is a
 
 If the filter is already set to the specified pattern, it will be cleared, making the command automatically act as a toggle.
 
-*Example:* `Set GLOBALHIDEFILENAME "(desktop.ini\|\*.db)"`  
+*Example:* `Set GLOBALHIDEFILENAME "(desktop.ini|\*.db)"`  
 *Example:* `Set GLOBALHIDEFILENAME regex:.db\$`
 </td></tr><tr><td>
 GLOBALHIDEFILTER</td><td>
@@ -2103,7 +2103,7 @@ The supplied pattern can be prefixed with **regex:** to specify the pattern is a
 
 If the specified pattern is already set as the filter, the filename filter will be cleared, making the command automatically work as a toggle.
 
-*Example:* `Set HIDEFILTERFILENAME \*.(jpg\|bmp\|png\|gif)`
+*Example:* `Set HIDEFILTERFILENAME *.(jpg|bmp|png|gif)`
 </td></tr><tr><td>
 HIDEFILTERFOLDERATTR</td><td>
 /O</td><td>
@@ -2822,11 +2822,11 @@ Sets the quick filter in the current source file display to the specified [wildc
 
 Normally, if the filter is already set to the specified pattern, it will be cleared, making the command work as a toggle automatically.
 
-*Example:* `Set QUICKFILTER=\*.jpg`
+*Example:* `Set QUICKFILTER=*.jpg`
 
 You can prevent the automatic toggling by prefixing the pattern with "notoggle:".
 
-*Example:* `Set QUICKFILTER="notoggle:Hello World.\*"`
+*Example:* `Set QUICKFILTER="notoggle:Hello World.*"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -3299,7 +3299,7 @@ The supplied pattern can be prefixed with **regex:** to specify the pattern is a
 
 If the specified pattern is already set as the filter, it will be cleared, making the command work as a toggle automatically.
 
-*Example:* `Set SHOWFILTERFILENAME \*.(doc\|xls)`
+*Example:* `Set SHOWFILTERFILENAME *.(doc|xls)`
 </td></tr><tr><td>
 SHOWFILTERFOLDERATTR</td><td>
 /O</td><td>
@@ -3354,7 +3354,7 @@ The supplied pattern can be prefixed with **regex:** to specify the pattern is a
 
 If the specified pattern is already set as the filter, it will be cleared, making the command work as a toggle automatically.
 
-*Example:* `Set SHOWFILTERFOLDERS "\* Reports \*"`
+*Example:* `Set SHOWFILTERFOLDERS "* Reports"*"`
 </td></tr><tr><td>
 SHOWMILLIS</td><td>
 /K</td><td>

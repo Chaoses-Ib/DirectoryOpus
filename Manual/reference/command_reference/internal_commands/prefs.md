@@ -112,7 +112,7 @@ BACKUPRESTORE</td><td>
 Initiates the *[Backup and Restore Configuration](/Manual/preferences/backing_up_and_restoring_preferences.md)* wizard, which lets you backup and restore your configuration, as well as export Opus to a USB drive. You can use the **TO** argument to override the default backup name, and the **PASSWORD** or **DESC** arguments to pre-supply a default password or descriptions when creating a backup.
 
 *Example:* `Prefs BACKUPRESTORE`  
-*Example:* `Prefs BACKUPRESTORE TO="/desktop\Backup for %username% on {date\|yyyy-MM-dd}" PASSWORD="cat" DESC="Quick Backup."`
+*Example:* `Prefs BACKUPRESTORE TO="/desktop\Backup for %username% on {date|yyyy-MM-dd}" PASSWORD="cat" DESC="Quick Backup."`
 
 If you wish to automate the backup or restore process, without showing the interactive wizard, use the separate **BACKUP** or **RESTORE** arguments.
 </td></tr><tr><td>
@@ -614,7 +614,7 @@ If a script is inside a Script Package (.osp file), the package must be included
 Wildcards can make dealing with script packages easier, and can also handle script packages which contain multiple scripts, or where you distribute a script to people as a .osp but work on it privately as a text file:
 
 *Example:* `Prefs SCRIPTDISABLE="My Package.osp\*"`  
-*Example:* `Prefs SCRIPTDISABLE="\*My Script.vbs\*"`
+*Example:* `Prefs SCRIPTDISABLE="*My Script.vbs\*"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -715,7 +715,7 @@ If a script is inside a Script Package (.osp file), the package must be included
 Wildcards can make dealing with script packages easier, and can also handle script packages which contain multiple scripts, or where you distribute a script to people as a .osp but work on it privately as a text file:
 
 *Example:* `Prefs SCRIPTS="My Package.osp\*"`  
-*Example:* `Prefs SCRIPTS="\*My Script.vbs\*"`
+*Example:* `Prefs SCRIPTS="*My Script.vbs\*"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -970,7 +970,7 @@ TO</td><td>
 
 Specifies the filename for the configuration backup (used with the **BACKUP** or **BACKUPRESTORE** argument).
 
-*Example:* `Prefs BACKUP TO="/mydocuments/OpusPrefsBackup {date\|yyyy-MM-dd}"`
+*Example:* `Prefs BACKUP TO="/mydocuments/OpusPrefsBackup {date|yyyy-MM-dd}"`
 </td></tr><tr><td>
 TOOLBARS</td><td>
 /S</td><td>

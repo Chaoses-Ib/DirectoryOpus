@@ -49,7 +49,7 @@
 
 在压缩包文件中搜索（在自动化查找文件功能时）。
 
-*示例 :* `Find \*.doc IN C:\Data ARCHIVES`
+*示例 :* `Find *.doc IN C:\Data ARCHIVES`
 </td></tr><tr><td>
 双方</td><td>
 /S</td><td>
@@ -67,7 +67,7 @@
 
 在自动化查找文件以指定 **NAME** 参数应被视为区分大小写的时使用，类似于 UI 中的相关复选框。
 
-*示例 :* `Find \*.DOC IN C:\\ RECURSE CASE`
+*示例 :* `Find *.DOC IN C:\ RECURSE CASE`
 </td></tr><tr><td>
 CLEAR</td><td>
 /O</td><td>
@@ -76,7 +76,7 @@ CLEAR</td><td>
 
 清除先前结果（在自动化查找文件功能时）。在开始新的查找之前，将清除输出文件集合。
 
-*示例 :* `Find \*.doc IN C:\Data CLEAR`
+*示例 :* `Find *.doc IN C:\Data CLEAR`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -85,7 +85,7 @@ CLEAR</td><td>
 
 不清除以前的结果。
 
-*示例 :* `Find \*.doc in C:\Data CLEAR=no`
+*示例 :* `Find *.doc in C:\Data CLEAR=no`
 </td></tr><tr><td>
 COLLNAME</td><td>
 /K</td><td>
@@ -94,7 +94,7 @@ COLLNAME</td><td>
 
 指定将结果添加到其中的文件集合的名称。如果未提供，则使用默认集合（*查找结果* 和 *重复文件*）。
 
-*示例 :* `Find \*.doc in C:\Data COLLNAME Output`
+*示例 :* `Find *.doc in C:\Data COLLNAME Output`
 </td></tr><tr><td>
 COMPARE</td><td>
 /K</td><td>
@@ -135,7 +135,7 @@ COMPARE</td><td>
 
 指定要搜索的文本（在自动化查找文件功能时）。
 
-*示例 :* `Find \*.txt CONTAINING printf IN C:\SourceCode`
+*示例 :* `Find *.txt CONTAINING printf IN C:\SourceCode`
 </td></tr><tr><td>
 CONTANYWORD</td><td>
 /S</td><td>
@@ -144,7 +144,7 @@ CONTANYWORD</td><td>
 
 在自动化查找文件以指定在“任何单词”模式下处理 **包含** 参数时使用，类似于 UI 中的相关复选框。
 
-*示例 :* `Find \*.txt CONTAINING "apple pear peach plum" CONTANYWORD IN C:\Inventory`
+*示例 :* `Find *.txt CONTAINING "apple pear peach plum" CONTANYWORD IN C:\Inventory`
 </td></tr><tr><td>
 CONTCASE</td><td>
 /S</td><td>
@@ -153,7 +153,7 @@ CONTCASE</td><td>
 
 在自动化查找文件以指定 **包含** 参数应被视为区分大小写的时使用，类似于 UI 中的相关复选框。
 
-*示例 :* `Find \*.txt CONTAINING Apple CONTCASE IN C:\Inventory`
+*示例 :* `Find *.txt CONTAINING Apple CONTCASE IN C:\Inventory`
 </td></tr><tr><td>
 CONTIGNOREDIACRITICS</td><td>
 /S</td><td>
@@ -162,7 +162,7 @@ CONTIGNOREDIACRITICS</td><td>
 
 在自动化查找文件以指定 **包含** 参数应忽略变音符号（重音符号）时使用，类似于 UI 中的相关复选框。
 
-*示例 :* `Find \*.txt CONTAINING "aeiou" CONTIGNOREDIACRITICS IN C:\Documents`
+*示例 :* `Find *.txt CONTAINING "aeiou" CONTIGNOREDIACRITICS IN C:\Documents`
 </td></tr><tr><td>
 CONTNOPARTIAL</td><td>
 /S</td><td>
@@ -171,7 +171,7 @@ CONTNOPARTIAL</td><td>
 
 在自动化查找文件以防止对 **包含** 参数进行部分单词匹配时使用（然后内容必须与您确切指定的模式相匹配）。
 
-*示例 :* `Find "moo\*cow" IN "c:\\ RECURSE CONTNOPARTIAL`
+*示例 :* `Find "moo\*cow" IN "c:\ RECURSE CONTNOPARTIAL`
 </td></tr><tr><td>
 CONTWILD</td><td>
 /S</td><td>
@@ -180,7 +180,7 @@ CONTWILD</td><td>
 
 在自动化查找文件以指定 **包含** 参数应被视为通配符时使用，类似于 UI 中的相关复选框。
 
-*示例 :* `Find \*.txt CONTAINING (foo\|bar) CONTWILD IN C:\Things`
+*示例 :* `Find *.txt CONTAINING (foo|bar) CONTWILD IN C:\Things`
 </td></tr><tr><td>
 CONTREGEXP</td><td>
 /S</td><td>
@@ -189,7 +189,7 @@ CONTREGEXP</td><td>
 
 在自动化查找文件函数时使用，以指定 **包含** 参数应使用 [正则表达式](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.zh.md)，类似于 UI 中的相关复选框。
 
-*示例 :* `Find \*.txt CONTAINING "Mr(s?) Bond" CONTREGEXP IN C:\\ RECURSE`
+*示例 :* `Find *.txt CONTAINING "Mr(s?) Bond" CONTREGEXP IN C:\ RECURSE`
 </td></tr><tr><td>
 CONTUTF8</td><td>
 /S</td><td>
@@ -198,7 +198,7 @@ CONTUTF8</td><td>
 
 在自动化查找文件功能时，如果未检测到 BOM，则纯文本文件将假定为 UTF-8（类似于 UI 中的相关复选框）。
 
-*示例 :* `Find \*.txt CONTAINING printf IN C:\SourceCode CONTUTF8`
+*示例 :* `Find *.txt CONTAINING printf IN C:\SourceCode CONTUTF8`
 </td></tr><tr><td>
 DELETE</td><td>
 /O</td><td>
@@ -240,7 +240,7 @@ EXCLUDEHIDDEN</td><td>
 
 搜索时排除隐藏文件夹（设置了 **H** 属性的文件夹）。
 
-*示例:* `Find \*.txt IN D:\\ EXCLUDEHIDDEN`
+*示例:* `Find *.txt IN D:\ EXCLUDEHIDDEN`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -258,7 +258,7 @@ EXCLUDESYSTEM</td><td>
 
 搜索时排除系统文件夹（设置了 **H** 和 **S** 属性的文件夹）。
 
-*示例:* `Find \*.exe IN C:\\ EXCLUDESYSTEM`
+*示例:* `Find *.exe IN C:\ EXCLUDESYSTEM`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -267,7 +267,7 @@ EXCLUDESYSTEM</td><td>
 
 不排除系统文件夹。使用此选项可覆盖已保存的预设值。
 
-*示例:* `Find \*.exe IN C:\\ EXCLUDESYSTEM=no`
+*示例:* `Find *.exe IN C:\ EXCLUDESYSTEM=no`
 </td></tr><tr><td>
 FILTER</td><td>
 /S</td><td>
@@ -287,7 +287,7 @@ FILTERDEF</td><td>
 
 这是一个 **/R** 参数，因此 **FILTERDEF** 关键字后面的所有内容都将被视为该参数的值。
 
-*示例:* `Find FILTERDEF name match \*.zip and size match \> 2 mb`
+*示例:* `Find FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 FROM</td><td>
 /K</td><td>
@@ -305,7 +305,7 @@ HERE</td><td>
 
 自动执行“查找”工具时，在当前文件夹下执行搜索。
 
-*示例:* `Find NAME \*.txt HERE`
+*示例:* `Find NAME *.txt HERE`
 </td></tr><tr><td>
 HIDEUNAFFECTED</td><td>
 /S</td><td>
@@ -350,7 +350,7 @@ IN</td><td>
 
 自动执行搜索时指定要搜索的文件夹或文件夹。请记住，如果路径包含空格，则必须用引号将值括起来。
 
-*示例:* `Find \*.txt IN "C:\Folder 1" "C:\Folder 2"`
+*示例:* `Find *.txt IN "C:\Folder 1" "C:\Folder 2"`
 </td></tr><tr><td>
 LOADPREV</td><td>
 /K</td><td>
@@ -368,7 +368,7 @@ LOADPREV</td><td>
 
 即使通过自动搜索打开，“查找”面板也会加载其上一次设置。但是，这不会恢复多个搜索路径 - 必须为此指定 **LOADPREV=all**。
 
-*示例:* `Find \*.txt IN "C:\Folder 1" LOADPREV=yes`
+*示例:* `Find *.txt IN "C:\Folder 1" LOADPREV=yes`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -430,12 +430,12 @@ NAME</td><td>
 
 你还可以通过为 **NAME** 参数提供过滤器名称并指定 **FILTER** 开关，使用预定义过滤器进行搜索。
 
-*示例:* `Find \*.(doc\|txt\|bmp) IN C:\\ RECURSE ARCHIVES`
-*示例:* `Find regex:foo.+bar\\txt IN C:\\ RECURSE`
-*示例:* `Find NAME="Text File (1).txt" NOWILD IN C:\\ RECURSE`
+*示例:* `Find *.(doc|txt|bmp) IN C:\ RECURSE ARCHIVES`
+*示例:* `Find regex:foo.+bar\\txt IN C:\ RECURSE`
+*示例:* `Find NAME="Text File (1).txt" NOWILD IN C:\ RECURSE`
 
 与 **DUPES** 参数一起使用时，这允许你为重复项搜索提供文件名过滤器。像这样使用时，你可以通过在通配符前面加上 **regex:** 前缀来指定正则表达式模式。
-*Example:* `Find \*.pdf IN C:\Documents RECURSE CLEAR MD5 DUPES`
+*Example:* `Find *.pdf IN C:\Documents RECURSE CLEAR MD5 DUPES`
 </td></tr><tr><td>
 NAMEONLY</td><td>
 /O</td><td>
@@ -462,7 +462,7 @@ NOAUTORUN</td><td>
 
 可让你防止进行自动搜索 - 相反，“查找”，“重复项”或“同步”面板将打开，控件将初始化，但在开始搜索之前允许你做出进一步的更改。例如，当 **NAME** 和 **IN** 参数同时提供时，查找文件操作通常会自动开始。要防止这种情况的发生，请同时指定 **NOAUTORUN** 参数。
 
-*Example:* `Find \*.doc IN /mydocuments RECURSE NOAUTORUN`
+*Example:* `Find *.doc IN /mydocuments RECURSE NOAUTORUN`
 </td></tr><tr><td>
 NOPARTIAL</td><td>
 /S</td><td>
@@ -471,7 +471,7 @@ NOPARTIAL</td><td>
 
 在自动查找文件时使用，以防止部分名称匹配（然后名称必须完全匹配你指定的模式）。
 
-*Example:* `Find \*.bak IN "c:\\ RECURSE NOPARTIAL`
+*Example:* `Find *.bak IN "c:\ RECURSE NOPARTIAL`
 </td></tr><tr><td>
 NOWILD</td><td>
 /S</td><td>
@@ -480,7 +480,7 @@ NOWILD</td><td>
 
 在自动查找文件时使用，以防止通配符名称匹配。与 UI 中类似的复选框相同。
 
-*Example:* `Find "File (1).txt" IN "c:\\ RECURSE NOWILD`
+*Example:* `Find "File (1).txt" IN "c:\ RECURSE NOWILD`
 </td></tr><tr><td>
 NUMBERGROUPS</td><td>
 /S</td><td>
@@ -574,8 +574,8 @@ QUERY</td><td>
 
 **QUERY** 参数后面的所有内容都将作为查询字符串传递给 Windows 搜索，因此 *必须* 是命令的最后一个参数。
 
-*Example:* `Find QUERY filename:\*.doc author:"Leo Davidson"`  
-*Example:* `Find IN "C:\Documents" COLLNAME "Leo's Docs" QUERY filename:\*.doc author:"Leo Davidson"`
+*Example:* `Find QUERY filename:*.doc author:"Leo Davidson"`  
+*Example:* `Find IN "C:\Documents" COLLNAME "Leo's Docs" QUERY filename:*.doc author:"Leo Davidson"`
 </td></tr><tr><td>
 RECURSE</td><td>
 /O</td><td>
@@ -602,7 +602,7 @@ REGEXP</td><td>
 
 在自动执行查找文件功能时，为 **NAME** 字段的值启用 [正则表达式](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.zh.md)。
 
-*Example:* `Find "foo.+bar\\txt" IN C:\\ RECURSE REGEXP`
+*Example:* `Find "foo.+bar\\txt" IN C:\ RECURSE REGEXP`
 </td></tr><tr><td>
 RUNINPANEL</td><td>
 /S</td><td>
@@ -631,7 +631,7 @@ SHOWRESULTS</td><td>
 
 在当前源文件列表或文件窗口中显示自动搜索的结果。
 
-*Example:* `Find \*.txt IN C:\\ RECURSE SHOWRESULTS=source`
+*Example:* `Find *.txt IN C:\ RECURSE SHOWRESULTS=source`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -704,7 +704,7 @@ UAC</td><td>
 
 如果搜索文件夹可能需要提升权限，则启用 UAC 提示。
 
-\`\`Find \*.txt UAC IN D:\\\`
+\`\`Find *.txt UAC IN D:\\\`
 </td></tr><tr><td>
 </td><td>
 </td><td>

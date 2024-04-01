@@ -133,7 +133,7 @@ FILTER</td><td>
 
 Use a [filter](/Manual/file_operations/filtered_operations/README.md) when printing the contents of sub-folders (via the **FLATVIEW** argument). This can be the name of a filter you have previously created via the **[File Operations / Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.md)** page in Preferences, or it can be a simple [wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md) to filter by filename.
 
-*Example:* `Print FOLDER FILTER \*.jpg FLATVIEW=nofolders QUIET`
+*Example:* `Print FOLDER FILTER *.jpg FLATVIEW=nofolders QUIET`
 </td></tr><tr><td>
 FILTERDEF</td><td>
 /K/R</td><td>
@@ -144,7 +144,7 @@ Lets you define a filter in [text format](/Manual/file_operations/filtered_opera
 
 This is a **/R** argument and so everything after the **FILTERDEF** keyword will be treated as the argument's value.
 
-*Example:* `Print FOLDER FLATVIEW=nofolders QUIET FILTERDEF name match \*.zip and size match \> 2 mb`
+*Example:* `Print FOLDER FLATVIEW=nofolders QUIET FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 FLATVIEW</td><td>
 /K</td><td>

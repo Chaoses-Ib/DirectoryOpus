@@ -54,7 +54,7 @@ AS</td><td>
 您还可以指定要在对话框中显示的默认文件名，如下面的第二个示例所示。
 
 *示例:* `Clipboard PASTE AS=ask`  
-*示例:* `Clipboard PASTE AS=ask:{date\|yyyy_MM}\_`
+*示例:* `Clipboard PASTE AS=ask:{date|yyyy_MM}_`
 </td></tr><tr><td>
 COPY</td><td>
 /S</td><td>
@@ -594,7 +594,7 @@ REGEXP</td><td>
 
 为此参数指定的值是一对或多对字符串 - 每一对中第一个是搜索模式，每一对中第二个是替换字符串。例如，要删除所有文件名在复制到剪贴板时的后缀，则搜索字符串应为 **(.\*)\\(.\*)**，替换字符串应为 **\1**。
 
-*示例：* `Clipboard COPYNAMES=nopaths REGEXP "(.\*)\\(.\*)" "\1"`
+*示例：* `Clipboard COPYNAMES=nopaths REGEXP "(.*)\\(.*)" "\1"`
 </td></tr><tr><td>
 SCREENSHOT</td><td>
 /O</td><td>
@@ -630,7 +630,7 @@ SCREENSHOT</td><td>
 
 当指定 **save** 参数时，这让你可以配置保存屏幕截图的名称。如果没有指定，将使用默认名称。你可以使用 **%date%** 代码在名称中插入当前日期。如果期望的名称中有空格，请记住用引号将 SCREENSHOT 参数的值括起来。
 
-*示例：* `Clipboard SCREENSHOT=save,name:My_Opus\_%date\\`  
+*示例：* `Clipboard SCREENSHOT=save,name:My_Opus_%date\\`  
 *示例：* `Clipboard SCREENSHOT "save,name:Opus Screenshot"`
 </td></tr><tr><td>
 </td><td>

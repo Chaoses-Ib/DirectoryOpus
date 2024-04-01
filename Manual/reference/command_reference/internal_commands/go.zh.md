@@ -115,7 +115,7 @@ COPYARGS</td><td>
 
 由于这是一个“原始”参数，它应该是该行上的最后内容。在单词“COPYARGS”之后的全部文本都将原样接受，包括任何引号字符，并附加到各个生成按钮的 copy 命令中。
 
-*示例：* `Go C:\\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no`
+*示例：* `Go C:\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no`
 </td></tr><tr><td>
 CURDIR</td><td>
 /O</td><td>
@@ -344,7 +344,7 @@ DUALPATH</td><td>
 
 指定要读入双显示文件窗口目标文件列表中的路径（标准 **PATH** 参数读入源文件列表）。
 
-\`\`Go C:\\ DUALPATH D:\\\`
+\`\`Go C:\ DUALPATH D:\\\`
 </td></tr><tr><td>
 EJECT</td><td>
 /S</td><td>
@@ -471,7 +471,7 @@ EXPANDBRANCH</td><td>
 
 **PATH** 参数将被解释为 [通配符](../../wildcard_reference/pattern_matching_syntax.zh.md)。请注意，通配符仅针对名称进行测试，而不针对完整路径。与通配符匹配的任何文件夹都会被展开或折叠，无论它们当前是否被选中。
 
-*示例：* `Go EXPANDBRANCH=toggleall,top,wild PATH \*\_backup`
+*示例：* `Go EXPANDBRANCH=toggleall,top,wild PATH *_backup`
 </td></tr><tr><td>
 FDBBUTTONS</td><td>
 /O</td><td>
@@ -528,7 +528,7 @@ FINDTITLE</td><td>
 
 查找标题与指定字符串匹配的所有当前打开的文件窗口，并将它们置于最前面。要搜索的字符串可以是特定标题或 [通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md)。
 
-*示例：* `Go FINDTITLE \*Projects`\*
+*示例：* `Go FINDTITLE *Projects`\*
 </td></tr><tr><td>
 FOLDERCONTENT</td><td>
 /O</td><td>
@@ -539,7 +539,7 @@ FOLDERCONTENT</td><td>
 
 与 **FOLDERCONTENT** 一起使用时，**PATH** 参数支持用竖线 (**\|**) 分隔的多个路径。例如，这可以让您在文件窗口中的下拉菜单中复制（无论如何，在一定程度上）Windows 开始菜单，方法是同时显示当前用户的开始文件夹和公共（所有用户）开始文件夹。
 
-*示例：* `Go /start\|/commonstartmenu FOLDERCONTENT`
+*示例：* `Go /start|/commonstartmenu FOLDERCONTENT`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -631,12 +631,12 @@ FOLDERCONTENT</td><td>
 
 因为此关键字需要嵌入等号，所以必须用引号将整个参数值括起来，以免混淆命令解析器。
 
-*示例：* `Go C: FOLDERCONTENT="filefilter=\*.exe"`
+*示例：* `Go C: FOLDERCONTENT="filefilter=*.exe"`
 
 如果您需要在模式中使用逗号 (,) 字符，请用嵌入引号将模式括起来。以下示例将 **\*,**\* 指定为模式：
 
-*示例：* `Go C: FOLDERCONTENT="filefilter=""\*,\*"""`  
-*示例：* `Go C: FOLDERCONTENT="filefilter=""\*,\*"",nodirs"`
+*示例：* `Go C: FOLDERCONTENT="filefilter=""*"*"""`  
+*示例：* `Go C: FOLDERCONTENT="filefilter=""*"*"",nodirs"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -777,11 +777,11 @@ FOLDERCONTENT</td><td>
 
 每个生成按钮都将运行 **Copy** 命令。您可以使用单独的 **COPYARGS** 参数指定每个生成按钮中包含的其他 **Copy** 命令参数。
 
-*示例：* `Go C:\\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no\*\*`
+*示例：* `Go C:\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no\*\*`
 
 没有 "copyto..." 关键字的单独 "move" 版本，因为似乎不需要它们，但是您可以通过 **COPYARGS** 参数实现相同的功能：
 
-*示例：* `Go C:\\ FOLDERCONTENT=copy COPYARGS MOVE`
+*示例：* `Go C:\ FOLDERCONTENT=copy COPYARGS MOVE`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -899,7 +899,7 @@ FTPCMD</td><td>
 
 向远程 FTP 服务器发送原始命令（当前正在查看 FTP 目录时）。如果从未连接过 FTP 站点，则此命令不起作用。可在 [FTP 日志](/Manual/ftp/ftp_log.zh.md) 中查看命令的效果（如果有）。
 
-*示例:* `Go FTPCMD chmod \* 755`
+*示例:* `Go FTPCMD chmod * 755`
 </td></tr><tr><td>
 FTPSITE</td><td>
 /K</td><td>
@@ -1079,7 +1079,7 @@ NEW</td><td>
 
 打开一个新的文件窗口。[默认文件窗口](/Manual/basic_concepts/the_lister/the_default_lister.zh.md) 设置被用于新打开的文件窗口，尽管 **Go** 命令的其他各种参数可以用于覆盖默认文件窗口的设置。
 
-*示例:* `Go C:\\ NEW`
+*示例:* `Go C:\ NEW`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1168,7 +1168,7 @@ NEW</td><td>
 **dual**</td><td>
 
 在 [双屏幕](/Manual/basic_concepts/the_lister/dual_display/README.zh.md) 模式下打开新文件窗口，采用默认文件窗口的垂直或水平布局。
-\`\`Go NEW=dual C:\\ DUALPATH D:\\\`
+\`\`Go NEW=dual C:\ DUALPATH D:\\\`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1185,7 +1185,7 @@ NEW</td><td>
 **dualvert**</td><td>
 
 在 [双屏幕](/Manual/basic_concepts/the_lister/dual_display/README.zh.md) 模式下打开新文件窗口，垂直布局。
-\`\`Go NEW=dualvert C:\\ DUALPATH D:\\\`
+\`\`Go NEW=dualvert C:\ DUALPATH D:\\\`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1293,7 +1293,7 @@ NEWTAB</td><td>
 
 打开一个新的 [文件夹标签页](/Manual/basic_concepts/the_lister/tabs/README.zh.md)。如果未指定路径（例如通过 **PATH** 参数），则会打开一个空白标签页，否则指定的路径将被加载到新标签页中。你可以使用 **TABPOS** 参数来控制新打开的标签页的位置。
 
-*示例:* `Go C:\\ NEWTAB`
+*示例:* `Go C:\ NEWTAB`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1302,7 +1302,7 @@ NEWTAB</td><td>
 
 如果命令在没有文件窗口的情况下运行，则默认文件窗口将与指定文件夹的新标签页一起打开。如果文件窗口已存在，则指定文件夹的新标签页将正常打开在现有文件窗口中。
 
-*示例:* `Go C:\\ NEWTAB=deflister,findexisting`
+*示例:* `Go C:\ NEWTAB=deflister,findexisting`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1839,7 +1839,7 @@ SWITCHPATH</td><td>
 
 在两个或更多路径间切换（或循环）。**PATH** 参数用于提供序列中的第一个路径，然后 **SWITCHPATH** 参数提供第二个和后续的路径。运行此命令时，Opus 会查看在源文件列表中显示的当前路径。如果它匹配 provided paths 中的一个，则会读取序列中的下一个路径（然后再读下一个、再下一个，如此类推）。如果当前路径不匹配 provided paths 中的任何一个，则会读取序列中的第一个路径。
 
-\`\`Go C:\\ SWITCHPATH D:\\ E:\\ F:\\ G:\\\`
+\`\`Go C:\ SWITCHPATH D:\ E:\ F:\ G:\\\`
 </td></tr><tr><td>
 TABCLOSE</td><td>
 /O</td><td>
@@ -1853,7 +1853,7 @@ TABCLOSE</td><td>
 **TABPOS** 参数用于指定要关闭的特定标签（从 0 开始编号）的 index，或相对于当前标签的位置，或第一个或最后一个标签的位置。（**PATH** 参数也可以指定一个特定的 tab index，但此用法已弃用，改用 **TABPOS**。）
 
 *示例：* 关闭当前标签：`Go TABCLOSE`
-关闭显示在 C: 驱动器上的所有标签：`Go TABCLOSE PATH=C:\*`
+关闭显示在 C: 驱动器上的所有标签：`Go TABCLOSE PATH=C:*`
 关闭第一个标签：`Go TABCLOSE TABPOS=first`
 关闭最后一个标签：`Go TABCLOSE TABPOS=last`
 关闭位于当前标签后的标签：`Go TABCLOSE TABPOS=+1`
@@ -2494,7 +2494,7 @@ TABPOS</td><td>
 
 当与 **NEWTAB** 参数结合使用时，将新创建的标签显示在标签栏的第一个位置。当与 **TABCLOSE** 结合使用时，关闭第一个标签。当单独使用时，重新定位活动文件夹标签，使其成为标签栏上的第一个标签。
 
-*示例：* `Go C:\\ NEWTAB TABPOS=first`
+*示例：* `Go C:\ NEWTAB TABPOS=first`
 
 当从 [脚本](/Manual/scripting/README.zh.md) 中使用时，您可以传递 **[Tab](../../scripting_reference/scripting_objects/tab.zh.md)** 对象的默认值，以指定您希望作为第二个参数重新定位的标签。
 
@@ -2553,7 +2553,7 @@ TOFRONT</td><td>
 
 使文件窗口成为活动窗口，并将其置于前面。通常在从 Opus 外部发送命令时使用，以确保读取文件夹的窗口可见。
 
-*示例:* `Go C:\\ TOFRONT`
+*示例:* `Go C:\ TOFRONT`
 </td></tr><tr><td>
 TREECOLLAPSE</td><td>
 /O</td><td>
@@ -2782,7 +2782,7 @@ USEQUALKEYS</td><td>
 
 这相当于 **KEYARGS ctrl:OPENINDUAL shift:NEW alt:NEWTAB**.
 
-*Example:* `Go C:\\ USEQUALKEYS`
+*Example:* `Go C:\ USEQUALKEYS`
 </td></tr><tr><td>
 USER</td><td>
 /K</td><td>
@@ -2809,7 +2809,7 @@ VIEW</td><td>
 
 将新文件夹的视图更改为 *小图标* 模式。
 
-*Example:* `Go C:\\ VIEW smallicons`
+*Example:* `Go C:\ VIEW smallicons`
 </td></tr><tr><td>
 </td><td>
 </td><td>

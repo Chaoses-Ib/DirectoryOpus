@@ -128,7 +128,7 @@ REGEXP</td><td>
 
 Used in conjunction with the **LABEL** argument to specify that the label string is a regular expression.
 
-*Example:* `ContextMenu REGEXP LABEL="Add to .\*\\zip.\*"`
+*Example:* `ContextMenu REGEXP LABEL="Add to .*\\zip.*"`
 </td></tr><tr><td>
 SHIFT</td><td>
 /S</td><td>
@@ -176,7 +176,7 @@ WILD</td><td>
 
 Used in conjunction with the **LABEL** argument to specify that the label string is a wildcard expression.
 
-*Example:* `ContextMenu WILD LABEL="Add to \*.zip\*"`
+*Example:* `ContextMenu WILD LABEL="Add to *.zip\*"`
 </td></tr></tbody>
 </table>
 

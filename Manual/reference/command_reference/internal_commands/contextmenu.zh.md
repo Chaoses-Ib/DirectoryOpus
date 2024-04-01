@@ -126,7 +126,7 @@ REGEXP</td><td>
 *(无值)*</td><td>
 
 与 **LABEL** 参数结合使用，指定标签字符串为正则表达式。
-*例:* `ContextMenu REGEXP LABEL="Add to .\*\\zip.\*"`
+*例:* `ContextMenu REGEXP LABEL="Add to .*\\zip.*"`
 </td></tr><tr><td>
 SHIFT</td><td>
 /S</td><td>
@@ -174,6 +174,6 @@ WILD</td><td>
 
 与 **LABEL** 参数结合使用，以指定标签字符串为通配符表达式。
 
-*例:* `ContextMenu WILD LABEL="Add to \*.zip\*"`
+*例:* `ContextMenu WILD LABEL="Add to *.zip\*"`
 </td></tr></tbody>
 </table>

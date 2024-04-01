@@ -402,8 +402,8 @@ COLUMNSADD</td><td>
 | **％headerinsert%** | 切换为距离右键单击位置最近的位置。通常用于在距离右键单击位置最近的位置插入列。如果未指定位置，则列将被添加到现有列的末尾。 |
 
 *示例:* `Set COLUMNSADD picwidth`  
-*示例:* `Set COLUMNSADD desc(2),author(\*,\*)`  
-*示例:* `Set COLUMNSADD picwidth(\*,a)`  
+*示例:* `Set COLUMNSADD desc(2),author(*,*)`  
+*示例:* `Set COLUMNSADD picwidth(*,a)`  
 *示例:* `Set COLUMNSADD=Status(!1+Name)`
 </td></tr><tr><td>
 COLUMNSFREEZE</td><td>
@@ -1599,7 +1599,7 @@ GLOBALHIDEFILENAME</td><td>
 
 如果过滤器已设置为指定模式，它将被清除，这使命令自动起作用。
 
-*示例：* `Set GLOBALHIDEFILENAME "(desktop.ini\|\*.db)"`  
+*示例：* `Set GLOBALHIDEFILENAME "(desktop.ini|\*.db)"`  
 *示例：* `Set GLOBALHIDEFILENAME regex:.db\$`
 </td></tr><tr><td>
 GLOBALHIDEFILTER</td><td>
@@ -2643,11 +2643,11 @@ QUICKFILTER</td><td>
 
 通常，如果过滤器已设置为指定模式，则将清除该模式，使命令自动作为切换命令工作。
 
-*示例：* `Set QUICKFILTER=\*.jpg`
+*示例：* `Set QUICKFILTER=*.jpg`
 
 你可以通过在模式前加上“notoggle:”的前缀来防止自动切换。
 
-*示例：* `Set QUICKFILTER="notoggle:Hello World.\*"`
+*示例：* `Set QUICKFILTER="notoggle:Hello World.*"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -3113,7 +3113,7 @@ SHOWFILTERFILENAME</td><td>
 
 如果已经将指定模式设置为过滤器，则会清除过滤器，使得命令立即自动充当开关。
 
-*示例:* `Set SHOWFILTERFILENAME \*.(doc\|xls)`
+*示例:* `Set SHOWFILTERFILENAME *.(doc|xls)`
 </td></tr><tr><td>
 SHOWFILTERFOLDERATTR</td><td>
 /O</td><td>
@@ -3168,7 +3168,7 @@ SHOWFILTERFOLDERS</td><td>
 
 如果已经将指定模式设置为过滤器，则会清除过滤器，使得命令立即自动充当开关。
 
-*示例:* `Set SHOWFILTERFOLDERS "\* Reports \*"`
+*示例:* `Set SHOWFILTERFOLDERS "* Reports"*"`
 </td></tr><tr><td>
 SHOWMILLIS</td><td>
 /K</td><td>

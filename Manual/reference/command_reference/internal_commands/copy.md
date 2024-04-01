@@ -179,7 +179,7 @@ When copying or moving files, you will be prompted to enter a new name for each 
 
 Specifies the new name or [wildcard pattern](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md) for the copied or moved files. This only changes the names; if you want to specify the destination path, use the **TO** argument.
 
-*Example:* `Copy AS \*.bak HERE`
+*Example:* `Copy AS *.bak HERE`
 </td></tr><tr><td>
 AUTOSELECT</td><td>
 /K</td><td>
@@ -511,7 +511,7 @@ Prompts for the name of a new folder and copies the selected files and folders i
 
 Creates a new folder with the specified name and copies selected items into that folder. You can specify an absolute path, or just a name - if only a name is provided the folder is created in the destination (or source if the **HERE** argument is also specified). You can also use the [external control codes](../external_control_codes/README.md) to (for example) automatically create a folder based on the current date.
 
-*Example:* `Copy CREATEFOLDER "Backup-{date\|yyyyMMdd}"`
+*Example:* `Copy CREATEFOLDER "Backup-{date|yyyyMMdd}"`
 
 When archiving files, this specifies the name of the archive to create or update. (If you don't specify an archive name it will default to the name of the first selected file, without its extension, or the name of the current folder if no file selection is used.). The example below adds the selected files to an archive called "Cat Photos.zip" below the current folder:
 
@@ -596,7 +596,7 @@ Copies with filtering enabled (without having to activate the [copy filter](/Man
 
 Copies using the specified filter. This must have previously been created from the **[Filters](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.md)** page in Preferences. You can also directly specify a [simple wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md)
 
-*Example:* `Copy FILTER \*.(jpg\|png)`
+*Example:* `Copy FILTER *.(jpg|png)`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -634,7 +634,7 @@ Lets you define a filter in [text format](/Manual/file_operations/filtered_opera
 
 This is a **/R** argument and so everything after the **FILTERDEF** keyword will be treated as the argument's value.
 
-*Example:* `Copy FILTERDEF name match \*.zip and size match \> 2 mb`
+*Example:* `Copy FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 FLATVIEWCOPY</td><td>
 /K</td><td>
@@ -701,7 +701,7 @@ IGNOREEXT</td><td>
 
 Makes the copy function ignore file extensions when copying with a wildcard rename (for example, so a button can work on both files and folders using the same wildcard pattern).
 
-*Example:* `Copy \* AS \*.bak IGNOREEXT`
+*Example:* `Copy * AS *.bak IGNOREEXT`
 </td></tr><tr><td>
 INCLUDEINLIBRARY</td><td>
 /O</td><td>
@@ -951,7 +951,7 @@ PATTERN</td><td>
 
 Specifies the "old name" or "from" [wildcard pattern](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md) for the copied or moved files. Use this in conjunction with **AS** to control wildcard renaming of copied or moved files.
 
-*Example:* `Copy DUPLICATE PATTERN \*.\* AS \*\_{date\|yyyy-MM-dd}.`\*
+*Example:* `Copy DUPLICATE PATTERN * * AS *_{date|yyyy-MM-dd}.`\*
 </td></tr><tr><td>
 QUEUE</td><td>
 /O</td><td>

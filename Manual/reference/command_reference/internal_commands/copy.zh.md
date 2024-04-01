@@ -178,7 +178,7 @@ AS</td><td>
 
 为复制或移动的文件指定新名称或 [通配符模式](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.zh.md)。这只会改变名称；如果您想指定目标路径，请使用 **TO** 参数。
 
-*示例：* `Copy AS \*.bak HERE`
+*示例：* `Copy AS *.bak HERE`
 </td></tr><tr><td>
 AUTOSELECT</td><td>
 /K</td><td>
@@ -508,7 +508,7 @@ CREATEFOLDER</td><td>
 
 创建一个指定名称的新文件夹，并将所选项复制到该文件夹中。您可以指定绝对路径或一个名称 - 如果只提供了一个名称，将在目标（或源，如果还指定了 **HERE** 参数）中创建文件夹。您还可以使用 [外部控制代码](../external_control_codes/README.zh.md)（例如）根据当前日期自动创建文件夹。
 
-*示例：* `Copy CREATEFOLDER "Backup-{date\|yyyyMMdd}"`
+*示例：* `Copy CREATEFOLDER "Backup-{date|yyyyMMdd}"`
 
 在压缩包文件时，这指定要创建或更新的压缩包名称。（如果您未指定压缩包名称，它将默认采用第一个所选文件的名称，不带扩展名，或在未使用文件选择时当前文件夹的名称。）以下示例将所选文件添加到当前文件夹下的名为 “Cat Photos.zip” 的压缩包中：
 
@@ -593,7 +593,7 @@ FILTER</td><td>
 
 使用指定过滤器进行复制。这必须事先在预置中 **[过滤器](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.zh.md)** 页面创建。您还可以直接指定一个 [简单的通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md)
 
-*示例：* `Copy FILTER \*.(jpg\|png)`
+*示例：* `Copy FILTER *.(jpg|png)`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -630,7 +630,7 @@ FILTERDEF</td><td>
 允许您以 [文本格式](/Manual/file_operations/filtered_operations/textual_filters.zh.md) 定义一个过滤器，以过滤已复制文件夹的内容。这类似于 **FILTER** 参数，但是无需预先定义过滤器。
 
 这是一个 **/R** 参数，因此 **FILTERDEF** 关键字后面的所有内容都将被视为该参数的值。
-*示例：*`Copy FILTERDEF name match \*.zip and size match \> 2 mb`
+*示例：*`Copy FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 FLATVIEWCOPY</td><td>
 /K</td><td>
@@ -697,7 +697,7 @@ IGNOREEXT</td><td>
 
 使复制功能在使用通配符重命名复制时忽略文件扩展名（例如，使按钮可以使用同一通配符模式同时处理文件和文件夹）。
 
-*示例：* `Copy \* AS \*.bak IGNOREEXT`
+*示例：* `Copy * AS *.bak IGNOREEXT`
 </td></tr><tr><td>
 INCLUDEINLIBRARY</td><td>
 /O</td><td>
@@ -946,7 +946,7 @@ PATTERN</td><td>
 
 指定复制或移动文件的“旧名称”或“从”[通配模式](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.zh.md)。将此与 **AS** 连用，来控制复制或移动文件的通配重命名。
 
-*示例:* `复制 复制 PATTERN \*.\* AS \*\_{date\|yyyy-MM-dd}.`\*
+*示例:* `复制 复制 PATTERN * * AS *_{date|yyyy-MM-dd}.`\*
 </td></tr><tr><td>
 队列</td><td>
 /O</td><td>

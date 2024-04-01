@@ -38,7 +38,7 @@ ADVANCED</td><td>
 
 当与重命名模式或预设名称组合使用时，**ADVANCED**参数可用于确保命令打开重命名对话框而不是立即重命名所有选定的项目。
 
-*示例：* `Rename ADVANCED PATTERN=\* TO=\*.bak`  
+*示例：* `Rename ADVANCED PATTERN=* TO=*.bak`  
 *示例：* `Rename ADVANCED PRESET="Number Files"`
 </td></tr><tr><td>
 APPLYNOMATCH</td><td>
@@ -48,7 +48,7 @@ APPLYNOMATCH</td><td>
 
 为重命名功能打开**即使模式不匹配也能应用操作**选项。这可以让**CASE**等参数应用于所有文件名，无论它们是否与旧名称模式（由**PATTERN**参数给出）匹配。
 
-*示例：* `Rename PATTERN "\*.jpeg" TO "\*.jpg" CASE=allwords APPLYNOMATCH`
+*示例：* `Rename PATTERN "*.jpeg" TO "*.jpg" CASE=allwords APPLYNOMATCH`
 </td></tr><tr><td>
 AUTONUMBER</td><td>
 /S</td><td>
@@ -57,7 +57,7 @@ AUTONUMBER</td><td>
 
 如果新文件名与现有文件冲突，自动向其末尾添加一个递增的数字。
 
-*示例：* `Rename PATTERN "The \*" TO \* AUTONUMBER`
+*示例：* `Rename PATTERN "The *" TO * AUTONUMBER`
 </td></tr><tr><td>
 BY</td><td>
 /K/N</td><td>
@@ -156,7 +156,7 @@ FROM</td><td>
 
 重命名命令行上指定的文件，而不是源文件列表中选定的文件。该参数可以接受文件名或[通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md)。如果文件名包含空格，请记住用引号将每个文件名括起来。
 
-*示例：* `Rename FROM C:\Spool\\.tmp TO \*.temp`
+*示例：* `Rename FROM C:\Spool\\.tmp TO *.temp`
 </td></tr><tr><td>
 HEADING</td><td>
 /O</td><td>
@@ -185,7 +185,7 @@ IGNOREEXT</td><td>
 
 为重命名功能打开**忽略扩展名**选项。文件名扩展名不会受影响，无需在任何通配符模式中考虑它们。
 
-*示例：* `Rename PATTERN \* TO \*\_backup IGNOREEXT`
+*示例：* `Rename PATTERN * TO *_backup IGNOREEXT`
 
 对于非交互式重命名，**Ignore extensions**选项在默认情况下关闭，以避免破坏旧按钮。你只需将**IGNOREEXT**参数与指定命令行上所有内容且不打开重命名对话框的重命名命令一起使用。
 
@@ -277,7 +277,7 @@ MATCHCASE</td><td>
 
 使重命名操作区分大小写。模式和搜索字符串必须与文件名的大写小写完全匹配。
 
-*示例：* `Rename PATTERN \*.jpG TO \*.JPG MATCHCASE`
+*示例：* `Rename PATTERN *.jpG TO *.JPG MATCHCASE`
 </td></tr><tr><td>
 NOFILEINFO</td><td>
 /S</td><td>
@@ -286,7 +286,7 @@ NOFILEINFO</td><td>
 
 禁用文件信息元数据插入。例如，字符串 **{mp3title}** 通常会在新文件名中插入 MP3 文件的标题。如果指定了 **NOFILEINFO**，则会将字符串 "{mp3title}" 原样插入新文件名中。
 
-*示例：* `Rename PATTERN \* TO \*\_{name} NOFILEINFO `
+*示例：* `Rename PATTERN * TO *_{name} NOFILEINFO `
 </td></tr><tr><td>
 NOIGNOREEXT</td><td>
 /S</td><td>
@@ -295,7 +295,7 @@ NOIGNOREEXT</td><td>
 
 在首次打开重命名对话框时关闭其中的 **忽略扩展名** 选项。只有在以交互方式打开重命名对话框时才需要使用此参数。
 
-*示例：* `Rename PATTERN \*.JPEG TO \*.JPG ADVANCED NOIGNOREEXT`
+*示例：* `Rename PATTERN *.JPEG TO *.JPG ADVANCED NOIGNOREEXT`
 
 对于重命名命令的非交互式使用，**忽略扩展名** 选项默认关闭（以避免破坏旧按钮），可以通过上面记录的单独**IGNOREEXT** 参数打开。
 </td></tr><tr><td>
@@ -310,7 +310,7 @@ NOMATCHNOFAIL</td><td>
 
 如果使用了 **NOMATCHNOFAIL**，则与重命名模式不匹配的文件仍会传递给后续命令。
 
-*示例：* `Rename PATTERN "\* Backup.\*" TO \*.\* NOMATCHNOFAIL`
+*示例：* `Rename PATTERN "* Backup"*" TO"*"* NOMATCHNOFAIL`
 </td></tr><tr><td>
 NUMBER</td><td>
 /O</td><td>
@@ -321,7 +321,7 @@ NUMBER</td><td>
 
 默认情况下，数字将添加到文件名的末尾，位于扩展名之前。可以通过在新的文件名中提供 **\[#\]** 标记来为数字指定不同的位置。
 
-*示例：* `Rename PATTERN \* TO \[#\]\* NUMBER`
+*示例：* `Rename PATTERN * TO \[#\]\* NUMBER`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -345,15 +345,15 @@ PATTERN</td><td>
 
 请参阅 [重命名文件](/Manual/file_operations/renaming_files/README.zh.md) 部分以详细了解各种重命名模式。
 
-*示例：* `Rename PATTERN IMGP(.\*).jpg TO "Image \1.jpg" REGEXP`
+*示例：* `Rename PATTERN IMGP(.*).jpg TO "Image \1.jpg" REGEXP`
 
 同时指定 **FROM** 参数将表示该命令忽略当前文件选择，并对所有匹配文件应用指定的重命名。只有同时与 TO 和 PATTERN 参数匹配的文件才会被重命名。
 
-*示例：* `Rename FROM \*.jpg PATTERN IMGP(.\*).jpg TO "Image \1.jpg" REGEXP`
+*示例：* `Rename FROM *.jpg PATTERN IMGP( *).jpg TO "Image \1.jpg" REGEXP`
 
 如果同时给定了 **PATTERN** 和 **TO** 参数，则该命令通常会在不提示任何进一步交互的情况下立即应用重命名；你可以添加 **ADVANCED** 参数来代替显示重命名对话框，其中包含指定的模式，以便可以预览操作并根据需要进行调整或全部取消。
 
-*示例：* `Rename ADVANCED PATTERN \* TO \*.bak`
+*示例：* `Rename ADVANCED PATTERN * TO *.bak`
 </td></tr><tr><td>
 PRESET</td><td>
 /K</td><td>
@@ -430,7 +430,7 @@ RECURSE</td><td>
 
 重命名操作将在选定的子文件夹内的所有文件中递归执行。
 
-*示例：* `Rename PATTERN \*.jpg TO \*.jpeg RECURSE`
+*示例：* `Rename PATTERN *.jpg TO *.jpeg RECURSE`
 </td></tr><tr><td>
 REGEXP</td><td>
 /S</td><td>
@@ -439,7 +439,7 @@ REGEXP</td><td>
 
 启用正则表达式模式。必须使用 **PATTERN** 参数提供搜索模式，并使用 **TO** 参数提供替换模式。您还可以选择将其与 **FINDREP** 参数结合使用。
 
-*示例：* `Rename PATTERN "(.\*) - (.\*)\\(.\*)" TO "\2 - \1.\3" REGEXP`
+*示例：* `Rename PATTERN "(.*) - (.*)\\(.*)" TO "\2 - \1.\3" REGEXP`
 </td></tr><tr><td>
 RENAMEMATCHING</td><td>
 /S</td><td>
@@ -485,7 +485,7 @@ TYPE</td><td>
 
 强制重命名仅对文件进行操作 - 将忽略任何选定的文件夹。
 
-*示例：* `Rename PATTERN \* TO \*.bak TYPE=files`
+*示例：* `Rename PATTERN * TO *.bak TYPE=files`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -494,7 +494,7 @@ TYPE</td><td>
 
 强制重命名仅对文件夹进行操作。
 
-*示例：* `Rename PATTERN \* TO Copy\_\* TYPE=dirs`
+*示例：* `Rename PATTERN * TO Copy_* TYPE=dirs`
 </td></tr><tr><td>
 WHENEXISTS</td><td>
 /K</td><td>
@@ -503,7 +503,7 @@ WHENEXISTS</td><td>
 
 控制如果新文件名已经存在将发生的情况。默认操作是向用户 **询问** 每个现有文件。
 
-*示例：* `Rename PATTERN \* TO \*.bak WHENEXISTS=ask`
+*示例：* `Rename PATTERN * TO *.bak WHENEXISTS=ask`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -512,7 +512,7 @@ WHENEXISTS</td><td>
 
 按要求执行重命名，删除已存在的该文件。
 
-*示例：* `Rename PATTERN \* TO \*.bak WHENEXISTS=delete`
+*示例：* `Rename PATTERN * TO *.bak WHENEXISTS=delete`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -521,7 +521,7 @@ WHENEXISTS</td><td>
 
 按要求执行重命名，重命名已存在的旧文件。
 
-*示例：* `Rename PATTERN \* TO \*.bak WHENEXISTS=keep`
+*示例：* `Rename PATTERN * TO *.bak WHENEXISTS=keep`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -530,7 +530,7 @@ WHENEXISTS</td><td>
 
 通过添加后缀来修改新名称，使其唯一。
 
-*示例：* `Rename PATTERN \* TO \*.bak WHENEXISTS=rename`
+*示例：* `Rename PATTERN * TO *.bak WHENEXISTS=rename`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -539,6 +539,6 @@ WHENEXISTS</td><td>
 
 跳过任何已存在的文件，不执行重命名。
 
-*示例：* `Rename PATTERN \* TO \*.bak WHENEXISTS=skip`
+*示例：* `Rename PATTERN * TO *.bak WHENEXISTS=skip`
 </td></tr></tbody>
 </table>

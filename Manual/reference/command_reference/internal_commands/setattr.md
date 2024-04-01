@@ -190,7 +190,7 @@ Specifies the name of the file or files to modify. If you don't provide this arg
 
 If you only specify the filename instead of the full path of the file or files, Opus will look in the current source folder. You can also specify a [wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md). Remember that if the filename contains spaces you need to enclose it in quotes.
 
-*Example:* `SetAttr \*.xls DESCRIPTION "Annual Results for 2011" SETATTR r`
+*Example:* `SetAttr *.xls DESCRIPTION "Annual Results for 2011" SETATTR r`
 </td></tr><tr><td>
 FILTER</td><td>
 /K</td><td>
@@ -210,7 +210,7 @@ Lets you define a filter in [text format](/Manual/file_operations/filtered_opera
 
 This is a **/R** argument and so everything after the **FILTERDEF** keyword will be treated as the argument's value.
 
-*Example:* `SetAttr ATTR n FILTERDEF name match \*.zip and size match \> 2 mb`
+*Example:* `SetAttr ATTR n FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 META</td><td>
 /O/M</td><td>

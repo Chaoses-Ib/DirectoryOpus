@@ -86,7 +86,7 @@ When used in conjunction with **CONTEXTMENU Directory\Background**, this lets yo
 
 Exclude the specified file types from the generated shell *New* menu when used with **CONTEXTMENU Directory\Background**. You can also use \* to totally disable the New menu in this context.
 
-*Example:* `FileType CONTEXTMENU Directory\Background CONTEXTOPTIONS "EXCLUDE=\*"`
+*Example:* `FileType CONTEXTMENU Directory\Background CONTEXTOPTIONS "EXCLUDE=*"`
 </td></tr><tr><td>
 </td><td>
 </td><td>

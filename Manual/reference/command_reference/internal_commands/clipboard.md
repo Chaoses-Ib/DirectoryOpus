@@ -55,7 +55,7 @@ The **Shrink image to compensate for system DPI** option will scale the pasted i
 You can also specify the default filename to be shown in the dialog, as in the second example below.
 
 *Example:* `Clipboard PASTE AS=ask`  
-*Example:* `Clipboard PASTE AS=ask:{date\|yyyy_MM}\_`
+*Example:* `Clipboard PASTE AS=ask:{date|yyyy_MM}_`
 </td></tr><tr><td>
 COPY</td><td>
 /S</td><td>
@@ -598,7 +598,7 @@ In conjunction with **COPYNAMES** lets you perform [regular expression](../../wi
 
 The values specified for this argument are one or more pairs of strings - the first of each pair is the pattern to search for, and the second of each pair is the replace string. For example, to strip off the suffixes of all filenames when they are copied to the clipboard, the search string would be **(.\*)\\(.\*)** and the replacement string would be **\1**.
 
-*Example:* `Clipboard COPYNAMES=nopaths REGEXP "(.\*)\\(.\*)" "\1"`
+*Example:* `Clipboard COPYNAMES=nopaths REGEXP "(.*)\\(.*)" "\1"`
 </td></tr><tr><td>
 SCREENSHOT</td><td>
 /O</td><td>
@@ -634,7 +634,7 @@ When the **save** argument is specified this lets you specify the file format to
 
 When the **save** argument is specified this lets you configure the name to save the screenshot to. If not specified a default name is used. You can insert the current date in the name using the **%date%** code. Remember to enclose value of the SCREENSHOT argument in quotes if your desired name contains spaces.
 
-*Example:* `Clipboard SCREENSHOT=save,name:My_Opus\_%date\\`  
+*Example:* `Clipboard SCREENSHOT=save,name:My_Opus_%date\\`  
 *Example:* `Clipboard SCREENSHOT "save,name:Opus Screenshot"`
 </td></tr><tr><td>
 </td><td>

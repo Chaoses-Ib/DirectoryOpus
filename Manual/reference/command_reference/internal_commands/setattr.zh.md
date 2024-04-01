@@ -188,7 +188,7 @@ FILE</td><td>
 指定要修改的文件或文件的文件名。如果你不提供此参数，则该命令将对源文件窗口中所有选定的项进行操作。这是 **SetAttr** 命令的默认参数 - 你不需要指定 **FILE** 关键字。
 
 如果你只指定文件名而不是文件或文件的完整路径，Opus 将在当前源文件夹中查找。你还可以指定 [通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md)。请记住，如果文件名包含空格，则需要用引号将其括起来。
-*示例:* `SetAttr \*.xls DESCRIPTION "2011 年年报" SETATTR r`
+*示例:* `SetAttr *.xls DESCRIPTION "2011 年年报" SETATTR r`
 </td></tr><tr><td>
 过滤器</td><td>
 /K</td><td>
@@ -208,7 +208,7 @@ FILTERDEF</td><td>
 
 这是一个 **/R** 参数，因此在 **FILTERDEF** 关键字后面的所有内容都将作为该参数的值来处理。
 
-*示例:* `SetAttr ATTR n FILTERDEF name match \*.zip and size match \> 2 mb`
+*示例:* `SetAttr ATTR n FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 元数据</td><td>
 /O/M</td><td>

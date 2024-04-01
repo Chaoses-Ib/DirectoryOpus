@@ -170,7 +170,7 @@ FILTER</td><td>
 \`\`Favorites SHOWICONS FILTER C:\\\`\*  
 // 仅显示以 C:\\开头的路径//
 
-*示例：* `Favorites SHOWICONS FILTER "~(\*Program Files\*)"`  
+*示例：* `Favorites SHOWICONS FILTER "~(*Program Files\*)"`  
 // 仅显示不包含 Program Files 的路径。//
 
 若要按子分支而不是路径过滤列表，请改为参阅 **PATH** 参数。
@@ -392,7 +392,7 @@ PATH</td><td>
 **PATH** 是 **Favorites** 命令的默认参数；不必指定 **PATH** 关键字本身。
 
 *示例：* `Favorites /desktop ADD`  
-*示例：* `Favorites \*Projects` <nobr>(等同于 `Favorites BRANCH=Projects`)</nobr>
+*示例：* `Favorites *Projects` <nobr>(等同于 `Favorites BRANCH=Projects`)</nobr>
 </td></tr><tr><td>
 SHOWICONS</td><td>
 /S</td><td>

@@ -117,7 +117,7 @@ NOUPDATESETTINGS</td><td>
 
 防止此命令所做的设置成为新默认值。例如，如果你指定了 **READAUTO** 参数，你提供的数值将成为 CreateFolder 命令的新默认设置，除非你也指定了 **NOUPDATESETTINGS**。
 
-*示例:* `CreateFolder "{date\|yyyyMMdd}" READAUTO NOUPDATESETTINGS`
+*示例:* `CreateFolder "{date|yyyyMMdd}" READAUTO NOUPDATESETTINGS`
 </td></tr><tr><td>
 MULTI</td><td>
 /O</td><td>
@@ -128,7 +128,7 @@ MULTI</td><td>
 
 如果根本没有指定 **MULTI**，则对话框会在命令行中没有指定文件夹名称时记住其先前的模式（受 **NOUPDATESETTINGS** 的约束），在指定一个名称时使用单文件夹模式，在指定多个名称时使用多文件夹模式。
 
-*示例:* `CreateFolder "在 {date\|yyyy_MM_dd} 上备份" ASK MULTI`
+*示例:* `CreateFolder "在 {date|yyyy_MM_dd} 上备份" ASK MULTI`
 </td></tr><tr><td>
 </td><td>
 </td><td>

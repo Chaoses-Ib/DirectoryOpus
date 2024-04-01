@@ -90,7 +90,7 @@ You can also use **\>** (greater than) before the date to match all files newer 
 
 You can also specify an *age* rather than a *date* to test for. For example, to select all files older than 5 days, you might specify `Select DATE ">5 days"`. Valid keywords for age selection are **day**, **week**, **month**, **year**, **hour**, **minute**, **second**.
 
-*Example:* `Select \*.jpg DATE "\>2012-06-15 10:00"`
+*Example:* `Select *.jpg DATE "\>2012-06-15 10:00"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -108,7 +108,7 @@ Select files whose last modification timestamps falls between the two specified 
 
 Select the oldest item in the current source file display. You can combine this with the **PATTERN** argument to select the oldest of a specific type of file.
 
-*Example:* `Select \*.doc DATE=oldest`
+*Example:* `Select *.doc DATE=oldest`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -126,7 +126,7 @@ Select the newest item in the current file display.
 
 Normally this command considers the last modification timestamp of each file, however by specifying this keyword you can make it look at the creation time instead.
 
-*Example:* `Select \*.(zip\|7z\|rar) DATE=created,2010-03-10..2010-03-17`
+*Example:* `Select *.(zip|7z|rar) DATE=created,2010-03-10..2010-03-17`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -153,7 +153,7 @@ DESELECT</td><td>
 
 Instead of selecting files, the command will deselect them. This is used in conjunction with the **PATTERN**, **ALLDIRS** and **ALLFILES** arguments.
 
-*Example:* `Select \*.jpg DESELECT`
+*Example:* `Select *.jpg DESELECT`
 </td></tr><tr><td>
 DESELECTNOMATCH</td><td>
 /S</td><td>
@@ -162,7 +162,7 @@ DESELECTNOMATCH</td><td>
 
 Files that don't match the pattern will be deselected (normally files that don't match are left alone). This also works when using the **FILTER** argument to select files with a predefined filter.
 
-*Example:* `Select \*.doc DESELECTNOMATCH`
+*Example:* `Select *.doc DESELECTNOMATCH`
 </td></tr><tr><td>
 DESELECTOTHERTYPE</td><td>
 /S</td><td>
@@ -171,7 +171,7 @@ DESELECTOTHERTYPE</td><td>
 
 When used with the **TYPE** argument to restrict a selection to either files or folders (or with the **ALLFILES** and **ALLDIRS** arguments), **DESELECTOTHERTYPE** causes all items of the other type to be deselected
 
-*Example:* `Select \* TYPE=files DESELECTOTHERTYPE`
+*Example:* `Select * TYPE=files DESELECTOTHERTYPE`
 </td></tr><tr><td>
 DESTTOSOURCE</td><td>
 /O</td><td>
@@ -249,7 +249,7 @@ Lets you define a filter in [text format](/Manual/file_operations/filtered_opera
 
 This is a **/R** argument and so everything after the **FILTERDEF** keyword will be treated as the argument's value.
 
-*Example:* `Select FILTERDEF name match \*.zip and size match \> 2 mb`
+*Example:* `Select FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 FILTERFLAGS</td><td>
 /K</td><td>
@@ -334,7 +334,7 @@ When a value is provided for the **GROUPNAME** argument it specifies the name (o
 
 You can also use this in conjunction with the **SETFOCUS** argument to give input focus to a group header.
 
-*Example:* `Select \*.jpg GROUPNAME Today`  
+*Example:* `Select *.jpg GROUPNAME Today`  
 *Example:* `Select NOPATTERN GROUPNAME Yesterday SETFOCUS`
 </td></tr><tr><td>
 HIDESEL</td><td>
@@ -344,7 +344,7 @@ HIDESEL</td><td>
 
 Hide all selected items (both files and folders). This is used either with the **PATTERN** argument to hide all files that match the pattern, or with the **NOPATTERN** argument to hide all currently selected files.
 
-*Example:* `Select \*.tmp HIDESEL`
+*Example:* `Select *.tmp HIDESEL`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -434,7 +434,7 @@ MAKEVISIBLE</td><td>
 
 Ensures that the first selected item is visible in the file display. The list will be scrolled if needed. Similar to the **SETFOCUS** argument except the viewer pane will not update to show the new selection.
 
-*Example:* `Select \*.doc MAKEVISIBLE`
+*Example:* `Select *.doc MAKEVISIBLE`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -508,7 +508,7 @@ Specify a wildcard pattern. All items matching the supplied pattern will be sele
 
 This is the default argument for the **Select** command and so the **PATTERN** keyword does not need to be supplied.
 
-*Example:* `Select \*.(bmp\|jpg\|gif) HIDEUNSEL`
+*Example:* `Select *.(bmp|jpg|gif) HIDEUNSEL`
 </td></tr><tr><td>
 PREV</td><td>
 /O</td><td>
@@ -562,7 +562,7 @@ REGEXP</td><td>
 
 Use [regular expression](../../wildcard_reference/regular_expression_syntax.md) mode instead of standard pattern matching.
 
-*Example:* `Select .\*\\jpg REGEXP`
+*Example:* `Select .*\\jpg REGEXP`
 </td></tr><tr><td>
 RESELECT</td><td>
 /S</td><td>
@@ -580,7 +580,7 @@ SETFOCUS</td><td>
 
 Ensures that the first selected item is visible in the file display. The list will be scrolled if needed. Additionally, if the viewer pane is open the first selected file will be automatically viewed if possible.
 
-*Example:* `Select \*.jpg SETFOCUS`
+*Example:* `Select *.jpg SETFOCUS`
 </td></tr><tr><td>
 SHOWFOCUS</td><td>
 /S</td><td>
@@ -674,7 +674,7 @@ Select files whose size matches the specified size. By default the size specifie
 - **mb** - megabytes
 - **gb** - gigabytes You can also use **\>** (greater than) before the size to match all files larger than the specified size, or **\<** (less than) before the size to match all files smaller than the specified size.
 
-*Example:* `Select \*.png SIZE \>2mb`
+*Example:* `Select *.png SIZE >2mb`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -692,7 +692,7 @@ Select files whose size falls between the two specified sizes. Both sizes are su
 
 Select the largest item in the current source file display. You can combine this with the **PATTERN** argument to select the largest of a specific type of file.
 
-*Example:* `Select \*.doc SIZE=largest`
+*Example:* `Select *.doc SIZE=largest`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -775,7 +775,7 @@ You can add the **DESELECTOTHERTYPE** argument to deselect all items of the "oth
 
 Force the selection to only affect folders.
 
-*Example:* `Select "new \*" TYPE=dirs`
+*Example:* `Select "new *" TYPE=dirs`
 </td></tr></tbody>
 </table>
 

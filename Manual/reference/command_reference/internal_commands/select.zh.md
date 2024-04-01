@@ -89,7 +89,7 @@ DATE</td><td>
 
 您还可以指定一个 *年龄* 而不是 *日期* 来进行测试。例如，要选取所有旧于 5 天的文件，您可以指定 `Select DATE ">5 days"`。年龄选择过程的有效关键字为 **day**、**week**、**month**、**year**、**hour**、**minute**、**second**。
 
-*示例：* `Select \*.jpg DATE "\>2012-06-15 10:00"`
+*示例：* `Select *.jpg DATE "\>2012-06-15 10:00"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -107,7 +107,7 @@ DATE</td><td>
 
 选取当前源文件列表中最旧的项。您可以将其与 **PATTERN** 参数结合使用，选取特定类型文件中最早的文件。
 
-*示例：* `Select \*.doc DATE=oldest`
+*示例：* `Select *.doc DATE=oldest`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -125,7 +125,7 @@ DATE</td><td>
 
 通常此命令会考虑每个文件的上次修改时间戳，但是，通过指定此关键字，您可以使其查看创建时间。
 
-*示例：* `Select \*.(zip\|7z\|rar) DATE=created,2010-03-10..2010-03-17`
+*示例：* `Select *.(zip|7z|rar) DATE=created,2010-03-10..2010-03-17`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -152,7 +152,7 @@ DESELECT</td><td>
 
 此命令将取消选取文件，而不是选取文件。此命令与 **PATTERN**、**ALLDIRS** 和 **ALLFILES** 参数结合使用。
 
-*示例：* `Select \*.jpg DESELECT`
+*示例：* `Select *.jpg DESELECT`
 </td></tr><tr><td>
 DESELECTNOMATCH</td><td>
 /S</td><td>
@@ -161,7 +161,7 @@ DESELECTNOMATCH</td><td>
 
 将取消选择与模式不匹配的文件（通常情况下，不匹配的文件将保持原样）。此方法在使用 **FILTER** 参数选择带有预定义过滤器的文件时也能正常工作。
 
-*示例：* `Select \*.doc DESELECTNOMATCH`
+*示例：* `Select *.doc DESELECTNOMATCH`
 </td></tr><tr><td>
 DESELECTOTHERTYPE</td><td>
 /S</td><td>
@@ -170,7 +170,7 @@ DESELECTOTHERTYPE</td><td>
 
 与 **TYPE** 参数一起使用以将选择限制为文件或文件夹（或使用 **ALLFILES** 和 **ALLDIRS** 参数），**DESELECTOTHERTYPE** 会导致取消选择所有其他类型的项
 
-*示例：* `Select \* TYPE=files DESELECTOTHERTYPE`
+*示例：* `Select * TYPE=files DESELECTOTHERTYPE`
 </td></tr><tr><td>
 DESTTOSOURCE</td><td>
 /O</td><td>
@@ -247,7 +247,7 @@ FILTERDEF</td><td>
 
 这是一个 **/R** 参数，因此 **FILTERDEF** 关键字后面的所有内容都将被视为该参数的值。
 
-*示例：`Select FILTERDEF 名称匹配 \*.zip 和大小匹配 \> 2 mb`
+*示例：`Select FILTERDEF 名称匹配 *.zip 和大小匹配 > 2 mb`
 </td></tr><tr><td>
 FILTERFLAGS</td><td>
 /K</td><td>
@@ -332,7 +332,7 @@ GROUPNAME</td><td>
 
 你还可以将此与 **SETFOCUS** 参数一起使用，以将输入焦点赋予组标题。
 
-*示例：`Select \*.jpg GROUPNAME Today`  
+*示例：`Select *.jpg GROUPNAME Today`  
 *示例：`Select NOPATTERN GROUPNAME Yesterday SETFOCUS`
 </td></tr><tr><td>
 HIDESEL</td><td>
@@ -342,7 +342,7 @@ HIDESEL</td><td>
 
 隐藏所有选定的项目（包括文件和文件夹）。这与 **PATTERN** 参数一起用于隐藏所有匹配模式的文件，或与 **NOPATTERN** 参数一起用于隐藏所有当前选择的项。
 
-*示例：`Select \*。tmp HIDESEL`
+*示例：`Select *。tmp HIDESEL`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -432,7 +432,7 @@ MAKEVISIBLE</td><td>
 
 确保第一个选定的项目在文件列表中可见。必要时会滚动列表。类似于 **SETFOCUS** 参数，除了查看器窗格不会更新以显示新选择。
 
-*示例：`Select \*.doc MAKEVISIBLE`
+*示例：`Select *.doc MAKEVISIBLE`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -505,7 +505,7 @@ PATTERN</td><td>
 
 这是 **Select** 命令的默认参数，因此无需提供 **PATTERN** 关键字。
 
-*示例:* `Select \*.(bmp\|jpg\|gif) HIDEUNSEL`
+*示例:* `Select *.(bmp|jpg|gif) HIDEUNSEL`
 </td></tr><tr><td>
 PREV</td><td>
 /O</td><td>
@@ -559,7 +559,7 @@ REGEXP</td><td>
 
 使用 [正则表达式](../../wildcard_reference/regular_expression_syntax.zh.md) 模式，而不是标准模式匹配。
 
-*示例:* `Select .\*\\jpg REGEXP`
+*示例:* `Select .*\\jpg REGEXP`
 </td></tr><tr><td>
 RESELECT</td><td>
 /S</td><td>
@@ -577,7 +577,7 @@ SETFOCUS</td><td>
 
 确保第一个选定的项目在文件列表中可见。如果需要，列表将滚动。此外，如果查看器窗格已打开，则第一个选定的文件将自动查看，如果可能的话。
 
-*示例:* `Select \*.jpg SETFOCUS`
+*示例:* `Select *.jpg SETFOCUS`
 </td></tr><tr><td>
 SHOWFOCUS</td><td>
 /S</td><td>
@@ -670,7 +670,7 @@ SIZE</td><td>
 - **kb** - 千字节
 - **mb** - 兆字节
 - **gb** - 千兆字节您还可以在大小前使用 **\>**（大于）来匹配所有大于指定大小的文件，或使用 **\<**（小于）来匹配所有小于指定大小的文件。
-*示例:* `Select \*.png SIZE \>2mb`
+*示例:* `Select *.png SIZE >2mb`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -688,7 +688,7 @@ SIZE</td><td>
 
 选择当前来源文件列表中最大的项。您可以将其与 **PATTERN** 参数结合使用以选择特定类型文件中最大的一个。
 
-*示例:* `Select \*.doc SIZE=largest`
+*示例:* `Select *.doc SIZE=largest`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -771,6 +771,6 @@ TYPE</td><td>
 
 强制选择仅影响文件夹。
 
-*示例:* `Select "new \*" TYPE=dirs`
+*示例:* `Select "new *" TYPE=dirs`
 </td></tr></tbody>
 </table>

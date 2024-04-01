@@ -420,7 +420,7 @@ NAME</td><td>
 
 使命令适用于当前工具栏。当通过工具栏按钮使用时，Toolbar 命令将应用于包含该按钮的工具栏。
 
-*示例:* `Toolbar NAME=\*this CLOSE`
+*示例:* `Toolbar NAME=*this CLOSE`
 </td></tr><tr><td>
 POS</td><td>
 /K</td><td>

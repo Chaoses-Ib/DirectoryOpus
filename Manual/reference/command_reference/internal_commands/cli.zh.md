@@ -190,8 +190,8 @@ QUICKFILTER</td><td>
 
 以 **noselect:** 为前缀，将光标放在模式的末尾，而不是最初选中它进行覆盖。
 
-*示例：* `CLI QUICKFILTER \*.(jpg\|png)`  
-*示例：* `CLI QUICKFILTER noselect:\*.jpg`
+*示例：* `CLI QUICKFILTER *.(jpg|png)`  
+*示例：* `CLI QUICKFILTER noselect:*.jpg`
 </td></tr><tr><td>
 QUICKFIND</td><td>
 /O/R</td><td>
@@ -281,7 +281,7 @@ QUICKFTPCMD</td><td>
 
 使用 **noselect：** 作为前缀以将光标置于命令末尾，而不是最初选中它以便进行覆盖键入。
 
-*示例：* `CLI QUICKFTPCMD chmod \* 755`  
+*示例：* `CLI QUICKFTPCMD chmod * 755`  
 *示例：* `CLI QUICKFTPCMD noselect:chmod` \*
 </td></tr><tr><td>
 QUICKGO</td><td>
@@ -397,8 +397,8 @@ QUICKSELECT</td><td>
 
 在前面加上 **noselect：** 以将光标放置在模式的末尾，而不是最初选择它来进行输入覆盖。
 
-*示例:* `CLI QUICKSELECT \*.doc`  
-*示例:* `CLI QUICKSELECT noselect:\*.doc`
+*示例:* `CLI QUICKSELECT *.doc`  
+*示例:* `CLI QUICKSELECT noselect:*.doc`
 </td></tr><tr><td>
 QUICKTABS</td><td>
 /O/R</td><td>

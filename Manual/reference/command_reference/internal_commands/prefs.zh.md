@@ -112,7 +112,7 @@ BACKUPRESTORE</td><td>
 启动 *[备份和恢复配置](/Manual/preferences/backing_up_and_restoring_preferences.zh.md)* 向导，它允许您备份和恢复配置，以及将 Opus 导出到 USB 驱动器。您可以使用 **TO** 自变量覆盖默认备份名称，并使用 **PASSWORD** 或 **DESC** 自变量在创建备份时预先提供默认密码或描述。
 
 *范例：* `Prefs BACKUPRESTORE`  
-*范例：* `Prefs BACKUPRESTORE TO="/desktop\Backup for %username% on {date\|yyyy-MM-dd}" PASSWORD="cat" DESC="Quick Backup."`
+*范例：* `Prefs BACKUPRESTORE TO="/desktop\Backup for %username% on {date|yyyy-MM-dd}" PASSWORD="cat" DESC="Quick Backup."`
 
 如果您希望在不显示交互式向导的情况下自动化备份或还原过程，请使用单独的 **BACKUP** 或 **RESTORE** 自变量。
 </td></tr><tr><td>
@@ -611,7 +611,7 @@ SCRIPTDISABLE</td><td>
 通配符可以使处理脚本包变得更容易，还可以处理包含多个脚本或以.osp格式分发脚本给其他人，但作为文本文件私下处理它的脚本包：
 
 *示例：* `Prefs SCRIPTDISABLE="My Package.osp\*"`  
-*示例：* `Prefs SCRIPTDISABLE="\*My Script.vbs\*"`
+*示例：* `Prefs SCRIPTDISABLE="*My Script.vbs\*"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -712,7 +712,7 @@ SCRIPTS</td><td>
 通配符可以使处理脚本包变得更容易，还可以处理包含多个脚本或以.osp格式分发脚本给其他人，但作为文本文件私下处理它的脚本包：
 
 *示例：* `Prefs SCRIPTS="My Package.osp\*"`  
-*示例：* `Prefs SCRIPTS="\*My Script.vbs\*"`
+*示例：* `Prefs SCRIPTS="*My Script.vbs\*"`
 </td></tr><tr><td>
 </td><td>
 </td><td>

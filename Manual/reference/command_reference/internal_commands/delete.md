@@ -95,7 +95,7 @@ Specifies the name of the file or files to delete. If you don't provide this arg
 
 If you only specify the filename instead of the full path of the file or files, Opus will look in the current source folder. You can also specify a [wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md). Remember that if the filename contains spaces you need to enclose it in quotes.
 
-*Example:* `Delete \*.tmp`
+*Example:* `Delete *.tmp`
 </td></tr><tr><td>
 FILTER</td><td>
 /O</td><td>
@@ -153,7 +153,7 @@ Lets you define a filter in [text format](/Manual/file_operations/filtered_opera
 
 This is a **/R** argument and so everything after the **FILTERDEF** keyword will be treated as the argument's value.
 
-*Example:* `Delete FILTERDEF name match \*.zip and size match \> 2 mb`
+*Example:* `Delete FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 FORCE</td><td>
 /S</td><td>

@@ -171,7 +171,7 @@ When displaying a list of Favorites or [SmartFavorites](/Manual/basic_concepts/t
 \`\`Favorites SHOWICONS FILTER C:\\\`\*  
 // Shows only paths that begin with C:\\//
 
-*Example:* `Favorites SHOWICONS FILTER "~(\*Program Files\*)"`  
+*Example:* `Favorites SHOWICONS FILTER "~(*Program Files\*)"`  
 // Shows only paths that do not contain Program Files.//
 
 To filter the list by sub-branch rather than path, see the **PATH** argument instead.
@@ -394,7 +394,7 @@ To filter the list by path rather than sub-branch, see the **FILTER** argument.
 **PATH** is the default argument for the **Favorites** command; you do not need to specify the **PATH** keyword itself.
 
 *Example:* `Favorites /desktop ADD`  
-*Example:* `Favorites \*Projects` <nobr>(equivalent to `Favorites BRANCH=Projects`)</nobr>
+*Example:* `Favorites *Projects` <nobr>(equivalent to `Favorites BRANCH=Projects`)</nobr>
 </td></tr><tr><td>
 SHOWICONS</td><td>
 /S</td><td>

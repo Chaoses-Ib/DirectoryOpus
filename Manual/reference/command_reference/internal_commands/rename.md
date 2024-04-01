@@ -38,7 +38,7 @@ Displays the Rename dialog in [advanced](/Manual/file_operations/renaming_files/
 
 When combined with rename patterns or preset names, the **ADVANCED** argument can be used to ensure the command opens the Rename dialog instead of immediately renaming all selected items.
 
-*Example:* `Rename ADVANCED PATTERN=\* TO=\*.bak`  
+*Example:* `Rename ADVANCED PATTERN=* TO=*.bak`  
 *Example:* `Rename ADVANCED PRESET="Number Files"`
 </td></tr><tr><td>
 APPLYNOMATCH</td><td>
@@ -48,7 +48,7 @@ APPLYNOMATCH</td><td>
 
 Turns on the **Apply actions even if pattern doesn't match** option for the rename function. This makes things like the **CASE** argument apply to all filenames, whether they match the old name pattern (given by the **PATTERN** argument) or not.
 
-*Example:* `Rename PATTERN "\*.jpeg" TO "\*.jpg" CASE=allwords APPLYNOMATCH`
+*Example:* `Rename PATTERN "*.jpeg" TO "*.jpg" CASE=allwords APPLYNOMATCH`
 </td></tr><tr><td>
 AUTONUMBER</td><td>
 /S</td><td>
@@ -57,7 +57,7 @@ AUTONUMBER</td><td>
 
 Automatically adds an incrementing number to the end of new filenames if they clash with existing files.
 
-*Example:* `Rename PATTERN "The \*" TO \* AUTONUMBER`
+*Example:* `Rename PATTERN "The *" TO * AUTONUMBER`
 </td></tr><tr><td>
 BY</td><td>
 /K/N</td><td>
@@ -156,7 +156,7 @@ FROM</td><td>
 
 Renames the files specified on the command line, rather than those selected in the source file display. This argument can accept filenames or [wildcard patterns](../../wildcard_reference/pattern_matching_syntax.md). Remember to enclose each filename in quotes if it contains spaces.
 
-*Example:* `Rename FROM C:\Spool\\.tmp TO \*.temp`
+*Example:* `Rename FROM C:\Spool\\.tmp TO *.temp`
 </td></tr><tr><td>
 HEADING</td><td>
 /O</td><td>
@@ -185,7 +185,7 @@ IGNOREEXT</td><td>
 
 Turns on the **Ignore extensions** option for the rename function. Filename extensions won't be affected and don't need to be accounted for in any wildcard patterns.
 
-*Example:* `Rename PATTERN \* TO \*\_backup IGNOREEXT`
+*Example:* `Rename PATTERN * TO *_backup IGNOREEXT`
 
 The **Ignore extensions** option is off by default for non-interactive renames, to avoid breaking old buttons. You only need to use the **IGNOREEXT** argument with rename commands which specify everything on the command line and do not open the Rename dialog.
 
@@ -278,7 +278,7 @@ MATCHCASE</td><td>
 
 Makes the rename operation case-sensitive. Patterns and search strings must match the exact case of the filename.
 
-*Example:* `Rename PATTERN \*.jpG TO \*.JPG MATCHCASE`
+*Example:* `Rename PATTERN *.jpG TO *.JPG MATCHCASE`
 </td></tr><tr><td>
 NOFILEINFO</td><td>
 /S</td><td>
@@ -287,7 +287,7 @@ NOFILEINFO</td><td>
 
 Disable file information metadata insertion. For example, the string **{mp3title}** would normally insert the title of an MP3 file in the new filename. With **NOFILEINFO** specified, the literal string "{mp3title}" would be inserted in the new filename.
 
-*Example:* `Rename PATTERN \* TO \*\_{name} NOFILEINFO `
+*Example:* `Rename PATTERN * TO *_{name} NOFILEINFO `
 </td></tr><tr><td>
 NOIGNOREEXT</td><td>
 /S</td><td>
@@ -296,7 +296,7 @@ NOIGNOREEXT</td><td>
 
 Turns off the **Ignore Extension** option in the Rename dialog when it first opens. You only need to use this argument when opening the Rename dialog for interactive use.
 
-*Example:* `Rename PATTERN \*.JPEG TO \*.JPG ADVANCED NOIGNOREEXT`
+*Example:* `Rename PATTERN *.JPEG TO *.JPG ADVANCED NOIGNOREEXT`
 
 For non-interactive use of the Rename command, the **Ignore Extension** option is off by default (to avoid breaking old buttons) and can be turned on via the separate **IGNOREEXT** argument, documented above.
 </td></tr><tr><td>
@@ -311,7 +311,7 @@ By default, when **NOMATCHNOFAIL** is not used, if a file does not match the ren
 
 If **NOMATCHNOFAIL** is used then files which do not match the rename pattern are still passed to subsequent commands.
 
-*Example:* `Rename PATTERN "\* Backup.\*" TO \*.\* NOMATCHNOFAIL`
+*Example:* `Rename PATTERN "* Backup"*" TO"*"* NOMATCHNOFAIL`
 </td></tr><tr><td>
 NUMBER</td><td>
 /O</td><td>
@@ -322,7 +322,7 @@ Automatically number files. Selected files will be numbered in the order they ar
 
 By default the number is added to the end of the filename, in front of the extension. You can specify a different location for the number by providing the **\[#\]** marker in the new filename.
 
-*Example:* `Rename PATTERN \* TO \[#\]\* NUMBER`
+*Example:* `Rename PATTERN * TO \[#\]\* NUMBER`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -346,15 +346,15 @@ Specifies a wildcard pattern that represents the old (original) filename. This a
 
 See the section on [Renaming Files](/Manual/file_operations/renaming_files/README.md) for a full discussion of the various renaming modes.
 
-*Example:* `Rename PATTERN IMGP(.\*).jpg TO "Image \1.jpg" REGEXP`
+*Example:* `Rename PATTERN IMGP(.*).jpg TO "Image \1.jpg" REGEXP`
 
 Specifying the **FROM** argument as well will mean the command ignores the current file selection and applies the specified rename on all matching files. Only files matching both the TO and PATTERN arguments would be renamed.
 
-*Example:* `Rename FROM \*.jpg PATTERN IMGP(.\*).jpg TO "Image \1.jpg" REGEXP`
+*Example:* `Rename FROM *.jpg PATTERN IMGP( *).jpg TO "Image \1.jpg" REGEXP`
 
 If the **PATTERN** and **TO** arguments are both given, the command will normally apply the rename immediately, without prompting for any further interaction; you can add the **ADVANCED** argument to instead display the Rename dialog, with the specified pattern, so that you can preview the operation and make adjustments, or cancel it entirely, as needed.
 
-*Example:* `Rename ADVANCED PATTERN \* TO \*.bak`
+*Example:* `Rename ADVANCED PATTERN * TO *.bak`
 </td></tr><tr><td>
 PRESET</td><td>
 /K</td><td>
@@ -432,7 +432,7 @@ RECURSE</td><td>
 
 The rename operation will operate recursively on all files inside selected sub-folders.
 
-*Example:* `Rename PATTERN \*.jpg TO \*.jpeg RECURSE`
+*Example:* `Rename PATTERN *.jpg TO *.jpeg RECURSE`
 </td></tr><tr><td>
 REGEXP</td><td>
 /S</td><td>
@@ -441,7 +441,7 @@ REGEXP</td><td>
 
 Enables regular expression mode. The search pattern must be provided with the **PATTERN** argument, and the replace pattern with the **TO** argument. You can optionally combine this with the **FINDREP** argument.
 
-*Example:* `Rename PATTERN "(.\*) - (.\*)\\(.\*)" TO "\2 - \1.\3" REGEXP`
+*Example:* `Rename PATTERN "(.*) - (.*)\\(.*)" TO "\2 - \1.\3" REGEXP`
 </td></tr><tr><td>
 RENAMEMATCHING</td><td>
 /S</td><td>
@@ -487,7 +487,7 @@ TYPE</td><td>
 
 Force the rename to only operate on files - any selected folders will be ignored.
 
-*Example:* `Rename PATTERN \* TO \*.bak TYPE=files`
+*Example:* `Rename PATTERN * TO *.bak TYPE=files`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -496,7 +496,7 @@ Force the rename to only operate on files - any selected folders will be ignored
 
 Force the rename to only operate on folders.
 
-*Example:* `Rename PATTERN \* TO Copy\_\* TYPE=dirs`
+*Example:* `Rename PATTERN * TO Copy_* TYPE=dirs`
 </td></tr><tr><td>
 WHENEXISTS</td><td>
 /K</td><td>
@@ -505,7 +505,7 @@ WHENEXISTS</td><td>
 
 Controls what happens if the new filename already exists. The default action is to **ask** the user for each existing file.
 
-*Example:* `Rename PATTERN \* TO \*.bak WHENEXISTS=ask`
+*Example:* `Rename PATTERN * TO *.bak WHENEXISTS=ask`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -514,7 +514,7 @@ Controls what happens if the new filename already exists. The default action is 
 
 Performs the rename as requested, deleting the file that already existed.
 
-*Example:* `Rename PATTERN \* TO \*.bak WHENEXISTS=delete`
+*Example:* `Rename PATTERN * TO *.bak WHENEXISTS=delete`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -523,7 +523,7 @@ Performs the rename as requested, deleting the file that already existed.
 
 Performs the rename as requested, renaming the old file that already existed.
 
-*Example:* `Rename PATTERN \* TO \*.bak WHENEXISTS=keep`
+*Example:* `Rename PATTERN * TO *.bak WHENEXISTS=keep`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -532,7 +532,7 @@ Performs the rename as requested, renaming the old file that already existed.
 
 Modifies the new name by adding a suffix to make it unique.
 
-*Example:* `Rename PATTERN \* TO \*.bak WHENEXISTS=rename`
+*Example:* `Rename PATTERN * TO *.bak WHENEXISTS=rename`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -541,7 +541,7 @@ Modifies the new name by adding a suffix to make it unique.
 
 Skips any files that already exist, without performing the rename.
 
-*Example:* `Rename PATTERN \* TO \*.bak WHENEXISTS=skip`
+*Example:* `Rename PATTERN * TO *.bak WHENEXISTS=skip`
 </td></tr></tbody>
 </table>
 

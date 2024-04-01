@@ -73,7 +73,7 @@ CONTEXTOPTIONS</td><td>
 
 当与 **CONTEXTMENU Directory\Background** 一起使用时，从生成的 shell *新建* 菜单中排除指定的文件类型。你还可以使用\*在该上下文中完全禁用新建菜单。
 
-*示例：* `FileType CONTEXTMENU Directory\Background CONTEXTOPTIONS "EXCLUDE=\*"`
+*示例：* `FileType CONTEXTMENU Directory\Background CONTEXTOPTIONS "EXCLUDE=*"`
 </td></tr><tr><td>
 </td><td>
 </td><td>

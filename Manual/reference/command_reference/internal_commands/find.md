@@ -50,7 +50,7 @@ ARCHIVES</td><td>
 
 Search inside archive files (when the Find Files function is being automated).
 
-*Example:* `Find \*.doc IN C:\Data ARCHIVES`
+*Example:* `Find *.doc IN C:\Data ARCHIVES`
 </td></tr><tr><td>
 BOTHWAYS</td><td>
 /S</td><td>
@@ -68,7 +68,7 @@ CASE</td><td>
 
 Use when automating Find Files to specify that the **NAME** argument should be treated as case-sensitive, similar to the related checkbox in the UI.
 
-*Example:* `Find \*.DOC IN C:\\ RECURSE CASE`
+*Example:* `Find *.DOC IN C:\ RECURSE CASE`
 </td></tr><tr><td>
 CLEAR</td><td>
 /O</td><td>
@@ -77,7 +77,7 @@ CLEAR</td><td>
 
 Clear previous results (when the Find Files function is being automated). The output file collection will be cleared before the new Find begins.
 
-*Example:* `Find \*.doc IN C:\Data CLEAR`
+*Example:* `Find *.doc IN C:\Data CLEAR`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -86,7 +86,7 @@ Clear previous results (when the Find Files function is being automated). The ou
 
 Do not clear previous results.
 
-*Example:* `Find \*.doc in C:\Data CLEAR=no`
+*Example:* `Find *.doc in C:\Data CLEAR=no`
 </td></tr><tr><td>
 COLLNAME</td><td>
 /K</td><td>
@@ -95,7 +95,7 @@ COLLNAME</td><td>
 
 Specify the name of the file collection that results are added to. If not supplied the default collections (*Find Results* and *Duplicate Files*) are used.
 
-*Example:* `Find \*.doc in C:\Data COLLNAME Output`
+*Example:* `Find *.doc in C:\Data COLLNAME Output`
 </td></tr><tr><td>
 COMPARE</td><td>
 /K</td><td>
@@ -136,7 +136,7 @@ CONTAINING</td><td>
 
 Specify text to search for (when the Find Files function is being automated).
 
-*Example:* `Find \*.txt CONTAINING printf IN C:\SourceCode`
+*Example:* `Find *.txt CONTAINING printf IN C:\SourceCode`
 </td></tr><tr><td>
 CONTANYWORD</td><td>
 /S</td><td>
@@ -145,7 +145,7 @@ CONTANYWORD</td><td>
 
 Use when automating Find Files to specify that the **CONTAINING** argument should be handled in "any word" mode, similar to the related checkbox in the UI.
 
-*Example:* `Find \*.txt CONTAINING "apple pear peach plum" CONTANYWORD IN C:\Inventory`
+*Example:* `Find *.txt CONTAINING "apple pear peach plum" CONTANYWORD IN C:\Inventory`
 </td></tr><tr><td>
 CONTCASE</td><td>
 /S</td><td>
@@ -154,7 +154,7 @@ CONTCASE</td><td>
 
 Use when automating Find Files to specify that the **CONTAINING** argument should be treated as case-sensitive, similar to the related checkbox in the UI.
 
-*Example:* `Find \*.txt CONTAINING Apple CONTCASE IN C:\Inventory`
+*Example:* `Find *.txt CONTAINING Apple CONTCASE IN C:\Inventory`
 </td></tr><tr><td>
 CONTIGNOREDIACRITICS</td><td>
 /S</td><td>
@@ -163,7 +163,7 @@ CONTIGNOREDIACRITICS</td><td>
 
 Use when automating Find Files to specify that the **CONTAINING** argument should ignore diacritics (accent marks), similar to the related checkbox in the UI.
 
-*Example:* `Find \*.txt CONTAINING "aeiou" CONTIGNOREDIACRITICS IN C:\Documents`
+*Example:* `Find *.txt CONTAINING "aeiou" CONTIGNOREDIACRITICS IN C:\Documents`
 </td></tr><tr><td>
 CONTNOPARTIAL</td><td>
 /S</td><td>
@@ -172,7 +172,7 @@ CONTNOPARTIAL</td><td>
 
 Use when automating Find Files to prevent partial word matching for the **CONTAINING** argument (contents must then match the pattern you specify exactly).
 
-*Example:* `Find "moo\*cow" IN "c:\\ RECURSE CONTNOPARTIAL`
+*Example:* `Find "moo\*cow" IN "c:\ RECURSE CONTNOPARTIAL`
 </td></tr><tr><td>
 CONTWILD</td><td>
 /S</td><td>
@@ -181,7 +181,7 @@ CONTWILD</td><td>
 
 Use when automating Find Files to specify that the **CONTAINING** argument should be treated as a wildcard, similar to the related checkbox in the UI.
 
-*Example:* `Find \*.txt CONTAINING (foo\|bar) CONTWILD IN C:\Things`
+*Example:* `Find *.txt CONTAINING (foo|bar) CONTWILD IN C:\Things`
 </td></tr><tr><td>
 CONTREGEXP</td><td>
 /S</td><td>
@@ -190,7 +190,7 @@ CONTREGEXP</td><td>
 
 Use when automating the Find Files function to specify that the **CONTAINING** argument should use [regular expressions](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.md), similar to the related checkbox in the UI.
 
-*Example:* `Find \*.txt CONTAINING "Mr(s?) Bond" CONTREGEXP IN C:\\ RECURSE`
+*Example:* `Find *.txt CONTAINING "Mr(s?) Bond" CONTREGEXP IN C:\ RECURSE`
 </td></tr><tr><td>
 CONTUTF8</td><td>
 /S</td><td>
@@ -199,7 +199,7 @@ CONTUTF8</td><td>
 
 When automating the Find Files function, plain text files will be assumed to be UTF-8 if no BOM is detected (similar to the related checkbox in the UI).
 
-*Example:* `Find \*.txt CONTAINING printf IN C:\SourceCode CONTUTF8`
+*Example:* `Find *.txt CONTAINING printf IN C:\SourceCode CONTUTF8`
 </td></tr><tr><td>
 DELETE</td><td>
 /O</td><td>
@@ -242,7 +242,7 @@ EXCLUDEHIDDEN</td><td>
 
 Excludes hidden folders (those with the **H** attribute set) from the search.
 
-*Example:* `Find \*.txt IN D:\\ EXCLUDEHIDDEN`
+*Example:* `Find *.txt IN D:\ EXCLUDEHIDDEN`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -260,7 +260,7 @@ EXCLUDESYSTEM</td><td>
 
 Excludes system folders (those with the **H** and **S** attributes set) from the search.
 
-*Example:* `Find \*.exe IN C:\\ EXCLUDESYSTEM`
+*Example:* `Find *.exe IN C:\ EXCLUDESYSTEM`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -269,7 +269,7 @@ Excludes system folders (those with the **H** and **S** attributes set) from the
 
 Does not exclude system folders. Use this to override a saved preset.
 
-*Example:* `Find \*.exe IN C:\\ EXCLUDESYSTEM=no`
+*Example:* `Find *.exe IN C:\ EXCLUDESYSTEM=no`
 </td></tr><tr><td>
 FILTER</td><td>
 /S</td><td>
@@ -289,7 +289,7 @@ Lets you define a filter in [text format](/Manual/file_operations/filtered_opera
 
 This is a **/R** argument and so everything after the **FILTERDEF** keyword will be treated as the argument's value.
 
-*Example:* `Find FILTERDEF name match \*.zip and size match \> 2 mb`
+*Example:* `Find FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 FROM</td><td>
 /K</td><td>
@@ -307,7 +307,7 @@ HERE</td><td>
 
 When automating the Find tool, performs the search below the current folder.
 
-*Example:* `Find NAME \*.txt HERE`
+*Example:* `Find NAME *.txt HERE`
 </td></tr><tr><td>
 HIDEUNAFFECTED</td><td>
 /S</td><td>
@@ -352,7 +352,7 @@ IN</td><td>
 
 Specify the folder or folders to search in when automating a search. Remember that if the paths contain a space you must enclose the value in quotes.
 
-*Example:* `Find \*.txt IN "C:\Folder 1" "C:\Folder 2"`
+*Example:* `Find *.txt IN "C:\Folder 1" "C:\Folder 2"`
 </td></tr><tr><td>
 LOADPREV</td><td>
 /K</td><td>
@@ -370,7 +370,7 @@ Disable the loading of previous find settings when the Find panel opens. By defa
 
 Force the Find panel to load its previous settings even when opened by an automated search. This does not restore multiple search paths, however - **LOADPREV=all** must be specified for that.
 
-*Example:* `Find \*.txt IN "C:\Folder 1" LOADPREV=yes`
+*Example:* `Find *.txt IN "C:\Folder 1" LOADPREV=yes`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -432,13 +432,13 @@ You can start the wildcard pattern with **regex:** to use [regular expressions](
 
 You can also search using a pre-defined filter by providing the filter name for the **NAME** argument and also specifying the **FILTER** switch.
 
-*Example:* `Find \*.(doc\|txt\|bmp) IN C:\\ RECURSE ARCHIVES`  
-*Example:* `Find regex:foo.+bar\\txt IN C:\\ RECURSE`  
-*Example:* `Find NAME="Text File (1).txt" NOWILD IN C:\\ RECURSE`
+*Example:* `Find *.(doc|txt|bmp) IN C:\ RECURSE ARCHIVES`  
+*Example:* `Find regex:foo.+bar\\txt IN C:\ RECURSE`  
+*Example:* `Find NAME="Text File (1).txt" NOWILD IN C:\ RECURSE`
 
 When used with the **DUPES** argument, this lets you provide a filename filter for the duplicates search. When used like this, you can specify a regular expression pattern by prefixing the wildcard with the **regex:** prefix.
 
-*Example:* `Find \*.pdf IN C:\Documents RECURSE CLEAR MD5 DUPES`
+*Example:* `Find *.pdf IN C:\Documents RECURSE CLEAR MD5 DUPES`
 </td></tr><tr><td>
 NAMEONLY</td><td>
 /O</td><td>
@@ -465,7 +465,7 @@ NOAUTORUN</td><td>
 
 Lets you prevent an automated search from taking place - instead, the Find, Duplicates or Synchronize panel will open with the controls initialised but allow you to make further changes before starting the search. For example, when both the **NAME** and **IN** arguments are provided, the Find Files operation normally begins automatically. To prevent this, specify the **NOAUTORUN** argument as well.
 
-*Example:* `Find \*.doc IN /mydocuments RECURSE NOAUTORUN`
+*Example:* `Find *.doc IN /mydocuments RECURSE NOAUTORUN`
 </td></tr><tr><td>
 NOPARTIAL</td><td>
 /S</td><td>
@@ -474,7 +474,7 @@ NOPARTIAL</td><td>
 
 Use when automating Find Files to prevent partial name matching (names must then match the pattern you specify exactly).
 
-*Example:* `Find \*.bak IN "c:\\ RECURSE NOPARTIAL`
+*Example:* `Find *.bak IN "c:\ RECURSE NOPARTIAL`
 </td></tr><tr><td>
 NOWILD</td><td>
 /S</td><td>
@@ -483,7 +483,7 @@ NOWILD</td><td>
 
 Use when automating Find Files to prevent wildcard name matching. Like the similar checkbox in the UI.
 
-*Example:* `Find "File (1).txt" IN "c:\\ RECURSE NOWILD`
+*Example:* `Find "File (1).txt" IN "c:\ RECURSE NOWILD`
 </td></tr><tr><td>
 NUMBERGROUPS</td><td>
 /S</td><td>
@@ -577,8 +577,8 @@ If used on its own, without other arguments, it is like typing a query string in
 
 Everything which follows the **QUERY** argument will be passed to Windows Search as the query string, so it *must* be the last argument to the command.
 
-*Example:* `Find QUERY filename:\*.doc author:"Leo Davidson"`  
-*Example:* `Find IN "C:\Documents" COLLNAME "Leo's Docs" QUERY filename:\*.doc author:"Leo Davidson"`
+*Example:* `Find QUERY filename:*.doc author:"Leo Davidson"`  
+*Example:* `Find IN "C:\Documents" COLLNAME "Leo's Docs" QUERY filename:*.doc author:"Leo Davidson"`
 </td></tr><tr><td>
 RECURSE</td><td>
 /O</td><td>
@@ -605,7 +605,7 @@ REGEXP</td><td>
 
 When automating the Find Files function, enables [regular expressions](/Manual/file_operations/renaming_files/advanced_rename/rename_modes/regular_expressions.md) for the value of the **NAME** field.
 
-*Example:* `Find "foo.+bar\\txt" IN C:\\ RECURSE REGEXP`
+*Example:* `Find "foo.+bar\\txt" IN C:\ RECURSE REGEXP`
 </td></tr><tr><td>
 RUNINPANEL</td><td>
 /S</td><td>
@@ -634,7 +634,7 @@ SHOWRESULTS</td><td>
 
 Display the results of the automated search in the current source file display or Lister.
 
-*Example:* `Find \*.txt IN C:\\ RECURSE SHOWRESULTS=source`
+*Example:* `Find *.txt IN C:\ RECURSE SHOWRESULTS=source`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -643,7 +643,7 @@ Display the results of the automated search in the current source file display o
 
 Display the results in the destination file display.
 
-*Example:* `Find \*.jpg IN C:\Data SHOWRESULTS=dest`
+*Example:* `Find *.jpg IN C:\Data SHOWRESULTS=dest`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -709,7 +709,7 @@ UAC</td><td>
 
 Enables UAC prompts if elevation may be required to search inside folders.
 
-\`\`Find \*.txt UAC IN D:\\\`
+\`\`Find *.txt UAC IN D:\\\`
 </td></tr><tr><td>
 </td><td>
 </td><td>

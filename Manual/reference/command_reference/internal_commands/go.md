@@ -116,7 +116,7 @@ The **COPYARGS** argument allows you to specify one or more additional **Copy**-
 
 Since this is a "raw" argument, it should be the last thing on the line. All text after the word "COPYARGS" will be taken as-is, including any quote characters, and appended to the copy command of each generated button.
 
-*Example:* `Go C:\\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no`
+*Example:* `Go C:\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no`
 </td></tr><tr><td>
 CURDIR</td><td>
 /O</td><td>
@@ -346,7 +346,7 @@ DUALPATH</td><td>
 
 Specify a path to read into the destination file display of a dual-display Lister (the standard **PATH** argument reads into the source file display).
 
-\`\`Go C:\\ DUALPATH D:\\\`
+\`\`Go C:\ DUALPATH D:\\\`
 </td></tr><tr><td>
 EJECT</td><td>
 /S</td><td>
@@ -474,7 +474,7 @@ Restricts the command to expanding/collapsing items at the top level, ignoring n
 
 The **PATH** argument will be interpreted as a [wildcard](../../wildcard_reference/pattern_matching_syntax.md). Note the wildcard is tested against names only, not complete paths. Any folders matching the wildcard will be expanded or collapsed, whether they are currently selected or not.
 
-*Example:* `Go EXPANDBRANCH=toggleall,top,wild PATH \*\_backup`
+*Example:* `Go EXPANDBRANCH=toggleall,top,wild PATH *_backup`
 </td></tr><tr><td>
 FDBBUTTONS</td><td>
 /O</td><td>
@@ -531,7 +531,7 @@ FINDTITLE</td><td>
 
 Finds all currently open Listers with titles that match the specified string, and brings them to the front. The string to search for can be a specific title or a [wildcard pattern](../../wildcard_reference/pattern_matching_syntax.md).
 
-*Example:* `Go FINDTITLE \*Projects`\*
+*Example:* `Go FINDTITLE *Projects`\*
 </td></tr><tr><td>
 FOLDERCONTENT</td><td>
 /O</td><td>
@@ -542,7 +542,7 @@ Display the contents of the path specified by the **PATH** argument in drop-down
 
 When used with **FOLDERCONTENT** only, the **PATH** argument supports multiple paths separated with a vertical bar (**\|**). For example, this would let you reproduce (to some extent anyway) the Windows start menu in a drop-down menu in a Lister, by showing both the current user's start folder and the common (all users) start folder.
 
-*Example:* `Go /start\|/commonstartmenu FOLDERCONTENT`
+*Example:* `Go /start|/commonstartmenu FOLDERCONTENT`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -634,12 +634,12 @@ Specifies a [wildcard pattern](../../wildcard_reference/pattern_matching_syntax.
 
 Because this keyword requires an embedded equals sign, you must enclose the entire argument value in quotes to avoid confusing the command parser.
 
-*Example:* `Go C: FOLDERCONTENT="filefilter=\*.exe"`
+*Example:* `Go C: FOLDERCONTENT="filefilter=*.exe"`
 
 If you need a comma (,) character within the pattern, put embedded quotes around the pattern as well. The examples below both specify **\*,**\* as the pattern:
 
-*Example:* `Go C: FOLDERCONTENT="filefilter=""\*,\*"""`  
-*Example:* `Go C: FOLDERCONTENT="filefilter=""\*,\*"",nodirs"`
+*Example:* `Go C: FOLDERCONTENT="filefilter=""*"*"""`  
+*Example:* `Go C: FOLDERCONTENT="filefilter=""*"*"",nodirs"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -780,11 +780,11 @@ This could be useful if you have a folder containing template items which you fr
 
 Each generated button will run the **Copy** command. You can use the separate **COPYARGS** argument to specify additional **Copy**-command arguments which are included in each generated button.
 
-*Example:* `Go C:\\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no\*\*`
+*Example:* `Go C:\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no\*\*`
 
 There are no separate "move" versions of the "copyto..." keywords, since it seems unlikely they'd be needed, but you can achieve the same thing via the **COPYARGS** argument:
 
-*Example:* `Go C:\\ FOLDERCONTENT=copy COPYARGS MOVE`
+*Example:* `Go C:\ FOLDERCONTENT=copy COPYARGS MOVE`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -903,7 +903,7 @@ FTPCMD</td><td>
 
 Sends a raw command to the remote FTP server (when currently viewing an FTP directory). If no FTP site is currently connected the command has no effect. The effects of the command, if any, can be viewed in the [FTP log](/Manual/ftp/ftp_log.md).
 
-*Example:* `Go FTPCMD chmod \* 755`
+*Example:* `Go FTPCMD chmod * 755`
 </td></tr><tr><td>
 FTPSITE</td><td>
 /K</td><td>
@@ -1089,7 +1089,7 @@ NEW</td><td>
 
 Opens a new Lister. The [Default Lister](/Manual/basic_concepts/the_lister/the_default_lister.md) settings are used for the newly opened Lister, although the various other arguments for the **Go** command can be used to override the settings of the Default Lister.
 
-*Example:* `Go C:\\ NEW`
+*Example:* `Go C:\ NEW`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1179,7 +1179,7 @@ Does not open the folder tree in the new Lister.
 
 Open the new Lister in [dual-display](/Manual/basic_concepts/the_lister/dual_display/README.md) mode, taking the vertical or horizontal layout from the Default Lister.
 
-\`\`Go NEW=dual C:\\ DUALPATH D:\\\`
+\`\`Go NEW=dual C:\ DUALPATH D:\\\`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1197,7 +1197,7 @@ Opens the new Lister in dual-display mode, laid out horizontally.
 
 Open the new Lister in [dual-display](/Manual/basic_concepts/the_lister/dual_display/README.md) mode, laid out vertically.
 
-\`\`Go NEW=dualvert C:\\ DUALPATH D:\\\`
+\`\`Go NEW=dualvert C:\ DUALPATH D:\\\`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1305,7 +1305,7 @@ NEWTAB</td><td>
 
 Opens a new [folder tab](/Manual/basic_concepts/the_lister/tabs/README.md). If no path is specified (e.g. via the **PATH** argument) then an empty tab is opened, otherwise the specified path will be loaded into the new tab. You can use the **TABPOS** argument to control where the newly-opened tab is positioned.
 
-*Example:* `Go C:\\ NEWTAB`
+*Example:* `Go C:\ NEWTAB`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1314,7 +1314,7 @@ Opens a new [folder tab](/Manual/basic_concepts/the_lister/tabs/README.md). If n
 
 If the command is run without a Lister then the Default Lister will open along with a new tab for the specified folder. If a Lister already exists then a new tab for the specified folder will open normally in the existing Lister.
 
-*Example:* `Go C:\\ NEWTAB=deflister,findexisting`
+*Example:* `Go C:\ NEWTAB=deflister,findexisting`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -1853,7 +1853,7 @@ SWITCHPATH</td><td>
 
 Switches between (or cycles through) two or more paths. The **PATH** argument is used to provide the first path in the sequence, and then the **SWITCHPATH** argument provides the second and subsequent paths. When you run this command, Opus looks at the current path shown in the source file display. If it matches one of the provided paths, the next path in the sequence is read (and then the next, and then the next, and so on). If the current path does not match one of the provided ones the first path in the sequence is read.
 
-\`\`Go C:\\ SWITCHPATH D:\\ E:\\ F:\\ G:\\\`
+\`\`Go C:\ SWITCHPATH D:\ E:\ F:\ G:\\\`
 </td></tr><tr><td>
 TABCLOSE</td><td>
 /O</td><td>
@@ -1867,7 +1867,7 @@ You can combine this with the **PATH** argument to specify the path of a tab tha
 The **TABPOS** argument can be used to specify the index (starting from 0) of a specific tab to close, or position relative to the current tab, or the position of the first or last tab. (The **PATH** argument can also be given a specific tab index, but this usage is deprecated in favor of **TABPOS**.)
 
 *Examples:* Close the current tab: `Go TABCLOSE`  
-Close all tabs showing a drive on C: `Go TABCLOSE PATH=C:\*`  
+Close all tabs showing a drive on C: `Go TABCLOSE PATH=C:*`  
 Close the first tab: `Go TABCLOSE TABPOS=first`  
 Close the last tab: `Go TABCLOSE TABPOS=last`  
 Close the tab after the current tab: `Go TABCLOSE TABPOS=+1`  
@@ -2512,7 +2512,7 @@ TABPOS</td><td>
 
 When used with the **NEWTAB** argument, causes the newly created tab to appear as the first on the tab bar. When used with **TABCLOSE**, closes the first tab. When used on its own, repositions the active folder tab so it is first on the tab bar.
 
-*Example:* `Go C:\\ NEWTAB TABPOS=first`
+*Example:* `Go C:\ NEWTAB TABPOS=first`
 
 When used from a [script](/Manual/scripting/README.md), you can pass the default value of a **[Tab](../../scripting_reference/scripting_objects/tab.md)** object to specify the tab you wish to reposition as the second parameter.
 
@@ -2564,7 +2564,7 @@ When used from a [script](/Manual/scripting/README.md), you can pass the default
 
 When used with the **NEWTAB** argument, specifies the position for the newly created tab. When used with **TABCLOSE**, specifies the position of the tab to close. When used on its own, repositions the active folder tab to a specific place on the tab bar. 0 is the first tab (you can also use "first"), 1 the second, 2 the third, and so on.
 
-*Example:* `Go D:\\ NEWTAB TABPOS=2`
+*Example:* `Go D:\ NEWTAB TABPOS=2`
 
 When used from a [script](/Manual/scripting/README.md), you can pass the default value of a **[Tab](../../scripting_reference/scripting_objects/tab.md)** object to specify the tab you wish to reposition as the second parameter.
 
@@ -2737,7 +2737,7 @@ TOFRONT</td><td>
 
 Makes the Lister the active window and brings it to the front. Typically used when sending commands from outside of Opus, to make sure the window that reads the folder is visible.
 
-*Example:* `Go C:\\ TOFRONT`
+*Example:* `Go C:\ TOFRONT`
 </td></tr><tr><td>
 TREECOLLAPSE</td><td>
 /O</td><td>
@@ -2966,7 +2966,7 @@ Activates pre-configured behaviour for the main qualifier keys - **Control** wil
 
 This is equivalent to **KEYARGS ctrl:OPENINDUAL shift:NEW alt:NEWTAB**.
 
-*Example:* `Go C:\\ USEQUALKEYS`
+*Example:* `Go C:\ USEQUALKEYS`
 </td></tr><tr><td>
 USER</td><td>
 /K</td><td>
@@ -2993,7 +2993,7 @@ Changes the [view mode](/Manual/basic_concepts/the_lister/view_modes.md) of the 
 
 Changes the view mode of the new folder to *Small Icons* mode.
 
-*Example:* `Go C:\\ VIEW smallicons`
+*Example:* `Go C:\ VIEW smallicons`
 </td></tr><tr><td>
 </td><td>
 </td><td>

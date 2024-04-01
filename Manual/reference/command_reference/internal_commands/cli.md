@@ -191,8 +191,8 @@ Displays the [find-as-you-type](/Manual/basic_concepts/the_lister/find-as-you-ty
 
 Prefix with **noselect:** to place the cursor at the end of the pattern instead of initially selecting it for typing over.
 
-*Example:* `CLI QUICKFILTER \*.(jpg\|png)`  
-*Example:* `CLI QUICKFILTER noselect:\*.jpg`
+*Example:* `CLI QUICKFILTER *.(jpg|png)`  
+*Example:* `CLI QUICKFILTER noselect:*.jpg`
 </td></tr><tr><td>
 QUICKFIND</td><td>
 /O/R</td><td>
@@ -282,7 +282,7 @@ Displays the [find-as-you-type](/Manual/basic_concepts/the_lister/find-as-you-ty
 
 Prefix with **noselect:** to place the cursor at the end of the command instead of initially selecting it for typing over.
 
-*Example:* `CLI QUICKFTPCMD chmod \* 755`  
+*Example:* `CLI QUICKFTPCMD chmod * 755`  
 *Example:* `CLI QUICKFTPCMD noselect:chmod` \*
 </td></tr><tr><td>
 QUICKGO</td><td>
@@ -398,8 +398,8 @@ Displays the [find-as-you-type](/Manual/basic_concepts/the_lister/find-as-you-ty
 
 Prefix with **noselect:** to place the cursor at the end of the pattern instead of initially selecting it for typing over.
 
-*Example:* `CLI QUICKSELECT \*.doc`  
-*Example:* `CLI QUICKSELECT noselect:\*.doc`
+*Example:* `CLI QUICKSELECT *.doc`  
+*Example:* `CLI QUICKSELECT noselect:*.doc`
 </td></tr><tr><td>
 QUICKTABS</td><td>
 /O/R</td><td>

@@ -118,7 +118,7 @@ NOUPDATESETTINGS</td><td>
 
 Prevents settings made by this command from becoming the new defaults. For example, if you specify the **READAUTO** argument, the value you provide will become the new default setting for the CreateFolder command unless you also specify **NOUPDATESETTINGS**.
 
-*Example:* `CreateFolder "{date\|yyyyMMdd}" READAUTO NOUPDATESETTINGS`
+*Example:* `CreateFolder "{date|yyyyMMdd}" READAUTO NOUPDATESETTINGS`
 </td></tr><tr><td>
 MULTI</td><td>
 /O</td><td>
@@ -129,7 +129,7 @@ Ensures the *Create Folder* is in multiple-folder mode if it opens.
 
 If **MULTI** is not specified at all, the dialog remembers its previous mode (subject to **NOUPDATESETTINGS**) when no folder names are specified on the command line, uses single-folder mode when one name is specified, and uses multi-folder mode when multiple names are specified.
 
-*Example:* `CreateFolder "Backup on {date\|yyyy_MM_dd}" ASK MULTI`
+*Example:* `CreateFolder "Backup on {date|yyyy_MM_dd}" ASK MULTI`
 </td></tr><tr><td>
 </td><td>
 </td><td>

@@ -132,7 +132,7 @@ FILTER</td><td>
 
 在打印子文件夹的内容（通过 **FLATVIEW** 参数）时，使用 [filter](/Manual/file_operations/filtered_operations/README.zh.md)。这可能是您先前在配置中的 [**文件操作/过滤器](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.zh.md)** 页面中创建的过滤器的名称，或者可能是过滤器的一个简单 [通配符模式](../../wildcard_reference/pattern_matching_syntax.zh.md) 根据文件名进行过滤。
 
-*示例：* `Print FOLDER FILTER \*.jpg FLATVIEW=nofolders QUIET`
+*示例：* `Print FOLDER FILTER *.jpg FLATVIEW=nofolders QUIET`
 </td></tr><tr><td>
 FILTERDEF</td><td>
 /K/R</td><td>
@@ -143,7 +143,7 @@ FILTERDEF</td><td>
 
 这是一个 **/R** 参数，因此 **FILTERDEF** 关键字之后的所有内容都将被视为参数值。
 
-*示例：* `Print FOLDER FLATVIEW=nofolders QUIET FILTERDEF name match \*.zip and size match \> 2 mb`
+*示例：* `Print FOLDER FLATVIEW=nofolders QUIET FILTERDEF name match *.zip and size match > 2 mb`
 </td></tr><tr><td>
 FLATVIEW</td><td>
 /K</td><td>
