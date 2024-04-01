@@ -20,8 +20,8 @@
 
 {i:dir}  
 {i:file}  
-\<nobr\>{i:*\<ext\>*}\</nobr\>  
-\<nobr\>{i:*\<file\>*}\</nobr\></td><td>
+<nobr>{i:*\<ext\>*}</nobr>  
+<nobr>{i:*\<file\>*}</nobr></td><td>
 
 **图标**
 

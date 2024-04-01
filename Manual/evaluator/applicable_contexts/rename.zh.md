@@ -13,7 +13,7 @@
 描述
 </th></tr></thead><tbody><tr><td>
 
-\<nobr\>*列名称*\</nobr\></td><td>
+<nobr>*列名称*</nobr></td><td>
 
 *不同*</td><td>
 

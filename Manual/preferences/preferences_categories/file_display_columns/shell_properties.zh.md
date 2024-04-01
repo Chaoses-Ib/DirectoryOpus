@@ -10,4 +10,4 @@
 
 只要你在 Opus 中找到了想要使用的列，就可以启用其复选框。接下来，你就可以在以下位置的 *Shell* 类别中找到它，例如 [文件夹格式对话框](/Manual/basic_concepts/folder_options/README.zh.md) 或列标题右键单击上下文菜单。
 
-Shell 列也可以结合使用 `sh:` 前缀在命令中使用。例如，如果你导入了 *昵称* 列，则可以用命令 \<nobr\>`Set COLUMNSTOGGLE sh:System.Contact.NickName`\</nobr\> 来启用它。
+Shell 列也可以结合使用 `sh:` 前缀在命令中使用。例如，如果你导入了 *昵称* 列，则可以用命令 <nobr>`Set COLUMNSTOGGLE sh:System.Contact.NickName`</nobr> 来启用它。

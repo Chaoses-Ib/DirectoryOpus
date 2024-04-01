@@ -13,7 +13,7 @@
 说明
 </th></tr></thead><tbody><tr><td>
 
-\<nobr\>*状态代码*\</nobr\></td><td>
+<nobr>*状态代码*</nobr></td><td>
 
 *变化*</td><td>
 

@@ -1329,7 +1329,7 @@ NEWTAB</td><td>
 
 **nofindexisting**</td><td>
 
-明确取消了上面描述的 **findexisting** 行为。大多数命令的默认设置是不查找现有标签页，但有些命令（例如 \<nobr\>`Go OPENCONTAINER NEWTAB`\</nobr\>) 会查找现有标签页，除非明确告知不要这样做。
+明确取消了上面描述的 **findexisting** 行为。大多数命令的默认设置是不查找现有标签页，但有些命令（例如 <nobr>`Go OPENCONTAINER NEWTAB`</nobr>) 会查找现有标签页，除非明确告知不要这样做。
 *示例：`Go OPENCONTAINER NEWTAB=nofindexisting`
 </td></tr><tr><td>
 </td><td>

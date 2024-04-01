@@ -13,7 +13,7 @@ Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 
-\<nobr\>*status code*\</nobr\></td><td>
+<nobr>*status code*</nobr></td><td>
 
 *varies*</td><td>
 

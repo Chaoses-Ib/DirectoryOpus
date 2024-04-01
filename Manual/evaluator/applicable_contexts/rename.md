@@ -13,7 +13,7 @@ Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 
-\<nobr\>*column name*\</nobr\></td><td>
+<nobr>*column name*</nobr></td><td>
 
 *varies*</td><td>
 

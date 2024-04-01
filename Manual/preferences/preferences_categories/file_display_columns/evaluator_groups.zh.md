@@ -54,6 +54,6 @@
 
 在左侧的列表中选择要将方案应用到的列，然后单击 <kbd>右</kbd> 按钮将其移到右侧的已选列表中。
 
-请注意，在编程中，分组时您可以应用任何方案——例如，命令 \<nobr\>`Set GROUPBY=type GROUPSCHEME=first_letter`\</nobr\> 将“first letter”（首字母）方案应用于 type（类型）列，即使在默认情况下它只与名称列关联。
+请注意，在编程中，分组时您可以应用任何方案——例如，命令 <nobr>`Set GROUPBY=type GROUPSCHEME=first_letter`</nobr> 将“first letter”（首字母）方案应用于 type（类型）列，即使在默认情况下它只与名称列关联。
 
 请参阅关于 [求值器](/Manual/evaluator/README.zh.md)的部分以了解您可以在哪里使用求值器的更多信息。

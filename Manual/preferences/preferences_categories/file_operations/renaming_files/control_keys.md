@@ -30,13 +30,13 @@ When you select a key from the list, the bottom half of the page displays its co
 
 This action type lets you select a part of the filename using a regular expression. The pattern should include a capture group. The pattern is compared to the entire filename, and if it matches, the portion corresponding to the capture group will be selected.
 
-For example, say you want a key to automatically select the prefix `Copy X of` where X is a number. You could use the regular expression \<nobr\>`(Copy \d of ).*`\</nobr\>. Pressing the associated control key would automatically select the matching prefix.
+For example, say you want a key to automatically select the prefix `Copy X of` where X is a number. You could use the regular expression <nobr>`(Copy \d of ).*`</nobr>. Pressing the associated control key would automatically select the matching prefix.
 
 ### Type: Select via RegEx Search
 
 In contrast to **Select via RegEx Match**, this action performs a *search* on the filename using the provided regular expression. This means that the pattern may match multiple times within the filename. The selection will be moved from one match to the next every time you press the key.
 
-The default **Select words** preset is an example of this. It uses the pattern \<nobr\>`[^\s\.]+`\</nobr\> which basically means "match all characters up to a space or a fullstop". Pressing <kbd>Ctrl+S</kbd> once will select the first word, pressing it again will select the second, and so on.
+The default **Select words** preset is an example of this. It uses the pattern <nobr>`[^\s\.]+`</nobr> which basically means "match all characters up to a space or a fullstop". Pressing <kbd>Ctrl+S</kbd> once will select the first word, pressing it again will select the second, and so on.
 
 ### Type: Modify via Rename Preset
 

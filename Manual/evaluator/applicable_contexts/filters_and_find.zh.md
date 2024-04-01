@@ -24,7 +24,7 @@
 说明
 </th></tr></thead><tbody><tr><td>
 
-\<nobr\>*列名*\</nobr\></td><td>
+<nobr>*列名*</nobr></td><td>
 
 *varies*</td><td>
 

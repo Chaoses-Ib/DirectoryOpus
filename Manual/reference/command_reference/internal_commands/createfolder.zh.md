@@ -66,7 +66,7 @@ FROMCLIPBOARD</td><td>
 
 *(无值)*</td><td>
 
-使用剪贴板上的文本作为新文件夹的名称。相当于 \<nobr\>`CreateFolder "{clip}"`\</nobr\>。
+使用剪贴板上的文本作为新文件夹的名称。相当于 <nobr>`CreateFolder "{clip}"`</nobr>。
 
 *示例:* `CreateFolder FROMCLIPBOARD`
 </td></tr><tr><td>

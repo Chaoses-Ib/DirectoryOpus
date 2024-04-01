@@ -54,6 +54,6 @@ If your scheme is generic enough, you can add it to multiple columns (e.g. the f
 
 Select the columns you want to apply your scheme to in the list on the left and click the <kbd>Right</kbd> button to move it into the selected list on the right.
 
-Note that programmatically, you can apply any scheme when grouping - for example, the command \<nobr\>`Set GROUPBY=type GROUPSCHEME=first_letter`\</nobr\> would apply the "first letter" scheme to the type column, even though by default it's only associated with the name column.
+Note that programmatically, you can apply any scheme when grouping - for example, the command <nobr>`Set GROUPBY=type GROUPSCHEME=first_letter`</nobr> would apply the "first letter" scheme to the type column, even though by default it's only associated with the name column.
 
 See the section on the [evaluator](/Manual/evaluator/README.md) for more information about where you can use the evaluator.

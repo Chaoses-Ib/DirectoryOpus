@@ -394,7 +394,7 @@ To filter the list by path rather than sub-branch, see the **FILTER** argument.
 **PATH** is the default argument for the **Favorites** command; you do not need to specify the **PATH** keyword itself.
 
 *Example:* `Favorites /desktop ADD`  
-*Example:* `Favorites \*Projects` \<nobr\>(equivalent to `Favorites BRANCH=Projects`)\</nobr\>
+*Example:* `Favorites \*Projects` <nobr>(equivalent to `Favorites BRANCH=Projects`)</nobr>
 </td></tr><tr><td>
 SHOWICONS</td><td>
 /S</td><td>
@@ -443,7 +443,7 @@ USEQUALKEYS</td><td>
 
 Activates pre-configured behaviour for the main qualifier keys - **Control** will open the favorite folder in the dual-display, **Shift** in a new Lister and **Alt** in a new tab.
 
-This is equivalent to \<nobr\>`Favorites KEYARGS ctrl:OPENINDUAL shift:NEW alt:NEWTAB`\</nobr\>.
+This is equivalent to <nobr>`Favorites KEYARGS ctrl:OPENINDUAL shift:NEW alt:NEWTAB`</nobr>.
 
 *Example:* `Favorites USEQUALKEYS`
 </td></tr></tbody>

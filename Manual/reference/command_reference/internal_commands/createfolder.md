@@ -67,7 +67,7 @@ FROMCLIPBOARD</td><td>
 
 *(no value)*</td><td>
 
-Uses the text currently on the clipboard for the name of the new folder. Equivalent to \<nobr\>`CreateFolder "{clip}"`\</nobr\>.
+Uses the text currently on the clipboard for the name of the new folder. Equivalent to <nobr>`CreateFolder "{clip}"`</nobr>.
 
 *Example:* `CreateFolder FROMCLIPBOARD`
 </td></tr><tr><td>

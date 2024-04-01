@@ -17,6 +17,6 @@
 
 例如，默认模板是 `%1 - Shortcut %2`。假设您选择了一个文件“Document.txt”并为它创建了一个快捷方式。
 
-该位置中的第一个快捷方式的“快捷方式计数”为 1，未显示 - 所以 `%2` 将展开为空。第一个快捷方式的名称将为 \<nobr\>`Document - Shortcut.lnk`\</nobr\>.
+该位置中的第一个快捷方式的“快捷方式计数”为 1，未显示 - 所以 `%2` 将展开为空。第一个快捷方式的名称将为 <nobr>`Document - Shortcut.lnk`</nobr>.
 
-如果您创建第二个快捷方式，计数将为 2，新文件名将为 \<nobr\>`Document - Shortcut (2).lnk`\</nobr\>.
+如果您创建第二个快捷方式，计数将为 2，新文件名将为 <nobr>`Document - Shortcut (2).lnk`</nobr>.

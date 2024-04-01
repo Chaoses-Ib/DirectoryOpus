@@ -11,7 +11,7 @@
 描述
 </th></tr></thead><tbody><tr><td>
 
-\<nobr\>*column name*\</nobr\></td><td>
+<nobr>*column name*</nobr></td><td>
 
 *变化的*</td><td>
 

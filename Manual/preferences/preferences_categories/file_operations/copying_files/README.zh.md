@@ -20,6 +20,6 @@
 
 例如，默认模板是 `%1 - Copy %2`。假设您挑选了一个文件 "Document.txt" 并按 <kbd>Ctrl+C</kbd>，<kbd>Ctrl+V</kbd>。
 
-现有文件的第一个副本的“副本数”为 1，不会显示 - 所以 `%2` 将扩展为空。第一个副本的名称将为 \<nobr\>`Document - Copy.txt`\</nobr\>。
+现有文件的第一个副本的“副本数”为 1，不会显示 - 所以 `%2` 将扩展为空。第一个副本的名称将为 <nobr>`Document - Copy.txt`</nobr>。
 
-如果您再次按 <kbd>Ctrl+V</kbd> 以进行第二个副本，副本数将为 2，新文件名将是 \<nobr\>`Document - Copy (2).txt`\</nobr\>。
+如果您再次按 <kbd>Ctrl+V</kbd> 以进行第二个副本，副本数将为 2，新文件名将是 <nobr>`Document - Copy (2).txt`</nobr>。

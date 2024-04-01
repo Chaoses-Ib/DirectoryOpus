@@ -20,8 +20,8 @@ Displays the format lock icon (![](/Manual/images/media/format_lock.png)). This
 
 {i:dir}  
 {i:file}  
-\<nobr\>{i:*\<ext\>*}\</nobr\>  
-\<nobr\>{i:*\<file\>*}\</nobr\></td><td>
+<nobr>{i:*\<ext\>*}</nobr>  
+<nobr>{i:*\<file\>*}</nobr></td><td>
 
 **Icons**
 

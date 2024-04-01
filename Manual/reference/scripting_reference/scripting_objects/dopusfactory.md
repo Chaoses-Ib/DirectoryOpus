@@ -14,7 +14,7 @@ Blob</td><td>
 
 *none*  
 or \<int:size\>  
-or \<nobr\>\<byte, byte, ...\>\</nobr\>  
+or <nobr>\<byte, byte, ...\></nobr>  
 or \<**[Blob](blob.md)**:source\></td><td>
 
 *object:***[Blob](blob.md)**</td><td>

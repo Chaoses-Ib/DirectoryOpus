@@ -52,9 +52,9 @@ Specify the output filename when converting images. By default the output filena
 BACKGROUND</td><td>
 /O</td><td>
 
-\<nobr\>*RRR,GGG,BBB*\</nobr\>  
+<nobr>*RRR,GGG,BBB*</nobr>  
 *(decimal)*  
-\<nobr\>*\#RRGGBB*\</nobr\>  
+<nobr>*\#RRGGBB*</nobr>  
 *(hexadecimal)*\</nobr\></td><td>
 
 When an image with an alpha channel (transparency) is converted to a format that doesn't support the alpha channel, this argument is used to specify the background color that replaces the transparent area. The color can be specified in either decimal or hex format.
@@ -126,7 +126,7 @@ Crops selected images. The crop parameters can be specified in several ways:
 |----------------------------|-------------------------------------------------------------------------------------------|
 | W,H                        | Crop to specified size (width,height). Centers the crop rectangle in the original image.  |
 | X,Y,W,H                    | Crop from specified position (x,y) to specified size (width,height).                      |
-| \<nobr\>X,Y-X1,Y1\</nobr\> | Crop from specified position (x,y) to specified position (x1,y1).                         |
+| <nobr>X,Y-X1,Y1</nobr> | Crop from specified position (x,y) to specified position (x1,y1).                         |
 | W:H                        | Crop to specified ratio (width:height). Centers the crop rectangle in the original image. |
 | X,Y,W:H                    | Crop from specified position (x,y) to specified ratio (width:height).                     |
 

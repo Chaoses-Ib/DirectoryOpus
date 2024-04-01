@@ -18,7 +18,7 @@ The image above shows the definition for the default **Image Bytes** column, one
 
 - **Title**: Defines the title of your column. This is shown in column lists throughout Opus.
 - **Header title**: Lets you provide an optional title that's used in the column header in the Lister. If you leave this empty the **Title** is used instead.
-- **Keyword**: Defines a keyword that lets your column be controlled programmatically. All evaluation column keywords begin with the prefix `eval:`, followed by the specified keyword. For example, the above column could be turned on using the command \<nobr\>`Set COLUMNSTOGGLE=eval:imagebytes`\</nobr\>.
+- **Keyword**: Defines a keyword that lets your column be controlled programmatically. All evaluation column keywords begin with the prefix `eval:`, followed by the specified keyword. For example, the above column could be turned on using the command <nobr>`Set COLUMNSTOGGLE=eval:imagebytes`</nobr>.
 - **Evaluator code**: This is where you enter the evaluator code that produces the column content. See the [Evaluator](/Manual/evaluator/applicable_contexts/evaluator_columns.md) section for more details.
 - **Type**: The type of the column determines how it displays the content that your code produces.
   ^Type^Description^

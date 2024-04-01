@@ -17,6 +17,6 @@ This template is used to define the new name of a shortcut to an existing file o
 
 For example, the default template is `%1 - Shortcut %2`. Say you pick a file "Document.txt" and make a shortcut to it.
 
-The first shortcut in that location has a "shortcut count" of 1, which is not shown - so `%2` will expand to nothing. The first shortcut's name would be \<nobr\>`Document - Shortcut.lnk`\</nobr\>.
+The first shortcut in that location has a "shortcut count" of 1, which is not shown - so `%2` will expand to nothing. The first shortcut's name would be <nobr>`Document - Shortcut.lnk`</nobr>.
 
-If you make a second shortcut, the count would be 2, and the new filename would be \<nobr\>`Document - Shortcut (2).lnk`\</nobr\>.
+If you make a second shortcut, the count would be 2, and the new filename would be <nobr>`Document - Shortcut (2).lnk`</nobr>.

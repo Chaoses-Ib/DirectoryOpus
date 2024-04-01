@@ -12,7 +12,7 @@ The **Set** internal command can be used to:
 - Adjust the size and position of the current Lister window
 - ... and lots of other things :)
 
-You can combine multiple **Set** command arguments on the one command line to make multiple changes to the Lister at once. For example, \<nobr\>`Set DUAL=on TREE=off`\</nobr\> would turn dual-display mode on, and the folder trees off, in one operation.
+You can combine multiple **Set** command arguments on the one command line to make multiple changes to the Lister at once. For example, <nobr>`Set DUAL=on TREE=off`</nobr> would turn dual-display mode on, and the folder trees off, in one operation.
 
 **Command Arguments:** 
 

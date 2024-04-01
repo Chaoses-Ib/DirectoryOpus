@@ -1341,7 +1341,7 @@ Like **findexisting**, except that if the active tab already has the specified p
 
 **nofindexisting**</td><td>
 
-Explicitly suppresses the **findexisting** behavior described above. The default for most commands it to not look for existing tabs, but some (e.g. \<nobr\>`Go OPENCONTAINER NEWTAB`\</nobr\>) will look for existing tabs unless explicitly told not to.
+Explicitly suppresses the **findexisting** behavior described above. The default for most commands it to not look for existing tabs, but some (e.g. <nobr>`Go OPENCONTAINER NEWTAB`</nobr>) will look for existing tabs unless explicitly told not to.
 
 *Example:* `Go OPENCONTAINER NEWTAB=nofindexisting`
 </td></tr><tr><td>

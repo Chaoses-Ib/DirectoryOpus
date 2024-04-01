@@ -12,7 +12,7 @@
 描述
 </th></tr></thead><tbody><tr><td>
 
-\<nobr\>*(无参数)*\</nobr\></td><td>
+<nobr>*(无参数)*</nobr></td><td>
 -</td><td>
 -</td><td>
 

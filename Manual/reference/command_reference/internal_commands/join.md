@@ -12,7 +12,7 @@ Possible values</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 
-\<nobr\>*(no argument)*\</nobr\></td><td>
+<nobr>*(no argument)*</nobr></td><td>
 -</td><td>
 -</td><td>
 

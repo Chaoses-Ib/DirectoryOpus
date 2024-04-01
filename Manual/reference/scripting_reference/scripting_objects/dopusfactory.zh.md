@@ -12,7 +12,7 @@ Blob</td><td>
 
 *无*  
 或 \<int:size\>  
-或 \<nobr\>\<byte, byte, ...\>\</nobr\>  
+或 <nobr>\<byte, byte, ...\></nobr>  
 或 \<**[Blob](blob.zh.md)**:source\></td><td>
 
 *object:***[Blob](blob.zh.md)**</td><td>

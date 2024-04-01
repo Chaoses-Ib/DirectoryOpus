@@ -21,6 +21,6 @@ The original file name is inserted without the file extension (which is automati
 
 For example, the default template is `%1 - Copy %2`. Say you pick a file "Document.txt" and press <kbd>Ctrl+C</kbd>, <kbd>Ctrl+V</kbd>.
 
-The first copy of an existing file has a "copy count" of 1, which is not shown - so `%2` will expand to nothing. The first copy's name would be \<nobr\>`Document - Copy.txt`\</nobr\>.
+The first copy of an existing file has a "copy count" of 1, which is not shown - so `%2` will expand to nothing. The first copy's name would be <nobr>`Document - Copy.txt`</nobr>.
 
-If you press <kbd>Ctrl+V</kbd> again to make a second copy, the copy count would be 2, and the new filename would be \<nobr\>`Document - Copy (2).txt`\</nobr\>.
+If you press <kbd>Ctrl+V</kbd> again to make a second copy, the copy count would be 2, and the new filename would be <nobr>`Document - Copy (2).txt`</nobr>.
