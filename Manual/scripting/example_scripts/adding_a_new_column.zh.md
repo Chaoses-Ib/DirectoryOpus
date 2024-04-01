@@ -17,7 +17,7 @@
 - 初始化 **[ScriptColumn\*\*](/Manual/reference/scripting_reference/scripting_objects/scriptcolumn.zh.md)** 对象的属性。至少必须填充 **name** 和 **method** 属性。\* 在脚本加载项中创建一个单独的函数，其 **method** 名称指定给该列。当 Opus 想为该列检索数据时，将调用此方法。
 
     // 将脚本类型设置为 JScript 以使用此脚本
-    // 目录 Opus 调用 **OnInit** 函数来初始化脚本加载项
+    // Directory Opus 调用 **OnInit** 函数来初始化脚本加载项
     function OnInit(initData) {
 
     // 通过初始化 **ScriptInitData** 对象的属性来提供有关脚本的基本信息

@@ -16,7 +16,7 @@
 - 在您的脚本增益工具中创建一个单独的函数，其 **method** 名称是您为命令指定的名称。这将作为您的命令入口点。
 
     // 将脚本类型设置为 JScript 以使用此脚本
-    // **OnInit** 函数由目录 Opus 调用，以初始化脚本增益工具
+    // **OnInit** 函数由Directory Opus 调用，以初始化脚本增益工具
     function OnInit(initData) {
     // 通过初始化 **ScriptInitData** 对象的属性，提供有关脚本的基本信息
     initData.name = "Select Newest Files";

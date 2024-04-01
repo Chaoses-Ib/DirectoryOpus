@@ -237,7 +237,7 @@ SYSTEM</td><td>
 
 **保留**</td><td>
 
-（Opus 13.3.2 及更高版本。）继续运行。如果不指定，目录 Opus 将同时退出 Windows 关闭。与 **睡眠**或 **暂停**结合使用，让 Windows 在不退出 Opus 的情况下睡眠或休眠。
+（Opus 13.3.2 及更高版本。）继续运行。如果不指定，Directory Opus 将同时退出 Windows 关闭。与 **睡眠**或 **暂停**结合使用，让 Windows 在不退出 Opus 的情况下睡眠或休眠。
 
 *示例：* `Close SYSTEM=sleep,stay`
 </td></tr><tr><td>
