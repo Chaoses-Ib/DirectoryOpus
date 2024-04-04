@@ -3,6 +3,8 @@
 Opus 的收藏夹系统与 Web 浏览器的非常相似。您可以将想要快速访问的重要文件夹添加到收藏夹列表，此列表可以在工具栏（[收藏夹栏](../toolbars/the_default_toolbars/favorites_bar.zh.md)）、下拉菜单和 [文件夹树](folder_tree.zh.md) 中显示。
 
 ### 收藏夹栏
+> [!TIP]
+> 参见 [收藏栏](/浏览/窗口/工具栏/收藏栏.md)。
 
 ![](/Manual/images/media/13/favorites_bar.png) 
 
