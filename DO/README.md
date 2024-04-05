@@ -66,3 +66,24 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 
 [^machine-laptop]: 一台计算机 + 一台笔记本
 [^APSDAI]: 也称 APSDAI、SOFTHEAD、奇睿天软
+
+## 安装
+下载安装包：
+- 最新正式版：https://www.gpsoft.com.au/download/release
+- [所有正式版](https://support.gpsoft.com.au/download)
+- [所有版本](https://resource.dopus.com/c/new-releases/28)
+
+### 静默安装
+安装包参数：[Inno Setup Help](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline)
+
+安装证书：
+```cmd
+"C:\Program Files\GPSoftware\Directory Opus\dopus.exe" /cert "dopus_cert.txt" /regcode AAAAA-BBBBB-CCCCC-DDDD /norun
+```
+
+导入配置：
+```
+"C:\Program Files\GPSoftware\Directory Opus\dopus.exe" /config "c:\temp\opus config.ocb"
+```
+
+详见 [HOW TO: Perform silent (un)install of Directory Opus - Opus FAQs - Directory Opus Resource Centre](https://resource.dopus.com/t/how-to-perform-silent-un-install-of-directory-opus/1319)
