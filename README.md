@@ -6,7 +6,7 @@
 
 <p align="center">由 <a href="https://www.gpsoft.com.au/">GPSoftware</a> 开发的一款上手简单、系统集成度高、功能强大的 Windows 文件管理器</p>
 
-- [目录](SUMMARY.md)
+- [仓库](https://github.com/Chaoses-Ib/DirectoryOpus)
 - 镜像：[GitBook](https://chaoses-ib.gitbook.io/directory-opus/)（支持 AI 搜索）、~~[看云](https://www.kancloud.cn/chaoses/directory-opus/content)~~、~~[FastGit](https://hub.fastgit.xyz/Chaoses-Ib/DirectoryOpus)~~
 
 > [!TIP]
