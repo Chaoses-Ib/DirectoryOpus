@@ -10,6 +10,21 @@
 ### 如何在关闭最后一个标签页时直接关闭窗口？
 在配置窗口中勾选 `文件夹标签/选项/关闭最后的标签页时同时关闭窗口`。或者也可以使用脚本实现：[IbDOpusScripts/CloseTabOrLister](https://github.com/Chaoses-Ib/IbDOpusScripts/blob/main/Buttons/CloseTabOrLister.js)。
 
+## 图标
+在资源管理器中，文件窗口的任务栏图标会随当前文件夹的图标而变化。与资源管理器不同，DOpus 文件窗口的任务栏图标默认固定为 ![lightbulb_small.png](/Manual/images/media/13/lightbulb_small.png)。推荐在配置中改为使用当前文件夹的图标，便于区分：
+
+![](images/README/图标.png)
+
+![lightbulb_small.png](/Manual/images/media/13/lightbulb_small.png) 图标：
+
+![](images/README/图标-DO.png)
+
+当前文件夹图标：
+
+![](images/README/图标-当前文件夹.png)
+
+另外，当前文件夹图标只会在 DOpus 的任务栏按钮未被合并时生效，在按钮被合并时仍会显示为 ![lightbulb_small.png](/Manual/images/media/13/lightbulb_small.png)。
+
 ## 安全截屏
 DOpus 支持对文件窗口进行“安全截屏”，即在截屏时自动对文件名进行打码。默认的安全截屏按钮位于 `操作工具栏 → 帮助 → 安全截图`：
 
