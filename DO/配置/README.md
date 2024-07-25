@@ -20,7 +20,7 @@ DOpus 有两种配置模式：
 - 默认配置
   - [v13.7.1](https://github.com/Chaoses-Ib/DirectoryOpus/releases/download/2024-03-04/Config.Default.v13.7.1.ocb)
 
-- [@小恐龙 2024-07-01](https://github.com/Chaoses-Ib/DirectoryOpus/releases/download/2024-03-04/Config.@xiaokonglong.2024-07-01.13-51.ocb)
+- [@小恐龙 2024-07-01](https://github.com/Chaoses-Ib/DirectoryOpus/releases/download/2024-03-04/Config.@xiaokonglong.2024-07-01.13-51.ocb) [^xiaokonglong]
   - 开启了[单窗口模式](../../浏览/多文件夹/单窗口模式.md)（在新标签页中打开外部文件夹）
   - 工具栏：
 
@@ -39,3 +39,6 @@ DOpus 有两种配置模式：
   - 带有以下窗口布局：
 
     ![](images/README/小恐龙/窗口布局.png)
+
+
+[^xiaokonglong]: [换用到 Directory Opus，提问！（暂无新问题） - 讨论分享 - 小众软件官方论坛](https://meta.appinn.net/t/topic/58211/22?u=chaoses_ib)
