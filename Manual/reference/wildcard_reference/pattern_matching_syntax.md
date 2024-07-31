@@ -15,7 +15,7 @@ Token</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
 
-**  \#**</td><td>
+**\#**</td><td>
 
 The character or expression following the **\#** is repeated 0 or more times.
 
@@ -24,7 +24,7 @@ For example:
 **a#(xyz)b** matches *ab*, *axyzb*, *axyzxyzb*, etc.
 </td></tr><tr><td>
 
-**  ?**</td><td>
+**?**</td><td>
 
 Matches any single character.
 
@@ -32,7 +32,7 @@ For example:
 **a?b** matches *aab*, *abb*, *acb*, *adb*, etc. It does **not** match *ab*.
 </td></tr><tr><td>
 
-**  \|**</td><td>
+**\|**</td><td>
 
 Used to separate multiple expressions, any of which may match (effectively an **or** operator).
 
@@ -41,7 +41,7 @@ For example:
 **\*.(gif\|bmp\|jpg)** matches anything ending with *.gif*, *.bmp* or *.jpg*.
 </td></tr><tr><td>
 
-**  ~**</td><td>
+**~**</td><td>
 
 This is the **not** operator, it negates the following expression.
 
@@ -50,7 +50,7 @@ For example:
 **~(\*.(gif\|bmp))** matches anything that doesn't end in *.gif* or *.bmp*
 </td></tr><tr><td>
 
-**  ()**</td><td>
+**()**</td><td>
 
 Parentheses are used to combine multiple characters into an expression. If we take the above example of **a#(xyz)b**, the parentheses are used to form *xyz* into a single expression. Without the brackets (i.e. **a#xyzb**) only the *x* would be seen to follow the **\#** character - *yzb* would be treated literally.  
 Parentheses can be nested (as in the above example for **~**) to combine multiple expressions into a larger expression.
@@ -59,7 +59,7 @@ For example:
 **NEW-((\*.doc)\|(\*\_backup\_\*))** matches anything starting with *NEW-* that either ends in *.doc*, or is followed by the string *\_backup\_*.
 </td></tr><tr><td>
 
-**  \[\]**</td><td>
+**\[\]**</td><td>
 
 Matches any single character in the set of specified characters.  
 You can specify the character set as individual characters (e.g. **\[abdfg\]**) or as a range of characters (e.g. **\[a-j\]**) or as multiple ranges.
@@ -71,7 +71,7 @@ For example:
 **IMGP#\[0-9\].jpg** matches *IMGP0158.jpg* (or any other number).
 </td></tr><tr><td>
 
-**  \[~\]**</td><td>
+**\[~\]**</td><td>
 
 Matches any character **not** in the set of specified characters. See **\[\]** for information on how the set is defined.
 
@@ -79,7 +79,7 @@ For example:
 **\[~pqr\]** matches any character except *p*, *q* or *r*
 </td></tr><tr><td>
 
-** ** \*</td><td>
+**\***</td><td>
 
 Matches any number of characters, including zero. This is a synonym for **\#?**.  
 **\*.doc** is equivalent to **\#?.doc**.  

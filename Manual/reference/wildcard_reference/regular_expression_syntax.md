@@ -8,7 +8,7 @@ One advantage regular expressions have over standard pattern matching is they ca
 **New Name**: \1.\2
 
   
-The two **(.\*)** tokens in the *old name* string are capture groups - they "capture" whatever is matched by the expression within the parentheses. In this case, the expression inside the brackets is **.**\* which simply means "match anything". So what this pattern will do is match any filename beginning with *The* and ending in *Backup*, and it will capture the middle of the filename for later use. The second **(.\*)** will capture the file extension. The *new name* string can then re-use the captured text, and this is indicated with the **\1** and **\2** markers. So as an example, the original filename *The Lord Of The Rings Backup.avi* would be renamed to *Lord Of The Rings.avi*. **\1** refers to the first capture group, **\2** to the second, and so on.
+The two **(.\*)** tokens in the *old name* string are capture groups - they "capture" whatever is matched by the expression within the parentheses. In this case, the expression inside the brackets is **.\*** which simply means "match anything". So what this pattern will do is match any filename beginning with *The* and ending in *Backup*, and it will capture the middle of the filename for later use. The second **(.\*)** will capture the file extension. The *new name* string can then re-use the captured text, and this is indicated with the **\1** and **\2** markers. So as an example, the original filename *The Lord Of The Rings Backup.avi* would be renamed to *Lord Of The Rings.avi*. **\1** refers to the first capture group, **\2** to the second, and so on.
 
 If you need the *new name* string to contain a literal \\ use two together. For example, *abc\\xyz* will turn into *abc\xyz*.
 
@@ -60,12 +60,12 @@ For example:
 \*</td><td>
 
 **0 or more of previous expression**.  
-Matches zero or more occurrences of the previous expression. Combine with **.** to form the "match anything" token (**.**\*).
+Matches zero or more occurrences of the previous expression. Combine with **.** to form the "match anything" token (**.\***).
 
 For example:  
 **ab\*c** matches *ac*, *abc*, *abbc*, *abbbc*, ...  
 **a.\*c** matches *ac*, *abc*, *a123456c*, *aanythingc*, ...  
-**.**\* matches anything
+**.\*** matches anything
 </td></tr><tr><td>
 
 **+**</td><td>
@@ -167,7 +167,7 @@ For example:
 **a\\t** matches *a\t*
 </td></tr><tr><td>
 
-**  \w**</td><td>
+**\w**</td><td>
 
 **Word character**.  
 Matches any word character. Equivalent to **\[a-zA-Z_0-9\]**.
@@ -176,31 +176,31 @@ For example:
 **^\w+\[0-9\]{4}.jpg** matches *IMGP0158.jpg* (or any other four-digit number preceded by at least one other word character).
 </td></tr><tr><td>
 
-**  \W**</td><td>
+**\W**</td><td>
 
 **Non-word character**.  
 Matches any non-word character, equivalent to **\[^a-zA-Z_0-9\]**.
 </td></tr><tr><td>
 
-**  \s**</td><td>
+**\s**</td><td>
 
 **Space character**.  
 Matches any whitespace character. Equivalent to **\[ \f\n\r\t\v\]**.
 </td></tr><tr><td>
 
-**  \S**</td><td>
+**\S**</td><td>
 
 **Non-space character**.  
 Matches any non-whitespace character. Equivalent to **\[^ \f\n\r\t\v\]**.
 </td></tr><tr><td>
 
-**  \d**</td><td>
+**\d**</td><td>
 
 **Digit character**.  
 Matches any decimal digit. Equivalent to **\[0-9\]**.
 </td></tr><tr><td>
 
-**  \D**</td><td>
+**\D**</td><td>
 
 **Non-digit character**.  
 Matches any non-decimal digit. Equivalent to **\[^0-9\]**.
