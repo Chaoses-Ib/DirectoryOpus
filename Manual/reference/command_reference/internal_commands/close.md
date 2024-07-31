@@ -238,7 +238,7 @@ Suspends the system (S4 hibernation).
 
 **stay**</td><td>
 
-(Opus 13.3.2 and above.) Stay running. If not specified, Directory Opus will exit at the same time Windows shuts down. Combine with **sleep** or **suspend** to make Windows sleep or hibernate without exiting Opus.
+Stay running. If not specified, Directory Opus will exit at the same time Windows shuts down. Combine with **sleep** or **suspend** to make Windows sleep or hibernate without exiting Opus.
 
 *Example:* `Close SYSTEM=sleep,stay`
 </td></tr><tr><td>

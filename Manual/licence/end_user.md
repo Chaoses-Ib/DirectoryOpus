@@ -58,4 +58,4 @@ For bulk purchasers under the GPSoftware Open License Plan, or academic volume l
 
 - This license is effective unless terminated. This license may be terminated immediately without notice from GPSoftware if you fail to comply with any provision of this license.
 - Upon knowledge or notification of termination you must immediately uninstall and destroy Directory Opus 13 and all copies thereof, and any and all program certificates that have been issued to you.
-- GPSoftware reserves the remotely deactivate program certificates upon evidence of breach of these conditions.
+- GPSoftware reserves the right to remotely deactivate program certificates upon evidence of breach of these conditions.

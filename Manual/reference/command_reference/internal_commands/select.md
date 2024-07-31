@@ -306,13 +306,22 @@ Convert the state of checked items to selections (checked items will be selected
 *Example:* `Select FROMCHECKS`
 </td></tr><tr><td>
 FROMSCRIPT</td><td>
-/S</td><td>
+/O</td><td>
 
 *(no value)*</td><td>
 
 This command should be used when running a Select command from a script (e.g. via **Command.RunCommand**). It tells the command to select the files in the **Command** object itself.
 
 *Example:* `Func.Command.RunCommand("Select FROMSCRIPT");`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**unhide**</td><td>
+
+Any items that are currently hidden will be unhidden before being selected.
+
+*Example:* `Func.Command.RunCommand("Select FROMSCRIPT=unhide");`
 </td></tr><tr><td>
 GROUPNAME</td><td>
 /O</td><td>

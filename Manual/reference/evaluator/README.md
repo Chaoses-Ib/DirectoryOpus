@@ -7,188 +7,193 @@ This reference section describes the functions available to evaluator code where
 <table>
 <tr><td>
 
-[abortfunc](/Manual/reference/evaluator/abortfunc.md)</td><td>
+[AbortFunc](/Manual/reference/evaluator/abortfunc.md)</td><td>
 
-[abs](/Manual/reference/evaluator/abs.md)</td><td>
+[Abs](/Manual/reference/evaluator/abs.md)</td><td>
 
-[age](/Manual/reference/evaluator/age.md)</td><td>
+[Age](/Manual/reference/evaluator/age.md)</td><td>
 
-[arg](/Manual/reference/evaluator/arg.md)
+[Arg](/Manual/reference/evaluator/arg.md)
 </td></tr><tr><td>
 
-[as](/Manual/reference/evaluator/as.md)</td><td>
+[As](/Manual/reference/evaluator/as.md)</td><td>
 
-[asc](/Manual/reference/evaluator/asc.md)</td><td>
+[Asc](/Manual/reference/evaluator/asc.md)</td><td>
 
-[atan](/Manual/reference/evaluator/atan.md)</td><td>
+[Atan](/Manual/reference/evaluator/atan.md)</td><td>
 
-[capitalize](/Manual/reference/evaluator/capitalize.md)
+[Capitalize](/Manual/reference/evaluator/capitalize.md)
 </td></tr><tr><td>
 
-[cbrt](/Manual/reference/evaluator/cbrt.md)</td><td>
+[Cbrt](/Manual/reference/evaluator/cbrt.md)</td><td>
 
-[ceil](/Manual/reference/evaluator/ceil.md)</td><td>
+[Ceil](/Manual/reference/evaluator/ceil.md)</td><td>
 
-[chr](/Manual/reference/evaluator/chr.md)</td><td>
+[Chr](/Manual/reference/evaluator/chr.md)</td><td>
 
-[cos](/Manual/reference/evaluator/cos.md)
+[Cos](/Manual/reference/evaluator/cos.md)
 </td></tr><tr><td>
 
-[clip](/Manual/reference/evaluator/clip.md)</td><td>
+[Clip](/Manual/reference/evaluator/clip.md)</td><td>
 
-[clipformat](/Manual/reference/evaluator/clipformat.md)</td><td>
+[ClipFormat](/Manual/reference/evaluator/clipformat.md)</td><td>
 
-[count](/Manual/reference/evaluator/count.md)</td><td>
+[Count](/Manual/reference/evaluator/count.md)</td><td>
 
-[datediff](/Manual/reference/evaluator/datediff.md)
+[DateDiff](/Manual/reference/evaluator/datediff.md)
 </td></tr><tr><td>
 
-[datepart](/Manual/reference/evaluator/datepart.md)</td><td>
+[DatePart](/Manual/reference/evaluator/datepart.md)</td><td>
 
-[degtorad](/Manual/reference/evaluator/degtorad.md)</td><td>
+[DegToRad](/Manual/reference/evaluator/degtorad.md)</td><td>
 
-[displayname](/Manual/reference/evaluator/displayname.md)</td><td>
+[DisplayName](/Manual/reference/evaluator/displayname.md)</td><td>
 
-[elapsed](/Manual/reference/evaluator/elapsed.md)
+[Elapsed](/Manual/reference/evaluator/elapsed.md)
 </td></tr><tr><td>
 
-[exists](/Manual/reference/evaluator/exists.md)</td><td>
+[Exists](/Manual/reference/evaluator/exists.md)</td><td>
 
-[filecount](/Manual/reference/evaluator/filecount.md)</td><td>
+[FileCount](/Manual/reference/evaluator/filecount.md)</td><td>
 
-[fileext](/Manual/reference/evaluator/fileext.md)</td><td>
+[FileExt](/Manual/reference/evaluator/fileext.md)</td><td>
 
-[filepart](/Manual/reference/evaluator/filepart.md)
+[FilePart](/Manual/reference/evaluator/filepart.md)
 </td></tr><tr><td>
 
-[floor](/Manual/reference/evaluator/floor.md)</td><td>
+[Floor](/Manual/reference/evaluator/floor.md)</td><td>
 
-[format](/Manual/reference/evaluator/format.md)</td><td>
+[Format](/Manual/reference/evaluator/format.md)</td><td>
 
-[hypot](/Manual/reference/evaluator/hypot.md)</td><td>
+[Hypot](/Manual/reference/evaluator/hypot.md)</td><td>
 
-[instr](/Manual/reference/evaluator/instr.md)
+[Instr](/Manual/reference/evaluator/instr.md)
 </td></tr><tr><td>
 
-[isalpha](/Manual/reference/evaluator/isalpha.md)</td><td>
+[IsAlpha](/Manual/reference/evaluator/isalpha.md)</td><td>
 
-[ischecked](/Manual/reference/evaluator/ischecked.md)</td><td>
+[IsChecked](/Manual/reference/evaluator/ischecked.md)</td><td>
 
-[isdigit](/Manual/reference/evaluator/isdigit.md)</td><td>
+[IsDigit](/Manual/reference/evaluator/isdigit.md)</td><td>
 
-[isenabled](/Manual/reference/evaluator/isenabled.md)
+[IsDir](/Manual/reference/evaluator/isdir.md)
 </td></tr><tr><td>
 
-[islower](/Manual/reference/evaluator/islower.md)</td><td>
+[IsEnabled](/Manual/reference/evaluator/isenabled.md)</td><td>
 
-[isparent](/Manual/reference/evaluator/isparent.md)</td><td>
+[IsFile](/Manual/reference/evaluator/isfile.md)</td><td>
 
-[ispath](/Manual/reference/evaluator/ispath.md)</td><td>
+[IsLower](/Manual/reference/evaluator/islower.md)</td><td>
 
-[ispunct](/Manual/reference/evaluator/ispunct.md)
+[IsParent](/Manual/reference/evaluator/isparent.md)
 </td></tr><tr><td>
 
-[isselected](/Manual/reference/evaluator/isselected.md)</td><td>
+[IsPath](/Manual/reference/evaluator/ispath.md)</td><td>
 
-[isset](/Manual/reference/evaluator/isset.md)</td><td>
+[IsPunct](/Manual/reference/evaluator/ispunct.md)</td><td>
 
-[isspace](/Manual/reference/evaluator/isspace.md)</td><td>
+[IsSelected](/Manual/reference/evaluator/isselected.md)</td><td>
 
-[isupper](/Manual/reference/evaluator/isupper.md)
+[IsSet](/Manual/reference/evaluator/isset.md)
 </td></tr><tr><td>
 
-[keydown](/Manual/reference/evaluator/keydown.md)</td><td>
+[IsSpace](/Manual/reference/evaluator/isspace.md)</td><td>
 
-[languagestr](/Manual/reference/evaluator/languagestr.md)</td><td>
+[IsUpper](/Manual/reference/evaluator/isupper.md)</td><td>
 
-[lcase](/Manual/reference/evaluator/lcase.md)</td><td>
+[KeyDown](/Manual/reference/evaluator/keydown.md)</td><td>
 
-[left](/Manual/reference/evaluator/left.md)
+[LanguageStr](/Manual/reference/evaluator/languagestr.md)
 </td></tr><tr><td>
 
-[len](/Manual/reference/evaluator/len.md)</td><td>
+[LCase](/Manual/reference/evaluator/lcase.md)</td><td>
 
-[makelegal](/Manual/reference/evaluator/makelegal.md)</td><td>
+[Left](/Manual/reference/evaluator/left.md)</td><td>
 
-[match](/Manual/reference/evaluator/match.md)</td><td>
+[Len](/Manual/reference/evaluator/len.md)</td><td>
 
-[max](/Manual/reference/evaluator/max.md)
+[MakeLegal](/Manual/reference/evaluator/makelegal.md)
 </td></tr><tr><td>
 
-[mid](/Manual/reference/evaluator/mid.md)</td><td>
+[Match](/Manual/reference/evaluator/match.md)</td><td>
 
-[min](/Manual/reference/evaluator/min.md)</td><td>
+[Max](/Manual/reference/evaluator/max.md)</td><td>
 
-[now](/Manual/reference/evaluator/now.md)</td><td>
+[Mid](/Manual/reference/evaluator/mid.md)</td><td>
 
-[output](/Manual/reference/evaluator/output.md)
+[Min](/Manual/reference/evaluator/min.md)
 </td></tr><tr><td>
 
-[parent](/Manual/reference/evaluator/parent.md)</td><td>
+[Now](/Manual/reference/evaluator/now.md)</td><td>
 
-[pathtype](/Manual/reference/evaluator/pathtype.md)</td><td>
+[Output](/Manual/reference/evaluator/output.md)</td><td>
 
-[pow](/Manual/reference/evaluator/pow.md)</td><td>
+[Parent](/Manual/reference/evaluator/parent.md)</td><td>
 
-[radtodeg](/Manual/reference/evaluator/radtodeg.md)
+[PathType](/Manual/reference/evaluator/pathtype.md)
 </td></tr><tr><td>
 
-[regex](/Manual/reference/evaluator/regex.md)</td><td>
+[Pow](/Manual/reference/evaluator/pow.md)</td><td>
 
-[regexs](/Manual/reference/evaluator/regexs.md)</td><td>
+[RadToDeg](/Manual/reference/evaluator/radtodeg.md)</td><td>
 
-[replace](/Manual/reference/evaluator/replace.md)</td><td>
+[RegEx](/Manual/reference/evaluator/regex.md)</td><td>
 
-[resolve](/Manual/reference/evaluator/resolve.md)
+[RegExS](/Manual/reference/evaluator/regexs.md)
 </td></tr><tr><td>
 
-[reverse](/Manual/reference/evaluator/reverse.md)</td><td>
+[Replace](/Manual/reference/evaluator/replace.md)</td><td>
 
-[round](/Manual/reference/evaluator/round.md)</td><td>
+[Resolve](/Manual/reference/evaluator/resolve.md)</td><td>
 
-[right](/Manual/reference/evaluator/right.md)</td><td>
+[Reverse](/Manual/reference/evaluator/reverse.md)</td><td>
 
-[root](/Manual/reference/evaluator/root.md)
+[Right](/Manual/reference/evaluator/right.md)
 </td></tr><tr><td>
 
-[running](/Manual/reference/evaluator/running.md)</td><td>
+[Round](/Manual/reference/evaluator/round.md)</td><td>
 
-[select](/Manual/reference/evaluator/select.md)</td><td>
+[Rnd](/Manual/reference/evaluator/rnd.md)</td><td>
 
-[sin](/Manual/reference/evaluator/sin.md)</td><td>
+[Root](/Manual/reference/evaluator/root.md)</td><td>
 
-[space](/Manual/reference/evaluator/space.md)
+[Running](/Manual/reference/evaluator/running.md)
 </td></tr><tr><td>
 
-[stem](/Manual/reference/evaluator/stem.md)</td><td>
+[Select](/Manual/reference/evaluator/select.md)</td><td>
 
-[strcmp](/Manual/reference/evaluator/strcmp.md)</td><td>
+[Sin](/Manual/reference/evaluator/sin.md)</td><td>
 
-[string](/Manual/reference/evaluator/string.md)</td><td>
+[Space](/Manual/reference/evaluator/space.md)</td><td>
 
-[sqrt](/Manual/reference/evaluator/sqrt.md)
+[Stem](/Manual/reference/evaluator/stem.md)
 </td></tr><tr><td>
 
-[swap](/Manual/reference/evaluator/swap.md)</td><td>
+[StrCmp](/Manual/reference/evaluator/strcmp.md)</td><td>
 
-[sysinfo](/Manual/reference/evaluator/sysinfo.md)</td><td>
+[String](/Manual/reference/evaluator/string.md)</td><td>
 
-[tan](/Manual/reference/evaluator/tan.md)</td><td>
+[Sqrt](/Manual/reference/evaluator/sqrt.md)</td><td>
 
-[trim](/Manual/reference/evaluator/trim.md)
+[Swap](/Manual/reference/evaluator/swap.md)
 </td></tr><tr><td>
 
-[truncate](/Manual/reference/evaluator/truncate.md)</td><td>
+[SysInfo](/Manual/reference/evaluator/sysinfo.md)</td><td>
 
-[typeof](/Manual/reference/evaluator/typeof.md)</td><td>
+[Tan](/Manual/reference/evaluator/tan.md)</td><td>
 
-[ucase](/Manual/reference/evaluator/ucase.md)</td><td>
+[Trim](/Manual/reference/evaluator/trim.md)</td><td>
 
-[urlencode](/Manual/reference/evaluator/urlencode.md)
+[Truncate](/Manual/reference/evaluator/truncate.md)
 </td></tr><tr><td>
 
-[val](/Manual/reference/evaluator/val.md)
+[TypeOf](/Manual/reference/evaluator/typeof.md)</td><td>
+
+[UCase](/Manual/reference/evaluator/ucase.md)</td><td>
+
+[UrlEncode](/Manual/reference/evaluator/urlencode.md)</td><td>
+
+[Val](/Manual/reference/evaluator/val.md)
 </td></tr></tbody>
 </table>
-
 

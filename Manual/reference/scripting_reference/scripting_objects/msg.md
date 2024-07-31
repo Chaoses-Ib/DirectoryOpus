@@ -50,6 +50,8 @@ Returns the name of the control involved in the event. You can get a **[Control]
 - For a **tab** event this tells you which monitored tab the event occurred in (either the ID you assigned in the **[Dialog](dialog.md).WatchTab** method, or the numeric handle of the tab if you didn't assign an ID).
 - For a **dirchange** event this tells you which watcher detected a file or folder change (the ID you assigned via the **[Dialog](dialog.md).WatchDir** method).
 - If you have added an icon to the taskbar via the **[Dialog](dialog.md).NotifyIcon** method, **notifyicon** indicates an event associated with that icon.
+- For a **http** event this tells you the ID of the [HTTPRequest](httprequest.md) object.
+- For a **custom** message, this provides the name of the message.
 </td></tr><tr><td>
 cx</td><td>
 
@@ -78,6 +80,12 @@ For a three-state *check box*: If the event type is **click**, returns an *int* 
 If the event type is **timer**, this value indicates the number of milliseconds that have elapsed since the last time this timer was triggered.
 
 If the event type is **tab**, and the **value** property is set to **filechange**, this indicates which file change events occurred in the monitored tab. **1** = add, **2** = delete, **4** = change. The values will be added together (so e.g. **6** indicates at least one item was changed and at least one was deleted).
+
+For a **http** event, this value contains the event status code. The **value** property provides the same information as a keyword.
+
+For a **color** event from a palette control, this will be `0` for an intermediate color change (e.g. the user has the palette open and is clicking around within it) and 1 for final changes (when the palette window closes).
+
+For a **custom** message sent from another script, this may be the optional numeric parameter that can be sent with the message. Scripts can also send a container object like a **[Map](map.md)** and this will be found in the **object** property instead.
 </td></tr><tr><td>
 dialog</td><td>
 
@@ -103,11 +111,15 @@ Returns a string indicating the event that occurred. Currently defined events ar
 | **editchange** | The contents of an edit field were modified. For a list view this event indicates that the label of a list item was edited.                                                                                                                                                                                                               |
 | **focus**      | The control gained or lost focus.                                                                                                                                                                                                                                                                                                         |
 | **hotkey**     | A key combination added as a hotkey with the **[Dialog](dialog.md).AddHotkey** method has been pressed.                                                                                                                                                                                                                                      |
+| **http**       | An event associated with a [HTTPRequest](httprequest.md) has occurred.                                                                                                                                                                                                                                                                       |
 | **resize**     | The dialog was resized by the user. Only generated if the **[Dialog](dialog.md).want_resize** property has been set to **True**. Don't mix manual and automatic resizing with the same control: If you move or resize a control in response to this event, the control should not have any of the **resize** flags set in the dialog editor. |
-| **rclick**     | An item in the list was right-clicked (list box, list view) or the control was right-clicked (static control with ***Notify Clicks** *property enabled).                                                                                                                                                                                  |
+| **rclick**     | An item in the list was right-clicked (list box, list view) or the control was right-clicked (static control with ***Notify Clicks** *property enabled, or button control with the ***Right Button*** property enabled).                                                                                                                  |
 | **selchange**  | The selection was changed (list box, combo box, list view or tab).                                                                                                                                                                                                                                                                        |
 | **timer**      | A periodic timer created with the **[Dialog](dialog.md).SetTimer** method has elapsed.                                                                                                                                                                                                                                                       |
 | **tab**        | An event has occurred in a tab monitored using the **[Dialog](dialog.md).WatchTab** method.                                                                                                                                                                                                                                                  |
+| **color**      | A new color has been chosen in a palette control.                                                                                                                                                                                                                                                                                         |
+| **clipboard**  | Sent whenever the system clipboard contents change, once monitoring has been enabled with the **[Dialog](dialog.md).WatchClipboard** method.                                                                                                                                                                                                 |
+| **custom**     | A custom message sent from another script. The message name can be found in the **name** property.                                                                                                                                                                                                                                        |
 </td></tr><tr><td>
 focus</td><td>
 
@@ -131,11 +143,19 @@ mousey</td><td>
 *int*</td><td>
 Returns the vertical position of the mouse cursor when the message was generated.
 </td></tr><tr><td>
+name</td><td>
+
+*string*</td><td>
+
+An alias for the **control** property.
+</td></tr><tr><td>
 object</td><td>
 
 *variant*</td><td>
 
 For a **drop** event, this property returns a **[Vector](vector.md)** of **[Item](item.md)** objects, representing the files that were dropped onto your dialog.
+
+For a **custom** message sent from another script, this may be the optional container object (e.g. a **[Map](map.md)**) that can be sent with the message. Scripts can also send a numeric parameter and this will be found in the **data** property instead.
 </td></tr><tr><td>
 qualifiers</td><td>
 
@@ -172,6 +192,10 @@ For the **tab** event, indicates which event occurred in the monitored tab. Pos
 For the **drag** event, this indicates which button is being used to drag (**left** or **right**).
 
 For a **click** event from a markup text control, this indicates the ID of the clicked link.
+
+For a **http** event, this indicates the current http status code.
+
+For a **color** event from a palette control, this will be the selected color as either a hex or decimal string (depending on the control property). If the palette button's checkbox is disabled, this will be prefixed by a `!` character.
 </td></tr></tbody>
 </table>
 

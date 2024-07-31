@@ -100,7 +100,7 @@ Backup everything (equivalent to **BACKUP=images,sounds,data,localstate**).
 
 **notabs**</td><td>
 
-(Opus 13.3.1 and above.) Exclude currently open windows and tabs from the backup. (Only relevant if local state is being backed up.)
+Exclude currently open windows and tabs from the backup. (Only relevant if local state is being backed up.)
 
 *Example:* `Prefs BACKUP=all,notabs TO="/desktop/PrefsBackup"`
 </td></tr><tr><td>

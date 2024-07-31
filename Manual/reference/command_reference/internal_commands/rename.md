@@ -311,7 +311,7 @@ By default, when **NOMATCHNOFAIL** is not used, if a file does not match the ren
 
 If **NOMATCHNOFAIL** is used then files which do not match the rename pattern are still passed to subsequent commands.
 
-*Example:* `Rename PATTERN "* Backup"*" TO"*"* NOMATCHNOFAIL`
+*Example:* `Rename PATTERN "* Backup.*" TO *.* NOMATCHNOFAIL`
 </td></tr><tr><td>
 NUMBER</td><td>
 /O</td><td>
@@ -350,7 +350,7 @@ See the section on [Renaming Files](/Manual/file_operations/renaming_files/READM
 
 Specifying the **FROM** argument as well will mean the command ignores the current file selection and applies the specified rename on all matching files. Only files matching both the TO and PATTERN arguments would be renamed.
 
-*Example:* `Rename FROM *.jpg PATTERN IMGP( *).jpg TO "Image \1.jpg" REGEXP`
+*Example:* `Rename FROM *.jpg PATTERN IMGP(.*).jpg TO "Image \1.jpg" REGEXP`
 
 If the **PATTERN** and **TO** arguments are both given, the command will normally apply the rename immediately, without prompting for any further interaction; you can add the **ADVANCED** argument to instead display the Rename dialog, with the specified pattern, so that you can preview the operation and make adjustments, or cancel it entirely, as needed.
 
@@ -455,8 +455,8 @@ Keeps files with the same stem and different extensions together when renumberin
 SCRIPTARG</td><td>
 /K/M</td><td>
 
-*\<option:value\>,  
-\[\<option:value\>,..\]*</td><td>
+*\<option:value\>  
+\[\<option:value\>...\]*</td><td>
 
 Used to pass custom field values to a [rename script](/Manual/scripting/rename_scripts/README.md).
 

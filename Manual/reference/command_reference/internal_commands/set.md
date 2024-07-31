@@ -95,7 +95,7 @@ AUTOSIZECOLUMNS</td><td>
 
 *(no value)*</td><td>
 
-Automatically resizes all columns in the source file display (applies to details and power modes only). This is a one-off width change based on the current column contents, as opposed to setting the columns into autosize mode like the **AUTOSIZE** argument would do. Another difference is that this will not override columns with maximum widths set, nor ones set to *Collapse*, and so on.
+Automatically resizes all columns in the source file display (applies to details and power modes only). This is a one-off width change based on the current column contents, as opposed to setting the columns into autosize mode like the **AUTOSIZE** argument would do. Another difference is that this will not normally override columns with maximum widths set (although you can use the **override** flag to allow this), nor ones set to *Collapse*, and so on.
 
 *Example:* `Set AUTOSIZECOLUMNS`
 </td></tr><tr><td>
@@ -152,6 +152,55 @@ Resizes all columns in the file display that currently has input focus. (This is
 Resizes the columns on both sides of a dual display Lister, setting the columns on both sides to the same width (the widest of the two).
 
 *Example:* `Set AUTOSIZECOLUMNS=widest`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**col:*column***</td><td>
+
+Resizes only the specified column rather than all columns. You can specify more than one column, and the other options shown above can also be used in conjunction.
+
+*Example:* `Set AUTOSIZECOLUMNS=col:name,col:desc,both`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**override**</td><td>
+
+Overrides any minimum and maximum limits for the widths of the columns being resized.
+
+*Example:* `Set AUTOSIZECOLUMNS=col:name,override`
+</td></tr><tr><td>
+BACKGROUNDIMAGE</td><td>
+/K/M</td><td>
+
+*\<type\>:\<file\>*</td><td>
+
+Sets the background image for one or more Lister elements to the specified filename.
+
+*type* can be one of the following strings: **filedisplay**, **tabs**, **tree**, **metapane**, **status**, **toolbars**, **viewerpane**, **all**.
+
+1.  If *type* isn't specified, **filedisplay** is the default.
+2.  If *filename* isn't specified, any existing image is removed.
+
+This is a **/M** argument, so can accept multiple values if you want to set more than one image at once (or, use `all:` to set all images).
+
+*Example:* `Set BACKGROUNDIMAGE "filedisplay:/mypictures/butterfly-tile.png"`
+</td></tr><tr><td>
+BACKGROUNDIMAGEOPTS</td><td>
+/K</td><td>
+
+*\<options\>*</td><td>
+
+Specify one or more comma-separated options for the background image when changing it with the `BACKGROUNDIMAGE` argument.
+
+1.  Options that specify the placement of images are: **tiled**, **stretch**, **aspectfit**, **aspectfill**, **aspecttile**, **topleft**, **topright**, **bottomleft**, **bottomright**, **center** (only one can be specified).
+2.  The **shared** option indicates that images should be shared across the entire Lister.
+3.  **opacity:** can be used to set the image opacity (e.g. `opacity:50`)
+4.  **fillcolor:** can specify a fill color for transparent images (e.g. `fillcolor:#ff8000`).
+5.  **nofade** prevents the cross-fade effect when changing images.
+
+*Example:* `Set BACKGROUNDIMAGE all:/mypictures/butterfile-tile.png BACKGROUNDIMAGEOPTS=tiled,shared,opacity:75`
 </td></tr><tr><td>
 BLURFILENAMES</td><td>
 /K</td><td>
@@ -1200,6 +1249,15 @@ Gives focus to the [Metadata pane](/Manual/basic_concepts/the_lister/metadata_pa
 </td><td>
 </td><td>
 
+**utilitypane**</td><td>
+
+(Opus 13.9.1 and above.) Sets the focus to the [utility pane](/Manual/basic_concepts/the_lister/utility_panel.md).
+
+*Example:* `Set FOCUS=utilitypane`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
 **viewpane**</td><td>
 
 Sets the focus to the [viewer pane](/Manual/basic_concepts/the_lister/viewer_pane.md).
@@ -1306,6 +1364,15 @@ Only adjusts the font for Thumbnails mode.
 Adjusts the font for both Details/Power modes and Thumbnails mode.
 
 *Example:* `Set FONTSCALE=+50,thumbnails`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**quiet**</td><td>
+
+Prevents a message displaying in response to the font scale changing.
+
+*Example:* `Set FONTSCALE=+25,quiet`
 </td></tr><tr><td>
 FORMAT</td><td>
 /K</td><td>
@@ -1577,6 +1644,15 @@ Only affects the setting for Power mode, irrespective of the current view mode.
 Only affects the setting for details mode.
 
 *Example:* `Set FULLROWSELECT=on,details`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**display**</td><td>
+
+When turning off full-row selection, the "always highlight full row" setting will be turned on. Has no effect if full-row selection is being turned on.
+
+*Example:* `Set FULLROWSELECT=toggle,display`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -2277,6 +2353,96 @@ Turns off display of thumbnails-mode aspect ratio bars.
 Toggles display of thumbnails-mode aspect ratio bars on or off.
 
 *Example:* `Set IMAGEASPECTOVERLAYS=toggle`
+</td></tr><tr><td>
+INFOTIPS</td><td>
+/K</td><td>
+
+**on**</td><td>
+
+Turns on file info tips. This modifies the options on the **[File Displays / Options / Info Tips](/Manual/preferences/preferences_categories/file_displays/options/info_tips.md)** page in Preferences.
+
+*Example:* `Set INFOTIPS=on`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**off**</td><td>
+
+Turns off file info tips.
+
+*Example:* `Set INFOTIPS=off`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**toggle**</td><td>
+
+Toggles file info tips on or off.
+
+*Example:* `Set INFOTIPS=toggle`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**allmodes**</td><td>
+
+Enables info tips for all display modes. Combine with `on`/`toggle`.
+
+*Example:* `Set INFOTIPS=toggle,allmodes`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**details**</td><td>
+
+Enables info tips for details mode only. Combine with `on`/`toggle`.
+
+*Example:* `Set INFOTIPS=toggle,details`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**icons**</td><td>
+
+Enables info tips for icon modes only. Combine with `on`/`toggle`.
+
+*Example:* `Set INFOTIPS=toggle,icons`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**allfolders**</td><td>
+
+Enables info tips for all types of folder.
+
+*Example:* `Set INFOTIPS=allfolders`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**network**</td><td>
+
+Enables info tips for network and local drives.
+
+*Example:* `Set INFOTIPS=network`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**local**</td><td>
+
+Enables info tips for local drives only.
+
+*Example:* `Set INFOTIPS=local`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**fixed**</td><td>
+
+Enables info tips for fixed local drives only.
+
+*Example:* `Set INFOTIPS=fixed`
 </td></tr><tr><td>
 INVERT</td><td>
 /S</td><td>
@@ -3027,6 +3193,24 @@ Turns off the "partial matching" option, overriding the global Preferences setti
 
 *Example:* `Set QUICKFILTERFLAGS=partialoff`
 </td></tr><tr><td>
+</td><td>
+</td><td>
+
+**evalon**</td><td>
+
+Turns on the "evaluator" option, overriding the global Preferences setting.
+
+*Example:* `Set QUICKFILTERFLAGS=evalon`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**evaloff**</td><td>
+
+Turns off the "evaluator" option, overriding the global Preferences setting.
+
+*Example:* `Set QUICKFILTERFLAGS=evaloff`
+</td></tr><tr><td>
 READONLY</td><td>
 /K</td><td>
 
@@ -3354,7 +3538,7 @@ The supplied pattern can be prefixed with **regex:** to specify the pattern is a
 
 If the specified pattern is already set as the filter, it will be cleared, making the command work as a toggle automatically.
 
-*Example:* `Set SHOWFILTERFOLDERS "* Reports"*"`
+*Example:* `Set SHOWFILTERFOLDERS "* Reports *"`
 </td></tr><tr><td>
 SHOWMILLIS</td><td>
 /K</td><td>
@@ -4063,6 +4247,80 @@ In a dual-display window, makes both tab bars the same width as the widest one.
 
 *Example:* `Set TABWIDTH=widest`
 </td></tr><tr><td>
+THUMBNAILBORDERS</td><td>
+/K</td><td>
+
+**on**</td><td>
+
+Turns the display of thumbnail borders on. This is a global setting - it modifies the state of the option on the **[Directory Opus Colors / Borders](/Manual/preferences/preferences_categories/colors_and_fonts/directory_opus_colors.md)** page in Preferences.
+
+The Preferences page has four separate options, for the display modes thumbnails, tiles, details and power. By default this command modifies the thumbnails mode setting - but keywords can be used to change the setting for other modes, or for all modes.
+
+*Example:* `Set THUMBNAILBORDERS=on`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**off**</td><td>
+
+Turns thumbnail borders off.
+
+*Example:* `Set THUMBNAILBORDERS=off`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**toggle**</td><td>
+
+Toggles thumbnail borders on and off.
+
+*Example:* `Set THUMBNAILBORDERS=toggle`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**thumbnails**</td><td>
+
+Affects the border setting for thumbnails mode. This is the default if no other mode is specified.
+
+*Example:* `Set THUMBNAILBORDERS=toggle,thumbnails,tiles`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**tiles**</td><td>
+
+Affects the setting for tiles mode.
+
+*Example:* `Set THUMBNAILBORDERS=tiles,on`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**details**</td><td>
+
+Affects the setting for details mode (when the Thumbnail column is visible).
+
+*Example:* `Set THUMBNAILBORDERS=toggle,details`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**power**</td><td>
+
+Affects the setting for power mode.
+
+*Example:* `Set THUMBNAILBORDERS=power,details,off`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**all**</td><td>
+
+Changes the setting for all modes.
+
+*Example:* `Set THUMBNAILBORDERS=toggle,all`
+</td></tr><tr><td>
 THUMBNAILLABELS</td><td>
 /K</td><td>
 
@@ -4410,6 +4668,15 @@ If the utility panel is in a shrunken state, this argument in conjunction with *
 When used with **toggle** (or other keywords that turn the panel on), **noexpand** prevents the utility panel from being expanded if it was previously saved in a shrunken state. That is, it will turn on but remain shrunken.
 
 *Example:* `Set UTILITY=find,toggle,noexpand`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**float**</td><td>
+
+When used with modes that support it, lets you turn on the panel and float it as a separate window with a single command.
+
+*Example:* `Set UTILITY=scriptlog,toggle,float`
 </td></tr><tr><td>
 VIEW</td><td>
 /K</td><td>

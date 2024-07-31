@@ -169,7 +169,18 @@ Paths may use aliases, environment variables, {apppath} codes, and so on, only w
 
 @eval  
 @evalalways</td><td>
-TOBEDONE
+
+Runs [Evaluator](/Manual/evaluator/README.md) code as part of a dynamic test, and optionally as part of the command itself. Typically you would use this to set Evaluator variables which can be used on later lines in the command.
+
+- Code after `@eval:` is only run when dynamically updating the button's label, visibility and enabled/disabled state. It's not run when the button is clicked.
+- Code after `@evalalways:` also runs when the button is clicked. This lets you set up variables which are used both when executing commands and, e.g. also when updating their labels.
+
+In this example, the `type` value is initialised once in the top line, and then referred to multiple times in the subsequent lines.
+
+    @eval:type = PathType(source);
+    fIsFileSystem = (type == "shell" || type == "filesys")
+    @showif:=fIsFileSystem
+    @label:fIsFileSystem ? ("Open " + FilePart(DisplayName(source)) + " in Explorer") : ("Disabled (" + type + ")")
 </td></tr><tr><td>
 @externalonly</td><td>
 
@@ -223,7 +234,7 @@ This directive is only used within an [embedded function](/Manual/customize/crea
 
 The **@hideblock** modifier lets you use the various other modifiers to hide or show multiple buttons at once, without having to repeat the tests in each button.
 
-Use **@hideblock:begin** on a button to begin the block, along with whichever other modifiers are appropriate. The buttons within the block will be hidden or shown depending on the the state of the the first button. For example,
+Use **@hideblock:begin** on a button to begin the block, along with whichever other modifiers are appropriate. The buttons within the block will be hidden or shown depending on the state of the first button. For example,
 
     @hideif:!Set VIEW=Thumbnails
     @hideblock:begin
@@ -570,6 +581,14 @@ The new behaviour would be to first display the **About** dialog, and then open 
 |                 |                                                             |
 |-----------------|-------------------------------------------------------------|
 | **@norunbatch** | *do not split batch functions because of internal commands* |
+</td></tr><tr><td>
+@output</td><td>
+
+Outputs all text on the rest of the line to the Script Log. Useful for debugging. The output can also be viewed in the Command Editor when its \*Run With Logging\* mode is on.
+
+|                           |                                       |     |
+|---------------------------|---------------------------------------|-----|
+| **@output** *\<message\>* | *sends \<message\> to the Script Log* |     |
 </td></tr><tr><td>
 @perfile</td><td>
 

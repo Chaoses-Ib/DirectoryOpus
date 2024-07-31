@@ -12,6 +12,11 @@
 | **SystemDPI**    | returns the DPI that the system is currently running in (e.g. 96 DPI is 100% scaling). This will normally be the same as the **DPI** value, but if the system DPI has been changed and Opus has not been restarted they can be different. |
 | **TouchInput**   | returns **True** if Windows is in tablet mode                                                                                                                                                                                             |
 | **USBInstall**   | returns **True** if Opus is running from a USB export                                                                                                                                                                                     |
+| **Version**      | returns the full Opus version string                                                                                                                                                                                                      |
+| **VerHigh**      | returns the major ("high") Opus version number (e.g. 13)                                                                                                                                                                                  |
+| **VerLow**       | returns the minor ("low") Opus version number (e.g. 6)                                                                                                                                                                                    |
+| **VerBeta**      | returns the Opus beta release number (or 0 for stable releases)                                                                                                                                                                           |
+| **VerBuild**     | returns the current build number                                                                                                                                                                                                          |
 
 \</evalcmd\>
 

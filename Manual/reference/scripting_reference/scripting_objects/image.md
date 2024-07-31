@@ -18,6 +18,11 @@ height</td><td>
 *int*</td><td>
 Returns the height of the loaded image.
 </td></tr><tr><td>
+type</td><td>
+
+*string*</td><td>
+Returns the type of file the image was loaded or created from (if known).
+</td></tr><tr><td>
 width</td><td>
 
 *int*</td><td>

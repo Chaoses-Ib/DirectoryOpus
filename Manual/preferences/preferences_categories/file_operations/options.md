@@ -10,13 +10,17 @@ This page contains miscellaneous options relating to file operations.
 
 ### Use template when creating shortcuts
 
-This template is used to define the new name of a shortcut to an existing file or folder (for example, when you drag & drop a file with the right button and choose *Create Shortcut Here* from the context menu). You can use two codes in the template string to insert information:
+This template is used to define the new name of a shortcut to an existing file or folder (for example, when you drag & drop a file with the right button and choose *Create Shortcut Here* from the context menu). You can use these codes in the template string to insert information:
 
 - **%1**: Inserts the original file name.
 - **%2**: Inserts the shortcut count in brackets (if greater than one).
+- **%3**: Inserts the shortcut count without brackets.
+- **%%**: Inserts a literal `%` character.
 
 For example, the default template is `%1 - Shortcut %2`. Say you pick a file "Document.txt" and make a shortcut to it.
 
 The first shortcut in that location has a "shortcut count" of 1, which is not shown - so `%2` will expand to nothing. The first shortcut's name would be <nobr>`Document - Shortcut.lnk`</nobr>.
 
 If you make a second shortcut, the count would be 2, and the new filename would be <nobr>`Document - Shortcut (2).lnk`</nobr>.
+
+You can also use the evaluator to generate a new name - see [Generated File Names](/Manual/evaluator/applicable_contexts/generated_filenames.md) for details.

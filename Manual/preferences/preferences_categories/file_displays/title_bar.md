@@ -20,6 +20,7 @@ Note that when using the **Custom title** option, the **Display full path** and 
 | **%D**     | full path of the destination folder                                                 |
 | **%M**     | name of the destination folder                                                      |
 | **%G**     | target if the folder is a junction or softlink                                      |
+| **%F**     | full path of the most recently selected file or folder                              |
 | **%1**     | full path in the left/top file display                                              |
 | **%2**     | full path in the right/bottom file display                                          |
 | **%3**     | folder name in the left/top file display                                            |

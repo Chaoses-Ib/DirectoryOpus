@@ -22,6 +22,8 @@ This mode is accessed using the **@ctx:** modifier. The command returned by the 
 
 When generating executable commands, the evaluator can also access the values of the various [external control codes](/Manual/reference/command_reference/external_control_codes/README.md) as variables within the expression. For example, the current file path is available as the variable `filepath`.
 
+Quotation marks are stripped by default from values supplied to the evaluator (e.g. `allfilepath` will not put quotes around any of the file paths). To enable quotes to be added, append `#q` to the variable name (e.g. `allfilepath#q`).
+
 The return value from the evaluation expression should be a *str*.
 
 - For executable commands, it will be executed as if it were a line of the function.

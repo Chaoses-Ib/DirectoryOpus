@@ -15,8 +15,6 @@
 
 \</evalcmd\>
 
-(Opus 13.3.4 and above)
-
 Returns the difference between the the current date and the supplied dates, expressed as *units* (defaults to days).
 
 //<Example://>

@@ -13,6 +13,8 @@ config</td><td>
 *object:***[ScriptConfig](scriptconfig.md)**</td><td>
 
 Returns a **[ScriptConfig](scriptconfig.md)** object, that the script can use to initialize its default configuration. Properties added to the object in this method will be displayed to the user in Preferences, allowing them to change their value and thus configure the behavior of the script.
+
+If you want to preserve the order of configuration items, you can replace this object with an **[OrderedMap](orderedmap.md)** by simply assigning the new object to the `config` property.
 </td></tr><tr><td>
 config_desc</td><td>
 

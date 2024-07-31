@@ -21,6 +21,12 @@ All the [status bar codes](/Manual/reference/status_bar_codes/README.md) are ava
 
 Note that some keywords may use characters like a `:` that aren't valid in variable names - to access them, use the [val](/Manual/reference/evaluator/val.md) function.
 </td></tr><tr><td>
+dual</td><td>
+
+*int*</td><td>
+
+Indicates which side of a dual Lister this evaluation clause is being run for. Possible values are `0` (single display), `1` (left/top) and `2` (right/bottom).
+</td></tr><tr><td>
 path</td><td>
 
 *path*</td><td>

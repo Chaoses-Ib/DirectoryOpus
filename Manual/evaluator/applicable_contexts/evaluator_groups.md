@@ -15,7 +15,7 @@ Description
 
 *varies*</td><td>
 
-Most [column keywords](/Manual/reference/metadata_keywords/keywords_for_columns.md) in the **Date and Time**, **Name and Path**, **File Size**, and \*\*General \*\* categories are available as variables in this evaluation context. Note that only basic information intrinsic to the file itself is provided - any columns referring to metadata that needs to be extracted from the file are not supported.
+Most [column keywords](/Manual/reference/metadata_keywords/keywords_for_columns.md) in the **Date and Time**, **Name and Path**, **File Size**, and *\*General *\* categories are available as variables in this evaluation context. Note that only basic information intrinsic to the file itself is provided - any columns referring to metadata that needs to be extracted from the file are not supported.
 </td></tr><tr><td>
 file_name</td><td>
 
@@ -61,6 +61,6 @@ And to place an item in group "A" you might do this:
 
 Group "B" would be sorted before group "A" because its `order` value is lower. The `order` value can be any data type - e.g. if grouping by a date column, you could return `value` as the order to sort the groups in date order.
 
-(Opus 13.3.4 and above) You can also indicate whether groups should be expanded or collapsed by default, by including the `collapse` value in the returned collection. For example:
+You can also indicate whether groups should be expanded or collapsed by default, by including the `collapse` value in the returned collection. For example:
 
     return [ name = "C"; order = 2; collapse = true; ];

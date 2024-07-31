@@ -41,6 +41,7 @@ The options button shows a menu that lets you control how the filter is applied:
 - **Match any word**: Activates "any word" mode, which works kind of like a search engine. A file will match if it contains any of the words you enter. You can prefix a word with `+`, which means it **must** be present, and `-` which means it **must not** be present.
 - **Partial matching**: If this is turned on, words you enter only need to match part of a word to be considered a match. For example, searching for "quint" would match "quintuplet".
 - **Use regular expression**: Lets you specify the search pattern using [regular expressions](/Manual/reference/wildcard_reference/regular_expression_syntax.md). If turned off, the pattern uses the [standard pattern matching syntax](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) instead.
+- **Evaluator**: Lets you use the [Evaluator](/Manual/evaluator/README.md) to perform more complex filtering.
 
 Use the **Save as default** command to save the current settings as the defaults.
 
@@ -56,6 +57,8 @@ The bottom part of the menu lists the file extensions that appear in the current
 
 Select a group or extension from the menu to quickly filter on that type (you can also select more than one at once).
 
+You can display the filetype menu from the keyboard by pressing <kbd>Shift+F5</kbd> when the cursor is on the filter field.
+
 ### Show everything
 
 The **Show everything** option provides a quick toggle for the *[Show Everything](show_everything.md)* mode - a way to temporarily disable filters and display all files and folders in the current folder.
@@ -67,6 +70,17 @@ When the file display you are filtering is in [Flat View mode](../flat_view.md)
 This lets you control whether the filter applies to folders or only to files. When a folder is filtered out of the display in Flat View mode, all files within that folder (and its sub-folders) are also filtered out. This behavior may or may not be desirable and it can be confusing to have a whole lot of files suddenly disappear unexpectedly, which is which this option is available (and off by default).
 
 The default state of this option can be changed by modifying the **flatview_folder_filters** option on the **[Miscellaneous / Advanced](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.md)** page in Preferences.
+
+### Evaluator filtering
+
+With the **Evaluator** option turned on, the Filter Bar uses the [Evaluator](/Manual/evaluator/README.md) to evaluate the expression you provide. This can be used in two ways:
+
+- A direct evaluation clause can be entered (e.g. `size > 2gb`).
+- A [pre-defined filter](/Manual/preferences/preferences_categories/filtering_and_sorting/filters.md) can be referenced using ? (e.g. `?bigfiles` would use a pre-defined filter called "bigfiles")
+
+If the pre-defined filter uses the evaluator as well, the Filter Bar can pass arguments to it. For example, `?bigfiles:5` would pass the value 5 through to the evaluation clause defined in the filter.
+
+See [Evaluator Contexts - Filters and Find](/Manual/evaluator/applicable_contexts/filters_and_find.md) for more information.
 
 ### Using the FAYT for quick filtering
 

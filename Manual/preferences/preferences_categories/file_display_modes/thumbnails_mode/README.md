@@ -16,6 +16,7 @@ If the **Labels** option is turned on, the filename will be displayed below each
 - **Lines**: Specify the maximum number of lines of text that the thumbnail's label can display.
 - **Display date taken in label**: Opus will display the date taken (in the case of digital photos), or the last modified file date, in a smaller font below the thumbnail's label.
 - **Display image and file size in label**: Opus will display the size of the image (and the size of the file) in a smaller font below the thumbnail's label.
+- **Expand thumbnail with focus if name doesn't fit**: When on, the thumbnail with focus (usually the last one selected) will grown larger if needed to display its full name. When off, longer names will always be truncated.
 
   
 ==Overlays==

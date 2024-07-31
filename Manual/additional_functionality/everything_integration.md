@@ -10,7 +10,7 @@ Note that Everything doesn't index file **content**, only basic file metadata.
 
 Currently Directory Opus officially supports version 1.4 of Everything (the current release version as of time of writing is 1.4.1.1024).
 
-Everything 1.5 is currently in "alpha testing", and although it can be configured to also work with Opus, we won't be officially supporting it until its stable release.
+Everything 1.5 is currently in "alpha testing", It can be configured to work with Opus, and many people are using the two together; however, we can't officially support it until its stable release.
 
 > [!NOTE]
 > To use Opus with the Everything 1.5 alpha, you need to set `alpha_instance=0` in the *everything.ini* file. Make sure you restart Everything after changing the ini file.
@@ -33,6 +33,8 @@ On the *Indexes* page, the index settings effect how well the Everything integra
 Although not required by Opus, you can use the *Indexes / Folders* page to add the location of any network drives you'd also like Everything to index.
 
 Finally, we recommend making sure there are no exclusions set on the *Indexes / Exclude* page. While not important for searching, if you want to use Everything in Opus to get fast folder sizes, it's important nothing is left out of the index or else file counts will be inaccurate.
+
+If Everything is already running in the background, Opus should find it automatically. You can also configure Opus to launch Everything the first time it is needed, if you have Everything configured not to launch at Windows startup, via the `﻿everything_autolaunch` setting in [Preferences / Miscellaneous / Advanced](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.md).
 
 ### Fast folder sizes
 

@@ -48,7 +48,9 @@ This argument can also be used when pasting the clipboard contents as an archive
 
 When pasting image or text data to a file, this argument causes Opus to prompt you for a name for the created file. For text you can also choose the encoding type and in the case of image data, the image format to use.
 
-![](/Manual/images/media/paste_as.png)This argument can also be used when pasting the clipboard contents as an archive (e.g. with **Clipboard PASTE=7z**). In this case you will be prompted for the name of the new archive and any archive format-specific parameters.
+![](/Manual/images/media/paste_as.png)
+
+This argument can also be used when pasting the clipboard contents as an archive (e.g. with **Clipboard PASTE=7z**). In this case you will be prompted for the name of the new archive and any archive format-specific parameters.
 
 The **Shrink image to compensate for system DPI** option will scale the pasted image down if your system DPI is higher than 100%.
 
@@ -356,9 +358,18 @@ Lets you specify two alternate parameters for the **COPYQUEUE** argument. The va
 
 **quiet**</td><td>
 
-Specify the **quiet** keyword to suppress the prompt that normally indicates a copy operation has been queued.
+Specify the **quiet** keyword to suppress the prompt that normally indicates a copy operation has been queued. (Opus 13.9.1 and above: You can also turn off *Display confirmation when a job is queued* in Preferences.)
 
 *Example:* `Clipboard PASTE COPYQUEUE=MyQueue,quiet`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**noisy**</td><td>
+
+(Opus 13.9.1 and above.) Specify the **noisy** keyword to always show a prompt indicating a copy operation has been queued, even if *Display confirmation when a job is queued* is off in Preferences.
+
+*Example:* `Clipboard PASTE COPYQUEUE=MyQueue,noisy`
 </td></tr><tr><td>
 CUT</td><td>
 /S</td><td>
@@ -448,7 +459,7 @@ Supported encoding types are **oem**, **ansi**, **utf8**, **utf8nobom**, **utf16
 
 **jpg**</td><td>
 
-Forces image data on the clipboard to be pasted in JPEG format (overriding the Preferences default setting). You can also specify the JPEG image quality.
+Forces image data on the clipboard to be pasted in JPEG format (overriding the Preferences default setting). You can optionally specify the JPEG image quality, as a value from 1 to 100.
 
 *Example:* `Clipboard PASTE=jpg:85`
 </td></tr><tr><td>
@@ -457,9 +468,9 @@ Forces image data on the clipboard to be pasted in JPEG format (overriding the P
 
 **png**</td><td>
 
-Pastes image data in PNG format.
+Pastes image data in PNG format. You can optionally specify the PNG compression level, as a value from 1 to 6.
 
-*Example:* `Clipboard PASTE=png`
+*Example:* `Clipboard PASTE=png:4`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -642,9 +653,13 @@ When the **save** argument is specified this lets you configure the name to save
 
 **quality**</td><td>
 
-When the save argument is specified and the screenshot is saved as a jpeg image, this lets you specify the quality of the compressed image.
+When the save argument is specified and the screenshot is saved as a jpeg image, this lets you specify the quality of the compressed image (as a value from 1 to 100).
 
 *Example:* `Clipboard SCREENSHOT=save,format:jpg,quality:85`
+
+If the screenshot is saved as a PNG image, you can use this to control the compression level (as a value from 1 to 6).
+
+*Example:* `Clipboard SCREENSHOT=save,format:png,quality:4`
 </td></tr><tr><td>
 </td><td>
 </td><td>

@@ -3,6 +3,7 @@
 This page contains various options that let you adjust the behavior of File Displays.
 
 - **Automatically select first file in folder**: When navigating to a new folder, this option causes the first item in the list to be selected automatically. This option does not apply to Power mode file displays - there is a separate option for them on the [Power Mode](../file_display_modes/power_mode/README.md) page.
+- **Clear quick filter with the <kbd>Esc</kbd> key**: Lets you disable the built-in behaviour if you don't want pressing <kbd>Esc</kbd> to clear the quick filter.
 - **Reset focus entry when sorting file list**: Turn this on if you don't want the file display to scroll when you change how it is sorted (e.g. by clicking a column header). With this option off, sorting causes the file display to scroll so the file which had focus before the change remains visible in its new position. With this option on, the file display does not scroll and instead gives focus to whichever file ends up in where the previous file with focus was.
     If the file with focus had been scrolled out of view before the change, it will be ignored and focus will reset to the top visible item. As an example, if you scroll to the top of the file display, click the 5th item down, then sort by date: If the option is on, you will still be at the top of the file display, and focus will be on whatever is the new 5th item down. If the option is off, focus will be on the same file as before and the file display will scroll to ensure it is still visible.
 

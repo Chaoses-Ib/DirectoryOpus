@@ -179,7 +179,8 @@ Clears any modifiers that have been set for this command. The supported modifier
 </td></tr><tr><td>
 CommandList</td><td>
 
-*none\\* or \<string:types\></td><td>
+*none*  
+or \<string:types\></td><td>
 
 *object:***[StringSet](stringset.md)**</td><td>
 
@@ -235,6 +236,13 @@ Run</td><td>
 
 Runs the command that has been built up with this object. The return value indicates whether or not the command ran successfully. Zero indicates the command could not be run or was aborted; any other number indicates the command was run for at least some files. (Note that this is not the "exit code" for external commands. For external commands it only indicates whether or not Opus launched the command. If you need the exit code of an external command, use the WScript.Shell Run or Exec methods to run the command.) You can use the **Results** property to find out more information about the results of the command, and also discover which files (if any) failed using the **failed** property of each **[Item](item.md)** in the **files** collection.
 </td></tr><tr><td>
+RunAsync</td><td>
+
+*none*</td><td>
+
+*int*</td><td>
+Asynchronously runs the command that has been built up with this object, without waiting for it to return. The return value indicates whether or not the command was launched successfully, but no further information about the results of the command is available.
+</td></tr><tr><td>
 RunCommand</td><td>
 
 \<string:instruction\></td><td>
@@ -242,6 +250,14 @@ RunCommand</td><td>
 *int*</td><td>
 
 Runs the single line command given by the *instruction* argument. Calling this method is the equivalent of adding the single line with the **AddLine** method and then calling the **Run** method.
+</td></tr><tr><td>
+RunCommandAsync</td><td>
+
+\<string:instruction\></td><td>
+
+*int*</td><td>
+
+Asynchronously runs the single line command given by the *instruction* argument, without waiting for it to return. Calling this method is the equivalent of adding the single line with the **AddLine** method and then calling the **RunAsync** method.
 </td></tr><tr><td>
 SetDest</td><td>
 
@@ -282,7 +298,7 @@ SetModifier</td><td>
 *none*</td><td>
 
 Turns on a modifier for this command. The supported modifiers are a subset of the full list of [command modifiers](../../command_reference/command_modifier_reference.md):  
-**admin**, **codepage**, **externalonly**, **leavedoswindowopen**, **nodeselect**, **noexpandenv**, **nofilenamequoting**, **nolocalizefiles**, **noprogress**, **norunbatch**, **resolvelinks**, **runmode**.
+**admin**, **async**, **codepage**, **externalonly**, **leavedoswindowopen**, **nodeselect**, **noexpandenv**, **nofilenamequoting**, **nolocalizefiles**, **noprogress**, **norunbatch**, **resolvelinks**, **runmode**.
 
 Using this method is the equivalent of using the **AddLine** method to add the modifier to the command as an instruction; e.g. **Command.SetModifier("admin")** is the same as **Command.AddLine("@admin")**. If the modifier requires a value it is passed as the second argument, e.g. **Command.SetModifier("runmode", "hide")**.
 </td></tr><tr><td>

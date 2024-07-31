@@ -34,3 +34,7 @@ You can also specify a minimum version for the include file. This only works if 
 `@include inc_myutils.js:1.2`
 
 You can also select include files from the [script editor](/Manual/scripting/script_editor/README.md).
+
+Note: Opus also accepts the following format to specify include files:
+
+`//@@include inc_myutils.js`

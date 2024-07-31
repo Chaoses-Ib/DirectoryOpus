@@ -53,7 +53,7 @@ You can use Everything's [query syntax](https://www.voidtools.com/support/everyt
 
 ### Opus search
 
-The *Opus search* option uses the the [Opus find tool](find_files/README.md) to run a search below the current folder. This is a non-indexed search and so may be significantly slower than the indexed search options (depending on how big the folder is).
+The *Opus search* option uses the [Opus find tool](find_files/README.md) to run a search below the current folder. This is a non-indexed search and so may be significantly slower than the indexed search options (depending on how big the folder is).
 
 The options for Opus search are:
 

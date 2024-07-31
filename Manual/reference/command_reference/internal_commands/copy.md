@@ -951,7 +951,7 @@ PATTERN</td><td>
 
 Specifies the "old name" or "from" [wildcard pattern](/Manual/file_operations/copying_moving_and_deleting_files/copying_using_the_toolbar_buttons/using_wildcards_when_copying.md) for the copied or moved files. Use this in conjunction with **AS** to control wildcard renaming of copied or moved files.
 
-*Example:* `Copy DUPLICATE PATTERN * * AS *_{date|yyyy-MM-dd}.`\*
+*Example:* `Copy DUPLICATE PATTERN *.* AS *_{date|yyyy-MM-dd}.`\*
 </td></tr><tr><td>
 QUEUE</td><td>
 /O</td><td>
@@ -994,9 +994,18 @@ Lets you specify two alternate parameters for the **QUEUE** argument. The value 
 
 **quiet**</td><td>
 
-Specify the **quiet** keyword to suppress the prompt that normally indicates a copy operation has been queued.
+Specify the **quiet** keyword to suppress the prompt that normally indicates a copy operation has been queued. (Opus 13.9.1 and above: You can also turn off *Display confirmation when a job is queued* in Preferences.)
 
 *Example:* `Copy QUEUE=MyQueue,quiet`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**noisy**</td><td>
+
+(Opus 13.9.1 and above.) Specify the **noisy** keyword to always show a prompt indicating a copy operation has been queued, even if *Display confirmation when a job is queued* is off in Preferences.
+
+*Example:* `Copy QUEUE=MyQueue,noisy`
 </td></tr><tr><td>
 RENAMEWHENSAME</td><td>
 /S</td><td>

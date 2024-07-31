@@ -62,3 +62,13 @@ The optional control bar at the bottom of the viewer is the same as the one in t
 ![](/Manual/images/media/viewer_pane_-_control_bar.png)
 
 From left to right, the buttons are **Previous File** (![](/Manual/images/media/viewer_control_-_prev.png)), **Next File** (![](/Manual/images/media/viewer_control_-_next.png)), **Rotate Left** (![](/Manual/images/media/viewer_control_-_rotate_left.png)), **Rotate Right** (![](/Manual/images/media/viewer_control_-_rotate_right.png)), **Zoom In** (![](/Manual/images/media/viewer_control_-_zoom_in.png)), **Zoom Out** (![](/Manual/images/media/viewer_control_-_zoom_out.png)), **Original Size** (![](/Manual/images/media/viewer_control_-_original_size.png)), **Fit To Window** (![](/Manual/images/media/viewer_control_-_fit_to_page.png)), **Grow To Window** (![](/Manual/images/media/viewer_control_-_grow_to_page.png)), **Hex View **(![](/Manual/images/media/viewer_control_-_hex_view.png)), **Slideshow **(![](/Manual/images/media/viewer_control_-_slideshow.png)), **Full Screen** (![](/Manual/images/media/viewer_control_-_fullscreen.png)), **Print** (![](/Manual/images/media/viewer_control_-_printer.png)) and **Settings** (![](/Manual/images/media/viewer_control_-_settings.png)).
+
+### Window Menu
+
+![](/Manual/images/additional_functionality/viewing_images/viewer_window_menu.png)
+
+The standalone viewer's Window Menu has a few extra options in addition to the standard ones Windows includes:
+
+- **Menu Bar:** Toggles the viewer toolbar. This is one way to get it back if you've turned it off.
+- **Keep On Top:** Makes the viewer always on-top, so it will not go behind other windows which are active unless they are on-top as well. Note that opening Preferences or Customize will reset the window to normal, to ensure the dialogs do not open behind it. Also, full-screen viewers are inherently on-top when active, regardless of this setting.
+- **Close All Viewers:** If multiple standalone viewers are open, this command will close all of them at once.

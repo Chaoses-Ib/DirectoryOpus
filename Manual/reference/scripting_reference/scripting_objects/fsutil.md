@@ -167,6 +167,33 @@ The optional **type** argument is a string that lets you restrict the list of pr
 | **D** | Property display names must match the pattern. |
 
 If neither is specified, both raw and display names can match.
+
+Additional flags supported by the **type** argument are:
+
+|       |                                                                                                                                                                     |
+|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **V** | Restrict to viewable properties only. Viewable properties are those intended to be shown to the user - they're the same ones shown in Explorer's column chooser UI. |
+</td></tr><tr><td>
+GetSignature</td><td>
+
+\<string:path\>  
+\[\<bool:verify\> or  
+\<string:flags\>\]</td><td>
+
+*object:***[Signature](signature.md)**</td><td>
+
+For files signed with an Authenticode certificate (usually .exe and .dll files), returns a **[Signature](signature.md)** object describing the signature used to sign the file with.
+
+By default the signature won't be validated - the method will simply extract and return information about it. The optional **verify** parameter lets you verify the integrity of the file as well. Set this value to **True** to do a simple hash check (verifies the file has not been modified, but doesn't check the signature), or use the following flags to validate the signature as well as checking the file.
+
+|     |                                                                |
+|-----|----------------------------------------------------------------|
+| n   | No revocation check                                            |
+| c   | Check final certificate in the chain for revocation            |
+| C   | Check the entire chain for revocation                          |
+| R   | Check the entire chain excluding the root certificate          |
+| h   | Hash-only check                                                |
+| l   | Treat certificates as expired once their timestamp has elapsed |
 </td></tr><tr><td>
 GetTempDirPath</td><td>
 
@@ -365,12 +392,14 @@ When opening in *write mode* or *read-write mode*, you can specify additional **
 
 The **mode** flags can also include these letters (case sensitive):
 
-|       |                                                                                                                                                                                                                                                                                                         |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **d** | Delete-on-close. The file will be automatically deleted when closed. (If something else also has the file open, it won't be deleted until everything closes it.)                                                                                                                                        |
-| **f** | Force. Opus will clear the file's read-only attribute if it blocks opening the file for writing; otherwise, attempting to open a read-only file for writing will fail. For example, "**wof**" is like "**wo**" mode but also clears the read-only attribute.                                            |
-| **m** | Modify mode. Use this if you want to use the **File** object to read or modify the file's attributes, or get the file's size, without reading or writing the actual file contents.                                                                                                                      |
-| **p** | Permit deletion. Other processes can delete the file before it has been closed, although any deletion will not take place until it is closed. Files opened via this method always permit other readers and writers. Your script should not assume it has an exclusive lock on the file or its contents. |
+|       |                                                                                                                                                                                                                                                                                    |
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **d** | Delete-on-close. The file will be automatically deleted when closed. (If something else also has the file open, it won't be deleted until everything closes it.)                                                                                                                   |
+| **f** | Force. Opus will clear the file's read-only attribute if it blocks opening the file for writing; otherwise, attempting to open a read-only file for writing will fail. For example, "**wof**" is like "**wo**" mode but also clears the read-only attribute.                       |
+| **m** | Modify mode. Use this if you want to use the **File** object to read or modify the file's attributes, or get the file's size, without reading or writing the actual file contents.                                                                                                 |
+| **p** | Permit deletion. Other processes can delete the file before it has been closed, although any deletion will not take place until it is closed. Files opened via this method always permit other readers and writers.                                                                |
+| **x** | (Opus 13.9.1 and above.) (Lowercase x.) Exclude other readers. While you have the file open, nothing else can open it for reading. If something else already has it open for reading, your request to open the file will fail. Has no effect on filesystems that don't support it. |
+| **X** | (Opus 13.9.1 and above.) (Uppercase X.) Exclude other writers. While you have the file open, nothing else can open it for writing. If something else already has it open for writing, your request to open the file will fail. Has no effect on filesystems that don't support it. |
 
 When opening an existing file which something else already flagged for deletion, including files already open in *delete-on-close* mode, the **p** (permit deletion) flag must be specified.
 
@@ -423,6 +452,7 @@ The optional **flags** string can include zero or more flag characters (not case
 | **r** | Recursively enumerate the folder, listing the contents of the folder, its sub-folders, their sub-folders, and so on.                                                                                                                                                                          |
 | **l** | Skip links. Prevents the traversal of symbolic links and junctions when recursively enumerating folders.                                                                                                                                                                                      |
 | **s** | Shell enumeration. Ask's the Windows Shell to enumerate non-filesystem folders. For example, the *Quick Access* folder on Windows 10 could be enumerated with **ReadDir("/quickaccess","s")**; it would not work without the "**s**" because Quick Access is not a real filesystem directory. |
+| **p** | Suppress password dialogs from encrypted archives.                                                                                                                                                                                                                                            |
 
 If you don't need any flags, skip the second argument entirely. You may see older scripts pass **True** and **False** as the second argument, to turn recursion on and off; that is deprecated but remains supported for compatibility.
 </td></tr><tr><td>
@@ -447,9 +477,10 @@ Scripts which pass the current directory to external software should generally c
 
 The optional **flags** string can include the following letter (not case-sensitive):
 
-|       |                                                             |
-|-------|-------------------------------------------------------------|
-| **j** | resolve junctions and symbolic links to their target folder |
+|       |                                                                                                      |
+|-------|------------------------------------------------------------------------------------------------------|
+| **c** | Return canonical paths. This will expand short filenames to their true long filename representation. |
+| **j** | Resolve junctions and symbolic links to their target folder.                                         |
 
 Note that **[Path](path.md)** objects also have a similar **Resolve** method which modifies them in-place.
 </td></tr><tr><td>

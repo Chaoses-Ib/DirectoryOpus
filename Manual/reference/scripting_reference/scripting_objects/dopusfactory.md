@@ -82,6 +82,16 @@ Creates a new **[Map](map.md)** object. If no arguments are provided, the **Map
 
 The individual keys and values can be different types.
 </td></tr><tr><td>
+OrderedMap</td><td>
+
+*none*  
+or \<variant:key\>,  
+\<variant:value\>...</td><td>
+
+*object*:**[OrderedMap](orderedmap.md)**</td><td>
+
+Creates a new **[OrderedMap](orderedmap.md)** object. This is identical to the [Map](Map.md) object except that the order of items added to the map is preserved rather than being sorted alphabetically.
+</td></tr><tr><td>
 StringSet</td><td>
 
 *none*  

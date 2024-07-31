@@ -170,6 +170,12 @@ message</td><td>
 *string*</td><td>
 Specifies the message text displayed in the dialog.
 </td></tr><tr><td>
+msgonly</td><td>
+
+*bool*</td><td>
+
+Set to **True** before creating the dialog to create a *message-only* dialog. A message-only dialog will never be visible, but still runs a normal message loop. This lets you use things like `WatchTab` or `HTTPRequest` without needing a visible dialog (or resorting to opacity tricks). No dialog template is needed when using this mode. Note that only detached dialogs support this option.
+</td></tr><tr><td>
 opacity</td><td>
 
 *int*</td><td>
@@ -231,11 +237,22 @@ selection</td><td>
 
 In a drop-down list dialog (one with the **choices** property set without either **list** or **menu**), this property returns the index of the item chosen from the drop-down list after the **Show** method returns.
 </td></tr><tr><td>
+singleton</td><td>
+
+*string*</td><td>
+
+If you only want one instance of your dialog to be open at once, set this property to a unique name before creating the dialog. When the dialog is created, Opus will check if another dialog with same singleton name is already open. If it is, the existing dialog will be brought to the front and your script will receive a **False** return from the `Create` or `Show` methods. You should check for this an exit your script in that case.
+</td></tr><tr><td>
 sort</td><td>
 
 *bool*</td><td>
 
 Set this property to **True** if the list of choices given by the **choices** property should be sorted alphabetically.
+</td></tr><tr><td>
+state</td><td>
+
+*string*</td><td>
+Returns a string indicating the current state of the dialog. Possible values are "visible" (normal state, open and visible), "hidden" (dialog has been hidden), "min" (dialog is minimized), "max" (dialog is visible and maximized).
 </td></tr><tr><td>
 template</td><td>
 
@@ -298,16 +315,31 @@ Method Name</th><th>
 Return Type</th><th>
 Description
 </th></tr></thead><tbody><tr><td>
+AddCustomMsg</td><td>
+
+\<string:name\>  
+\[\<bool:force\>\]</td><td>
+
+*bool*</td><td>
+
+Lets a script dialog register one or more custom messages that can then be sent to it from other scripts.
+
+Messages are registered by name. If a message is already registered the method will fail unless you set the optional *force* parameter to true.
+
+Use **[DOpus](dopus.md).SendCustomMsg** to send messages to dialogs. The dialog will receive a "custom" **[Msg](msg.md)** in their message loop.
+</td></tr><tr><td>
 AddHotkey</td><td>
 
 \<string:name\>  
 \<string:key\></td><td>
 
-*none*</td><td>
+*bool*</td><td>
 
 Creates a hotkey (or keyboard accelerator) for the specified key combination. When the user presses this key combination in your dialog, a **hotkey** event will be triggered.
 
 The name parameter is a name you assign that lets you identify the hotkey. The key parameter specified the actual key combination; this can optionally combine the qualifiers **ctrl**, **shift** and **alt** with a character or name of a special key. For example, **ctrl+t** or **alt+shift+F7**.
+
+This method returns true if successful, or false on failure (e.g. if the hotkey already exists).
 </td></tr><tr><td>
 AutoSize</td><td>
 
@@ -315,6 +347,14 @@ AutoSize</td><td>
 
 *none*</td><td>
 If a dialog has auto-sizing controls that depend on the sizes of other controls, and you make changes to their sizes at runtime, you can call this method to force the dialog to recalculate all relative control sizes once you've made the required changes.
+</td></tr><tr><td>
+CancelWatchClipboard</td><td>
+
+*none*</td><td>
+
+*none*</td><td>
+
+Cancels monitoring of the system clipboard for changes previously established by a call to the **WatchClipboard** method.
 </td></tr><tr><td>
 CancelWatchDir</td><td>
 
@@ -368,9 +408,11 @@ DelHotkey</td><td>
 
 \<string:name\></td><td>
 
-*none*</td><td>
+*bool*</td><td>
 
 Deletes a hotkey you previously created with the **AddHotkey** method.
+
+This method returns true if successful, or false on failure (e.g. if the hotkey does not exist).
 </td></tr><tr><td>
 Drag</td><td>
 
@@ -422,6 +464,13 @@ Displays a "Browse for Folder" dialog letting the user select a folder. The opti
 - *window* - specify parent window for the dialog (a **[Lister](lister.md)** or a **[Tab](tab.md)**). If not specified, the **Dialog** object's **window** property will be used.
 
 A **[Path](path.md)** object is returned to indicate the folder chosen by the user. This object will have an additional **result** property that will be **False** if the user cancelled the dialog - the other normal **Path** properties will only be valid if **result** is **True**.
+</td></tr><tr><td>
+FlushMsg</td><td>
+
+*none*</td><td>
+
+*int*</td><td>
+Flushes the dialog's message queue. Any unretrieved messages will be discarded. The return value tells you how many messages were in the queue.
 </td></tr><tr><td>
 GetMsg</td><td>
 
@@ -484,7 +533,8 @@ Multi</td><td>
 
 \<string:title\>  
 \<string:default\>  
-\<object:window\></td><td>
+\<object:window\>  
+\<string:type\></td><td>
 
 *object:***[Items](items.md)**</td><td>
 
@@ -492,9 +542,22 @@ Displays a "Browse to Open File" dialog that lets the user select one or more fi
 
 - *title* - specify title of the dialog
 - *default* - specify the default file selected in the dialog (if a folder is specified this specifies the default location but no file will be selected)
-- *window* - specify parent window for the dialog (a **[Lister](lister.md)** or a **[Tab](tab.md)**). If not specified, the **Dialog** object's **window** property will be used.
+- *window* - specify parent window for the dialog (a **[Lister](lister.md)** or a **[Tab](tab.md)**). If not specified, the **Dialog** object's **window** property will be used. (Omit the *window* argument entirely if you don't want to use it; the *type* argument, if used, works whether third or fourth.)
+- *type* - A list of filetypes to populate the "Save as Type" dropdown in the save dialog. (See below.)
+
+The optional *type* parameter consists of one or more pairs of strings, separated by exclamation marks (**!**). The first string of each pair is the plain text string shown in the drop-down, and the second string of each pair is the actual file extension. You can also specify multiple extensions for the one type by separating them with semicolon. If you want the default "All files" item to be added to the list, add a **\#** character at the start of the string. For example, *\#Text Files!\*.txt!Doc Files!\*.doc.*
 
 An **[Items](items.md)** object is returned to indicate the files selected by the user. The returned object will have a **result** property that you should check first - the collection of items is only valid if **result** returns **True**. If it returns **False** it means the user cancelled the dialog.
+</td></tr><tr><td>
+NewHTTPReq</td><td>
+
+*none*</td><td>
+
+*object:***[HTTPRequest](httprequest.md)**</td><td>
+
+Creates a new [HTTPRequest](httprequest.md) object attached to this dialog. This object provides a simple way to send an HTTP request to a server asynchronously, and retrieve the response.
+
+Events from HTTP requests will come through your dialog's message loop, so you must use a detached dialog in order to use this functionality.
 </td></tr><tr><td>
 NotifyIcon</td><td>
 
@@ -559,7 +622,8 @@ Open</td><td>
 
 \<string:title\>  
 \<string:default\>  
-\<object:window\></td><td>
+\<object:window\>  
+\<string:type\></td><td>
 
 *object:***[Item](item.md)**</td><td>
 
@@ -567,7 +631,10 @@ Displays a "Browse to Open File" dialog that lets the user select a single file.
 
 - *title* - specify title of the dialog
 - *default* - specify the default file selected in the dialog (if a folder is specified this specifies the default location but no file will be selected)
-- *window* - specify parent window for the dialog (a **[Lister](lister.md)** or a **[Tab](tab.md)**). If not specified, the **Dialog** object's **window** property will be used.
+- *window* - specify parent window for the dialog (a **[Lister](lister.md)** or a **[Tab](tab.md)**). If not specified, the **Dialog** object's **window** property will be used. (Omit the *window* argument entirely if you don't want to use it; the *type* argument, if used, works whether third or fourth.)
+- *type* - A list of filetypes to populate the "Save as Type" dropdown in the save dialog. (See below.)
+
+The optional *type* parameter consists of one or more pairs of strings, separated by exclamation marks (**!**). The first string of each pair is the plain text string shown in the drop-down, and the second string of each pair is the actual file extension. You can also specify multiple extensions for the one type by separating them with semicolon. If you want the default "All files" item to be added to the list, add a **\#** character at the start of the string. For example, *\#Text Files!\*.txt!Doc Files!\*.doc.*
 
 A single **[Item](item.md)** object is returned to indicate the file selected by the user. This object will have an additional **result** property that will be **False** if the user cancelled the dialog - the other normal **Item** properties will only be valid if **result** is **True**.
 </td></tr><tr><td>
@@ -655,6 +722,8 @@ Displays the dialog that has been pre-configured using the various properties of
 If the **detach** property is **False**, the call will not return until the dialog has been closed. The return value is the index of the button selected by the user, and this is also available in the **result** property once the method returns. The left-most button is index **1**, the next button is index **2**, and so on. If a dialog has more than one button then by definition the last (right-most) button is the "cancel" button and so this will return index **0**.
 
 If the **detach** property is **True**, the call will return immediately and the return value is meaningless. You should then either run a message loop for the “detached” dialog, or call **RunDlg** to run the standard loop.
+
+Note that calling **Create** implicitly sets the **detach** property to **True**. If you need to create the dialog to modify some of its controls before it is displayed, but do not want to run your own message loop once it is displayed, you should call **RunDlg** rather than **Show**.
 </td></tr><tr><td>
 SetTaskbarGroup</td><td>
 
@@ -678,6 +747,16 @@ Vars</td><td>
 Returns a **[Vars](vars.md)** object that represents the variables that are scoped to this particular dialog. This allows scripts to use variables that persist from one use of the dialog to another.
 
 The **id** string is a string that Opus can use to identify your dialog or the script it comes from. The template name of the dialog will be automatically appended to this. For example, you might specify **id** as *"kundal"* - Opus would then internally save these variables for a dialog called *"dialog1"* as *"kundal!dialog1"*. Make sure you pick a string that other script authors are unlikely to use as Opus has no other way of telling the saved variables apart.
+</td></tr><tr><td>
+WatchClipboard</td><td>
+
+*none*</td><td>
+
+*bool*</td><td>
+
+Establish monitoring of the system clipboard. Whenever the system clipboard contents change, the dialog's message loop receives a **clipboard** event.
+
+Use the **CancelWatchClipboard** method to cancel monitoring.
 </td></tr><tr><td>
 WatchDir</td><td>
 
@@ -719,7 +798,7 @@ Allows a [script dialog](/Manual/scripting/script_dialogs/README.md) to monitor 
 
 The **tab** parameter specifies the **[Tab](tab.md)** you want to watch. The **events** string is a comma-separated list of events you want to watch for. The **id** string is an optional parameter; it lets you assign your own ID to the tab to make it easier to tell where events are coming from (if you're monitoring multiple tabs, for instance).
 
-These are the events you can watch for are. Note that some are equivalent to the existing script events (e.g. **OnActivateTab**):
+These are the events you can watch for. Note that some are equivalent to the existing script events (e.g. **OnActivateTab**):
 
 |              |                                                         |
 |--------------|---------------------------------------------------------|
@@ -749,6 +828,24 @@ For the **filechange** event, the **[Msg](msg.md).data** property contains a bit
 You can change the events you're monitoring for by calling the **WatchTab** method again with the same tab and new event list.
 
 To stop monitoring an existing tab, call **WatchTab** with the second parameter set to **stop**. Monitoring is automatically cancelled if your dialog closes (and also if the tab closes).
+</td></tr><tr><td>
+WindowCmd</td><td>
+
+\<string:command\></td><td>
+
+*none*</td><td>
+
+Sends a command to the dialog window to change how it's displayed. Possible commands are:
+
+|             |                                               |
+|-------------|-----------------------------------------------|
+| **min**     | minimize the window                           |
+| **max**     | maximize the window                           |
+| **restore** | restore the window (from minimize/maximize)   |
+| **show**    | show the window if it's currently hidden      |
+| **showna**  | show the window but don't activate it         |
+| **hide**    | hide the window                               |
+| **front**   | activate the window and bring it to the front |
 </td></tr></tbody>
 </table>
 

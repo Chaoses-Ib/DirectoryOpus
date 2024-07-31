@@ -97,6 +97,33 @@ Specify the name of the file collection that results are added to. If not suppli
 
 *Example:* `Find *.doc in C:\Data COLLNAME Output`
 </td></tr><tr><td>
+COLUMN</td><td>
+/K</td><td>
+
+*\<column name\>*</td><td>
+
+When automating the duplicate finder tool with the `DUPES` argument, specifies that duplicates should be matched using the value of a specific column.
+
+*Example:* `Find IN C:\Data DUPES COLUMN=createddate`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**name**</td><td>
+
+Match duplicates by name as well as the value of the specified column
+
+*Example:* `Find IN C:\Data DUPES COLUMN=createddate,name`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**size**</td><td>
+
+Match duplicates by size as well as the value of the specified column
+
+*Example:* `Find IN C:\Data DUPES COLUMN=createddate,name,size`
+</td></tr><tr><td>
 COMPARE</td><td>
 /K</td><td>
 

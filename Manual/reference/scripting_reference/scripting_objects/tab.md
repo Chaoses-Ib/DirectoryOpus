@@ -100,6 +100,12 @@ hidden_files</td><td>
 
 Returns an **[Items](items.md)** object that represents all the files currently hidden from this tab
 </td></tr><tr><td>
+highlighted</td><td>
+
+*object:***[Items](items.md)**</td><td>
+
+Returns an **[Items](items.md)** object that represents all the files and folders currently displayed in this tab that have one or more cells [highlighted](/Manual/basic_concepts/selecting_files/selecting_cells.md).
+</td></tr><tr><td>
 label</td><td>
 
 *string*</td><td>
@@ -233,6 +239,20 @@ Returns an **[Item](item.md)** object representing the file or folder which has 
 The focus item is typically indicated by an outline around its name, and is usually the last item which was clicked on, or the last item which was moved to with the keyboard. The focus item is often also selected, but not always; focus and selection are two different things.
 
 If no focus item exists, or if the focus item is a special file or folder, such as *This PC*, which cannot be represented by an **Item** object, then this method does not return an object. (In JScript, test if the result ***== null*** and in VBScript test if the result ***is nothing***.)
+</td></tr><tr><td>
+Notify</td><td>
+
+\<string:type\>  
+\<string:msg\>  
+\[\<int:timeout\>\]</td><td>
+
+*bool*</td><td>
+
+Displays a notification message associated with this tab.
+
+Currently the only defined type is "status", which displays the message in the status bar.
+
+The *msg* string will be displayed in the status bar when the tab is active. The *timeout* value lets you specify an optional timeout (in milliseconds) after which the message will automatically be removed. If no timeout is specified the user needs to click the message to dismiss it.
 </td></tr><tr><td>
 Update</td><td>
 

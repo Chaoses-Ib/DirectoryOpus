@@ -4,7 +4,9 @@ The **Map** object is an [associative container](http://en.wikipedia.org/wiki/As
 
 You can access elements of the map as if the map is a function (e.g. **Map("foo")** to reference an element by the key *"foo"*). You can also use square brackets (like an array or Vector) but only if the name of the key begins with an underscore, or is completely numeric (e.g. **Map\[123\]** or **Map\["\_foo"\]**). Additionally you can use the **get** and **set** methods.
 
-You can create a new **Map** using the **[DOpusFactory](dopusfactory.md).Map** method. The keys in a map can be enumerated, and are automatically kept sorted.
+You can create a new **Map** using the **[DOpusFactory](dopusfactory.md).Map** method.
+
+The keys in a map can be enumerated, and are automatically kept sorted alphabetically. If you want to preserve the order of items added to the map, use an **[OrderedMap](orderedmap.md)** object instead.
 
 The two examples below both output the following:
 

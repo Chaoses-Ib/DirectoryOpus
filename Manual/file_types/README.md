@@ -24,7 +24,7 @@ The **New** drop-down is used to create a new file type or group. The **Copy** b
 
 You can locate file types using the **Find** function, which lets you search by extension, descriptions and other properties. You can also quickly jump to a file extension by activating the file type list and typing the extension in.
 
-The area at the bottom of the dialog displays information for the currently selected file type including its "default handler" (*Opens with: Directory Opus Viewer* in the above screenshot). The default handler is the program that will (normally) be used to open the file when it's double-clicked - you can change this, and also edit the items shown on the [Open With](/Manual/file_types/the_open_with_editor.md) menu for a file type, using the **Change** button.
+The area at the bottom of the dialog displays information for the currently selected file type including its "default handler" (*Opens with: Directory Opus Viewer* in the above screenshot). The default handler is the program that will (normally) be used to open the file when it's double-clicked - you can change this by right-clicking a file and using the Open With menu, similar to what you'd do in File Explorer.
 
 One thing to be aware of is that the file types system in Opus is shared with the rest of the system. For any given file type there are a number of different classes of settings:
 
@@ -38,5 +38,4 @@ More:
 
 [Directory Opus File Types](/Manual/file_types/directory_opus_file_types.md)  
 [File Type Groups](/Manual/file_types/file_type_groups.md)  
-[The Open With editor](/Manual/file_types/the_open_with_editor.md)  
 [Filetype Editor](/Manual/file_types/filetype_editor/README.md)  

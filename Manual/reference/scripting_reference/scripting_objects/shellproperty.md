@@ -23,6 +23,12 @@ The default width in pixels a column displaying this property should use.
 The display name of this property (the name that should be shown to users).
 </td></tr><tr><td>
 
+**isviewable**</td><td>
+
+*bool*</td><td>
+The property is intended to be viewed by the user (e.g. in a column).
+</td></tr><tr><td>
+
 **justify**</td><td>
 
 *string*</td><td>

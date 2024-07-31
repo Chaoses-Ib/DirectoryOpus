@@ -41,6 +41,21 @@ In the above example, the new folders will all be created relative to the curren
 
 The above example will create two child folders, *2023* and *2024*, and below those create 12 sub-folders (one for each month of the year).
 
+### Making numbered folders
+
+When the dialog is in **Create multiple folders** mode, it supports automatic creation of multiple numbered folders using the `<..>` insertion code.
+
+The full format of this code is `<a-b+c>`, which will insert numbers from *a* through to *b*, incrementing by *c* each time.
+
+The *a* value can include zero padding - for example, `<001-100>` would create folders 001, 002, 003, ..., 100.
+
+The *-b* and *+c* values are optional:
+
+- If *-b* is not given, the first number is assumed to be the top of the range and the bottom defaults to 1 - so to quickly create ten numbered folders, simply use `<10>`.
+- If *+c* is not given the default increment value is 1.
+
+Any text outside the numbering code is preserved verbatim, e.g. `New Folder <5>` would create "New Folder 1", "New Folder 2", etc.
+
 ### Using the dialog in multiple folder mode
 
 In **Create multiple folders** mode, the <kbd>Enter</kbd> key moves to a new line in the text box, but you can still quickly *OK* the dialog by pushing <kbd>Enter</kbd> twice on the last line, or by pushing <kbd>Shift+Enter</kbd> on any line. Since double-tapping <kbd>Enter</kbd> at the end is only one extra keystroke, even when only creating a single folder, you may find it convenient to leave the dialog in this mode all the time.

@@ -141,6 +141,13 @@ DPI</td><td>
 
 Creates the **[DPI](dpi.md)** helper object which assists when dealing with different system scaling settings (e.g. high-DPI monitors).
 </td></tr><tr><td>
+FlushConfig</td><td>
+
+*none*</td><td>
+
+*none*</td><td>
+Forces Opus to write any configuration changes to disk immediately.
+</td></tr><tr><td>
 FSUtil</td><td>
 
 *none*</td><td>
@@ -222,21 +229,24 @@ If you call DOpus.GetQualifiers more than once, you may get a different result e
 LoadImage</td><td>
 
 \<string:filename\> or \<object:**[Blob](blob.md)**\>  
+\[\<string:typehint\>\]  
 \[\<int:width\>\]  
 \[\<int:height\>\]  
 \[\<bool:alpha\>\]</td><td>
 
 object:**[Image](image.md)**</td><td>
 
-Loads an image file from the specified file. You can optionally specify the desired size to load the image at, and whether the alpha channel (if any) should be loaded or not.
+Loads an image file from the specified file. You can optionally specify the desired size to load the image at, and whether the alpha channel (if any) should be loaded or not. Note that the *typehint* argument should only be provided if passing a **Blob**.
 
 You can load icons from the internal icon set using `#iconname`. E.g. `#copy` would load the copy image from the default set. By default the large size is returned; use `#0:iconname` for the small size. You can also specify a particular icon set using `#setname:iconname` or `#0:setname:iconname`.
 
 Images can be extracted from DLLs and EXEs by appending the icon index to the filename, e.g. `/system/zipfldr.dll,1`.
 
-You can also provide a **[Blob](blob.md)** object containing the image data instead of a filename.
+You can also provide a **[Blob](blob.md)** object containing the image data instead of a filename. If you do this, the second parameter can be a *typehint* string to provide a type-hint for the data format (e.g. pass ".jpg" if you know it's JPEG data).
 
 The returned **[Image](image.md)** object can be given as the value of the **[Control](control.md).label** property for a static control in a [script dialog](/Manual/scripting/script_dialogs/README.md) (when that control is in "image" mode). You can also assign it as the **icon** property of a **[Dialog](dialog.md)** object to specify a custom window icon for your script dialog.
+
+The defaults for *width* and *height* if not provided are 0, meaning to load the image at its native size. Images are loaded transparently (with alpha) by default; set the *alpha* argument to **False** if you want to disable that.
 </td></tr><tr><td>
 LoadThumbnail</td><td>
 
@@ -308,6 +318,20 @@ ReloadScript</td><td>
 *none*</td><td>
 
 Causes Opus to reload and reinitialize the specified script. You must provide the full pathname of the script on disk (if a script add-in wants to reload itself you can pass the value of the **[Script](script.md).file** property).
+</td></tr><tr><td>
+SendCustomMsg</td><td>
+
+\<string:msg\>  
+\[\<int:data\> or  
+\<object:data\>\]</td><td>
+
+*bool*</td><td>
+
+Sends a named message to any existing script dialogs that have registered to receive that message via **[Dialog](dialog.md).AddCustomMsg**.
+
+Any dialogs that have registered for the message will receive a "custom" **[Msg](msg.md)** in their message loop, with the message name in the `name` property.
+
+You can optionally pass a single numeric value, or a container object (e.g. a **[Map](map.md)**) along with the message, which will be received by the dialog in either the `data` or `object` property of the **Msg**.
 </td></tr><tr><td>
 SendKey</td><td>
 

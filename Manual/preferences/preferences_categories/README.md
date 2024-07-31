@@ -20,7 +20,7 @@ The various Preferences pages have been categorized in an attempt to group conce
 - **[Layouts and Styles](/Manual/preferences/preferences_categories/layouts_and_styles/README.md)**: Options to control saved Lister Layouts (arrangements of one or more pre-defined Listers) and Styles (pre-defined configuration of an existing Lister).
 - **[Location Bar](/Manual/preferences/preferences_categories/location_bar/README.md)**: Options that control the appearance and behavior of the [location bar](/Manual/basic_concepts/the_lister/navigation/breadcrumbs_location_field.md).
 - **[Miscellaneous](/Manual/preferences/preferences_categories/miscellaneous/README.md)**: These are the options that wouldn't fit anywhere else.
-- **[Toolbars](/Manual/preferences/preferences_categories/location_bar/toolbars.md)**: Options relating to toolbars, and toolbar icons.
+- **[Toolbars](/Manual/preferences/preferences_categories/toolbars/README.md)**: Options relating to toolbars, and toolbar icons.
 - **[User Interface](/Manual/preferences/preferences_categories/user_interface/README.md)**: Change the language or spacing of the user interface, and adjust transition animations.
 - **[Viewer](/Manual/preferences/preferences_categories/viewer/README.md)**: Options relevant to viewing images either in the Lister or in the standalone image viewer.
 - **[Zip and Other Archives](/Manual/preferences/preferences_categories/zip_and_other_archives/README.md)**: Options that relate to various archive formats that Opus supports.

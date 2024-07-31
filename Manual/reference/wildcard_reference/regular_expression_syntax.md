@@ -34,7 +34,8 @@ Description
 The caret is used to "anchor" the search to the start of the string. If the search is not anchored to either end, the pattern can match a sub-string of the target.
 
 For example:  
-**^abc** matches *abc*, *abcdefg*, *abc123*, but not *123abc\\* **abc** also matches// 123abc//
+**^abc** matches *abc*, *abcdefg*, *abc123*, but not *123abc*  
+**abc** also matches// 123abc//
 </td></tr><tr><td>
 
 **\$**</td><td>

@@ -535,14 +535,8 @@ TODEST</td><td>
 /S</td><td>
 
 *(no value)*</td><td>
+
 Forces the output to go to the current destination folder. This lets you override the saved destination within a preset.
-</td></tr><tr><td>
-NOADDSUFFIX</td><td>
-/S</td><td>
-
-*(no value)*</td><td>
-
-Specify **NOADDSUFFIX** in conjunction with a preset to override the saved setting.
 
 *Example:* `Image CONVERT PRESET=ScaleAndCrop TODEST`
 </td></tr><tr><td>

@@ -11,7 +11,7 @@ OnScriptConfigChange
 
 **Argument Type:**</td><td>
 
-**[ConfigChangeData](../scripting_objects/configchangedata.md)**
+**[ScriptConfigChangeData](../scripting_objects/scriptconfigchangedata.md)**
 </td></tr><tr><td>
 
 **Return Type:**</td><td>
@@ -21,7 +21,7 @@ OnScriptConfigChange
 
 **Description:**</td><td>
 
-The **ConfigChangeData.changed** property identifies the configuration items that were modified.
+The **ScriptConfigChangeData.changed** property identifies the configuration items that were modified.
 </td></tr></tbody>
 </table>
 

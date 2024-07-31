@@ -101,7 +101,7 @@ Erases the element if it exists in the set.
 </td></tr><tr><td>
 exists</td><td>
 
-*variant\\*</td><td>
+*variant*</td><td>
 
 *bool*</td><td>
 

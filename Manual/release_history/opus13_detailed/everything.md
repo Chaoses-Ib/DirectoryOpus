@@ -7,6 +7,7 @@
 - Everything can also be used for instant folder size calculation. (See [Folder Sizes](folder_sizes.md) section.)
 - Everything can also speed up calculation of total counts/sizes in progress dialogs.
 - You can [download Everything](https://www.voidtools.com/downloads/) from the Voidtools website.
+- Further detail on using and configuring Everything with Opus: [Integration with Everything](/Manual/additional_functionality/everything_integration.md)
 - Why Everything?:
   - It's a great tool that works well without getting in the way.
   - It's free. (You can [donate](https://www.voidtools.com/donate/) if you find it useful.)

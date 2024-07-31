@@ -65,6 +65,13 @@ focus</td><td>
 
 Set or query the input focus state of the control. Returns **True** if the control currently has input focus, **False** if it doesn't. Set to **True** to give the control input focus.
 </td></tr><tr><td>
+image</td><td>
+
+*string* or  
+*object:***[Image](image.md)**</td><td>
+
+For a button or static control set to image mode, this assigns an image to the control. You can either provide a filename (or internal icon name - e.g. `#about` for the internal about icon), or an **[Image](image.md)** object that you obtained from the **[DOpus](dopus.md).LoadImage** or **[Script](script.md).LoadImage** methods.
+</td></tr><tr><td>
 label</td><td>
 
 *string* or  
@@ -74,7 +81,7 @@ Set or query the control's label or title. Not all controls have labels - this w
 
 Note that for *combo box* controls, this property is only valid for an editable combo - that is, one that you can type your own text into. You can use this property to set or query the current value of the editable text.
 
-For a static control set to "image" mode, you can also provide an **[Image](image.md)** object that you obtained from the **[DOpus](dopus.md).LoadImage** or **[Script](script.md).LoadImage** methods.
+For a static control set to "image" mode, you can also provide an **[Image](image.md)** object that you obtained from the **[DOpus](dopus.md).LoadImage** or **[Script](script.md).LoadImage** methods. This is the same as using the `image` property.
 
 For a *tab* control, you can set or query the labels of the individual tabs by specifying an index; e.g. `Control.label(0)` would reference the label of the first tab.
 </td></tr><tr><td>
@@ -140,6 +147,7 @@ Set or query the control's value. The meaning of this property depends on the ty
 - **Radio button**: Returns or accepts a *bool* - **True** for checked and **False** for unchecked.
 - **Tab**: Returns or accepts an *int* indicating the currently selected page in the tab control.
 - **List box / combo box / list view**: Returns or accepts a **[DialogListItem](dialoglistitem.md)** representing the selected item. When setting the value it also accepts an *int* representing the 0-based index of the selected item.
+- **Palette control**: Returns the current color value. The color string is prefixed with a `!` character if the palette button's checkbox is disabled. You can set the color this way as well. You can also set the value to "enable" or "disable" to change the checkbox state without affecting the color.
 
 Note that for a multiple-selection *list box* or *list view*, this value will return a **[Vector](vector.md)** of [DialogListItem](dialoglistitem.md) objects, representing all currently selected items.
 </td></tr><tr><td>

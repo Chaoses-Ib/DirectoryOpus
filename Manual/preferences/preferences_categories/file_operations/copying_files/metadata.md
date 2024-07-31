@@ -37,3 +37,7 @@ Normally, copying a sparse file results in a copy which is no longer sparse, mea
 This can be overridden by the `Copy` command's `COPYSPARSE` argument.
 
 Turning this option on will force Opus to use custom file-copying code *when copying sparse files*. Normal files will still be delegated to the very-high-level API, if it is enabled.
+
+### Strip zone information (Mark of The Web)
+
+Downloaded files are often "marked" by the program that downloads them as having come from the Internet, which causes Windows to show a warning when opening them. Turn this option on to strip the "Mark of The Web" when copying files.

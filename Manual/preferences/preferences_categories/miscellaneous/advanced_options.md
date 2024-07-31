@@ -44,7 +44,7 @@ Template used to generate the default name for configuration backups. You can st
 
 The template supports `D#`, `T#` and `A#` prefixes for dates and times (as described [here](/Manual/reference/command_reference/external_control_codes/codes_for_date_and_time.md)) and environment variables. Note that to use date and time codes you must enclose them in `{}` brackets (e.g. `{D#yyyy-MM-dd}`).
 
-(Opus 13.3.4 and above:) Local time is used by default, but you can prefix with `UTC#` to use UTC instead (e.g. `{UTC#T#HH-mm}`).
+Local time is used by default, but you can prefix with `UTC#` to use UTC instead (e.g. `{UTC#T#HH-mm}`).
 </td></tr><tr><td>
 
 **dblclk_distance**</td><td>
@@ -62,10 +62,10 @@ When turned on, the Release History page in the help file will open automaticall
 Distance in pixels that the mouse cursor needs to move to initate a drag and drop. Set this to 0 if you want to disable drag and drop completely.
 </td></tr><tr><td>
 
-**find_extension_func**</td><td>
+**everything_autolaunch**</td><td>
 </td><td>
 
-On Windows XP, Opus registers a [Search Handler](http://msdn.microsoft.com/en-us/library/bb776834(v=vs.85).aspx) that lets you access the Opus Find function from the Start Menu. You can use this option to configure the command that Opus runs in response to the search handler. If not specified, the default [Find](/Manual/reference/command_reference/internal_commands/find.md) command is used.
+This lets you configure Opus to automatically run Everything when it's needed to do a search (note: will not auto-launch for folder sizes, only searching). To use this, set the value to the full command line needed to run Everything on your system (e.g. `"C:\Program Files\Everything\Everything.exe" -startup`).
 </td></tr><tr><td>
 
 **find_unique_collections**</td><td>
@@ -665,6 +665,11 @@ You can also set your <kbd>Ctrl+V</kbd> hotkey to run `Clipboard PASTE AS=ask` t
 When turned on, pasting clipboard image data to a file (by pressing <kbd>Ctrl+V</kbd> in a Lister) will automatically scale it to compensate for the system DPI.
 </td></tr><tr><td>
 
+**clipboard_image_paste_quality**</td><td>
+</td><td>
+Lets you specify the quality (from 1 to 100) when pasting images as JPEGs, or the compression level (from 1 to 6) when pasting PNG images.
+</td></tr><tr><td>
+
 **psd_image_preference**</td><td>
 </td><td>
 
@@ -689,7 +694,7 @@ Maximum size (in megabytes) of TIFF images that Opus will attempt to extract doc
 
 **use_color_management**</td><td>
 </td><td>
-Use color management when loading images. If enabled Opus will check to see if an image file contains a color profile, and if so will use the ICC file you specify (or the default sRGB profile) it to render the image more accurately. Currently this is only used for JPEG and PNG images.
+Use color management when loading images. If enabled Opus will check to see if an image file contains a color profile, and if so will use the ICC file you specify (or the default profile for the primary monitor) to render the image more accurately. Currently this is only used for JPEG and PNG images.
 </td></tr><tr><td>
 
 **viewer_disable_internal**</td><td>
@@ -737,7 +742,7 @@ See the [Codes for date and time](/Manual/reference/command_reference/external_c
 **deffmt_cloud_availability**</td><td>
 </td><td>
 
-Prevents the **Availability** column being added to the **Cloud Storage** folder format automatically.
+If changed to False, prevents the **Availability** column being added to the **Cloud Storage** folder format automatically.
 
 When you save a new default folder format and choose the option to replace all existing formats, a few formats get extra columns added automatically. In most cases these columns are important, but some can be overridden via options like this.
 </td></tr><tr><td>
@@ -745,7 +750,7 @@ When you save a new default folder format and choose the option to replace all e
 **deffmt_cloud_status**</td><td>
 </td><td>
 
-Prevents the **Status** (**Status Icons**) column being added to the **Cloud Storage** folder format automatically. (See **deffmt_cloud_availability**, above.)
+If changed to False, prevents the **Status** (**Status Icons**) column being added to the **Cloud Storage** folder format automatically. (See **deffmt_cloud_availability**, above.)
 </td></tr><tr><td>
 
 **desc_show_info**</td><td>
@@ -909,7 +914,7 @@ Delay (in milliseconds) before processing external delete/rename operations in [
 **context_menu_debug**</td><td>
 </td><td>
 
-Output debug information for context menu extensions. See the [FAQ](https://resource.dopus.com/t/crash-exit-or-high-cpu-when-right-clicking-certain-files/1335) on debugging context menu problems for more information. Users of Directory Opus Light can set the registry value **HKEY_CURRENT_USER\SOFTWARE\GPSoftware\Directory Opus\ContextMenuDebug** (DWORD) = 1 as an alternative to this option.
+Output debug information for context menu extensions. See the [FAQ](https://resource.dopus.com/t/crash-exit-or-high-cpu-when-right-clicking-certain-files/1335) on debugging context menu problems for more information.
 </td></tr><tr><td>
 
 **crash_debug_button**</td><td>
@@ -994,6 +999,18 @@ This is a global setting. If you change it for one user on a machine then it wil
 Global</td><td>
 
 The minimum number of events to process before checking the **notify_max_time** time limit. See the description of **notify_max_time**, above, for situations where you may wish to raise this, and how the setting behaves for multiple users.
+</td></tr><tr><td>
+
+**notify_poll_paths**</td><td>
+</td><td>
+
+A list of paths (one per line) which should be polled for changes rather than relying on the operating system's change notification mechanism.
+
+If Opus is monitoring a folder in or below one of the specified paths, that folder will be polled every few seconds to see if anything within it has changed. This involves reading the folder's complete directory listing (recursively, in some cases) every few seconds and comparing it to the previous listing.
+
+Use with caution! This can cause severe slowdowns and high resource usage if applied to a folder with a lot of files in or below it, or where listing the contents is slow or times out. Tracking of moves and renames can also be less reliable in affected folders.
+
+You should only use this in special circumstances where a folder has broken change notification and you don't want to have to refresh it manually. For example, if a Linux-based NAS runs a service inside a Docker container which makes changes to a mounted volume, changes made inside Docker can be seen remotely when listing the folder but will not generate change events, as Docker/Linux fail to pass the events to the outside world.
 </td></tr><tr><td>
 
 **script_output_level**</td><td>

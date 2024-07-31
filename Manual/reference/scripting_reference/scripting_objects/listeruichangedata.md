@@ -12,7 +12,7 @@ change</td><td>
 
 *string*</td><td>
 
-Returns a *string* indicating which UI elements changed. This will contain one or more of the following strings: *dual*, *tree*, *metapane*, *viewer*, *utility*, *duallayout*, *metapanelayout*, *viewerlayout*, *toolbars*, *toolbarset*, *toolbarsauto*, *minmax.*
+Returns a *string* indicating which UI element changed. This will equal one of the following strings: *dual*, *tree*, *metapane*, *viewer*, *utility*, *duallayout*, *metapanelayout*, *viewerlayout*, *toolbars*, *toolbarset*, *toolbarsauto*, *minmax.*
 </td></tr><tr><td>
 lister</td><td>
 

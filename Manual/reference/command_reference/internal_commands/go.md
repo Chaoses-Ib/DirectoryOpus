@@ -592,6 +592,15 @@ Prevents shortcuts from being resolved. Without this, a shortcut to a folder wil
 </td><td>
 </td><td>
 
+**nocontext**</td><td>
+
+Prevents right-clicking items in the list to show their context menus.
+
+*Example:* `Go /profile FOLDERCONTENT=nocontext`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
 **nodirs**</td><td>
 
 Excludes sub-folders from the generated list - only files will be shown.
@@ -638,8 +647,8 @@ Because this keyword requires an embedded equals sign, you must enclose the enti
 
 If you need a comma (,) character within the pattern, put embedded quotes around the pattern as well. The examples below both specify **\*,**\* as the pattern:
 
-*Example:* `Go C: FOLDERCONTENT="filefilter=""*"*"""`  
-*Example:* `Go C: FOLDERCONTENT="filefilter=""*"*"",nodirs"`
+*Example:* `Go C: FOLDERCONTENT="filefilter=""*,*"""`  
+*Example:* `Go C: FOLDERCONTENT="filefilter=""*,*"",nodirs"`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -780,7 +789,7 @@ This could be useful if you have a folder containing template items which you fr
 
 Each generated button will run the **Copy** command. You can use the separate **COPYARGS** argument to specify additional **Copy**-command arguments which are included in each generated button.
 
-*Example:* `Go C:\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no\*\*`
+*Example:* `Go C:\ FOLDERCONTENT=copy COPYARGS COPYFILETIMES=no`
 
 There are no separate "move" versions of the "copyto..." keywords, since it seems unlikely they'd be needed, but you can achieve the same thing via the **COPYARGS** argument:
 
@@ -821,6 +830,18 @@ Similar to **copytosource**, except the item you click will always be copied to 
 Normally folder paths like **C:\\** are enumerated using the native Windows API functions. If you specify the **useshell** keyword, they'll instead be enumerated using the shell (i.e. Explorer). This may give you localized names in some cases, as well as different ordering and different contents.
 
 *Example:* `Go C: FOLDERCONTENT=useshell`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**embeddedcmddirs**</td><td>
+
+If an embedded command is specified, applies it to directories as well as files. Otherwise, the embedded command is only applied to files and clicking directories will navigate to them normally.
+
+//<Example://>
+
+    Go /home FOLDERCONTENT=embeddedcmddirs
+    [Copy ARCHIVE=7z TO /desktop CREATEFOLDER "{o|noext}_Backup"]
 </td></tr><tr><td>
 FORWARD</td><td>
 /S</td><td>
@@ -1902,7 +1923,7 @@ Close a folder tab in the right (or bottom) file display.
 
 Close a folder tab in the destination file display.
 
-\`\`Go TABCLOSE=dest PATH=C:\\\`\*
+*Example:* `Go TABCLOSE=dest PATH=C:\\`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -2397,6 +2418,15 @@ Lock or unlock all tabs to the left of the current tab.
 Lock or unlock all tabs to the right of the current tab.
 
 *Example:* `Go TABLOCK=off,right`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**target**</td><td>
+
+(Opus 13.9.1 and above.) For use with scripting. Acts on the Command object's tab rather than the currently active tab.
+
+*Example:* `Go TABLOCK=off,target`
 </td></tr><tr><td>
 </td><td>
 </td><td>

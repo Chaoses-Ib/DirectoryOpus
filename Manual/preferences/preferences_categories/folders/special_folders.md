@@ -20,4 +20,4 @@ The **Show** column lets you control where the folder is shown; choose from:
 
 Some cloud software doesn't add a folder to the desktop - for example, Google Drive often adds its own drive letter to the system instead. If you use cloud software that isn't shown in the **Desktop folders** list, you can add its location here to have Opus trigger the *Cloud Storage* folder format automatically for that folder as well.
 
-Note that folders you add here won't currently appear in the **Cloud Storage** branch of the tree - that only works for desktop folders. This limitation may be removed in the future.
+(This limitation was removed in Opus 13.9.1:) Note that folders you add here won't currently appear in the **Cloud Storage** branch of the tree - that only works for desktop folders..

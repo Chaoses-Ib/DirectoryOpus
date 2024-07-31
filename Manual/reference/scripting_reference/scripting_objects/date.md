@@ -57,7 +57,7 @@ wday</td><td>
 
 *int*</td><td>
 
-Get the *day-of-the-week* value of the date.
+Get the *day-of-the-week* value of the date. 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
 </td></tr><tr><td>
 year</td><td>
 

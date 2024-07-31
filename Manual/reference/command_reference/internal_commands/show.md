@@ -62,7 +62,7 @@ FULLSCREEN</td><td>
 
 *(no value)*</td><td>
 
-Opens the image viewer in full screen mode.
+Opens the image viewer in full-screen mode.
 
 *Example:* `Show FULLSCREEN`
 </td></tr><tr><td>
@@ -250,7 +250,7 @@ Overrides the default size of the standalone viewer.
 *Example:* `Show POS 1920,0 SIZE 960,1080`
 </td></tr><tr><td>
 SLIDESHOW</td><td>
-/S</td><td>
+/O</td><td>
 
 *(no value)*</td><td>
 
@@ -259,6 +259,15 @@ Initiates a slideshow of images. If any files are currently selected in the sour
 You can adjust the speed of the slideshow, and choose whether the order should be linear or random, from the **[Slideshow](/Manual/preferences/preferences_categories/viewer/standalone_viewer/slideshow.md)** page in Preferences.
 
 *Example:* `Show SLIDESHOW LISTSIBLINGS FULLSCREEN`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**fade**</td><td>
+
+Initiates a slideshow using a cross-fade transition between the images.
+
+*Example:* `Show SLIDESHOW=fade FULLSCREEN`
 </td></tr><tr><td>
 THUMBNAILSIZE</td><td>
 /K</td><td>
@@ -423,6 +432,21 @@ Toggle the *Hide Alpha Channel* option on and off.
 </td><td>
 </td><td>
 
+**alwaysontop**</td><td>
+
+Toggle the *Keep On Top* option on and off. This makes the viewer always on-top relative to other normal windows.
+
+*Example:* `Show VIEWERCMD=alwaysontop`
+
+If Preferences or Customize are opened, the viewer will reset to normal to avoid the dialogs opening behind it. Full-screen viewers are inherently on-top when active, regardless of this setting.
+
+You can also specify `on` or `off` to ensure the viewer is in a particular mode instead of toggling.
+
+*Example:* `Show VIEWERCMD=alwaysontop,on`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
 **backcol**</td><td>
 
 Override or reset the viewer's *background color*. This only affects viewers and plugins which support it, and is useful for checking images that use transparency against various background colors. The change is temporary (not saved to your configuration) and only affects the viewer the command is run in.
@@ -437,6 +461,51 @@ Otherwise, a color should be specified in either \#RRGGBB hex or RRR,GGG,BBB dec
 *Example:* `Show VIEWERCMD=backcol,127,127,127`
 
 If you need a button or hotkey which toggles a color override on each push, edit the items in the default Viewer toolbar's **View / Background Color** menu to see how it's done.
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**channelall**</td><td>
+
+Displays all channels (R/G/B/A) as normal. Use to undo the effects of `channelred` etc.
+
+*Example:* `Show VIEWERCMD=channelall`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**channelalpha**</td><td>
+
+Displays only the alpha channel of the image.
+
+*Example:* `Show VIEWERCMD=channelalpha`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**channelblue**</td><td>
+
+Displays only the blue channel of the image.
+
+*Example:* `Show VIEWERCMD=channelblue`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**channelgreen**</td><td>
+
+Displays only the green channel of the image.
+
+*Example:* `Show VIEWERCMD=channelgreen`
+</td></tr><tr><td>
+</td><td>
+</td><td>
+
+**channelred**</td><td>
+
+Displays only the red channel of the image.
+
+*Example:* `Show VIEWERCMD=channelred`
 </td></tr><tr><td>
 </td><td>
 </td><td>
@@ -723,7 +792,7 @@ Save the width of the current viewer window as the new minimum width. When new v
 
 **monitornext**</td><td>
 
-Assuming a multi-monitor system, moves the viewer to the next monitor. Most useful with fullscreen viewers.
+Assuming a multi-monitor system, moves the viewer to the next monitor. Most useful with full-screen viewers.
 
 *Example:* `Show VIEWERCMD=monitornext`
 </td></tr><tr><td>
@@ -987,6 +1056,10 @@ You can also turn it on or off explicitly, regardless of its current state:
 
 *Example:* `Show VIEWERCMD=slideshow,on`  
 *Example:* `Show VIEWERCMD=slideshow,off`
+
+Add the `fade` keyword to enable a cross-fade transition between images:
+
+*Example:* `Show VIEWERCMD=slideshow,fade,on`
 </td></tr><tr><td>
 </td><td>
 </td><td>

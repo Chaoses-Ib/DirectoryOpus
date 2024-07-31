@@ -17,48 +17,52 @@ The basic procedure to add a custom column from a [script add-in](../script_add-
 - Initialize the properties of the **[ScriptColumn\*\*](/Manual/reference/scripting_reference/scripting_objects/scriptcolumn.md)**object. At a minimum you must populate the **name** and **method** properties. \* Create a separate function in your script-add in, with the **method** name you specified for the column. This method will be called when Opus wants to retrieve data for your column.
 
     // Set the script type to JScript to use this script
-    // The **OnInit**function is called by Directory Opus to initialize the script add-in
-    function OnInit(initData) {
-
-    // Provide basic information about the script by initializing the properties of the **ScriptInitData**object
-    initData.name = "Is Modified Column";
-    initData.desc = "Adds a column that indicates if a file has ever been modified.";
-    initData.copyright = "(c) 2014 Jonathan Potter";
-    initData.default_enable = true; // Create a new **ScriptColumn**object and initialize it to add the column to Opus
-    var cmd = initData.AddColumn();
-    cmd.name = "IsModified";
-    cmd.method = "OnIsModified";
-    cmd.label = "Is Modified?";
-    cmd.autogroup = false; // we provide our own grouping information
-    cmd.autorefresh = true; // refresh column when files change
-    cmd.justify = "center";
-    cmd.match.push_back("Yes"); // when searching, these are the only two options
-    cmd.match.push_back("No");
+    // The OnInit function is called by Directory Opus to initialize the script add-in
+    function OnInit(initData)
+    {
+        // Provide basic information about the script by initializing the properties of the ScriptInitData object
+        initData.name = "Is Modified Column";
+        initData.desc = "Adds a column that indicates if a file has ever been modified.";
+        initData.copyright = "(c) 2014 Jonathan Potter";
+        initData.default_enable = true; // Create a new ScriptColumn object and initialize it to add the column to Opus
+        var cmd = initData.AddColumn();
+        cmd.name = "IsModified";
+        cmd.method = "OnIsModified";
+        cmd.label = "Is Modified?";
+        cmd.autogroup = false; // we provide our own grouping information
+        cmd.autorefresh = true; // refresh column when files change
+        cmd.justify = "center";
+        cmd.match.push_back("Yes"); // when searching, these are the only two options
+        cmd.match.push_back("No");
     }
 
-    // Implement the IsModified column (this entry point is an **OnScriptColumn**event).
-    // The name of this function must correspond to the value specified for the **method **property when the column was added in **OnInit**
-    function OnIsModified(scriptColData) {
-
-    // **scriptColData** is a **ScriptColumnData**object. first check that this is the right column (it should be since we only added one)
-    if (scriptColData.col != "IsModified")
-    return;
-    // we don't provide a value for folders since their timestamps don't mean much
-    // we set the sort key to 3 so they come last (in case the user is mixing files and folders)
-    if (scriptColData.item.is_dir) {
-    scriptColData.value = "";
-    scriptColData.sort = 3;
-    }
-    // for files, are the two dates the same?
-    else if (new Date(scriptColData.item.create).valueOf() == new Date(scriptColData.item.modify).valueOf()) {
-    scriptColData.value = "No";
-    scriptColData.group = "Never Modified";
-    scriptColData.sort = 2;
-    }
-    // the dates are different, therefore modified
-    else {
-    scriptColData.value = "Yes";
-    scriptColData.group = "Modified";
-    scriptColData.sort = 1;
-    }
+    // Implement the IsModified column (this entry point is an OnScriptColumn event).
+    // The name of this function must correspond to the value specified for the **method **property when the column was added in OnInit
+    function OnIsModified(scriptColData)
+    {
+        // scriptColData is a ScriptColumnData object.
+        // First check that this is the right column (it should be since we only added one).
+        if (scriptColData.col != "IsModified")
+            return;
+        // We don't provide a value for folders since their timestamps don't mean much.
+        // We set the sort key to 3 so they come last (in case the user is mixing files and folders).
+        if (scriptColData.item.is_dir)
+        {
+            scriptColData.value = "";
+            scriptColData.sort = 3;
+        }
+        // For files, are the two dates the same?
+        else if (new Date(scriptColData.item.create).valueOf() == new Date(scriptColData.item.modify).valueOf())
+        {
+            scriptColData.value = "No";
+            scriptColData.group = "Never Modified";
+            scriptColData.sort = 2;
+        }
+        // the dates are different, therefore modified
+        else
+        {
+            scriptColData.value = "Yes";
+            scriptColData.group = "Modified";
+            scriptColData.sort = 1;
+        }
     }

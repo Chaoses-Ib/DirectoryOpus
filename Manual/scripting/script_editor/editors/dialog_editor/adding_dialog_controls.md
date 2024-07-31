@@ -59,3 +59,7 @@ A control that can host other dialogs. Each sub-dialog appears as a tab.
 
 ![](/Manual/images/media/image123.png)  
 Used to draw a box around other controls, or as a header to divide two sections of a dialog.
+
+### Palette
+
+A palette control that pops open a color selection palette when clicked.

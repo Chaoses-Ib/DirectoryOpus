@@ -31,7 +31,6 @@ The right-hand side of the panel contains options that let you control how Opus 
   - **Size**: The comparison is based only on file size. If two files are the same size they'll be considered to be duplicates.
   - **MD5 checksum**: This is the slowest but most accurate method of comparison. Filenames are not considered using this method; instead, for any two files Opus first compares their sizes. If the sizes are the same Opus then calculates the MD5 checksum for both files - if the checksum matches then the two files are considered to be duplicates. You can use the **MD5 accuracy** slider to reduce the accuracy of the comparison and speed up the search.
 - **Clear previous results**: If this option is on the contents of the **Show results in** file collection will be automatically cleared before the search begins.
-- **Delete mode**: If the reason you are searching for duplicate files is to eliminate wasted space, this mode can be handy. When this option is turned on and you perform a search, the file display showing the results is automatically put into [checkbox mode](/Manual/basic_concepts/selecting_files/selecting_with_the_mouse_and_keyboard/checkbox_mode.md). When the search is complete, Opus will automatically select all but the first file of every duplicate file group. You can then use the **Delete** button at the bottom of the panel to delete the checked files. The **Select** button lets you re-run the delete selection process without having to re-run the search. This can be useful if you want to re-sort the list to affect which files are checked for deletion.
 - **Filter**: The filter field lets you define a filter to control which files and locations are searched. You can use this in two ways:         
   - You can enter a [simple wildcard pattern](/Manual/reference/wildcard_reference/pattern_matching_syntax.md) to control which files will be considered by the duplicates search. For example, enter **\*.jpg** to only search for duplicate **JPG** files.
   - You can click the **Define Filter** button (![](/Manual/images/media/dupe_files_-_filter.png)) to define a filter using the advanced filter control (or use the drop-down to select a previously saved filter). You can use this to specify files to search for as well as control (using Sub-folder clauses) which sub-folders are searched. See the [Filtered Operations](/Manual/file_operations/filtered_operations/README.md) page for more information on filters.
@@ -46,8 +45,4 @@ The right-hand side of the panel contains options that let you control how Opus 
 
 When you have specified the locations and parameters for the duplicates search, click the **Find** button to begin.
 
-When using the **Delete mode** option, you can override the main Preferences Recycle Bin setting when deleting any selected duplicate files.
-
-![](/Manual/images/media/dupe_delete.png)
-
-The **Delete** button in the bottom-right of the panel has a drop-down menu attached which lets you choose exactly how you want to delete the duplicates.
+The **Select** button can help if you are eliminating duplicates to save space. Once the search is complete, click the **Select** button at the bottom of the panel. You can then choose criteria for which files to keep and which to select. Once selected, the files can be deleted using the usual **Delete** button on the toolbar (or hotkey, context menu, etc.).
