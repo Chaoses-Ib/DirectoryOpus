@@ -1,4 +1,6 @@
-[脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 可以在每次制表符变为活动（即位于同一文件列表中其它制表符的前面）时实现 **OnActivateTab** 事件，以接收通知。
+# OnActivateTab
+
+**OnActivateTab** 事件可以由 [脚本加载项](/Manual/scripting/script_add_ins/README.zh.md) 实现，以便在每次标签页变为活动状态时（即在同一个文件列表中位于另一个标签页的前面）接收通知。
 
 <table>
 <thead><tr><th>
@@ -12,13 +14,13 @@ OnActivateTab
 **[ActivateTabData](../scripting_objects/activatetabdata.zh.md)**
 </td></tr><tr><td>
 
-**返回值类型：**</td><td>
+**返回类型：**</td><td>
 
 *无*
 </td></tr><tr><td>
 
-**说明：**</td><td>
+**描述：**</td><td>
 
-**ActivateTabData.oldtab** 属性识别出之前活动的制表符，**newtab** 属性识别出新活动制表符。
+**ActivateTabData.oldtab** 属性标识先前处于活动状态的标签页，**newtab** 属性标识新的活动标签页。
 </td></tr></tbody>
 </table>

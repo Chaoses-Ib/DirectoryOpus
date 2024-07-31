@@ -9,7 +9,7 @@
     ' 创建 Dialog 对象。您还可以从文件窗口、Tab、Func 和 Command 对象获取对话框对象。
     设置 dlg = DOpus.Dlg 
     ' 初始化对象，以显示带有三个按钮的简单消息。
-    dlg.window = DOpus.文件窗口s(0)
+    dlg.window = DOpus.Listers(0)
     dlg.message = "简单对话框消息"
     dlg.title = "对话框标题"
     dlg.buttons = "首选 | 第二选择 | 取消"
@@ -26,7 +26,7 @@
     ' 初始化对象，以显示一个带三个按钮的消息，其中一个按钮包含多个选项的下拉菜单
     ' 该对话框还有一个警告图标、一个允许用户输入一行文本的文本字段、
     ' 以及可以打开或关闭的两个复选框。
-    dlg.window = DOpus.文件窗口s(0)
+    dlg.window = DOpus.Listers(0)
     dlg.message = "更复杂的对话框消息。" & vbCrLf & "输入一些文本并选择您的选项。"
     dlg.title = "复杂对话框标题"
     dlg.buttons = "首选 | 第二选择 + 第三选择 + 第四选择 | 取消"
@@ -47,7 +47,7 @@
     ' 创建 Dialog 对象。
     设置 dlg = DOpus.Dlg 
     ' 初始化对象，以显示一个下拉控件，使用户能够从很多选项中选取一个
-    dlg.window = DOpus.文件窗口s(0)
+    dlg.window = DOpus.Listers(0)
     dlg.message = "下拉列表对话框消息"
     dlg.title = "下拉对话框标题"
     dlg.buttons = "确定 | 取消"
@@ -65,7 +65,7 @@
     ' 创建 Dialog 对象。
     设置 dlg = DOpus.Dlg 
     ' 初始化对象，以显示一个列表项，用户可以打开或关闭这些项
-    dlg.window = DOpus.文件窗口s(0)
+    dlg.window = DOpus.Listers(0)
     dlg.message = "列表项选择对话框消息"
     dlg.title = "列表项选择对话框标题"
     dlg.buttons = "确定 | 取消"
@@ -85,7 +85,7 @@
     ' 创建 Dialog 对象。
     设置 dlg = DOpus.Dlg 
     ' 初始化对象，以显示一个弹出菜单，供用户选取
-    dlg.window = DOpus.文件窗口s(0)
+    dlg.window = DOpus.Listers(0)
     dlg.choices = DOpus.Create.Vector("选项 1", "选项 2", "-", "选项 3", "选项 4")
     dlg.menu = DOpus.Create.Vector(2, 0, 0, 2, 0)
     ' 显示菜单，并将结果输出到脚本日志

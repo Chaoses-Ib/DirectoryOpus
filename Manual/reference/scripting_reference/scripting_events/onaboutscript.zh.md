@@ -1,4 +1,6 @@
-**OnAboutScript** 事件可由 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现，以向用户显示“关于”对话框。当用户在 **[脚本管理](/Manual/scripting/script_management/README.zh.md)** 对话框中单击脚本的 *关于* 按钮时，将触发此事件。
+# OnAboutScript
+
+**OnAboutScript** 事件可以由[脚本加载项](/Manual/scripting/script_add_ins/README.zh.md) 实现，以便向用户显示“关于”对话框。 当用户单击**[脚本管理](/Manual/scripting/script_management/README.zh.md)**对话框上脚本的*关于*按钮时，会触发此事件。
 
 <table>
 <thead><tr><th>
@@ -9,7 +11,7 @@ OnAboutScript
 
 **参数类型：**</td><td>
 
-**[AboutData](../scripting_objects/aboutdata.zh.md)**
+**[AboutData](../scripting_objects/aboutdata.zh.md)** 
 </td></tr><tr><td>
 
 **返回类型：**</td><td>
@@ -17,8 +19,8 @@ OnAboutScript
 *无*
 </td></tr><tr><td>
 
-**说明：**</td><td>
+**描述：**</td><td>
 
-此事件的通常实现将使用 **AboutData.window** 参数来使用 **[Dialog](../scripting_objects/dialog.zh.md)** 对象显示对话框。
+此事件的常见实现方式是使用 **AboutData.window** 参数通过 **[Dialog](../scripting_objects/dialog.zh.md)** 对象显示对话框。
 </td></tr></tbody>
 </table>

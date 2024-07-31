@@ -1,29 +1,29 @@
-# 别名
+# Alias
 
-**别名**对象代表定义的 [目录别名](/Manual/basic_concepts/the_lister/navigation/aliases.zh.md)。通过枚举或为 **[别名](aliases.zh.md)** 指定索引可以获取对象。
+**别名** 对象代表一个已定义的 [文件夹别名](/Manual/basic_concepts/the_lister/navigation/aliases.zh.md)。可以通过枚举或索引 **[Aliases](aliases.zh.md)** 对象来获取它。
 
 <table>
 <thead><tr><th>
 属性名称</th><th>
 返回类型</th><th>
-说明
+描述
 </th></tr></thead><tbody><tr><td>
 
 *\<默认值\>*</td><td>
 
-*string*</td><td>
+*字符串*</td><td>
 返回别名的名称。
 </td></tr><tr><td>
-路径</td><td>
+path</td><td>
 
-*对象:***[路径](path.zh.md)**</td><td>
+*对象:***[Path](path.zh.md)**</td><td>
 
-以 **[路径](path.zh.md)** 对象形式返回别名的目标。
+将别名的目标作为 **[Path](path.zh.md)** 对象返回。
 </td></tr><tr><td>
-系统</td><td>
+system</td><td>
 
-*bool*</td><td>
+*布尔值*</td><td>
 
-如果对象为系统定义的别名，则为 **True**，如果为用户定义，则为 **False**。
+如果对象是系统定义的别名，则为 **True**，如果是用户定义的别名，则为 **False**。
 </td></tr></tbody>
 </table>

@@ -1,4 +1,6 @@
-**OnAfterFolderChange** 事件可以由在标签页中读入新文件夹后想要收到通知的 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现。使用 **[OnBeforeFolderChange](onbeforefolderchange.zh.md)** 事件在文件夹读入 *前* 接收通知。
+# OnAfterFolderChange
+
+**OnAfterFolderChange** 事件可以由想要在标签页中读取新文件夹后收到通知的 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现。使用 **[OnBeforeFolderChange](onbeforefolderchange.zh.md)** 事件来接收在读取文件夹 *之前* 的通知。
 
 <table>
 <thead><tr><th>
@@ -12,15 +14,15 @@ OnAfterFolderChange
 **[AfterFolderChangeData](../scripting_objects/afterfolderchangedata.zh.md)**
 </td></tr><tr><td>
 
-**返回类型：**</td><td>
+**返回值类型：**</td><td>
 
 *bool*
 </td></tr><tr><td>
 
-**说明：**</td><td>
+**描述：**</td><td>
 
-**AfterFolderChangeData.tab** 属性会指示标签页，**path** 属性会指示文件夹的路径。**result** 属性表示文件夹读取的成功或失败。
+**AfterFolderChangeData.tab** 属性指示标签页，**path** 属性指示文件夹的路径。**result** 属性指示文件夹读取的成功或失败。
 
-如果 **result** 是 **False**（即文件夹未成功读取），则你可以从此事件返回 **True** 以阻止 Opus 返回到前一个文件夹（也就是在文件夹读取失败时通常发生的情况）。如果 **result** 是 **True**，则从此事件返回的值会被忽略。
+如果 **result** 为 **False**（即文件夹没有成功读取），则可以从该事件返回 **True** 以阻止 Opus 返回到上一个文件夹（这通常是文件夹读取失败时发生的情况）。如果 **result** 为 **True**，则该事件的返回值将被忽略。
 </td></tr></tbody>
 </table>

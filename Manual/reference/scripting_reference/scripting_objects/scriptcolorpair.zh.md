@@ -1,4 +1,6 @@
-一个简单的对象，将两种颜色（文本和背景）组合在一起。
+# ScriptColorPair
+
+一个简单的对象，将两种颜色捆绑在一起（文本和背景）。
 
 <table>
 <thead><tr><th>
@@ -10,12 +12,12 @@ backcolor</td><td>
 
 *string*</td><td>
 
-指定背景颜色。此颜色应采用 **\#RRGGBB**（十六进制）或 **RRR,GGG,BBB**（十进制）的形式。
+指定背景颜色。应采用 **\#RRGGBB**（十六进制）或 **RRR,GGG,BBB**（十进制）格式。
 </td></tr><tr><td>
 textcolor</td><td>
 
 *string*</td><td>
 
-指定文本颜色。此颜色应采用 **\#RRGGBB**（十六进制）或 **RRR,GGG,BBB**（十进制）的形式。
+指定文本颜色。应采用 **\#RRGGBB**（十六进制）或 **RRR,GGG,BBB**（十进制）格式。
 </td></tr></tbody>
 </table>

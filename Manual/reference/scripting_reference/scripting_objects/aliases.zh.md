@@ -1,51 +1,52 @@
-# 别名
+# Aliases
 
-**别名**对象包含所有已定义 [文件夹别名](/Manual/basic_concepts/the_lister/navigation/aliases.zh.md) 的集合。它从 **[DOpus](dopus.zh.md).aliases** 方法中检索。
+**Aliases** 对象包含所有已定义的 [文件夹别名](/Manual/basic_concepts/the_lister/navigation/aliases.zh.md) 的集合。它可以通过 **[DOpus](dopus.zh.md).aliases** 方法获取。  
 
 <table>
 <thead><tr><th>
 属性名称</th><th>
-返回类型</th><th>
-说明
+返回值类型</th><th>
+描述
 </th></tr></thead><tbody><tr><td>
 
-*\<缺省值\>*</td><td>
+*\<默认值\>*</td><td>
 
-*集合:***[别名](alias.zh.md)**</td><td>
+*集合:***[Alias](alias.zh.md)**</td><td>
 
-您可以枚举 **别名**对象，或按名称查询单个别名的值（例如 *DOpus.Output(DOpus.aliases("desktop").path);*)
+你可以枚举 **Aliases** 对象，或者通过名称查询单个别名的值（例如 *DOpus.Output(DOpus.aliases("desktop").path);*)
 </td></tr></tbody>
 </table>
 
 <table>
 <thead><tr><th>
 方法名称</th><th>
-**参数**</th><th>
-返回类型</th><th>
-说明
-</th></tr></thead><tbody><tr><td>
-添加</td><td>
 
-\<string:名称\>  
-\<string:路径\></td><td>
+**参数**</th><th>
+返回值类型</th><th>
+描述
+</th></tr></thead><tbody><tr><td>
+Add</td><td>
+
+\<字符串:名称\>  
+\<字符串:路径\></td><td>
 
 *无*</td><td>
 
-使用指定名称和路径向系统添加一个新别名。请注意您**不**应在别名名称中提供前导斜杠 (/)。
+在系统中添加一个新的别名，使用指定的名称和路径。注意，在别名名称中 **不要** 包含开头的斜杠 (/)。
 </td></tr><tr><td>
-删除</td><td>
+Delete</td><td>
 
-\<string:名称\></td><td>
+\<字符串:名称\></td><td>
 
 *无*</td><td>
 删除指定的别名。
 </td></tr><tr><td>
-更新</td><td>
+Update</td><td>
 
 *无*</td><td>
 
 *无*</td><td>
 
-更新此对象的**状态**。当 **别名** 对象首次通过 **DOpus.aliases** 检索时，将对当时的别名进行快照。如果您通过该对象进行更改，它将反映这些更改，但除非您调用 **更新** 方法，否则不会检测到脚本外部进行的任何更改（例如通过 **收藏夹 ADD=别名** 命令）。
+更新此对象的当前状态。当第一次通过 **DOpus.aliases** 获取 **Aliases** 对象时，会获取该时刻别名的快照。如果通过对象进行更改，它会反映这些更改，但任何在脚本外部进行的更改（例如，通过 **Favorites ADD=alias** 命令）都不会被检测到，除非你调用 **Update** 方法。
 </td></tr></tbody>
 </table>

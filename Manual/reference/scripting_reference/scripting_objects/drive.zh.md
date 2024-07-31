@@ -1,61 +1,65 @@
-**驱动器** 对象提供了关于您系统中一个驱动器（硬盘、光盘 ROM 等）的信息。您可以从 **[FSUtil](fsutil.zh.md).Drives** 方法中获取一个 **[矢量](vector.zh.md)** **驱动器** 对象，一个用于您的系统中的每个驱动器。
+# Drive
+
+**Drive** 对象提供了有关系统中驱动器（硬盘驱动器、CD ROM 等）的信息。您可以从 **[FSUtil](fsutil.zh.md).Drives** 方法获取 **[Vector](vector.zh.md)** 中的 **Drive** 对象，每个驱动器对应一个对象。
 
   
 
-<table><tr><th>
+<table>
+<thead><tr><th>
 
 **属性名称**</th><th>
 
-**返回值** 类型</th><th>
-说明
-</th></tr><tr><td>
+**返回** 类型</th><th>
+描述
+</th></tr></thead><tbody><tr><td>
 
 *默认值*</td><td>
 
-*字符串*</td><td>
+*string*</td><td>
 
 返回驱动器的根目录（例如 **C:\\**）。
 </td></tr><tr><td>
-可用</td><td>
+avail</td><td>
 
-*Object:***[文件大小](filesize.zh.md)**</td><td>
+*object:***[FileSize](filesize.zh.md)**</td><td>
 
-返回一个 **[文件大小](filesize.zh.md)** 对象，表明驱动器上可用的可用空间。
+返回一个 **[FileSize](filesize.zh.md)** 对象，指示驱动器上可用的空闲空间。
 </td></tr><tr><td>
 bpc</td><td>
 
 *int*</td><td>
-返回该驱动器的每簇字节数。
+返回驱动器每个簇的字节数。
 </td></tr><tr><td>
-文件系统</td><td>
+filesys</td><td>
 
-*字符串*</td><td>
-返回一个表示文件系统类型的字符串。
+*string*</td><td>
+返回一个字符串，表示文件系统类型。
 </td></tr><tr><td>
-标记</td><td>
+flags</td><td>
 
 *int*</td><td>
-返回一个代表该驱动器的文件系统的标记值。
+返回一个表示驱动器文件系统标志的值。
 </td></tr><tr><td>
-免费</td><td>
+free</td><td>
 
-*Object:***[文件大小](filesize.zh.md)**</td><td>
+*object:***[FileSize](filesize.zh.md)**</td><td>
 
-返回一个 **[文件大小](filesize.zh.md)** 对象，表明驱动器上可用的总空间。
+返回一个 **[FileSize](filesize.zh.md)** 对象，指示驱动器上的总空闲空间。
 </td></tr><tr><td>
-标签</td><td>
+label</td><td>
 
-*字符串*</td><td>
-返回该驱动器的标签。
+*string*</td><td>
+返回驱动器的标签。
 </td></tr><tr><td>
-总计</td><td>
+total</td><td>
 
-*Object:***[文件大小](filesize.zh.md)**</td><td>
+*object:***[FileSize](filesize.zh.md)**</td><td>
 
-返回一个 **[文件大小](filesize.zh.md)** 对象，表明该驱动器的总大小。
+返回一个 **[FileSize](filesize.zh.md)** 对象，指示驱动器的总大小。
 </td></tr><tr><td>
-类型</td><td>
+type</td><td>
 
-*字符串*</td><td>
-返回一个表明该驱动器类型的字符串（可移动的、固定的、远程的、cdrom、ramdisk）。
-</td></tr></table>
+*string*</td><td>
+返回一个字符串，指示驱动器类型（可移动、固定、远程、cdrom、ramdisk）。
+</td></tr></tbody>
+</table>

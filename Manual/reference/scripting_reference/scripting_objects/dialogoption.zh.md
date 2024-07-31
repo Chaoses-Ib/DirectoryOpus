@@ -1,4 +1,6 @@
-**DialogOption** 对象可与 **[Dialog](dialog.zh.md)**对象的 options 属性一起使用。此对象提供了 5 个集合，你可以初始化任何一个对象，用户会将其视为物理复选框控件显示。
+# DialogOption
+
+**DialogOption** 对象与 **[Dialog](dialog.zh.md)** 对象的 options 属性一起使用。提供了五个这样的集合，您初始化的任何集合都将以物理复选框控件的形式显示给用户。
 
 <table>
 <thead><tr><th>
@@ -9,12 +11,12 @@
 label</td><td>
 
 *string*</td><td>
-将其设置为复选框所需的标签。
+将此设置为复选框所需的标签。
 </td></tr><tr><td>
 state</td><td>
 
 *bool*</td><td>
 
-将其设置为复选框所需的初始状态。当 **Dialog.Show** 方法返回时，你可以读取该属性来查找用户选择的 state 状态。
+将此设置为复选框所需的初始状态。当 **Dialog.Show** 方法返回时，您可以读取此属性以找出用户选择的 state。
 </td></tr></tbody>
 </table>

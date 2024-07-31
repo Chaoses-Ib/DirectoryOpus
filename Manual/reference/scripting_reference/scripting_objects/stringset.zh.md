@@ -1,12 +1,14 @@
-**StringSet** 对象是一个容器，用于存储一个或多个唯一的字符串。它类似于数组或向量（例如，**[Vector](vector.zh.md)**），但其优势在于使用字典系统来定位字符串，而不是使用数字索引。因此，您可以比线性搜索 **[Vector](vector.zh.md)** 更快速地查找字符串。
+# StringSet
 
-您可以使用 **[DOpusFactory](dopusfactory.zh.md)** 对象创建新的 **StringSet**。**StringSet** 可以区分大小写（“cat” 和 “CAT” 将被视为两个不同的字符串），也可以不区分大小写。
+**StringSet** 对象是一个存储一个或多个唯一字符串的容器。它类似于数组或向量（例如 **[Vector](vector.zh.md)**），但它使用字典系统来定位字符串，而不是数字索引。因此，你可以比线性搜索 **[Vector](vector.zh.md)** 更快地查找字符串。
+
+你可以使用 **[DOpusFactory](dopusfactory.zh.md)** 对象创建一个新的 **StringSet**。**StringSet** 可以是区分大小写的（"cat" 和 "CAT" 将被视为两个不同的字符串），也可以是不区分大小写的。
 
 <table>
 <thead><tr><th>
 属性名称</th><th>
 返回类型</th><th>
-说明
+描述
 </th></tr></thead><tbody><tr><td>
 count</td><td>
 
@@ -40,7 +42,7 @@ size</td><td>
 
 **参数**</th><th>
 返回类型</th><th>
-说明
+描述
 </th></tr></thead><tbody><tr><td>
 assign</td><td>
 
@@ -48,7 +50,7 @@ assign</td><td>
 
 *none*</td><td>
 
-将另一个 **StringSet** 的内容复制到这个 **StringSet** 中。您还可以传递字符串数组或 **[Vector](vector.zh.md)** 对象。
+将另一个 **StringSet** 的内容复制到当前 **StringSet** 中。你也可以传递一个字符串数组或 **[Vector](vector.zh.md)** 对象。
 </td></tr><tr><td>
 clear</td><td>
 
@@ -63,7 +65,7 @@ erase</td><td>
 \<string\></td><td>
 
 *none*</td><td>
-如果字符串存在于集合中，则将其擦除。
+如果字符串存在于集合中，则擦除它。
 </td></tr><tr><td>
 exists</td><td>
 
@@ -71,7 +73,7 @@ exists</td><td>
 
 *bool*</td><td>
 
-如果指定字符串存在于集合中，则返回 **True**。
+如果指定的字符串存在于集合中，则返回 **True**。
 </td></tr><tr><td>
 insert</td><td>
 
@@ -79,7 +81,7 @@ insert</td><td>
 
 *bool*</td><td>
 
-如果字符串不存在，则将其插入到集合中。如果成功，则返回 **True**。
+如果字符串不存在于集合中，则将其插入集合中。如果成功，则返回 **True**。
 </td></tr><tr><td>
 merge</td><td>
 
@@ -87,6 +89,6 @@ merge</td><td>
 
 *none*</td><td>
 
-将另一个 **StringSet** 的内容与这个 **StringSet** 合并。
+将另一个 **StringSet** 的内容与当前 **StringSet** 合并。
 </td></tr></tbody>
 </table>

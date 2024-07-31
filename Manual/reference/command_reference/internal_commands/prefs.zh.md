@@ -478,7 +478,7 @@ NOSCRIPT</td><td>
 
 *(无值)*</td><td>
 
-允许 [脚本](/Manual/scripting/README.zh.md) 运行 `Prefs LAYOUT` 命令，而无需触发其它脚本（或其本身）。添加 **NOSCRIPT** 参数将禁用 **[OnBeforeFolderChange](../../scripting_reference/scripting_events/onbeforefolderchange.zh.md)**、**[OnAfterFolderChange](../../scripting_reference/scripting_events/onafterfolderchange.zh.md)**、**[OnOpenTab](../../scripting_reference/scripting_events/onopentab.zh.md)** 和 **[OnOpen文件窗口](../../scripting_reference/scripting_events/onopenlister.zh.md)** 事件，这些事件原本会因打开文件窗口布局而触发。
+允许 [脚本](/Manual/scripting/README.zh.md) 运行 `Prefs LAYOUT` 命令，而无需触发其它脚本（或其本身）。添加 **NOSCRIPT** 参数将禁用 **[OnBeforeFolderChange](../../scripting_reference/scripting_events/onbeforefolderchange.zh.md)**、**[OnAfterFolderChange](../../scripting_reference/scripting_events/onafterfolderchange.zh.md)**、**[OnOpenTab](../../scripting_reference/scripting_events/onopentab.zh.md)** 和 **[OnOpenLister](../../scripting_reference/scripting_events/onopenlister.zh.md)** 事件，这些事件原本会因打开文件窗口布局而触发。
 
 *示例：* `Prefs LAYOUT="My Layout" NOSCRIPT`
 </td></tr><tr><td>

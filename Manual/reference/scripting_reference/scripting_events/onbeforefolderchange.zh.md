@@ -1,29 +1,31 @@
-[script 附加组件](/Manual/scripting/script_add-ins/README.zh.md) 可实现 **OnBeforeFolderChange** 事件，以便在标签中读取新文件夹之前接收通知。如果希望在文件夹被读取 *后* 接收通知，请使用 **OnAfterFolderChange** 事件。
+# OnBeforeFolderChange
+
+**OnBeforeFolderChange** 事件可以通过 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现，以便在新的文件夹被读取到标签中时收到通知。如果需要在文件夹读取 *之后* 收到通知，可以使用 **OnAfterFolderChange** 事件。
 
 <table>
 <thead><tr><th>
 
-**方法名称：**</th><th>
+**方法名称:**</th><th>
 OnBeforeFolderChange
 </th></tr></thead><tbody><tr><td>
 
-**参数类型：**</td><td>
+**参数类型:**</td><td>
 
 **[BeforeFolderChangeData](../scripting_objects/beforefolderchangedata.zh.md)**
 </td></tr><tr><td>
 
-**返回类型：**</td><td>
+**返回值类型:**</td><td>
 
 *bool* 或 *string*
 </td></tr><tr><td>
 
-**说明：**</td><td>
+**描述:**</td><td>
 
-**BeforeFolderChangeData.tab** 属性标识标签页，而 **path** 属性标识即将读取的文件夹。**initial** 属性指示这是读取到此标签页的第一个文件夹，如果为 **True**，则意味着标签页之前为空或新建。
+**BeforeFolderChangeData.tab** 属性标识标签，**path** 属性标识即将读取的文件夹。**initial** 属性指示这是否是读取到此标签的第一个文件夹 - 如果为 **True**，则意味着该标签以前是空的或新打开的。
 
-可以从此事件返回两种不同的类型：
+你可以从这个事件中返回两种不同的类型：
 
-- *bool*：如果返回 **True**，将阻止文件夹读取并且标签页不会更改。如果返回 **False**，则将允许继续读取（这是默认值）。
-- *string*：可以返回一个 *string*（或一个 **[Path](../scripting_objects/path.zh.md)** 对象）来更改要读取的文件夹路径。
+- *bool*: 如果返回 **True**，文件夹读取将被阻止，并且标签将保持不变。如果你返回 **False**，读取将被允许继续（这是默认值）。
+- *string*: 你可以返回一个 *string*（或 **[Path](../scripting_objects/path.zh.md)** 对象）来更改要读取的文件夹路径。
 </td></tr></tbody>
 </table>

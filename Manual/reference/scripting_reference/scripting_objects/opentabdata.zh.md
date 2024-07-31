@@ -1,23 +1,25 @@
-如果 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现 **[OnOpenTab](../scripting_events/onopentab.zh.md)** 事件，则在打开新标签页时调用该方法时会接收一个 **OpenTabData** 对象。
+# OpenTabData
+
+如果一个 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md)实现了 **[OnOpenTab](../scripting_events/onopentab.zh.md)** 事件，当新标签页打开时调用该方法，会接收一个 **OpenTabData** 对象。
 
 <table>
 <thead><tr><th>
 属性名称</th><th>
-返回类型</th><th>
-说明
+返回值类型</th><th>
+描述
 </th></tr></thead><tbody><tr><td>
 qualifiers</td><td>
 
-*string*</td><td>
+*字符串*</td><td>
 
-返回一个指示用户在事件触发时按下的任何限定符键的字符串。  
-此字符串可以包含以下全部或部分内容：*shift* *ctrl*、*alt*、*lwin*、*rwin*
-如果未按下任何限定符，则字符串将为：*none*
+返回一个字符串，表示用户触发事件时按下的任何限定符键。  
+该字符串可以包含以下任何或所有内容：*shift* *ctrl*, *alt*, *lwin*, *rwin*  
+如果没有按下限定符，该字符串将为：*none*
 </td></tr><tr><td>
 tab</td><td>
 
-*object:***[标签页](tab.zh.md)**</td><td>
+*对象:***[Tab](tab.zh.md)**</td><td>
 
-返回一个表示新打开标签页的 **[标签页](tab.zh.md)** 对象。
+返回一个 **[Tab](tab.zh.md)** 对象，表示新打开的标签页。
 </td></tr></tbody>
 </table>

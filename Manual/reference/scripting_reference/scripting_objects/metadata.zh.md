@@ -1,101 +1,101 @@
-# 元数据**
+# Metadata
 
-**元数据**对象提供文件或文件夹的元数据信息（元数据类似音乐文件的音轨号、图像的尺寸、文档的作者等）。如果您有**项目**对象，则可以从**[项目](item.zh.md)。元数据**属性获取**元数据**对象，否则可以使用**[文件系统实用工具](fsutil.zh.md)。获取元数据**方法使用项目的路径获取元数据对象。
+**Metadata** 对象提供有关文件或文件夹的元数据信息（元数据是指诸如音乐文件的曲目编号、图像的尺寸、文档的作者等信息）。如果您拥有 **Item** 对象，则可以从 **[Item](item.zh.md).metadata** 属性获取 **Metadata** 对象，否则可以使用项目的路径使用 **[FSUtil](fsutil.zh.md).GetMetadata** 方法获取它。
 
-**元数据**对象提供不同的子对象作为属性，这些属性将可用元数据分组为若干类别，与[列关键字](../../metadata_keywords/keywords_for_columns.zh.md) 页面上列出的类别大致对应。您可以使用**元数据**对象的*默认值*确定可用的元数据中的主类型或主要类型。
+**Metadata** 对象提供不同的子对象作为属性，将可用的元数据分组到多个类别中，大体上对应于 [关键字列](../../metadata_keywords/keywords_for_columns.zh.md) 页面上列出的类别。您可以使用 **Metadata** 对象的 *默认值* 来确定可用的主要元数据类型。
 
 <table>
 <thead><tr><th>
 属性名称</th><th>
-返回类型</th><th>
-说明</th></tr></thead><tbody><tr><td>
+返回值类型</th><th>
+描述
+</th></tr></thead><tbody><tr><td>
 
-*\<默认值\>*</td><td>
+*\<default value\>*</td><td>
 
-*字符串*</td><td>
+*string*</td><td>
 
-返回指示此对象中可用的元数据的主类型的字符串。字符串将是以下之一：*无*、*视频*、*音频*、*图像*、*字体*、*可执行文件*、*文档*、*其它*。
+返回一个字符串，指示此对象中可用的主要元数据类型。字符串将是以下之一：*none*、*video*、*audio*、*image*、*font*、*exe*、*doc*、*other*。
+请注意，有时可能有多种类型的元数据可用。例如，作者是一个文档字段（因此在 **doc** 属性下找到），但图片也可以有作者。在这种情况下，**Metadata** 对象将提供 **ImageMeta** 和 **DocMeta** 对象。
 
-请注意，有时会提供多种类型的元数据。例如，作者是文档字段（因此在**文档**属性下找到），但图片也可以有作者。在这种情况下，**元数据**对象将提供**图像元数据**和**文档元数据**对象。
-
-如果返回的字符串为*无*，则表示文件中没有可用元数据，您不应尝试访问任何其它属性。
+如果返回的字符串是 *none*，则表示该文件没有可用的元数据，您不应该尝试访问任何其它属性。
 </td></tr><tr><td>
-音频</td><td>
+audio</td><td>
 
-*对象*：**[音频元数据](audiometa.zh.md)**</td><td>
+*object*:**[AudioMeta](audiometa.zh.md)**</td><td>
 
-返回**[音频元数据](audiometa.zh.md)**对象，用于访问音频元数据。此对象属性通常作为其相应的底层类型返回（例如，"音轨号"之类的数值字段将作为*整数*返回）。
+返回一个 **[AudioMeta](audiometa.zh.md)** 对象，提供对音频元数据的访问。此对象的属性通常以其相应的底层类型返回（例如，像“曲目编号”这样的数字字段将作为 *int* 返回）。
 </td></tr><tr><td>
-音频文本</td><td>
+audio_text</td><td>
 
-*对象*：**[音频元数据](audiometa.zh.md)**</td><td>
+*object*:**[AudioMeta](audiometa.zh.md)**</td><td>
 
-返回**[音频元数据](audiometa.zh.md)**对象，用于访问音频元数据未修改的文本形式。这可以访问文件窗口中显示的与文本相同的文本。例如，"音轨号"之类的数值字段将作为*字符串*返回，而不是*整数*。
+返回一个 **[AudioMeta](audiometa.zh.md)** 对象，提供对未修改的音频元数据文本形式的访问。这提供了与在文件窗口中显示的相同文本的访问。例如，像“曲目编号”这样的数字字段将作为 *string* 而不是 *int* 返回。
 </td></tr><tr><td>
-文档</td><td>
+doc</td><td>
 
-*对象：***[文档元数据](docmeta.zh.md)**</td><td>
+*object:***[DocMeta](docmeta.zh.md)**</td><td>
 
-返回**[文档元数据](docmeta.zh.md)**对象，用于访问文档元数据。
+返回一个 **[DocMeta](docmeta.zh.md)** 对象，提供对文档元数据的访问。
 </td></tr><tr><td>
-文档文本</td><td>
+doc_text</td><td>
 
-*对象：***[文档元数据](docmeta.zh.md)**</td><td>
+*object:***[DocMeta](docmeta.zh.md)**</td><td>
 
-返回**[文档元数据](docmeta.zh.md)**对象，用于访问文档元数据未修改的文本形式。
+返回一个 **[DocMeta](docmeta.zh.md)** 对象，提供对未修改的文档元数据文本形式的访问。
 </td></tr><tr><td>
-可执行文件</td><td>
+exe</td><td>
 
-*对象：***[执行元数据](exemeta.zh.md)**</td><td>
+*object:***[ExeMeta](exemeta.zh.md)**</td><td>
 
-返回**[执行元数据](exemeta.zh.md)**对象，用于访问可执行文件（程序）元数据。
+返回一个 **[ExeMeta](exemeta.zh.md)** 对象，提供对可执行文件（程序）元数据的访问。
 </td></tr><tr><td>
-可执行文件文本</td><td>
+exe_text</td><td>
 
-*对象：***[执行元数据](exemeta.zh.md)**</td><td>
+*object:***[ExeMeta](exemeta.zh.md)**</td><td>
 
-返回**[执行元数据](exemeta.zh.md)**对象，用于访问程序元数据未修改的文本形式。
+返回一个 **[ExeMeta](exemeta.zh.md)** 对象，提供对未修改的程序元数据文本形式的访问。
 </td></tr><tr><td>
-字体</td><td>
+font</td><td>
 
-*对象：***[字体元数据](fontmeta.zh.md)**</td><td>
+*object:***[FontMeta](fontmeta.zh.md)**</td><td>
 
-返回**[字体元数据](fontmeta.zh.md)**对象，用于访问字体文件元数据。
+返回一个 **[FontMeta](fontmeta.zh.md)** 对象，提供对字体文件元数据的访问。
 </td></tr><tr><td>
-图像</td><td>
+image</td><td>
 
-*对象：***[图像元数据](imagemeta.zh.md)**</td><td>
+*object:***[ImageMeta](imagemeta.zh.md)**</td><td>
 
-返回**[图像元数据](imagemeta.zh.md)**对象，用于访问图片元数据。
+返回一个 **[ImageMeta](imagemeta.zh.md)** 对象，提供对图片元数据的访问。
 </td></tr><tr><td>
-图像文本</td><td>
+image_text</td><td>
 
-*对象：***[图像元数据](imagemeta.zh.md)**</td><td>
+*object:***[ImageMeta](imagemeta.zh.md)**</td><td>
 
-返回**[图像元数据](imagemeta.zh.md)**对象，用于访问图片元数据未修改的文本形式。
+返回一个 **[ImageMeta](imagemeta.zh.md)** 对象，提供对未修改的图片元数据文本形式的访问。
 </td></tr><tr><td>
-其它</td><td>
+other</td><td>
 
-*对象：***[其它元数据](othermeta.zh.md)**</td><td>
+*object:***[OtherMeta](othermeta.zh.md)**</td><td>
 
-返回**[其它元数据](othermeta.zh.md)**对象，用于访问其它元数据。
+返回一个 **[OtherMeta](othermeta.zh.md)** 对象，提供对杂项元数据的访问。
 </td></tr><tr><td>
-标签</td><td>
+tags</td><td>
 
-*字符串集合*</td><td>
+*collection:string*</td><td>
 
-返回对应于分配给此项目的标签的*字符串*集合。
+返回一个 *string* 集合，对应于分配给此项目的标签。
 </td></tr><tr><td>
-视频</td><td>
+video</td><td>
 
-*对象：***[视频元数据](videometa.zh.md)**</td><td>
+*object:***[VideoMeta](videometa.zh.md)**</td><td>
 
-返回 **[视频元数据](videometa.zh.md)** 对象，用于访问视频元数据。
+返回一个 **[VideoMeta](videometa.zh.md)** 对象，提供对视频元数据的访问。
 </td></tr><tr><td>
-视频文本</td><td>
+video_text</td><td>
 
-*对象：***[视频元数据](videometa.zh.md)**</td><td>
+*object:***[VideoMeta](videometa.zh.md)**</td><td>
 
-返回**[视频元数据](videometa.zh.md)**对象，用于访问视频元数据未修改的文本形式。
+返回一个 **[VideoMeta](videometa.zh.md)** 对象，提供对未修改的视频元数据文本形式的访问。
 </td></tr></tbody>
 </table>

@@ -1,70 +1,72 @@
-**OtherMeta** 对象是从 **[Metadata](metadata.zh.md).other** 属性中检索的。它提供了访问有关文件或文件夹的杂项信息的权限。
+# OtherMeta
+
+**OtherMeta** 对象可以通过 **[Metadata](metadata.zh.md).other** 属性获取。它提供了关于文件或文件夹的各种信息。
 
 <table>
 <thead><tr><th>
 属性名称</th><th>
 返回类型</th><th>
-说明
+描述
 </th></tr></thead><tbody><tr><td>
 autodesc</td><td>
 
 *string*</td><td>
-自动生成的描述字符串用于此项。与在文件窗口中“说明”列中显示的字符串相同。Opus 自动使用其它元数据为不同类型的文件生成说明，从而使其更合理。
+自动生成的项目描述字符串。这与文件窗口中“描述”列显示的字符串相同。Opus 使用其它元数据以最合理的方式自动生成各种类型文件的描述。
 </td></tr><tr><td>
 dircount</td><td>
 
 *int*</td><td>
 
-对于已使用 **[GetSizes](../../command_reference/internal_commands/getsizes.zh.md)** 或类似方式计算了其大小的文件夹，此项提供直接位于该文件夹之下的子文件夹数。
+对于通过 **[GetSizes](../../command_reference/internal_commands/getsizes.zh.md)** 或类似方法计算过大小的文件夹，它提供了该文件夹下直接子文件夹的数量。
 </td></tr><tr><td>
 dircounttotal</td><td>
 
 *int*</td><td>
 
-类似于 **dircount**，此项提供该文件夹之下的子文件总数（此项是递归计数 - 它包括子子文件夹、子子子文件夹，等等）
+类似于 **dircount**，它提供了该文件夹下所有子文件夹（包括子子文件夹、子子子文件夹等）的总数。
 </td></tr><tr><td>
 filecount</td><td>
 
 *int*</td><td>
 
-对于已使用 **[GetSizes](../../command_reference/internal_commands/getsizes.zh.md)** 或类似方式计算了其大小的文件夹，此项提供直接位于该文件夹中的文件数。
+对于通过 **[GetSizes](../../command_reference/internal_commands/getsizes.zh.md)** 或类似方法计算过大小的文件夹，它提供了该文件夹下直接文件数量。
 </td></tr><tr><td>
 filecounttotal</td><td>
 
 *int*</td><td>
 
-类似于 **filecount**，此项提供某个文件夹及其所有子文件夹、子子文件夹、等等之中的文件总数
+类似于 **filecount**，它提供了该文件夹及其所有子文件夹、子子文件夹等中的文件总数。
 </td></tr><tr><td>
 foldercontents</td><td>
 
 *string*</td><td>
 
-对于已使用 **[GetSizes](../../command_reference/internal_commands/getsizes.zh.md)** 或类似方式计算了其大小的文件夹，它返回一个字符串，以总结文件夹的内容。
+对于通过 **[GetSizes](../../command_reference/internal_commands/getsizes.zh.md)** 或类似方法计算过大小的文件夹，它返回一个字符串，提供该文件夹内容的摘要。
 </td></tr><tr><td>
 nsdesc</td><td>
 
 *string*</td><td>
-该项的父虚拟文件系统自动生成的说明。
+由父虚拟文件系统自动生成的项目描述。
 </td></tr><tr><td>
 rating</td><td>
 
 *int*</td><td>
-返回此文件或文件夹的用户分配评级。
+返回用户分配给该文件或文件夹的评分。
 </td></tr><tr><td>
 target</td><td>
 
 *object:***[Path](path.zh.md)**</td><td>
 
-返回表示快捷方式和链接的目标路径的 **[Path](path.zh.md)** 对象。
+返回一个代表快捷方式和链接的目标路径的 **[Path](path.zh.md)** 对象。
 </td></tr><tr><td>
 target_type</td><td>
 
 *string*</td><td>
 
-返回一个 *string*，用于指示链接类型（*unknown*, *linkfile*, *dosfile*, *url*, *junction*, *softlink*）。
+返回一个表示链接类型的字符串（*unknown*、*linkfile*、*dosfile*、*url*、*junction*、*softlink*）。
 </td></tr><tr><td>
 usercomment</td><td>
 string</td><td>
-返回文件或文件夹的用户分配说明。
+返回用户分配给文件或文件夹的描述。
 </td></tr></tbody>
 </table>

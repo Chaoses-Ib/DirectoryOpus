@@ -1,4 +1,6 @@
-如果 **[Filter](filter.zh.md)** 对象未能解析您提供的 [文本过滤器](/Manual/file_operations/filtered_operations/textual_filters.zh.md) 字符串，可以从 **Filter.lasterror** 属性中提取此对象，以找出出错原因。
+# FilterParseError
+
+如果 **[Filter](filter.zh.md)** 对象无法解析您提供的 [文本过滤器](/Manual/file_operations/filtered_operations/textual_filters.zh.md) 字符串，您可以从 **Filter.lasterror** 属性中检索此对象以找出问题所在。
 
 <table>
 <thead><tr><th>

@@ -16,9 +16,9 @@ Use this to set a description for the command, that is displayed in the [Customi
 </td></tr><tr><td>
 fayt</td><td>
 
-*object:***[scriptfaytcommand](scriptfaytcommand.md)**</td><td>
+*object:***[ScriptFAYTCommand](scriptfaytcommand.md)**</td><td>
 
-Returns a **[scriptfaytcommand](scriptfaytcommand.md)** object that you can use to initialise this command to [extend the FAYT field](/Manual/scripting/example_scripts/extending_the_fayt.md).
+Returns a **[ScriptFAYTCommand](scriptfaytcommand.md)** object that you can use to initialise this command to [extend the FAYT field](/Manual/scripting/example_scripts/extending_the_fayt.md).
 </td></tr><tr><td>
 hide</td><td>
 

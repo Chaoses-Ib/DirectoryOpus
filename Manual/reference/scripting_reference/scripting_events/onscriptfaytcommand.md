@@ -23,7 +23,7 @@ OnScriptFAYTCommand
 
 When a script extends the FAYT field by adding a new internal command using **ScriptInitData.AddCommand**, it specifies the name of its entry point with the **ScriptCommand.method** property. When the FAYT extension is triggered, Opus will call that method within your script.
 
-The **[scriptfaytcommanddata](../scripting_objects/scriptfaytcommanddata.md)** object provides information about what the user has typed to trigger your extension.
+The **[ScriptFAYTCommanddata](../scripting_objects/scriptfaytcommanddata.md)** object provides information about what the user has typed to trigger your extension.
 </td></tr></tbody>
 </table>
 

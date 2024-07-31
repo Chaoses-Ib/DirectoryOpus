@@ -45,9 +45,9 @@ language</td><td>
 </td></tr><tr><td>
 listers</td><td>
 
-*object:***[文件窗口s](listers.zh.md)**</td><td>
+*object:***[Listers](listers.zh.md)**</td><td>
 
-返回一个 **[文件窗口s](listers.zh.md)** 对象，它表示任何当前打开的列表程序窗口（每个窗口都由 **[文件窗口](lister.zh.md)** 对象表示）。
+返回一个 **[Listers](listers.zh.md)** 对象，它表示任何当前打开的列表程序窗口（每个窗口都由 **[文件窗口](lister.zh.md)** 对象表示）。
 </td></tr><tr><td>
 smartfavorites</td><td>
 
@@ -188,14 +188,14 @@ GetClipFormat</td><td>
 | **text**         | 文本数据                                            |
 | \<empty string\> | 空剪贴板，或任何其它类型的数据           |
 </td></tr><tr><td>
-Get文件窗口s</td><td>
+GetListers</td><td>
 
 *none*  
 or \<string:flags\></td><td>
 
-*object:***[文件窗口s](listers.zh.md)**</td><td>
+*object:***[Listers](listers.zh.md)**</td><td>
 
-返回一个 **[文件窗口s](listers.zh.md)** 对象，它表示任何当前打开的列表程序窗口（每个窗口都由 **[文件窗口](lister.zh.md)** 对象表示）。这与使用 **listers** 属性相同，只不过你可以指定可选标志：
+返回一个 **[Listers](listers.zh.md)** 对象，它表示任何当前打开的列表程序窗口（每个窗口都由 **[Lister](lister.zh.md)** 对象表示）。这与使用 **listers** 属性相同，只不过你可以指定可选标志：
 |       |                                                                              |
 |-------|------------------------------------------------------------------------------|
 | **c** | 当前桌面。仅返回当前桌面中的文件窗口。                 |

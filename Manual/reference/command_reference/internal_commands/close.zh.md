@@ -138,7 +138,7 @@ NOSCRIPT</td><td>
 
 *(无值)*</td><td>
 
-不对文件窗口触发任何脚本加载项可能提供的 **[OnClose文件窗口](../../scripting_reference/scripting_events/oncloselister.zh.md)** 脚本事件，进而关闭文件窗口。如果你在 **OnClose文件窗口** 事件内（例如为了响应用户关闭一个文件窗口来自动关闭其它文件窗口）运行 **Close** 命令，你可能会希望使用该参数。
+不对文件窗口触发任何脚本加载项可能提供的 **[OnCloseLister](../../scripting_reference/scripting_events/oncloselister.zh.md)** 脚本事件，进而关闭文件窗口。如果你在 **OnCloseLister** 事件内（例如为了响应用户关闭一个文件窗口来自动关闭其它文件窗口）运行 **Close** 命令，你可能会希望使用该参数。
 
 *示例：* `Close NOSCRIPT`
 </td></tr><tr><td>

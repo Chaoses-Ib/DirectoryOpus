@@ -1364,7 +1364,7 @@ NOSCRIPT</td><td>
 
 *(无值)*</td><td>
 
-允许 [脚本](/Manual/scripting/README.zh.md) 运行 **Go** 命令，而不会触发其它脚本（或它自己）。添加 **NOSCRIPT** 参数会禁用 **[OnBeforeFolderChange](../../scripting_reference/scripting_events/onbeforefolderchange.zh.md)**、**[OnAfterFolderChange](../../scripting_reference/scripting_events/onafterfolderchange.zh.md)**、**[OnOpenTab](../../scripting_reference/scripting_events/onopentab.zh.md)** 和 **[OnOpen文件窗口](../../scripting_reference/scripting_events/onopenlister.zh.md)** 事件，否则这些事件会因该命令而触发。
+允许 [脚本](/Manual/scripting/README.zh.md) 运行 **Go** 命令，而不会触发其它脚本（或它自己）。添加 **NOSCRIPT** 参数会禁用 **[OnBeforeFolderChange](../../scripting_reference/scripting_events/onbeforefolderchange.zh.md)**、**[OnAfterFolderChange](../../scripting_reference/scripting_events/onafterfolderchange.zh.md)**、**[OnOpenTab](../../scripting_reference/scripting_events/onopentab.zh.md)** 和 **[OnOpenLister](../../scripting_reference/scripting_events/onopenlister.zh.md)** 事件，否则这些事件会因该命令而触发。
 </td></tr><tr><td>
 OPENCONTAINER</td><td>
 /O</td><td>

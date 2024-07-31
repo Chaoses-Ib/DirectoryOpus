@@ -1,4 +1,6 @@
-**OnTabClick** 事件可由 [脚本当加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现以接收在按住定性符的情况下单击标签页时的通知。您可以使用它来覆盖默认行为（例如，通过按住 Ctrl 键单击标签页通常会将它们链接起来）。
+# OnTabClick
+
+**OnTabClick** 事件可以通过 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 实现，以便在使用限定键点击标签页时接收通知。您可以使用此事件来覆盖默认行为（例如，通常情况下，使用 Control 键点击标签页会链接它们）。
 
 <table>
 <thead><tr><th>
@@ -17,8 +19,8 @@ OnTabClick
 *bool*
 </td></tr><tr><td>
 
-**说明：**</td><td>
+**描述：**</td><td>
 
-**TabClickData.tab** 属性识别已单击的标签页。您可以从该事件返回 **True** 来阻止默认操作，或返回 **False**（这是默认设置）来允许该操作继续进行。
+**TabClickData.tab** 属性标识被点击的标签页。您可以从该事件返回 **True** 来阻止默认操作，或者返回 **False**（默认值）来允许操作继续。
 </td></tr></tbody>
 </table>

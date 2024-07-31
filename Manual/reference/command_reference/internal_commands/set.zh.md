@@ -2578,7 +2578,7 @@ NOSCRIPT</td><td>
 
 *(无值)*</td><td>
 
-使用 **NOSCRIPT** 参数可阻止与 Set 命令响应的 [脚本事件](/Manual/scripting/script_add-ins/README.zh.md) 的触发。目前，此功能仅适用于 `Set LISTERCMD=ToFront` 命令，以防止触发 **[OnActivate文件窗口](../../scripting_reference/scripting_events/onactivatelister.zh.md)** 事件。
+使用 **NOSCRIPT** 参数可阻止与 Set 命令响应的 [脚本事件](/Manual/scripting/script_add-ins/README.zh.md) 的触发。目前，此功能仅适用于 `Set LISTERCMD=ToFront` 命令，以防止触发 **[OnActivateLister](../../scripting_reference/scripting_events/onactivatelister.zh.md)** 事件。
 
 *示例：* `Set LISTERCMD=ToFront NOSCRIPT`
 </td></tr><tr><td>
