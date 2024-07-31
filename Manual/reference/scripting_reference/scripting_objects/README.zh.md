@@ -28,7 +28,7 @@
 Opus 在通过 Opus 调用脚本时为脚本提供了两个作为全局变量的对象：
 
 - **[DOpus](/Manual/reference/scripting_reference/scripting_objects/dopus.zh.md)**: 此**对象可供 *所有* 脚本使用。它提供了各种辅助方法和集合，可用于访问诸如文件窗口和工具栏之类的对象。
-- **[Script](/Manual/reference/scripting_reference/scripting_objects/script.zh.md)**: 当调用其各种事件处理程序时，此**对象将提供给 [脚本插件](/Manual/scripting/script_add-ins/README.zh.md)**。它提供了与脚本本身相关的信息。
+- **[Script](/Manual/reference/scripting_reference/scripting_objects/script.zh.md)**: 当调用其各种事件处理程序时，此**对象将提供给 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md)**。它提供了与脚本本身相关的信息。
 
 ## 事件对象
 

@@ -409,7 +409,7 @@
   - [重命名脚本](/Manual/scripting/rename_scripts/README.zh.md "scripting:rename_scripts")
     - [Custom Fields in the Rename Dialog](/Manual/scripting/rename_scripts/custom_fields_in_the_rename_dialog.zh.md "scripting:rename_scripts:custom_fields_in_the_rename_dialog")
   - [脚本函数](/Manual/scripting/script_functions.zh.md "scripting:script_functions")
-  - [脚本插件](/Manual/scripting/script_add-ins/README.zh.md "scripting:script_add-ins")
+  - [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md "scripting:script_add-ins")
     - [包括文件](/Manual/scripting/script_add-ins/include_files.zh.md "scripting:script_add-ins:include_files")
     - [模块](/Manual/scripting/script_add-ins/modules.zh.md "scripting:script_add-ins:modules")
     - [脚本包](/Manual/scripting/script_add-ins/script_package.zh.md "scripting:script_add-ins:script_package")

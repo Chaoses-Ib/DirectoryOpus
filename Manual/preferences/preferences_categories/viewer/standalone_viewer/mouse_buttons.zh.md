@@ -14,7 +14,7 @@
 - **关闭查看器**：单击鼠标按钮将关闭查看器窗口。
 - **切换幻灯片放映**：单击按钮将打开或关闭幻灯片放映模式。
 - **运行命令**：单击按钮将在查看器的上下文中运行指定的 Opus 命令。
-- **脚本事件**：单击按钮将触发实现 [OnViewerEvent](/Manual/reference/scripting_reference/scripting_events/onviewerevent.zh.md) 脚本事件的任何脚本插件。
+- **脚本事件**：单击按钮将触发实现 [OnViewerEvent](/Manual/reference/scripting_reference/scripting_events/onviewerevent.zh.md) 脚本事件的任何脚本加载项。
 
 下拉菜单下方有以下选项：
 

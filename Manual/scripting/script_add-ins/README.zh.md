@@ -1,8 +1,8 @@
-# 脚本插件
+# 脚本加载项
 
-*脚本插件* 是一些安装在 Opus *脚本插件* 文件夹中的脚本文件（你可以通过在位置字段中键入 **/dopusdata/Script AddIns** 找到该文件夹）。脚本插件是一些纯文本文件，其扩展名指定了所用脚本语言（例如，扩展名为 **.js** 的文件将是 *JScript* 脚本）。一个或多个脚本插件可以打包在称为 *[脚本包](/Manual/scripting/script_add-ins/script_package.zh.md)*（具有 **.osp** 后缀名的 zip 文件）的压缩包文件中，还可以选择性地附带一组图标。
+*脚本加载项* 是一些安装在 Opus *脚本加载项* 文件夹中的脚本文件（你可以通过在位置字段中键入 **/dopusdata/Script AddIns** 找到该文件夹）。脚本加载项是一些纯文本文件，其扩展名指定了所用脚本语言（例如，扩展名为 **.js** 的文件将是 *JScript* 脚本）。一个或多个脚本加载项可以打包在称为 *[脚本包](/Manual/scripting/script_add-ins/script_package.zh.md)*（具有 **.osp** 后缀名的 zip 文件）的压缩包文件中，还可以选择性地附带一组图标。
 
-[脚本函数](script_functions.zh.md) 仅在单击其所在的按钮时才会被调用，而脚本插件可以在响应一个或多个 [事件](/Manual/reference/scripting_reference/scripting_events/README.zh.md) 时自动调用。每个脚本都可以为一个或多个已定义的事件入口点提供处理，Opus 将自动调用为相关事件提供处理的每个脚本。脚本被通知的某些事件包括：标签被激活或停用，在文件夹变化之前和之后，当视图模式发生变化以及当文件窗口被打开或关闭时。脚本插件还可以实现 [自定义命令](example_scripts/adding_a_new_internal_command.zh.md)，这样便可以以类似于 *用户命令* 的方式来扩展 Opus 内部命令集，以及 [自定义列](example_scripts/adding_a_new_column.zh.md)，这样便可以为文件和文件夹添加其它信息列。
+[脚本函数](script_functions.zh.md) 仅在单击其所在的按钮时才会被调用，而脚本加载项可以在响应一个或多个 [事件](/Manual/reference/scripting_reference/scripting_events/README.zh.md) 时自动调用。每个脚本都可以为一个或多个已定义的事件入口点提供处理，Opus 将自动调用为相关事件提供处理的每个脚本。脚本被通知的某些事件包括：标签被激活或停用，在文件夹变化之前和之后，当视图模式发生变化以及当文件窗口被打开或关闭时。脚本加载项还可以实现 [自定义命令](example_scripts/adding_a_new_internal_command.zh.md)，这样便可以以类似于 *用户命令* 的方式来扩展 Opus 内部命令集，以及 [自定义列](example_scripts/adding_a_new_column.zh.md)，这样便可以为文件和文件夹添加其它信息列。
 
 **[脚本管理](/Manual/scripting/script_management/README.zh.md)** 对话框显示已安装的任何插件脚本的列表。你可以使用复选框来启用或禁用每个脚本。
 

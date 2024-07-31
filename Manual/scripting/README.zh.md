@@ -22,7 +22,7 @@ Directory Opus 脚本接口让你可以使用任何已安装的 ActiveX 脚本�
 
 - **[重命名脚本](/Manual/scripting/rename_scripts/README.zh.md)** 让你在 [高级重命名](file_operations/renaming_files/advanced_rename/README.zh.md) 对话框中编写脚本，该脚本提供对文件重命名的完全控制。
 - **[脚本函数](/Manual/scripting/script_functions.zh.md)** 是直接在按钮、菜单或快捷键中定义的脚本（customize/creating_your_own_buttons/README.zh.md）。
-  \* **[脚本插件](/Manual/scripting/script_add-ins/README.zh.md)** 是安装在 Opus *脚本插件* 目录中的脚本文件。而脚本函数是由用户驱动的（例如，当用户单击按钮以专门运行脚本时，它们执行），脚本插件则是事件驱动的。它们提供一个或多个定义的事件处理程序，Opus 将在特定情况下调用它们，它们还用于实现 [自定义命令](/Manual/scripting/example_scripts/adding_a_new_internal_command.zh.md) 和 [列](/Manual/scripting/example_scripts/adding_a_new_column.zh.md)。
+  \* **[脚本加载项](/Manual/scripting/script_add-ins/README.zh.md)** 是安装在 Opus *脚本加载项* 目录中的脚本文件。而脚本函数是由用户驱动的（例如，当用户单击按钮以专门运行脚本时，它们执行），脚本加载项则是事件驱动的。它们提供一个或多个定义的事件处理程序，Opus 将在特定情况下调用它们，它们还用于实现 [自定义命令](/Manual/scripting/example_scripts/adding_a_new_internal_command.zh.md) 和 [列](/Manual/scripting/example_scripts/adding_a_new_column.zh.md)。
 
 请参阅 [脚本参考](scripting/README.zh.md) 部分，了解 Opus 脚本对象的完整指南，以及 [示例脚本](/Manual/scripting/example_scripts/README.zh.md) 部分，了解各种类型的脚本的某些示例。
 
@@ -34,6 +34,6 @@ Directory Opus 脚本接口让你可以使用任何已安装的 ActiveX 脚本�
 [重命名脚本](/Manual/scripting/rename_scripts/README.zh.md)  
 [脚本函数](/Manual/scripting/script_functions.zh.md)  
 [脚本对话框](/Manual/scripting/script_dialogs/README.zh.md)  
-[脚本插件](/Manual/scripting/script_add-ins/README.zh.md)  
+[脚本加载项](/Manual/scripting/script_add-ins/README.zh.md)  
 [资源](/Manual/scripting/resources/README.zh.md)  
 [示例脚本](/Manual/scripting/example_scripts/README.zh.md)

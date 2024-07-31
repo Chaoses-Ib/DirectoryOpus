@@ -21,6 +21,6 @@ OnAddCommands
 
 **描述：**</td><td>
 
-当 Opus 启动时，或者当一个脚本插件被添加、编辑或启用时，会调用它的 **OnAddCommands** 方法。 这允许脚本向 Opus 命令集中 [添加内部命令](/Manual/scripting/example_scripts/adding_a_new_internal_command.zh.md)。 脚本可以通过调用 **[Script](../scripting_objects/script.zh.md).InitCommands** 方法随时重新初始化其命令列表。
+当 Opus 启动时，或者当一个脚本加载项被添加、编辑或启用时，会调用它的 **OnAddCommands** 方法。 这允许脚本向 Opus 命令集中 [添加内部命令](/Manual/scripting/example_scripts/adding_a_new_internal_command.zh.md)。 脚本可以通过调用 **[Script](../scripting_objects/script.zh.md).InitCommands** 方法随时重新初始化其命令列表。
 </td></tr></tbody>
 </table>
