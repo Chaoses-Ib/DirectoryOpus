@@ -24,13 +24,13 @@ v12 升级 v13：
 --- | ---
 [官网](https://www.gpsoft.com.au/#buynow) | 0~50 AUD（~234元）<br />折扣幅度取决于购买日期：在 v13 公测的前几个月（约 2023 年初）之后购买的授权可免费升级；折扣后的最高价格为两年续期价格，例如 1+1 授权的最高升级价格为 50 AUD。此外，中文版授权在升级后会变为全语言版，标准版（Light）在升级后会变为专业版。
 [数码荔枝](https://store.lizhi.io/site/products/id/135?cid=1lsdbtbz) | 109元<br />`APPINN` 优惠码：103.55元<br />七月惠 +优惠码：**88.01元**<br />免费新会员-5元
-[软购](https://apsgo.cn/tsARL0) | 108元<br />新用户-5元
+[软购](https://apsgo.cn/tsARL0) | **89元**<br />新用户-5元
 [子清](https://item.taobao.com/item.htm?id=766978122797) | 108元
-[玩软件吧](https://item.taobao.com/item.htm?id=556078594244) | ？
+[玩软件吧](https://item.taobao.com/item.htm?id=556078594244) | 105元
 [软代](https://directory-opus.com/)[^APSDAI] | 118元
-[子清2](https://item.taobao.com/item.htm?id=669769551074) | 118.25元
+~~[子清2](https://item.taobao.com/item.htm?id=669769551074)~~ | 118.25元
 
-目前升级可获得两年更新订阅，在一定时间后，升级将只获得一年更新。
+升级可获得两年更新订阅的优惠已结束，目前升级只能获得一年更新。
 
 <details><summary>v12</summary>
 
@@ -87,3 +87,9 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 ```
 
 详见 [HOW TO: Perform silent (un)install of Directory Opus - Opus FAQs - Directory Opus Resource Centre](https://resource.dopus.com/t/how-to-perform-silent-un-install-of-directory-opus/1319)
+
+## 性能
+- 打开含有大量文件的文件夹
+- 拖动大量文件
+
+资源管理器都完全不卡
