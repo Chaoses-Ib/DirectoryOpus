@@ -1,30 +1,30 @@
 # 命令修饰符参考
 
-以下列出了工具栏按钮和热键中支持的各种 [命令修饰符](/Manual/customize/creating_your_own_buttons/command_modifiers.zh.md)。
+以下是工具栏按钮和热键支持的各种 [命令修饰符](/Manual/customize/creating_your_own_buttons/command_modifiers.zh.md) 列表。
 
 <table>
 <thead><tr><th>
 修饰符</th><th>
-说明
+描述
 </th></tr></thead><tbody><tr><td>
 @admin</td><td>
 
-该函数需要管理员权限。该修饰符将导致出现 UAC 提示（除非文件窗口已处于 [管理员模式](/Manual/file_operations/uac_and_administrator_mode.zh.md)），并且该函数运行的任何外部程序都将提升。
+该函数需要管理员权限。此修饰符会导致出现 UAC 提示（除非文件窗口已经处于 [管理员模式](/Manual/file_operations/uac_and_administrator_mode.zh.md)），并且此函数运行的任何外部程序都将被提升。
 
-如果单独使用，此修饰符将影响整个函数。它还可用于提升特定命令，而不是提升整个按钮。
+如果单独使用，此修饰符会影响整个函数。它也可以用来提升特定命令而不是整个按钮。
 
 |                            |                                                                    |
 |----------------------------|--------------------------------------------------------------------|
 | **@admin**                 | *提升整个函数*                                      |
-| **@admin:notepad.exe {f}** | *只提升记事本*                                            |
-| **@admin:no**              | *禁用此函数中任何后续命令的 UAC 提示* |
-| **@admin:yes**             | *针对任何后续命令重新启用 UAC 提示*                |
+| **@admin:notepad.exe {f}** | *仅提升记事本*                                            |
+| **@admin:no**              | *禁用此函数中任何后续命令的 UAC 提示*                  |
+| **@admin:yes**             | *重新启用后续命令的 UAC 提示*                         |
 </td></tr><tr><td>
 @async</td><td>
 
-此修饰符后面的命令将异步运行 - Opus 在运行函数中的下一个命令（或再次针对下一个所选文件运行此命令）之前，将不会等待此命令退出。
+此修饰符后的命令将异步运行 - Opus 不会等待它退出，然后才运行函数中的下一个命令（或在为下一个选定文件再次运行此命令之前）。
 
-默认行为是对于包含单个命令的函数，该函数将异步地针对每个所选文件运行该命令；包含多个命令的函数将同步运行每个命令。默认行为可以通过配置中“**[杂项/高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上的 **function_default_async** 选项更改，或者可以通过此修饰符在每个命令的基础上覆盖。
+默认行为是，由单个命令组成的函数会为每个选定文件异步运行该命令；由多个命令组成的函数会同步运行每个命令。可以在配置中的 **[杂项 / 高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上使用 **function_default_async** 选项更改默认行为，或者使用此修饰符按命令覆盖默认行为。
 
 |                            |                               |
 |----------------------------|-------------------------------|
@@ -40,152 +40,163 @@
 </td></tr><tr><td>
 @confirm</td><td>
 
-显示确认对话框。如果用户单击“取消”按钮，则会在此处中止函数。
+显示确认对话框。如果用户单击“取消”按钮，则函数在此处中止。
 
 此修饰符的模板为：**@confirm:***\<message\>***\|***\<positive text\>***\|***\<negative text\>*
 
-*\<message\>* 是对话框中显示的文本，*\<positive text\>* 是“确定”按钮上显示的文本，*\<negative text\>* 是“取消”按钮上显示的文本。这三个字符串都是可选的 - 如果未提供，将使用默认字符串。如果您提供了 *\<positive text\>* 但未提供 *\<negative text\>*，则该对话框将有一个“确定”按钮，但没有“取消”按钮。
+*\<message\>* 是在对话框中显示的文本，*\<positive text\>* 是在“确定”按钮上显示的文本，而 *\<negative text\>* 是在“取消”按钮上显示的文本。这三个字符串都是可选的 - 如果未提供，将使用默认字符串。如果您提供 *\<positive text\>* 但不提供 *\<negative text\>*，则对话框将有一个“确定”按钮，但根本没有“取消”按钮。
 
-您可以使用特殊代码 **\n** 在消息文本中包含换行符（如果您需要在文本中包含一个字面量 **\n** 序列，您必须转义 **\\** 字符，就像在 **\\n** 中一样）。
+您可以使用特殊代码 **\n** 在消息文本中包含换行符（如果您需要在文本中包含文字 **\n** 序列，则必须转义 **\\** 字符，例如 **\\n**）。
 
 |                                          |                                                          |
 |------------------------------------------|----------------------------------------------------------|
-| **@confirm:Really copy files?**          | *针对确定和取消按钮使用默认文本*        |
-| **@confirm:Really proceed?\|Oui!\|Non!** | *针对两个按钮指定自定义文本*              |
-| **@confirm:All finished\|Acknowledged**  | *针对确定按钮的自定义文本；根本没有取消按钮* |
+| **@confirm:Really copy files?**          | *使用“确定”和“取消”按钮的默认文本*                 |
+| **@confirm:Really proceed?\|Oui!\|Non!** | *为两个按钮指定自定义文本*                             |
+| **@confirm:All finished\|Acknowledged**  | *“确定”按钮的自定义文本；根本没有“取消”按钮*       |
 </td></tr><tr><td>
 @ctx</td><td>
 
-允许您使用 [求值器](/Manual/evaluator/README.zh.md) 定义 [动态按钮](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.zh.md)。一个简单的示例，
+允许您使用 [求值器](/Manual/evaluator/README.zh.md) 定义一个 [动态按钮](/Manual/customize/creating_your_own_buttons/editing_the_toolbar/dynamic_buttons/README.zh.md)。举个简单的例子，
 
     @ctx:=return "Go DRIVEBUTTONS";
 
-这使用求值器返回一个简单的字符串；从功能上讲，这与仅仅将 **Go DRIVEBUTTONS** 命令放在工具栏按钮上没有什么不同。
+这使用求值器返回一个简单的字符串；从功能上讲，这与在工具栏按钮上简单地放置 **Go DRIVEBUTTONS** 命令没有什么不同。
 
-作为一个更复杂的示例，默认的 *收藏栏* 工具栏使用 **@ctx** 来构建显示的收藏夹列表，通过使用求值器使用收藏栏分支的当前本地化名称构建命令行：
+作为更复杂的示例，默认的 *收藏栏* 工具栏使用 **@ctx** 来构建显示的收藏夹列表，方法是使用求值器使用收藏栏分支的当前本地化名称构建命令行：
 
     @ctx:=return "Favorites SHOWICONS USEQUALKEYS BRANCH=""" + LanguageStr("FavoritesBar") + """;
 
-这使用求值器 **LanguageStr()** 函数检索已知字符串的翻译名称，并使用 **Favorites** 命令构建一个命令行，以显示收藏夹树的该分支。
+这使用求值器 **LanguageStr()** 函数检索已知字符串的翻译名称，并使用 **Favorites** 命令构建一个命令行来显示收藏夹树的该分支。
 </td></tr><tr><td>
 @dirsonly</td><td>
 
-该函数将仅针对所选文件夹进行操作，忽略任何文件。
+该函数将仅对选定的文件夹进行操作，忽略任何文件。
 
 |               |                               |
 |---------------|-------------------------------|
-| **@dirsonly** | *仅针对目录进行操作* |
+| **@dirsonly** | *仅对目录进行操作* |
 </td></tr><tr><td>
 @disableif</td><td>
 
-如果命令子句测试为假，按钮将被禁用。这类似于下面描述的 **@if** 修饰符提供的条件测试。
+如果命令子句测试为假，则按钮将被禁用。这类似于下面描述的 **@if** 修饰符提供的条件测试。
 
 |                                 |                                                                   |
 |---------------------------------|-------------------------------------------------------------------|
-| **@disableif:Set DUAL=toggle**  | 如果文件窗口处于双屏模式中，则按钮将被禁用     |
-| **@disableif:!Set DUAL=toggle** | 如果文件窗口不处于双屏模式中，则按钮将被禁用 |
+| **@disableif:Set DUAL=toggle**  | *如果文件窗口处于双栏模式，则按钮将被禁用*           |
+| **@disableif:!Set DUAL=toggle** | *如果文件窗口不处于双栏模式，则按钮将被禁用*         |
 </td></tr><tr><td>
 
 @disableifpath  
 @disableifpathr</td><td>
 
-如果当前源路径与指定模式匹配，则按钮将被禁用。您可以提供绝对路径进行测试，或提供通配符模式（针对 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md) 使用 **@disableifpath**，针对 [正则表达式](../wildcard_reference/regular_expression_syntax.zh.md) 使用 **@disableifpathr**）。您还可以使用关键字 **shell** 来测试托管的 shell 命名空间扩展（虚拟文件夹）。
+如果当前源路径与指定模式匹配，则按钮将被禁用。您可以提供要测试的绝对路径，或提供通配符模式（对 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md) 使用 **@disableifpath**，对 [正则表达式](../wildcard_reference/regular_expression_syntax.zh.md) 使用 **@disableifpathr**）。您也可以使用关键字 **shell** 来测试托管的 shell 命名空间扩展（虚拟文件夹）。
 
 |                                 |                                                                     |
 |---------------------------------|---------------------------------------------------------------------|
-| **@disableifpathr:^C:\\**       | *如果源路径位于 C: 驱动器上，则禁用命令*                 |
-| **@disableifpath:!\*\Work\\**\* | *除非源路径位于名为 **Work*** 的文件夹下，否则禁用* |
+| **@disableifpathr:^C:\\**       | *如果源路径在 C: 驱动器上，则禁用命令*                       |
+| **@disableifpath:!\*\Work\\**\* | *除非源路径在名为 **Work** 的文件夹下，否则禁用命令*    |
 
-仅当使用通配符（而非正则表达式）时，路径才可以使用别名、环境变量、{apppath} 代码等：
+路径可以使用别名、环境变量、{apppath} 代码等，但仅限于使用通配符（而不是正则表达式）：
 
 |                                           |                                                                   |
 |-------------------------------------------|-------------------------------------------------------------------|
-| **@disableifpath:!/desktop**              | *disable unless in the Desktop folder*                            |
-| **@disableifpath:!%SystemRoot%\System32** | *disable unless in **C:\Windows\System32** (on a typical system)* |
-| **@disableifpath:{apppath\|dopus.exe}**   | *disable if in the folder where Opus is installed*                |
-| **@disableifpath:shell**                  | *disable if in a hosted virtual folder*                           |
+| **@disableifpath:!/desktop**              | *除非在桌面文件夹中，否则禁用命令*                            |
+| **@disableifpath:!%SystemRoot%\System32** | *除非在 **C:\Windows\System32** 中（在典型系统上），否则禁用命令* |
+| **@disableifpath:{apppath\|dopus.exe}**   | *如果在安装 Opus 的文件夹中，则禁用命令*                 |
+| **@disableifpath:shell**                  | *如果在托管的虚拟文件夹中，则禁用命令*                           |
 </td></tr><tr><td>
 @disablenosel</td><td>
 
-当未选择任何文件或文件夹时，或当未选择任何特定类型的文件时（可选），将禁用该命令。对于某些标准命令，此操作将自动执行，并且此修饰符能让您以类似的方式执行您自己的命令。这与 **@hidenosel** 类似。
+当没有选择任何文件或文件夹时，或可选地，当没有选择特定类型的文件时，命令将被禁用。这对于某些标准命令是自动执行的，并且该修饰符使您可以让您自己的命令以类似的方式运行。这类似于 **@hidenosel**。
 
 |                         |                                               |
 |-------------------------|-----------------------------------------------|
-| **@disablenosel**       | *disable button when nothing is selected*     |
-| **@disablenosel:files** | *disable button when no files are selected*   |
-| **@disablenosel:dirs**  | *disable button when no folders are selected* |
+| **@disablenosel**       | *当没有选择任何内容时，禁用按钮*         |
+| **@disablenosel:files** | *当没有选择任何文件时，禁用按钮*       |
+| **@disablenosel:dirs**  | *当没有选择任何文件夹时，禁用按钮*     |
 
-对于文件窗口工具栏，您可以使用 **minfiles**、**maxfiles** 和 **numfiles** 关键字分别指定启用按钮时必须选择的文件的最小数量、最大数量或确切数量。类似地，**mindirs**、**maxdirs** 和 **numdirs** 可以限制已选择文件夹的数量。
+对于 lister 工具栏，您可以使用 **minfiles**、**maxfiles** 和 **numfiles** 关键字来指定按钮要启用必须选择的最小、最大或确切文件数量。类似地，**mindirs**、**maxdirs** 和 **numdirs** 可以限制所选文件夹的数量。
 
 |                                       |                                                        |
 |---------------------------------------|--------------------------------------------------------|
-| **@disablenosel:numfiles=2**          | *disable button unless exactly 2 files are selected*   |
-| **@disablenosel:maxfiles=5**          | *disable button unless 5 files or fewer are selected*  |
-| **@disablenosel:mindirs=3,maxdirs=5** | *disable button unless 3, 4 or 5 folders are selected* |
+| **@disablenosel:numfiles=2**          | *除非选择恰好 2 个文件，否则禁用按钮*           |
+| **@disablenosel:maxfiles=5**          | *除非选择 5 个或更少的个文件，否则禁用按钮*      |
+| **@disablenosel:mindirs=3,maxdirs=5** | *除非选择 3、4 或 5 个文件夹，否则禁用按钮*   |
 
-使用 **type** 关键字，您可以配置一个按钮，除非至少选择了一个文件，否则禁用该按钮，且该文件名称与提供的通配符模式匹配。（不需要所有选中的文件都匹配模式；只需要一个。）您还可以将这个与 **dirs** 结合起来，如果选择了文件夹或选择了特定类型的文件，则该按钮将起作用。如果您使用 **type**，它必须是行上的最后一项，因为 **=** 号后面的所有内容都将被视为模式的一部分（允许模式包含原本会与其它关键字和参数混淆的项）。
+使用 **type** 关键字，您可以配置一个按钮，除非至少选择一个名称与提供的通配符模式匹配的文件，否则该按钮将被禁用。（不需要所有选定文件都与模式匹配；只需要一个。）您也可以将此与 **dirs** 结合使用，以创建一个在选择文件夹或选择特定类型的文件时有效的按钮。如果使用 **type**，它必须是行中的最后一项，因为 **=** 之后的所有内容都将被视为模式的一部分（允许模式包含在其它情况下会被误认为其它关键字和参数的内容）。
 
 |                                    |                                                                             |
 |------------------------------------|-----------------------------------------------------------------------------|
-| **@disablenosel:type=\*.jpg**      | *disable button when no files ending with ".jpg" are selected*              |
-| **@disablenosel:type=old**         | *disable button when no files beginning with "old" are selected*            |
-| **@disablenosel:dirs,type=\*.png** | *disable unless any folders, or any files ending with ".png", are selected* |
+| **@disablenosel:type=\*.jpg**      | *当没有选择以“.jpg”结尾的文件时，禁用按钮*                     |
+| **@disablenosel:type=old**         | *当没有选择以“old”开头的文件时，禁用按钮*                     |
+| **@disablenosel:dirs,type=\*.png** | *除非选择任何文件夹，或任何以“.png”结尾的文件，否则禁用按钮* |
 
-您还可以使用 **!** 字符来否定测试。它必须是 **:** 号后的第一个字符。例如：
+您还可以使用 **!** 字符来否定测试。它必须是 **:** 之后的第一项。例如，
 
 |                                |                                                           |
 |--------------------------------|-----------------------------------------------------------|
-| **@disablenosel:!type=\*.jpg** | *disable button if files ending with ".jpg" are selected* |
+| **@disablenosel:!type=\*.jpg** | *如果选择以“.jpg”结尾的文件，则禁用按钮*            |
 </td></tr><tr><td>
 @enableif</td><td>
 
-如果命令子句测试为真，则将启用该按钮。这与下面描述的 **@if** 修饰符提供的条件测试类似。
+如果命令子句测试为真，则按钮将被启用。这类似于下面描述的 **@if** 修饰符提供的条件测试。
 
 |                                |                                                                  |
 |--------------------------------|------------------------------------------------------------------|
-| **@enableif:Set DUAL=toggle**  | button will be enabled if the文件窗口is in dual-display mode     |
-| **@enableif:!Set DUAL=toggle** | button will be enabled if the文件窗口is NOT in dual-display mode |
+| **@enableif:Set DUAL=toggle**  | *如果文件窗口处于双栏模式，则按钮将被启用*           |
+| **@enableif:!Set DUAL=toggle** | *如果文件窗口不处于双栏模式，则按钮将被启用*         |
 </td></tr><tr><td>
 
 @enableifpath  
 @enableifpathr</td><td>
 
-如果当前源路径与指定的模式匹配，则将启用该按钮。您可以提供一个绝对路径来进行测试，或者一个通配符模式（对于 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md)，使用 **@enableifpath**，对于 [正则表达式](../wildcard_reference/regular_expression_syntax.zh.md)，使用 **@enableifpathr**)。您还可以使用关键字 **shell** 来测试托管的 shell 名称空间扩展（虚拟文件夹）。
+如果当前源路径与指定模式匹配，则按钮将被启用。您可以提供要测试的绝对路径，或提供通配符模式（对 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md) 使用 **@enableifpath**，对 [正则表达式](../wildcard_reference/regular_expression_syntax.zh.md) 使用 **@enableifpathr**）。您也可以使用关键字 **shell** 来测试托管的 shell 命名空间扩展（虚拟文件夹）。
 
 |                                |                                                                    |
 |--------------------------------|--------------------------------------------------------------------|
-| **@enableifpathr:^C:\\**       | *enable command if source path is on the C: drive*                 |
-| **@enableifpath:!\*\Work\\**\* | *enable unless source path is underneath a folder called **Work*** |
+| **@enableifpathr:^C:\\**       | *如果源路径在 C: 驱动器上，则启用命令*                       |
+| **@enableifpath:!\*\Work\\**\* | *除非源路径在名为 **Work** 的文件夹下，否则启用命令*    |
 
-只有在使用通配符（不是正则表达式）时，路径才可以使用别名、环境变量、{apppath} 代码等：
+路径可以使用别名、环境变量、{apppath} 代码等，但仅限于使用通配符（而不是正则表达式）：
 
 |                                          |                                                                  |
 |------------------------------------------|------------------------------------------------------------------|
-| **@enableifpath:!/desktop**              | *enable unless in the Desktop folder*                            |
-| **@enableifpath:!%SystemRoot%\System32** | *enable unless in **C:\Windows\System32** (on a typical system)* |
-| **@enableifpath:{apppath\|dopus.exe}**   | *enable if in the folder where Opus is installed*                |
-| **@enableifpath:shell**                  | *enable if in a hosted virtual folder*                           |
+| **@enableifpath:!/desktop**              | *除非在桌面文件夹中，否则启用命令*                            |
+| **@enableifpath:!%SystemRoot%\System32** | *除非在 **C:\Windows\System32** 中（在典型系统上），否则启用命令* |
+| **@enableifpath:{apppath\|dopus.exe}**   | *如果在安装 Opus 的文件夹中，则启用命令*                 |
+| **@enableifpath:shell**                  | *如果在托管的虚拟文件夹中，则启用命令*                           |
 </td></tr><tr><td>
 
 @eval  
 @evalalways</td><td>
-暂时不做
+
+在动态测试中运行 [求值器](/Manual/evaluator/README.zh.md) 代码，并可选地在命令本身中运行代码。通常，您会使用此代码来设置求值器变量，这些变量可在命令中的后续行中使用。
+
+- `@eval:` 之后的代码仅在动态更新按钮的标签、可见性和启用/禁用状态时运行。它不会在单击按钮时运行。
+- `@evalalways:` 之后的代码也会在单击按钮时运行。这使您可以设置在执行命令时使用的变量，例如，在更新其标签时也使用这些变量。
+
+在此示例中，`type` 值在顶行中初始化一次，然后在后续行中多次引用。
+
+    @eval:type = PathType(source);
+    fIsFileSystem = (type == "shell" || type == "filesys")
+    @showif:=fIsFileSystem
+    @label:fIsFileSystem ? ("Open " + FilePart(DisplayName(source)) + " in资源管理器") : ("Disabled (" + type + ")")
 </td></tr><tr><td>
 @externalonly</td><td>
 
-忽略函数中指定的任何 Opus [内部命令](internal_commands/README.zh.md)，并将所有命令视为外部命令。这允许您配置一个 MS-DOS 批处理函数，使用诸如 **copy** 之类的命令，这些命令通常会被内部命令集覆盖。
+忽略函数中指定的任何 Opus [内部命令](internal_commands/README.zh.md)，并将所有命令视为外部命令。这使您能够使用诸如 **copy** 之类的命令配置 MS-DOS 批处理函数，这些命令通常会被内部命令集覆盖。
 
 |                   |                          |
 |-------------------|--------------------------|
-| **@externalonly** | *external commands only* |
+| **@externalonly** | *仅外部命令* |
 </td></tr><tr><td>
 @filesfromdroponly</td><td>
 
-仅通过拖放接受文件和文件夹。具有此修饰符的按钮将忽略文件窗口中的任何所选文件或文件夹 - 只有通过拖放到按钮上的文件才会被该按钮中的命令使用。
+仅通过拖放接受文件和文件夹。具有此修饰符的按钮将忽略文件窗口中任何选定的文件或文件夹 - 仅将拖放到按钮上的文件将由其中的命令使用。
 
 |                        |                                       |
 |------------------------|---------------------------------------|
-| **@filesfromdroponly** | *accept files only via drag-and-drop* |
+| **@filesfromdroponly** | *仅通过拖放接受文件* |
 </td></tr><tr><td>
 @filesonly</td><td>
 
@@ -193,43 +204,44 @@
 
 |                |                         |
 |----------------|-------------------------|
-| **@filesonly** | *operate only on files* |
+| **@filesonly** | *仅对文件进行操作* |
 </td></tr><tr><td>
 @firstfileonly</td><td>
-此功能只对第一个选中的文件进行操作，而不管有多少项被选中或拖拽到按钮上。
+
+该函数将仅对第一个选定的文件进行操作，而不管选择了多少项或拖放到按钮上。
 
 |                    |                                           |
 |--------------------|-------------------------------------------|
-| **@firstfileonly** | *只操作第一个选中的文件* |
+| **@firstfileonly** | *仅对第一个选定的文件进行操作* |
 </td></tr><tr><td>
 @functype</td><td>
 
-此指令只在[嵌入式功能](/Manual/customize/creating_your_own_buttons/embedded_functions.zh.md)里使用。它允许你指定嵌入式功能的类型（如果未指定，嵌入式功能被假定为标准功能——Opus 或外部命令）。例如，下面的命令会用一个嵌入式脚本函数打开一个新的文件浏览窗口，该函数在新的文件浏览窗口的上下文中运行：
+此指令仅在 [嵌入函数](/Manual/customize/creating_your_own_buttons/embedded_functions.zh.md) 中使用。它允许您指定嵌入函数的类型（如果未指定，则嵌入函数被假定为标准函数 - Opus 或外部命令）。例如，以下命令将在新的文件窗口的上下文中运行一个嵌入式脚本函数，并打开一个新的文件窗口：
 
     Go NEW
     [
     @functype:script
     @script:vbscript
-    ' 脚本函数就在这
+    ' script function here
     ]
 
 |                      |                                                     |
 |----------------------|-----------------------------------------------------|
-| **@functype:script** | *嵌入式函数是脚本*                 |
-| **@functype:msdos**  | *嵌入式函数是 MS-DOS 批处理函数* |
+| **@functype:script** | *嵌入函数是一个脚本*                 |
+| **@functype:msdos**  | *嵌入函数是一个 MS-DOS 批处理函数* |
 </td></tr><tr><td>
 @hideblock</td><td>
 
-**@hideblock** 修饰符允许你使用各种其它修饰符来一次隐藏或显示多个按钮，而不必在每一个按钮中重复测试。
+**@hideblock** 修饰符允许您使用各种其它修饰符来隐藏或显示多个按钮，而无需在每个按钮中重复测试。
 
-在按钮中用 **@hideblock:begin** 结合其它适当的修饰符来开始块。块内的按钮将根据第一个按钮的状态来显示或隐藏。例如，
+在按钮上使用 **@hideblock:begin** 来开始块，以及任何其它适当的修饰符。块中的按钮将根据第一个按钮的状态进行隐藏或显示。例如，
 
     @hideif:!Set VIEW=Thumbnails
     @hideblock:begin
 
-此按钮基于当前视图模式开始一个隐藏/显示块。如果当前视图为缩略图模式，按钮将显示——否则将隐藏它们。
+此按钮根据当前视图开始一个隐藏/显示块。如果当前视图处于缩略图模式，则按钮将可见 - 否则它们将被隐藏。
 
-在另一个按钮中用 **@hideblock:end** 结束此块。开始和结束之间的所有按钮将被作为整体来隐藏或显示。注意：开始和结束按钮永远不显示在自定义模式之外。
+在另一个按钮上使用 **@hideblock:end** 来结束块。开始和结束之间的所有按钮将作为一个整体进行隐藏或显示。请注意，开始和结束按钮永远不会在自定义模式之外显示。
 
 |                      |                      |
 |----------------------|----------------------|
@@ -238,66 +250,70 @@
 </td></tr><tr><td>
 @hideif</td><td>
 
-如果一个命令语句测试结果为假，按钮将被隐藏。这类似于下面描述的 **@if** 修饰符提供的条件测试。
+如果命令子句测试为假，则按钮将被隐藏。这类似于下面描述的 **@if** 修饰符提供的条件测试。
 
 |                              |                                                                   |
 |------------------------------|-------------------------------------------------------------------|
-| **@hideif:Set DUAL=toggle**  | *如果文件浏览窗口在双重显示模式中，按钮将被隐藏*     |
-| **@hideif:!Set DUAL=toggle** | *如果文件浏览窗口不在双重显示模式中，按钮将被隐藏* |
+| **@hideif:Set DUAL=toggle**  | *如果文件窗口处于双栏模式，则按钮将被隐藏*           |
+| **@hideif:!Set DUAL=toggle** | *如果文件窗口不处于双栏模式，则按钮将被隐藏*         |
 </td></tr><tr><td>
 
 @hideifpath  
 @hideifpathr</td><td>
 
-如果当前源路径与指定模式不匹配，按钮将被隐藏。你可以提供一个用来测试的绝对路径或一个通配符模式（对[标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md)使用 **@hideifpath**，对[正则表达式](../wildcard_reference/regular_expression_syntax.zh.md)使用 **@hideifpathr**）。
+如果当前源路径与指定模式不匹配，则按钮将被隐藏。您可以提供要测试的绝对路径，或提供通配符模式（对 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md) 使用 **@hideifpath**，对 [正则表达式](../wildcard_reference/regular_expression_syntax.zh.md) 使用 **@hideifpathr**）。
 
 |                              |                                                                  |
 |------------------------------|------------------------------------------------------------------|
-| **@hideifpathr:^C:\\**       | *如果源路径在 C: 驱动器上，则隐藏命令*                 |
-| **@hideifpath:!\*\Work\\**\* | *除非源路径在名为 **Work*** 的文件夹下，否则隐藏* |
+| **@hideifpathr:^C:\\**       | *如果源路径在 C: 驱动器上，则隐藏命令*                       |
+| **@hideifpath:!\*\Work\\**\* | *除非源路径在名为 **Work** 的文件夹下，否则隐藏命令*    |
 
-路径仅在使用通配符（不是正则表达式）时才可能使用别名、环境变量和 {apppath} 代码，如下所示：
+路径可以使用别名、环境变量、{apppath} 代码等，但仅限于使用通配符（而不是正则表达式）：
 
 |                                        |                                                                |
 |----------------------------------------|----------------------------------------------------------------|
-| **@hideifpath:!/desktop**              | *除非在桌面文件夹中，否则隐藏*                            |
-| **@hideifpath:!%SystemRoot%\System32** | *除非在 **C:\Windows\System32** 中（在一个典型系统上），否则隐藏* |
-| **@hideifpath:{apppath\|dopus.exe}**   | *如果在 Opus 已安装的文件夹中，则隐藏*                |
+| **@hideifpath:!/desktop**              | *除非在桌面文件夹中，否则隐藏命令*                            |
+| **@hideifpath:!%SystemRoot%\System32** | *除非在 **C:\Windows\System32** 中（在典型系统上），否则隐藏命令* |
+| **@hideifpath:{apppath\|dopus.exe}**   | *如果在安装 Opus 的文件夹中，则隐藏命令*                 |
 </td></tr><tr><td>
 @hidenosel</td><td>
 
-当没有文件或文件夹被选中时，或者可选地，当没有任何特定类型的文件被选中时，按钮将被隐藏。这类似于 **@disablenosel**。
+当没有选择任何文件或文件夹时，或可选地，当没有选择特定类型的文件时，按钮将被隐藏。这类似于 **@disablenosel**。
 
 |                      |                                            |
 |----------------------|--------------------------------------------|
-| **@hidenosel**       | *在没有任何东西被选中时隐藏按钮*     |
-| **@hidenosel:files** | *在没有文件被选中时隐藏按钮*   |
-| **@hidenosel:dirs**  | *在没有文件夹被选中时隐藏按钮* |
+| **@hidenosel**       | *当没有选择任何内容时，隐藏按钮*         |
+| **@hidenosel:files** | *当没有选择任何文件时，隐藏按钮*       |
+| **@hidenosel:dirs**  | *当没有选择任何文件夹时，隐藏按钮*     |
 
-对于文件浏览窗口工具栏，你可以使用 **minfiles**、**maxfiles** 和 **numfiles** 关键字来指定被选中的文件数量的最小值、最大值或确切值，以使按钮可见。类似地，**mindirs**、**maxdirs** 和 **numdirs** 可以限制被选中的文件夹数量。
+对于 lister 工具栏，您可以使用 **minfiles**、**maxfiles** 和 **numfiles** 关键字来指定按钮要可见必须选择的最小、最大或确切文件数量。类似地，**mindirs**、**maxdirs** 和 **numdirs** 可以限制所选文件夹的数量。
 
 |                                    |                                                     |
 |------------------------------------|-----------------------------------------------------|
-| **@hidenosel:numfiles=2**          | *除非有恰好 2 个文件被选中，否则隐藏按钮*   |
-| **@hidenosel:maxfiles=5**          | *除非被选中的文件数量少于或等于 5，否则隐藏按钮*  |
-| **@hidenosel:mindirs=3,maxdirs=5** | *除非被选中的文件夹数量为 3、4 或 5，否则隐藏按钮* |
+| **@hidenosel:numfiles=2**          | *除非选择恰好 2 个文件，否则隐藏按钮*           |
+| **@hidenosel:maxfiles=5**          | *除非选择 5 个或更少的个文件，否则隐藏按钮*      |
+| **@hidenosel:mindirs=3,maxdirs=5** | *除非选择 3、4 或 5 个文件夹，否则隐藏按钮*   |
 
-使用 **type** 关键字，你可以配置一个按钮，在找不到与提供的通配符模式相匹配的文件时才隐藏。（所有选定的文件都不需要与模式匹配；只要有一个就行。）你还可以将此与 **dirs** 结合起来，为以下情况下可视的按钮创建它：某个文件夹被选中，或者某种类型的文件被选中。如果你使用 **type**，它必须是该行上的最后一个，因为 **=** 之后的所有内容都将被认为是模式的一部分（允许模式包含原本会被与其它关键字和参数混淆的内容）。
+使用 **type** 关键字，您可以配置一个按钮，除非至少选择一个名称与提供的通配符模式匹配的文件，否则该按钮将被隐藏。（不需要所有选定文件都与模式匹配；只需要一个。）您也可以将此与 **dirs** 结合使用，以创建一个在选择文件夹或选择特定类型的文件时可见的按钮。如果使用 **type**，它必须是行中的最后一项，因为 **=** 之后的所有内容都将被视为模式的一部分（允许模式包含在其它情况下会被误认为其它关键字和参数的内容）。
 
 |                                 |                                                                          |
 |---------------------------------|--------------------------------------------------------------------------|
-| **@hidenosel:type=\*.jpg**      | *在没有以 ".jpg" 结尾的文件被选中时隐藏按钮*              |
-| **@hidenosel:type=old**         | *在没有以 "old" 开头的文件被选中时隐藏按钮*            |
-| **@hidenosel:dirs,type=\*.png** | *除非有任何文件夹或任何以 ".png" 结尾的文件被选中，否则隐藏* |
+| **@hidenosel:type=\*.jpg**      | *当没有选择以“.jpg”结尾的文件时，隐藏按钮*                     |
+| **@hidenosel:type=old**         | *当没有选择以“old”开头的文件时，隐藏按钮*                     |
+| **@hidenosel:dirs,type=\*.png** | *除非选择任何文件夹，或任何以“.png”结尾的文件，否则隐藏按钮* |
 
-你也可以使用 **!** 字符来否定测试。它必须是 **:** 之后的第一个内容。例如，
+您还可以使用 **!** 字符来否定测试。它必须是 **:** 之后的第一项。例如，
 
 |                             |                                                        |
 |-----------------------------|--------------------------------------------------------|
-| **@hidenosel:!type=\*.jpg** | *如果以 ".jpg" 结尾的文件被选中，则隐藏按钮* |
+| **@hidenosel:!type=\*.jpg** | *如果选择以“.jpg”结尾的文件，则隐藏按钮*            |
+</td></tr><tr><td>
 
+@icon  
+@icon!  
+@iconp</td><td>
 
-**@icon** 指令可让你创建按钮，而这些按钮会基于命令句（通常通过 **Set** 指令，类似于 **@if** 和 **@ifset**）的测试结果，动态地更改其图标。默认的 *视图模式循环* 按钮使用该指令将图标更改为反映当前的视图模式。
+**@icon** 指令允许您创建动态更改其图标的按钮，这些图标基于命令子句的测试，通常通过 **Set** 命令（类似于 **@if** 和 **@ifset**）。默认的 *视图模式循环* 按钮使用此方法将它的图标更改为反映当前视图模式。
 
     Set VIEW=Cycle
     @icon:largeicons,Set VIEW=LargeIcons
@@ -308,20 +324,75 @@
     @icon:tile,Set VIEW=Tiles
     @icon:detailsmode,Set VIEW=Details
 
-此按钮上的每个 **@icon** 指令均会指定要使用的图标和要测试的命令指令。例如，如果 **Set VIEW=LargeIcons** 测试为真，则按钮上将显示名为 **largeicons** 的图标。如果其它 **@icon** 测试均不匹配，则使用按钮本身设置的图标作为默认图像。
+按钮中的每个 **@icon** 指令都指定要使用的图标以及要测试的命令指令。例如，如果 **Set VIEW=LargeIcons** 测试结果为真，则将在按钮上显示名为 **largeicons** 的图标。如果没有任何 **@icon** 测试匹配，则将使用按钮本身中设置的图标作为默认图像。
 
-对于三按钮按钮的特殊情况，**@iconp:** 和 **@icon!:** 指令也可用于任一子按钮上以更改父按钮的图标。在任一子按钮上使用的 **@iconp:** 将设置父按钮的图标（但不会对子按钮做任何操作）。在任一子按钮上使用的 **icon!:** 将设置父按钮的图标以及该子按钮的图标。
+在三按钮按钮的特殊情况下，**@iconp:** 和 **@icon!:** 指令也可以在任何子按钮中使用来更改父级的图标。**@iconp:** 在子按钮中使用将设置父级的图标（但不会对子按钮做任何操作）。**icon!:** 在子按钮中使用将设置父级和该子按钮的图标。
 
-如果你基于 **Set** 命令进行测试，则技术上来说命令名称是可选的，并且可以省略。例如，单独的 **VIEW=LargeIcons** 与 **Set VIEW=LargeIcons** 相同。提供此能力是为了避免损坏旧按钮；对于新按钮，我们建议你在所有情况下都包含命令名称以避免将来出现问题。
+如果您正在根据 **Set** 命令进行测试，则命令名称在技术上是可选的，可以省略。例如，**VIEW=LargeIcons** 本身与 **Set VIEW=LargeIcons** 相同。这种能力是为了避免破坏旧的按钮，对于新的按钮，我们建议您始终包含命令名称，以避免将来出现问题。
 
-在命令编辑器中，你可以 **Ctrl**+单击 **@icon:** 字符串以直接选择图标。
+在命令编辑器中，您可以 **Ctrl**+单击 **@icon:** 字符串来直接选择图标。
 
-**@icon** 可使用 **RECYCLEBINEMPTY** 参数来测试回收站是否为空。例如：
+**@icon** 可以使用 **RECYCLEBINEMPTY** 参数来测试回收站是否为空。例如，
 
     @icon:c:\icons\empty.png,RECYCLEBINEMPTY
 
-在回收站状态更改时，使用 **RECYCLEBINEMPTY** 和 **@icon** 的工具栏按钮将自动刷新自身（这让你可以拥有一个图标反映回收站状态的按钮）。
-</td></tr>
+使用 **@icon** 和 **RECYCLEBINEMPTY** 的工具栏按钮将在回收站状态发生变化时自动刷新自身（这使您可以拥有一个图标反映回收站状态的按钮）。
+</td></tr><tr><td>
+
+@if  
+@ifset</td><td>
+
+允许根据对各种命令的测试进行简单的条件行为。
+
+**@if** 是一个针对任何命令的通用测试，而 **@ifset** 是一个特定的测试，它只适用于 **[Set](internal_commands/set.zh.md)** 命令条件。例如，**@ifset:DUAL=on** 等效于 **@if:Set DUAL=on**。
+**@if** 实际执行的测试是求值具有指定命令的工具栏按钮是否会突出显示。例如，如果文件窗口处于双栏模式，则具有 **Set DUAL=toggle** 命令的按钮将突出显示。因此，**@if:Set DUAL=toggle** 修饰符将求值为真。
+
+您还可以使用 **@if:enabled** 来求值工具栏按钮是否会被启用。例如，[导航锁定](/Manual/basic_concepts/the_lister/dual_display/navigation_lock.zh.md) 仅在文件窗口处于双栏模式时才启用。因此，当文件窗口处于双栏模式时，**@if:enabled Set NAVLOCK=Toggle** 修饰符将求值为真。
+
+您还可以测试变量是否已由 **@set** 指令设置。此外，[文件列表工具栏](/Manual/basic_concepts/the_lister/toolbars/the_default_toolbars/file_display_toolbar.zh.md) 上的按钮可以测试它是否绑定到左侧或右侧文件列表。
+
+例如，您可以配置一个按钮，将文件夹读入双栏文件窗口中的右侧文件列表，或读入其它文件列表。
+
+    @if:Set DUAL=on             // 如果 DUAL 模式已开启
+    Set FOCUS=right             // 将焦点设置到右侧文件列表
+    Go /mypictures OPENINRIGHT  // 将目录读入该文件列表
+    @if:else                    // 否则
+    Go /mypictures              // 将目录读入当前文件列表
+    @if:common                  // 通用命令（始终执行）
+    Set VIEW=thumbnails         // 将视图设置为缩略图模式
+
+另一个例子是，**@ifset** 可以使用 **RECYCLEBINEMPTY** 参数来测试回收站是否为空：
+
+    @ifset:RECYCLEBINEMPTY
+    @confirm The recycle bin is empty!
+    @ifset:else
+    Delete EMPTYRECYCLE
+
+条件测试也可以用在 [独立查看器](/Manual/additional_functionality/viewing_images/README.zh.md) 中的按钮上。以下函数将通过使用 **@if** 测试当前缩放模式，在 100% 缩放和 *扩展至页面* 模式之间切换显示：
+
+    @if:Show VIEWERCMD=zoom,reset
+    Show VIEWERCMD=zoom,grow
+    @if:else
+    Show VIEWERCMD=zoom,reset
+
+此修饰符的可能形式为：
+
+|                                       |                                                                                                                                    |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **@if:\<command line\>**              | *测试特定命令条件是否为真*                                                                                     |
+| **@ifset:***\<Set command argument\>* | *测试特定 Set 命令条件*                                                                                        |
+| **@if:enabled** *\<command\>*         | *测试命令按钮是否会被启用（而不是突出显示）*                                                              |
+| **@if:\$foo**                         | *测试名为“foo”的变量是否已设置*                                                                                     |
+| **@if:\$glob:bar**                    | *测试名为“bar”的全局变量是否已设置*                                                                              |
+| **@if:SIDE=left**                     | *测试工具栏是否绑定到左侧文件列表*                                                                             |
+| **@if:SIDE=right**                    | *测试工具栏是否绑定到右侧文件列表*                                                                            |
+| **@if:&&ARG&&=value**                 | *测试 [用户定义命令](/Manual/customize/creating_your_own_buttons/user-defined_commands.zh.md) 参数是否与给定值匹配*      |
+| **@if:&&ARG&&!=value**                | *测试 [用户定义命令](/Manual/customize/creating_your_own_buttons/user-defined_commands.zh.md) 参数是否与给定值不匹配* |
+| **@if:else**                          | *如果没有任何其它匹配项，则执行“else”子句*                                                                        |
+| **@if:common**                        | *始终执行的通用指令*                                                                                     |
+
+您可以通过在条件前面添加 **!** 字符来否定条件。例如，以下四个都是等效的：
+
     @if:!Set DUAL=on
     @if:Set DUAL=off
     @ifset:!DUAL=on
@@ -329,183 +400,174 @@
 </td></tr><tr><td>
 @ifexists</td><td>
 
-基于指定的驱动器或路径是否存在来允许基本的条件行为。如果使用 **wild:** 前缀，则路径的最终组件可以包含[标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md)。
+允许根据指定的驱动器或路径是否存在进行简单的条件行为。如果使用 **wild:** 前缀，路径的最后一个组件可以包含 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md)。
 
 |                      |                                                                                                  |
 |----------------------|--------------------------------------------------------------------------------------------------|
-| **@ifexists:**       | *\<驱动器或路径\> - 测试驱动器或路径是否存在*                                               |
-| **@ifexists:wild:**  | *\<驱动器或路径\> - 测试驱动器或路径是否存在。允许在最终路径组件中使用通配符* |
-| **@ifexists:!**      | *\<驱动器或路径\> - 测试驱动器或路径不存在*                                       |
-| **@ifexists:else**   | *如果路径不存在，则执行的“else”子句*                                    |
-| **@ifexists:common** | *始终执行的公共指令*                                                   |
+| **@ifexists:**       | *\<drive or path\> - 测试驱动器或路径是否存在*                                               |
+| **@ifexists:wild:**  | *\<drive or path\> - 测试驱动器或路径是否存在。允许在路径的最后一个组件中使用通配符* |
+| **@ifexists:!**      | *\<drive or path\> - 测试驱动器或路径是否不存在*                                       |
+| **@ifexists:else**   | *如果路径不存在，则执行“else”子句*                                    |
+| **@ifexists:common** | *始终执行的通用指令*                                                   |
 </td></tr><tr><td>
 @ifsel</td><td>
 
-根据文件或文件夹选择，允许函数执行不同操作。可用的测试与 **@disablenosel** 修饰符（上面已记录）相同。
+允许函数根据文件或文件夹的选择执行不同的操作。可用的测试与 **@disablenosel** 修饰符相同（如上所述）。
 
 例如，
 
     @ifsel:numfiles=2
-    <运行可接受两个文件的程序>
+    <run program that accepts exactly two files>
     @ifsel:else
-    <显示错误信息>
+    <show an error message>
 </td></tr><tr><td>
 
 @ifpath  
 @ifpathr</td><td>
 
-允许基于当前的源路径来执行基本条件行为。可以提供一个绝对路径以进行测试，或者提供一个通配符模式（对于*[标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md)使用 @ifpath*，对于*[正则表达式](../wildcard_reference/regular_expression_syntax.zh.md)使用 @ifpathr*）。
+允许根据当前源路径进行简单的条件行为。您可以提供要测试的绝对路径，或提供通配符模式（对 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md) 使用 **@ifpath**，对 [正则表达式](../wildcard_reference/regular_expression_syntax.zh.md) 使用 **@ifpathr**）。
 
-例如，可以在双击图像文件时（根据文件存储位置）使用此功能来打开不同的程序。如果以下命令被添加到**图像**[文件类型组](/Manual/file_types/file_type_groups.zh.md)的*左侧双击* [事件](/Manual/file_types/filetype_editor/events.zh.md)，则双击网络上的图片时，它们将在 Opus 查看器 中打开，而双击本地驱动器上的文件时，它们将在 Photoshop 中打开。
+例如，您可以使用此方法在双击图像文件时打开不同的程序，具体取决于文件存储的位置。如果将以下命令添加到 **Images** [文件类型组](/Manual/file_types/file_type_groups.zh.md) 的 *左双击* [事件](/Manual/file_types/filetype_editor/events.zh.md)，则位于网络上的图片将在双击时使用 Opus 查看器打开，而位于本地驱动器上的文件将在 Photoshop 中打开。
 
     @ifpath:\\*                      // 如果路径以 \\ 开头
     Show                             // 调用 Opus 查看器
     @ifpath:else                     // 否则...
-    Photoshop.exe {f}                // 在 Photoshop 中打开（通常需要指定完整路径，这只是一个 示例）
+    Photoshop.exe {f}                // 在 Photoshop 中打开（通常需要指定完整路径 - 这只是一个示例）
 
 此修饰符的可能形式为：
 
 |                                       |                                                             |
 |---------------------------------------|-------------------------------------------------------------|
-| **@ifpath:***\<path or wildcard\>*    | *使用标准模式匹配测试路径*         |
-| **@ifpathr:***\<regular expression\>* | *使用正则表达式测试路径*               |
-| **@ifpath:else**                      | *如果没有任何匹配项，则执行的“else”子句* |
-| **@ifpath:common**                    | *始终执行的公共指令*              |
+| **@ifpath:***\<path or wildcard\>*    | *测试路径（使用标准模式匹配）*                             |
+| **@ifpathr:***\<regular expression\>* | *测试路径（使用正则表达式）*                               |
+| **@ifpath:else**                      | *如果没有任何其它匹配项，则执行“else”子句*                 |
+| **@ifpath:common**                    | *始终执行的通用指令*                                     |
 
-通过在前缀中添加 **!** 字符，可以否定该条件。
+您可以通过在条件前面添加 **!** 字符来否定条件。
 
 示例：
 
 |                                   |                                                                                           |
 |-----------------------------------|-------------------------------------------------------------------------------------------|
-| **@ifpath:C:\Program Files**      | *测试您位于 C:\Program Files 中*                                                       |
-| **@ifpath:!C:\Program Files**     | *测试您位于 C:\Program Files 以外的任何位置*                                             |
-| **@ifpath:C:\Program Files\\**\*  | *测试您位于 C:\Program Files 下的某个文件夹中（不包括 Program Files 本身）* |
-| **@ifpath:!C:\Program Files\\**\* | *测试您位于 C:\Program Files 下的某个文件夹外*                                    |
+| **@ifpath:C:\Program Files**      | *测试您是否在 C:\Program Files 中*                                                       |
+| **@ifpath:!C:\Program Files**     | *测试您是否不在 C:\Program Files 中*                                             |
+| **@ifpath:C:\Program Files\\**\*  | *测试您是否在 C:\Program Files 下面的文件夹中（不包括 Program Files 本身）* |
+| **@ifpath:!C:\Program Files\\**\* | *测试您是否不在 C:\Program Files 下面的文件夹中*                                    |
 </td></tr><tr><td>
 @ifrunning</td><td>
 
-允许基于当前正在运行的指定进程来执行基本条件行为。可以使用通配符，或（通过在 模式前加上 **regex:**）正则表达式。
+允许根据指定的进程当前是否正在运行进行简单的条件行为。您可以使用通配符或（通过在模式前面添加 **regex:**）正则表达式。
 
 |                            |                                                                  |
 |----------------------------|------------------------------------------------------------------|
 | **@ifrunning:notepad.exe** | *测试记事本是否正在运行*                                     |
-| **@ifrunning:!note**\*     | *测试以“note”开头的进程是否未在运行中*          |
-| **@ifrunning:else**        | *如果进程不存在，则执行的“else”子句* |
-| **@ifrunning:common**      | *始终执行的公共指令*                   |
+| **@ifrunning:!note**\*     | *测试以“note”开头的进程是否未运行*                          |
+| **@ifrunning:else**        | *如果进程不存在，则执行“else”子句*                         |
+| **@ifrunning:common**      | *始终执行的通用指令*                                      |
 </td></tr><tr><td>
 @keydown</td><td>
 
-允许基于函数运行时按住不同的限定键来执行基本条件行为。
+允许根据在运行函数时是否按下了各种修饰键进行简单的条件行为。
 
-要测试的限定键使用一个或多个关键字（**shift**、**ctrl** 和 **alt**）指定，这些关键字代表 <kbd>Shift</kbd>、<kbd>Ctrl</kbd> 和 <kbd>Alt</kbd> 键。例如，可以将某个按钮配置为选择所有文件，然后根据按住的键进行复制、移动或创建快捷方式。
+要测试的修饰符使用一个或多个关键字（**shift**、**ctrl** 和 **alt**）来指定，这些关键字分别代表 <kbd>Shift</kbd>、<kbd>Ctrl</kbd> 和 <kbd>Alt</kbd> 键。例如，您可以配置一个按钮来选择所有文件，然后根据按下的键将它们复制、移动或创建快捷方式。
 
     Select ALL              // 选择所有项目（始终执行）
-    @keydown:none           // 如果没有按住限定键
-    Copy                    // 将文件复制到目标位置
-    @keydown:shift          // 如果按住 Shift 键
-    Copy MOVE               // 将文件移动到目标位置
-    @keydown:ctrlshift      // 如果同时按住 Ctrl 和 Shift 键
-    Copy MAKELINK           // 在目标位置创建快捷方式
+    @keydown:none           // 如果没有按下修饰符
+    Copy                    // 将文件复制到目标
+    @keydown:shift          // 否则，如果按下 Shift 键
+    Copy MOVE               // 将文件移动到目标
+    @keydown:ctrlshift      // 否则，如果同时按下 Ctrl 和 Shift 键
+    Copy MAKELINK           // 在目标中创建快捷方式
 
 此修饰符的可能形式为：
 
 |                                |                                                                                                                                                                                                                   |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **@keydown:***\<qualifiers\>*  | *测试限定键或键组合*                                                                                                                                                                                                 |
-| **@keydown:!***\<qualifiers\>* | *测试限定键或键组合未被按下*                                                                                                                                                                                  |
-| **@keydown:any**               | // 如果按住**任何**限定键*\| \|**@keydown:none**\|*如果没有按住限定键，则执行的指令*\| \|**@keydown:common**\|*始终执行的公共指令// |
-<tr>
-<td>
+| **@keydown:***\<qualifiers\>*  | *测试修饰键或修饰键组合*                                                                                                                                                                 |
+| **@keydown:!***\<qualifiers\>* | *测试修饰键或修饰键组合是否未按下*                                                                                                                                                  |
+| **@keydown:any**               | // 测试是否按下了**任何**修饰键*\| \|**@keydown:none**\|*如果未按下任何修饰键，则执行的指令*\| \|**@keydown:common**\|*始终执行的通用指令// |
+</td></tr><tr><td>
 @label</td><td>
 
 TOBEDONE
 
-如果某物修改变量或其它影响动态标签的因素，它应通知 Opus，以便可以更新标签和工具栏布局。命令应使用 **@toggle:update**（见下文）并且脚本可以使用 [Command.UpdateToggle](/Manual/reference/scripting_reference/scripting_objects/command.zh.md) 执行此操作。
-</td></tr><tr>
-<td>
+如果某些内容修改了变量，或其它影响动态标签的因素，它应该通知 Opus，以便可以更新标签和工具栏布局。命令应该使用 **@toggle:update**（见下文），而脚本可以使用 [Command.UpdateToggle](/Manual/reference/scripting_reference/scripting_objects/command.zh.md) 来做到这一点。
+</td></tr><tr><td>
 @leavedoswindowopen</td><td>
 
-为 [MS-DOS 批处理函数](/Manual/customize/creating_your_own_buttons/ms-dos_batch_commands.zh.md) 打开的控制台窗口在函数完成后仍然保持打开状态。如果没有此修饰符，窗口将在函数完成时关闭，这可能使读入任何命令行程序的输出变得困难。保持 DOS 窗口打开依赖于向系统命令解释器 **cmd.exe** 传递特定参数 (**/K**)。如果你通过设置 **%ComSpec%** 环境变量修改了系统上的默认命令处理器，Opus 不会传递 **/K**，因为它无法知道这个参数是否会被新命令处理器理解。与此相反，你可以设置 **%ComSpecLeaveOpenArg%** 环境变量，每当使用 **@leavedoswindowopen** 时，它将替代 **%ComSpec%**。
+为 [MS-DOS 批处理函数](/Manual/customize/creating_your_own_buttons/ms-dos_batch_commands.zh.md) 打开的控制台窗口将在函数完成后保持打开状态。如果没有此修饰符，窗口将在函数完成后关闭，这可能难以阅读任何命令行程序的输出。
+保留 DOS 窗口打开依赖于向系统命令解释器 **cmd.exe** 传递特定参数（**/K**）。如果您通过设置 **%ComSpec%** 环境变量修改了系统上的默认命令处理器，Opus 不会传递 **/K**，因为它无法知道此参数是否会被新的命令处理器理解。相反，您可以设置 **%ComSpecLeaveOpenArg%** 环境变量，它将在每次使用 **@leavedoswindowopen** 时用作 **%ComSpec%** 的替代。
 
 |                         |                                                |
 |-------------------------|------------------------------------------------|
-| **@leavedoswindowopen** | *函数执行完成后保持 DOS 提示符打开* |
-</td></tr><tr>
-<td>
+| **@leavedoswindowopen** | *在函数完成后保留 DOS 提示符打开* |
+</td></tr><tr><td>
 @logusage</td><td>
 
-指示 Windows 记录此函数打开的程序或文档的使用情况。通常这意味着使用的任何文件都将添加到最近的文档列表，启动的任何程序都将添加到最近的应用程序列表。
+指示 Windows 记录此函数打开的程序或文档的使用情况。通常这意味着任何使用的文件都将添加到最近的文档列表，并且任何启动的程序都将添加到最近的应用程序列表。
 
 |               |                                       |
 |---------------|---------------------------------------|
 | **@logusage** | *记录文件和应用程序的使用情况* |
-</td></tr><tr>
-<td>
+</td></tr><tr><td>
 @nocall</td><td>
 
-调用外部 **.bat** 文件的 [MS-DOS 批处理函数](/Manual/customize/creating_your_own_buttons/ms-dos_batch_commands.zh.md) 将直接运行它，而不是使用 ***call*** 语义。这意味着在外部 **.bat** 文件完成后，控件将不会返回到父函数。默认行为是使用在结尾处将控件返回到父函数的 DOS **call** 指令。
+[MS-DOS 批处理函数](/Manual/customize/creating_your_own_buttons/ms-dos_batch_commands.zh.md) 调用外部 **.bat** 文件的函数将直接运行它，而不是使用 ***call*** 语义。这意味着一旦外部 **.bat** 文件完成，控制权将不会返回到父函数。默认行为是使用 DOS **call** 指令，该指令在结束时将控制权返回到父函数。
 
 |                              |                                                                      |
 |------------------------------|----------------------------------------------------------------------|
-| **@nocall:***\<批处理文件\>* | *调用外部批处理文件，不要将控件返回此函数* |
-</td></tr><tr>
-<td>
+| **@nocall:***\<batch file\>* | *调用外部批处理文件，不将控制权返回到此函数*                 |
+</td></tr><tr><td>
 @nodeselect</td><td>
 
-文件和文件夹将在函数结束时仍然处于选中状态。在配置中的 **[文件操作/选项](/Manual/preferences/preferences_categories/file_operations/options.zh.md)** 页面上，这让你能按每个函数覆盖 **取消选中在函数中使用文件** 选项。
+文件和文件夹将在函数结束时保持选中状态。这使您可以在每个函数的基础上覆盖配置中的 **[文件操作 / 选项](/Manual/preferences/preferences_categories/file_operations/options.zh.md)** 页面上的 **取消选择函数中使用的文件** 选项。
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **@nodeselect** | *不要取消选中此函数使用的项目* |
-</td></tr><tr>
-<td>
+| **@nodeselect** | *不要取消选择此函数使用的项目* |
+</td></tr><tr><td>
 @noexpandenv</td><td>
 
-防止在函数中扩展任何环境变量。通常在函数解析阶段会扩展环境变量（比如 **%USERPROFILE%**） - 此修饰符导致变量名保持不变。
+防止扩展函数中的任何环境变量。通常，环境变量（如 **%USERPROFILE%**）会在函数解析阶段扩展 - 此修饰符会导致变量名保持不变。
 
 |                  |                                       |
 |------------------|---------------------------------------|
 | **@noexpandenv** | *不要扩展环境变量* |
-</td></tr><tr>
-<td>
+</td></tr><tr><td>
 @nofilenamequoting</td><td>
 
-禁用 Opus 在使用 [外部代码](external_control_codes/README.zh.md)（比如 **{filepath}**）传递包含空格的文件的名称时执行的自动引用。默认情况下，Opus 会用引号包裹嵌入空格的名称，但是有时你可能想要禁用此操作 - 某些外部程序可能不需要或不理解其命令行上的引号，你可能还想在函数中提供明确的引号，以防自动引用因复杂命令结构而导致混淆。
+禁用 Opus 在使用 [外部代码](external_control_codes/README.zh.md)（如 **{filepath}**）传递包含空格的文件名称时执行的自动引号。默认情况下，Opus 会将包含嵌入空格的名称括在引号中，但有时您可能希望禁用此功能 - 一些外部程序可能不需要或不理解其命令行上的引号，而且您可能还希望在函数中提供显式引号，以防自动引号因复杂的命令结构而混乱。
 
 |                        |                                                   |
 |------------------------|---------------------------------------------------|
-| **@nofilenamequoting** | *不要自动引用文件名称和路径* |
-</td></tr><tr>
-<td>
+| **@nofilenamequoting** | *不要自动引用文件名和路径* |
+</td></tr><tr><td>
 @nolocalizefiles</td><td>
 
-当 Opus 将其路径传递给外部程序时，防止 Opus 自动下载或提取非文件系统文件。例如，你可能想要使用 **{filepath}** 将远程 FTP 服务器上文件的 **ftp://** 路径传递给外部程序。默认情况下，Opus 会将文件下载到临时文件中，并将临时文件的名称传递给程序 - 使用此修饰符后，Opus 将传递原始文件路径。
+防止 Opus 在将非文件系统文件的路径传递给外部程序时自动下载或提取这些文件。例如，您可能希望使用 **{filepath}** 将远程 FTP 服务器上的文件的 **ftp://** 路径传递给外部程序。默认情况下，Opus 会将文件下载到临时文件，并将临时文件的名称传递给程序 - 使用此修饰符，Opus 将改为传递原始文件路径。
 
 |                      |                                                         |
 |----------------------|---------------------------------------------------------|
 | **@nolocalizefiles** | *不要自动本地化（下载）远程文件* |
-</td></tr><tr>
-<td>
+</td></tr><tr><td>
 @noprogress</td><td>
 
-禁用此函数的自动进度指示符显示。你应谨慎使用此设置，因为如果没有进度指示符，就无法中止命令或监控其进度。通常，只有当脚本函数想要提供和控制其自己的进度指示符时才应使用此设置。
+禁用此函数的自动进度指示器显示。您应该谨慎使用此功能，因为如果没有进度指示器，就无法中止命令或监控其进度。通常，只有在想要提供和控制自己的进度指示器时，脚本函数才会使用此功能。
 
 |                 |                                                                 |
 |-----------------|-----------------------------------------------------------------|
-| **@noprogress** | *不要为此函数显示自动进度对话框* |
-</td></tr><tr>
-<td>
+| **@noprogress** | *不要为此函数显示自动进度对话框*                       |
+</td></tr><tr><td>
 @norunbatch</td><td>
 
-当 [MS-DOS 批处理函数](/Manual/customize/creating_your_own_buttons/ms-dos_batch_commands.zh.md) 组合内部和外部命令时，默认行为是 Opus 在每个内部命令处拆分函数并执行所有在前一个内部命令之前遇到的外部命令。例如，想象下面的（相当无意义的）函数：
+当 [MS-DOS 批处理函数](/Manual/customize/creating_your_own_buttons/ms-dos_batch_commands.zh.md) 结合使用内部命令和外部命令时，默认行为是 Opus 在每个内部命令处拆分函数，并执行之前的所有外部命令。例如，假设以下（相当无用的）函数：
 
     echo one
     Help ABOUT
     echo two
     @leavedoswindowopen
 
-此函数的默认行为是打开一个 DOS 窗口并打印字符串 "one"，然后显示 Opus **关于** 对话框，然后打开另一个 DOS 窗口并打印字符串 "two"。但是，如果将函数更改如下：
+此函数的默认行为是打开一个 DOS 窗口并打印字符串“one”，然后显示 Opus **About** 对话框，然后打开另一个 DOS 窗口并打印字符串“two”。但是，如果将函数更改为以下形式：
 
     @norunbatch
     echo one
@@ -513,25 +575,153 @@ TOBEDONE
     echo two
     @leavedoswindowopen
 
-新行为是首先显示 **关于** 对话框，然后打开一个 DOS 窗口并打印字符串 "one" 和 "two"。**@norunbatch** 修饰符导致首先执行所有 Opus 内部命令，然后执行所有外部命令。
+新的行为是首先显示 **About** 对话框，然后打开一个 DOS 窗口并打印字符串“one”和“two”。**@norunbatch** 修饰符会导致先执行所有 Opus 内部命令，然后执行所有外部命令。
 
 |                 |                                                             |
 |-----------------|-------------------------------------------------------------|
-| **@norunbatch** | *不要因为内部命令而拆分批处理函数* |
-|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-此命令子句测试为 false 时，将会显示该按钮。这类似于 **@if** 修饰符提供的条件测试。
+| **@norunbatch** | *不要因为内部命令而拆分批处理函数*                       |
+</td></tr><tr><td>
+@output</td><td>
+
+将行中剩余的所有文本输出到脚本日志。对调试很有用。在命令编辑器处于 \*运行带日志记录\* 模式时，也可以查看输出。
+
+|                           |                                       |     |
+|---------------------------|---------------------------------------|-----|
+| **@output** *\<message\>* | *将 \<message\> 发送到脚本日志* |     |
+</td></tr><tr><td>
+@perfile</td><td>
+
+允许对每个文件运行一组命令。通常，包含多行命令的函数会对所有选定文件分别运行每个命令。
+
+例如，
+
+    echo 1 {file}
+    echo 2 {file}
+
+如果选择了两个文件“Apple.txt”和“Banana.txt”，这将输出：
+
+    1 Apple.txt
+    1 Banana.txt
+    2 Apple.txt
+    2 Banana.txt
+
+在这些命令周围使用 **@perfile**，如下所示：
+
+    @perfile:begin
+    echo 1 {file}
+    echo 2 {file}
+    @perfile:end
+
+这将输出：
+
+    1 Apple.txt
+    2 Apple.txt
+    1 Banana.txt
+    2 Banana.txt
+
+使用 **@perfile:begin** 来标记每个文件块的开始，并使用 **@perfile:end** 来标记结束。
+</td></tr><tr><td>
+@resolvelinks</td><td>
+
+传递给此函数中命令的快捷方式或链接将被解析为其目标。如果没有此修饰符，选定的 **.lnk** 文件将按原样传递。
+
+|                   |                                                               |
+|-------------------|---------------------------------------------------------------|
+| **@resolvelinks** | *在将文件名传递给命令时解析快捷方式目标* |
+</td></tr><tr><td>
+@runbatch</td><td>
+
+强制在某个点执行 MS-DOS 批处理函数。默认行为是将此类函数在函数的最后执行 - 使用此修饰符，您可以在任何行强制中断函数。例如：
+
+    echo one
+    @runbatch
+    echo two
+    @leavedoswindowopen
+
+这将导致打开两个独立的 DOS 窗口，一个显示文本“one”，另一个显示“two”。如果没有 **@runbatch** 指令，这两个命令将在同一个窗口中执行。
+
+|               |                                                            |
+|---------------|------------------------------------------------------------|
+| **@runbatch** | *强制在某个点执行 DOS 批处理函数*                       |
+</td></tr><tr><td>
+@runmode</td><td>
+
+修改函数启动的外部程序的“运行”状态 - 即其主窗口的显示方式。这等效于 [简单命令编辑器](/Manual/customize/creating_your_own_buttons/command_editor/simple_command_editor.zh.md) 上的 **运行** 下拉列表。并非所有程序都支持此设置，因此您需要在一定程度上进行试用。只有在确定您在做什么的情况下，才应将模式设置为 **hide** - 它最适合在运行 DOS 程序时隐藏 DOS 窗口的短暂闪现。
+
+|                   |                                      |
+|-------------------|--------------------------------------|
+| **@runmode:min**  | *最小化程序的主窗口*                 |
+| **@runmode:max**  | *最大化程序的主窗口*                 |
+| **@runmode:hide** | *隐藏程序的主窗口*                     |
+</td></tr><tr><td>
+@runonce</td><td>
+
+强制修饰符后的命令在每个函数中只运行一次，而不是每个文件运行一次。
+
+|                            |                                               |
+|----------------------------|-----------------------------------------------|
+| **@runonce:***\<command\>* | *指定的命令将只运行一次*                    |
+</td></tr><tr><td>
+@script</td><td>
+
+指定用于脚本的脚本语言。这主要用于 [嵌入式重命名脚本](/Manual/customize/creating_your_own_buttons/embedding_rename_scripts.zh.md)，因为否则脚本语言将通过脚本编辑器顶部的下拉列表选择。**@script** 修饰符后面必须跟一个关键字，该关键字指定脚本语言（或者在 [脚本加载项](/Manual/scripting/script_add-ins/README.zh.md) 的情况下，插件本身的文件扩展名指定语言）。
+
+例如，
+
+    Rename PATTERN * TO *
+    @script:vbscript
+    Function ....
+
+|                            |                                                   |
+|----------------------------|---------------------------------------------------|
+| **@script:***\<language\>* | *为重命名命令指定脚本语言*                     |
+</td></tr><tr><td>
+@set</td><td>
+
+设置一个命名变量的值，该变量可以在函数中剩余的命令中使用。您可以使用 **{\$}** [控制代码](external_control_codes/codes_for_clipboard_and_variables.zh.md) 将变量的值传递给内部命令和外部命令。变量在值由 **{dlgstring}** 代码定义的情况下最有用。例如，
+
+    @set dir={dlgstring|Enter new folder name to copy files to}
+    CreateFolder ".\{$dir}"
+    Copy TO ".\{$dir}"
+
+通常，变量不会从函数的一次调用持续到下一次调用，并且您无法从一个函数引用另一个函数中设置的变量。但是，可以通过在变量名称前面添加一个特殊的范围标记来实现这一点，该标记确定变量将在哪个范围内存在。
+
+|                      |                                                                |
+|----------------------|----------------------------------------------------------------|
+| **src:***\<name\>*   | *变量将限定在源文件夹标签页范围内*             |
+| **dst:***\<name\>*   | *变量将限定在目标文件夹标签页范围内*        |
+| **left:***\<name\>*  | *变量将限定在左侧文件夹标签页范围内*               |
+| **right:***\<name\>* | *变量将限定在右侧文件夹标签页范围内*              |
+| **tab:***\<name\>*   | *变量将限定在活动文件夹标签页范围内（见下文）* |
+| **lst:***\<name\>*   | *变量将限定在文件窗口（整个窗口）范围内*     |
+| **glob:***\<name\>*  | *变量将限定在全局范围内*                             |
+
+**src:** 和 **tab:** 范围通常指向命令中的同一个文件夹标签页。（**tab:** 范围的引入是为了使 [使用变量的 status bar 代码](../status_bar_codes/other_codes.zh.md) 可以引用 status bar 所在的一侧，而无需担心它是否是源、目标、左侧还是右侧。为了保持一致性，它在命令中得到支持。）
+
+您还可以标记变量以保存在磁盘上 - 它们的值将从一个 Opus 会话记住到下一个会话。要做到这一点，只需在范围标记中添加一个感叹号（!）。例如，
+
+|                                     |                                                                      |
+|-------------------------------------|----------------------------------------------------------------------|
+| **glob!:***\<name\>*                | *引用一个具有全局范围并将保存在磁盘上的变量*                 |
+| **@set** *\<name\>***=***\<value\>* | *将命名变量设置为指定的值*                                 |
+| **@set** *\<name\>*                 | *删除命名变量*                                                    |
+
+如果您有 按钮或 status bar 代码对变量更改做出反应，您可能需要运行特殊的 **@toggle:update** 命令以使它们在更改变量后更新外观。请参见下面的 **@toggle** 文档。
+</td></tr><tr><td>
+@showif</td><td>
+
+如果命令子句测试为假，则按钮将被显示。这类似于 **@if** 修饰符提供的条件测试。
 
 |                              |                                                                  |
 |------------------------------|------------------------------------------------------------------|
-| **@showif:Set DUAL=toggle**  | *如果文件窗口处于双栏模式，将显示该按钮*     |
-| **@showif:!Set DUAL=toggle** | *如果文件窗口不处于双栏模式，将显示该按钮* |
+| **@showif:Set DUAL=toggle**  | *如果文件窗口处于双栏模式，则按钮将被显示*           |
+| **@showif:!Set DUAL=toggle** | *如果文件窗口不处于双栏模式，则按钮将被显示*         |
 </td></tr><tr><td>
 @sendkey</td><td>
 
-向系统发送指定的击键。该键将被路由到当前获得焦点的窗口。例如，`@sendkey:win+v` 向系统发送 <kbd>Win</kbd>+<kbd>V</kbd> 键，这将打开 Windows 剪贴板查看器。
+向系统发送指定的按键。该键将被路由到当前具有焦点的窗口。例如，`@sendkey:win+v` 向系统发送 <kbd>Win</kbd>+<kbd>V</kbd> 键，这将打开 Windows 剪贴板查看器。
 
-支持的限定符键有 `shift`、`ctrl`、`alt` 和 `win`。
+支持的修饰键是 `shift`、`ctrl`、`alt` 和 `win`。
 
 除了字母和数字之外，还支持以下命名键：`backspace`、`capslock`、`delete`、`down`、`end`、`enter`、`escape`、`home`、`insert`、`left`、`numlock`、`pagedown`、`pageup`、`pause`、`printscr`、`right`、`scrlock`、`space`、`tab`、`up`。
 </td></tr><tr><td>
@@ -539,108 +729,109 @@ TOBEDONE
 @showifpath  
 @showifpathr</td><td>
 
-如果当前源路径与指定模式不匹配，将显示该按钮。您可以提供要测试的绝对路径或通配符模式（对于 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md)，请使用 **@showifpath**，对于 [正则表达式](../wildcard_reference/regular_expression_syntax.zh.md)，请使用 **@showifpathr**）。
+如果当前源路径与指定模式不匹配，则按钮将被显示。您可以提供要测试的绝对路径，或提供通配符模式（对 [标准通配符](../wildcard_reference/pattern_matching_syntax.zh.md) 使用 **@showifpath**，对 [正则表达式](../wildcard_reference/regular_expression_syntax.zh.md) 使用 **@showifpathr**）。
 
 |                              |                                                                  |
 |------------------------------|------------------------------------------------------------------|
-| **@showifpathr:^C:\\**       | *如果源路径在 C: 驱动器上，则显示命令*                 |
-| **@showifpath:!\*\Work\\**\* | *除非源路径位于名为 **Work*** 的文件夹下方，否则显示* |
+| **@showifpathr:^C:\\**       | *如果源路径在 C: 驱动器上，则显示命令*                       |
+| **@showifpath:!\*\Work\\**\* | *除非源路径在名为 **Work** 的文件夹下，否则显示命令*    |
 
-路径可以使用别名、环境变量、{apppath} 代码等，但仅在使用通配符时（不包括正则表达式）：
+路径可以使用别名、环境变量、{apppath} 代码等，但仅限于使用通配符（而不是正则表达式）：
 
 |                                        |                                                                |
 |----------------------------------------|----------------------------------------------------------------|
-| **@showifpath:!/desktop**              | *除非位于桌面文件夹中，否则显示*                            |
-| **@showifpath:!%SystemRoot%\System32** | *除非位于 **C:\Windows\System32**（在典型系统中）中，否则显示* |
-| **@showifpath:{apppath\|dopus.exe}**   | *如果位于 Opus 安装所在的文件夹中，则显示*                |
+| **@showifpath:!/desktop**              | *除非在桌面文件夹中，否则显示命令*                            |
+| **@showifpath:!%SystemRoot%\System32** | *除非在 **C:\Windows\System32** 中（在典型系统上），否则显示命令* |
+| **@showifpath:{apppath\|dopus.exe}**   | *如果在安装 Opus 的文件夹中，则显示命令*                 |
 </td></tr><tr><td>
 @sync</td><td>
 
-此修饰符之后所述的命令将同步运行 - Opus 将等待该命令退出后，再运行该函数中的下一个命令（或再次运行该命令以执行下一个选定的文件）。
+此修饰符后的命令将同步运行 - Opus 将等待它退出，然后才运行函数中的下一个命令（或在为下一个选定文件再次运行此命令之前）。
 
-对于仅包含一个命令的函数，其默认行为是异步为每个选定的文件运行该命令；包含多个命令的函数将同步运行每个命令。可以在配置中的 **[杂项 / 高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上使用 **function_default_async** 选项更改默认行为，或者可以使用此修饰符按每个命令进行覆盖。
+默认行为是，由单个命令组成的函数会为每个选定文件异步运行该命令；由多个命令组成的函数会同步运行每个命令。可以在配置中的 **[杂项 / 高级](/Manual/preferences/preferences_categories/miscellaneous/advanced_options.zh.md)** 页面上使用 **function_default_async** 选项更改默认行为，或者使用此修饰符按命令覆盖默认行为。
 
 |                           |                              |
 |---------------------------|------------------------------|
-| **@sync:notepad.exe {f}** | *以同步方式运行记事本* |
+| **@sync:notepad.exe {f}** | *同步运行记事本* |
 </td></tr><tr><td>
 @toggle</td><td>
 
-对于指示或更改状态的按钮（例如 **Set VIEW=details**），此修饰符可以让您更改按钮显示高亮时的状态。
+对于指示或更改状态的按钮（例如 **Set VIEW=details**），此修饰符允许您更改按钮 何时 显示为突出显示。
 
-根据按钮的显示位置，高亮可能显示为复选标记（例如在纯文本菜单中），或成为以不同颜色或样式绘制的图标或标签背景（类似于按下按钮时）。
+根据 按钮的显示位置，突出显示可能显示为 复选标记（例如，在纯文本菜单中），或图标或标签背景以不同的颜色或样式绘制（类似于按钮被按下时）。
 
-以 **Set VIEW=details** 命令为例，通常在文件列表为“详细信息”模式时，按钮将显示为高亮，在其它任何模式下都不会高亮。**@toggle** 修饰符可以更改此行为：
+以 **Set VIEW=details** 命令为例，通常情况下，当文件列表处于详细信息模式时，按钮将显示为突出显示，而在任何其它模式下则不会突出显示。**@toggle** 修饰符可以更改这一点：
 
 |                     |                                                           |
 |---------------------|-----------------------------------------------------------|
-| **@toggle:invert**  | *反转工具栏按钮的通常高亮状态* |
-| **@toggle:disable** | *阻止按钮在任何时候显示高亮*     |
+| **@toggle:invert**  | *反转工具栏按钮的通常突出显示状态*                 |
+| **@toggle:disable** | *阻止按钮永远显示为突出显示*                         |
 
-**@toggle** 修饰符还可以通过测试某个命令来控制按钮何时显示为高亮，这类似于 **@if** 和 **@ifset** 测试命令以决定要运行什么**。** 您可以基于与按钮实际运行的命令不同或作为补充的命令来高亮按钮。
+@**toggle** 修饰符还可以通过测试 命令来控制 何时 按钮 显示为 突出显示 ，类似于 **@if** 和 **@ifset** 测试命令的方式来决定要运行什么**.** 您可以使用此方法根据与按钮实际运行的命令不同或除了按钮实际运行的命令之外的命令来突出显示按钮。
 
-例如，此按钮不带有任何 **@toggle** 行，单击后将切换到 *详细信息* 模式，并且在您处于 *详细信息* 模式时也会显示为高亮：
+例如，以下没有 **@toggle** 行的按钮将在单击时将您切换到 *Details* 模式，并且在您处于 *Details* 模式时也会显示为突出显示：
 
     Set VIEW=Details
 
-未指定 **@toggle** 时，高亮（如果有）将基于按钮中的第一个命令。
+当不给出 **@toggle** 时，突出显示（如果有）基于按钮中的第一个命令。
 
-使用 **@toggle**，您可以执行操作，例如在测试另一个操作的同时运行一个 **Set** 命令。作为一个简单、有些牵强的示例，以下按钮在单击时切换到 *详细信息* 模式，但在处于增强模式时显示为高亮：
+使用 **@toggle**，您可以执行诸如运行一个 **Set** 命令 并在测试另一个命令时进行操作。作为一个简单而有些人为的例子，下面的按钮在单击时切换到 *Details* 模式，但在处于增强模式时显示为突出显示：
 
     Set VIEW=Details
     @toggle:if Set VIEW=Power
 
-您可以将 **@toggle** 在第一个命令后进行测试，而不是替代它，方法就是在"if"后面加上"&"字符：
+您可以使 **@toggle** 测试除了第一个命令之外，而不是代替第一个命令， 方法是在“if”之后添加一个“&”字符：
 
     Set VIEW=Details
     Set COLUMNSADD=thumbnail(0,96)
     @toggle:if&Set COLUMNSTOGGLE=thumbnail
 
-如果没有 **@toggle** 行，则当视图模式为 *详细信息*（由于该命令）时，按钮将高亮，而高亮不会受到 *Thumbnail* 列的影响（高亮不考虑第二个命令）。添加 **@toggle** 行后，按钮仅在视图模式设置为 *详细信息* 且存在 *Thumbnail* 列时才会高亮。  
-您可以从 **@toggle** 行中省略 "Set" 命令名称；如果未指定名称，它将假定您是指 **Set** 命令。但是，此容差是为了避免破坏旧按钮，我们建议您在创建新按钮时始终指定该命令。
+如果没有 **@toggle** 行，上面的按钮将在视图为 *Details* 时（由于命令）被突出显示，并且突出显示不会受到 *Thumbnail* 列的影响（突出显示不会考虑第二个命令）。添加了 **@toggle** 行后，按钮只有在视图设置为 *Details* 并且存在 *Thumbnail* 列时才会被突出显示。
+您可以从 **@toggle** 行中省略“Set”命令名称；如果没有指定名称，它将假设您指的是 **Set** 命令。但是，这种允许是为了避免破坏旧的按钮，我们建议您在制作新的按钮时始终指定命令。
 
-您可以通过分号将多个命令分隔开，从而一次测试多个命令。例如，您可以省略与号，并使用以下指令测试 *详细信息* 模式和 *Thumbnail* 列（无论按钮中是否存在任何其它命令，甚至作为按钮中的唯一行，此指令都将起作用）：
+您可以通过分号分隔多个命令来一次性测试多个命令。例如，您可以省略“&”符号，并使用以下指令来测试 *Details* 模式和 *Thumbnail* 列（这将在按钮中的任何其它命令的情况下有效，甚至作为按钮中的唯一一行）：
 
     @toggle:if Set VIEW=Details;Set COLUMNSTOGGLE=thumbnail
 
-您还可以在 **Set** 子句前加上感叹号来否定测试结果。例如，若要在除详细信息模式外的任何模式下让按钮出现选中状态：
+您还可以使用 **Set** 子句前面的感叹号来否定测试结果。例如，要使按钮在除 Details 之外的任何模式下显示为选中状态：
 
     @toggle:if !Set VIEW=Details
 
-**@toggle** 指令还可以测试变量的存在（通过 **@set** 指令设置的变量）。要使其正常工作，指令必须是按钮的第一行，并且您要测试的变量必须具有标签页、文件窗口或全局范围。您可以使用此选项来创建您自己的自定义切换按钮，这些按钮使用范围变量跟踪其状态。例如：
-    @切换：如果 $glob:TestVar
-    @如果：$glob:TestVar
-    @设置 glob:TestVar
-    @否则：如果
-    @设置 glob:TestVar=on
+**@toggle** 指令也可以测试变量是否存在（一个通过 **@set** 指令设置的变量）。为了使这起作用，指令必须是按钮的第一行，并且您要测试的变量必须具有标签页、文件窗口或全局范围。您可以使用此方法创建您自己的自定义切换按钮，这些按钮使用范围变量来跟踪它们的状态。例如：
 
-此按钮测试是否存在一个名为 *TestVar* 的全局变量。如果该变量存在，则该按钮将显示高亮。单击该按钮会对 **@ifset:** 指令进行求值，并将反转该变量的状态：如果设置了该变量，那么它将被删除；否则，它将被设置。最终结果是一个按钮，它除了每次单击时切换变量及其可见状态外，没有其它功能。（如果该变量控制其它情况，例如其它命令或脚本的行为或 [状态栏元素](../status_bar_codes/other_codes.zh.md) 的可见性，那么这会很有用。）
+    @toggle:if $glob:TestVar
+    @if:$glob:TestVar
+    @set glob:TestVar
+    @if:else
+    @set glob:TestVar=on
 
-以这种方式以 **@toggle:if** 开头的按钮每当在其中使用 **@set** 时，都会自动更新其外观（以反映该变量状态的变化）。如果您在单独的按钮或热键中使用 **@set** 来更改变量，则需要使用特殊命令 **@toggle:update** 来强制更新切换按钮的外观。
+此按钮测试名为 *TestVar* 的全局变量是否存在。如果变量存在，按钮将显示为突出显示。单击按钮将求值 **@ifset:** 指令，并反转变量的状态：如果变量已设置，则将其删除；否则，将其设置。最终结果是一个按钮，除了在每次单击时切换变量及其可见状态之外，它不执行任何功能。（这很有用，如果变量控制其它内容，例如其它命令或脚本的行为，或者 [status bar 元素](../status_bar_codes/other_codes.zh.md) 的可见性。）
 
-例如，如果您有一个根据变量高亮的按钮，但不更改该变量：
+以 **@toggle:if** 开头的按钮将在按钮中使用 **@set** 时自动更新其外观（以反映变量状态的更改）。如果您在单独的按钮或热键中使用 **@set** 来更改变量，则需要使用特殊命令 **@toggle:update** 强制更新切换按钮的外观。
 
-    @切换：如果 $glob:TestVar
+例如，如果您有一个按钮根据变量突出显示，但不会更改该变量：
 
-如果您有另一个更改该变量但未根据该变量高亮的按钮，那么您需要添加 **@toggle:update** 行以确保在单击第二个按钮时更新第一个按钮的高亮：
+    @toggle:if $glob:TestVar
 
-    @如果：$glob:TestVar
-    @设置 glob:TestVar
-    @否则：如果
-    @设置 glob:TestVar=on
-    @如果：通用
-    @切换：更新
+如果您有另一个按钮更改该变量，但不根据它突出显示，那么您需要添加 **@toggle:update** 行以确保在单击第二个按钮时更新第一个按钮的突出显示：
 
-**@toggle:update** 命令还将强制所有**状态栏**刷新，以防它们正在 [使用变量](../status_bar_codes/other_codes.zh.md) 来显示或隐藏信息。
+    @if:$glob:TestVar
+    @set glob:TestVar
+    @if:else
+    @set glob:TestVar=on
+    @if:common
+    @toggle:update
 
-您还可以使用 **@toggle:update** 来确保具有动态标签的按钮（通过上述**@label**）在更改标签所依赖的变量或其它详细信息后得到更新。如果标签宽度发生变化，这还将确保调整工具栏布局。
+**@toggle:update** 命令也会强制所有 **status bars** 刷新，以防它们 [使用变量](../status_bar_codes/other_codes.zh.md) 来显示或隐藏信息。
+
+您也可以使用 **@toggle:update** 来确保具有动态标签（通过上面的 **@label**）的按钮在更改标签所依赖的变量或其它详细信息后更新。这也确保如果标签宽度发生变化，工具栏布局也会进行调整。
 </td></tr><tr><td>
-@使用活动列表项</td><td>
+@useactivelister</td><td>
 
-该函数将在活动列表项中操作，而不是当前源列表项中。通常它们会是同一样内容，但这对于您希望操作任何当前活动列表项窗口的热键很有用，而无需确保该列表项首先设置为源。
+该函数将作用于活动文件窗口而不是当前源文件窗口。通常情况下，它们是同一个东西，但这对于您想要让它作用于当前活动的文件窗口窗口的热键很有用，而无需先确保该文件窗口设置为源。
 
 |                      |                                              |
 |----------------------|----------------------------------------------|
-| **@useactivelister** | *使用活动列表项而非源列表项* |
+| **@useactivelister** | *使用活动文件窗口而不是源 lister* |
 </td></tr></tbody>
 </table>
