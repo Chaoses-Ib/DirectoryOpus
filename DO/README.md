@@ -88,8 +88,10 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 
 详见 [HOW TO: Perform silent (un)install of Directory Opus - Opus FAQs - Directory Opus Resource Centre](https://resource.dopus.com/t/how-to-perform-silent-un-install-of-directory-opus/1319)
 
+<!-- TODO
 ## 性能
 - 打开含有大量文件的文件夹
 - 拖动大量文件
 
 资源管理器都完全不卡
+-->
