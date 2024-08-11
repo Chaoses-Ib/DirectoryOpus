@@ -807,7 +807,7 @@
     - [文件集合外部操作](/Manual/reference/dopusrt_reference/external_manipulation_of_file_collections.zh.md "reference:dopusrt_reference:external_manipulation_of_file_collections")
     - [检索文件和文件夹信息](/Manual/reference/dopusrt_reference/retrieving_file_and_folder_information.zh.md "reference:dopusrt_reference:retrieving_file_and_folder_information")
   - [元数据关键字](/Manual/reference/metadata_keywords/README.zh.md "reference:metadata_keywords")
-    - [Column 关键字](/Manual/reference/metadata_keywords/keywords_for_columns.zh.md "reference:metadata_keywords:keywords_for_columns")
+    - [列关键字](/Manual/reference/metadata_keywords/keywords_for_columns.zh.md "reference:metadata_keywords:keywords_for_columns")
     - [SetAttr META 的关键字](/Manual/reference/metadata_keywords/keywords_for_setattr_meta.zh.md "reference:metadata_keywords:keywords_for_setattr_meta")
   - [文本过滤器](/Manual/reference/textual_filters.zh.md "reference:textual_filters")
   - [图标集](/Manual/reference/icon_sets/README.zh.md "reference:icon_sets")

@@ -1,35 +1,35 @@
-# Column 关键字
+# 列关键字
 
-**[Set](../command_reference/internal_commands/set.zh.md)** 命令（带有 **COLUMNS**, **COLUMNSADD**, **COLUMNSREMOVE** 和 **COLUMNSTOGGLE** 参数）使用以下关键字来更改文件列表中显示的列（在详细信息和高级模式中），并且使用 **GROUPBY** 和 **SORTBY** 参数来修改组和排序字段。例如，**Set COLUMNSADD=desc** 将 Description 列添加到文件列表中。
+以下关键字由 **[Set](../command_reference/internal_commands/set.zh.md)** 命令（使用 **COLUMNS**、**COLUMNSADD**、**COLUMNSREMOVE** 和 **COLUMNSTOGGLE** 参数）用来改变文件列表（在详细信息和增强模式下）中显示的列，并使用 **GROUPBY** 和 **SORTBY** 参数来修改分组和排序字段。例如，**Set COLUMNSADD=desc** 将添加描述列到文件列表中。
 
-当 [使用元数据重命名](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.zh.md) 时，[重命名](/Manual/file_operations/renaming_files/README.zh.md) 功能和定义您自己的 [平铺](/Manual/file_types/filetype_editor/tiles_mode.zh.md) 和 [信息提示](/Manual/file_types/filetype_editor/info_tip.zh.md) 定义时，[文件类型](/Manual/file_types/filetype_editor/README.zh.md) 编辑器也会使用这些关键字。
+它们也被 [Rename](/Manual/file_operations/renaming_files/README.zh.md) 命令在 [使用元数据重命名](/Manual/file_operations/renaming_files/advanced_rename/renaming_with_metadata.zh.md) 时使用，以及在 [文件类型编辑器](/Manual/file_types/filetype_editor/README.zh.md) 中定义您自己的 [平铺信息](/Manual/file_types/filetype_editor/tiles_mode.zh.md) 和 [信息提示](/Manual/file_types/filetype_editor/info_tip.zh.md) 定义时使用。
 
-请注意，某些列出现在多个类别中。由于历史原因，列关键字有时仅反映狭窄的用法，而实际上该列适用于更广泛的情况。例如，*Duration* 列 (**mp3songlength**) 适用于各种音乐文件类型，以及某些电影类型，而不仅仅是 MP3 音乐文件。
+请注意，一些列出现在多个类别中。由于历史原因，列关键字有时只反映了狭窄的用法，而实际上该列在更广泛的情况下适用。例如，时长列（**mp3songlength**）适用于各种音乐文件类型和一些电影类型，而不仅仅是 MP3 音乐文件。
 
-当列用于输出文本（例如，在为重命名生成文件名或显示信息提示时），可以覆盖日期、时间和数值的格式。
+当列用于输出文本（例如，在为重命名生成文件名时，或在显示信息提示时），日期、时间和数值的格式可以被覆盖。
 
 ### 日期和时间字段
 
-日期和时间字段允许你配置日期格式、时间格式或两者。例如，
+日期和时间字段允许您配置日期格式、时间格式或两者。例如，
 
 |                                   |                                                                              |
 |-----------------------------------|------------------------------------------------------------------------------|
-| **{datetaken\|D#yyyy-MM-dd}**     | 插入仅为 **yyyy-MM-dd** 格式的日期（例如 *2023-09-22*）           |
-| **{modified\|T#HH-mm-ss}**        | 以 **HH-mm-ss** 格式插入修改时间（例如 *13:10:55*）           |
-| **{datetaken\|A#yyyyMMddHHmmss}** | 将日期和时间同时插入为 **yyyyMMddHHmmss**（例如 *20221130154410*） |
+| **{datetaken\|D#yyyy-MM-dd}**     | 插入仅日期的 **yyyy-MM-dd** 格式（例如 *2023-09-22*）           |
+| **{modified\|T#HH-mm-ss}**        | 插入修改时间的 **HH-mm-ss** 格式（例如 *13:10:55*）           |
+| **{datetaken\|A#yyyyMMddHHmmss}** | 插入日期和时间作为 **yyyyMMddHHmmss**（例如 *20221130154410*） |
 
-如你从示例中看到，**D#** 用于标记日期格式，**T#** 用于标记时间格式，**A#** 表示日期和时间代码均存在。有关日期和时间格式的信息，请参阅 [日期和时间代码](../command_reference/external_control_codes/codes_for_date_and_time.zh.md) 页面。
+正如您在示例中看到的，**D#** 用于标记日期格式，**T#** 用于标记时间格式，**A#** 表示日期和时间代码都存在。有关日期和时间格式的信息，请参见 [日期和时间代码](../command_reference/external_control_codes/codes_for_date_and_time.zh.md) 页面。
 
 ### 数值字段
 
-数值字段允许你控制零填充。例如，
+数值字段允许您控制零填充。例如，
 
 |                    |                                                               |
 |--------------------|---------------------------------------------------------------|
-| **{size\|#8}**     | 将字节大小零填充为八位（例如 *00045412*） |
-| **{mp3track\|#2}** | 将曲目号零填充为两位（例如 *08*）          |
+| **{size\|#8}**     | 将字节大小填充到八位（例如 *00045412*） |
+| **{mp3track\|#2}** | 将曲目编号填充到两位（例如 *08*）          |
 
-文件名可以使用 **{name\|noext}** 检索，而无需文件扩展名。
+可以使用 **{name\|noext}** 获取不带文件扩展名的文件名。
 
 ------------------------------------------------------------------------
 
@@ -90,7 +90,7 @@ author
 类别</td><td>
 category
 </td></tr><tr><td>
-注释</td><td>
+评论</td><td>
 comments
 </td></tr><tr><td>
 公司</td><td>
@@ -117,7 +117,7 @@ doclastsaveddate
 页数</td><td>
 pages
 </td></tr><tr><td>
-生成器</td><td>
+制作人</td><td>
 producer
 </td></tr><tr><td>
 主题</td><td>
@@ -177,10 +177,10 @@ shortname
 列</th><th>
 关键字
 </th></tr></thead><tbody><tr><td>
-宽高比</td><td>
+纵横比</td><td>
 aspectratio
 </td></tr><tr><td>
-位深</td><td>
+位深度</td><td>
 picdepth
 </td></tr><tr><td>
 尺寸</td><td>
@@ -194,7 +194,7 @@ picheight
 物理高度</td><td>
 picphysy
 </td></tr><tr><td>
-物理大小</td><td>
+物理尺寸</td><td>
 picphyssize
 </td></tr><tr><td>
 物理宽度</td><td>
@@ -271,7 +271,7 @@ exposureprogram
 曝光时间</td><td>
 exposuretime
 </td></tr><tr><td>
-F 值</td><td>
+F 数</td><td>
 fnumber
 </td></tr><tr><td>
 闪光灯</td><td>
@@ -280,13 +280,14 @@ flash
 焦距</td><td>
 focallength
 </td></tr><tr><td>
-35mm 焦距</td><td>
+焦距（35mm）</td><td>
 35mmfocallength
 </td></tr><tr><td>
-ISO 速度</td><td>
+ISO 感光度</td><td>
 isorating
 </td></tr><tr><td>
 图像描述</td><td>
+imagedesc
 </td></tr><tr><td>
 图像质量</td><td>
 imagequality
@@ -306,19 +307,19 @@ longitude
 微距模式</td><td>
 macromode
 </td></tr><tr><td>
-计量模式</td><td>
+测光模式</td><td>
 meteringmode
 </td></tr><tr><td>
 饱和度</td><td>
 saturation
 </td></tr><tr><td>
-场景捕获类型</td><td>
+场景拍摄类型</td><td>
 scenecapturetype
 </td></tr><tr><td>
 场景模式</td><td>
 scenemode
 </td></tr><tr><td>
-清晰度</td><td>
+锐度</td><td>
 sharpness
 </td></tr><tr><td>
 快门速度</td><td>
@@ -346,7 +347,7 @@ whitebalance
 <table>
 <thead><tr><th>
 列</th><th>
-关键词
+关键字
 </th></tr></thead><tbody><tr><td>
 版权</td><td>
 copyright
@@ -354,7 +355,7 @@ copyright
 公司</td><td>
 companyname
 </td></tr><tr><td>
-模块说明</td><td>
+模块描述</td><td>
 moddesc
 </td></tr><tr><td>
 模块版本</td><td>
@@ -373,7 +374,7 @@ prodversion
 <table>
 <thead><tr><th>
 列</th><th>
-关键词
+关键字
 </th></tr></thead><tbody><tr><td>
 大小（KB）</td><td>
 sizekb
@@ -387,16 +388,16 @@ size
 大小（相对）</td><td>
 sizerel
 </td></tr><tr><td>
-磁盘上的大小（KB）</td><td>
+磁盘大小（KB）</td><td>
 disksizekb
 </td></tr><tr><td>
-磁盘上的大小（自动）</td><td>
+磁盘大小（自动）</td><td>
 disksizeauto
 </td></tr><tr><td>
-磁盘上的大小（字节）</td><td>
+磁盘大小（字节）</td><td>
 disksize
 </td></tr><tr><td>
-磁盘上的大小（相对）</td><td>
+磁盘大小（相对）</td><td>
 disksizerel
 </td></tr><tr><td>
 未压缩大小</td><td>
@@ -404,12 +405,12 @@ uncompressedsize
 </td></tr></tbody>
 </table>
 
-### 常规
+### 通用
 
 <table>
 <thead><tr><th>
 列</th><th>
-关键词
+关键字
 </th></tr></thead><tbody><tr><td>
 属性</td><td>
 attr
@@ -417,7 +418,7 @@ attr
 可用性</td><td>
 availability
 </td></tr><tr><td>
-说明</td><td>
+描述</td><td>
 desc
 </td></tr><tr><td>
 文件计数</td><td>
@@ -441,7 +442,7 @@ md5sum
 所有者</td><td>
 owner
 </td></tr><tr><td>
-评级</td><td>
+评分</td><td>
 rating
 </td></tr><tr><td>
 SHA-1 校验和</td><td>
@@ -462,16 +463,16 @@ target
 缩略图</td><td>
 thumbnail
 </td></tr><tr><td>
-文件计数总计</td><td>
+总文件计数</td><td>
 filecounttotal
 </td></tr><tr><td>
-子文件夹计数总计</td><td>
+总子文件夹计数</td><td>
 dircounttotal
 </td></tr><tr><td>
 类型</td><td>
 type
 </td></tr><tr><td>
-用户说明</td><td>
+用户描述</td><td>
 userdesc
 </td></tr></tbody>
 </table>
@@ -481,7 +482,7 @@ userdesc
 <table>
 <thead><tr><th>
 列</th><th>
-关键词
+关键字
 </th></tr></thead><tbody><tr><td>
 纵横比</td><td>
 aspectratio
@@ -497,13 +498,13 @@ picdepth
 比特率</td><td>
 mp3bitrate
 </td></tr><tr><td>
-播出日期</td><td>
+广播日期</td><td>
 broadcastdate
 </td></tr><tr><td>
-频道号</td><td>
+声道数</td><td>
 channel
 </td></tr><tr><td>
-工作人员表</td><td>
+制作人员</td><td>
 credits
 </td></tr><tr><td>
 数据速率</td><td>
@@ -514,7 +515,7 @@ datarate
 picsize  
 dimensions
 </td></tr><tr><td>
-持续时间</td><td>
+时长</td><td>
 
 duration  
 mp3songlength
@@ -537,10 +538,10 @@ ishd
 模式</td><td>
 mp3mode
 </td></tr><tr><td>
-物理大小</td><td>
+物理尺寸</td><td>
 picphyssize
 </td></tr><tr><td>
-发行商</td><td>
+出版商</td><td>
 publisher
 </td></tr><tr><td>
 录制时间</td><td>
@@ -568,7 +569,7 @@ picwidth
 <table>
 <thead><tr><th>
 列</th><th>
-关键词
+关键字
 </th></tr></thead><tbody><tr><td>
 专辑</td><td>
 mp3album
@@ -596,10 +597,10 @@ mp3bitrate
 合辑</td><td>
 compilation
 </td></tr><tr><td>
-作曲者</td><td>
+作曲家</td><td>
 composers
 </td></tr><tr><td>
-指挥者</td><td>
+指挥</td><td>
 conductors
 </td></tr><tr><td>
 版权</td><td>
@@ -610,7 +611,7 @@ copyright
 mp3disc  
 mp3disk
 </td></tr><tr><td>
-持续时间</td><td>
+时长</td><td>
 mp3songlength
 </td></tr><tr><td>
 编码者</td><td>
@@ -622,13 +623,13 @@ mp3encodingsoftware
 流派</td><td>
 mp3genre
 </td></tr><tr><td>
-首调</td><td>
+起始调</td><td>
 initialkey
 </td></tr><tr><td>
 模式</td><td>
 mp3mode
 </td></tr><tr><td>
-音乐备注</td><td>
+音乐评论</td><td>
 mp3comment
 </td></tr><tr><td>
 音乐信息</td><td>
@@ -646,34 +647,35 @@ releasedate
 采样率</td><td>
 mp3samplerate
 </td></tr><tr><td>
-音轨号</td><td>
+曲目号</td><td>
 mp3track
 </td></tr><tr><td>
-年</td><td>
+年份</td><td>
 mp3year
 </td></tr></tbody>
 </table>
 
-你还可以使用上述标准列集的一部分之外的某些列。这些列来自不同的位置 - 第三方 Shell 命名空间扩展可以提供自定义列，Opus 插件也可以这样做。此外，Zip 和 FTP 还定义了几列，这些列只在这些类型的文件夹中有效。在 Opus 中，这些列都显示在 **其它** 类别下。为了从命令中引用这些列之一，你需要知道该列的名称，然后使用适当的前缀来指示要使用特殊列。
+您还可以访问一些不在上面列出的标准列集中的列。这些列可能来自各种地方——第三方 shell 命名空间扩展可以提供自定义列，Opus 插件也可以提供自定义列。此外，Zip 和 FTP 定义了一些仅在这些类型的文件夹中有效的列。在 Opus 中，所有这些列都显示在 **其它** 类别下。要从命令中引用这些列之一，您需要知道列的名称，然后使用适当的前缀来指示您要使用特殊列。
 
 ![](/Manual/images/media/special_columns.png) 
 
-在 Opus 中， Shell 扩展提供的列（如上图所示）加 **sh:** 为前缀 - 该列的关键词是列表中显示的名称，不带空格。
+由 shell 扩展提供的列（如上图所示）在 Opus 中以 **sh:** 为前缀——列的关键字是列表中显示的名称，不含空格。
 
-例如，要添加 **SVN Status** 列，你可以使用命令 **Set COLUMNSADD sh:svnstatus**。
+例如，要添加 **SVN 状态** 列，您可能使用命令 **Set COLUMNSADD sh:svnstatus**。
 
-必须使用插件 DLL 名称（例如 **opus7zip:packed**）作为前缀接入插件（例如 7-Zip 插件）。
+由插件提供的列（例如 7-Zip 插件）必须以插件 DLL 的名称为前缀（例如 **opus7zip:packed**）。
 
-Opus 提供以下列关键词，但只在特定文件夹中有效：
+以下列关键字由 Opus 提供，但仅在某些文件夹中有效：
 
-- *FTP* 关键词只在 **ftp://** 路径中有效
-- *Zip* 关键词只在查看 Zip 压缩包时有效
-- *7-Zip* 关键词只在查看由 7-Zip 插件处理的压缩包时有效
-- *Computer* 关键词只在查看 [native Computer 文件夹](/Manual/basic_concepts/virtual_file_system/system_virtual_folders.zh.md) 时有效
+- *FTP* 关键字仅在 **ftp://** 路径中有效
+- *Zip* 关键字仅在查看 Zip 压缩包时有效
+- *7-Zip* 关键字仅在查看由 7-Zip 插件处理的压缩包时有效
+- *Computer* 关键字仅在查看 [本机计算机文件夹](/Manual/basic_concepts/virtual_file_system/system_virtual_folders.zh.md) 时有效
+
 <table>
 <thead><tr><th>
 列</th><th>
-**关键字**
+关键字
 </th></tr></thead><tbody><tr><td>
 
 \$ **FTP 关键字**</td><td>
@@ -686,16 +688,16 @@ Opus 提供以下列关键词，但只在特定文件夹中有效：
 
 \$ **计算机关键字**
 </td></tr><tr><td>
-驱动器上的空闲空间</td><td>
+驱动器上的可用空间</td><td>
 sh:freespace
 </td></tr><tr><td>
 文件系统</td><td>
 sh:filesys
 </td></tr><tr><td>
-已用空间（图形）</td><td>
+已用空间（图表）</td><td>
 sh:usedpercent
 </td></tr><tr><td>
-空闲空间（图形）</td><td>
+可用空间（图表）</td><td>
 sh:freepercent
 </td></tr><tr><td>
 网络位置</td><td>
@@ -706,7 +708,7 @@ sh:usedspace
 </td></tr><tr><td>
 
 \$ **Zip 关键字**</td><td>
-已压缩大小
+压缩大小
 </td></tr><tr><td>
 zip:compsize</td><td>
 压缩率
@@ -715,11 +717,13 @@ zip:compratio</td><td>
 压缩方法
 </td></tr><tr><td>
 zip:compmethod</td><td>
-CRC 校验和</td></tr><tr><td>
+CRC 校验和
+</td></tr><tr><td>
 zip:compcrc</td><td>
 
-\$ **7-Zip 关键字**</td></tr><tr><td>
-已打包大小</td><td>
+\$ **7-Zip 关键字**
+</td></tr><tr><td>
+打包大小</td><td>
 opus7zip:packed
 </td></tr><tr><td>
 比率</td><td>
@@ -734,7 +738,7 @@ opus7zip:block
 索引</td><td>
 opus7zip:index
 </td></tr><tr><td>
-是否为实体？</td><td>
+是否为固态？</td><td>
 opus7zip:solid
 </td></tr><tr><td>
 方法</td><td>
