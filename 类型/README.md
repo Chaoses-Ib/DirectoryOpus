@@ -1,11 +1,24 @@
 # 文件类型
-![](images/README/文件类型.png)
+在 DOpus 中，你可以为每个文件类型定义自己的鼠标动作、右键菜单和[信息提示](../浏览/查看/信息提示.md)。除了独立的文件类型外，DOpus 还有下图中的特殊文件类型和[文件类型群组](#文件类型群组)，便于同时为一组文件类型定义动作：
 
-你可以为每个文件类型定义自己的鼠标动作、右键菜单和[信息提示](../浏览/查看/信息提示.md)。除了独立的文件类型外，DOpus 还有上图中的特殊文件类型和[文件类型群组](#文件类型群组)，便于同时为一组文件类型定义动作。
+![](images/README/文件类型-v13.png)
+
+文件类型编辑器可通过工具栏打开：
+
+![](images/README/文件类型-工具栏.png)
+
+<details><summary>v12</summary>
+
+![](images/README/文件类型-v12.png)
+</details>
 
 ## 文件类型群组
+![](images/README/文件类型群组.png)
+
 ### 如何批量编辑文件类型群组中的类型？
-可以使用文本编辑器直接编辑 `/dopusdata\FileTypes\Groups\groups.oxr` 文件，格式为 XML：
+DOpus v13 中可直接在文件类型编辑器中以文本形式编辑。
+
+也可以使用文本编辑器直接编辑 `/dopusdata\FileTypes\Groups\groups.oxr` 文件，格式为 XML：
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xml_registry_redirect hive="HKCU" regkey="Software\GPSoftware\Directory Opus\Filetypes\Groups">
