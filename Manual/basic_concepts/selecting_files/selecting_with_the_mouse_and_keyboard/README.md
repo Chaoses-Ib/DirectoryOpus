@@ -27,7 +27,7 @@ Selecting files with the mouse or keyboard, in all [view modes](../the_lister/vi
 
 ### Middle mouse button
 
-Note that some mouse drivers map the middle mouse button to another function by default - if you find middle-click isn't working as expected, see the [FAQ](https://resource.dopus.com/t/how-to-make-logitech-mid-back-forward-buttons-work-in-opus/2972) for some hints on how to fix it. You can also configure Opus to treat a single middle-click as a double middle-click, which lets you obtain behavior similar to a web browser (e.g. single middle-click to open a folder in a new tab). See the **[File Displays / Mouse](/Manual/preferences/preferences_categories/file_displays/mouse/README.md)** Preferences page for details on that.
+Note that some mouse drivers map the middle mouse button to another function by default - if you find middle-click isn't working as expected, see the [FAQ](https://resource.dopus.com/t/how-to-make-logitech-mid-back-forward-buttons-work-in-opus/2972?u=chaoses-ib) for some hints on how to fix it. You can also configure Opus to treat a single middle-click as a double middle-click, which lets you obtain behavior similar to a web browser (e.g. single middle-click to open a folder in a new tab). See the **[File Displays / Mouse](/Manual/preferences/preferences_categories/file_displays/mouse/README.md)** Preferences page for details on that.
 
 ### Power mode
 

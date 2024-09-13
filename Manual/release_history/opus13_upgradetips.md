@@ -95,7 +95,7 @@ None of this is mandatory. In each case, it's up to you whether you keep what yo
 ### Video & Audio Viewer
 
 - If not all video and audio files play in the viewer, please see here:
-  [HOW TO: Enable/fix playback of various media formats in Opus](https://resource.dopus.com/t/how-to-enable-fix-playback-of-various-media-formats-in-opus/1974/1) (re-written for Opus 13)
+  [HOW TO: Enable/fix playback of various media formats in Opus](https://resource.dopus.com/t/how-to-enable-fix-playback-of-various-media-formats-in-opus/1974/1?u=chaoses-ib) (re-written for Opus 13)
 
 ### File Type Groups
 

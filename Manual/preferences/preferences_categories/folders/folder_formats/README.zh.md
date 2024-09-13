@@ -2,7 +2,7 @@
 
 此页面允许您配置 [文件夹格式](/Manual/basic_concepts/folder_options/folder_formats.zh.md) 系统，该系统让您为特定的文件夹、内含特定类型文件的文件夹或某些类型文件夹的默认值定义文件夹格式（显示参数）。例如，您可以让 Opus 自动以相反的顺序按日期对特定文件夹进行排序，或是在任何大部分含有图片的文件夹中切换为缩略图模式。
 
-文件夹格式系统很强大但也相当复杂。它在 [资源中心中有常见问题解答](https://resource.dopus.com/t/folder-formats-quick-guide/1313) ，我们建议您阅读它，因为它可能会比本帮助文件详细解释一些事情。
+文件夹格式系统很强大但也相当复杂。它在 [资源中心中有常见问题解答](https://resource.dopus.com/t/folder-formats-quick-guide/1313?u=chaoses-ib) ，我们建议您阅读它，因为它可能会比本帮助文件详细解释一些事情。
 
 还有 [自动格式](/Manual/preferences/preferences_categories/folders/folder_formats/automatic_formats.zh.md) 系统，它可以自动记住文件夹格式的更改，而无需您手动配置它们。
 

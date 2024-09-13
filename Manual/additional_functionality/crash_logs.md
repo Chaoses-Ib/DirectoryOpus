@@ -26,4 +26,4 @@ To save disk space, you can choose for crash logs to be automatically deleted on
 
 You can also make a manual process snapshot at any time of the current state of Opus. GP Software might request you to do this if the problem you're encountering doesn't actually result in a crash, but instead involves other strange behavior.
 
-Please see the [Manually generating process snapshots FAQ](https://resource.dopus.com/t/manually-generating-process-snapshots/34071) for more information.
+Please see the [Manually generating process snapshots FAQ](https://resource.dopus.com/t/manually-generating-process-snapshots/34071?u=chaoses-ib) for more information.

@@ -28,7 +28,7 @@ To activate Administrator mode, click the **Admin** button on the default toolb
 
 Select the timeout, and click OK. Opus will then display a UAC prompt to elevate, and after that the Lister itself will remain elevated for the specified period (or until you turn the mode off manually). The title bar of the window changes to say **Administrator** to indicate admin mode is in effect.
 
-(Note that if you ever see **ADMINISTRATOR** in the title bar, it means the whole process is elevated - something we [don't recommend](https://resource.dopus.com/t/why-not-to-run-opus-as-administrator-under-uac/9102).)
+(Note that if you ever see **ADMINISTRATOR** in the title bar, it means the whole process is elevated - something we [don't recommend](https://resource.dopus.com/t/why-not-to-run-opus-as-administrator-under-uac/9102?u=chaoses-ib).)
 
 Any operations you perform in an Administrator mode Lister will be automatically elevated - no further UAC prompts will need to be shown. Note though that any programs you launch from that Lister will also be elevated.
 

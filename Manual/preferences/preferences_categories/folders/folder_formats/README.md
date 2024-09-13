@@ -2,7 +2,7 @@
 
 This page lets you configure the [Folder Formats](/Manual/basic_concepts/folder_options/folder_formats.md) system, which lets you define folder formats (display parameters) for specific folders, folders containing certain types of files, or defaults for certain types of folders. For example, you can make it so that Opus automatically sorts a particular folder by date in reverse, or switches into thumbnails mode in any folder containing mostly images.
 
-The Folder Formats system is powerful but rather complex. There's an [FAQ on it at the Resource Centre](https://resource.dopus.com/t/folder-formats-quick-guide/1313) that we recommend you have a read of as it may explain things in a bit more detail than this help file does.
+The Folder Formats system is powerful but rather complex. There's an [FAQ on it at the Resource Centre](https://resource.dopus.com/t/folder-formats-quick-guide/1313?u=chaoses-ib) that we recommend you have a read of as it may explain things in a bit more detail than this help file does.
 
 There's also the [Automatic Formats](/Manual/preferences/preferences_categories/folders/folder_formats/automatic_formats.md) system, which can remember changes to folder formats automatically rather than you having to configure them by hand.
 

@@ -45,7 +45,7 @@ DOpus 有四项扩展属性：
 可以将描述[加入到信息提示中](../../浏览/查看/信息提示.md#提示内容)。
 
 ### 批量编辑
-你可以通过 [Tagger](https://resource.dopus.com/t/tagger3-for-dopus12/24248) 对标签、描述和评分进行批量编辑：
+你可以通过 [Tagger](https://resource.dopus.com/t/tagger3-for-dopus12/24248?u=chaoses-ib) 对标签、描述和评分进行批量编辑：
 
 ![](https://resource.dopus.com/uploads/default/original/2X/a/a584253eb7df77aee5584217fc1b0e563bd1734c.jpg)
 

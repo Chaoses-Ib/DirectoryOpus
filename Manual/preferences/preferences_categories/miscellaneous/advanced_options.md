@@ -914,7 +914,7 @@ Delay (in milliseconds) before processing external delete/rename operations in [
 **context_menu_debug**</td><td>
 </td><td>
 
-Output debug information for context menu extensions. See the [FAQ](https://resource.dopus.com/t/crash-exit-or-high-cpu-when-right-clicking-certain-files/1335) on debugging context menu problems for more information.
+Output debug information for context menu extensions. See the [FAQ](https://resource.dopus.com/t/crash-exit-or-high-cpu-when-right-clicking-certain-files/1335?u=chaoses-ib) on debugging context menu problems for more information.
 </td></tr><tr><td>
 
 **crash_debug_button**</td><td>
@@ -970,7 +970,7 @@ Output debug information for file notification. If you are having problems with 
 
 Turning this option on will reduce performance. Do not turn it on unless you are investigating a problem, and turn it off when you are done.
 
-See the [FAQ](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786) for more information.
+See the [FAQ](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786?u=chaoses-ib) for more information.
 </td></tr><tr><td>
 
 **notify_debug_exclude**</td><td>
@@ -1034,7 +1034,7 @@ This affects diagnostics that come from Opus itself and plugin DLLs. Output sent
 **shellchange_debug**</td><td>
 </td><td>
 
-Output debug information for shell file notification. If you are having problems with Opus not noticing file or folder changes that happen outside of Opus, tech support may ask you to turn this on to gather debugging information. See the [FAQ](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786) for more information.
+Output debug information for shell file notification. If you are having problems with Opus not noticing file or folder changes that happen outside of Opus, tech support may ask you to turn this on to gather debugging information. See the [FAQ](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786?u=chaoses-ib) for more information.
 </td></tr><tr><td>
 
 **sync_debug**</td><td>

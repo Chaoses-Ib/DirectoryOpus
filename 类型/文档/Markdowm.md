@@ -11,4 +11,4 @@
 ### [MarkdownPreview](https://github.com/Atrejoe/MarkdownPreview)
 已停止维护。
 
-[^do]: [Markdown (.md) viewers (Microsoft and others) - Viewer/VFS Plugins - Directory Opus Resource Centre](https://resource.dopus.com/t/markdown-md-viewers-microsoft-and-others/35051)
+[^do]: [Markdown (.md) viewers (Microsoft and others) - Viewer/VFS Plugins - Directory Opus Resource Centre](https://resource.dopus.com/t/markdown-md-viewers-microsoft-and-others/35051?u=chaoses-ib)

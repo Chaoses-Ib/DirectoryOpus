@@ -71,7 +71,7 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 下载安装包：
 - 最新正式版：https://www.gpsoft.com.au/download/release
 - [所有正式版](https://support.gpsoft.com.au/download)
-- [所有版本](https://resource.dopus.com/c/new-releases/28)
+- [所有版本](https://resource.dopus.com/c/new-releases/28?u=chaoses-ib)
 
 ### 静默安装
 安装包参数：[Inno Setup Help](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline)
@@ -86,7 +86,7 @@ DOpus 采用大版本买断式授权，购买授权后可永久在一定数目�
 "C:\Program Files\GPSoftware\Directory Opus\dopus.exe" /config "c:\temp\opus config.ocb"
 ```
 
-详见 [HOW TO: Perform silent (un)install of Directory Opus - Opus FAQs - Directory Opus Resource Centre](https://resource.dopus.com/t/how-to-perform-silent-un-install-of-directory-opus/1319)
+详见 [HOW TO: Perform silent (un)install of Directory Opus - Opus FAQs - Directory Opus Resource Centre](https://resource.dopus.com/t/how-to-perform-silent-un-install-of-directory-opus/1319?u=chaoses-ib)
 
 <!-- TODO
 ## 性能

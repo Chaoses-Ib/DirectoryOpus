@@ -21,7 +21,7 @@
 
 所有错误消息或脚本输出的其它文本都可以在 *其它日志* 日志窗口中查看，可以通过 [工具面板](/Manual/basic_concepts/the_lister/utility_panel.zh.md)（或 **帮助** 菜单中的 **日志 / 其它日志** 命令）进行访问。如果您发现脚本的行为与预期不符，则应检查此日志以查看是否生成了任何错误消息。您还可以使用 **DOpus.Output** 脚本方法将自己的文本输出到此日志，这有助于调试。
 
-默认配置提供了 *Number Files* 脚本作为默认重命名预设之一，它是使用 VBScript 实现的，因此请随时查看它以获得更多复杂的示例。最后，请参阅 [Opus 资源中心](https://resource.dopus.com/c/rename) 上的 [重命名脚本部分](https://resource.dopus.com/c/rename)，以了解您可以下载和使用的重命名脚本示例，并且可以在论坛上寻求帮助撰写重命名脚本。
+默认配置提供了 *Number Files* 脚本作为默认重命名预设之一，它是使用 VBScript 实现的，因此请随时查看它以获得更多复杂的示例。最后，请参阅 [Opus 资源中心](https://resource.dopus.com/c/rename?u=chaoses-ib) 上的 [重命名脚本部分](https://resource.dopus.com/c/rename?u=chaoses-ib)，以了解您可以下载和使用的重命名脚本示例，并且可以在论坛上寻求帮助撰写重命名脚本。
 
 出于传统原因（因此，为早期版本的 Opus 编写的脚本仍将起作用），Opus 还支持两个替代函数。我们建议所有新脚本都使用上面所示的 **OnGetNewName** 事件。
 

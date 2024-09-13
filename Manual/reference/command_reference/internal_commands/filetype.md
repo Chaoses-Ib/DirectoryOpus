@@ -57,7 +57,7 @@ Displays the standard system context menu for the selected files and folders (ac
 
 *\<GUID\>*</td><td>
 
-Displays any context menu items added by the specified context menu extension. This gives you the ability (in conjunction with the **Hide Windows items on file context menus** option) to control exactly which context menu items are shown on your context menu. You need to know the GUID for the context menu extension in question, and finding that out is beyond the scope of this help file - instead, see [this article](https://resource.dopus.com/t/tip-organise-and-speed-up-context-menus/1204) on the Opus Resource Centre for an example of how this might be used.
+Displays any context menu items added by the specified context menu extension. This gives you the ability (in conjunction with the **Hide Windows items on file context menus** option) to control exactly which context menu items are shown on your context menu. You need to know the GUID for the context menu extension in question, and finding that out is beyond the scope of this help file - instead, see [this article](https://resource.dopus.com/t/tip-organise-and-speed-up-context-menus/1204?u=chaoses-ib) on the Opus Resource Centre for an example of how this might be used.
 
 *Example:* `FileType CONTEXTMENU {FB314ED9-A251-47B7-93E1-CDD82E34AF8B} CONTEXTFORCE`
 </td></tr><tr><td>

@@ -44,7 +44,7 @@ CONTEXTMENU</td><td>
 
 *\<GUID\>*</td><td>
 
-显示指定上下文菜单扩展添加的任何上下文菜单项。这让你能够（结合 **在文件上下文菜单中隐藏 Windows 项** 选项）精确控制哪些上下文菜单项显示在你的上下文菜单上。你需要知道有问题的上下文菜单扩展的 GUID，并且在本文档帮助的范围内找不到解决方法 - 相反，请参阅 Opus 资源中心的 [此文章](https://resource.dopus.com/t/tip-organise-and-speed-up-context-menus/1204) 来了解如何使用此功能的示例。
+显示指定上下文菜单扩展添加的任何上下文菜单项。这让你能够（结合 **在文件上下文菜单中隐藏 Windows 项** 选项）精确控制哪些上下文菜单项显示在你的上下文菜单上。你需要知道有问题的上下文菜单扩展的 GUID，并且在本文档帮助的范围内找不到解决方法 - 相反，请参阅 Opus 资源中心的 [此文章](https://resource.dopus.com/t/tip-organise-and-speed-up-context-menus/1204?u=chaoses-ib) 来了解如何使用此功能的示例。
 
 *示例：* `FileType CONTEXTMENU {FB314ED9-A251-47B7-93E1-CDD82E34AF8B} CONTEXTFORCE`
 </td></tr><tr><td>

@@ -21,7 +21,7 @@ The *Script Type* drop-down at the top is used to specify the scripting language
 
 Any error messages or other text output from a script can be viewed in the *Other Logs* log window, which is accessed from the [Utility Panel](/Manual/basic_concepts/the_lister/utility_panel.md) (or the **Logs / Other Logs** command in the **Help** menu). If you find a script isn't behaving as expected, you should check this log to see if any error messages are being generated. You can also output your own text to this log using the **DOpus.Output** script method, which can help with debugging.
 
-The default configuration provides a *Number Files* script as one of the default Rename presets, which is implemented using VBScript, so please feel free to examine this for a more complex example. Finally, please see the [Rename Scripting section on the Opus Resource Centre](https://resource.dopus.com/c/rename) for example rename scripts you can download and use, and feel free to ask on the forum for help with writing rename scripts.
+The default configuration provides a *Number Files* script as one of the default Rename presets, which is implemented using VBScript, so please feel free to examine this for a more complex example. Finally, please see the [Rename Scripting section on the Opus Resource Centre](https://resource.dopus.com/c/rename?u=chaoses-ib) for example rename scripts you can download and use, and feel free to ask on the forum for help with writing rename scripts.
 
 Opus also supports two alternative functions, for legacy reasons (so that scripts written for earlier versions of Opus will still work). We recommend all new scripts use the **OnGetNewName** event as shown above.
 

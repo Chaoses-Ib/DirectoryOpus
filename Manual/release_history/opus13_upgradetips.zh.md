@@ -95,7 +95,7 @@
 ### 视频和音频查看器
 
 - 如果不是所有视频和音频文件都在查看器中播放，请参阅此处：
-## 如何：启用/修复在 Opus 中播放各种媒体格式 ([HOW TO: Enable/fix playback of various media formats in Opus](https://resource.dopus.com/t/how-to-enable-fix-playback-of-various-media-formats-in-opus/1974/1))（重写适用于 Opus 13）
+## 如何：启用/修复在 Opus 中播放各种媒体格式 ([HOW TO: Enable/fix playback of various media formats in Opus](https://resource.dopus.com/t/how-to-enable-fix-playback-of-various-media-formats-in-opus/1974/1?u=chaoses-ib))（重写适用于 Opus 13）
 
 ### 文件类型组
 

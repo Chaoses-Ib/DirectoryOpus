@@ -8,6 +8,6 @@
 
 此页面的底部部分显示了当前选定图标集中包含的所有图标的预览。
 
-你可以从 [资源中心](https://resource.dopus.com/c/downloads/icons) 下载额外的图标集。如果你想创建你自己的图标集，可以通过 ![](/Manual/images/media/13/prefs_menu.png) 页面菜单中的 **保存图标集模板** 命令开始创建。它会生成一个标准图标名称模板 - 但你需要提供你自己的图像！
+你可以从 [资源中心](https://resource.dopus.com/c/downloads/icons?u=chaoses-ib) 下载额外的图标集。如果你想创建你自己的图标集，可以通过 ![](/Manual/images/media/13/prefs_menu.png) 页面菜单中的 **保存图标集模板** 命令开始创建。它会生成一个标准图标名称模板 - 但你需要提供你自己的图像！
 
 请参阅参考部分的 [图标集](/Manual/reference/icon_sets/README.zh.md) 页面以获取有关创建你自己的集的更多信息。

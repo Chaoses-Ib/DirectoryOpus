@@ -28,7 +28,7 @@ UAC（[用户帐户控制](http://en.wikipedia.org/wiki/User_Account_Control)）
 
 选择超时，然后单击确定。然后，Opus 会显示一个 UAC 提示以提升，在此之后，文件窗口本身将在指定的时间段内保持提升（或直到您手动关闭模式）。窗口的标题栏将变为 **管理员** 以表示管理员模式已生效。
 
-（请注意，如果您在标题栏中看到 **ADMINISTRATOR**，则表示整个进程已提升——我们[不建议](https://resource.dopus.com/t/why-not-to-run-opus-as-administrator-under-uac/9102)这样做。）
+（请注意，如果您在标题栏中看到 **ADMINISTRATOR**，则表示整个进程已提升——我们[不建议](https://resource.dopus.com/t/why-not-to-run-opus-as-administrator-under-uac/9102?u=chaoses-ib)这样做。）
 
 您在管理员模式文件窗口中执行的任何操作都会自动提升——无需显示任何进一步的 UAC 提示。但请注意，您从该文件窗口启动的任何程序也会被提升。
 

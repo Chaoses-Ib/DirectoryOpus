@@ -17,5 +17,5 @@ Quick information to help until we finish writing a page for this:
   **Settings \> Preferences / Viewer / Standalone Viewer / Link both ways (file display selection tracks Lister-linked viewer)**\</WRAP\>
 
 - \<WRAP\>If you'd like to always have viewers open linked (e.g when double-clicking a photo), see this forum thread:  
-  [Make Standalone Viewer automatically link when it opens](https://resource.dopus.com/t/make-standalone-viewer-automatically-link-when-it-opens/46148/3)  
+  [Make Standalone Viewer automatically link when it opens](https://resource.dopus.com/t/make-standalone-viewer-automatically-link-when-it-opens/46148/3?u=chaoses-ib)  
   (We plan to add a Preferences option for this in the future, to make things easier.)\</WRAP\>

@@ -17,5 +17,5 @@ TOBEDONE
   **设置 \> 配置/查看器/独立查看器/双向链接（文件列表选择跟踪文件窗口关联查看器）**\</WRAP\>
 
 - \<WRAP\>如果你希望始终让查看器保持链接状态（例如在双击照片时），请参阅此论坛主题：  
-  [在独立查看器打开时使其自动链接](https://resource.dopus.com/t/make-standalone-viewer-automatically-link-when-it-opens/46148/3)  
+  [在独立查看器打开时使其自动链接](https://resource.dopus.com/t/make-standalone-viewer-automatically-link-when-it-opens/46148/3?u=chaoses-ib)  
   （我们计划在将来为此添加配置选项，以简化操作。）\</WRAP\>

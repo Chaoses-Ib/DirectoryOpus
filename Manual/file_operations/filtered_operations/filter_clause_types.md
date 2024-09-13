@@ -323,7 +323,7 @@ In the above example, a **Copy File** operation using that filter would skip ove
 
 Only the **Sub-folder** clause stops Opus from recursing into directories. If a **Sub-folder** clause does not match a folder then Opus will skip that folder and all of its children, even if some of the children may have matched the filter.
 
-On the other hand, with the **Full path** and **Location** clauses, Opus will still examine a folder's children even if the folder itself does not match the filter. Both of these methods can be useful, depending on what you actually want to do. If your aim is to ignore everything below a certain folder then a **Sub-folder** clause is usually best because it avoids inspecting the folder's children unnecessarily. For some examples, see the Opus Forum/FAQ post, [How to filter items by location or sub-folder](https://resource.dopus.com/t/how-to-filter-items-by-location-or-sub-folder/7644).
+On the other hand, with the **Full path** and **Location** clauses, Opus will still examine a folder's children even if the folder itself does not match the filter. Both of these methods can be useful, depending on what you actually want to do. If your aim is to ignore everything below a certain folder then a **Sub-folder** clause is usually best because it avoids inspecting the folder's children unnecessarily. For some examples, see the Opus Forum/FAQ post, [How to filter items by location or sub-folder](https://resource.dopus.com/t/how-to-filter-items-by-location-or-sub-folder/7644?u=chaoses-ib).
 
 *Note: Sub-folder clauses do not work with the [Synchronize](../copying_moving_and_deleting_files/copying_updated_files/synchronize.md) tool.*
 

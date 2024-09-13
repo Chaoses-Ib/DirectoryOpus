@@ -9,7 +9,7 @@
 ## 文件夹标签名称
 文件夹标签的默认名称为相应文件夹的名称。
 
-如果打开了多个名称相同的文件夹，就会难以区分不同的文件夹。可以使用 [Tab-Labelizer](https://resource.dopus.com/t/tab-labelizer-extend-the-folder-names-shown-in-your-tabs/18075) 来自动为冲突的文件夹标签名称补充父路径：
+如果打开了多个名称相同的文件夹，就会难以区分不同的文件夹。可以使用 [Tab-Labelizer](https://resource.dopus.com/t/tab-labelizer-extend-the-folder-names-shown-in-your-tabs/18075?u=chaoses-ib) 来自动为冲突的文件夹标签名称补充父路径：
 
 使用前 | 使用后
 --- | ---
@@ -27,8 +27,8 @@
 --- | ---
 ![](https://github.com/Chaoses-Ib/IbDOpusScripts/blob/9f6ac321b31d21bb20ed46b678f7d5f722865fb1/Scripts/TabColorizer/images/before.png?raw=true) | ![](https://github.com/Chaoses-Ib/IbDOpusScripts/blob/9f6ac321b31d21bb20ed46b678f7d5f722865fb1/Scripts/TabColorizer/images/after.png?raw=true)
 
-[^color-1]: [DO12 - Tabs color - Help & Support - Directory Opus Resource Centre](https://resource.dopus.com/t/do12-tabs-color/22194)
-[^color-2]: [Tab Color from Label Assignments - Help & Support - Directory Opus Resource Centre](https://resource.dopus.com/t/tab-color-from-label-assignments/23473)
+[^color-1]: [DO12 - Tabs color - Help & Support - Directory Opus Resource Centre](https://resource.dopus.com/t/do12-tabs-color/22194?u=chaoses-ib)
+[^color-2]: [Tab Color from Label Assignments - Help & Support - Directory Opus Resource Centre](https://resource.dopus.com/t/tab-color-from-label-assignments/23473?u=chaoses-ib)
 
 ### 命令
 设置 RGB 颜色：

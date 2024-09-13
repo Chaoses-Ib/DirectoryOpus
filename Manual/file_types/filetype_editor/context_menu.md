@@ -11,7 +11,7 @@ You can add two types context menu items using this page of the [file type edit
 - **Global**: Context menu items that are saved in the system registry, and will be displayed on the context menu in Explorer and other programs as well as in Opus. These commands must invoke external executable programs.
 - **Opus-only**: Context menu items that are only displayed on context menus in Opus - they will not appear in Explorer. These commands can use internal Opus commands as well as invoking external programs.
 
-Context menu commands that come from the system but aren't provided as "static verbs" in the registry (e.g. they use *context menu extension handlers*) can't be configured through this system. It is possible (with some fiddling) to control the display of these context menu items as well - see this [FAQ](https://resource.dopus.com/t/tip-organise-and-speed-up-context-menus/1204) for more information.
+Context menu commands that come from the system but aren't provided as "static verbs" in the registry (e.g. they use *context menu extension handlers*) can't be configured through this system. It is possible (with some fiddling) to control the display of these context menu items as well - see this [FAQ](https://resource.dopus.com/t/tip-organise-and-speed-up-context-menus/1204?u=chaoses-ib) for more information.
 
 The **New** button at the bottom of this page lets you add a new context menu item to the file type. The **Edit** button lets you edit an existing one (or just double-click it in the list) and the **Delete** button lets you delete it. The **Set Default** button lets you set a *global* (but not *Opus-only*) context menu item as the default action for the file type - the command that will normally be run when you double-click the file.
 

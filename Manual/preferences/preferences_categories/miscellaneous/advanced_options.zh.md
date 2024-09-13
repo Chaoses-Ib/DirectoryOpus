@@ -909,7 +909,7 @@ Opus生成缩略图的最大像素大小（宽度和高度）。较大的缩略�
 
 **context_menu_debug**</td><td>
 </td><td>
-输出上下文菜单扩展的调试信息。有关调试上下文菜单问题的更多信息，请参见[常见问题解答](https://resource.dopus.com/t/crash-exit-or-high-cpu-when-right-clicking-certain-files/1335)。Directory Opus Light的用户可以设置注册表值**HKEY_CURRENT_USER\SOFTWARE\GPSoftware\Directory Opus\ContextMenuDebug** (DWORD) = 1作为此选项的替代方案。
+输出上下文菜单扩展的调试信息。有关调试上下文菜单问题的更多信息，请参见[常见问题解答](https://resource.dopus.com/t/crash-exit-or-high-cpu-when-right-clicking-certain-files/1335?u=chaoses-ib)。Directory Opus Light的用户可以设置注册表值**HKEY_CURRENT_USER\SOFTWARE\GPSoftware\Directory Opus\ContextMenuDebug** (DWORD) = 1作为此选项的替代方案。
 </td></tr><tr><td>
 
 **crash_debug_button**</td><td>
@@ -965,7 +965,7 @@ Windows中有大量的错误是由使用具有不同DPI的多个显示器触发�
 
 打开此选项会降低性能。除非您正在调查问题，否则请不要打开它，并在完成后将其关闭。
 
-有关详细信息，请参见[常见问题解答](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786)。
+有关详细信息，请参见[常见问题解答](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786?u=chaoses-ib)。
 </td></tr><tr><td>
 
 **notify_debug_exclude**</td><td>
@@ -1012,7 +1012,7 @@ Windows中有大量的错误是由使用具有不同DPI的多个显示器触发�
 
 **shellchange_debug**</td><td>
 </td><td>
-输出shell文件通知的调试信息。如果您在Opus无法注意到发生在Opus之外的文件或文件夹更改时遇到问题，技术支持可能会要求您打开此开关以收集调试信息。有关详细信息，请参见[常见问题解答](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786)。
+输出shell文件通知的调试信息。如果您在Opus无法注意到发生在Opus之外的文件或文件夹更改时遇到问题，技术支持可能会要求您打开此开关以收集调试信息。有关详细信息，请参见[常见问题解答](https://resource.dopus.com/t/changes-to-folders-are-not-being-detected/1786?u=chaoses-ib)。
 </td></tr><tr><td>
 
 **sync_debug**</td><td>

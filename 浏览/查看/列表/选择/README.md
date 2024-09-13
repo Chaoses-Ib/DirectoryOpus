@@ -11,7 +11,7 @@ Select THIS
 Select NONE
 ```
 
-### [SelectEx](https://resource.dopus.com/t/command-selectex-extended-select-command/20517)
+### [SelectEx](https://resource.dopus.com/t/command-selectex-extended-select-command/20517?u=chaoses-ib)
 增强版 `Select` 命令，支持：
 - 进入文件夹后自动选中指定文件
 - 使用绝对路径选中文件

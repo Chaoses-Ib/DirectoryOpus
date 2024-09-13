@@ -27,7 +27,7 @@
 
 ### 中键
 
-请注意，有些鼠标驱动程序默认将中键映射到另一个功能 - 如果您发现中键单击不能按预期工作，请参阅 [FAQ](https://resource.dopus.com/t/how-to-make-logitech-mid-back-forward-buttons-work-in-opus/2972) 了解一些提示以解决该问题。您还可以将 Opus 配置为将一次中键单击视为双击中键，这允许您获取类似于 Web 浏览器 (例如，一次中键单击在新标签页中打开文件夹) 的行为。请参阅 **[File Displays/Mouse](/Manual/preferences/preferences_categories/file_displays/mouse/README.zh.md)** 偏好设置页面以了解有关它的详细信息。
+请注意，有些鼠标驱动程序默认将中键映射到另一个功能 - 如果您发现中键单击不能按预期工作，请参阅 [FAQ](https://resource.dopus.com/t/how-to-make-logitech-mid-back-forward-buttons-work-in-opus/2972?u=chaoses-ib) 了解一些提示以解决该问题。您还可以将 Opus 配置为将一次中键单击视为双击中键，这允许您获取类似于 Web 浏览器 (例如，一次中键单击在新标签页中打开文件夹) 的行为。请参阅 **[File Displays/Mouse](/Manual/preferences/preferences_categories/file_displays/mouse/README.zh.md)** 偏好设置页面以了解有关它的详细信息。
 
 ###增强模式
 
