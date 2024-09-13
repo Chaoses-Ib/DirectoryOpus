@@ -235,7 +235,7 @@ object:**[Image](image.zh.md)**</td><td>
 
 您还可以提供包含图像数据而不是文件名的 **[Blob](blob.zh.md)** 对象。
 
-返回的 **[Image](image.zh.md)** 对象可以作为脚本对话框（当该控件处于“图像”模式时）中静态控件的 **[Control](control.zh.md).label** 属性的值（请参见 /Manual/scripting/script_dialogs/README.zh.md）。您还可以将其指定为 **[Dialog](dialog.zh.md)** 对象的 **icon** 属性，以便为脚本对话框指定自定义窗口图标。
+返回的 **[Image](image.zh.md)** 对象可以作为脚本对话框（当该控件处于“图像”模式时）中静态控件的 **[Control](control.zh.md).label** 属性的值（请参见 [脚本对话框](/Manual/scripting/script_dialogs/README.zh.md)）。您还可以将其指定为 **[Dialog](dialog.zh.md)** 对象的 **icon** 属性，以便为脚本对话框指定自定义窗口图标。
 </td></tr><tr><td>
 LoadThumbnail</td><td>
 
@@ -260,7 +260,7 @@ object:**[Image](image.zh.md)**
 
 如果加载失败（或在可以生成缩略图之前超时），此方法会返回 **False**。
 
-返回的 **[Image](image.zh.md)** 对象可以作为脚本对话框（当该控件处于“图像”模式时）中静态控件的 **[Control](control.zh.md).label** 属性的值（请参见 /Manual/scripting/script_dialogs/README.zh.md）。您还可以将其指定为 **[Dialog](dialog.zh.md)** 对象的 **icon** 属性，以便为脚本对话框指定自定义窗口图标。
+返回的 **[Image](image.zh.md)** 对象可以作为脚本对话框（当该控件处于“图像”模式时）中静态控件的 **[Control](control.zh.md).label** 属性的值（请参见 [脚本对话框](/Manual/scripting/script_dialogs/README.zh.md)）。您还可以将其指定为 **[Dialog](dialog.zh.md)** 对象的 **icon** 属性，以便为脚本对话框指定自定义窗口图标。
 </td></tr><tr><td>
 MusicGenres</td><td>
 
