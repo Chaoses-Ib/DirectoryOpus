@@ -19,6 +19,11 @@ DOpus 默认会在启动时自动恢复上次关闭时打开的窗口，并且�
 
 打开窗口状态储存在 `/dopuslocaldata/State Data/openlisters.oll` 文件中。
 
+## 标题栏
+DO v13.6.4 以上支持[将顶部工具栏移至窗口标题栏中](工具栏/README.md#将顶部工具栏移至窗口标题栏中)：
+
+![](工具栏/images/README/将顶部工具栏移至窗口标题栏中.png)
+
 ## 图标
 在资源管理器中，文件窗口的任务栏图标会随当前文件夹的图标而变化。与资源管理器不同，DOpus 文件窗口的任务栏图标默认固定为 ![lightbulb_small.png](/Manual/images/media/13/lightbulb_small.png)。推荐在配置中改为使用当前文件夹的图标，便于区分：
 
