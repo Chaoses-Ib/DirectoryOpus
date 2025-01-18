@@ -2,7 +2,7 @@
 ## 使用内置查看器打开图片
 默认配置下，DOpus 会使用内置查看器打开所有图片文件，可以通过以下选项控制：
 
-![](../浏览/查看/images/查看器/双击文件-v13.png)
+![](../../浏览/查看/images/查看器/双击文件-v13.png)
 
 关闭该选项后，DOpus 会使用系统默认关联程序来打开图片文件。
 
@@ -10,13 +10,24 @@
 
 默认配置下，DOpus 会使用内置查看器打开所有图片文件和 WAV 文件，这一行为可以通过以下选项控制：
 
-![](../浏览/查看/images/查看器/双击文件-v12.png)
+![](../../浏览/查看/images/查看器/双击文件-v12.png)
 
 </details>
 
 ## 预览
-### [MultiView 插件](../浏览/查看/查看器.md#oracle-outside-in-viewer)
-支持 BMP、PNG、JPEG、GIF、ICO、TIFF、SVG（仅 XML）、Adobe Photoshop PSD、Adobe Illustrator、Adobe InDesign、Microsoft Visio。
+### DOpus 内置
+<!-- TODO: CLIP、IFF、ILBM、INFO、LBM -->
+
+DOpus 内置了对 BMP、PNG、JPEG、GIF（非动画）、ICO（仅最大）、TIFF、Adobe Photoshop PSD、EMF、WMF 格式的支持，同时还内置了以下预览插件：
+- Animated GIF（GIF 动画）
+- JPEG 2000
+- Windows Imgaing Component（HEIF/HEIC、AVIF、DDS）
+- WebP
+
+内置支持的优先级高于插件。由于内置支持不是通过插件实现的，无法将其它插件的优先级调整为高于内置，只能通过在预览窗格中手动指定来使用其它插件。
+
+### [MultiView 插件](../../浏览/查看/查看器.md#oracle-outside-in-viewer)
+支持 BMP、PNG、JPEG、GIF、ICO（部分不兼容）、TIFF、SVG（仅 XML）、Adobe Photoshop PSD、Adobe Illustrator、Adobe InDesign、Microsoft Visio。
 
 可能需要在配置中将 MultiView 插件的优先级调整到其它图片插件之前，或者在预览窗格中手动选择 MultiView 插件来使用。
 
@@ -53,13 +64,13 @@ DOpus 默认不支持查看 PNG 中的文本字段[^pnginfo][^pnginfo2]，可以
    exifColumns.push_back(GetColumnMap('PNG', 'Prompt', '', '', '', '', '', ''));
    ```
 
-   ![](images/图片/PNG-Edit.png)
+   ![](images/README/PNG-Edit.png)
 
    也可打开 `/dopusdata/Script AddIns/ColumnExifTool.js` 进行编辑。
 
 6. 此时即可通过添加列来查看相应字段：
 
-   ![](images/图片/PNG-列.png)
+   ![](images/README/PNG-列.png)
 
 7. 也可以在 PNG 类型的信息提示中添加相应字段，例如：
    
@@ -74,9 +85,9 @@ DOpus 默认不支持查看 PNG 中的文本字段[^pnginfo][^pnginfo2]，可以
    <b>ComfyScript:</b>\	{scp:ExifTool/PNG-ComfyScript}
    ```
    
-   ![](images/图片/PNG-信息提示.png)
+   ![](images/README/PNG-信息提示.png)
 
-   ![](images/图片/PNG-信息提示2.png)
+   ![](images/README/PNG-信息提示2.png)
 
    <details><summary>English</summary>
 
