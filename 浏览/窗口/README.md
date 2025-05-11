@@ -7,6 +7,8 @@
 ### 如何实现单窗口模式？
 见 [单窗口模式](../多文件夹/单窗口模式.md)。
 
+### [→激活已打开文件夹](../多文件夹/标签页/README.md#激活已打开文件夹)
+
 ### 如何在关闭最后一个标签页时直接关闭窗口？
 在配置窗口中勾选 `文件夹标签/选项/关闭最后的标签页时同时关闭窗口`。或者也可以使用脚本实现：[IbDOpusScripts/CloseTabOrLister](https://github.com/Chaoses-Ib/IbDOpusScripts/blob/main/Buttons/CloseTabOrLister.js)。
 

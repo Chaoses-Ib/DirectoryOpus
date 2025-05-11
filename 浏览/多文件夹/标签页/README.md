@@ -1,4 +1,24 @@
 # 文件夹标签
+## 激活已打开文件夹
+默认情况下，DOpus 只会对通过资源管理器替换打开的文件夹进行检测，在已打开时直接激活相应标签页，未打开时才新建标签页。其它打开文件夹方式，例如在文件窗口内跳转、Win+E、双击桌面，都不会进行已打开检测。
+
+如果你想要更激进的检测策略来避免频繁重复打开文件夹，可以在相应操作的 `Go` 命令中添加（或替换 `newtab` 为）以下任一选项：
+- `NEWTAB=findexisting`（在未打开时新建标签页）
+- `EXISTINGLISTER`（在未打开时直接跳转，检测所有文件窗口，且激活所有匹配标签页）
+- `TABFINDEXISTING`（在未打开时直接跳转，检测范围仅限于当前文件窗口）
+
+例如：
+- 文件窗口中双击文件夹：
+
+  ![](images/README/已存在-文件夹.png)
+
+- 文件夹树：参考[^exist-tree]
+- Win+E、双击桌面：参考[^exist-wine]
+- [面包屑地址栏](../../导航/地址栏.md)：不可调整，不过可通过脚本监听事件间接实现
+
+[^exist-tree]: [Open directory in new tab without duplicate? - Help & Support - Directory Opus Resource Centre](https://resource.dopus.com/t/open-directory-in-new-tab-without-duplicate/37043/21?u=chaoses-ib)
+[^exist-wine]: [Opening a new default Folder Tab using (Win+E) keys - Help & Support - Directory Opus Resource Centre](https://resource.dopus.com/t/opening-a-new-default-folder-tab-using-win-e-keys/42872?u=chaoses-ib)
+
 ## 垂直排列
 文件夹标签默认水平排列，如果想使用垂直排列，可以在 `配置/文件夹标签/选项/标签位置` 中选择 `左侧` 或 `右侧`：
 
