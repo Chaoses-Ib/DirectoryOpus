@@ -105,15 +105,15 @@ DOpus 中的大部分用户操作都是通过命令实现的，包括大部分�
 
 ## 其它
 ### [授权](DO/README.md#授权)
-DOpus 自 v13 起采用升级订阅模式，需要按年订阅更新，在订阅到期后可继续使用之前的版本（在之后也有可能会推出终身更新授权）。你可以直接[下载 DOpus ](https://www.gpsoft.com.au/DScripts/download.asp?id=release)开始试用，默认试用期为 30 天，[在注册后可以延长到 60 天](https://www.gpsoft.com.au/#download)。
+DOpus 自 v13 起采用升级订阅模式，需要按年订阅更新，订阅到期前可免费更新，在订阅到期后可继续使用之前的版本（在之后也有可能会推出终身更新授权）。你可以直接[下载 DOpus ](https://www.gpsoft.com.au/DScripts/download.asp?id=release)开始试用，默认试用期为 30 天，[在注册后可以延长到 60 天](https://www.gpsoft.com.au/#download)。
 
 购买渠道 | 新购 | 新购 + USB 导出 + 高级 FTP | 续期 | 备注
 --- | --- | --- | --- | ---
 [官网](https://www.gpsoft.com.au/#buynow) | 1+1[^machine-laptop]：89 AUD（~420元）<br />2+1：129 AUD（~606元）<br />5+1：249 AUD（~1169元）<br /><del>黑五：<ul><li>1+1：**53.4 AUD（~251元）**</li><li>2+1：77.4 AUD（~364元）</li><li>5+1：149.4 AUD（~703元）</li></ul></del> | USB 导出：10 AUD/导出授权 <br /> 高级 FTP：10 AUD（~47元） | 1+1：25 AUD（~117元）<br />2+1：40 AUD（~188元）<br />5+1：75 AUD（~352元）
-[子清](https://item.taobao.com/item.htm?id=766978122797) | 1+1：**148元** | 1+1：**195元** | ？ | 无淘宝客服
-[软购](https://apsgo.cn/tsARL0) | 1+1：158元<br />~~双十一：124.6元~~<br />~~黑五：158元~~ | 1+1：198元<br />~~双十一：180.6元~~<br />~~黑五：198元~~<br /> | ？ | 新用户-5元<br />不同等级会员每月有不同优惠，可找会员代购
-[数码荔枝](https://store.lizhi.io/site/products/id/135?cid=1lsdbtbz) | 1+1：189元<br />`APPINN` 优惠码：179.55元<br />七月惠 +优惠码：152.61元<br />~~双十一：134.25元~~ | 1+1：239元<br />`APPINN` 优惠码：227.05元<br />七月惠 +优惠码：**192.99元**<br />~~双十一：194.25元~~ | ？ | 免费新会员-5元
-[玩软件吧](https://item.taobao.com/item.htm?id=556078594244) | 1+1：169元 | 1+1：239元 | ？ | 客服响应不及时
+[子清](https://item.taobao.com/item.htm?id=766978122797) | 1+1：**148元** | 1+1：195元 | ？ | 无淘宝客服
+[玩软件吧](https://item.taobao.com/item.htm?id=556078594244) | 1+1：159元 | 1+1：**189元** | ？ | 客服响应不及时
+[软购](https://apsgo.cn/tsARL0) | 1+1：158元<br />~~双十一：124.6元~~<br />~~黑五：158元~~ | 1+1：198元<br />~~双十一：180.6元~~<br />~~黑五：198元~~<br /> | 88元 | 新用户-5元<br />不同等级会员每月有不同优惠，可找会员代购
+[数码荔枝](https://store.lizhi.io/site/products/id/135?cid=1lsdbtbz) | 1+1：189元<br />`APPINN` 优惠码：179.55元<br />定期优惠+优惠码：152.61元<br />~~双十一：134.25元~~ | 1+1：239元<br />`APPINN` 优惠码：227.05元<br />定期优惠+优惠码：**192.99元**<br />~~双十一：194.25元~~ | ？ | 免费新会员-5元
 [软购猜价](https://apsgo.com/guess/70) | | 1+1：历史最低 **160元** | | 积分可通过购买会员、软件和评论获得
 [软购拍卖](https://apsgo.com/auctions) | | | | 不定期开启
 ~~[子清2](https://item.taobao.com/item.htm?id=669769551074)~~ | 1+1：210.49元 | 1+1：257.79元 | ？
